@@ -58,9 +58,29 @@ def get_latest_correlation():
         
         if not result:
             return jsonify({
-                'status': 'not_found',
-                'message': 'No correlation results found. Run correlation first.'
-            }), 404
+                'status': 'empty',
+                'message': 'No correlation results found. Run correlation first.',
+                'correlation': None,
+                'corent_dashboard': {
+                    'server_app_mapping': [],
+                    'tech_stack': {},
+                    'deployment_footprint': {},
+                    'total_applications': 0,
+                    'total_servers': 0
+                },
+                'cast_dashboard': {
+                    'repo_app_mapping': [],
+                    'architecture_components': [],
+                    'internal_dependencies': {},
+                    'total_applications': 0,
+                    'total_components': 0
+                },
+                'correlation_layer': [],
+                'unmatched_corent': [],
+                'unmatched_cast': [],
+                'master_matrix': [],
+                'statistics': {}
+            }), 200
         
         import json
         
