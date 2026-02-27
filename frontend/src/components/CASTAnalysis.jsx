@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useDropzone } from 'react-dropzone';
-import { uploadCodeAnalysis, getUploadedFiles, deleteFile } from '../services/api';
+import { uploadCodeAnalysis, extractCastAnalysis, getUploadedFiles, deleteFile } from '../services/api';
 import { useAppStore } from '../store';
 import { toast } from 'react-toastify';
 import { Eye, Trash2 } from 'lucide-react';
@@ -55,10 +55,15 @@ const CASTAnalysis = () => {
     setUploading(true);
     try {
       const response = await uploadCodeAnalysis(selectedFile);
+
+      if (response?.data?.file_id) {
+        await extractCastAnalysis(response.data.file_id);
+      }
+
       addUploadedFile(response.data);
       const message = response.data.is_update 
         ? `${selectedFile.name} updated successfully (replaced previous version)`
-        : `${selectedFile.name} assessed successfully`;
+        : `${selectedFile.name} uploaded and processed successfully`;
       toast.success(message);
       setSelectedFile(null);
       await fetchUploadedFiles();

@@ -36,6 +36,9 @@ export const uploadCodeAnalysis = (file) => {
   });
 };
 
+export const extractCastAnalysis = (fileId) =>
+  apiClient.post(`/upload/extract-cast-analysis/${fileId}`);
+
 export const uploadIndustryTemplates = (file) => {
   const formData = new FormData();
   formData.append('file', file);

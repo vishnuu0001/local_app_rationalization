@@ -320,13 +320,25 @@ def preview_uploaded_file(file_id):
             if raw_dataframe.empty:
                 return []
 
-            header_values = raw_dataframe.iloc[0].tolist()
+            # Choose the most likely header row from first 10 rows by max non-empty cells
+            scan_rows = min(len(raw_dataframe), 10)
+            header_index = 0
+            max_non_empty = -1
+            for i in range(scan_rows):
+                row = raw_dataframe.iloc[i]
+                non_empty = int(row.notna().sum())
+                if non_empty > max_non_empty:
+                    max_non_empty = non_empty
+                    header_index = i
+
+            header_values = raw_dataframe.iloc[header_index].tolist()
             normalized_headers = []
             for idx, header in enumerate(header_values):
                 header_text = str(header).strip() if header is not None and str(header).strip() else f'Column {idx + 1}'
                 normalized_headers.append(header_text)
 
-            data_rows = raw_dataframe.iloc[1:max_rows + 1].copy()
+            data_rows = raw_dataframe.iloc[header_index + 1:header_index + 1 + max_rows].copy()
+            data_rows = data_rows.dropna(how='all')
             if data_rows.empty:
                 return []
 

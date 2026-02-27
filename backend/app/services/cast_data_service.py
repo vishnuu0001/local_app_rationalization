@@ -158,10 +158,38 @@ class CASTDataService:
         try:
             file_ext = file_path.lower().split('.')[-1]
 
+            def normalize_columns(dataframe):
+                dataframe.columns = [str(col).strip() for col in dataframe.columns]
+                return dataframe
+
+            def detect_header_row(raw_dataframe):
+                scan_rows = min(len(raw_dataframe), 15)
+                for i in range(scan_rows):
+                    row_values = [str(v).strip().upper() for v in raw_dataframe.iloc[i].tolist() if pd.notna(v)]
+                    if 'APP ID' in row_values and 'APP NAME' in row_values:
+                        return i
+                return None
+
             if file_ext == 'csv':
-                dataframe = pd.read_csv(file_path)
+                dataframe = normalize_columns(pd.read_csv(file_path))
+                if 'APP ID' not in dataframe.columns:
+                    raw_dataframe = pd.read_csv(file_path, header=None)
+                    header_idx = detect_header_row(raw_dataframe)
+                    if header_idx is not None:
+                        header = [str(v).strip() for v in raw_dataframe.iloc[header_idx].tolist()]
+                        data_rows = raw_dataframe.iloc[header_idx + 1:].copy()
+                        data_rows.columns = header
+                        dataframe = normalize_columns(data_rows)
             else:
-                dataframe = pd.read_excel(file_path)
+                dataframe = normalize_columns(pd.read_excel(file_path))
+                if 'APP ID' not in dataframe.columns:
+                    raw_dataframe = pd.read_excel(file_path, header=None)
+                    header_idx = detect_header_row(raw_dataframe)
+                    if header_idx is not None:
+                        header = [str(v).strip() for v in raw_dataframe.iloc[header_idx].tolist()]
+                        data_rows = raw_dataframe.iloc[header_idx + 1:].copy()
+                        data_rows.columns = header
+                        dataframe = normalize_columns(data_rows)
 
             column_mapping = {
                 'APP ID': 'app_id',
