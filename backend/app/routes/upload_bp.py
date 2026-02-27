@@ -575,7 +575,7 @@ def extract_cast_analysis_data(file_id):
         
         # Handle Excel/CSV files - just store metadata, no extraction
         if file_ext in ['.xlsx', '.xls', '.csv', '.xlsm']:
-            logger.info(f"[CAST Extract] Excel/CSV file detected: {filename}. Preview available via FileViewer.")
+            logger.info(f"[CAST Extract] Excel/CSV file detected: {filename}. Loading CASTData rows.")
             
             # Create or update CAST Analysis parent record
             cast_analysis = CASTAnalysis.query.filter_by(file_id=file_id).first()
@@ -588,20 +588,23 @@ def extract_cast_analysis_data(file_id):
                 db.session.add(cast_analysis)
                 db.session.commit()
             
-            # Mark as extracted (even though we only stored the file)
+            # Populate CASTData from uploaded Excel/CSV
+            cast_records = CASTDataService.populate_from_excel_file(file_path)
+
+            # Mark as extracted
             cast_analysis.extracted_at = datetime.utcnow()
             db.session.commit()
             
             return jsonify({
                 'success': True,
-                'message': f'Excel/CSV file stored successfully. Preview available with search functionality.',
+                'message': f'Excel/CSV file processed successfully. CAST data loaded.',
                 'file_type': 'excel',
                 'sections': {
                     'application_inventory': {
                         'label': 'Application Inventory',
-                        'count': 0,
+                        'count': cast_records,
                         'data': [],
-                        'total': 0
+                        'total': cast_records
                     },
                     'application_classification': {
                         'label': 'Application Classification',
@@ -623,11 +626,11 @@ def extract_cast_analysis_data(file_id):
                     }
                 },
                 'extracted_rows': {
-                    'app_inventory': 0,
+                    'app_inventory': cast_records,
                     'app_classification': 0,
                     'internal_architecture': 0,
                     'high_risk_applications': 0,
-                    'total': 0
+                    'total': cast_records
                 }
             }), 201
         

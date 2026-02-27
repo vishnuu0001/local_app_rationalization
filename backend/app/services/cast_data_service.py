@@ -2,6 +2,7 @@
 
 import logging
 import json
+import pandas as pd
 from app import db
 from app.models.cast import CASTData
 
@@ -150,3 +151,64 @@ class CASTDataService:
         except Exception as e:
             logger.error(f"[CASTData] Error retrieving all records: {str(e)}")
             return []
+
+    @staticmethod
+    def populate_from_excel_file(file_path):
+        """Load CASTData rows from uploaded Excel/CSV file"""
+        try:
+            file_ext = file_path.lower().split('.')[-1]
+
+            if file_ext == 'csv':
+                dataframe = pd.read_csv(file_path)
+            else:
+                dataframe = pd.read_excel(file_path)
+
+            column_mapping = {
+                'APP ID': 'app_id',
+                'APP NAME': 'app_name',
+                'Application Architecture': 'application_architecture',
+                'Source Code Availability': 'source_code_availability',
+                'Programming Language': 'programming_language',
+                'Component Coupling': 'component_coupling',
+                'Cloud Suitability': 'cloud_suitability',
+                'Volume of External Dependencies': 'volume_external_dependencies',
+                'App Service / API Readiness': 'app_service_api_readiness',
+                'Degree of Code Protocols': 'degree_of_code_protocols',
+                'Code Design': 'code_design',
+                'Application-Code Complexity / Volume': 'application_code_complexity_volume',
+                'Distributed Architecture Design or not': 'distributed_architecture_design',
+            }
+
+            records_processed = 0
+
+            for _, row in dataframe.iterrows():
+                app_id_raw = row.get('APP ID')
+                if pd.isna(app_id_raw) or not str(app_id_raw).strip():
+                    continue
+
+                app_id = str(app_id_raw).strip()
+                cast_record = CASTData.query.filter_by(app_id=app_id).first()
+
+                if not cast_record:
+                    cast_record = CASTData(app_id=app_id, app_name='')
+                    db.session.add(cast_record)
+
+                for source_col, target_field in column_mapping.items():
+                    if source_col in dataframe.columns:
+                        value = row.get(source_col)
+                        if pd.isna(value):
+                            value = None
+                        if isinstance(value, str):
+                            value = value.strip() if value else None
+                        setattr(cast_record, target_field, value)
+
+                records_processed += 1
+
+            db.session.commit()
+            logger.info(f"[CASTData] Loaded {records_processed} records from file: {file_path}")
+            return records_processed
+
+        except Exception as e:
+            logger.error(f"[CASTData] Error loading from Excel/CSV file {file_path}: {str(e)}", exc_info=True)
+            db.session.rollback()
+            return 0
