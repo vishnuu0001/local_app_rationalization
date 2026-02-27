@@ -93,6 +93,7 @@ def create_app(config_name=None):
     
     # Health check endpoint
     @app.route('/api/health', methods=['GET'])
+    @app.route('/health', methods=['GET'])
     def health():
         """Health check endpoint"""
         try:
