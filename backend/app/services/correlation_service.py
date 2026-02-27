@@ -568,6 +568,9 @@ class CorrelationService:
                 "match_type": match.get("match_type", "unknown"),
                 "matching_criteria": " | ".join(match["matching_criteria"])
             }
+            entry["infra"] = entry["infrastructure"]
+            entry["server"] = entry["server_type"]
+            entry["repo"] = entry["repository"]
             master_matrix.append(entry)
         
         # Add unmatched Infrastructure items with "Unmatched from Infrastructure" indicator
@@ -589,6 +592,9 @@ class CorrelationService:
                 "match_type": "unmatched",
                 "matching_criteria": "No CAST correlation found"
             }
+            entry["infra"] = entry["infrastructure"]
+            entry["server"] = entry["server_type"]
+            entry["repo"] = entry["repository"]
             master_matrix.append(entry)
         
         # Add unmatched CAST items with "Unmatched from CAST" indicator
@@ -613,6 +619,9 @@ class CorrelationService:
                 "match_type": "unmatched",
                 "matching_criteria": "No Corent correlation found"
             }
+            entry["infra"] = entry["infrastructure"]
+            entry["server"] = entry["server_type"]
+            entry["repo"] = entry["repository"]
             master_matrix.append(entry)
         
         return master_matrix
