@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Download, ChevronLeft, ChevronRight } from 'lucide-react';
-import * as XLSX from 'xlsx';
-import { API_BASE } from '../services/api';
+import apiClient, { API_BASE } from '../services/api';
 
 const FileViewer = ({ fileId, filename, onClose, isInline = true }) => {
   const [error, setError] = useState(null);
@@ -28,29 +27,26 @@ const FileViewer = ({ fileId, filename, onClose, isInline = true }) => {
     if (fileType === 'excel') {
       setIsLoadingExcel(true);
       setError(null);
-      fetch(fileUrl, { mode: 'cors' })
+      apiClient.get(`/upload/preview/${fileId}`, {
+        params: { max_rows: 500 }
+      })
         .then(response => {
-          if (!response.ok) {
-            throw new Error(`HTTP ${response.status}`);
-          }
-          return response.arrayBuffer();
-        })
-        .then(data => {
-          const workbook = XLSX.read(data, { type: 'array' });
-          setSheetNames(workbook.SheetNames);
-          const sheets = {};
-          workbook.SheetNames.forEach((name, idx) => {
-            const worksheet = workbook.Sheets[name];
-            const jsonData = XLSX.utils.sheet_to_json(worksheet);
-            sheets[idx] = jsonData;
+          const sheetNameList = response.data?.sheet_names || [];
+          const previewSheets = response.data?.sheets || {};
+
+          const sheetsByIndex = {};
+          sheetNameList.forEach((name, idx) => {
+            sheetsByIndex[idx] = previewSheets[name] || [];
           });
-          setExcelData(sheets);
+
+          setSheetNames(sheetNameList);
+          setExcelData(sheetsByIndex);
           setCurrentSheet(0);
           setIsLoadingExcel(false);
         })
         .catch(err => {
           setIsLoadingExcel(false);
-          setError('Failed to load Excel file: ' + err.message);
+          setError('Failed to load Excel file: ' + (err?.response?.data?.error || err.message));
         });
     }
   }, [fileId, filename, fileType, fileUrl]);

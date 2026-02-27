@@ -3,6 +3,7 @@ from werkzeug.utils import secure_filename
 import os
 import logging
 import uuid
+import pandas as pd
 from datetime import datetime
 from app import db
 from app.services.infrastructure_service import InfrastructureService
@@ -31,6 +32,26 @@ def get_upload_folder():
     upload_folder = current_app.config.get('UPLOAD_FOLDER', '/tmp/uploads')
     os.makedirs(upload_folder, exist_ok=True)
     return upload_folder
+
+
+def resolve_file_path(file_path):
+    if os.path.isabs(file_path):
+        return file_path
+
+    project_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    return os.path.normpath(os.path.join(project_root, file_path))
+
+
+def get_file_record_by_id(file_id):
+    infra = Infrastructure.query.filter_by(file_id=file_id).first()
+    if infra and infra.file_path:
+        return infra.file_path, infra.filename
+
+    code = CodeRepository.query.filter_by(file_id=file_id).first()
+    if code and code.file_path:
+        return code.file_path, code.filename
+
+    return None, None
 
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
@@ -227,29 +248,12 @@ def get_uploaded_files():
 def get_pdf_file(file_id):
     """Serve file by file_id (PDF or Excel)"""
     try:
-        # Try to find in Infrastructure files
-        infra = Infrastructure.query.filter_by(file_id=file_id).first()
-        file_path = None
-        
-        if infra and infra.file_path:
-            file_path = infra.file_path
-            print(f"[FILE] Infrastructure file found: {file_path}")
-        
-        # If not found, try Code Repository
-        if not file_path:
-            code = CodeRepository.query.filter_by(file_id=file_id).first()
-            if code and code.file_path:
-                file_path = code.file_path
-                print(f"[FILE] Code file found: {file_path}")
+        file_path, _ = get_file_record_by_id(file_id)
         
         if not file_path:
             return jsonify({'error': f'File not found in database for file_id: {file_id}'}), 404
-        
-        # Convert relative path to absolute if needed
-        if not os.path.isabs(file_path):
-            # Get the project root directory (backend folder)
-            project_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-            file_path = os.path.normpath(os.path.join(project_root, file_path))
+
+        file_path = resolve_file_path(file_path)
         
         print(f"[FILE] Absolute path: {file_path}")
         print(f"[FILE] File exists: {os.path.exists(file_path)}")
@@ -287,6 +291,67 @@ def get_pdf_file(file_id):
         import traceback
         traceback.print_exc()
         return jsonify({'error': f'Error serving file: {str(e)}'}), 500
+
+
+@bp.route('/preview/<file_id>', methods=['GET'])
+def preview_uploaded_file(file_id):
+    """Preview uploaded Excel/CSV file as JSON to avoid browser binary-fetch issues"""
+    try:
+        max_rows = request.args.get('max_rows', 500, type=int)
+        file_path, filename = get_file_record_by_id(file_id)
+
+        if not file_path:
+            return jsonify({'error': f'File not found in database for file_id: {file_id}'}), 404
+
+        file_path = resolve_file_path(file_path)
+        if not os.path.exists(file_path):
+            return jsonify({'error': f'File not found on disk: {file_path}'}), 404
+
+        file_ext = os.path.splitext(file_path)[1].lower()
+
+        if file_ext == '.csv':
+            dataframe = pd.read_csv(file_path)
+            dataframe = dataframe.where(pd.notnull(dataframe), None)
+            preview_rows = dataframe.head(max_rows).to_dict(orient='records')
+
+            return jsonify({
+                'success': True,
+                'file_id': file_id,
+                'filename': filename,
+                'file_type': 'csv',
+                'sheet_names': ['Sheet1'],
+                'sheets': {
+                    'Sheet1': preview_rows
+                },
+                'max_rows': max_rows,
+            }), 200
+
+        if file_ext in ['.xlsx', '.xls', '.xlsm']:
+            workbook = pd.read_excel(file_path, sheet_name=None)
+            sheets = {}
+            sheet_names = []
+
+            for sheet_name, dataframe in workbook.items():
+                safe_name = str(sheet_name)
+                sheet_names.append(safe_name)
+                dataframe = dataframe.where(pd.notnull(dataframe), None)
+                sheets[safe_name] = dataframe.head(max_rows).to_dict(orient='records')
+
+            return jsonify({
+                'success': True,
+                'file_id': file_id,
+                'filename': filename,
+                'file_type': 'excel',
+                'sheet_names': sheet_names,
+                'sheets': sheets,
+                'max_rows': max_rows,
+            }), 200
+
+        return jsonify({'error': f'Preview not supported for file type: {file_ext}'}), 400
+
+    except Exception as e:
+        logger.error(f"[Preview] Error previewing file {file_id}: {str(e)}", exc_info=True)
+        return jsonify({'error': f'Failed to preview file: {str(e)}'}), 500
 
 @bp.route('/file/<file_id>', methods=['DELETE'])
 def delete_file(file_id):
