@@ -309,10 +309,34 @@ def preview_uploaded_file(file_id):
 
         file_ext = os.path.splitext(file_path)[1].lower()
 
+        def to_preview_records(dataframe):
+            dataframe = dataframe.where(pd.notnull(dataframe), None)
+            return dataframe.head(max_rows).to_dict(orient='records')
+
+        def fallback_sheet_preview(sheet_name):
+            raw_dataframe = pd.read_excel(file_path, sheet_name=sheet_name, header=None)
+            raw_dataframe = raw_dataframe.dropna(how='all')
+
+            if raw_dataframe.empty:
+                return []
+
+            header_values = raw_dataframe.iloc[0].tolist()
+            normalized_headers = []
+            for idx, header in enumerate(header_values):
+                header_text = str(header).strip() if header is not None and str(header).strip() else f'Column {idx + 1}'
+                normalized_headers.append(header_text)
+
+            data_rows = raw_dataframe.iloc[1:max_rows + 1].copy()
+            if data_rows.empty:
+                return []
+
+            data_rows.columns = normalized_headers
+            data_rows = data_rows.where(pd.notnull(data_rows), None)
+            return data_rows.to_dict(orient='records')
+
         if file_ext == '.csv':
             dataframe = pd.read_csv(file_path)
-            dataframe = dataframe.where(pd.notnull(dataframe), None)
-            preview_rows = dataframe.head(max_rows).to_dict(orient='records')
+            preview_rows = to_preview_records(dataframe)
 
             return jsonify({
                 'success': True,
@@ -334,8 +358,14 @@ def preview_uploaded_file(file_id):
             for sheet_name, dataframe in workbook.items():
                 safe_name = str(sheet_name)
                 sheet_names.append(safe_name)
-                dataframe = dataframe.where(pd.notnull(dataframe), None)
-                sheets[safe_name] = dataframe.head(max_rows).to_dict(orient='records')
+                preview_rows = to_preview_records(dataframe)
+
+                # Some CAST Excel sheets have title/blank rows that cause default header parsing
+                # to return empty data. Fallback to header=None parsing in that case.
+                if not preview_rows:
+                    preview_rows = fallback_sheet_preview(sheet_name)
+
+                sheets[safe_name] = preview_rows
 
             return jsonify({
                 'success': True,
