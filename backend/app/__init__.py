@@ -1,4 +1,5 @@
 import os
+import importlib
 from dotenv import load_dotenv
 from flask import Flask
 from flask_cors import CORS
@@ -52,13 +53,25 @@ def create_app(config_name=None):
     # Create upload folder if it doesn't exist
     os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
     
-    # Register blueprints
-    from app.routes import upload_bp, analysis_bp, visualization_bp, correlation_bp, capability_bp
-    app.register_blueprint(upload_bp.bp)
-    app.register_blueprint(analysis_bp.bp)
-    app.register_blueprint(visualization_bp.bp)
-    app.register_blueprint(correlation_bp.correlation_bp)
-    app.register_blueprint(capability_bp.capability_bp)
+    startup_issues = []
+
+    # Register blueprints (safe import to avoid full startup crash)
+    blueprint_modules = [
+        ('app.routes.upload_bp', 'bp'),
+        ('app.routes.analysis_bp', 'bp'),
+        ('app.routes.visualization_bp', 'bp'),
+        ('app.routes.correlation_bp', 'correlation_bp'),
+        ('app.routes.capability_bp', 'capability_bp'),
+    ]
+
+    for module_name, blueprint_attr in blueprint_modules:
+        try:
+            module = importlib.import_module(module_name)
+            app.register_blueprint(getattr(module, blueprint_attr))
+        except Exception as e:
+            issue = f"Blueprint load failed for {module_name}.{blueprint_attr}: {str(e)}"
+            startup_issues.append(issue)
+            app.logger.error(issue)
     
     # Create database tables and handle initialization
     with app.app_context():
@@ -73,7 +86,9 @@ def create_app(config_name=None):
             app.logger.info(f"Database initialized successfully")
             app.logger.info(f"Database URI: {app.config['SQLALCHEMY_DATABASE_URI']}")
         except Exception as e:
-            app.logger.error(f"Failed to initialize database: {str(e)}")
+            issue = f"Database initialization failed: {str(e)}"
+            startup_issues.append(issue)
+            app.logger.error(issue)
             app.logger.warning("Continuing startup without blocking app initialization")
     
     # Health check endpoint
@@ -92,7 +107,8 @@ def create_app(config_name=None):
             'service': 'Infrastructure Assessment API',
             'database': db_status,
             'environment': os.getenv('FLASK_ENV', 'development'),
-            'database_type': os.getenv('DATABASE_PROVIDER', 'sqlite')
+            'database_type': os.getenv('DATABASE_PROVIDER', 'sqlite'),
+            'startup_issues': startup_issues,
         }, 200
     
     # Shutdown handler for graceful cleanup
