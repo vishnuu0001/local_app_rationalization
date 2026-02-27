@@ -4,6 +4,10 @@ import { Download } from 'lucide-react';
 const MasterMatrix = ({ data }) => {
   const [filterConfidence, setFilterConfidence] = useState('all');
   const masterMatrix = data.master_matrix || [];
+
+  const getInfra = (row) => row.infra || row.infrastructure || '';
+  const getServer = (row) => row.server || row.server_type || '';
+  const getRepo = (row) => row.repo || row.repository || '';
   
   // Filter based on confidence level
   const filteredData = filterConfidence === 'all'
@@ -14,11 +18,11 @@ const MasterMatrix = ({ data }) => {
   const downloadCSV = () => {
     const headers = ['Infra', 'Server', 'Installed App', 'App Component', 'Repo', 'Confidence', 'App ID', 'Tech Stack', 'Version'];
     const rows = filteredData.map(row => [
-      row.infra || '',
-      row.server || '',
+      getInfra(row),
+      getServer(row),
       row.installed_app || '',
       row.app_component || '',
-      row.repo || '',
+      getRepo(row),
       `${(row.confidence * 100).toFixed(0)}%`,
       row.app_id || '',
       row.tech_stack || '',
@@ -125,9 +129,9 @@ const MasterMatrix = ({ data }) => {
               return (
                 <tr key={idx} className={`border-b border-gray-100 hover:${bgColor} transition-colors`}>
                   <td className="px-6 py-4">
-                    <span className="font-medium text-gray-900">{row.infra || '—'}</span>
+                    <span className="font-medium text-gray-900">{getInfra(row) || '—'}</span>
                   </td>
-                  <td className="px-6 py-4 text-gray-700">{row.server || '—'}</td>
+                  <td className="px-6 py-4 text-gray-700">{getServer(row) || '—'}</td>
                   <td className="px-6 py-4">
                     <div>
                       <p className="font-medium text-gray-900">{row.installed_app || '—'}</p>
@@ -137,7 +141,7 @@ const MasterMatrix = ({ data }) => {
                   <td className="px-6 py-4 text-gray-700">{row.app_component || '—'}</td>
                   <td className="px-6 py-4">
                     <span className="text-gray-700 text-xs break-words max-w-xs inline-block">
-                      {row.repo ? row.repo.substring(0, 50) + (row.repo.length > 50 ? '...' : '') : '—'}
+                      {getRepo(row) ? getRepo(row).substring(0, 50) + (getRepo(row).length > 50 ? '...' : '') : '—'}
                     </span>
                   </td>
                   <td className="px-6 py-4 text-center">
