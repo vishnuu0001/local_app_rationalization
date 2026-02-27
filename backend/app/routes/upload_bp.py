@@ -1,4 +1,4 @@
-from flask import Blueprint, request, jsonify, send_file
+from flask import Blueprint, request, jsonify, send_file, current_app
 from werkzeug.utils import secure_filename
 import os
 import logging
@@ -26,6 +26,12 @@ bp = Blueprint('upload', __name__, url_prefix='/api/upload')
 
 ALLOWED_EXTENSIONS = {'pdf', 'xlsx', 'csv'}
 
+
+def get_upload_folder():
+    upload_folder = current_app.config.get('UPLOAD_FOLDER', '/tmp/uploads')
+    os.makedirs(upload_folder, exist_ok=True)
+    return upload_folder
+
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
@@ -45,8 +51,7 @@ def upload_infrastructure():
     
     try:
         filename = secure_filename(file.filename)
-        upload_folder = 'uploads'
-        os.makedirs(upload_folder, exist_ok=True)
+        upload_folder = get_upload_folder()
         filepath = os.path.join(upload_folder, filename)
         
         # Check for duplicate file (same filename)
@@ -124,8 +129,7 @@ def upload_code_analysis():
     
     try:
         filename = secure_filename(file.filename)
-        upload_folder = 'uploads'
-        os.makedirs(upload_folder, exist_ok=True)
+        upload_folder = get_upload_folder()
         filepath = os.path.join(upload_folder, filename)
         
         # Check for duplicate file (same filename)
@@ -929,8 +933,7 @@ def upload_industry_templates():
     
     try:
         filename = secure_filename(file.filename)
-        upload_folder = 'uploads'
-        os.makedirs(upload_folder, exist_ok=True)
+        upload_folder = get_upload_folder()
         filepath = os.path.join(upload_folder, filename)
         
         file.save(filepath)
