@@ -28,44 +28,47 @@ class BusinessCapabilityService:
         from sqlalchemy.orm import joinedload
         from sqlalchemy import func
         
-        # Query all CORENT applications (primary source of truth)
-        # Use left outer join to include ApplicationClassification data if it exists
-        query = db.session.query(
-            CorentData
-        ).outerjoin(
-            ApplicationClassification,
-            CorentData.app_id == ApplicationClassification.app_id
-        ).order_by(CorentData.app_name).distinct()
-        
-        # Get total count before pagination
-        total_count = db.session.query(
-            func.count(func.distinct(CorentData.id))
-        ).outerjoin(
-            ApplicationClassification,
-            CorentData.app_id == ApplicationClassification.app_id
-        ).scalar()
-        
-        # Apply pagination
-        paginated_apps = query.paginate(page=page, per_page=per_page, error_out=False)
-        
-        # Format results
+        corent_count = db.session.query(func.count(CorentData.id)).scalar() or 0
+
         applications = []
-        for corent_app in paginated_apps.items:
-            # Get corresponding classification if it exists
-            classification = db.session.query(ApplicationClassification).filter(
-                ApplicationClassification.app_id == corent_app.app_id
-            ).first()
-            
-            applications.append({
-                'app_id': corent_app.app_id,
-                'app_name': corent_app.app_name,
-                'business_owner': corent_app.business_owner or 'Unknown',
-                'architecture_type': corent_app.architecture_type or 'N/A',
-                'platform_host': corent_app.platform_host or 'N/A',
-                'application_type': classification.application_type if classification else 'N/A',
-                'install_type': corent_app.install_type or 'N/A',
-                'capability': classification.capabilities if classification else 'Unclassified'
-            })
+        total_count = 0
+
+        if corent_count > 0:
+            query = db.session.query(CorentData).order_by(CorentData.app_name)
+            total_count = query.count()
+            paginated_apps = query.paginate(page=page, per_page=per_page, error_out=False)
+
+            for corent_app in paginated_apps.items:
+                classification = db.session.query(ApplicationClassification).filter(
+                    ApplicationClassification.app_id == corent_app.app_id
+                ).first()
+
+                applications.append({
+                    'app_id': corent_app.app_id,
+                    'app_name': corent_app.app_name,
+                    'business_owner': corent_app.business_owner or 'Unknown',
+                    'architecture_type': corent_app.architecture_type or 'N/A',
+                    'platform_host': corent_app.platform_host or 'N/A',
+                    'application_type': classification.application_type if classification else 'N/A',
+                    'install_type': corent_app.install_type or 'N/A',
+                    'capability': classification.capabilities if classification else 'Unclassified'
+                })
+        else:
+            industry_query = db.session.query(IndustryData).order_by(IndustryData.app_name)
+            total_count = industry_query.count()
+            paginated_apps = industry_query.paginate(page=page, per_page=per_page, error_out=False)
+
+            for item in paginated_apps.items:
+                applications.append({
+                    'app_id': item.app_id,
+                    'app_name': item.app_name,
+                    'business_owner': item.business_owner or 'Unknown',
+                    'architecture_type': item.architecture_type or 'N/A',
+                    'platform_host': item.platform_host or 'N/A',
+                    'application_type': item.application_type or 'N/A',
+                    'install_type': item.install_type or 'N/A',
+                    'capability': item.capabilities or 'Unclassified'
+                })
         
         return {
             'applications': applications,

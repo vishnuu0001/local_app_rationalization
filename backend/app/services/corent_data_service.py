@@ -1,6 +1,7 @@
 """Service for extracting Corent data and populating CorentData table"""
 
 import logging
+import pandas as pd
 from app import db
 from app.models.corent_data import CorentData
 
@@ -139,3 +140,68 @@ class CorentDataService:
         except Exception as e:
             logger.error(f"[CorentData] Error retrieving all records: {str(e)}")
             return []
+
+    @staticmethod
+    def populate_from_excel_file(file_path):
+        """Load CorentData rows from uploaded Excel/CSV infrastructure file"""
+        try:
+            file_ext = file_path.lower().split('.')[-1]
+
+            if file_ext == 'csv':
+                dataframe = pd.read_csv(file_path)
+            else:
+                dataframe = pd.read_excel(file_path)
+
+            dataframe.columns = [str(col).strip() for col in dataframe.columns]
+
+            column_mapping = {
+                'APP ID': 'app_id',
+                'APP Name': 'app_name',
+                'ArchitectureType': 'architecture_type',
+                'BusinessOwner': 'business_owner',
+                'PlatformHost': 'platform_host',
+                'Server Type': 'server_type',
+                'Operating System': 'operating_system',
+                'Environment': 'environment',
+                'INSTALL TYPE': 'install_type',
+                'Cloud Suitability': 'cloud_suitability',
+                'Volume of External Dependencies': 'volume_external_dependencies',
+                'Deployment Geography': 'deployment_geography',
+            }
+
+            records_processed = 0
+
+            for _, row in dataframe.iterrows():
+                app_id_raw = row.get('APP ID')
+                if pd.isna(app_id_raw) or not str(app_id_raw).strip():
+                    continue
+
+                app_id = str(app_id_raw).strip()
+                corent_record = CorentData.query.filter_by(app_id=app_id).first()
+
+                if not corent_record:
+                    corent_record = CorentData(app_id=app_id)
+                    db.session.add(corent_record)
+
+                for source_col, target_field in column_mapping.items():
+                    if source_col in dataframe.columns:
+                        value = row.get(source_col)
+                        if pd.isna(value):
+                            value = None
+                        if isinstance(value, str):
+                            value = value.strip() if value else None
+                        setattr(corent_record, target_field, value)
+
+                if not corent_record.app_name:
+                    corent_record.app_name = app_id
+
+                records_processed += 1
+
+            db.session.commit()
+            logger.info(f"[CorentData] Loaded {records_processed} records from file: {file_path}")
+            return records_processed
+
+        except Exception as e:
+            logger.error(f"[CorentData] Error loading from Excel/CSV file {file_path}: {str(e)}", exc_info=True)
+            db.session.rollback()
+            return 0

@@ -118,6 +118,8 @@ def upload_infrastructure():
             )
             db.session.add(upload_record)
             db.session.commit()
+
+            loaded_records = CorentDataService.populate_from_excel_file(filepath)
             
             return jsonify({
                 'success': True,
@@ -125,7 +127,7 @@ def upload_infrastructure():
                 'filename': filename,
                 'is_update': existing_infra is not None,
                 'infrastructure': None,
-                'message': 'Excel/CSV file stored successfully. Use preview to view contents.'
+                'message': f'Excel/CSV file stored successfully. Loaded {loaded_records} Corent records for mapping.'
             }), 201
         else:
             return jsonify({'error': f'Unsupported file type: {file_ext}'}), 400
