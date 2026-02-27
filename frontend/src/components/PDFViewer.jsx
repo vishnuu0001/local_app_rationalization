@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { Download } from 'lucide-react';
+import { API_BASE } from '../services/api';
 
 const PDFViewer = ({ fileId, filename, onClose, isInline = true }) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  const apiBase = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
-  const documentUrl = `${apiBase}/upload/pdf/${fileId}`;
+  const documentUrl = `${API_BASE}/upload/pdf/${fileId}`;
 
   const handleDownload = () => {
     const link = document.createElement('a');

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Download, ChevronLeft, ChevronRight } from 'lucide-react';
 import * as XLSX from 'xlsx';
+import { API_BASE } from '../services/api';
 
 const FileViewer = ({ fileId, filename, onClose, isInline = true }) => {
   const [error, setError] = useState(null);
@@ -10,8 +11,7 @@ const FileViewer = ({ fileId, filename, onClose, isInline = true }) => {
   const [sheetNames, setSheetNames] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
 
-  const apiBase = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
-  const fileUrl = `${apiBase}/upload/pdf/${fileId}`;
+  const fileUrl = `${API_BASE}/upload/pdf/${fileId}`;
   
   // Determine file type from filename
   const getFileType = (name) => {
