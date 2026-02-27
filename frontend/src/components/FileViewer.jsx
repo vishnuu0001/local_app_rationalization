@@ -31,8 +31,16 @@ const FileViewer = ({ fileId, filename, onClose, isInline = true }) => {
         params: { max_rows: 500 }
       })
         .then(response => {
+          if (!response || typeof response.data !== 'object' || response.data === null) {
+            throw new Error('Invalid preview response from server');
+          }
+
           const sheetNameList = response.data?.sheet_names || [];
           const previewSheets = response.data?.sheets || {};
+
+          if (!Array.isArray(sheetNameList) || sheetNameList.length === 0) {
+            throw new Error('No sheet metadata found in preview response');
+          }
 
           const sheetsByIndex = {};
           sheetNameList.forEach((name, idx) => {

@@ -3,7 +3,7 @@ import axios from 'axios';
 const CONFIGURED_API_BASE = process.env.REACT_APP_API_URL || (
   window.location.hostname === 'localhost'
     ? 'http://localhost:5000/api'
-    : '/api'
+    : 'https://app-rationalization-system.vercel.app/api'
 );
 
 export const API_BASE = CONFIGURED_API_BASE.replace(/\/+$/, '');
