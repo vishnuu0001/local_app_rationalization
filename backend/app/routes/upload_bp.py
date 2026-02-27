@@ -3,6 +3,7 @@ from werkzeug.utils import secure_filename
 import os
 import logging
 import uuid
+import math
 import pandas as pd
 from datetime import datetime
 from app import db
@@ -309,9 +310,19 @@ def preview_uploaded_file(file_id):
 
         file_ext = os.path.splitext(file_path)[1].lower()
 
+        def sanitize_json_value(value):
+            if isinstance(value, dict):
+                return {k: sanitize_json_value(v) for k, v in value.items()}
+            if isinstance(value, list):
+                return [sanitize_json_value(v) for v in value]
+            if isinstance(value, float) and math.isnan(value):
+                return None
+            return value
+
         def to_preview_records(dataframe):
-            dataframe = dataframe.where(pd.notnull(dataframe), None)
-            return dataframe.head(max_rows).to_dict(orient='records')
+            dataframe = dataframe.astype(object).where(pd.notnull(dataframe), None)
+            records = dataframe.head(max_rows).to_dict(orient='records')
+            return sanitize_json_value(records)
 
         def fallback_sheet_preview(sheet_name):
             raw_dataframe = pd.read_excel(file_path, sheet_name=sheet_name, header=None)
@@ -343,8 +354,8 @@ def preview_uploaded_file(file_id):
                 return []
 
             data_rows.columns = normalized_headers
-            data_rows = data_rows.where(pd.notnull(data_rows), None)
-            return data_rows.to_dict(orient='records')
+            data_rows = data_rows.astype(object).where(pd.notnull(data_rows), None)
+            return sanitize_json_value(data_rows.to_dict(orient='records'))
 
         if file_ext == '.csv':
             dataframe = pd.read_csv(file_path)
