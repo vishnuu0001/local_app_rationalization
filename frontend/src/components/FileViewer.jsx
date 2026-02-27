@@ -5,16 +5,13 @@ import * as XLSX from 'xlsx';
 const FileViewer = ({ fileId, filename, onClose, isInline = true }) => {
   const [error, setError] = useState(null);
   const [excelData, setExcelData] = useState(null);
+  const [isLoadingExcel, setIsLoadingExcel] = useState(false);
   const [currentSheet, setCurrentSheet] = useState(0);
   const [sheetNames, setSheetNames] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
 
-  // Use explicit backend URL to avoid dev server interception
-  const backendUrl = window.location.hostname === 'localhost' 
-    ? 'http://localhost:5000'
-    : `${window.location.protocol}//${window.location.hostname}:5000`;
-  
-  const fileUrl = `${backendUrl}/api/upload/pdf/${fileId}`;
+  const apiBase = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+  const fileUrl = `${apiBase}/upload/pdf/${fileId}`;
   
   // Determine file type from filename
   const getFileType = (name) => {
@@ -29,8 +26,15 @@ const FileViewer = ({ fileId, filename, onClose, isInline = true }) => {
   // Load and parse Excel file
   useEffect(() => {
     if (fileType === 'excel') {
+      setIsLoadingExcel(true);
+      setError(null);
       fetch(fileUrl, { mode: 'cors' })
-        .then(response => response.arrayBuffer())
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`HTTP ${response.status}`);
+          }
+          return response.arrayBuffer();
+        })
         .then(data => {
           const workbook = XLSX.read(data, { type: 'array' });
           setSheetNames(workbook.SheetNames);
@@ -42,8 +46,10 @@ const FileViewer = ({ fileId, filename, onClose, isInline = true }) => {
           });
           setExcelData(sheets);
           setCurrentSheet(0);
+          setIsLoadingExcel(false);
         })
         .catch(err => {
+          setIsLoadingExcel(false);
           setError('Failed to load Excel file: ' + err.message);
         });
     }
@@ -192,9 +198,13 @@ const FileViewer = ({ fileId, filename, onClose, isInline = true }) => {
                     </table>
                   </div>
                 </div>
-              ) : (
+              ) : isLoadingExcel ? (
                 <div className="p-8 bg-gray-50 text-center">
                   <p className="text-gray-500 text-sm">Loading Excel file...</p>
+                </div>
+              ) : (
+                <div className="p-8 bg-yellow-50 text-center">
+                  <p className="text-yellow-700 text-sm">No Excel data available for preview.</p>
                 </div>
               )}
             </div>

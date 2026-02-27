@@ -5,12 +5,8 @@ const PDFViewer = ({ fileId, filename, onClose, isInline = true }) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  // Use explicit backend URL to avoid dev server interception
-  const backendUrl = window.location.hostname === 'localhost' 
-    ? 'http://localhost:5000'
-    : `${window.location.protocol}//${window.location.hostname}:5000`;
-  
-  const documentUrl = `${backendUrl}/api/upload/pdf/${fileId}`;
+  const apiBase = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+  const documentUrl = `${apiBase}/upload/pdf/${fileId}`;
 
   const handleDownload = () => {
     const link = document.createElement('a');
