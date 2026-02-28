@@ -39,16 +39,16 @@ def create_app(config_name=None):
     cors_origins = os.getenv('CORS_ORIGINS', '*')
     try:
         if cors_origins == '*':
-            CORS(app, resources={r"/api/*": {"origins": "*"}})
+            CORS(app, resources={r"/*": {"origins": "*"}})
         else:
             # Support comma-separated list of origins
             origins_list = [origin.strip() for origin in cors_origins.split(',') if origin.strip()]
             if not origins_list:
                 origins_list = ['*']
-            CORS(app, resources={r"/api/*": {"origins": origins_list}})
+            CORS(app, resources={r"/*": {"origins": origins_list}})
     except Exception as e:
         app.logger.warning(f"Invalid CORS_ORIGINS configuration ({cors_origins}): {str(e)}. Falling back to '*'.")
-        CORS(app, resources={r"/api/*": {"origins": "*"}})
+        CORS(app, resources={r"/*": {"origins": "*"}})
     
     # Create upload folder if it doesn't exist
     os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)

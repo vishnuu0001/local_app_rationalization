@@ -1,6 +1,12 @@
 import axios from 'axios';
 
-const CONFIGURED_API_BASE = process.env.REACT_APP_API_URL || (
+const ensureApiSuffix = (url) => {
+  if (!url) return url;
+  const trimmedUrl = url.replace(/\/+$/, '');
+  return trimmedUrl.endsWith('/api') ? trimmedUrl : `${trimmedUrl}/api`;
+};
+
+const CONFIGURED_API_BASE = ensureApiSuffix(process.env.REACT_APP_API_URL) || (
   window.location.hostname === 'localhost'
     ? 'http://localhost:5000/api'
     : 'https://app-rationalization-system.vercel.app/api'
