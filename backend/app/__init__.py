@@ -1,12 +1,15 @@
 import os
 import importlib
+from pathlib import Path
 from dotenv import load_dotenv
 from flask import Flask
 from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import text
 
-load_dotenv()
+# Use absolute path so load_dotenv works regardless of working directory (e.g. IIS FastCGI)
+_env_path = Path(__file__).resolve().parent.parent / '.env'
+load_dotenv(dotenv_path=_env_path, override=False)
 
 db = SQLAlchemy()
 

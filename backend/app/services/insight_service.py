@@ -72,6 +72,7 @@ class InsightService:
         prog_lang_count = len(code_insights['programming_languages'])
         if code_app_count == 0 and latest_correlation:
             import json as _json
+            from collections import Counter as _Counter
             try:
                 corr_data = (
                     _json.loads(latest_correlation.correlation_data)
@@ -79,13 +80,75 @@ class InsightService:
                     else latest_correlation.correlation_data
                 )
                 corr_layer = corr_data.get('correlation_layer', [])
-                code_app_count = len([c for c in corr_layer if c.get('cast_item')])
-                langs = set(
-                    c['cast_item'].get('language') or c['cast_item'].get('programming_language', '')
-                    for c in corr_layer
-                    if c.get('cast_item') and (c['cast_item'].get('language') or c['cast_item'].get('programming_language'))
+                cast_entries = [c['cast_item'] for c in corr_layer if c.get('cast_item')]
+                code_app_count = len(cast_entries)
+
+                # Build language counts
+                lang_counter = _Counter(
+                    e.get('language') or e.get('programming_language', '')
+                    for e in cast_entries
+                    if e.get('language') or e.get('programming_language')
                 )
-                prog_lang_count = len(langs)
+                prog_lang_count = len(lang_counter)
+
+                # Build architecture components list
+                arch_components = [
+                    {
+                        'app_id': e.get('app_id', ''),
+                        'app_name': e.get('app_name', ''),
+                        'language': e.get('language') or e.get('programming_language') or 'Unknown',
+                        'cloud_suitability': e.get('cloud_suitability', ''),
+                        'source_code': e.get('source_code_availability', ''),
+                        'type': e.get('application_architecture', 'Unknown'),
+                        'component_coupling': e.get('component_coupling', 'N/A')
+                    }
+                    for e in cast_entries
+                ]
+
+                # Build internal dependencies
+                int_deps = {}
+                for e in cast_entries:
+                    vol = e.get('volume_external_dependencies')
+                    if vol:
+                        try:
+                            dep_count = int(vol)
+                        except (ValueError, TypeError):
+                            dep_count = vol
+                        int_deps[e.get('app_id', '')] = {
+                            'app_name': e.get('app_name', e.get('app_id', '')),
+                            'dependency_count': dep_count
+                        }
+
+                # Rebuild repo_app_mapping
+                repo_mapping = [
+                    {
+                        'app_id': e.get('app_id', ''),
+                        'app_name': e.get('app_name', e.get('app_id', '')),
+                        'repo': e.get('repo', 'Unknown'),
+                        'language': e.get('language') or e.get('programming_language') or 'Unknown',
+                        'framework': e.get('framework') or e.get('application_architecture') or 'Unknown',
+                        'loc_k': e.get('loc_k', 0),
+                        'quality_score': e.get('code_design', 0),
+                        'cloud_ready': (e.get('cloud_suitability') or '').lower() in ('high', 'yes', 'cloud-ready')
+                    }
+                    for e in cast_entries
+                ]
+
+                # Update code_insights in-place with correlation-derived data
+                code_insights = {
+                    'total_cast_items': code_app_count,
+                    'total_inventory_items': len(app_inv_items),
+                    'programming_languages': dict(lang_counter.most_common()),
+                    'cloud_readiness': {},
+                    'component_coupling': {},
+                    'total_items': code_app_count,
+                    'dashboard_format': {
+                        'programming_languages': dict(lang_counter.most_common()),
+                        'repo_app_mapping': repo_mapping,
+                        'architecture_components': arch_components,
+                        'internal_dependencies': int_deps
+                    }
+                }
             except Exception:
                 pass
 
