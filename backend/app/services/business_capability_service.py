@@ -197,11 +197,18 @@ class BusinessCapabilityService:
         ).all()
         
         # Filter for the requested capability
+        # Normalize helper: strip common suffixes like "(Provides)" for loose matching
+        def normalize_cap(c):
+            return c.strip().removesuffix(' (Provides)').removesuffix('(Provides)').strip().lower()
+
+        normalized_requested = normalize_cap(capability_name)
+
         apps = []
         for app in industry_apps:
             # Handle comma-separated capabilities
             caps = [c.strip() for c in str(app.capabilities).split(',') if c.strip()]
-            if capability_name in caps:
+            # Match on exact string OR normalized (strips "(Provides)" suffix)
+            if capability_name in caps or any(normalize_cap(c) == normalized_requested for c in caps):
                 apps.append(app)
         
         applications = []

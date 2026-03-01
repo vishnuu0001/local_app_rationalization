@@ -30,11 +30,21 @@ Use your current repo path (example):
 Run in PowerShell from `backend`:
 
 ```powershell
-python -m venv venv
-.\venv\Scripts\Activate.ps1
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip
 pip install -r requirements.txt
 pip install wfastcgi
+wfastcgi-enable
+```
+
+> Important: `wfastcgi-enable` must be run in an **Administrator PowerShell** (it updates IIS global `applicationHost.config`).
+
+If you see `Cannot read configuration file due to insufficient permissions`, open an elevated PowerShell and run:
+
+```powershell
+Set-Location E:\techmaapprationalization\local_app_rationalization\backend
+.\.venv\Scripts\Activate.ps1
 wfastcgi-enable
 ```
 
@@ -47,8 +57,20 @@ FLASK_ENV=production
 FLASK_DEBUG=false
 DATABASE_PROVIDER=sqlite
 DATABASE_PATH=E:/techmaapprationalization/local_app_rationalization/backend/instance/infra_assessment.db
-SECRET_KEY=change-this-to-a-strong-secret
+SECRET_KEY=Zxcvbnm@0806@1973
 CORS_ORIGINS=http://localhost:3001,http://127.0.0.1:3001
+```
+
+Recommended for seamless local React dev (`3000`) and IIS frontend (`3001`):
+
+```env
+CORS_ORIGINS=http://localhost:3000,http://127.0.0.1:3000,http://localhost:3001,http://127.0.0.1:3001
+```
+
+Optional strict mode (disable automatic localhost CORS allowances in backend):
+
+```env
+INCLUDE_LOCALHOST_CORS_ORIGINS=false
 ```
 
 > If frontend is served on a different IIS binding, add that origin as well.
@@ -66,14 +88,14 @@ Use/update `backend/web.config` with correct absolute paths:
            path="*"
            verb="*"
            modules="FastCgiModule"
-           scriptProcessor="E:\\techmaapprationalization\\local_app_rationalization\\backend\\venv\\Scripts\\python.exe|E:\\techmaapprationalization\\local_app_rationalization\\backend\\venv\\Lib\\site-packages\\wfastcgi.py"
+           scriptProcessor="E:\\techmaapprationalization\\local_app_rationalization\\backend\\.venv\\Scripts\\python.exe|E:\\techmaapprationalization\\local_app_rationalization\\backend\\.venv\\Lib\\site-packages\\wfastcgi.py"
            resourceType="Unspecified"
            requireAccess="Script" />
     </handlers>
 
     <fastCgi>
-      <application fullPath="E:\\techmaapprationalization\\local_app_rationalization\\backend\\venv\\Scripts\\python.exe"
-                   arguments="E:\\techmaapprationalization\\local_app_rationalization\\backend\\venv\\Lib\\site-packages\\wfastcgi.py"
+      <application fullPath="E:\\techmaapprationalization\\local_app_rationalization\\backend\\.venv\\Scripts\\python.exe"
+                   arguments="E:\\techmaapprationalization\\local_app_rationalization\\backend\\.venv\\Lib\\site-packages\\wfastcgi.py"
                    instanceMaxRequests="10000">
         <environmentVariables>
           <environmentVariable name="WSGI_HANDLER" value="run.app" />
@@ -121,6 +143,10 @@ Create `frontend/build/web.config`:
   <system.webServer>
     <rewrite>
       <rules>
+        <rule name="ApiProxy" stopProcessing="true">
+          <match url="^api/(.*)" />
+          <action type="Rewrite" url="http://localhost:5000/api/{R:1}" />
+        </rule>
         <rule name="ReactRoutes" stopProcessing="true">
           <match url=".*" />
           <conditions logicalGrouping="MatchAll">
@@ -134,6 +160,8 @@ Create `frontend/build/web.config`:
   </system.webServer>
 </configuration>
 ```
+
+> For API proxy rewrite to work, install and enable **Application Request Routing (ARR)** and enable proxy in IIS Manager (`Server` → `Application Request Routing Cache` → `Server Proxy Settings` → `Enable proxy`).
 
 ## 5) Create IIS sites
 

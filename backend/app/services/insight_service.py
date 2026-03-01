@@ -67,11 +67,35 @@ class InsightService:
         correlation_insights = InsightService._analyze_correlation(latest_correlation)
         risk_assessment = InsightService._assess_risks(corent_items, cast_items, app_inv_items)
         
+        # When IndustryData is used (cast_items empty), derive code metrics from correlation layer
+        code_app_count = len(cast_items)
+        prog_lang_count = len(code_insights['programming_languages'])
+        if code_app_count == 0 and latest_correlation:
+            import json as _json
+            try:
+                corr_data = (
+                    _json.loads(latest_correlation.correlation_data)
+                    if isinstance(latest_correlation.correlation_data, str)
+                    else latest_correlation.correlation_data
+                )
+                corr_layer = corr_data.get('correlation_layer', [])
+                code_app_count = len([c for c in corr_layer if c.get('cast_item')])
+                langs = set(
+                    c['cast_item'].get('language') or c['cast_item'].get('programming_language', '')
+                    for c in corr_layer
+                    if c.get('cast_item') and (c['cast_item'].get('language') or c['cast_item'].get('programming_language'))
+                )
+                prog_lang_count = len(langs)
+            except Exception:
+                pass
+
+        total_servers = len(set(c.platform_host for c in corent_items if c.platform_host))
+
         # Generate summary metrics
         summary = {
             'total_applications': len(set(i.app_id for i in corent_items)),
             'infrastructure_applications': len(corent_items),
-            'code_applications': len(cast_items),
+            'code_applications': code_app_count,
             'application_inventory_items': len(app_inv_items),
             'correlation_status': 'completed' if latest_correlation else 'not_started',
             'matched_applications': (
@@ -83,9 +107,10 @@ class InsightService:
             'data_quality_score': InsightService._calculate_data_quality_score(
                 corent_items, cast_items, app_inv_items
             ),
-            'total_servers': len(set(c.platform_host for c in corent_items if c.platform_host)),
+            'total_servers': total_servers,
+            'unique_servers': total_servers,  # alias for frontend compatibility
             'unique_technologies': len(infrastructure_insights['tech_stack']),
-            'programming_languages': len(code_insights['programming_languages']),
+            'programming_languages': prog_lang_count,
             'high_risk_applications': risk_assessment['high_risk_count'],
             'cloud_ready_percentage': risk_assessment['cloud_ready_percentage'],
             'estimated_annual_maintenance': InsightService._estimate_maintenance_cost(

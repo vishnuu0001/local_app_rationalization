@@ -46,10 +46,17 @@ const FileUpload = () => {
   const fetchUploadedFiles = async () => {
     try {
       const response = await getUploadedFiles();
-      const infraFiles = response.data.files.filter(f => f.type === 'Infrastructure');
+      const files = Array.isArray(response?.data?.files) ? response.data.files : [];
+      const infraFiles = files.filter(f => f.type === 'Infrastructure');
       setUploadedFiles(infraFiles);
+
+      if (!Array.isArray(response?.data?.files)) {
+        console.error('Unexpected files response shape:', response?.data);
+      }
     } catch (error) {
       console.error('Error fetching files:', error);
+      toast.error('Unable to fetch uploaded files. Please verify API routing configuration.');
+      setUploadedFiles([]);
     }
   };
 
@@ -75,7 +82,12 @@ const FileUpload = () => {
       setSelectedFile(null);
       await fetchUploadedFiles();
     } catch (error) {
-      toast.error(error.response?.data?.error || 'Assessment failed');
+      const status = error?.response?.status;
+      if (status === 405) {
+        toast.error('Upload endpoint is not reachable (HTTP 405). Configure IIS /api proxy routing to backend.');
+      } else {
+        toast.error(error.response?.data?.error || 'Assessment failed');
+      }
     } finally {
       setUploading(false);
     }

@@ -1119,7 +1119,7 @@ def get_industry_data(file_id):
         
         paginated_data = IndustryData.query.filter_by(
             template_id=template.id
-        ).paginate(page=page, per_page=per_page, error_out=False)
+        ).order_by(IndustryData.id.asc()).paginate(page=page, per_page=per_page, error_out=False)
         
         data = [record.to_dict() for record in paginated_data.items]
         
@@ -1177,7 +1177,7 @@ def preview_industry_template(file_id):
         # Get first 20 records
         records = IndustryData.query.filter_by(
             template_id=template.id
-        ).limit(20).all()
+        ).order_by(IndustryData.id.asc()).limit(20).all()
         
         preview_data = [record.to_dict() for record in records]
         

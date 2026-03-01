@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useDropzone } from 'react-dropzone';
-import { uploadIndustryTemplates, getIndustryTemplates, deleteIndustryTemplate, previewIndustryTemplate } from '../services/api';
+import { uploadIndustryTemplates, getIndustryTemplates, deleteIndustryTemplate, getIndustryData } from '../services/api';
 import { toast } from 'react-toastify';
-import { Eye, Trash2 } from 'lucide-react';
+import { Eye, Trash2, ChevronLeft, ChevronRight } from 'lucide-react';
 import LoadingSpinner from './LoadingSpinner';
 
 const IndustryTemplates = () => {
@@ -10,11 +10,15 @@ const IndustryTemplates = () => {
   const [selectedFile, setSelectedFile] = useState(null);
   const [uploadedTemplates, setUploadedTemplates] = useState([]);
   const [previewingTemplate, setPreviewingTemplate] = useState(null);
-  const [previewData, setPreviewData] = useState(null);
+  const [previewData, setPreviewData] = useState([]);
+  const [previewPagination, setPreviewPagination] = useState({});
+  const [previewLoading, setPreviewLoading] = useState(false);
   const [showPreview, setShowPreview] = useState(false);
   const [deleting, setDeleting] = useState(null);
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');
+  const [currentPage, setCurrentPage] = useState(1);
+  const [perPage, setPerPage] = useState(20);
   const previewRef = useRef(null);
 
   // Load uploaded templates on component mount
@@ -69,15 +73,25 @@ const IndustryTemplates = () => {
     }
   };
 
-  const handlePreview = async (template) => {
+  const fetchPreviewPage = async (template, page = 1, pageSize = perPage) => {
     try {
-      setPreviewingTemplate(template);
-      const response = await previewIndustryTemplate(template.file_id);
-      setPreviewData(response.data);
+      setPreviewLoading(true);
+      const response = await getIndustryData(template.file_id, page, pageSize);
+      setPreviewData(response.data.data || []);
+      setPreviewPagination(response.data.pagination || {});
+      setCurrentPage(page);
       setShowPreview(true);
     } catch (error) {
       toast.error('Failed to load preview');
+    } finally {
+      setPreviewLoading(false);
     }
+  };
+
+  const handlePreview = async (template) => {
+    setPreviewingTemplate(template);
+    setSearchTerm('');
+    await fetchPreviewPage(template, 1, perPage);
   };
 
   const handleDeleteTemplate = async (templateId, fileId) => {
@@ -104,7 +118,30 @@ const IndustryTemplates = () => {
   const handleClosePreview = () => {
     setShowPreview(false);
     setPreviewingTemplate(null);
-    setPreviewData(null);
+    setPreviewData([]);
+    setPreviewPagination({});
+    setCurrentPage(1);
+  };
+
+  const handlePreviousPage = async () => {
+    if (previewPagination.has_prev && previewingTemplate) {
+      await fetchPreviewPage(previewingTemplate, currentPage - 1, perPage);
+    }
+  };
+
+  const handleNextPage = async () => {
+    if (previewPagination.has_next && previewingTemplate) {
+      await fetchPreviewPage(previewingTemplate, currentPage + 1, perPage);
+    }
+  };
+
+  const handlePerPageChange = async (event) => {
+    const newPerPage = parseInt(event.target.value, 10);
+    setPerPage(newPerPage);
+
+    if (previewingTemplate) {
+      await fetchPreviewPage(previewingTemplate, 1, newPerPage);
+    }
   };
 
   const getColumnTypes = () => [
@@ -267,7 +304,7 @@ const IndustryTemplates = () => {
         </div>
 
         {/* Preview Section */}
-        {showPreview && previewData && (
+        {showPreview && (
           <div ref={previewRef} className="mt-16 mb-8 bg-white border border-gray-200 rounded-lg">
             {/* Preview Header */}
             <div className="border-b border-gray-200 px-8 py-6">
@@ -304,17 +341,19 @@ const IndustryTemplates = () => {
                 />
               </div>
               <p className="text-sm text-gray-600">
-                Showing {previewData.preview_data?.filter((row) =>
+                Showing {previewData?.filter((row) =>
                   Object.values(row).some((val) =>
                     val && val.toString().toLowerCase().includes(searchTerm.toLowerCase())
                   )
-                ).length || 0} of {previewData.total_records || 0} records
+                ).length || 0} of {previewPagination.total || 0} records
               </p>
             </div>
 
             {/* Preview Table */}
             <div className="px-8 py-6">
-              {previewData.preview_data && previewData.preview_data.length > 0 ? (
+              {previewLoading ? (
+                <div className="text-center py-8 text-gray-500">Loading preview data...</div>
+              ) : previewData && previewData.length > 0 ? (
                 <div className="overflow-x-auto">
                   <table className="w-full">
                     <thead>
@@ -327,7 +366,7 @@ const IndustryTemplates = () => {
                       </tr>
                     </thead>
                     <tbody>
-                      {previewData.preview_data
+                      {previewData
                         .filter((row) =>
                           Object.values(row).some((val) =>
                             val && val.toString().toLowerCase().includes(searchTerm.toLowerCase())
@@ -351,6 +390,52 @@ const IndustryTemplates = () => {
               ) : (
                 <div className="text-center py-8 text-gray-500">No preview data available</div>
               )}
+            </div>
+
+            {/* Pagination Footer */}
+            <div className="border-t border-gray-200 bg-gray-50 px-8 py-4">
+              <div className="flex justify-between items-center mb-4">
+                <p className="text-sm text-gray-600">
+                  Page {previewPagination.page || 1} of {previewPagination.pages || 1} | Total: {previewPagination.total || 0} records
+                </p>
+                <select
+                  value={perPage}
+                  onChange={handlePerPageChange}
+                  className="px-3 py-1 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-blue-500"
+                >
+                  <option value={10}>10 per page</option>
+                  <option value={20}>20 per page</option>
+                  <option value={50}>50 per page</option>
+                  <option value={100}>100 per page</option>
+                </select>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={handlePreviousPage}
+                  disabled={!previewPagination.has_prev || previewLoading}
+                  className={`flex items-center gap-1 px-3 py-2 rounded-lg font-medium transition-colors ${
+                    previewPagination.has_prev && !previewLoading
+                      ? 'bg-blue-600 text-white hover:bg-blue-700'
+                      : 'bg-gray-300 text-gray-500 cursor-not-allowed'
+                  }`}
+                >
+                  <ChevronLeft size={16} />
+                  Previous
+                </button>
+                <button
+                  onClick={handleNextPage}
+                  disabled={!previewPagination.has_next || previewLoading}
+                  className={`flex items-center gap-1 px-3 py-2 rounded-lg font-medium transition-colors ${
+                    previewPagination.has_next && !previewLoading
+                      ? 'bg-blue-600 text-white hover:bg-blue-700'
+                      : 'bg-gray-300 text-gray-500 cursor-not-allowed'
+                  }`}
+                >
+                  Next
+                  <ChevronRight size={16} />
+                </button>
+              </div>
             </div>
           </div>
         )}

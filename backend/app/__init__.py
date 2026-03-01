@@ -11,6 +11,38 @@ load_dotenv()
 db = SQLAlchemy()
 
 
+DEFAULT_LOCAL_CORS_ORIGINS = [
+    'http://localhost:3000',
+    'http://127.0.0.1:3000',
+    'http://localhost:3001',
+    'http://127.0.0.1:3001',
+]
+
+
+def _resolve_cors_origins(raw_origins, include_local_defaults=True):
+    """Resolve CORS origins from env and include safe localhost defaults."""
+    if not raw_origins:
+        return DEFAULT_LOCAL_CORS_ORIGINS if include_local_defaults else '*'
+
+    normalized_value = raw_origins.strip()
+    if normalized_value == '*':
+        return '*'
+
+    configured_origins = [origin.strip() for origin in normalized_value.split(',') if origin.strip()]
+    if include_local_defaults:
+        merged_origins = configured_origins + [
+            origin for origin in DEFAULT_LOCAL_CORS_ORIGINS
+            if origin not in configured_origins
+        ]
+    else:
+        merged_origins = configured_origins
+
+    if merged_origins:
+        return merged_origins
+
+    return DEFAULT_LOCAL_CORS_ORIGINS if include_local_defaults else '*'
+
+
 def create_app(config_name=None):
     """
     Create and configure the Flask application.
@@ -35,17 +67,19 @@ def create_app(config_name=None):
     # Initialize extensions
     db.init_app(app)
     
-    # CORS configuration - customize for production
-    cors_origins = os.getenv('CORS_ORIGINS', '*')
+    # CORS configuration
+    # Keeps localhost dev (3000) and IIS frontend (3001) working by default,
+    # while still honoring explicit CORS_ORIGINS values.
+    cors_origins = os.getenv('CORS_ORIGINS', '')
+    include_localhost_origins = os.getenv('INCLUDE_LOCALHOST_CORS_ORIGINS', 'true').lower() in {
+        '1', 'true', 'yes', 'on'
+    }
     try:
-        if cors_origins == '*':
+        resolved_origins = _resolve_cors_origins(cors_origins, include_localhost_origins)
+        if resolved_origins == '*':
             CORS(app, resources={r"/*": {"origins": "*"}})
         else:
-            # Support comma-separated list of origins
-            origins_list = [origin.strip() for origin in cors_origins.split(',') if origin.strip()]
-            if not origins_list:
-                origins_list = ['*']
-            CORS(app, resources={r"/*": {"origins": origins_list}})
+            CORS(app, resources={r"/*": {"origins": resolved_origins}})
     except Exception as e:
         app.logger.warning(f"Invalid CORS_ORIGINS configuration ({cors_origins}): {str(e)}. Falling back to '*'.")
         CORS(app, resources={r"/*": {"origins": "*"}})
