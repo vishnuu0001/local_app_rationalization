@@ -7,6 +7,7 @@ const BusinessCapabilityMapping = () => {
   const [loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
+  const [totalApplications, setTotalApplications] = useState(0);
   const [perPage] = useState(10);
   const [selectedCapability, setSelectedCapability] = useState(null);
   const [capabilityDetails, setCapabilityDetails] = useState(null);
@@ -23,6 +24,7 @@ const BusinessCapabilityMapping = () => {
       if (response.data?.data) {
         setApplications(response.data.data.applications || []);
         setTotalPages(response.data.data.pagination?.pages || 1);
+        setTotalApplications(response.data.data.pagination?.total || 0);
       }
       setLoading(false);
     } catch (err) {
@@ -372,10 +374,10 @@ const BusinessCapabilityMapping = () => {
                 <div className="flex items-center justify-between">
                   <div>
                     <h2 className="text-2xl font-bold text-white mb-1">Applications</h2>
-                    <p className="text-blue-100 text-sm">Total: {applications.length} applications across {totalPages} pages</p>
+                    <p className="text-blue-100 text-sm">Total: {totalApplications} applications across {totalPages} pages</p>
                   </div>
                   <div className="bg-blue-500 bg-opacity-50 px-4 py-2 rounded-lg">
-                    <p className="text-white font-semibold text-lg">{applications.length}/195</p>
+                    <p className="text-white font-semibold text-lg">Page {currentPage}/{totalPages}</p>
                   </div>
                 </div>
               </div>

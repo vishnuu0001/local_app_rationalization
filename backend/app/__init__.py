@@ -77,15 +77,27 @@ def create_app(config_name=None):
     include_localhost_origins = os.getenv('INCLUDE_LOCALHOST_CORS_ORIGINS', 'true').lower() in {
         '1', 'true', 'yes', 'on'
     }
+    _cors_kwargs = {
+        'supports_credentials': False,
+        'allow_headers': [
+            'Content-Type', 'Authorization', 'Accept',
+            'X-Requested-With', 'Origin', 'Cache-Control'
+        ],
+        'methods': ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS', 'HEAD'],
+        'expose_headers': ['Content-Disposition', 'Content-Length'],
+        'max_age': 600,
+        'send_wildcard': False,
+        'always_send': True,
+    }
     try:
         resolved_origins = _resolve_cors_origins(cors_origins, include_localhost_origins)
         if resolved_origins == '*':
-            CORS(app, resources={r"/*": {"origins": "*"}})
+            CORS(app, resources={r"/*": {"origins": "*"}}, **_cors_kwargs)
         else:
-            CORS(app, resources={r"/*": {"origins": resolved_origins}})
+            CORS(app, resources={r"/*": {"origins": resolved_origins}}, **_cors_kwargs)
     except Exception as e:
         app.logger.warning(f"Invalid CORS_ORIGINS configuration ({cors_origins}): {str(e)}. Falling back to '*'.")
-        CORS(app, resources={r"/*": {"origins": "*"}})
+        CORS(app, resources={r"/*": {"origins": "*"}}, **_cors_kwargs)
     
     # Create upload folder if it doesn't exist
     os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
