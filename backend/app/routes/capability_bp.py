@@ -52,17 +52,137 @@ def get_capability_analysis():
 @capability_bp.route('/details/<capability_name>', methods=['GET'])
 def get_capability_details(capability_name):
     """Get detailed view of applications for a specific capability"""
+    from app import db
+    from app.models.industry_data import IndustryData
+    from app.models.corent_data import CorentData
+    
     try:
-        result = BusinessCapabilityService.get_capability_details(capability_name)
+        # Query all industry apps
+        industry_apps = db.session.query(IndustryData).filter(
+            IndustryData.capabilities.isnot(None),
+            IndustryData.capabilities != ''
+        ).all()
+        
+        # Filter matching capability (simple substring match)
+        applications = []
+        for app in industry_apps:
+            # Check if capability name appears in the capabilities field
+            if capability_name.lower() in str(app.capabilities).lower():
+                # Get CorentData install_type
+                try:
+                    corent_record = db.session.query(CorentData.install_type).filter(
+                        CorentData.app_id == app.app_id
+                    ).first()
+                    install_type = corent_record.install_type if corent_record else 'N/A'
+                except:
+                    install_type = 'N/A'
+                
+                applications.append({
+                    'app_id': app.app_id,
+                    'app_name': app.app_name,
+                    'business_owner': app.business_owner or 'Unknown',
+                    'architecture_type': app.architecture_type or 'N/A',
+                    'platform_host': app.platform_host or 'N/A',
+                    'application_type': app.application_type or 'N/A',
+                    'install_type': install_type,
+                    'technology_stack': app.application_type or 'N/A'
+                })
+        
+        # Build analysis
+        if len(applications) > 1:
+            tech_stacks = {}
+            for app_dict in applications:
+                tech = app_dict['technology_stack']
+                if tech not in tech_stacks:
+                    tech_stacks[tech] = []
+                tech_stacks[tech].append(app_dict['app_name'])
+            
+            analysis = {
+                'total_apps': len(applications),
+                'is_elimination_candidate': True,
+                'elimination_reason': f'{len(applications)} applications provide this capability',
+                'technology_distribution': tech_stacks,
+                'consolidation_summary': {
+                    'apps_to_consolidate': len(applications),
+                    'apps_to_eliminate': max(1, len(applications) - 1),
+                    'consolidation_ratio': f'{len(applications)}:1'
+                }
+            }
+        else:
+            analysis = {
+                'total_apps': len(applications),
+                'is_elimination_candidate': False,
+                'elimination_reason': None,
+                'recommendation': 'No consolidation recommended' if len(applications) <= 1 else None
+            }
         
         return jsonify({
             'status': 'success',
-            'data': result
+            'data': {
+                'capability': capability_name,
+                'analysis': analysis,
+                'applications': applications
+            }
         }), 200
     except Exception as e:
         return jsonify({
             'status': 'error',
             'message': str(e)
+        }), 500
+
+
+
+@capability_bp.route('/debug/<capability_name>', methods=['GET'])
+def debug_capability_details(capability_name):
+    """DEBUG: Test the matching logic within Flask context"""
+    from app import db
+    from app.models.industry_data import IndustryData
+    
+    try:
+        # Get industry apps
+        industry_apps = db.session.query(
+            IndustryData.app_id,
+            IndustryData.app_name,
+            IndustryData.capabilities
+        ).filter(
+            IndustryData.capabilities.isnot(None),
+            IndustryData.capabilities != ''
+        ).all()
+        
+        total_apps = len(industry_apps)
+        
+        # Test matching
+        def normalize_cap(c):
+            return c.strip().removesuffix(' (Provides)').removesuffix('(Provides)').strip().lower()
+        
+        normalized_requested = normalize_cap(capability_name)
+        matched_count = 0
+        matches = []
+        
+        for app in industry_apps:
+            caps = [c.strip() for c in str(app.capabilities).split(',') if c.strip()]
+            if capability_name in caps or any(normalize_cap(c) == normalized_requested for c in caps):
+                matched_count += 1
+                matches.append({
+                    'app_id': app.app_id,
+                    'app_name': app.app_name,
+                    'caps': caps
+                })
+        
+        return jsonify({
+            'status': 'success',
+            'capability_requested': capability_name,
+            'capability_normalized': normalized_requested,
+            'total_apps_in_db': total_apps,
+            'matched_count': matched_count,
+            'first_3_matches': matches[:3]
+        }), 200
+    except Exception as e:
+        import traceback
+        return jsonify({
+            'status': 'error',
+            'message': str(e),
+            'traceback': traceback.format_exc()
         }), 500
 
 

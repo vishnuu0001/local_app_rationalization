@@ -182,66 +182,52 @@ class BusinessCapabilityService:
         """
         from app import db
         
-        # Get all apps with this capability from IndustryData (source of truth)
-        industry_apps = db.session.query(
-            IndustryData.app_id,
-            IndustryData.app_name,
-            IndustryData.business_owner,
-            IndustryData.architecture_type,
-            IndustryData.platform_host,
-            IndustryData.application_type,
-            IndustryData.capabilities
-        ).filter(
+        # Query ALL industry apps (no filtering initially)
+        ALL_apps = db.session.query(IndustryData).filter(
             IndustryData.capabilities.isnot(None),
             IndustryData.capabilities != ''
         ).all()
         
-        # Filter for the requested capability
-        # Normalize helper: strip common suffixes like "(Provides)" for loose matching
-        def normalize_cap(c):
-            return c.strip().removesuffix(' (Provides)').removesuffix('(Provides)').strip().lower()
-
-        normalized_requested = normalize_cap(capability_name)
-
-        apps = []
-        for app in industry_apps:
-            # Handle comma-separated capabilities
-            caps = [c.strip() for c in str(app.capabilities).split(',') if c.strip()]
-            # Match on exact string OR normalized (strips "(Provides)" suffix)
-            if capability_name in caps or any(normalize_cap(c) == normalized_requested for c in caps):
-                apps.append(app)
+        # Normalize the search term: strip "(Provides)"/"(Consumes)" suffixes for flexible matching
+        search_term = capability_name.lower().replace(' (provides)', '').replace(' (consumes)', '').strip()
         
+        # Build applications list - manually iterate and check
         applications = []
-        for app in apps:
-            # Get CorentData install_type if available
-            corent_record = db.session.query(CorentData.install_type).filter(
-                CorentData.app_id == app.app_id
-            ).first()
-            install_type = corent_record.install_type if corent_record else 'N/A'
+        for app in ALL_apps:
+            # Get capabilities for this app
+            caps_str = str(app.capabilities) if app.capabilities else ""
+            caps_lower = caps_str.lower().replace(' (provides)', '').replace(' (consumes)', '')
             
-            applications.append({
-                'app_id': app.app_id,
-                'app_name': app.app_name,
-                'business_owner': app.business_owner or 'Unknown',
-                'architecture_type': app.architecture_type or 'N/A',
-                'platform_host': app.platform_host or 'N/A',
-                'application_type': app.application_type or 'N/A',
-                'install_type': install_type,
-                'technology_stack': app.application_type or 'N/A'
-            })
+            # Substring match against normalized capabilities
+            if search_term in caps_lower or capability_name.lower() in caps_str.lower():
+                try:
+                    corent_record = db.session.query(CorentData.install_type).filter(
+                        CorentData.app_id == app.app_id
+                    ).first()
+                    install_type = corent_record.install_type if corent_record else 'N/A'
+                except:
+                    install_type = 'N/A'
+                
+                applications.append({
+                    'app_id': app.app_id,
+                    'app_name': app.app_name,
+                    'business_owner': app.business_owner or 'Unknown',
+                    'architecture_type': app.architecture_type or 'N/A',
+                    'platform_host': app.platform_host or 'N/A',
+                    'application_type': app.application_type or 'N/A',
+                    'install_type': install_type,
+                    'technology_stack': app.application_type or 'N/A'
+                })
         
-        # Analyze consolidation potential based on actual data
-        analysis = None
+        # Build consolidation analysis
         if len(applications) > 1:
-            # Check technology stacks for consolidation
             tech_stacks = {}
-            for app in applications:
-                tech = app['technology_stack']
+            for app_dict in applications:
+                tech = app_dict['technology_stack']
                 if tech not in tech_stacks:
                     tech_stacks[tech] = []
-                tech_stacks[tech].append(app['app_name'])
+                tech_stacks[tech].append(app_dict['app_name'])
             
-            # Determine consolidation type
             apps_to_consolidate = len(applications)
             apps_to_eliminate = max(1, apps_to_consolidate - 1)
             
@@ -262,7 +248,7 @@ class BusinessCapabilityService:
                 'total_apps': len(applications),
                 'is_elimination_candidate': False,
                 'elimination_reason': None,
-                'recommendation': 'Single application - already optimal. No consolidation needed.'
+                'recommendation': 'Single application - already optimal. No consolidation needed.' if len(applications) == 1 else 'No applications found for this capability.'
             }
         
         return {

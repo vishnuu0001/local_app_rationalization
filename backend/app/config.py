@@ -52,7 +52,8 @@ def get_database_uri():
             # Development: local file in instance folder
             instance_path = os.path.join(os.path.dirname(__file__), '..', 'instance')
             os.makedirs(instance_path, exist_ok=True)
-            return 'sqlite:///infra_assessment.db'
+            db_file = os.path.join(instance_path, 'infra_assessment.db')
+            return f'sqlite:///{db_file}'
 
 
 def get_sqlalchemy_options():
