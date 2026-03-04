@@ -2,7 +2,7 @@ import os
 import importlib
 from pathlib import Path
 from dotenv import load_dotenv
-from flask import Flask
+from flask import Flask, request, make_response
 from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import text
@@ -12,6 +12,24 @@ _env_path = Path(__file__).resolve().parent.parent / '.env'
 load_dotenv(dotenv_path=_env_path, override=False)
 
 db = SQLAlchemy()
+
+# Allowed CORS origins — read once at module load so the after_request hook
+# doesn't need to re-parse the env var on every request.
+_CORS_ALLOWED_ORIGINS = {
+    o.strip()
+    for o in os.getenv(
+        'CORS_ORIGINS',
+        'https://stratapp.org,https://www.stratapp.org,'
+        'http://localhost:3000,http://127.0.0.1:3000,'
+        'http://localhost:3001,http://127.0.0.1:3001',
+    ).split(',')
+    if o.strip()
+}
+
+_CORS_ALLOW_HEADERS = (
+    'Content-Type, Authorization, Accept, X-Requested-With, Origin, Cache-Control'
+)
+_CORS_ALLOW_METHODS = 'GET, POST, PUT, PATCH, DELETE, OPTIONS, HEAD'
 
 
 DEFAULT_LOCAL_CORS_ORIGINS = [
@@ -69,10 +87,13 @@ def create_app(config_name=None):
     
     # Initialize extensions
     db.init_app(app)
-    
-    # CORS configuration
-    # Keeps localhost dev (3000) and IIS frontend (3001) working by default,
-    # while still honoring explicit CORS_ORIGINS values.
+
+    # ------------------------------------------------------------------ #
+    #  CORS — three independent layers so the header is ALWAYS emitted    #
+    #  even if one layer fails under IIS / wfastcgi.                      #
+    # ------------------------------------------------------------------ #
+
+    # Layer 1: Flask-CORS (handles most cases automatically)
     cors_origins = os.getenv('CORS_ORIGINS', '')
     include_localhost_origins = os.getenv('INCLUDE_LOCALHOST_CORS_ORIGINS', 'true').lower() in {
         '1', 'true', 'yes', 'on'
@@ -95,8 +116,36 @@ def create_app(config_name=None):
         else:
             CORS(app, resources={r"/*": {"origins": resolved_origins}}, **_cors_kwargs)
     except Exception as e:
-        app.logger.warning(f"Invalid CORS_ORIGINS configuration ({cors_origins}): {str(e)}. Falling back to '*'.")
+        app.logger.warning(f"CORS init error ({e}). Falling back to '*'.")
         CORS(app, resources={r"/*": {"origins": "*"}}, **_cors_kwargs)
+
+    # Layer 2: Direct after_request hook — writes the header ourselves.
+    # This bypasses Flask-CORS internals entirely and is guaranteed to run
+    # for every response that leaves Flask, including under IIS/wfastcgi.
+    @app.after_request
+    def _apply_cors(response):
+        origin = request.headers.get('Origin', '')
+        if origin in _CORS_ALLOWED_ORIGINS:
+            response.headers['Access-Control-Allow-Origin'] = origin
+            response.headers['Access-Control-Allow-Headers'] = _CORS_ALLOW_HEADERS
+            response.headers['Access-Control-Allow-Methods'] = _CORS_ALLOW_METHODS
+            response.headers['Vary'] = 'Origin'
+        return response
+
+    # Layer 3: OPTIONS preflight — respond immediately with 200 so the
+    # browser's preflight check never hits a 405 or falls through to Flask.
+    @app.route('/', defaults={'path': ''}, methods=['OPTIONS'])
+    @app.route('/<path:path>', methods=['OPTIONS'])
+    def _options_preflight(path):
+        response = make_response('', 200)
+        origin = request.headers.get('Origin', '')
+        if origin in _CORS_ALLOWED_ORIGINS:
+            response.headers['Access-Control-Allow-Origin'] = origin
+            response.headers['Access-Control-Allow-Headers'] = _CORS_ALLOW_HEADERS
+            response.headers['Access-Control-Allow-Methods'] = _CORS_ALLOW_METHODS
+            response.headers['Access-Control-Max-Age'] = '600'
+            response.headers['Vary'] = 'Origin'
+        return response
     
     # Create upload folder if it doesn't exist
     os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
