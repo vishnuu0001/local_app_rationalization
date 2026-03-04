@@ -59,18 +59,13 @@ const Layout = ({ children }) => {
       <div className="w-64 bg-[#0d1b2e] text-white flex flex-col overflow-hidden shadow-2xl">
 
         {/* Logo / Brand */}
-        <div className="px-6 pt-6 pb-5 border-b border-white/8">
-          <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center shadow-lg">
-              <svg className="w-4.5 h-4.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18" />
-              </svg>
-            </div>
-            <div>
-              <h1 className="text-sm font-bold text-white leading-tight">App Rationalization</h1>
-              <p className="text-[10px] text-slate-400 mt-0.5">Assessment Platform</p>
-            </div>
-          </div>
+        <div className="px-5 pt-5 pb-4 border-b border-white/8 bg-white/95">
+          <img
+            src="/techmahindra-logo.svg"
+            alt="Tech Mahindra"
+            className="h-10 w-auto object-contain"
+          />
+          <p className="text-[10px] text-slate-500 mt-2 font-medium tracking-wide">App Rationalization Platform</p>
         </div>
 
         {/* Navigation */}
