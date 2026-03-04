@@ -87,7 +87,6 @@ def create_app(config_name=None):
         'expose_headers': ['Content-Disposition', 'Content-Length'],
         'max_age': 600,
         'send_wildcard': False,
-        'always_send': True,
     }
     try:
         resolved_origins = _resolve_cors_origins(cors_origins, include_localhost_origins)
