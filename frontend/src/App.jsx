@@ -13,6 +13,7 @@ import BusinessCapabilityMapping from './components/business-capability/Business
 import StandardizationERP from './components/business-capability/StandardizationERP';
 import FinalTraceabilityMatrix from './components/business-capability/FinalTraceabilityMatrix';
 import IndustryTemplates from './components/IndustryTemplates';
+import GoldenData from './components/GoldenData';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
               <Route path="/industry-templates" element={<IndustryTemplates />} />
               <Route path="/cast-analysis" element={<CASTAnalysis />} />
               <Route path="/analysis" element={<Analysis />} />
+              <Route path="/golden-data" element={<GoldenData />} />
               <Route path="/correlation" element={<CorrelationDashboard />} />
               <Route path="/capability/inventory" element={<BusinessCapabilityMapping />} />
               <Route path="/capability/standardization" element={<StandardizationERP />} />

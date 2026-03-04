@@ -159,6 +159,7 @@ def create_app(config_name=None):
         ('app.routes.visualization_bp', 'bp'),
         ('app.routes.correlation_bp', 'correlation_bp'),
         ('app.routes.capability_bp', 'capability_bp'),
+        ('app.routes.golden_data_bp', 'golden_data_bp'),
     ]
 
     for module_name, blueprint_attr in blueprint_modules:

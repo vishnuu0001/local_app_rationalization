@@ -164,4 +164,10 @@ export const initializeTestData = () => apiClient.post('/initialize-test-data');
 export const initializeDefaults = () =>
   apiClient.post('/initialize-defaults');
 
+// Golden Data endpoints
+export const generateGoldenData = () => apiClient.post('/golden-data/generate');
+export const getGoldenDataPreview = () => apiClient.get('/golden-data/preview');
+export const getGoldenDataDownloadUrl = () => `${API_BASE}/golden-data/download`;
+export const clearGoldenData = () => apiClient.post('/golden-data/clear');
+
 export default apiClient;

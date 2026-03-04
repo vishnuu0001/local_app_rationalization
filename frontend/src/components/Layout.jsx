@@ -40,7 +40,7 @@ const Layout = ({ children }) => {
             }`}
           >
             <span className="text-xl">🏠</span>
-            <span className="font-medium">Home / Dashboard</span>
+            <span className="font-medium">Overview</span>
           </Link>
 
           {/* Infra Scan - Corent Section */}
@@ -50,9 +50,7 @@ const Layout = ({ children }) => {
               className="w-full flex items-center gap-3 px-6 py-3 hover:bg-blue-700 transition-colors text-left"
             >
               <span className="text-xl">📊</span>
-              <span className="font-semibold flex-1">
-                Infra Scan - Corent
-              </span>
+              <span className="font-semibold flex-1">Infra Discovery</span>
               <span className={`text-lg transition-transform ${expandedSections.baseline ? 'rotate-180' : ''}`}>
                 ▼
               </span>
@@ -79,7 +77,7 @@ const Layout = ({ children }) => {
               className="w-full flex items-center gap-3 px-6 py-3 hover:bg-blue-700 transition-colors text-left"
             >
               <span className="text-xl">💻</span>
-              <span className="font-semibold flex-1">Software Intelligence - CAST</span>
+              <span className="font-semibold flex-1">App Insights</span>
               <span className={`text-lg transition-transform ${expandedSections.cast ? 'rotate-180' : ''}`}>
                 ▼
               </span>
@@ -106,9 +104,7 @@ const Layout = ({ children }) => {
               className="w-full flex items-center gap-3 px-6 py-3 hover:bg-blue-700 transition-colors text-left"
             >
               <span className="text-xl">🏭</span>
-              <span className="font-semibold flex-1">
-                Industry Templates
-              </span>
+              <span className="font-semibold flex-1">Templates</span>
               <span className={`text-lg transition-transform ${expandedSections.industry ? 'rotate-180' : ''}`}>
                 ▼
               </span>
@@ -135,7 +131,7 @@ const Layout = ({ children }) => {
               className="w-full flex items-center gap-3 px-6 py-3 hover:bg-blue-700 transition-colors text-left"
             >
               <span className="text-xl">⚡</span>
-              <span className="font-semibold flex-1">Correlation</span>
+              <span className="font-semibold flex-1">Insights Link</span>
               <span className={`text-lg transition-transform ${expandedSections.correlation ? 'rotate-180' : ''}`}>
                 ▼
               </span>
@@ -155,6 +151,17 @@ const Layout = ({ children }) => {
             )}
           </div>
 
+          {/* Golden Data */}
+          <Link
+            to="/golden-data"
+            className={`flex items-center gap-3 px-6 py-3 mt-2 transition-colors ${
+              isActive('/golden-data') ? 'bg-blue-700 border-l-4 border-white' : 'hover:bg-blue-700'
+            }`}
+          >
+            <span className="text-xl">🏅</span>
+            <span className="font-semibold">Golden Data</span>
+          </Link>
+
           {/* Business Capability Mapping Section */}
           <div className="mt-2">
             <button
@@ -162,7 +169,7 @@ const Layout = ({ children }) => {
               className="w-full flex items-center gap-3 px-6 py-3 hover:bg-blue-700 transition-colors text-left"
             >
               <span className="text-xl">📊</span>
-              <span className="font-semibold flex-1">Business Capability Mapping</span>
+              <span className="font-semibold flex-1">Capability Map</span>
               <span className={`text-lg transition-transform ${expandedSections.capability ? 'rotate-180' : ''}`}>
                 ▼
               </span>
