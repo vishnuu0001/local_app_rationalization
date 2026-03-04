@@ -41,15 +41,12 @@ def get_database_uri():
         
         # Default paths based on environment
         env = os.getenv('FLASK_ENV', 'development').lower()
-        
-        if env == 'production' or os.getenv('VERCEL'):
-            # Vercel uses /tmp for temporary storage
-            return 'sqlite:////tmp/infra_assessment.db'
-        elif env == 'testing':
+
+        if env == 'testing':
             # In-memory database for tests
             return 'sqlite:///:memory:'
         else:
-            # Development: local file in instance folder
+            # Development and production (IIS): store in instance folder
             instance_path = os.path.join(os.path.dirname(__file__), '..', 'instance')
             os.makedirs(instance_path, exist_ok=True)
             db_file = os.path.join(instance_path, 'infra_assessment.db')
@@ -84,7 +81,8 @@ def get_sqlalchemy_options():
 class Config:
     """Base configuration"""
     SQLALCHEMY_TRACK_MODIFICATIONS = False
-    UPLOAD_FOLDER = os.getenv('UPLOAD_FOLDER', '/tmp/uploads')
+    _default_upload_folder = os.path.join(os.path.dirname(__file__), '..', 'uploads')
+    UPLOAD_FOLDER = os.getenv('UPLOAD_FOLDER', os.path.abspath(_default_upload_folder))
     MAX_CONTENT_LENGTH = int(os.getenv('MAX_CONTENT_LENGTH', 52428800))  # 50MB
     JSONIFY_PRETTYPRINT_REGULAR = True
     JSON_SORT_KEYS = False
@@ -108,7 +106,7 @@ class DevelopmentConfig(Config):
 
 
 class ProductionConfig(Config):
-    """Production configuration (Vercel, Azure, etc.)"""
+    """Production configuration (IIS, Windows Server)"""
     DEBUG = False
     TESTING = False
     SQLALCHEMY_ECHO = False

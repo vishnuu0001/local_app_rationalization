@@ -1,43 +1,23 @@
 import axios from 'axios';
 
-const LOCAL_HOSTNAMES = new Set(['localhost', '127.0.0.1']);
-
-const ensureApiSuffix = (url) => {
-  if (!url) return url;
-  const trimmedUrl = url.replace(/\/+$/, '');
-  return trimmedUrl.endsWith('/api') ? trimmedUrl : `${trimmedUrl}/api`;
-};
-
-const isLocalApiUrl = (url) => {
-  try {
-    const parsed = new URL(url, window.location.origin);
-    return LOCAL_HOSTNAMES.has(parsed.hostname);
-  } catch {
-    return false;
-  }
-};
-
+/**
+ * API base URL resolution:
+ *  - Local dev (npm start):       .env.development.local → http://localhost:5000/api
+ *  - Production build (npm build): .env.production       → https://api.stratapp.org/api
+ *  - Fallback when env var absent: same-origin /api
+ */
 const resolveApiBase = () => {
-  const configuredApiBase = ensureApiSuffix(process.env.REACT_APP_API_URL);
-  const browserOnLocalhost = LOCAL_HOSTNAMES.has(window.location.hostname);
-
-  if (configuredApiBase) {
-    if (!browserOnLocalhost && isLocalApiUrl(configuredApiBase)) {
-      console.warn(
-        '[API] REACT_APP_API_URL points to localhost on a public origin. Falling back to same-origin /api.'
-      );
-      return '/api';
-    }
-
-    return configuredApiBase;
+  const configured = process.env.REACT_APP_API_URL;
+  if (configured) {
+    return configured.replace(/\/+$/, '');
   }
-
-  return browserOnLocalhost ? 'http://localhost:5000/api' : '/api';
+  // No env var — infer from browser origin
+  return window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+    ? 'http://localhost:5000/api'
+    : '/api';
 };
 
-const CONFIGURED_API_BASE = resolveApiBase();
-
-export const API_BASE = CONFIGURED_API_BASE.replace(/\/+$/, '');
+export const API_BASE = resolveApiBase();
 
 const apiClient = axios.create({
   baseURL: API_BASE,
