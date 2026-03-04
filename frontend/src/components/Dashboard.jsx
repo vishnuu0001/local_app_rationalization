@@ -598,9 +598,6 @@ const SummaryCard = ({ title, value, icon, color, onClick, isSelected }) => {
       <div className="text-3xl mb-3">{icon}</div>
       <p className="text-sm font-semibold opacity-75">{title}</p>
       <p className="text-3xl font-bold mt-2">{value}</p>
-      {isSelected && (
-        <p className="text-xs mt-2 font-semibold text-blue-600">↓ Click to view details ↓</p>
-      )}
     </div>
   );
 };
