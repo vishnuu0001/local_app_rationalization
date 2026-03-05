@@ -1,0 +1,1176 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 13559.0,
+                                            "effort": 40677.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ClassesComparisons",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 37.0,
+                                            "effort": 370.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__IllegalThrows",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 82.0,
+                                            "effort": 410.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__TmpFileName",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 2.0,
+                                            "effort": 20.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__VarDecl",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 129.0,
+                                            "effort": 21.500002
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__Array",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 3.0,
+                                            "effort": 0.5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__String",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 1535.0,
+                                            "effort": 127.91667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MissingSemicolon",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 151.0,
+                                            "effort": 12.583334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__DangerousTypes",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 22.0,
+                                            "effort": 3.6666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 355.0,
+                                            "effort": 1065.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 32.75996,
+                                            "effort": 32.75996
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingHashcode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 10.0,
+                                            "effort": 100.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__RiskyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 965.0,
+                                            "effort": 4825.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__Instanceof",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 2817.0,
+                                            "effort": 28170.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__OverloadEquals",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 6.0,
+                                            "effort": 60.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__OutOfFinallyJumps",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 1.0,
+                                            "effort": 5.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__Intrinsics",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 139.0,
+                                            "effort": 139.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 1.8,
+                                            "effort": 1.8
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__Pipes",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 15.0,
+                                            "effort": 2.5000002
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__StrongDataAccess",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 681.0,
+                                            "effort": 227.00002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__Eval",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 3.0,
+                                            "effort": 30.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MissingBraces",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 216.0,
+                                            "effort": 36.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__Object",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 8.0,
+                                            "effort": 40.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__DeprecatedFeature",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 1.0,
+                                            "effort": 5.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BehaviourAlteration",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 4.0,
+                                            "effort": 60.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadLoop",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 14.0,
+                                            "effort": 70.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MissingBreakInCasePath",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 3.0,
+                                            "effort": 0.25
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__PublicAttributes",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 2246.0,
+                                            "effort": 2246.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingBraces2",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 2282.0,
+                                            "effort": 2282.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__EmptyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 188.0,
+                                            "effort": 940.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingDefault",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 64.0,
+                                            "effort": 64.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 251468.0,
+                                            "effort": 251468.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingBreakInSwitch",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 82.0,
+                                            "effort": 6.8333335
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BugPatterns",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 67.0,
+                                            "effort": 67.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__MissingDefault",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 11.0,
+                                            "effort": 11.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__This",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 289.0,
+                                            "effort": 4335.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MissingIdentical",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 248.0,
+                                            "effort": 20.666668
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__EndLoopTest",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 6.0,
+                                            "effort": 60.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 226.0,
+                                            "effort": 226.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 13124.0,
+                                            "effort": 1093.6667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ClassDefinitions",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 4638.0,
+                                            "effort": 23190.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__StarImport",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 1048.0,
+                                            "effort": 1048.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 2792.0,
+                                            "effort": 2792.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__ShortVarName",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 10.0,
+                                            "effort": 1.6666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 6.0,
+                                            "effort": 6.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 194.0,
+                                            "effort": 16.166668
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__Prototype",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 247.0,
+                                            "effort": 20.583334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 2306.0,
+                                            "effort": 192.16667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__ImmediateFuncCall",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 6.0,
+                                            "effort": 0.5
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 32087.0,
+                                            "effort": 2673.9167
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingAutomatedDoc2",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 27503.0,
+                                            "effort": 27503.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 17309.0,
+                                            "effort": 1442.4167
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 3988.0,
+                                            "effort": 332.33334
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 100.8,
+                                            "effort": 100.8
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__LocalNames",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 90.0,
+                                            "effort": 15.000001
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 107.0,
+                                            "effort": 8.916667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 75.0,
+                                            "effort": 6.2500005
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MultDecl",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 49.0,
+                                            "effort": 4.0833335
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 77534.164,
+                                            "effort": 77534.164
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__Ternary",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 2044.0,
+                                            "effort": 2044.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadDeclarationOrder",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 753.0,
+                                            "effort": 753.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 764.0,
+                                            "effort": 63.66667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 334.0,
+                                            "effort": 3340.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 3.0,
+                                            "effort": 0.25
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__ContinuationChar",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 1.0,
+                                            "effort": 0.16666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 251.92061,
+                                            "effort": 251.92061
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadDeclarationOrder",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 48.0,
+                                            "effort": 48.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__VarDecl",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 204.0,
+                                            "effort": 34.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__ApplicationGlobalVariables",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 69.0,
+                                            "effort": 11.500001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 5.0,
+                                            "effort": 50.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 894878.0,
+                                            "effort": 894878.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 0.125,
+                                            "effort": 0.625
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 486.77792,
+                                            "effort": 2433.8896
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 158.81995,
+                                            "effort": 158.81995
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 965.6563,
+                                            "effort": 4828.2817
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 1362.5204,
+                                            "effort": 6812.602
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__NBMETH",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 416.0,
+                                            "effort": 2080.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ComplexConditions",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 19.0,
+                                            "effort": 190.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 13402,
+                                            "application_name": "kotlin",
+                                            "counter": 16.0,
+                                            "effort": 80.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

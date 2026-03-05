@@ -1,0 +1,726 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 67,
+                                            "application_name": "Network Management",
+                                            "counter": 11740.0,
+                                            "effort": 35220.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 67,
+                                            "application_name": "Network Management",
+                                            "counter": 318.30045,
+                                            "effort": 318.30045
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "VB",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 67,
+                                            "application_name": "Network Management",
+                                            "counter": 17.0,
+                                            "effort": 51.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__MissingBraces2",
+                                    "detail": [
+                                        {
+                                            "application_id": 67,
+                                            "application_name": "Network Management",
+                                            "counter": 2.0,
+                                            "effort": 0.33333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__Instanceof",
+                                    "detail": [
+                                        {
+                                            "application_id": 67,
+                                            "application_name": "Network Management",
+                                            "counter": 178.0,
+                                            "effort": 1780.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "VB",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__MissingExplicitOnOption",
+                                    "detail": [
+                                        {
+                                            "application_id": 67,
+                                            "application_name": "Network Management",
+                                            "counter": 2.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__PublicAttributes",
+                                    "detail": [
+                                        {
+                                            "application_id": 67,
+                                            "application_name": "Network Management",
+                                            "counter": 136.0,
+                                            "effort": 136.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 67,
+                                            "application_name": "Network Management",
+                                            "counter": 145.40005,
+                                            "effort": 145.40005
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__RiskyFunctionCalls",
+                                    "detail": [
+                                        {
+                                            "application_id": 67,
+                                            "application_name": "Network Management",
+                                            "counter": 141.0,
+                                            "effort": 1410.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__PublicAttributes",
+                                    "detail": [
+                                        {
+                                            "application_id": 67,
+                                            "application_name": "Network Management",
+                                            "counter": 119.0,
+                                            "effort": 119.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__EmptyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 67,
+                                            "application_name": "Network Management",
+                                            "counter": 54.0,
+                                            "effort": 270.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__MissingDefault",
+                                    "detail": [
+                                        {
+                                            "application_id": 67,
+                                            "application_name": "Network Management",
+                                            "counter": 11.0,
+                                            "effort": 11.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__AssignmentsInConditionalExpr",
+                                    "detail": [
+                                        {
+                                            "application_id": 67,
+                                            "application_name": "Network Management",
+                                            "counter": 42.0,
+                                            "effort": 21.000002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__BugPatterns",
+                                    "detail": [
+                                        {
+                                            "application_id": 67,
+                                            "application_name": "Network Management",
+                                            "counter": 24.0,
+                                            "effort": 24.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "VB",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__EmptyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 67,
+                                            "application_name": "Network Management",
+                                            "counter": 9.0,
+                                            "effort": 45.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__MissingDefault",
+                                    "detail": [
+                                        {
+                                            "application_id": 67,
+                                            "application_name": "Network Management",
+                                            "counter": 17.0,
+                                            "effort": 17.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__BugPatterns",
+                                    "detail": [
+                                        {
+                                            "application_id": 67,
+                                            "application_name": "Network Management",
+                                            "counter": 34.0,
+                                            "effort": 34.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 67,
+                                            "application_name": "Network Management",
+                                            "counter": 20.0,
+                                            "effort": 20.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 67,
+                                            "application_name": "Network Management",
+                                            "counter": 10531.0,
+                                            "effort": 877.5834
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 67,
+                                            "application_name": "Network Management",
+                                            "counter": 283.0,
+                                            "effort": 23.583334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__ClassDefinitions",
+                                    "detail": [
+                                        {
+                                            "application_id": 67,
+                                            "application_name": "Network Management",
+                                            "counter": 163.0,
+                                            "effort": 815.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 67,
+                                            "application_name": "Network Management",
+                                            "counter": 2985.0,
+                                            "effort": 248.75002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 67,
+                                            "application_name": "Network Management",
+                                            "counter": 582.0,
+                                            "effort": 582.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "VB",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 67,
+                                            "application_name": "Network Management",
+                                            "counter": 12.0,
+                                            "effort": 12.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__ClassDefinitions",
+                                    "detail": [
+                                        {
+                                            "application_id": 67,
+                                            "application_name": "Network Management",
+                                            "counter": 156.0,
+                                            "effort": 780.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 67,
+                                            "application_name": "Network Management",
+                                            "counter": 505.0,
+                                            "effort": 505.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__MissingAutomatedDoc2",
+                                    "detail": [
+                                        {
+                                            "application_id": 67,
+                                            "application_name": "Network Management",
+                                            "counter": 1809.0,
+                                            "effort": 1809.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__BadDeclarationOrder",
+                                    "detail": [
+                                        {
+                                            "application_id": 67,
+                                            "application_name": "Network Management",
+                                            "counter": 5312.0,
+                                            "effort": 5312.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 67,
+                                            "application_name": "Network Management",
+                                            "counter": 3767.0,
+                                            "effort": 313.9167
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "VB",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 67,
+                                            "application_name": "Network Management",
+                                            "counter": 2703.0,
+                                            "effort": 225.25002
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 67,
+                                            "application_name": "Network Management",
+                                            "counter": 10840.208,
+                                            "effort": 10840.208
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 67,
+                                            "application_name": "Network Management",
+                                            "counter": 240.0,
+                                            "effort": 20.000002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 67,
+                                            "application_name": "Network Management",
+                                            "counter": 144.0,
+                                            "effort": 1440.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "VB",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__UnparametrizedNext",
+                                    "detail": [
+                                        {
+                                            "application_id": 67,
+                                            "application_name": "Network Management",
+                                            "counter": 36.0,
+                                            "effort": 6.0000005
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 67,
+                                            "application_name": "Network Management",
+                                            "counter": 1601.5999,
+                                            "effort": 1601.5999
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 67,
+                                            "application_name": "Network Management",
+                                            "counter": 43.0,
+                                            "effort": 3.5833335
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 67,
+                                            "application_name": "Network Management",
+                                            "counter": 3.0,
+                                            "effort": 30.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 67,
+                                            "application_name": "Network Management",
+                                            "counter": 169.66333,
+                                            "effort": 848.31665
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 67,
+                                            "application_name": "Network Management",
+                                            "counter": 628.34064,
+                                            "effort": 628.34064
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "VB",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 67,
+                                            "application_name": "Network Management",
+                                            "counter": 41.753334,
+                                            "effort": 208.76666
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 67,
+                                            "application_name": "Network Management",
+                                            "counter": 159.0,
+                                            "effort": 159.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 67,
+                                            "application_name": "Network Management",
+                                            "counter": 67.439995,
+                                            "effort": 337.19998
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "VB",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 67,
+                                            "application_name": "Network Management",
+                                            "counter": 20.06,
+                                            "effort": 100.299995
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__ComplexConditions",
+                                    "detail": [
+                                        {
+                                            "application_id": 67,
+                                            "application_name": "Network Management",
+                                            "counter": 9.0,
+                                            "effort": 90.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "VB",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__ComplexConditions",
+                                    "detail": [
+                                        {
+                                            "application_id": 67,
+                                            "application_name": "Network Management",
+                                            "counter": 114.0,
+                                            "effort": 114.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,906 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 59.0,
+                                            "effort": 177.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__RiskyFunctionCalls",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 2.0,
+                                            "effort": 2.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__IllegalThrows",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 15.0,
+                                            "effort": 75.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__VarDecl",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 23.0,
+                                            "effort": 3.8333335
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__String",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 445.0,
+                                            "effort": 37.083336
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MissingSemicolon",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 92.0,
+                                            "effort": 7.666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 17.0,
+                                            "effort": 51.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 4.39,
+                                            "effort": 4.39
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__RiskyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 34.0,
+                                            "effort": 170.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__Instanceof",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 8.0,
+                                            "effort": 80.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__Intrinsics",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 36.0,
+                                            "effort": 36.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 0.4,
+                                            "effort": 0.4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__Pipes",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 2.0,
+                                            "effort": 0.33333334
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__StrongDataAccess",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 119.0,
+                                            "effort": 39.666668
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MissingBraces",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 15.0,
+                                            "effort": 2.5000002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadLoop",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 1.0,
+                                            "effort": 5.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__PublicAttributes",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 16.0,
+                                            "effort": 16.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingBraces2",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 4.0,
+                                            "effort": 4.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__EmptyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 1.0,
+                                            "effort": 5.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingDefault",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 4.0,
+                                            "effort": 4.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 3167.0,
+                                            "effort": 3167.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingBreakInSwitch",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 2.0,
+                                            "effort": 0.16666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BugPatterns",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 1.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__MissingDefault",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 2.0,
+                                            "effort": 2.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__This",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 10.0,
+                                            "effort": 150.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MissingIdentical",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 63.0,
+                                            "effort": 5.2500005
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 1.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 292.0,
+                                            "effort": 24.333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ClassDefinitions",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 62.0,
+                                            "effort": 310.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__StarImport",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 7.0,
+                                            "effort": 7.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 35.0,
+                                            "effort": 35.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__ShortVarName",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 2.0,
+                                            "effort": 0.33333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 2.0,
+                                            "effort": 2.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 42.0,
+                                            "effort": 3.5000002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__Prototype",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 97.0,
+                                            "effort": 8.083334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 176.0,
+                                            "effort": 14.666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 46.0,
+                                            "effort": 3.8333335
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingAutomatedDoc2",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 514.0,
+                                            "effort": 514.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 215.0,
+                                            "effort": 17.916668
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 36.0,
+                                            "effort": 3.0000002
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 25.7,
+                                            "effort": 25.7
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__LocalNames",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 17.0,
+                                            "effort": 2.8333335
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 6.0,
+                                            "effort": 0.5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 3.0,
+                                            "effort": 0.25
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MultDecl",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 9.0,
+                                            "effort": 0.75000006
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 1290.8,
+                                            "effort": 1290.8
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__Ternary",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 102.0,
+                                            "effort": 102.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadDeclarationOrder",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 4.0,
+                                            "effort": 4.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 3.0,
+                                            "effort": 0.25
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 5.0,
+                                            "effort": 50.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 37.9,
+                                            "effort": 37.9
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadDeclarationOrder",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 20.0,
+                                            "effort": 20.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__VarDecl",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 28.0,
+                                            "effort": 4.666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__ApplicationGlobalVariables",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 6.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 13780.0,
+                                            "effort": 13780.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 107.33332,
+                                            "effort": 536.6666
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 16.08,
+                                            "effort": 16.08
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 0.08,
+                                            "effort": 0.39999998
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__NBMETH",
+                                    "detail": [
+                                        {
+                                            "application_id": 13401,
+                                            "application_name": "karyon",
+                                            "counter": 156.0,
+                                            "effort": 780.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

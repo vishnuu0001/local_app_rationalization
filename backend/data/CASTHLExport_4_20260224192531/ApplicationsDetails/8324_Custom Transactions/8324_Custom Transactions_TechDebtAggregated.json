@@ -1,0 +1,564 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "OBJCCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 8324,
+                                            "application_name": "Custom Transactions",
+                                            "counter": 2452.0,
+                                            "effort": 7356.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 8324,
+                                            "application_name": "Custom Transactions",
+                                            "counter": 497.89993,
+                                            "effort": 497.89993
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__ResourceManagement",
+                                    "detail": [
+                                        {
+                                            "application_id": 8324,
+                                            "application_name": "Custom Transactions",
+                                            "counter": 3.0,
+                                            "effort": 3.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__RiskyFunctionCalls",
+                                    "detail": [
+                                        {
+                                            "application_id": 8324,
+                                            "application_name": "Custom Transactions",
+                                            "counter": 69.0,
+                                            "effort": 690.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__ResourceManagement2",
+                                    "detail": [
+                                        {
+                                            "application_id": 8324,
+                                            "application_name": "Custom Transactions",
+                                            "counter": 35.0,
+                                            "effort": 17.5
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "OBJCCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__MacroUnparenthesedParams",
+                                    "detail": [
+                                        {
+                                            "application_id": 8324,
+                                            "application_name": "Custom Transactions",
+                                            "counter": 52.0,
+                                            "effort": 52.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__MissingBraces",
+                                    "detail": [
+                                        {
+                                            "application_id": 8324,
+                                            "application_name": "Custom Transactions",
+                                            "counter": 66.0,
+                                            "effort": 11.000001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__BooleanPitfall",
+                                    "detail": [
+                                        {
+                                            "application_id": 8324,
+                                            "application_name": "Custom Transactions",
+                                            "counter": 31.0,
+                                            "effort": 7.7500005
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__Data",
+                                    "detail": [
+                                        {
+                                            "application_id": 8324,
+                                            "application_name": "Custom Transactions",
+                                            "counter": 15.0,
+                                            "effort": 225.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__BadInstanciation",
+                                    "detail": [
+                                        {
+                                            "application_id": 8324,
+                                            "application_name": "Custom Transactions",
+                                            "counter": 218.0,
+                                            "effort": 109.00001
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "OBJCCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__MissingDefault",
+                                    "detail": [
+                                        {
+                                            "application_id": 8324,
+                                            "application_name": "Custom Transactions",
+                                            "counter": 8.0,
+                                            "effort": 8.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__UninitializedLocalVariables",
+                                    "detail": [
+                                        {
+                                            "application_id": 8324,
+                                            "application_name": "Custom Transactions",
+                                            "counter": 863.0,
+                                            "effort": 143.83334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__NSLog",
+                                    "detail": [
+                                        {
+                                            "application_id": 8324,
+                                            "application_name": "Custom Transactions",
+                                            "counter": 289.0,
+                                            "effort": 48.166668
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__MissingBreakInCasePath",
+                                    "detail": [
+                                        {
+                                            "application_id": 8324,
+                                            "application_name": "Custom Transactions",
+                                            "counter": 1.0,
+                                            "effort": 0.083333336
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__AssignmentsInConditionalExpr",
+                                    "detail": [
+                                        {
+                                            "application_id": 8324,
+                                            "application_name": "Custom Transactions",
+                                            "counter": 31.0,
+                                            "effort": 15.500001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__BugPatterns",
+                                    "detail": [
+                                        {
+                                            "application_id": 8324,
+                                            "application_name": "Custom Transactions",
+                                            "counter": 22.0,
+                                            "effort": 22.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "OBJCCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 8324,
+                                            "application_name": "Custom Transactions",
+                                            "counter": 127.0,
+                                            "effort": 127.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 8324,
+                                            "application_name": "Custom Transactions",
+                                            "counter": 40.0,
+                                            "effort": 3.3333335
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 8324,
+                                            "application_name": "Custom Transactions",
+                                            "counter": 2819.0,
+                                            "effort": 234.91667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 8324,
+                                            "application_name": "Custom Transactions",
+                                            "counter": 103.0,
+                                            "effort": 8.583334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 8324,
+                                            "application_name": "Custom Transactions",
+                                            "counter": 350.0,
+                                            "effort": 350.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "OBJCCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__Ternary",
+                                    "detail": [
+                                        {
+                                            "application_id": 8324,
+                                            "application_name": "Custom Transactions",
+                                            "counter": 247.0,
+                                            "effort": 247.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 8324,
+                                            "application_name": "Custom Transactions",
+                                            "counter": 194.0,
+                                            "effort": 16.166668
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__BadDeclarationOrder",
+                                    "detail": [
+                                        {
+                                            "application_id": 8324,
+                                            "application_name": "Custom Transactions",
+                                            "counter": 164.0,
+                                            "effort": 164.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__ClassImplementations",
+                                    "detail": [
+                                        {
+                                            "application_id": 8324,
+                                            "application_name": "Custom Transactions",
+                                            "counter": 130.0,
+                                            "effort": 650.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 8324,
+                                            "application_name": "Custom Transactions",
+                                            "counter": 143.0,
+                                            "effort": 11.916667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__BoxedOrLiteral",
+                                    "detail": [
+                                        {
+                                            "application_id": 8324,
+                                            "application_name": "Custom Transactions",
+                                            "counter": 1443.0,
+                                            "effort": 240.50002
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "OBJCCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 8324,
+                                            "application_name": "Custom Transactions",
+                                            "counter": 12299.399,
+                                            "effort": 12299.399
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__PreprocDirective",
+                                    "detail": [
+                                        {
+                                            "application_id": 8324,
+                                            "application_name": "Custom Transactions",
+                                            "counter": 42.0,
+                                            "effort": 42.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__NegativeComparison",
+                                    "detail": [
+                                        {
+                                            "application_id": 8324,
+                                            "application_name": "Custom Transactions",
+                                            "counter": 953.0,
+                                            "effort": 317.6667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 8324,
+                                            "application_name": "Custom Transactions",
+                                            "counter": 12.0,
+                                            "effort": 120.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "OBJCCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 8324,
+                                            "application_name": "Custom Transactions",
+                                            "counter": 41.753998,
+                                            "effort": 208.76999
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 8324,
+                                            "application_name": "Custom Transactions",
+                                            "counter": 1109.79,
+                                            "effort": 1109.79
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "OBJCCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 8324,
+                                            "application_name": "Custom Transactions",
+                                            "counter": 119.18003,
+                                            "effort": 595.90015
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "OBJCCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__NBMETH",
+                                    "detail": [
+                                        {
+                                            "application_id": 8324,
+                                            "application_name": "Custom Transactions",
+                                            "counter": 3622.0,
+                                            "effort": 18110.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__ComplexConditions",
+                                    "detail": [
+                                        {
+                                            "application_id": 8324,
+                                            "application_name": "Custom Transactions",
+                                            "counter": 10.0,
+                                            "effort": 100.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

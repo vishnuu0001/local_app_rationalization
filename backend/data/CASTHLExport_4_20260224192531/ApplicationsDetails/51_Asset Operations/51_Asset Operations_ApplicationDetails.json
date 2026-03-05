@@ -1,0 +1,151 @@
+{
+    "id": 51,
+    "name": "Asset Operations",
+    "domains": [
+        {
+            "id": 257,
+            "name": "System Integrator Beta"
+        },
+        {
+            "id": 256,
+            "name": "Corporate Systems & Finance"
+        },
+        {
+            "id": 12910,
+            "name": "Portfolio Company Beta"
+        }
+    ],
+    "surveys": [
+        {
+            "id": 371,
+            "ref": "CAST_MAINT",
+            "name": "Software Maintenance Estimate",
+            "questions": [
+                {
+                    "label": "What is the average skill level of the development team on this type of application?",
+                    "value": "3 years",
+                    "questionId": 1000015,
+                    "choiceId": 1000069
+                },
+                {
+                    "label": "What percentage of the development effort has been spent on maintenance in the last 12 months?",
+                    "value": "25",
+                    "questionId": 1000012
+                },
+                {
+                    "label": "What is the annual staff turnover within the development team?",
+                    "value": "10%",
+                    "questionId": 1000016,
+                    "choiceId": 1000143
+                },
+                {
+                    "label": "What is the CMMI level of the organization?",
+                    "value": "Level 4",
+                    "questionId": 1000032,
+                    "choiceId": 1000258
+                },
+                {
+                    "label": "What is the percentage of change to the base code in the last 12 months?",
+                    "value": "15",
+                    "questionId": 1000121
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "ref": "CAST_BI",
+            "name": "Business Impact",
+            "questions": [
+                {
+                    "label": "What is the average number of FTE (Full Time Equivalent) resources that have worked on the source code for this application over the last 12 months?",
+                    "shortLabel": "",
+                    "value": "30",
+                    "questionId": 1000011
+                },
+                {
+                    "label": "Is this application aligned with the company's future technology direction?",
+                    "shortLabel": "",
+                    "value": "Yes",
+                    "questionId": 1000009,
+                    "choiceId": 1000042
+                },
+                {
+                    "label": "The number of major releases delivered over the last 12 months for this application?",
+                    "shortLabel": "",
+                    "value": "7 to 12",
+                    "questionId": 1000006,
+                    "choiceId": 1000454
+                },
+                {
+                    "label": "Could failure of this application lead to loss of customer confidence? Please define the level of impact.",
+                    "value": "High",
+                    "questionId": 1000022,
+                    "choiceId": 1000222
+                },
+                {
+                    "label": "Could failure of this application lead to harm of the company's public image? Please define the level of impact.",
+                    "value": "Very High",
+                    "questionId": 1000021,
+                    "choiceId": 1000003
+                },
+                {
+                    "label": "Could failure of this application lead to loss of revenue or business opportunity? Please define the level of impact.",
+                    "value": "High",
+                    "questionId": 1000020,
+                    "choiceId": 1000408
+                },
+                {
+                    "label": "Could failure of this application lead to disruption? Please define the level of impact.",
+                    "value": "Very High",
+                    "questionId": 1000019,
+                    "choiceId": 1000195
+                },
+                {
+                    "label": "What is the approximate number of end users for this application?",
+                    "shortLabel": "",
+                    "value": "More than 2500",
+                    "questionId": 1000018,
+                    "choiceId": 1000398
+                },
+                {
+                    "label": "Does the application serve internal or external users?",
+                    "value": "Both",
+                    "questionId": 1000017,
+                    "choiceId": 1000205
+                }
+            ]
+        },
+        {
+            "id": 373,
+            "ref": "CAST_APP",
+            "name": "Application Properties",
+            "questions": [
+                {
+                    "label": "What is the application type?",
+                    "shortLabel": "",
+                    "value": "Asset Management Operations / Technology",
+                    "questionId": 1000004,
+                    "choiceId": 1000425
+                },
+                {
+                    "label": "Application Owner's name",
+                    "value": "Alexandra Szynkarski",
+                    "questionId": 1000002
+                },
+                {
+                    "label": "Is this application a custom application or a Commercial Off The Shelf product?",
+                    "shortLabel": "",
+                    "value": "Custom Application",
+                    "questionId": 1000427,
+                    "choiceId": 1000529
+                },
+                {
+                    "label": "In what year was this application first put into production?",
+                    "shortLabel": "",
+                    "value": "2012",
+                    "questionId": 1000033
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,3717 @@
+{
+    "id": 10260,
+    "name": "Roswell",
+    "domains": [
+        {
+            "id": 1622,
+            "name": "Core Business Applications"
+        },
+        {
+            "id": 9366,
+            "name": "Demo Company"
+        },
+        {
+            "id": 12908,
+            "name": "PE Firm"
+        }
+    ],
+    "metrics": [
+        {
+            "snapshotLabel": "camp_App1",
+            "snapshotDate": 1761278400000,
+            "softwareAgility": 0.5185185074806213,
+            "softwareAgilityAdded": 0.5185185074806213,
+            "softwareElegance": 0.851851761341095,
+            "softwareEleganceAdded": 0.851851761341095,
+            "softwareResiliency": 1.0,
+            "softwareResiliencyAdded": 1.0,
+            "softwareHealth": 0.7901234229405721,
+            "openSourceSafety": 0.8456290801283854,
+            "openSourceLicense": 1.0,
+            "openSourceObsolescence": 0.7789872403851565,
+            "openSourceCVE": 0.7579,
+            "businessImpact": 0.8730964467005076,
+            "roarIndex": 0.06790751594836682,
+            "backFiredFPAdded": 0.0,
+            "technicalDebt": 9.636667057871819,
+            "maintenanceRecordedFTE": 4.05,
+            "maintenanceRecommendedFTE": 0.0,
+            "cloudReady": 0.8880239520958084,
+            "cloudReadyScan": 0.8,
+            "boosters": 0.0,
+            "blockers": 0.0,
+            "roadblocks": 0.0,
+            "cloudEffort": 0,
+            "cloudReadySurvey": 0.9760479041916168,
+            "greenIndex": 1.0,
+            "greenIndexScan": 1.0,
+            "greenIndexSurvey": null,
+            "greenOccurrences": 0.0,
+            "greenEffort": 0,
+            "greenDetail": [
+                {
+                    "technology": "JavaScript",
+                    "greenIndexScan": 1.0,
+                    "greenIndexDetails": [
+                        {
+                            "greenRequirement": {
+                                "id": "EmptyCatches",
+                                "display": "Avoiding Failure : Avoid empty catch blocks",
+                                "hrefDoc": "https://doc.casthighlight.com/greenpatterns/#EmptyCatches",
+                                "ruleType": "BLOCKER",
+                                "criticality": null,
+                                "parent": null
+                            },
+                            "contributionScore": -0.0,
+                            "greenOccurrences": 0.0,
+                            "greenEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "greenRequirement": {
+                                "id": "EndLoopTest",
+                                "display": "Algorithmic Costs : Avoid calling a function in a loop condition",
+                                "hrefDoc": "https://doc.casthighlight.com/greenpatterns/#EndLoopTest",
+                                "ruleType": "BLOCKER",
+                                "criticality": null,
+                                "parent": null
+                            },
+                            "contributionScore": -0.0,
+                            "greenOccurrences": 0.0,
+                            "greenEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "greenRequirement": {
+                                "id": "PrimitiveTypeWrapperInstanciation",
+                                "display": "Resource Economy : Prefer literal initialization",
+                                "hrefDoc": "https://doc.casthighlight.com/greenpatterns/#PrimitiveTypeWrapperInstanciation",
+                                "ruleType": "BLOCKER",
+                                "criticality": null,
+                                "parent": null
+                            },
+                            "contributionScore": -0.0,
+                            "greenOccurrences": 0.0,
+                            "greenEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "greenRequirement": {
+                                "id": "ConcatInLoop",
+                                "display": "Algorithmic Costs : Avoid String concatenation in loops",
+                                "hrefDoc": "https://doc.casthighlight.com/greenpatterns/#ConcatInLoop",
+                                "ruleType": "BLOCKER",
+                                "criticality": null,
+                                "parent": null
+                            },
+                            "contributionScore": -0.0,
+                            "greenOccurrences": 0.0,
+                            "greenEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "greenRequirement": {
+                                "id": "InstantiationInLoop",
+                                "display": "Algorithmic Costs : Avoid instantiations inside loops",
+                                "hrefDoc": "https://doc.casthighlight.com/greenpatterns/#InstantiationInLoop",
+                                "ruleType": "BLOCKER",
+                                "criticality": null,
+                                "parent": null
+                            },
+                            "contributionScore": -0.0,
+                            "greenOccurrences": 0.0,
+                            "greenEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "greenRequirement": {
+                                "id": "HardCodedPathNotGreen",
+                                "display": "Resource Economy : Use a virtualized environment where possible",
+                                "hrefDoc": "https://doc.casthighlight.com/greenpatterns/#HardCodedPathNotGreen",
+                                "ruleType": "BLOCKER",
+                                "criticality": null,
+                                "parent": null
+                            },
+                            "contributionScore": -0.0,
+                            "greenOccurrences": 0.0,
+                            "greenEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "greenRequirement": {
+                                "id": "OpenedFileWithoutClose",
+                                "display": "Resource Economy : Avoid Programs not using explicitly OPEN and CLOSE for files or streams",
+                                "hrefDoc": "https://doc.casthighlight.com/greenpatterns/#OpenedFileWithoutClose",
+                                "ruleType": "BLOCKER",
+                                "criticality": null,
+                                "parent": null
+                            },
+                            "contributionScore": -0.0,
+                            "greenOccurrences": 0.0,
+                            "greenEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "greenRequirement": {
+                                "id": "OpenCloseFileInLoop",
+                                "display": "Resource Economy : Avoid OPEN/CLOSE inside loops",
+                                "hrefDoc": "https://doc.casthighlight.com/greenpatterns/#OpenCloseFileInLoop",
+                                "ruleType": "BLOCKER",
+                                "criticality": null,
+                                "parent": null
+                            },
+                            "contributionScore": -0.0,
+                            "greenOccurrences": 0.0,
+                            "greenEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "greenRequirement": {
+                                "id": "LoopCondComparedToNonZero",
+                                "display": "Algorithmic Costs : Prefer comparison-to-0 in loop conditions",
+                                "hrefDoc": "https://doc.casthighlight.com/greenpatterns/#LoopCondComparedToNonZero",
+                                "ruleType": "BLOCKER",
+                                "criticality": null,
+                                "parent": null
+                            },
+                            "contributionScore": -0.0,
+                            "greenOccurrences": 0.0,
+                            "greenEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "greenRequirement": {
+                                "id": "ToManyNestedLoop",
+                                "display": "Algorithmic Costs : Avoid nested loops",
+                                "hrefDoc": "https://doc.casthighlight.com/greenpatterns/#ToManyNestedLoop",
+                                "ruleType": "BLOCKER",
+                                "criticality": null,
+                                "parent": null
+                            },
+                            "contributionScore": -0.0,
+                            "greenOccurrences": 0.0,
+                            "greenEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        }
+                    ]
+                }
+            ],
+            "totalLinesOfCode": 21,
+            "totalLinesOfCodeAdded": 21,
+            "totalLinesOfCodeModified": 0,
+            "totalFiles": 1,
+            "totalFilesAdded": 1,
+            "totalFilesModified": 0,
+            "cloudReadyDetail": [
+                {
+                    "technology": "JavaScript",
+                    "cloudReadyScan": 0.8,
+                    "cloudReadyDetails": [
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Access_Control",
+                                "display": "Access Control List : Using Access Control List",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Access_Control",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Critical",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 34.33476394849785,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Crypto_API",
+                                "display": "Data Encryption Key : Using Crypto API",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Crypto_API",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 3.4334763948497855,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_OS_Dependency",
+                                "display": "Execution Environment : Using system DLLs",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_OS_Dependency",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "High",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 6.437768240343347,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Directory_Manipulation_Practice",
+                                "display": "Persistent Files : Perform Directory Manipulation",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Directory_Manipulation_Practice",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 1.7167381974248928,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "File_Manipulation_Practice",
+                                "display": "Persistent Files : Perform File Manipulation",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#File_Manipulation_Practice",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 1.7167381974248928,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Access_To_Environment_Variable",
+                                "display": "Execution Environment : Access to environment variable",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Access_To_Environment_Variable",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 3.4334763948497855,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_SecuredProtocols",
+                                "display": "Security & User Authentication : Use of unsecured network protocols or URI libraries",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_SecuredProtocols",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 3.4334763948497855,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false,
+                            "cloudRequirementsDetail": [
+                                {
+                                    "cloudRequirement": {
+                                        "id": "Use_SecuredProtocolsHTTP",
+                                        "display": "Security & User Authentication : Use of unsecured network protocols (HTTP)",
+                                        "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_SecuredProtocols",
+                                        "ruleType": "BLOCKER",
+                                        "rulePlatform": null,
+                                        "rulePlatformLabel": null,
+                                        "criticality": "Low",
+                                        "impacts": [
+                                            "Coding"
+                                        ],
+                                        "parent": null
+                                    },
+                                    "roadblocks": 0.0,
+                                    "cloudEffort": null,
+                                    "files": null
+                                },
+                                {
+                                    "cloudRequirement": {
+                                        "id": "Use_SecuredProtocolsFTP",
+                                        "display": "Security & User Authentication : Use of unsecured network protocols (FTP)",
+                                        "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_SecuredProtocols",
+                                        "ruleType": "BLOCKER",
+                                        "rulePlatform": null,
+                                        "rulePlatformLabel": null,
+                                        "criticality": "Low",
+                                        "impacts": [
+                                            "Coding"
+                                        ],
+                                        "parent": null
+                                    },
+                                    "roadblocks": 0.0,
+                                    "cloudEffort": null,
+                                    "files": null
+                                }
+                            ]
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Hardcoded_IP_Address",
+                                "display": "Execution Environment : Using hardcoded network IP address",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Hardcoded_IP_Address",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 3.4334763948497855,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Launch_Sub_Processes",
+                                "display": "Process management : Avoid launching OS-specific sub-processes from code",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Launch_Sub_Processes",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 3.4334763948497855,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Avoid_Code_Skipped",
+                                "display": "Code Execution : Avoid code that can accidentally get skipped",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Avoid_Code_Skipped",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Medium",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 2.575107296137339,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_HTTPProtocol",
+                                "display": "Security & User Authentication : Avoid using hardcoded URLs (HTTP protocol)",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_HTTPProtocol",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 0.4291845493562232,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_FTPProtocol",
+                                "display": "Security & User Authentication : Avoid using hardcoded URLs (FTP protocol)",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_FTPProtocol",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 0.4291845493562232,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_LDAPProtocol",
+                                "display": "Security & User Authentication : Avoid using hardcoded URLs (LDAP protocol)",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_LDAPProtocol",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 0.4291845493562232,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Unsecured_Data_Strings",
+                                "display": "Security & User Authentication : Use of an unsecured data string",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Unsecured_Data_Strings",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Critical",
+                                "impacts": [
+                                    "Coding",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 17.167381974248926,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_SendMail",
+                                "display": "Execution Environment : Use of sendmail utility on Paas instead of specific email sending library",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_SendMail",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Medium",
+                                "impacts": [
+                                    "Coding",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 0.4291845493562232,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_CacheManagement_Libraries",
+                                "display": "Execution Environment : Using in-memory caching libraries",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_CacheManagement_Libraries",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "High",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 17.167381974248926,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        }
+                    ]
+                }
+            ],
+            "customIndicators": [
+                {
+                    "metricId": 10023356,
+                    "value": "0.10101010101010101"
+                },
+                {
+                    "metricId": 10006001,
+                    "value": "0.9148936170212766"
+                },
+                {
+                    "metricId": 10006305,
+                    "value": null
+                },
+                {
+                    "metricId": 10013600,
+                    "value": "0.0"
+                },
+                {
+                    "metricId": 10006302,
+                    "value": null
+                },
+                {
+                    "metricId": 10006301,
+                    "value": null
+                },
+                {
+                    "metricId": 10016304,
+                    "value": null
+                }
+            ],
+            "technologies": [
+                {
+                    "technology": "JavaScript",
+                    "totalLinesOfCode": 21,
+                    "totalFiles": 1,
+                    "softwareAgility": 0.5185185074806213,
+                    "softwareElegance": 0.8518518209457397,
+                    "softwareResiliency": 1.0,
+                    "softwareHealth": 0.790123442808787,
+                    "softwareAgilityDetail": {
+                        "highLinesOfCode": 0,
+                        "mediumLinesOfCode": 21,
+                        "lowLinesOfCode": 0
+                    },
+                    "softwareEleganceDetail": {
+                        "highLinesOfCode": 21,
+                        "mediumLinesOfCode": 0,
+                        "lowLinesOfCode": 0
+                    },
+                    "softwareResiliencyDetail": {
+                        "highLinesOfCode": 21,
+                        "mediumLinesOfCode": 0,
+                        "lowLinesOfCode": 0
+                    },
+                    "softwareHealthDetail": {
+                        "highLinesOfCode": 14,
+                        "mediumLinesOfCode": 7,
+                        "lowLinesOfCode": 0
+                    }
+                }
+            ],
+            "vulnerabilities": [
+                {
+                    "matchedCPE": "cpe:/a:vm2_project:vm2",
+                    "name": "CVE-2022-25893",
+                    "publishedDate": "2022-12-21T05:15:11.220Z",
+                    "lastUpdateDate": "2025-04-15T20:15:35.633Z",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2022-25893",
+                    "description": "The package vm2 before 3.9.10 are vulnerable to Arbitrary Code Execution due to the usage of prototype lookup for the WeakMap.prototype.set method. Exploiting this vulnerability leads to access to a host object and a sandbox compromise.",
+                    "references": [
+                        {
+                            "name": "Exploit",
+                            "url": "https://security.snyk.io/vuln/SNYK-JS-VM2-2990237",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://github.com/patriksimek/vm2/pull/445",
+                            "source": "report@snyk.io"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://github.com/patriksimek/vm2/pull/445/commits/3a9876482be487b78a90ac459675da7f83f46d69",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://github.com/patriksimek/vm2/pull/445",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://github.com/patriksimek/vm2/issues/444",
+                            "source": "report@snyk.io"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://security.snyk.io/vuln/SNYK-JS-VM2-2990237",
+                            "source": "report@snyk.io"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://github.com/patriksimek/vm2/issues/444",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://github.com/patriksimek/vm2/pull/445/commits/3a9876482be487b78a90ac459675da7f83f46d69",
+                            "source": "report@snyk.io"
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "criticityLabel": "CRITICAL",
+                    "cvssScore": 9.8,
+                    "cvssAccessVector": "NETWORK",
+                    "cvssAccessComplexity": "LOW",
+                    "cvssAuthentication": "NONE",
+                    "cvssConfidentialityImpact": "HIGH",
+                    "cvssAvailabilityImpact": "HIGH",
+                    "source": "NVD",
+                    "criticityCategory": "CRITICAL",
+                    "advisory": false,
+                    "isKev": false
+                },
+                {
+                    "matchedCPE": "cpe:/a:vm2_project:vm2",
+                    "name": "CVE-2022-36067",
+                    "publishedDate": "2022-09-07T02:15:09.207Z",
+                    "lastUpdateDate": "2024-11-21T12:12:18.500Z",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2022-36067",
+                    "description": "vm2 is a sandbox that can run untrusted code with whitelisted Node's built-in modules. In versions prior to version 3.9.11, a threat actor can bypass the sandbox protections to gain remote code execution rights on the host running the sandbox. This vulnerability was patched in the release of version 3.9.11 of vm2. There are no known workarounds.",
+                    "references": [
+                        {
+                            "name": "Patch",
+                            "url": "https://github.com/patriksimek/vm2/commit/d9a7f3cc995d3d861e1380eafb886cb3c5e2b873#diff-b1a515a627d820118e76d0e323fe2f0589ed50a1eacb490f6c3278fe3698f164",
+                            "source": "security-advisories@github.com"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://github.com/patriksimek/vm2/security/advisories/GHSA-mrgp-mrhc-5jrq",
+                            "source": "security-advisories@github.com"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://github.com/patriksimek/vm2/commit/d9a7f3cc995d3d861e1380eafb886cb3c5e2b873#diff-b1a515a627d820118e76d0e323fe2f0589ed50a1eacb490f6c3278fe3698f164",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://github.com/patriksimek/vm2/security/advisories/GHSA-mrgp-mrhc-5jrq",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://security.netapp.com/advisory/ntap-20221017-0002/",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://security.netapp.com/advisory/ntap-20221017-0002/",
+                            "source": "security-advisories@github.com"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://github.com/patriksimek/vm2/blob/master/lib/setup-sandbox.js#L71",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Issue Tracking",
+                            "url": "https://github.com/patriksimek/vm2/issues/467",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Issue Tracking",
+                            "url": "https://github.com/patriksimek/vm2/issues/467",
+                            "source": "security-advisories@github.com"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://www.oxeye.io/blog/vm2-sandbreak-vulnerability-cve-2022-36067",
+                            "source": "security-advisories@github.com"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://github.com/patriksimek/vm2/blob/master/lib/setup-sandbox.js#L71",
+                            "source": "security-advisories@github.com"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://www.oxeye.io/blog/vm2-sandbreak-vulnerability-cve-2022-36067",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "criticityLabel": "CRITICAL",
+                    "cvssScore": 10.0,
+                    "cvssAccessVector": "NETWORK",
+                    "cvssAccessComplexity": "LOW",
+                    "cvssAuthentication": "NONE",
+                    "cvssConfidentialityImpact": "HIGH",
+                    "cvssAvailabilityImpact": "HIGH",
+                    "source": "NVD",
+                    "criticityCategory": "CRITICAL",
+                    "advisory": false,
+                    "isKev": false
+                },
+                {
+                    "matchedCPE": "cpe:/a:vm2_project:vm2",
+                    "name": "CVE-2023-29017",
+                    "publishedDate": "2023-04-07T00:15:08.723Z",
+                    "lastUpdateDate": "2024-11-21T12:56:24.137Z",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2023-29017",
+                    "description": "vm2 is a sandbox that can run untrusted code with whitelisted Node's built-in modules. Prior to version 3.9.15, vm2 was not properly handling host objects passed to `Error.prepareStackTrace` in case of unhandled async errors. A threat actor could bypass the sandbox protections to gain remote code execution rights on the host running the sandbox. This vulnerability was patched in the release of version 3.9.15 of vm2. There are no known workarounds.",
+                    "references": [
+                        {
+                            "name": "Exploit",
+                            "url": "https://github.com/patriksimek/vm2/issues/515",
+                            "source": "security-advisories@github.com"
+                        },
+                        {
+                            "name": "Vendor Advisory",
+                            "url": "https://github.com/patriksimek/vm2/security/advisories/GHSA-7jxr-cg7f-gpgv",
+                            "source": "security-advisories@github.com"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://gist.github.com/seongil-wi/2a44e082001b959bfe304b62121fb76d",
+                            "source": "security-advisories@github.com"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://github.com/patriksimek/vm2/commit/d534e5785f38307b70d3aac1945260a261a94d50",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://github.com/patriksimek/vm2/issues/515",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://github.com/patriksimek/vm2/commit/d534e5785f38307b70d3aac1945260a261a94d50",
+                            "source": "security-advisories@github.com"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://gist.github.com/seongil-wi/2a44e082001b959bfe304b62121fb76d",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Vendor Advisory",
+                            "url": "https://github.com/patriksimek/vm2/security/advisories/GHSA-7jxr-cg7f-gpgv",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "criticityLabel": "CRITICAL",
+                    "cvssScore": 10.0,
+                    "cvssAccessVector": "NETWORK",
+                    "cvssAccessComplexity": "LOW",
+                    "cvssAuthentication": "NONE",
+                    "cvssConfidentialityImpact": "HIGH",
+                    "cvssAvailabilityImpact": "HIGH",
+                    "source": "NVD",
+                    "criticityCategory": "CRITICAL",
+                    "advisory": false,
+                    "isKev": false
+                },
+                {
+                    "matchedCPE": "cpe:/a:vm2_project:vm2",
+                    "name": "CVE-2023-29199",
+                    "publishedDate": "2023-04-14T23:15:09.337Z",
+                    "lastUpdateDate": "2024-11-21T12:56:42.080Z",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2023-29199",
+                    "description": "There exists a vulnerability in source code transformer (exception sanitization logic) of vm2 for versions up to 3.9.15, allowing attackers to bypass `handleException()` and leak unsanitized host exceptions which can be used to escape the sandbox and run arbitrary code in host context. A threat actor can bypass the sandbox protections to gain remote code execution rights on the host running the sandbox. This vulnerability was patched in the release of version `3.9.16` of `vm2`.\n",
+                    "references": [
+                        {
+                            "name": "Patch",
+                            "url": "https://github.com/patriksimek/vm2/commit/24c724daa7c09f003e556d7cd1c7a8381cb985d7",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://gist.github.com/leesh3288/f05730165799bf56d70391f3d9ea187c",
+                            "source": "security-advisories@github.com"
+                        },
+                        {
+                            "name": "Vendor Advisory",
+                            "url": "https://github.com/patriksimek/vm2/security/advisories/GHSA-xj72-wvfv-8985",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Issue Tracking",
+                            "url": "https://github.com/patriksimek/vm2/issues/516",
+                            "source": "security-advisories@github.com"
+                        },
+                        {
+                            "name": "Vendor Advisory",
+                            "url": "https://github.com/patriksimek/vm2/security/advisories/GHSA-xj72-wvfv-8985",
+                            "source": "security-advisories@github.com"
+                        },
+                        {
+                            "name": "Issue Tracking",
+                            "url": "https://github.com/patriksimek/vm2/issues/516",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Release Notes",
+                            "url": "https://github.com/patriksimek/vm2/releases/tag/3.9.16",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://github.com/patriksimek/vm2/commit/24c724daa7c09f003e556d7cd1c7a8381cb985d7",
+                            "source": "security-advisories@github.com"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://gist.github.com/leesh3288/f05730165799bf56d70391f3d9ea187c",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Release Notes",
+                            "url": "https://github.com/patriksimek/vm2/releases/tag/3.9.16",
+                            "source": "security-advisories@github.com"
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "criticityLabel": "CRITICAL",
+                    "cvssScore": 9.8,
+                    "cvssAccessVector": "NETWORK",
+                    "cvssAccessComplexity": "LOW",
+                    "cvssAuthentication": "NONE",
+                    "cvssConfidentialityImpact": "HIGH",
+                    "cvssAvailabilityImpact": "HIGH",
+                    "source": "NVD",
+                    "criticityCategory": "CRITICAL",
+                    "advisory": false,
+                    "isKev": false
+                },
+                {
+                    "matchedCPE": "cpe:/a:vm2_project:vm2",
+                    "name": "CVE-2023-30547",
+                    "publishedDate": "2023-04-18T02:15:10.487Z",
+                    "lastUpdateDate": "2024-11-21T13:00:24.030Z",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2023-30547",
+                    "description": "vm2 is a sandbox that can run untrusted code with whitelisted Node's built-in modules. There exists a vulnerability in exception sanitization of vm2 for versions up to 3.9.16, allowing attackers to raise an unsanitized host exception inside `handleException()` which can be used to escape the sandbox and run arbitrary code in host context. This vulnerability was patched in the release of version `3.9.17` of `vm2`. There are no known workarounds for this vulnerability. Users are advised to upgrade.",
+                    "references": [
+                        {
+                            "name": "Patch",
+                            "url": "https://github.com/patriksimek/vm2/commit/f3db4dee4d76b19869df05ba7880d638a880edd5",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://github.com/patriksimek/vm2/security/advisories/GHSA-ch3r-j5x3-6q2m",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://gist.github.com/leesh3288/381b230b04936dd4d74aaf90cc8bb244",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://gist.github.com/leesh3288/381b230b04936dd4d74aaf90cc8bb244",
+                            "source": "security-advisories@github.com"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://github.com/patriksimek/vm2/commit/4b22e87b102d97d45d112a0931dba1aef7eea049",
+                            "source": "security-advisories@github.com"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://github.com/patriksimek/vm2/commit/4b22e87b102d97d45d112a0931dba1aef7eea049",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://github.com/patriksimek/vm2/commit/f3db4dee4d76b19869df05ba7880d638a880edd5",
+                            "source": "security-advisories@github.com"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://github.com/patriksimek/vm2/security/advisories/GHSA-ch3r-j5x3-6q2m",
+                            "source": "security-advisories@github.com"
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "criticityLabel": "CRITICAL",
+                    "cvssScore": 9.8,
+                    "cvssAccessVector": "NETWORK",
+                    "cvssAccessComplexity": "LOW",
+                    "cvssAuthentication": "NONE",
+                    "cvssConfidentialityImpact": "HIGH",
+                    "cvssAvailabilityImpact": "HIGH",
+                    "source": "NVD",
+                    "criticityCategory": "CRITICAL",
+                    "advisory": false,
+                    "isKev": false
+                },
+                {
+                    "matchedCPE": "cpe:/a:vm2_project:vm2",
+                    "name": "CVE-2023-32314",
+                    "publishedDate": "2023-05-16T00:15:09.177Z",
+                    "lastUpdateDate": "2024-11-21T13:03:05.643Z",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2023-32314",
+                    "description": "vm2 is a sandbox that can run untrusted code with Node's built-in modules. A sandbox escape vulnerability exists in vm2 for versions up to and including 3.9.17. It abuses an unexpected creation of a host object based on the specification of `Proxy`. As a result a threat actor can bypass the sandbox protections to gain remote code execution rights on the host running the sandbox. This vulnerability was patched in the release of version `3.9.18` of `vm2`. Users are advised to upgrade. There are no known workarounds for this vulnerability.",
+                    "references": [
+                        {
+                            "name": "Patch",
+                            "url": "https://github.com/patriksimek/vm2/commit/d88105f99752305c5b8a77b63ddee3ec86912daf",
+                            "source": "security-advisories@github.com"
+                        },
+                        {
+                            "name": "Vendor Advisory",
+                            "url": "https://github.com/patriksimek/vm2/security/advisories/GHSA-whpj-8f3w-67p5",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://gist.github.com/arkark/e9f5cf5782dec8321095be3e52acf5ac",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Release Notes",
+                            "url": "https://github.com/patriksimek/vm2/releases/tag/3.9.18",
+                            "source": "security-advisories@github.com"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://gist.github.com/arkark/e9f5cf5782dec8321095be3e52acf5ac",
+                            "source": "security-advisories@github.com"
+                        },
+                        {
+                            "name": "Release Notes",
+                            "url": "https://github.com/patriksimek/vm2/releases/tag/3.9.18",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Vendor Advisory",
+                            "url": "https://github.com/patriksimek/vm2/security/advisories/GHSA-whpj-8f3w-67p5",
+                            "source": "security-advisories@github.com"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://github.com/patriksimek/vm2/commit/d88105f99752305c5b8a77b63ddee3ec86912daf",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "criticityLabel": "CRITICAL",
+                    "cvssScore": 9.8,
+                    "cvssAccessVector": "NETWORK",
+                    "cvssAccessComplexity": "LOW",
+                    "cvssAuthentication": "NONE",
+                    "cvssConfidentialityImpact": "HIGH",
+                    "cvssAvailabilityImpact": "HIGH",
+                    "source": "NVD",
+                    "criticityCategory": "CRITICAL",
+                    "advisory": false,
+                    "isKev": false
+                },
+                {
+                    "matchedCPE": "cpe:/a:vm2_project:vm2",
+                    "name": "CVE-2023-37466",
+                    "publishedDate": "2023-07-14T00:15:09.263Z",
+                    "lastUpdateDate": "2026-01-05T22:15:46.563Z",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2023-37466",
+                    "description": "vm2 is an advanced vm/sandbox for Node.js. The library contains critical security issues and should not be used for production. The maintenance of the project has been discontinued. In vm2 for versions up to 3.9.19, `Promise` handler sanitization can be bypassed with the `@@species` accessor property allowing attackers to escape the sandbox and run arbitrary code, potentially allowing remote code execution inside the context of vm2 sandbox. Version 3.10.0 contains a patch for the issue.",
+                    "references": [
+                        {
+                            "name": null,
+                            "url": "https://security.netapp.com/advisory/ntap-20241108-0002/",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://github.com/patriksimek/vm2/commit/d9a1fde8ec5a5a9c9e5a69bf91d703950859d744",
+                            "source": "security-advisories@github.com"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://github.com/patriksimek/vm2/releases/tag/v3.10.0",
+                            "source": "security-advisories@github.com"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://github.com/patriksimek/vm2/security/advisories/GHSA-cchq-frgv-rjh5",
+                            "source": "security-advisories@github.com"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://github.com/patriksimek/vm2/security/advisories/GHSA-cchq-frgv-rjh5",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "criticityLabel": "CRITICAL",
+                    "cvssScore": 9.8,
+                    "cvssAccessVector": "NETWORK",
+                    "cvssAccessComplexity": "LOW",
+                    "cvssAuthentication": "NONE",
+                    "cvssConfidentialityImpact": "HIGH",
+                    "cvssAvailabilityImpact": "HIGH",
+                    "source": "NVD",
+                    "criticityCategory": "CRITICAL",
+                    "advisory": false,
+                    "isKev": false
+                },
+                {
+                    "matchedCPE": "cpe:/a:vm2_project:vm2",
+                    "name": "CVE-2023-37903",
+                    "publishedDate": "2023-07-21T20:15:16.057Z",
+                    "lastUpdateDate": "2025-11-03T22:16:23.317Z",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2023-37903",
+                    "description": "vm2 is an open source vm/sandbox for Node.js. In vm2 for versions up to and including 3.9.19, Node.js custom inspect function allows attackers to escape the sandbox and run arbitrary code. This may result in Remote Code Execution, assuming the attacker has arbitrary code execution primitive inside the context of vm2 sandbox. There are no patches and no known workarounds. Users are advised to find an alternative software.",
+                    "references": [
+                        {
+                            "name": "Vendor Advisory",
+                            "url": "https://github.com/patriksimek/vm2/security/advisories/GHSA-g644-9gfx-q4q4",
+                            "source": "security-advisories@github.com"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://security.netapp.com/advisory/ntap-20230831-0007/",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://security.netapp.com/advisory/ntap-20241108-0002/",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Vendor Advisory",
+                            "url": "https://github.com/patriksimek/vm2/security/advisories/GHSA-g644-9gfx-q4q4",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://security.netapp.com/advisory/ntap-20230831-0007/",
+                            "source": "security-advisories@github.com"
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "criticityLabel": "CRITICAL",
+                    "cvssScore": 9.8,
+                    "cvssAccessVector": "NETWORK",
+                    "cvssAccessComplexity": "LOW",
+                    "cvssAuthentication": "NONE",
+                    "cvssConfidentialityImpact": "HIGH",
+                    "cvssAvailabilityImpact": "HIGH",
+                    "source": "NVD",
+                    "criticityCategory": "CRITICAL",
+                    "advisory": false,
+                    "isKev": false
+                },
+                {
+                    "matchedCPE": "cpe:/a:vm2_project:vm2",
+                    "name": "CVE-2026-22709",
+                    "publishedDate": "2026-01-26T22:15:55.890Z",
+                    "lastUpdateDate": "2026-02-17T20:59:29.590Z",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2026-22709",
+                    "description": "vm2 is an open source vm/sandbox for Node.js. In vm2 prior to version 3.10.2, `Promise.prototype.then` `Promise.prototype.catch` callback sanitization can be bypassed. This allows attackers to escape the sandbox and run arbitrary code. In lib/setup-sandbox.js, the callback function of `localPromise.prototype.then` is sanitized, but `globalPromise.prototype.then` is not sanitized. The return value of async functions is `globalPromise` object. Version 3.10.2 fixes the issue.",
+                    "references": [
+                        {
+                            "name": "Patch",
+                            "url": "https://github.com/patriksimek/vm2/commit/4b009c2d4b1131c01810c1205e641d614c322a29",
+                            "source": "security-advisories@github.com"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://github.com/patriksimek/vm2/security/advisories/GHSA-99p7-6v5w-7xg8",
+                            "source": "security-advisories@github.com"
+                        },
+                        {
+                            "name": "Product",
+                            "url": "https://github.com/patriksimek/vm2/releases/tag/v3.10.2",
+                            "source": "security-advisories@github.com"
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "criticityLabel": "CRITICAL",
+                    "cvssScore": 9.8,
+                    "cvssAccessVector": "NETWORK",
+                    "cvssAccessComplexity": "LOW",
+                    "cvssAuthentication": "NONE",
+                    "cvssConfidentialityImpact": "HIGH",
+                    "cvssAvailabilityImpact": "HIGH",
+                    "source": "NVD",
+                    "criticityCategory": "CRITICAL",
+                    "advisory": false,
+                    "isKev": false
+                },
+                {
+                    "name": "CVE-2023-42282",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2023-42282",
+                    "description": "An issue in NPM IP Package v.1.1.8 and before allows an attacker to execute arbitrary code and obtain sensitive information via the isPublic() function.",
+                    "references": [
+                        {
+                            "name": null,
+                            "url": "https://cosmosofcyberspace.github.io/npm_ip_cve/npm_ip_cve.html",
+                            "source": null
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "cwes": [
+                        {
+                            "id": "CWE-918",
+                            "dangerousWeakness": false
+                        }
+                    ],
+                    "criticityLabel": "CRITICAL",
+                    "cvssScore": 9.8,
+                    "source": "GITLAB",
+                    "cweId": "CWE-918",
+                    "criticityCategory": "CRITICAL",
+                    "advisory": false,
+                    "isKev": false
+                },
+                {
+                    "matchedCPE": "cpe:/a:minimatch_project:minimatch",
+                    "name": "CVE-2026-26996",
+                    "publishedDate": "2026-02-20T03:16:01.620Z",
+                    "lastUpdateDate": "2026-02-20T19:12:33.527Z",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2026-26996",
+                    "description": "minimatch is a minimal matching utility for converting glob expressions into JavaScript RegExp objects. Versions 10.2.0 and below are vulnerable to Regular Expression Denial of Service (ReDoS) when a glob pattern contains many consecutive * wildcards followed by a literal character that doesn't appear in the test string. Each * compiles to a separate [^/]*? regex group, and when the match fails, V8's regex engine backtracks exponentially across all possible splits. The time complexity is O(4^N) where N is the number of * characters. With N=15, a single minimatch() call takes ~2 seconds. With N=34, it hangs effectively forever. Any application that passes user-controlled strings to minimatch() as the pattern argument is vulnerable to DoS. This issue has been fixed in version 10.2.1.",
+                    "references": [
+                        {
+                            "name": "Exploit",
+                            "url": "https://github.com/isaacs/minimatch/security/advisories/GHSA-3ppc-4f35-3m26",
+                            "source": "security-advisories@github.com"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://github.com/isaacs/minimatch/commit/2e111f3a79abc00fa73110195de2c0f2351904f5",
+                            "source": "security-advisories@github.com"
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "criticityLabel": "HIGH",
+                    "cvssScore": 7.5,
+                    "cvssAccessVector": "NETWORK",
+                    "cvssAccessComplexity": "LOW",
+                    "cvssAuthentication": "NONE",
+                    "cvssConfidentialityImpact": "NONE",
+                    "cvssAvailabilityImpact": "HIGH",
+                    "source": "NVD",
+                    "criticityCategory": "HIGH",
+                    "advisory": false,
+                    "isKev": false
+                },
+                {
+                    "name": "CVE-2024-29415",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2024-29415",
+                    "description": "The ip package through 2.0.1 for Node.js might allow SSRF because some IP addresses (such as 127.1, 01200034567, 012.1.2.3, 000:0:0000::01, and ::fFFf:127.0.0.1) are improperly categorized as globally routable via isPublic. NOTE: this issue exists because of an incomplete fix for CVE-2023-42282.",
+                    "references": [
+                        {
+                            "name": null,
+                            "url": "https://github.com/indutny/node-ip/pull/144",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "https://github.com/indutny/node-ip/pull/143",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "https://github.com/indutny/node-ip/issues/150",
+                            "source": null
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "cwes": [
+                        {
+                            "id": "CWE-918",
+                            "dangerousWeakness": false
+                        }
+                    ],
+                    "criticityLabel": "HIGH",
+                    "cvssScore": 8.1,
+                    "source": "GITLAB",
+                    "cweId": "CWE-918",
+                    "criticityCategory": "HIGH",
+                    "advisory": false,
+                    "isKev": false
+                },
+                {
+                    "matchedCPE": "cpe:/a:fast-xml-parser_project:fast-xml-parser",
+                    "name": "CVE-2023-34104",
+                    "publishedDate": "2023-06-06T22:15:11.643Z",
+                    "lastUpdateDate": "2024-11-21T13:06:33.287Z",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2023-34104",
+                    "description": "fast-xml-parser is an open source, pure javascript xml parser. fast-xml-parser allows special characters in entity names, which are not escaped or sanitized. Since the entity name is used for creating a regex for searching and replacing entities in the XML body, an attacker can abuse it for denial of service (DoS) attacks. By crafting an entity name that results in an intentionally bad performing regex and utilizing it in the entity replacement step of the parser, this can cause the parser to stall for an indefinite amount of time. This problem has been resolved in v4.2.4. Users are advised to upgrade. Users unable to upgrade should avoid using DOCTYPE parsing by setting the `processEntities: false` option.",
+                    "references": [
+                        {
+                            "name": null,
+                            "url": "https://github.com/NaturalIntelligence/fast-xml-parser/commit/a4bdced80369892ee413bf08e28b78795a2b0d5b",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Mitigation",
+                            "url": "https://github.com/NaturalIntelligence/fast-xml-parser/security/advisories/GHSA-6w63-h3fj-q4vw",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://github.com/NaturalIntelligence/fast-xml-parser/commit/39b0e050bb909e8499478657f84a3076e39ce76c",
+                            "source": "security-advisories@github.com"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://github.com/NaturalIntelligence/fast-xml-parser/commit/a4bdced80369892ee413bf08e28b78795a2b0d5b",
+                            "source": "security-advisories@github.com"
+                        },
+                        {
+                            "name": "Mitigation",
+                            "url": "https://github.com/NaturalIntelligence/fast-xml-parser/security/advisories/GHSA-6w63-h3fj-q4vw",
+                            "source": "security-advisories@github.com"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://github.com/NaturalIntelligence/fast-xml-parser/commit/39b0e050bb909e8499478657f84a3076e39ce76c",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "criticityLabel": "HIGH",
+                    "cvssScore": 7.5,
+                    "cvssAccessVector": "NETWORK",
+                    "cvssAccessComplexity": "LOW",
+                    "cvssAuthentication": "NONE",
+                    "cvssConfidentialityImpact": "NONE",
+                    "cvssAvailabilityImpact": "HIGH",
+                    "source": "NVD",
+                    "criticityCategory": "HIGH",
+                    "advisory": false,
+                    "isKev": false
+                },
+                {
+                    "matchedCPE": "cpe:/a:word-wrap_project:word-wrap",
+                    "name": "CVE-2023-26115",
+                    "publishedDate": "2023-06-22T09:15:09.157Z",
+                    "lastUpdateDate": "2025-02-13T22:16:11.457Z",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2023-26115",
+                    "description": "All versions of the package word-wrap are vulnerable to Regular Expression Denial of Service (ReDoS) due to the usage of an insecure regular expression within the result variable.",
+                    "references": [
+                        {
+                            "name": null,
+                            "url": "https://security.netapp.com/advisory/ntap-20240621-0006/",
+                            "source": "report@snyk.io"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://security.snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-4058657",
+                            "source": "report@snyk.io"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://security.snyk.io/vuln/SNYK-JS-WORDWRAP-3149973",
+                            "source": "report@snyk.io"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://github.com/jonschlinkert/word-wrap/releases/tag/1.2.4",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://github.com/jonschlinkert/word-wrap/releases/tag/1.2.4",
+                            "source": "report@snyk.io"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://security.netapp.com/advisory/ntap-20240621-0006/",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://security.snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-4058657",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Broken Link",
+                            "url": "https://github.com/jonschlinkert/word-wrap/blob/master/index.js%23L39",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Broken Link",
+                            "url": "https://github.com/jonschlinkert/word-wrap/blob/master/index.js%23L39",
+                            "source": "report@snyk.io"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://security.snyk.io/vuln/SNYK-JS-WORDWRAP-3149973",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "criticityLabel": "MEDIUM",
+                    "cvssScore": 5.3,
+                    "cvssAccessVector": "NETWORK",
+                    "cvssAccessComplexity": "LOW",
+                    "cvssAuthentication": "NONE",
+                    "cvssConfidentialityImpact": "NONE",
+                    "cvssAvailabilityImpact": "LOW",
+                    "source": "NVD",
+                    "criticityCategory": "MEDIUM",
+                    "advisory": false,
+                    "isKev": false
+                },
+                {
+                    "matchedCPE": "cpe:/a:xml2js_project:xml2js",
+                    "name": "CVE-2023-0842",
+                    "publishedDate": "2023-04-05T20:15:07.493Z",
+                    "lastUpdateDate": "2025-09-24T12:15:28.800Z",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2023-0842",
+                    "description": "xml2js version 0.4.23 allows an external attacker to edit or add new properties to an object. This is possible because the application does not properly validate incoming JSON keys, thus allowing the __proto__ property to be edited.",
+                    "references": [
+                        {
+                            "name": null,
+                            "url": "https://lists.debian.org/debian-lts-announce/2024/03/msg00013.html",
+                            "source": "help@fluidattacks.com"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.debian.org/debian-lts-announce/2024/03/msg00013.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Product",
+                            "url": "https://github.com/Leonidas-from-XIV/node-xml2js/",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://fluidattacks.com/advisories/myers/",
+                            "source": "help@fluidattacks.com"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://fluidattacks.com/advisories/myers/",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Product",
+                            "url": "https://github.com/Leonidas-from-XIV/node-xml2js/",
+                            "source": "help@fluidattacks.com"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://github.com/Leonidas-from-XIV/node-xml2js/releases/tag/0.6.2",
+                            "source": "help@fluidattacks.com"
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "criticityLabel": "MEDIUM",
+                    "cvssScore": 5.3,
+                    "cvssAccessVector": "NETWORK",
+                    "cvssAccessComplexity": "LOW",
+                    "cvssAuthentication": "NONE",
+                    "cvssConfidentialityImpact": "NONE",
+                    "cvssAvailabilityImpact": "NONE",
+                    "source": "NVD",
+                    "criticityCategory": "MEDIUM",
+                    "advisory": false,
+                    "isKev": false
+                },
+                {
+                    "matchedCPE": "cpe:/a:vm2_project:vm2",
+                    "name": "CVE-2023-32313",
+                    "publishedDate": "2023-05-16T00:15:09.070Z",
+                    "lastUpdateDate": "2024-11-21T13:03:05.510Z",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2023-32313",
+                    "description": "vm2 is a sandbox that can run untrusted code with Node's built-in modules. In versions 3.9.17 and lower of vm2 it was possible to get a read-write reference to the node `inspect` method and edit options for `console.log`. As a result a threat actor can edit options for the `console.log` command. This vulnerability was patched in the release of version `3.9.18` of `vm2`. Users are advised to upgrade. Users unable to upgrade may make the `inspect` method readonly with `vm.readonly(inspect)` after creating a vm.",
+                    "references": [
+                        {
+                            "name": "Patch",
+                            "url": "https://github.com/patriksimek/vm2/commit/5206ba25afd86ef547a2c9d48d46ca7a9e6ec238",
+                            "source": "security-advisories@github.com"
+                        },
+                        {
+                            "name": "Vendor Advisory",
+                            "url": "https://github.com/patriksimek/vm2/security/advisories/GHSA-p5gc-c584-jj6v",
+                            "source": "security-advisories@github.com"
+                        },
+                        {
+                            "name": "Product",
+                            "url": "https://gist.github.com/arkark/c1c57eaf3e0a649af1a70c2b93b17550",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Release Notes",
+                            "url": "https://github.com/patriksimek/vm2/releases/tag/3.9.18",
+                            "source": "security-advisories@github.com"
+                        },
+                        {
+                            "name": "Product",
+                            "url": "https://gist.github.com/arkark/c1c57eaf3e0a649af1a70c2b93b17550",
+                            "source": "security-advisories@github.com"
+                        },
+                        {
+                            "name": "Release Notes",
+                            "url": "https://github.com/patriksimek/vm2/releases/tag/3.9.18",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://github.com/patriksimek/vm2/commit/5206ba25afd86ef547a2c9d48d46ca7a9e6ec238",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Vendor Advisory",
+                            "url": "https://github.com/patriksimek/vm2/security/advisories/GHSA-p5gc-c584-jj6v",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "criticityLabel": "MEDIUM",
+                    "cvssScore": 5.3,
+                    "cvssAccessVector": "NETWORK",
+                    "cvssAccessComplexity": "LOW",
+                    "cvssAuthentication": "NONE",
+                    "cvssConfidentialityImpact": "NONE",
+                    "cvssAvailabilityImpact": "NONE",
+                    "source": "NVD",
+                    "criticityCategory": "MEDIUM",
+                    "advisory": false,
+                    "isKev": false
+                },
+                {
+                    "name": "CVE-2023-26920",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2023-26920",
+                    "description": "fast-xml-parser before 4.1.2 allows __proto__ for Prototype Pollution.",
+                    "references": [
+                        {
+                            "name": null,
+                            "url": "https://github.com/NaturalIntelligence/fast-xml-parser/commit/2b032a4f799c63d83991e4f992f1c68e4dd05804",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "https://gist.github.com/Sudistark/a5a45bd0804d522a1392cb5023aa7ef7",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "https://github.com/advisories/GHSA-793h-6f7r-6qvm",
+                            "source": null
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "cwes": [
+                        {
+                            "id": "CWE-1321",
+                            "dangerousWeakness": false
+                        }
+                    ],
+                    "criticityLabel": "MEDIUM",
+                    "cvssScore": 6.5,
+                    "source": "GITLAB",
+                    "cweId": "CWE-1321",
+                    "criticityCategory": "MEDIUM",
+                    "advisory": false,
+                    "isKev": false
+                },
+                {
+                    "name": "CVE-2025-5889",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2025-5889",
+                    "description": "A vulnerability was found in juliangruber brace-expansion up to 1.1.11. It has been rated as problematic. Affected by this issue is the function expand of the file index.js. The manipulation leads to inefficient regular expression complexity. The attack may be launched remotely. The complexity of an attack is rather high. The exploitation is known to be difficult. The exploit has been disclosed to the public and may be used. The name of the patch is a5b98a4f30d7813266b221435e1eaaf25a1b0ac5. It is recommended to apply a patch to fix this issue.",
+                    "references": [
+                        {
+                            "name": null,
+                            "url": "https://vuldb.com/?id.311660",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "https://vuldb.com/?submit.585717",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "https://vuldb.com/?ctiid.311660",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "https://gist.github.com/mmmsssttt404/37a40ce7d6e5ca604858fe30814d9466",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "https://github.com/juliangruber/brace-expansion/pull/65/commits/a5b98a4f30d7813266b221435e1eaaf25a1b0ac5",
+                            "source": null
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "cwes": [
+                        {
+                            "id": "CWE-400",
+                            "dangerousWeakness": false
+                        }
+                    ],
+                    "criticityLabel": "LOW",
+                    "cvssScore": 3.1,
+                    "source": "GITLAB",
+                    "cweId": "CWE-400",
+                    "criticityCategory": "LOW",
+                    "advisory": false,
+                    "isKev": false
+                }
+            ],
+            "components": [
+                {
+                    "id": 12813,
+                    "name": "concat-map.npm",
+                    "version": "0.0.1",
+                    "cves": [],
+                    "dependencyLevel": 5,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 62996,
+                    "name": "normalize-path.npm",
+                    "version": "3.0.0",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 14358,
+                    "name": "levn.npm",
+                    "version": "0.3.0",
+                    "cves": [],
+                    "dependencyLevel": 7,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 69655,
+                    "name": "stream.npm",
+                    "version": "0.0.2",
+                    "cves": [],
+                    "dependencyLevel": 1,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 14360,
+                    "name": "type-check.npm",
+                    "version": "0.3.2",
+                    "cves": [],
+                    "dependencyLevel": 7,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 32795,
+                    "name": "ms.npm",
+                    "version": "2.1.2",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 328216,
+                    "name": "buffer.npm",
+                    "version": "5.7.1",
+                    "cves": [],
+                    "dependencyLevel": 4,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 30750,
+                    "name": "isarray.npm",
+                    "version": "1.0.0",
+                    "cves": [],
+                    "dependencyLevel": 4,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 1234994,
+                    "name": "@aws-sdk/client-secrets-manager.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 1,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 1234995,
+                    "name": "@aws-sdk/xml-builder.npm",
+                    "version": "3.201.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 1234992,
+                    "name": "@aws-sdk/client-lambda.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 1,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 1234993,
+                    "name": "@aws-sdk/client-sfn.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 1,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 30756,
+                    "name": "util-deprecate.npm",
+                    "version": "1.0.2",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 32804,
+                    "name": "inherits.npm",
+                    "version": "2.0.4",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 1234998,
+                    "name": "@aws-sdk/eventstream-serde-browser.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 17445,
+                    "name": "postgres-bytea.npm",
+                    "version": "1.0.0",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 32805,
+                    "name": "xtend.npm",
+                    "version": "4.0.2",
+                    "cves": [],
+                    "dependencyLevel": 4,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 1234999,
+                    "name": "@aws-sdk/util-stream-browser.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 1234996,
+                    "name": "@aws-sdk/client-sqs.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 1,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 735788,
+                    "name": "pg-pool.npm",
+                    "version": "3.5.2",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 1234997,
+                    "name": "@aws-sdk/eventstream-serde-config-resolver.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 1235002,
+                    "name": "@aws-sdk/eventstream-serde-universal.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 1235003,
+                    "name": "@aws-sdk/hash-blob-browser.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 1235000,
+                    "name": "@aws-sdk/util-stream-node.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 1235001,
+                    "name": "@aws-sdk/eventstream-serde-node.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 447542,
+                    "name": "rfdc.npm",
+                    "version": "1.3.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 337975,
+                    "name": "bowser.npm",
+                    "version": "2.11.0",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 731705,
+                    "name": "archiver.npm",
+                    "version": "5.3.1",
+                    "cves": [],
+                    "dependencyLevel": 1,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 118838,
+                    "name": "depd.npm",
+                    "version": "2.0.0",
+                    "cves": [],
+                    "dependencyLevel": 5,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 131637,
+                    "name": "optionator.npm",
+                    "version": "0.8.3",
+                    "cves": [],
+                    "dependencyLevel": 6,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 870965,
+                    "name": "@aws-sdk/util-waiter.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 1234990,
+                    "name": "@aws-sdk/chunked-blob-reader-native.npm",
+                    "version": "3.208.0",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 1234991,
+                    "name": "@aws-sdk/client-s3.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 1,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 829004,
+                    "name": "streamroller.npm",
+                    "version": "3.1.5",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 90688,
+                    "name": "end-of-stream.npm",
+                    "version": "1.4.4",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 771657,
+                    "name": "date-format.npm",
+                    "version": "4.0.14",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 69706,
+                    "name": "xml.npm",
+                    "version": "1.0.1",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 557636,
+                    "name": "lazystream.npm",
+                    "version": "1.0.1",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 449111,
+                    "name": "balanced-match.npm",
+                    "version": "1.0.2",
+                    "cves": [],
+                    "dependencyLevel": 5,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 77395,
+                    "name": "archiver-utils.npm",
+                    "version": "2.1.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 51290,
+                    "name": "fs.npm",
+                    "version": "0.0.1-security",
+                    "cves": [],
+                    "dependencyLevel": 1,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 256088,
+                    "name": "postgres-date.npm",
+                    "version": "1.0.7",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 659541,
+                    "name": "strnum.npm",
+                    "version": "1.0.5",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 384100,
+                    "name": "crc32-stream.npm",
+                    "version": "4.0.2",
+                    "cves": [],
+                    "dependencyLevel": 4,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 30819,
+                    "name": "path-is-absolute.npm",
+                    "version": "1.0.1",
+                    "cves": [],
+                    "dependencyLevel": 4,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 499809,
+                    "name": "smart-buffer.npm",
+                    "version": "4.2.0",
+                    "cves": [],
+                    "dependencyLevel": 4,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 703084,
+                    "name": "https-proxy-agent.npm",
+                    "version": "5.0.1",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 384106,
+                    "name": "zip-stream.npm",
+                    "version": "4.1.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 30835,
+                    "name": "inflight.npm",
+                    "version": "1.0.6",
+                    "cves": [],
+                    "dependencyLevel": 4,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 87669,
+                    "name": "xmlbuilder.npm",
+                    "version": "11.0.1",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 314492,
+                    "name": "base64-js.npm",
+                    "version": "1.5.1",
+                    "cves": [],
+                    "dependencyLevel": 5,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 202874,
+                    "name": "@tootallnate/once.npm",
+                    "version": "1.1.2",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 478333,
+                    "name": "pg-connection-string.npm",
+                    "version": "2.5.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 723061,
+                    "name": "pac-resolver.npm",
+                    "version": "5.0.1",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 351886,
+                    "name": "readdir-glob.npm",
+                    "version": "1.1.1",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 527492,
+                    "name": "deep-is.npm",
+                    "version": "0.1.4",
+                    "cves": [],
+                    "dependencyLevel": 7,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 923295,
+                    "name": "@aws-sdk/signature-v4-multi-region.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 923290,
+                    "name": "@aws-sdk/middleware-location-constraint.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 30869,
+                    "name": "once.npm",
+                    "version": "1.4.0",
+                    "cves": [],
+                    "dependencyLevel": 4,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 923291,
+                    "name": "@aws-sdk/middleware-expect-continue.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 923288,
+                    "name": "@aws-sdk/middleware-ssec.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 923289,
+                    "name": "@aws-sdk/middleware-sdk-s3.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 923287,
+                    "name": "@aws-sdk/middleware-flexible-checksums.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 923284,
+                    "name": "@aws-sdk/middleware-bucket-endpoint.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 923282,
+                    "name": "@aws-crypto/crc32c.npm",
+                    "version": "3.0.0",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 923283,
+                    "name": "@aws-sdk/hash-stream-node.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 923281,
+                    "name": "@aws-crypto/sha1-browser.npm",
+                    "version": "3.0.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 662697,
+                    "name": "graceful-fs.npm",
+                    "version": "4.2.10",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 264361,
+                    "name": "setprototypeof.npm",
+                    "version": "1.2.0",
+                    "cves": [],
+                    "dependencyLevel": 5,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 621754,
+                    "name": "http-errors.npm",
+                    "version": "2.0.0",
+                    "cves": [],
+                    "dependencyLevel": 4,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 621756,
+                    "name": "degenerator.npm",
+                    "version": "3.0.2",
+                    "cves": [],
+                    "dependencyLevel": 4,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 713407,
+                    "name": "moment.npm",
+                    "version": "2.29.4",
+                    "cves": [],
+                    "dependencyLevel": 1,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 897722,
+                    "name": "@aws-sdk/md5-js.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 54456,
+                    "name": "brace-expansion.npm",
+                    "version": "1.1.11",
+                    "cves": [
+                        {
+                            "name": "CVE-2025-5889"
+                        }
+                    ],
+                    "dependencyLevel": 4,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 619213,
+                    "name": "minimatch.npm",
+                    "version": "3.1.2",
+                    "cves": [
+                        {
+                            "name": "CVE-2026-26996"
+                        }
+                    ],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 615628,
+                    "name": "toidentifier.npm",
+                    "version": "1.0.1",
+                    "cves": [],
+                    "dependencyLevel": 5,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 632012,
+                    "name": "socks.npm",
+                    "version": "2.6.2",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 54472,
+                    "name": "string_decoder.npm",
+                    "version": "1.1.1",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 545475,
+                    "name": "proxy-agent.npm",
+                    "version": "5.0.0",
+                    "cves": [],
+                    "dependencyLevel": 1,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 545477,
+                    "name": "pac-proxy-agent.npm",
+                    "version": "5.0.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 13006,
+                    "name": "fs-constants.npm",
+                    "version": "1.0.0",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 687834,
+                    "name": "crc-32.npm",
+                    "version": "1.2.2",
+                    "cves": [],
+                    "dependencyLevel": 5,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 756443,
+                    "name": "uuid.npm",
+                    "version": "9.0.0",
+                    "cves": [],
+                    "dependencyLevel": 1,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 435922,
+                    "name": "buffer-crc32.npm",
+                    "version": "0.2.13",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 548063,
+                    "name": "glob.npm",
+                    "version": "7.2.0",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 31448,
+                    "name": "lodash.difference.npm",
+                    "version": "4.5.0",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 320728,
+                    "name": "uuid.npm",
+                    "version": "8.3.2",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 774868,
+                    "name": "@aws-sdk/chunked-blob-reader.npm",
+                    "version": "3.188.0",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 887531,
+                    "name": "@aws-sdk/eventstream-codec.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 4,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 803051,
+                    "name": "@aws-sdk/is-array-buffer.npm",
+                    "version": "3.201.0",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 887530,
+                    "name": "@aws-crypto/crc32.npm",
+                    "version": "3.0.0",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 53994,
+                    "name": "prelude-ls.npm",
+                    "version": "1.1.2",
+                    "cves": [],
+                    "dependencyLevel": 7,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 804070,
+                    "name": "@aws-sdk/util-hex-encoding.npm",
+                    "version": "3.201.0",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 328936,
+                    "name": "tar-stream.npm",
+                    "version": "2.2.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 571645,
+                    "name": "socks-proxy-agent.npm",
+                    "version": "5.0.1",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 383731,
+                    "name": "get-uri.npm",
+                    "version": "3.0.2",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 244473,
+                    "name": "escodegen.npm",
+                    "version": "1.14.3",
+                    "cves": [],
+                    "dependencyLevel": 5,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 334587,
+                    "name": "rss.npm",
+                    "version": "1.2.2",
+                    "cves": [],
+                    "dependencyLevel": 1,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 244988,
+                    "name": "ast-types.npm",
+                    "version": "0.13.4",
+                    "cves": [],
+                    "dependencyLevel": 5,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 703756,
+                    "name": "ip.npm",
+                    "version": "1.1.8",
+                    "cves": [
+                        {
+                            "name": "CVE-2023-42282"
+                        },
+                        {
+                            "name": "CVE-2024-29415"
+                        }
+                    ],
+                    "dependencyLevel": 4,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 172303,
+                    "name": "proxy-from-env.npm",
+                    "version": "1.1.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 661778,
+                    "name": "raw-body.npm",
+                    "version": "2.5.1",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 147739,
+                    "name": "xml2js.npm",
+                    "version": "0.4.23",
+                    "cves": [
+                        {
+                            "name": "CVE-2023-0842"
+                        }
+                    ],
+                    "dependencyLevel": 1,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 661777,
+                    "name": "vm2.npm",
+                    "version": "3.9.9",
+                    "cves": [
+                        {
+                            "name": "CVE-2022-25893"
+                        },
+                        {
+                            "name": "CVE-2022-36067"
+                        },
+                        {
+                            "name": "CVE-2023-29017"
+                        },
+                        {
+                            "name": "CVE-2023-29199"
+                        },
+                        {
+                            "name": "CVE-2023-30547"
+                        },
+                        {
+                            "name": "CVE-2023-32313"
+                        },
+                        {
+                            "name": "CVE-2023-32314"
+                        },
+                        {
+                            "name": "CVE-2023-37466"
+                        },
+                        {
+                            "name": "CVE-2023-37903"
+                        },
+                        {
+                            "name": "CVE-2026-22709"
+                        }
+                    ],
+                    "dependencyLevel": 5,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 95521,
+                    "name": "packet-reader.npm",
+                    "version": "1.0.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 95520,
+                    "name": "buffer-writer.npm",
+                    "version": "2.0.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 95525,
+                    "name": "pg-int8.npm",
+                    "version": "1.0.1",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 95526,
+                    "name": "pg-types.npm",
+                    "version": "2.2.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 95529,
+                    "name": "postgres-array.npm",
+                    "version": "2.0.0",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 95531,
+                    "name": "postgres-interval.npm",
+                    "version": "1.2.0",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 315176,
+                    "name": "agent-base.npm",
+                    "version": "6.0.2",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 898337,
+                    "name": "@aws-sdk/middleware-sdk-sqs.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 365864,
+                    "name": "bl.npm",
+                    "version": "4.1.0",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 468266,
+                    "name": "statuses.npm",
+                    "version": "2.0.1",
+                    "cves": [],
+                    "dependencyLevel": 5,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 171821,
+                    "name": "http-proxy-agent.npm",
+                    "version": "4.0.1",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 646459,
+                    "name": "pgpass.npm",
+                    "version": "1.0.5",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 135478,
+                    "name": "readable-stream.npm",
+                    "version": "2.3.7",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 55606,
+                    "name": "universalify.npm",
+                    "version": "0.1.2",
+                    "cves": [],
+                    "dependencyLevel": 4,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 61751,
+                    "name": "fs-extra.npm",
+                    "version": "8.1.0",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 461119,
+                    "name": "compress-commons.npm",
+                    "version": "4.1.1",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 55612,
+                    "name": "esutils.npm",
+                    "version": "2.0.3",
+                    "cves": [],
+                    "dependencyLevel": 6,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 52546,
+                    "name": "fs.realpath.npm",
+                    "version": "1.0.0",
+                    "cves": [],
+                    "dependencyLevel": 4,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 171840,
+                    "name": "readable-stream.npm",
+                    "version": "3.6.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826703,
+                    "name": "@aws-crypto/sha256-js.npm",
+                    "version": "3.0.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 1234772,
+                    "name": "debug.npm",
+                    "version": "4.4.3",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 8524,
+                    "name": "lodash.union.npm",
+                    "version": "4.6.0",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 422217,
+                    "name": "netmask.npm",
+                    "version": "2.0.2",
+                    "cves": [],
+                    "dependencyLevel": 4,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826716,
+                    "name": "@aws-sdk/credential-provider-env.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 31057,
+                    "name": "unpipe.npm",
+                    "version": "1.0.0",
+                    "cves": [],
+                    "dependencyLevel": 4,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826717,
+                    "name": "@aws-sdk/credential-provider-imds.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826718,
+                    "name": "@aws-sdk/credential-provider-cognito-identity.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826712,
+                    "name": "@aws-sdk/config-resolver.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826713,
+                    "name": "@aws-sdk/client-sts.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826714,
+                    "name": "@aws-sdk/client-sso.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826715,
+                    "name": "@aws-sdk/client-sso-oidc.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 4,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 55640,
+                    "name": "esprima.npm",
+                    "version": "4.0.1",
+                    "cves": [],
+                    "dependencyLevel": 5,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826708,
+                    "name": "@aws-sdk/abort-controller.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 794453,
+                    "name": "log4js.npm",
+                    "version": "6.7.1",
+                    "cves": [],
+                    "dependencyLevel": 1,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826710,
+                    "name": "@aws-sdk/client-cognito-identity.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826704,
+                    "name": "@aws-crypto/ie11-detection.npm",
+                    "version": "3.0.0",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826705,
+                    "name": "@aws-crypto/util.npm",
+                    "version": "3.0.0",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826706,
+                    "name": "@aws-crypto/supports-web-crypto.npm",
+                    "version": "3.0.0",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826707,
+                    "name": "@aws-crypto/sha256-browser.npm",
+                    "version": "3.0.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826733,
+                    "name": "@aws-sdk/service-error-classification.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 101730,
+                    "name": "word-wrap.npm",
+                    "version": "1.2.3",
+                    "cves": [
+                        {
+                            "name": "CVE-2023-26115"
+                        }
+                    ],
+                    "dependencyLevel": 7,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826729,
+                    "name": "@aws-sdk/shared-ini-file-loader.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 774509,
+                    "name": "fast-xml-parser.npm",
+                    "version": "4.0.11",
+                    "cves": [
+                        {
+                            "name": "CVE-2023-26920"
+                        },
+                        {
+                            "name": "CVE-2023-34104"
+                        }
+                    ],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826725,
+                    "name": "@aws-sdk/querystring-parser.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 734561,
+                    "name": "flatted.npm",
+                    "version": "3.2.7",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 42348,
+                    "name": "sax.npm",
+                    "version": "1.2.1",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826721,
+                    "name": "@aws-sdk/querystring-builder.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 13680,
+                    "name": "emitter-component.npm",
+                    "version": "1.1.1",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826749,
+                    "name": "@aws-sdk/util-middleware.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826751,
+                    "name": "@aws-sdk/util-defaults-mode-browser.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826744,
+                    "name": "@aws-sdk/signature-v4.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826745,
+                    "name": "@aws-sdk/util-utf8.npm",
+                    "version": "3.254.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 95606,
+                    "name": "yallist.npm",
+                    "version": "3.1.1",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826747,
+                    "name": "@aws-sdk/util-utf8-browser.npm",
+                    "version": "3.259.0",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 7544,
+                    "name": "lodash.isplainobject.npm",
+                    "version": "4.0.6",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 798069,
+                    "name": "@aws-sdk/util-base64.npm",
+                    "version": "3.208.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 796535,
+                    "name": "moment-timezone.npm",
+                    "version": "0.5.40",
+                    "cves": [],
+                    "dependencyLevel": 1,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 798066,
+                    "name": "@aws-sdk/util-config-provider.npm",
+                    "version": "3.208.0",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826764,
+                    "name": "@aws-sdk/credential-provider-web-identity.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826765,
+                    "name": "@aws-sdk/credential-provider-process.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826766,
+                    "name": "@aws-sdk/middleware-serde.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 316295,
+                    "name": "ieee754.npm",
+                    "version": "1.2.1",
+                    "cves": [],
+                    "dependencyLevel": 5,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826767,
+                    "name": "@aws-sdk/credential-providers.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 1,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826760,
+                    "name": "@aws-sdk/middleware-logger.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826761,
+                    "name": "@aws-sdk/middleware-host-header.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826762,
+                    "name": "@aws-sdk/middleware-content-length.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 55687,
+                    "name": "estraverse.npm",
+                    "version": "4.3.0",
+                    "cves": [],
+                    "dependencyLevel": 6,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826763,
+                    "name": "@aws-sdk/token-providers.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 823684,
+                    "name": "tslib.npm",
+                    "version": "2.5.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826756,
+                    "name": "@aws-sdk/middleware-stack.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826757,
+                    "name": "@aws-sdk/middleware-user-agent.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826758,
+                    "name": "@aws-sdk/smithy-client.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826759,
+                    "name": "@aws-sdk/middleware-signing.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 518539,
+                    "name": "core-util-is.npm",
+                    "version": "1.0.3",
+                    "cves": [],
+                    "dependencyLevel": 4,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826752,
+                    "name": "@aws-sdk/util-endpoints.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826753,
+                    "name": "@aws-sdk/url-parser.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826754,
+                    "name": "@aws-sdk/util-defaults-mode-node.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826755,
+                    "name": "@aws-sdk/middleware-endpoint.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826781,
+                    "name": "@aws-sdk/util-user-agent-browser.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 55698,
+                    "name": "safe-buffer.npm",
+                    "version": "5.1.2",
+                    "cves": [],
+                    "dependencyLevel": 4,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 32660,
+                    "name": "process-nextick-args.npm",
+                    "version": "2.0.1",
+                    "cves": [],
+                    "dependencyLevel": 4,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826776,
+                    "name": "@aws-sdk/types.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 54680,
+                    "name": "wrappy.npm",
+                    "version": "1.0.2",
+                    "cves": [],
+                    "dependencyLevel": 5,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 798100,
+                    "name": "@aws-sdk/util-locate-window.npm",
+                    "version": "3.208.0",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826772,
+                    "name": "@aws-sdk/node-config-provider.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826773,
+                    "name": "@aws-sdk/protocol-http.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 798103,
+                    "name": "@aws-sdk/util-body-length-node.npm",
+                    "version": "3.208.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826768,
+                    "name": "@aws-sdk/credential-provider-sso.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826769,
+                    "name": "@aws-sdk/credential-provider-ini.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826770,
+                    "name": "@aws-sdk/credential-provider-node.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826796,
+                    "name": "@aws-sdk/util-user-agent-node.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826792,
+                    "name": "@aws-sdk/middleware-sdk-sts.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826793,
+                    "name": "@aws-sdk/invalid-dependency.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826794,
+                    "name": "@aws-sdk/node-http-handler.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 1,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 11175,
+                    "name": "lodash.flatten.npm",
+                    "version": "4.4.0",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826795,
+                    "name": "@aws-sdk/middleware-retry.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 798116,
+                    "name": "@aws-sdk/util-buffer-from.npm",
+                    "version": "3.208.0",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 32169,
+                    "name": "fast-levenshtein.npm",
+                    "version": "2.0.6",
+                    "cves": [],
+                    "dependencyLevel": 7,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826789,
+                    "name": "@aws-sdk/property-provider.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826790,
+                    "name": "@aws-sdk/util-retry.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826791,
+                    "name": "@aws-sdk/middleware-recursion-detection.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826784,
+                    "name": "@aws-sdk/hash-node.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 826785,
+                    "name": "@aws-sdk/fetch-http-handler.npm",
+                    "version": "3.272.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 11189,
+                    "name": "lru-cache.npm",
+                    "version": "5.1.1",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 629174,
+                    "name": "bytes.npm",
+                    "version": "3.1.2",
+                    "cves": [],
+                    "dependencyLevel": 4,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 658890,
+                    "name": "debug.npm",
+                    "version": "4.3.4",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 648140,
+                    "name": "async.npm",
+                    "version": "3.2.3",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 56262,
+                    "name": "mime-types.npm",
+                    "version": "2.1.13",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 1172441,
+                    "name": "@aws-sdk/util-arn-parser.npm",
+                    "version": "3.208.0",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 56275,
+                    "name": "mime-db.npm",
+                    "version": "1.25.0",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 323031,
+                    "name": "tslib.npm",
+                    "version": "1.14.1",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 707027,
+                    "name": "acorn.npm",
+                    "version": "8.7.1",
+                    "cves": [],
+                    "dependencyLevel": 6,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 558547,
+                    "name": "acorn-walk.npm",
+                    "version": "8.2.0",
+                    "cves": [],
+                    "dependencyLevel": 6,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 14300,
+                    "name": "safer-buffer.npm",
+                    "version": "2.1.2",
+                    "cves": [],
+                    "dependencyLevel": 5,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 595924,
+                    "name": "split2.npm",
+                    "version": "4.1.0",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 823790,
+                    "name": "pg.npm",
+                    "version": "8.9.0",
+                    "cves": [],
+                    "dependencyLevel": 1,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 7146,
+                    "name": "lodash.defaults.npm",
+                    "version": "4.2.0",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 823782,
+                    "name": "pg-protocol.npm",
+                    "version": "1.6.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 6641,
+                    "name": "jsonfile.npm",
+                    "version": "4.0.0",
+                    "cves": [],
+                    "dependencyLevel": 4,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 774650,
+                    "name": "@aws-sdk/util-body-length-browser.npm",
+                    "version": "3.188.0",
+                    "cves": [],
+                    "dependencyLevel": 2,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 14329,
+                    "name": "iconv-lite.npm",
+                    "version": "0.4.24",
+                    "cves": [],
+                    "dependencyLevel": 4,
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 801267,
+                    "name": "@aws-sdk/util-uri-escape.npm",
+                    "version": "3.201.0",
+                    "cves": [],
+                    "dependencyLevel": 3,
+                    "lifeSpan": "N/A"
+                }
+            ]
+        }
+    ],
+    "surveys": [
+        {
+            "id": 371,
+            "ref": "CAST_MAINT",
+            "name": "Software Maintenance Estimate",
+            "questions": [
+                {
+                    "label": "What is the average skill level of the development team on this type of application?",
+                    "value": "6 years",
+                    "questionId": 1000015,
+                    "choiceId": 1000070
+                },
+                {
+                    "label": "What percentage of the development effort has been spent on maintenance in the last 12 months?",
+                    "value": "15.0",
+                    "questionId": 1000012
+                },
+                {
+                    "label": "What is the annual staff turnover within the development team?",
+                    "value": "5%",
+                    "questionId": 1000016,
+                    "choiceId": 1000142
+                },
+                {
+                    "label": "What is the CMMI level of the organization?",
+                    "value": "Level 2",
+                    "questionId": 1000032,
+                    "choiceId": 1000256
+                },
+                {
+                    "label": "What is the percentage of change to the base code in the last 12 months?",
+                    "value": "10.0",
+                    "questionId": 1000121
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "ref": "CAST_BI",
+            "name": "Business Impact",
+            "questions": [
+                {
+                    "label": "What is the average number of FTE (Full Time Equivalent) resources that have worked on the source code for this application over the last 12 months?",
+                    "shortLabel": "",
+                    "value": "27.0",
+                    "questionId": 1000011
+                },
+                {
+                    "label": "Is this application aligned with the company's future technology direction?",
+                    "shortLabel": "",
+                    "value": "Yes",
+                    "questionId": 1000009,
+                    "choiceId": 1000042
+                },
+                {
+                    "label": "The number of major releases delivered over the last 12 months for this application?",
+                    "shortLabel": "",
+                    "value": "More than 12",
+                    "questionId": 1000006,
+                    "choiceId": 1000455
+                },
+                {
+                    "label": "Could failure of this application lead to loss of customer confidence? Please define the level of impact.",
+                    "value": "Very High",
+                    "questionId": 1000022,
+                    "choiceId": 1000223
+                },
+                {
+                    "label": "Could failure of this application lead to harm of the company's public image? Please define the level of impact.",
+                    "value": "Very High",
+                    "questionId": 1000021,
+                    "choiceId": 1000003
+                },
+                {
+                    "label": "Could failure of this application lead to loss of revenue or business opportunity? Please define the level of impact.",
+                    "value": "Very High",
+                    "questionId": 1000020,
+                    "choiceId": 1000409
+                },
+                {
+                    "label": "Could failure of this application lead to disruption? Please define the level of impact.",
+                    "value": "Very High",
+                    "questionId": 1000019,
+                    "choiceId": 1000195
+                },
+                {
+                    "label": "What is the approximate number of end users for this application?",
+                    "shortLabel": "",
+                    "value": "More than 2500",
+                    "questionId": 1000018,
+                    "choiceId": 1000398
+                },
+                {
+                    "label": "Does the application serve internal or external users?",
+                    "value": "Both",
+                    "questionId": 1000017,
+                    "choiceId": 1000205
+                }
+            ]
+        },
+        {
+            "id": 373,
+            "ref": "CAST_APP",
+            "name": "Application Properties",
+            "questions": [
+                {
+                    "label": "What is the application type?",
+                    "shortLabel": "",
+                    "value": "Asset Management Operations / Technology",
+                    "questionId": 1000004,
+                    "choiceId": 1000425
+                },
+                {
+                    "label": "Application Owner's name",
+                    "value": "Michael MULLER",
+                    "questionId": 1000002
+                },
+                {
+                    "label": "Is this application a custom application or a Commercial Off The Shelf product?",
+                    "shortLabel": "",
+                    "value": "Custom Application",
+                    "questionId": 1000427,
+                    "choiceId": 1000529
+                },
+                {
+                    "label": "In what year was this application first put into production?",
+                    "shortLabel": "",
+                    "value": "2010",
+                    "questionId": 1000033
+                }
+            ]
+        },
+        {
+            "id": 938,
+            "ref": "CAST_CLOUD",
+            "name": "Cloud Readiness Assessment",
+            "questions": [
+                {
+                    "label": "[Business Drivers] Does this application correspond to a specific workload?",
+                    "shortLabel": "",
+                    "value": "Streaming and Media Services",
+                    "questionId": 10000901,
+                    "choiceId": 10006808
+                },
+                {
+                    "label": "[Technical Enablers] Does this application depend on other services or applications?",
+                    "shortLabel": "",
+                    "value": "No dependency",
+                    "questionId": 10000808,
+                    "choiceId": 10006730
+                },
+                {
+                    "label": "[Technical Enablers] What is the database provider for this application?",
+                    "shortLabel": "",
+                    "value": "Standard and supported as a service in the Cloud (PaaS)",
+                    "questionId": 10000809,
+                    "choiceId": 10006734
+                },
+                {
+                    "label": "[Process Maturity] What is the average skill on Cloud technologies and practices within the development team for this application?",
+                    "shortLabel": "",
+                    "value": "Experts",
+                    "questionId": 10000810,
+                    "choiceId": 10006741
+                },
+                {
+                    "label": "[Business Drivers] What is the current (or expected) Service Level Agreement for this application?",
+                    "shortLabel": "",
+                    "value": "SLA with continuity of service",
+                    "questionId": 10000811,
+                    "choiceId": 10006744
+                },
+                {
+                    "label": "[Process Maturity] What is the evolution model and feedback loop approach for this application?",
+                    "shortLabel": "",
+                    "value": "Agile Development",
+                    "questionId": 10000800,
+                    "choiceId": 10006704
+                },
+                {
+                    "label": "[Technical Enablers] What is the current deployment platform for this application?",
+                    "shortLabel": "",
+                    "value": "Web application",
+                    "questionId": 10000801,
+                    "choiceId": 10006707
+                },
+                {
+                    "label": "[Technical Enablers] What is the current user authentication mechanism used by this application?",
+                    "shortLabel": "",
+                    "value": "Anonymous (no authentication)",
+                    "questionId": 10000802,
+                    "choiceId": 10007801
+                },
+                {
+                    "label": "[Technical Enablers]  How is this application exposed to external services/applications?",
+                    "shortLabel": "",
+                    "value": "Standalone (no interaction)",
+                    "questionId": 10000803,
+                    "choiceId": 10006713
+                },
+                {
+                    "label": "[Business Drivers] How is data consumed from this application?",
+                    "shortLabel": "",
+                    "value": "Information Management",
+                    "questionId": 10000805,
+                    "choiceId": 10006810
+                },
+                {
+                    "label": "[Process Maturity] What is the level of deployment process automation for provisioning and configuration for this application?",
+                    "shortLabel": "",
+                    "value": "Fully-automated",
+                    "questionId": 10000806,
+                    "choiceId": 10006725
+                },
+                {
+                    "label": "[Technical Enablers] Is this application multi-tenant?",
+                    "shortLabel": "",
+                    "value": "Full multi-tenant application",
+                    "questionId": 10000807,
+                    "choiceId": 10006729
+                }
+            ]
+        }
+    ],
+    "tags": [
+        {
+            "id": 2304,
+            "label": "CR+BI+CustomCode"
+        },
+        {
+            "id": 256,
+            "label": "Cloud Blockers"
+        },
+        {
+            "id": 57,
+            "label": "Cloud Boosters"
+        }
+    ]
+}

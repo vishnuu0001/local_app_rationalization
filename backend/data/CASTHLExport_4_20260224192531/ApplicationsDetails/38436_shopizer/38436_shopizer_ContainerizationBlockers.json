@@ -1,0 +1,83 @@
+[
+    {
+        "id": "Use_Hardcoded_IP_Address-JAVA",
+        "display": "Execution Environment : Using hardcoded network IP address",
+        "criticality": "Low",
+        "impacts": [
+            "Code"
+        ],
+        "roadblocks": 1.0,
+        "cloudEffort": 10,
+        "files": [
+            "sm-core/src/test/java/com/salesmanager/test/utils\\UtilsTestCase.java"
+        ]
+    },
+    {
+        "id": "Use_File_System-JAVA",
+        "display": "Execution Environment : Using file system",
+        "criticality": "Low",
+        "impacts": [
+            "Code",
+            "Container only"
+        ],
+        "roadblocks": 5.0,
+        "cloudEffort": 75,
+        "files": [
+            "sm-core/src/test/java/com/salesmanager/test/content\\ContentImagesTest.java",
+            "sm-core/src/test/java/com/salesmanager/test/content\\StaticContentTest.java",
+            "sm-core/src/test/java/com/salesmanager/test/catalog\\ProductTest.java"
+        ]
+    },
+    {
+        "id": "Use_Stateful_Session-JAVA",
+        "display": "Persistent Files : Using stateful session (Servlet)",
+        "criticality": "High",
+        "impacts": [
+            "Code",
+            "Container Architecture"
+        ],
+        "roadblocks": 32.0,
+        "cloudEffort": 320,
+        "files": [
+            "sm-shop/src/main/java/com/salesmanager/shop/admin/controller/user\\UserController.java",
+            "sm-shop/src/main/java/com/salesmanager/shop/admin/security\\UserAuthenticationSuccessHandler.java"
+        ]
+    },
+    {
+        "id": "Use_SecuredProtocols-JAVA",
+        "display": "Security & User Authentication : Use of unsecured network protocols or URI libraries",
+        "criticality": "Low",
+        "impacts": [
+            "Code"
+        ],
+        "roadblocks": 18.0,
+        "cloudEffort": 180,
+        "files": [
+            "sm-shop/src/test/java/com/salesmanager/test/shop/controller/store/rest\\ContactAPITest.java",
+            "sm-shop/src/test/java/com/salesmanager/test/shop/controller/category/rest\\CategoryManagementAPITest.java",
+            "sm-shop/src/test/java/com/salesmanager/test/shop/controller/product/rest\\ProductManagementAPITest.java",
+            "sm-shop/src/test/java/com/salesmanager/test/shop/controller/system/rest\\SystemAPITest.java",
+            "sm-shop/src/test/java/com/salesmanager/test/shop/controller/customer/rest\\CustomerRESTControllerTest.java"
+        ]
+    },
+    {
+        "id": "File_Manipulation_Practice-JAVA",
+        "display": "Persistent Files : Perform File Manipulation",
+        "criticality": "Low",
+        "impacts": [
+            "Code",
+            "Container only"
+        ],
+        "roadblocks": 18.0,
+        "cloudEffort": 270,
+        "files": [
+            "sm-core/src/test/java/com/salesmanager/test/order\\InvoiceTest.java",
+            "sm-core/src/main/java/com/salesmanager/core/business/utils\\ProductImageCropUtils.java",
+            "sm-core/src/test/java/com/salesmanager/test/utils\\ImportIntegrationModule.java",
+            "sm-core/src/test/java/com/salesmanager/test/content\\ContentImagesTest.java",
+            "sm-core/src/test/java/com/salesmanager/test/content\\StaticContentTest.java",
+            "sm-shop/src/test/java/com/salesmanager/test/shop/controller/product/rest\\ProductManagementAPITest.java",
+            "sm-core/src/test/java/com/salesmanager/test/catalog\\ProductTest.java"
+        ]
+    }
+]

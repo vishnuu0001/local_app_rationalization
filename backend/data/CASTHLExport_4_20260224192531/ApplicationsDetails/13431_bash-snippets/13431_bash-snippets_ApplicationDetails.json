@@ -1,0 +1,342 @@
+{
+    "id": 13431,
+    "name": "bash-snippets",
+    "domains": [
+        {
+            "id": 1455,
+            "name": "Open Source"
+        },
+        {
+            "id": 12909,
+            "name": "Portfolio Company Alpha"
+        }
+    ],
+    "metrics": [
+        {
+            "snapshotLabel": "Open Source #5 - July 2017_bash-snippets",
+            "snapshotDate": 1517374800000,
+            "softwareAgility": 0.7133549451828003,
+            "softwareAgilityAdded": 0.7133549451828003,
+            "softwareElegance": 0.5280252695083618,
+            "softwareEleganceAdded": 0.5280252695083618,
+            "softwareResiliency": 0.644370436668396,
+            "softwareResiliencyAdded": 0.644370436668396,
+            "softwareHealth": 0.628583550453186,
+            "openSourceSafety": 1.0,
+            "openSourceLicense": 1.0,
+            "openSourceObsolescence": null,
+            "openSourceCVE": 1.0,
+            "businessImpact": 0.3401015228426396,
+            "roarIndex": 0.1265178151319797,
+            "technicalDebt": 749.8500183671713,
+            "maintenanceRecordedFTE": 2.5,
+            "maintenanceRecommendedFTE": 0.0,
+            "cloudReady": 0.28487229862475444,
+            "cloudReadySurvey": 0.28487229862475444,
+            "greenIndex": null,
+            "greenIndexScan": null,
+            "greenIndexSurvey": null,
+            "greenOccurrences": null,
+            "greenEffort": null,
+            "greenDetail": [
+                {
+                    "technology": "Ksh",
+                    "greenIndexScan": 0.0,
+                    "greenIndexDetails": null
+                }
+            ],
+            "totalLinesOfCode": 2851,
+            "totalLinesOfCodeAdded": 2851,
+            "totalLinesOfCodeModified": 0,
+            "totalFiles": 29,
+            "totalFilesAdded": 29,
+            "totalFilesModified": 0,
+            "customIndicators": [
+                {
+                    "metricId": 10023356,
+                    "value": "0.06060606060606061"
+                },
+                {
+                    "metricId": 10006001,
+                    "value": "0.30851063829787234"
+                },
+                {
+                    "metricId": 10006305,
+                    "value": "-1.0"
+                },
+                {
+                    "metricId": 10013600,
+                    "value": "0.7333333333333333"
+                },
+                {
+                    "metricId": 10006302,
+                    "value": "-1.0"
+                },
+                {
+                    "metricId": 10006301,
+                    "value": "-1.0"
+                },
+                {
+                    "metricId": 10016304,
+                    "value": "-1.0"
+                }
+            ],
+            "technologies": [
+                {
+                    "technology": "Ksh",
+                    "totalLinesOfCode": 2851,
+                    "totalFiles": 29,
+                    "softwareAgility": 0.7133549451828003,
+                    "softwareElegance": 0.5280252695083618,
+                    "softwareResiliency": 0.644370436668396,
+                    "softwareHealth": 0.628583550453186,
+                    "softwareAgilityDetail": {
+                        "highLinesOfCode": 381,
+                        "mediumLinesOfCode": 2470,
+                        "lowLinesOfCode": 0
+                    },
+                    "softwareEleganceDetail": {
+                        "highLinesOfCode": 40,
+                        "mediumLinesOfCode": 1147,
+                        "lowLinesOfCode": 1664
+                    },
+                    "softwareResiliencyDetail": {
+                        "highLinesOfCode": 111,
+                        "mediumLinesOfCode": 2404,
+                        "lowLinesOfCode": 336
+                    },
+                    "softwareHealthDetail": {
+                        "highLinesOfCode": 177,
+                        "mediumLinesOfCode": 2007,
+                        "lowLinesOfCode": 666
+                    }
+                }
+            ],
+            "components": []
+        }
+    ],
+    "surveys": [
+        {
+            "id": 371,
+            "ref": "CAST_MAINT",
+            "name": "Software Maintenance Estimate",
+            "questions": [
+                {
+                    "label": "What is the average skill level of the development team on this type of application?",
+                    "value": "1 year",
+                    "questionId": 1000015,
+                    "choiceId": 1000068
+                },
+                {
+                    "label": "What percentage of the development effort has been spent on maintenance in the last 12 months?",
+                    "value": "10.0",
+                    "questionId": 1000012
+                },
+                {
+                    "label": "What is the annual staff turnover within the development team?",
+                    "value": "25%",
+                    "questionId": 1000016,
+                    "choiceId": 1000144
+                },
+                {
+                    "label": "What is the CMMI level of the organization?",
+                    "value": "Level 1 (upper half)",
+                    "questionId": 1000032,
+                    "choiceId": 1000255
+                },
+                {
+                    "label": "What is the percentage of change to the base code in the last 12 months?",
+                    "value": "10.0",
+                    "questionId": 1000121
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "ref": "CAST_BI",
+            "name": "Business Impact",
+            "questions": [
+                {
+                    "label": "What is the average number of FTE (Full Time Equivalent) resources that have worked on the source code for this application over the last 12 months?",
+                    "shortLabel": "",
+                    "value": "25.0",
+                    "questionId": 1000011
+                },
+                {
+                    "label": "Is this application aligned with the company's future technology direction?",
+                    "shortLabel": "",
+                    "value": "No",
+                    "questionId": 1000009,
+                    "choiceId": 1000043
+                },
+                {
+                    "label": "The number of major releases delivered over the last 12 months for this application?",
+                    "shortLabel": "",
+                    "value": "7 to 12",
+                    "questionId": 1000006,
+                    "choiceId": 1000454
+                },
+                {
+                    "label": "Could failure of this application lead to loss of customer confidence? Please define the level of impact.",
+                    "value": "Medium",
+                    "questionId": 1000022,
+                    "choiceId": 1000221
+                },
+                {
+                    "label": "Could failure of this application lead to harm of the company's public image? Please define the level of impact.",
+                    "value": "Low",
+                    "questionId": 1000021,
+                    "choiceId": 1000000
+                },
+                {
+                    "label": "Could failure of this application lead to loss of revenue or business opportunity? Please define the level of impact.",
+                    "value": "Low",
+                    "questionId": 1000020,
+                    "choiceId": 1000406
+                },
+                {
+                    "label": "Could failure of this application lead to disruption? Please define the level of impact.",
+                    "value": "Medium",
+                    "questionId": 1000019,
+                    "choiceId": 1000193
+                },
+                {
+                    "label": "What is the approximate number of end users for this application?",
+                    "shortLabel": "",
+                    "value": "Less than 100",
+                    "questionId": 1000018,
+                    "choiceId": 1000395
+                },
+                {
+                    "label": "Does the application serve internal or external users?",
+                    "value": "Internal users or business processes",
+                    "questionId": 1000017,
+                    "choiceId": 1000204
+                }
+            ]
+        },
+        {
+            "id": 373,
+            "ref": "CAST_APP",
+            "name": "Application Properties",
+            "questions": [
+                {
+                    "label": "What is the application type?",
+                    "shortLabel": "",
+                    "value": "Warehouse Management",
+                    "questionId": 1000004,
+                    "choiceId": 1000442
+                },
+                {
+                    "label": "Application Owner's name",
+                    "value": "MMU",
+                    "questionId": 1000002
+                },
+                {
+                    "label": "Is this application a custom application or a Commercial Off The Shelf product?",
+                    "shortLabel": "",
+                    "value": "Customized COTS",
+                    "questionId": 1000427,
+                    "choiceId": 1000531
+                },
+                {
+                    "label": "In what year was this application first put into production?",
+                    "shortLabel": "",
+                    "value": "2014",
+                    "questionId": 1000033
+                }
+            ]
+        },
+        {
+            "id": 938,
+            "ref": "CAST_CLOUD",
+            "name": "Cloud Readiness Assessment",
+            "questions": [
+                {
+                    "label": "[Business Drivers] Does this application correspond to a specific workload?",
+                    "shortLabel": "",
+                    "value": "Big Compute",
+                    "questionId": 10000901,
+                    "choiceId": 10006806
+                },
+                {
+                    "label": "[Technical Enablers] Does this application depend on other services or applications?",
+                    "shortLabel": "",
+                    "value": "Internal services exposed through an API",
+                    "questionId": 10000808,
+                    "choiceId": 10006731
+                },
+                {
+                    "label": "[Technical Enablers] What is the database provider for this application?",
+                    "shortLabel": "",
+                    "value": "Proprietary but deployable in the Cloud (IaaS)",
+                    "questionId": 10000809,
+                    "choiceId": 10006736
+                },
+                {
+                    "label": "[Process Maturity] What is the average skill on Cloud technologies and practices within the development team for this application?",
+                    "shortLabel": "",
+                    "value": "Basic knowledge",
+                    "questionId": 10000810,
+                    "choiceId": 10006739
+                },
+                {
+                    "label": "[Business Drivers] What is the current (or expected) Service Level Agreement for this application?",
+                    "shortLabel": "",
+                    "value": "SLA with continuity of service",
+                    "questionId": 10000811,
+                    "choiceId": 10006744
+                },
+                {
+                    "label": "[Process Maturity] What is the evolution model and feedback loop approach for this application?",
+                    "shortLabel": "",
+                    "value": "Agile Development",
+                    "questionId": 10000800,
+                    "choiceId": 10006704
+                },
+                {
+                    "label": "[Technical Enablers] What is the current deployment platform for this application?",
+                    "shortLabel": "",
+                    "value": "Desktop application",
+                    "questionId": 10000801,
+                    "choiceId": 10006706
+                },
+                {
+                    "label": "[Technical Enablers] What is the current user authentication mechanism used by this application?",
+                    "shortLabel": "",
+                    "value": "Login/Password authentication",
+                    "questionId": 10000802,
+                    "choiceId": 10006711
+                },
+                {
+                    "label": "[Technical Enablers]  How is this application exposed to external services/applications?",
+                    "shortLabel": "",
+                    "value": "REST API exposed",
+                    "questionId": 10000803,
+                    "choiceId": 10006714
+                },
+                {
+                    "label": "[Business Drivers] How is data consumed from this application?",
+                    "shortLabel": "",
+                    "value": "Classic Storage",
+                    "questionId": 10000805,
+                    "choiceId": 10006722
+                },
+                {
+                    "label": "[Process Maturity] What is the level of deployment process automation for provisioning and configuration for this application?",
+                    "shortLabel": "",
+                    "value": "Semi-automated",
+                    "questionId": 10000806,
+                    "choiceId": 10006724
+                },
+                {
+                    "label": "[Technical Enablers] Is this application multi-tenant?",
+                    "shortLabel": "",
+                    "value": "Yes, multi-tenant front with a dedicated schema (with common database)",
+                    "questionId": 10000807,
+                    "choiceId": 10006728
+                }
+            ]
+        }
+    ]
+}

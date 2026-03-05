@@ -1,0 +1,468 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 13410,
+                                            "application_name": "pyup",
+                                            "counter": 137.0,
+                                            "effort": 411.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__RiskyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 13410,
+                                            "application_name": "pyup",
+                                            "counter": 1.0,
+                                            "effort": 5.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__UnusedImport",
+                                    "detail": [
+                                        {
+                                            "application_id": 13410,
+                                            "application_name": "pyup",
+                                            "counter": 46.0,
+                                            "effort": 3.8333335
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__MultipleReturn",
+                                    "detail": [
+                                        {
+                                            "application_id": 13410,
+                                            "application_name": "pyup",
+                                            "counter": 17.0,
+                                            "effort": 8.5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__MagicMethods",
+                                    "detail": [
+                                        {
+                                            "application_id": 13410,
+                                            "application_name": "pyup",
+                                            "counter": 6.0,
+                                            "effort": 2.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__UnexpectedGetter",
+                                    "detail": [
+                                        {
+                                            "application_id": 13410,
+                                            "application_name": "pyup",
+                                            "counter": 2.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__ConcatInLoop",
+                                    "detail": [
+                                        {
+                                            "application_id": 13410,
+                                            "application_name": "pyup",
+                                            "counter": 3.0,
+                                            "effort": 1.5000001
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__UnusedArg",
+                                    "detail": [
+                                        {
+                                            "application_id": 13410,
+                                            "application_name": "pyup",
+                                            "counter": 13.0,
+                                            "effort": 1.0833334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__UnusedVar",
+                                    "detail": [
+                                        {
+                                            "application_id": 13410,
+                                            "application_name": "pyup",
+                                            "counter": 347.0,
+                                            "effort": 347.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__ImportConflict",
+                                    "detail": [
+                                        {
+                                            "application_id": 13410,
+                                            "application_name": "pyup",
+                                            "counter": 2.0,
+                                            "effort": 0.33333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__FileGlobalVariables",
+                                    "detail": [
+                                        {
+                                            "application_id": 13410,
+                                            "application_name": "pyup",
+                                            "counter": 34.0,
+                                            "effort": 34.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__UnsignificantReturn",
+                                    "detail": [
+                                        {
+                                            "application_id": 13410,
+                                            "application_name": "pyup",
+                                            "counter": 10.0,
+                                            "effort": 1.6666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__StringFormat",
+                                    "detail": [
+                                        {
+                                            "application_id": 13410,
+                                            "application_name": "pyup",
+                                            "counter": 1.0,
+                                            "effort": 0.083333336
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__String",
+                                    "detail": [
+                                        {
+                                            "application_id": 13410,
+                                            "application_name": "pyup",
+                                            "counter": 3249.0,
+                                            "effort": 270.75
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 13410,
+                                            "application_name": "pyup",
+                                            "counter": 317.0,
+                                            "effort": 26.416668
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 13410,
+                                            "application_name": "pyup",
+                                            "counter": 6528.0,
+                                            "effort": 1088.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 13410,
+                                            "application_name": "pyup",
+                                            "counter": 452.0,
+                                            "effort": 37.666668
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__ArtifactSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 13410,
+                                            "application_name": "pyup",
+                                            "counter": 32.0,
+                                            "effort": 2.6666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__AutomaticNumbering",
+                                    "detail": [
+                                        {
+                                            "application_id": 13410,
+                                            "application_name": "pyup",
+                                            "counter": 37.0,
+                                            "effort": 3.0833335
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 13410,
+                                            "application_name": "pyup",
+                                            "counter": 15.0,
+                                            "effort": 1.2500001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 13410,
+                                            "application_name": "pyup",
+                                            "counter": 1.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 13410,
+                                            "application_name": "pyup",
+                                            "counter": 1070.7601,
+                                            "effort": 1070.7601
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__MultilineInstruction",
+                                    "detail": [
+                                        {
+                                            "application_id": 13410,
+                                            "application_name": "pyup",
+                                            "counter": 88.0,
+                                            "effort": 7.3333335
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__LocalVar",
+                                    "detail": [
+                                        {
+                                            "application_id": 13410,
+                                            "application_name": "pyup",
+                                            "counter": 302.0,
+                                            "effort": 50.333336
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 13410,
+                                            "application_name": "pyup",
+                                            "counter": 74.775,
+                                            "effort": 373.875
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__MethodsWithTooMuchParameters",
+                                    "detail": [
+                                        {
+                                            "application_id": 13410,
+                                            "application_name": "pyup",
+                                            "counter": 21.0,
+                                            "effort": 105.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 13410,
+                                            "application_name": "pyup",
+                                            "counter": 573.0,
+                                            "effort": 2865.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__ComplexClasses",
+                                    "detail": [
+                                        {
+                                            "application_id": 13410,
+                                            "application_name": "pyup",
+                                            "counter": 224.0,
+                                            "effort": 112.00001
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

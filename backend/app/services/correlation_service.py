@@ -462,7 +462,11 @@ class CorrelationService:
             app_id: item for app_id, item in cast_data["items_by_app_id"].items()
             if app_id not in matched_cast_app_ids
         }
-        
+
+        # Capture truly unmatched (no direct ID match) BEFORE fuzzy matching removes them
+        truly_unmatched_corent = dict(unmatched_infra)
+        truly_unmatched_cast = dict(unmatched_cast)
+
         # Fuzzy match remaining items
         for infra_app_id, infra_item in list(unmatched_infra.items()):
             best_match = None
@@ -503,18 +507,19 @@ class CorrelationService:
             "correlation_layer": correlation_layer,
             "direct_matches": direct_matches,
             "fuzzy_matches": fuzzy_matches,
-            "unmatched_corent": list(unmatched_infra.values()),
-            "unmatched_cast": list(unmatched_cast.values()),
+            "unmatched_corent": list(truly_unmatched_corent.values()),
+            "unmatched_cast": list(truly_unmatched_cast.values()),
             "statistics": {
                 "corent_total": len(infra_data["items_by_app_id"]),
                 "cast_total": cast_data["total_items"],
                 "direct_matched": len(direct_matches),
                 "fuzzy_matched": len(fuzzy_matches),
-                "total_matched": len(correlation_layer),
-                "unmatched_corent_count": len(unmatched_infra),
-                "unmatched_cast_count": len(unmatched_cast),
+                "total_matched": len(direct_matches),  # Only direct ID matches count as "matched"
+                "correlated_total": len(correlation_layer),  # Direct + fuzzy (full master matrix count)
+                "unmatched_corent_count": len(truly_unmatched_corent),
+                "unmatched_cast_count": len(truly_unmatched_cast),
                 "match_percentage": round(
-                    (len(correlation_layer) / max(len(infra_data["items_by_app_id"]), 1)) * 100, 2
+                    (len(direct_matches) / max(len(infra_data["items_by_app_id"]), 1)) * 100, 2
                 )
             }
         }
@@ -574,7 +579,7 @@ class CorrelationService:
             master_matrix.append(entry)
         
         # Add unmatched Infrastructure items with "Unmatched from Infrastructure" indicator
-        for infra_item in correlation_data.get("unmatched_infra", []):
+        for infra_item in (correlation_data.get("unmatched_corent") or correlation_data.get("unmatched_infra", [])):
             entry = {
                 "app_id": infra_item.get("app_id", ""),
                 "app_name": infra_item.get("app_name", ""),
@@ -643,7 +648,7 @@ class CorrelationService:
         result = CorrelationResult(
             correlation_data=json.dumps(correlation_data, default=str),
             master_matrix=json.dumps(master_matrix, default=str),
-            matched_count=correlation_data.get("statistics", {}).get("total_matched", 0),
+            matched_count=correlation_data.get("statistics", {}).get("direct_matched", 0),
             total_count=correlation_data.get("statistics", {}).get("corent_total", 0),
             match_percentage=correlation_data.get("statistics", {}).get("match_percentage", 0.0)
         )

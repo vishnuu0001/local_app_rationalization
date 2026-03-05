@@ -63,10 +63,12 @@ import os
 from pathlib import Path
 
 import openpyxl
-from openpyxl.styles import PatternFill, Alignment
+from openpyxl.styles import PatternFill, Alignment, Font
 
+from app import db
 from app.models.corent_data import CorentData
 from app.models.cast import CASTData
+from app.models.golden_data import GoldenData
 
 # Paths
 _TEMPLATE_PATH  = Path(__file__).resolve().parent.parent.parent / "data" / "APRAttributes.xlsx"
@@ -196,12 +198,17 @@ def _get_column_headers():
 
 def generate_golden_data():
     """
-    1. shutil.copy2(template → UpdatedData/APRAttributes.xlsx)  — fast binary copy, all 16 sheets intact
+    1. shutil.copy2(template → UpdatedData/APRAttributes.xlsx)
     2. Load the copy in write mode
     3. Clear rows 6+ of 'Inputs from Sources', write DB rows
-    4. Save ONCE to disk  (download endpoint serves from that file)
+    4. Upsert each row into the GoldenData DB table
+    5. Save ONCE to disk  (download endpoint serves from that file)
+
+    Cell colouring rules:
+      • Cell has a value  → Blue background (#1F4E79) + White font
+      • Cell is empty     → Yellow background (#FFD700)
     """
-    # ── 1. Fetch data ──────────────────────────────────────────────────────────
+    # ── 1. Fetch data ─────────────────────────────────────────────────────────
     corent_rows = CorentData.query.order_by(CorentData.app_id).all()
     if not corent_rows:
         return {
@@ -221,7 +228,7 @@ def generate_golden_data():
     import shutil as _shutil
     _shutil.copy2(str(_TEMPLATE_PATH), str(_OUTPUT_PATH))
 
-    # ── 3. Load the copy (all 16 sheets) ──────────────────────────────────────
+    # ── 3. Load the copy (all sheets) ─────────────────────────────────────────
     wb = openpyxl.load_workbook(str(_OUTPUT_PATH))
     ws = wb[_SHEET_NAME]
 
@@ -231,10 +238,15 @@ def generate_golden_data():
             for c in range(1, 65):
                 ws.cell(row=r, column=c).value = None
 
-    # ── 5. Write DB rows ───────────────────────────────────────────────────────
+    # Styles
+    blue_fill   = PatternFill(start_color="1F4E79", end_color="1F4E79", fill_type="solid")
+    yellow_fill = PatternFill(start_color="FFD700", end_color="FFD700", fill_type="solid")
+    white_font  = Font(color="FFFFFF", bold=False)
+    center_align = Alignment(wrap_text=False, vertical="center")
+
+    # ── 5. Write DB rows & upsert into GoldenData ─────────────────────────────
     missing_cast = []
     preview_rows = []
-    cast_fill = PatternFill(start_color="EBF5FB", end_color="EBF5FB", fill_type="solid")
 
     for idx, corent_row in enumerate(corent_rows):
         cast_row = cast_index.get(corent_row.app_id)
@@ -246,12 +258,21 @@ def generate_golden_data():
 
         for col_idx, value in enumerate(values, start=1):
             cell = ws.cell(row=excel_row_num, column=col_idx, value=value)
-            if cast_row and col_idx in {26, 29, 30, 31, 32, 33, 34, 36, 37, 38, 40}:
-                cell.fill = cast_fill
-            cell.alignment = Alignment(wrap_text=False, vertical="center")
+            is_empty = value is None or str(value).strip() == ''
+            if is_empty:
+                cell.fill = yellow_fill
+            else:
+                cell.fill  = blue_fill
+                cell.font  = white_font
+            cell.alignment = center_align
 
         if idx < _MAX_PREVIEW_ROWS:
             preview_rows.append(values)
+
+        # ── Upsert into GoldenData DB ────────────────────────────────────────
+        _upsert_golden_record(corent_row, cast_row, values)
+
+    db.session.commit()
 
     # ── 6. Save ONCE to disk ───────────────────────────────────────────────────
     wb.save(str(_OUTPUT_PATH))
@@ -266,14 +287,108 @@ def generate_golden_data():
     }
 
 
+def _upsert_golden_record(corent_row, cast_row, values):
+    """Insert or update a single GoldenData row from the 64-value list."""
+    app_id = values[0]
+    if not app_id:
+        return
+
+    record = GoldenData.query.filter_by(app_id=app_id).first()
+    if record is None:
+        record = GoldenData(app_id=app_id)
+        db.session.add(record)
+
+    def v(idx):
+        val = values[idx]
+        return str(val) if val is not None else None
+
+    def vi(idx):
+        val = values[idx]
+        try:
+            return int(val) if val is not None else None
+        except (ValueError, TypeError):
+            return None
+
+    record.app_name                              = v(1)
+    record.server_type                           = v(2)
+    record.operating_system                      = v(3)
+    record.cpu_core                              = v(4)
+    record.memory                                = v(5)
+    record.internal_storage                      = v(6)
+    record.external_storage                      = v(7)
+    record.storage_type                          = v(8)
+    record.db_storage                            = v(9)
+    record.db_engine                             = v(10)
+    record.environment_install_type              = v(11)
+    record.virtualization_attributes             = v(12)
+    record.compute_server_hardware_architecture  = v(13)
+    record.application_stability                 = v(14)
+    record.virtualization_state                  = v(15)
+    record.storage_decomposition                 = v(16)
+    record.flash_storage_used                    = v(17)
+    record.cpu_requirement                       = v(18)
+    record.memory_ram_requirement                = v(19)
+    record.mainframe_dependency                  = v(20)
+    record.desktop_dependency                    = v(21)
+    record.app_os_platform_cloud_suitability     = v(22)
+    record.database_cloud_readiness              = v(23)
+    record.integration_middleware_cloud_readiness = v(24)
+    record.application_architecture              = v(25)
+    record.application_hardware_dependency       = v(26)
+    record.app_cots_vs_non_cots                  = v(27)
+    record.source_code_availability              = v(28)
+    record.programming_language                  = v(29)
+    record.component_coupling                    = v(30)
+    # col 31 = cloud_suitability (merged - no dedicated model field; skip)
+    # col 32 = volume_external_dependencies (merged - skip)
+    record.app_service_api_readiness             = v(33)
+    record.app_load_predictability_elasticity    = v(34)
+    record.degree_of_code_protocols              = v(35)
+    record.code_design                           = v(36)
+    record.application_code_complexity_volume    = v(37)
+    record.financially_optimizable_hardware_usage = v(38)
+    record.latency_requirements                  = v(40)
+    record.ubiquitous_access_requirements        = v(41)
+    record.no_of_production_environments         = vi(52)
+    record.no_of_non_production_environments     = vi(53)
+    record.ha_dr_requirements                    = v(54)
+    record.rto_requirements                      = v(56)
+    record.rpo_requirements                      = v(57)
+    record.deployment_geography                  = v(58)
+
+
 def get_preview_data():
     """
-    Return preview data without generating the full workbook (lighter call).
-    Used by the frontend to display data after generation.
+    Return preview data from the GoldenData DB table (no workbook generation).
+    Falls back to live CORENT+CAST query if the DB table is empty.
     """
-    corent_rows = CorentData.query.order_by(CorentData.app_id).all()
-    cast_index = {r.app_id: r for r in CASTData.query.all()}
+    records = GoldenData.query.order_by(GoldenData.app_id).all()
 
+    if records:
+        # Build preview rows from DB records
+        headers = _get_column_headers()
+        preview_rows = []
+        missing_cast = []
+        cast_index = {r.app_id: r for r in CASTData.query.all()}
+
+        for rec in records[:_MAX_PREVIEW_ROWS]:
+            has_cast = rec.app_id in cast_index
+            if not has_cast:
+                missing_cast.append(rec.app_id)
+            row = _db_record_to_row(rec)
+            preview_rows.append(row)
+
+        return {
+            "row_count": len(records),
+            "preview_headers": headers,
+            "preview_rows": preview_rows,
+            "missing_cast": missing_cast,
+            "source": "db",
+        }
+
+    # Fallback: live query
+    corent_rows = CorentData.query.order_by(CorentData.app_id).all()
+    cast_index  = {r.app_id: r for r in CASTData.query.all()}
     preview_rows = []
     missing_cast = []
 
@@ -288,4 +403,102 @@ def get_preview_data():
         "preview_headers": _get_column_headers(),
         "preview_rows": preview_rows,
         "missing_cast": missing_cast,
+        "source": "live",
     }
+
+
+def regenerate_excel_from_db():
+    """
+    Rebuild APRAttributes.xlsx purely from the GoldenData DB table.
+    Called after user edits so the Excel reflects the updated values.
+    """
+    records = GoldenData.query.order_by(GoldenData.app_id).all()
+    if not records:
+        return {"error": "No GoldenData records found. Run Generate first."}
+
+    if not _TEMPLATE_PATH.exists():
+        raise FileNotFoundError(f"Template not found: {_TEMPLATE_PATH}")
+    _OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
+    import shutil as _shutil
+    _shutil.copy2(str(_TEMPLATE_PATH), str(_OUTPUT_PATH))
+
+    wb = openpyxl.load_workbook(str(_OUTPUT_PATH))
+    ws = wb[_SHEET_NAME]
+
+    if ws.max_row >= _DATA_START_ROW:
+        for r in range(_DATA_START_ROW, ws.max_row + 1):
+            for c in range(1, 65):
+                ws.cell(row=r, column=c).value = None
+
+    blue_fill    = PatternFill(start_color="1F4E79", end_color="1F4E79", fill_type="solid")
+    yellow_fill  = PatternFill(start_color="FFD700", end_color="FFD700", fill_type="solid")
+    white_font   = Font(color="FFFFFF", bold=False)
+    center_align = Alignment(wrap_text=False, vertical="center")
+
+    for idx, rec in enumerate(records):
+        values = _db_record_to_row(rec)
+        excel_row_num = _DATA_START_ROW + idx
+        for col_idx, value in enumerate(values, start=1):
+            cell = ws.cell(row=excel_row_num, column=col_idx, value=value)
+            is_empty = value is None or str(value).strip() == ''
+            if is_empty:
+                cell.fill = yellow_fill
+            else:
+                cell.fill = blue_fill
+                cell.font = white_font
+            cell.alignment = center_align
+
+    wb.save(str(_OUTPUT_PATH))
+    return {"row_count": len(records), "output_path": str(_OUTPUT_PATH), "error": None}
+
+
+def _db_record_to_row(rec):
+    """Map a GoldenData DB record back to the 64-column preview list."""
+    row = [None] * 64
+    row[0]  = rec.app_id
+    row[1]  = rec.app_name
+    row[2]  = rec.server_type
+    row[3]  = rec.operating_system
+    row[4]  = rec.cpu_core
+    row[5]  = rec.memory
+    row[6]  = rec.internal_storage
+    row[7]  = rec.external_storage
+    row[8]  = rec.storage_type
+    row[9]  = rec.db_storage
+    row[10] = rec.db_engine
+    row[11] = rec.environment_install_type
+    row[12] = rec.virtualization_attributes
+    row[13] = rec.compute_server_hardware_architecture
+    row[14] = rec.application_stability
+    row[15] = rec.virtualization_state
+    row[16] = rec.storage_decomposition
+    row[17] = rec.flash_storage_used
+    row[18] = rec.cpu_requirement
+    row[19] = rec.memory_ram_requirement
+    row[20] = rec.mainframe_dependency
+    row[21] = rec.desktop_dependency
+    row[22] = rec.app_os_platform_cloud_suitability
+    row[23] = rec.database_cloud_readiness
+    row[24] = rec.integration_middleware_cloud_readiness
+    row[25] = rec.application_architecture
+    row[26] = rec.application_hardware_dependency
+    row[27] = rec.app_cots_vs_non_cots
+    row[28] = rec.source_code_availability
+    row[29] = rec.programming_language
+    row[30] = rec.component_coupling
+    row[33] = rec.app_service_api_readiness
+    row[34] = rec.app_load_predictability_elasticity
+    row[35] = rec.degree_of_code_protocols
+    row[36] = rec.code_design
+    row[37] = rec.application_code_complexity_volume
+    row[38] = rec.financially_optimizable_hardware_usage
+    row[40] = rec.latency_requirements
+    row[41] = rec.ubiquitous_access_requirements
+    row[52] = rec.no_of_production_environments
+    row[53] = rec.no_of_non_production_environments
+    row[54] = rec.ha_dr_requirements
+    row[56] = rec.rto_requirements
+    row[57] = rec.rpo_requirements
+    row[58] = rec.deployment_geography
+    return row

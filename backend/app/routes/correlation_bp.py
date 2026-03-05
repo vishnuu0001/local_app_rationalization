@@ -113,7 +113,7 @@ def get_latest_correlation():
                 'repo_app_mapping': cast_data['repo_app_mapping'],
                 'architecture_components': cast_data['architecture_components'],
                 'internal_dependencies': cast_data['internal_dependencies'],
-                'total_applications': len(cast_data['repo_app_mapping']),
+                'total_applications': cast_data['total_items'],
                 'total_components': len(cast_data['architecture_components'])
             },
             'correlation_layer': correlation_data.get('correlation_layer', []),
@@ -159,7 +159,7 @@ def get_dashboards():
                 'repo_app_mapping': cast_data['repo_app_mapping'],
                 'architecture_components': cast_data['architecture_components'],
                 'internal_dependencies': cast_data['internal_dependencies'],
-                'total_applications': len(cast_data['repo_app_mapping']),
+                'total_applications': cast_data['total_items'],
                 'total_components': len(cast_data['architecture_components'])
             }
         }), 200
@@ -260,9 +260,14 @@ def get_statistics():
         confidence_dist = dict(Counter(confidence_levels))
         
         # Calculate unmatched percentages
-        corent_total = correlation_data.get('statistics', {}).get('corent_total', 0)
-        cast_total = correlation_data.get('statistics', {}).get('cast_total', 0)
-        matched = correlation_data.get('statistics', {}).get('matched_count', 0)
+        stored_stats = correlation_data.get('statistics', {})
+        corent_total = stored_stats.get('corent_total', 0)
+        cast_total = stored_stats.get('cast_total', 0)
+        # Support both 'matched_count' and 'total_matched'/'direct_matched' key names
+        matched = (stored_stats.get('matched_count') or
+                   stored_stats.get('total_matched') or
+                   stored_stats.get('direct_matched') or
+                   result.matched_count or 0)
         
         unmatched_corent_pct = round((len(correlation_data.get('unmatched_corent', [])) / max(corent_total, 1)) * 100, 2)
         unmatched_cast_pct = round((len(correlation_data.get('unmatched_cast', [])) / max(cast_total, 1)) * 100, 2)

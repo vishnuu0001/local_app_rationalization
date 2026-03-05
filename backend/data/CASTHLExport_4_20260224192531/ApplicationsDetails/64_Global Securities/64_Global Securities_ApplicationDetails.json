@@ -1,0 +1,255 @@
+{
+    "id": 64,
+    "name": "Global Securities",
+    "domains": [
+        {
+            "id": 393,
+            "name": "Bangalore Captive"
+        },
+        {
+            "id": 256,
+            "name": "Corporate Systems & Finance"
+        },
+        {
+            "id": 12910,
+            "name": "Portfolio Company Beta"
+        }
+    ],
+    "metrics": [
+        {
+            "snapshotLabel": "June 2014 - June 2016_Global Securities",
+            "snapshotDate": 1467259200000,
+            "softwareAgility": 0.5141379237174988,
+            "softwareAgilityAdded": 0.5141379237174988,
+            "softwareElegance": 0.6395924687385559,
+            "softwareEleganceAdded": 0.6395924687385559,
+            "softwareResiliency": 0.800532877445221,
+            "softwareResiliencyAdded": 0.800532877445221,
+            "softwareHealth": 0.6514210899670919,
+            "openSourceSafety": 1.0,
+            "openSourceLicense": 1.0,
+            "openSourceObsolescence": null,
+            "openSourceCVE": 1.0,
+            "businessImpact": 0.2639593908629442,
+            "roarIndex": 0.06870722676142133,
+            "backFiredFP": 30.0,
+            "backFiredFPAdded": 30.0,
+            "technicalDebt": 1933.383340716362,
+            "maintenanceRecordedFTE": 0.0,
+            "maintenanceRecommendedFTE": 0.0,
+            "greenIndex": null,
+            "greenIndexScan": null,
+            "greenIndexSurvey": null,
+            "greenOccurrences": null,
+            "greenEffort": null,
+            "greenDetail": [
+                {
+                    "technology": "Java",
+                    "greenIndexScan": 0.0,
+                    "greenIndexDetails": null
+                }
+            ],
+            "totalLinesOfCode": 1595,
+            "totalLinesOfCodeAdded": 1595,
+            "totalLinesOfCodeModified": 0,
+            "totalFiles": 21,
+            "totalFilesAdded": 21,
+            "totalFilesModified": 0,
+            "customIndicators": [
+                {
+                    "metricId": 10023356,
+                    "value": "0.20202020202020202"
+                },
+                {
+                    "metricId": 10006001,
+                    "value": "0.375"
+                },
+                {
+                    "metricId": 10006305,
+                    "value": "-1.0"
+                },
+                {
+                    "metricId": 10013600,
+                    "value": "-1.0"
+                },
+                {
+                    "metricId": 10006302,
+                    "value": "-1.0"
+                },
+                {
+                    "metricId": 10006301,
+                    "value": "-1.0"
+                },
+                {
+                    "metricId": 10016304,
+                    "value": "-1.0"
+                }
+            ],
+            "technologies": [
+                {
+                    "technology": "Java",
+                    "totalLinesOfCode": 1595,
+                    "totalFiles": 21,
+                    "softwareAgility": 0.5141379237174988,
+                    "softwareElegance": 0.6395924687385559,
+                    "softwareResiliency": 0.800532877445221,
+                    "softwareHealth": 0.6514210899670919,
+                    "softwareAgilityDetail": {
+                        "highLinesOfCode": 70,
+                        "mediumLinesOfCode": 380,
+                        "lowLinesOfCode": 1145
+                    },
+                    "softwareEleganceDetail": {
+                        "highLinesOfCode": 463,
+                        "mediumLinesOfCode": 0,
+                        "lowLinesOfCode": 1132
+                    },
+                    "softwareResiliencyDetail": {
+                        "highLinesOfCode": 1418,
+                        "mediumLinesOfCode": 177,
+                        "lowLinesOfCode": 0
+                    },
+                    "softwareHealthDetail": {
+                        "highLinesOfCode": 650,
+                        "mediumLinesOfCode": 185,
+                        "lowLinesOfCode": 759
+                    }
+                }
+            ],
+            "components": []
+        }
+    ],
+    "surveys": [
+        {
+            "id": 371,
+            "ref": "CAST_MAINT",
+            "name": "Software Maintenance Estimate",
+            "questions": [
+                {
+                    "label": "What is the average skill level of the development team on this type of application?",
+                    "value": "6 months",
+                    "questionId": 1000015,
+                    "choiceId": 1000067
+                },
+                {
+                    "label": "What percentage of the development effort has been spent on maintenance in the last 12 months?",
+                    "value": "0",
+                    "questionId": 1000012
+                },
+                {
+                    "label": "What is the annual staff turnover within the development team?",
+                    "value": "10%",
+                    "questionId": 1000016,
+                    "choiceId": 1000143
+                },
+                {
+                    "label": "What is the CMMI level of the organization?",
+                    "value": "Level 1 (upper half)",
+                    "questionId": 1000032,
+                    "choiceId": 1000255
+                },
+                {
+                    "label": "What is the percentage of change to the base code in the last 12 months?",
+                    "value": "15",
+                    "questionId": 1000121
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "ref": "CAST_BI",
+            "name": "Business Impact",
+            "questions": [
+                {
+                    "label": "What is the average number of FTE (Full Time Equivalent) resources that have worked on the source code for this application over the last 12 months?",
+                    "shortLabel": "",
+                    "value": "30",
+                    "questionId": 1000011
+                },
+                {
+                    "label": "Is this application aligned with the company's future technology direction?",
+                    "shortLabel": "",
+                    "value": "Yes",
+                    "questionId": 1000009,
+                    "choiceId": 1000042
+                },
+                {
+                    "label": "The number of major releases delivered over the last 12 months for this application?",
+                    "shortLabel": "",
+                    "value": "Less than 4",
+                    "questionId": 1000006,
+                    "choiceId": 1000452
+                },
+                {
+                    "label": "Could failure of this application lead to loss of customer confidence? Please define the level of impact.",
+                    "value": "Medium",
+                    "questionId": 1000022,
+                    "choiceId": 1000221
+                },
+                {
+                    "label": "Could failure of this application lead to harm of the company's public image? Please define the level of impact.",
+                    "value": "Low",
+                    "questionId": 1000021,
+                    "choiceId": 1000000
+                },
+                {
+                    "label": "Could failure of this application lead to loss of revenue or business opportunity? Please define the level of impact.",
+                    "value": "High",
+                    "questionId": 1000020,
+                    "choiceId": 1000408
+                },
+                {
+                    "label": "Could failure of this application lead to disruption? Please define the level of impact.",
+                    "value": "Medium",
+                    "questionId": 1000019,
+                    "choiceId": 1000193
+                },
+                {
+                    "label": "What is the approximate number of end users for this application?",
+                    "shortLabel": "",
+                    "value": "Less than 100",
+                    "questionId": 1000018,
+                    "choiceId": 1000395
+                },
+                {
+                    "label": "Does the application serve internal or external users?",
+                    "value": "External users",
+                    "questionId": 1000017,
+                    "choiceId": 1000203
+                }
+            ]
+        },
+        {
+            "id": 373,
+            "ref": "CAST_APP",
+            "name": "Application Properties",
+            "questions": [
+                {
+                    "label": "What is the application type?",
+                    "shortLabel": "",
+                    "value": "Global Securities",
+                    "questionId": 1000004,
+                    "choiceId": 1000434
+                },
+                {
+                    "label": "Application Owner's name",
+                    "value": "Alexandra Szynkarski",
+                    "questionId": 1000002
+                },
+                {
+                    "label": "Is this application a custom application or a Commercial Off The Shelf product?",
+                    "shortLabel": "",
+                    "value": "Custom Application",
+                    "questionId": 1000427,
+                    "choiceId": 1000529
+                },
+                {
+                    "label": "In what year was this application first put into production?",
+                    "shortLabel": "",
+                    "value": "2000",
+                    "questionId": 1000033
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,2026 @@
+{
+    "snapshotLabel": "tidalmigrations/schoolbus_2019_02_19",
+    "snapshotDate": 1550552400000,
+    "applicationCodeLines": null,
+    "applicationFiles": 376.0,
+    "thirdPartyCodeLines": null,
+    "thirdPartyFiles": 67.0,
+    "thirdParties": [
+        {
+            "id": 2653,
+            "componentId": "git/git",
+            "name": "git/git",
+            "version": "v2.16.0-rc0",
+            "release": 1514499126000,
+            "languages": "c",
+            "lifeSpan": "Active",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 26162,
+                    "name": "MIT No Attribution",
+                    "compliance": "compliant"
+                },
+                {
+                    "id": 15,
+                    "name": "GNU General Public License v2.0 only",
+                    "compliance": "notCompliant"
+                },
+                {
+                    "id": 8,
+                    "name": "GNU Lesser General Public License v2.1 only",
+                    "compliance": "partial"
+                }
+            ],
+            "lastVersion": "v2.53.0",
+            "lastRelease": 1769998501000,
+            "nbVersionPreviousYear": 30,
+            "numberOfCodeLines": 111.0,
+            "numberOfFiles": 6.0,
+            "cve": {
+                "vendor": "git",
+                "product": "git",
+                "version": "v2.16.0-rc0",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2020-5260",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-5260",
+                        "description": "Affected versions of Git have a vulnerability whereby Git can be tricked into sending private credentials to a host controlled by an attacker. Git uses external \"credential helper\" programs to store and retrieve passwords or other credentials from secure storage provided by the operating system. Specially-crafted URLs that contain an encoded newline can inject unintended values into the credential helper protocol stream, causing the credential helper to retrieve the password for one server (e.g., good.example.com) for an HTTP request being made to another server (e.g., evil.example.com), resulting in credentials for the former being sent to the latter. There are no restrictions on the relationship between the two, meaning that an attacker can craft a URL that will present stored credentials for any host to a host of their choosing. The vulnerability can be triggered by feeding a malicious URL to git clone. However, the affected URLs look rather suspicious; the likely vector would be through systems which automatically clone URLs not visible to the user, such as Git submodules, or package systems built around Git. The problem has been patched in the versions published on April 14th, 2020, going back to v2.17.x. Anyone wishing to backport the change further can do so by applying commit 9a6bbee (the full release includes extra checks for git fsck, but that commit is sufficient to protect clients against the vulnerability). The patched versions are: 2.17.4, 2.18.3, 2.19.4, 2.20.3, 2.21.2, 2.22.3, 2.23.2, 2.24.2, 2.25.3, 2.26.1.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 9.3,
+                        "criticity": "CRITICAL",
+                        "cpe": "cpe:/a:git-scm:git",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2024-32002",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-32002",
+                        "description": "Git is a revision control system. Prior to versions 2.45.1, 2.44.1, 2.43.4, 2.42.2, 2.41.1, 2.40.2, and 2.39.4, repositories with submodules can be crafted in a way that exploits a bug in Git whereby it can be fooled into writing files not into the submodule's worktree but into a `.git/` directory. This allows writing a hook that will be executed while the clone operation is still running, giving the user no opportunity to inspect the code that is being executed. The problem has been patched in versions 2.45.1, 2.44.1, 2.43.4, 2.42.2, 2.41.1, 2.40.2, and 2.39.4. If symbolic link support is disabled in Git (e.g. via `git config --global core.symlinks false`), the described attack won't work. As always, it is best to avoid cloning repositories from untrusted sources.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 9.0,
+                        "criticity": "CRITICAL",
+                        "cpe": "cpe:/a:git:git",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2024-50349",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-50349",
+                        "description": "Git is a fast, scalable, distributed revision control system with an unusually rich command set that provides both high-level operations and full access to internals. When Git asks for credentials via a terminal prompt (i.e. without using any credential helper), it prints out the host name for which the user is expected to provide a username and/or a password. At this stage, any URL-encoded parts have been decoded already, and are printed verbatim. This allows attackers to craft URLs that contain ANSI escape sequences that the terminal interpret to confuse users e.g. into providing passwords for trusted Git hosting sites when in fact they are then sent to untrusted sites that are under the attacker's control. This issue has been patch via commits `7725b81` and `c903985` which are included in release versions v2.48.1, v2.47.2, v2.46.3, v2.45.3, v2.44.3, v2.43.6, v2.42.4, v2.41.3, and v2.40.4. Users are advised to upgrade. Users unable to upgrade should avoid cloning from untrusted URLs, especially recursive clones.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 4.7,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:git:git",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2024-52005",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-52005",
+                        "description": "Git is a source code management tool. When cloning from a server (or fetching, or pushing), informational or error messages are transported from the remote Git process to the client via the so-called \"sideband channel\". These messages will be prefixed with \"remote:\" and printed directly to the standard error output. Typically, this standard error output is connected to a terminal that understands ANSI escape sequences, which Git did not protect against. Most modern terminals support control sequences that can be used by a malicious actor to hide and misrepresent information, or to mislead the user into executing untrusted scripts. As requested on the git-security mailing list, the patches are under discussion on the public mailing list. Users are advised to update as soon as possible. Users unable to upgrade should avoid recursive clones unless they are from trusted sources.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 8.8,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:git:git",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2024-52006",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-52006",
+                        "description": "Git is a fast, scalable, distributed revision control system with an unusually rich command set that provides both high-level operations and full access to internals. Git defines a line-based protocol that is used to exchange information between Git and Git credential helpers. Some ecosystems (most notably, .NET and node.js) interpret single Carriage Return characters as newlines, which renders the protections against CVE-2020-5260 incomplete for credential helpers that treat Carriage Returns in this way. This issue has been addressed in commit `b01b9b8` which is included in release versions v2.48.1, v2.47.2, v2.46.3, v2.45.3, v2.44.3, v2.43.6, v2.42.4, v2.41.3, and v2.40.4. Users are advised to upgrade. Users unable to upgrade should avoid cloning from untrusted URLs, especially recursive clones.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:git:git",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "v2.17.4",
+            "safestVersion": "v2.43.7"
+        },
+        {
+            "id": 12983,
+            "componentId": "gulp-util.npm",
+            "name": "gulp-util.npm",
+            "version": "3.0.7",
+            "release": 1445310675000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "3.0.8",
+            "lastRelease": 1482793870000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 18936,
+            "componentId": "mocha.npm",
+            "name": "mocha.npm",
+            "version": "3.2.0",
+            "release": 1480031903000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "12.0.0-beta-8",
+            "lastRelease": 1770388945000,
+            "nbVersionPreviousYear": 21,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "mocha",
+                "product": "mocha",
+                "version": "3.2.0",
+                "vulnerabilities": [
+                    {
+                        "name": "GMS-2019-7",
+                        "link": null,
+                        "description": "mocha is vulnerable to ReDos",
+                        "cweId": "CWE-1333",
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": null,
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "6.0.0",
+            "safestVersion": "6.0.0"
+        },
+        {
+            "id": 25576,
+            "componentId": "GitForWindows.NET",
+            "name": "GitForWindows.NET",
+            "version": "2.15.0",
+            "release": 1509362919000,
+            "languages": "dll",
+            "lifeSpan": "Active",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 15,
+                    "name": "GNU General Public License v2.0 only",
+                    "compliance": "notCompliant"
+                }
+            ],
+            "lastVersion": "2.53.0",
+            "lastRelease": 1770058562000,
+            "nbVersionPreviousYear": 22,
+            "numberOfCodeLines": 3.0,
+            "numberOfFiles": 2.0,
+            "cwes": []
+        },
+        {
+            "id": 27699,
+            "componentId": "gulp-concat.npm",
+            "name": "gulp-concat.npm",
+            "version": "2.6.0",
+            "release": 1435092244000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "2.6.1",
+            "lastRelease": 1479063193000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 28422,
+            "componentId": "expect.js.npm",
+            "name": "expect.js.npm",
+            "version": "0.3.1",
+            "release": 1392909827000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [],
+            "lastVersion": "0.3.1",
+            "lastRelease": 1392909827000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 30863,
+            "componentId": "minimist.npm",
+            "name": "minimist.npm",
+            "version": "1.2.0",
+            "release": 1440424587000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "0.2.4",
+            "lastRelease": 1677305886000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "minimist",
+                "product": "minimist",
+                "version": "1.2.0",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2020-7598",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-7598",
+                        "description": "minimist before 1.2.2 could be tricked into adding or modifying properties of Object.prototype using a \"constructor\" or \"__proto__\" payload.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.6,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:substack:minimist",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2021-44906",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-44906",
+                        "description": "Minimist <=1.2.5 is vulnerable to Prototype Pollution via file index.js, function setKey() (lines 69-95).",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 9.8,
+                        "criticity": "CRITICAL",
+                        "cpe": "cpe:/a:substack:minimist",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "1.2.3",
+            "safestVersion": "1.2.6"
+        },
+        {
+            "id": 32381,
+            "componentId": "bootstrap.npm",
+            "name": "bootstrap.npm",
+            "version": "3.3.6",
+            "release": 1448394718000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "5.3.8",
+            "lastRelease": 1756219140000,
+            "nbVersionPreviousYear": 5,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "bootstrap",
+                "product": "bootstrap",
+                "version": "3.3.6",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2016-10735",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2016-10735",
+                        "description": "In Bootstrap 3.x before 3.4.0 and 4.x-beta before 4.0.0-beta.2, XSS is possible in the data-target attribute, a different vulnerability than CVE-2018-14041.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.1,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:getbootstrap:bootstrap",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2018-14040",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-14040",
+                        "description": "In Bootstrap before 4.1.2, XSS is possible in the collapse data-parent attribute.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.1,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:getbootstrap:bootstrap",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2018-14042",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-14042",
+                        "description": "In Bootstrap before 4.1.2, XSS is possible in the data-container property of tooltip.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.1,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:getbootstrap:bootstrap",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2018-20676",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-20676",
+                        "description": "In Bootstrap before 3.4.0, XSS is possible in the tooltip data-viewport attribute.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.1,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:getbootstrap:bootstrap",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2018-20677",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-20677",
+                        "description": "In Bootstrap before 3.4.0, XSS is possible in the affix configuration target property.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.1,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:getbootstrap:bootstrap",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2019-8331",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-8331",
+                        "description": "In Bootstrap before 3.4.1 and 4.3.x before 4.3.1, XSS is possible in the tooltip or popover data-template attribute.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.1,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:getbootstrap:bootstrap",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2024-6484",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-6484",
+                        "description": "A vulnerability has been identified in Bootstrap that exposes users to Cross-Site Scripting (XSS) attacks. The issue is present in the carousel component, where the data-slide and data-slide-to attributes can be exploited through the href attribute of an <a> tag due to inadequate sanitization. This vulnerability could potentially enable attackers to execute arbitrary JavaScript within the victim's browser.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.4,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:getbootstrap:bootstrap",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2024-6485",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-6485",
+                        "description": "A security vulnerability has been discovered in bootstrap that could enable Cross-Site Scripting (XSS) attacks. The vulnerability is associated with the data-loading-text attribute within the button plugin. This vulnerability can be exploited by injecting malicious JavaScript code into the attribute, which would then be executed when the button's loading state is triggered.",
+                        "cweId": "CWE-79",
+                        "cweLabel": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
+                        "cvssScore": 6.4,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "3.4.0",
+            "safestVersion": "5.0.0"
+        },
+        {
+            "id": 33165,
+            "componentId": "moment.npm",
+            "name": "moment.npm",
+            "version": "2.17.1",
+            "release": 1480830517000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "2.30.1",
+            "lastRelease": 1703673523000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "moment",
+                "product": "moment",
+                "version": "2.17.1",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2017-18214",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-18214",
+                        "description": "The moment module before 2.19.3 for Node.js is prone to a regular expression denial of service via a crafted date string, a different vulnerability than CVE-2016-4055.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:momentjs:moment",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2022-24785",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-24785",
+                        "description": "Moment.js is a JavaScript date library for parsing, validating, manipulating, and formatting dates. A path traversal vulnerability impacts npm (server) users of Moment.js between versions 1.0.1 and 2.29.1, especially if a user-provided locale string is directly used to switch moment locale. This problem is patched in 2.29.2, and the patch can be applied to all affected versions. As a workaround, sanitize the user-provided locale name before passing it to Moment.js.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:momentjs:moment",
+                        "isKev": false
+                    },
+                    {
+                        "name": "GMS-2017-332",
+                        "link": null,
+                        "description": "Moment is vulnerable to a low severity regular expression denial of service vulnerability.",
+                        "cweId": "CWE-937",
+                        "cweLabel": null,
+                        "cvssScore": 0.0,
+                        "criticity": "UNKNOWN",
+                        "cpe": null,
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "2.19.3",
+            "safestVersion": "2.29.4"
+        },
+        {
+            "id": 34408,
+            "componentId": "gulp-rename.npm",
+            "name": "gulp-rename.npm",
+            "version": "1.2.2",
+            "release": 1427933378000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "2.1.0",
+            "lastRelease": 1750915204000,
+            "nbVersionPreviousYear": 1,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 34445,
+            "componentId": "gulp-plumber.npm",
+            "name": "gulp-plumber.npm",
+            "version": "1.1.0",
+            "release": 1455017742000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "1.2.1",
+            "lastRelease": 1543336752000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 34459,
+            "componentId": "DefinitelyTyped/DefinitelyTyped",
+            "name": "DefinitelyTyped/DefinitelyTyped",
+            "languages": "typescript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Scan",
+            "licenses": [],
+            "lastVersion": "0.1.450",
+            "lastRelease": 1567619074000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 1672.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 37724,
+            "componentId": "morgan.npm",
+            "name": "morgan.npm",
+            "version": "1.7.0",
+            "release": 1455858003000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "1.10.1",
+            "lastRelease": 1752768866000,
+            "nbVersionPreviousYear": 1,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "morgan",
+                "product": "morgan",
+                "version": "1.7.0",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2019-5413",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-5413",
+                        "description": "An attacker can use the format parameter to inject arbitrary commands in the npm package morgan < 1.9.1.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 9.8,
+                        "criticity": "CRITICAL",
+                        "cpe": "cpe:/a:morgan_project:morgan",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "1.9.1",
+            "safestVersion": "1.9.1"
+        },
+        {
+            "id": 42335,
+            "componentId": "lodash.npm",
+            "name": "lodash.npm",
+            "version": "4.17.2",
+            "release": 1479280901000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "4.17.23",
+            "lastRelease": 1769016592000,
+            "nbVersionPreviousYear": 1,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "lodash",
+                "product": "lodash",
+                "version": "4.17.2",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2018-16487",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-16487",
+                        "description": "A prototype pollution vulnerability was found in lodash <4.17.11 where the functions merge, mergeWith, and defaultsDeep can be tricked into adding or modifying properties of Object.prototype.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.6,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:lodash:lodash",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2018-3721",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-3721",
+                        "description": "lodash node module before 4.17.5 suffers from a Modification of Assumed-Immutable Data (MAID) vulnerability via defaultsDeep, merge, and mergeWith functions, which allows a malicious user to modify the prototype of \"Object\" via __proto__, causing the addition or modification of an existing property that will exist on all objects.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.5,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:lodash:lodash",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2019-1010266",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-1010266",
+                        "description": "lodash prior to 4.17.11 is affected by: CWE-400: Uncontrolled Resource Consumption. The impact is: Denial of service. The component is: Date handler. The attack vector is: Attacker provides very long strings, which the library attempts to match using a regular expression. The fixed version is: 4.17.11.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.5,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:lodash:lodash",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2019-10744",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-10744",
+                        "description": "Versions of lodash lower than 4.17.12 are vulnerable to Prototype Pollution. The function defaultsDeep could be tricked into adding or modifying properties of Object.prototype using a constructor payload.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 9.1,
+                        "criticity": "CRITICAL",
+                        "cpe": "cpe:/a:lodash:lodash",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2020-28500",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-28500",
+                        "description": "Lodash versions prior to 4.17.21 are vulnerable to Regular Expression Denial of Service (ReDoS) via the toNumber, trim and trimEnd functions.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.3,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:lodash:lodash",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2020-8203",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-8203",
+                        "description": "Prototype pollution attack when using _.zipObjectDeep in lodash before 4.17.20.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.4,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:lodash:lodash",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2021-23337",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-23337",
+                        "description": "Lodash versions prior to 4.17.21 are vulnerable to Command Injection via the template function.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.2,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:lodash:lodash",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2025-13465",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-13465",
+                        "description": "Lodash versions 4.0.0 through 4.17.22 are vulnerable to prototype pollution in the _.unset\u00a0and _.omit\u00a0functions. An attacker can pass crafted paths which cause Lodash to delete methods from global prototypes.\n\nThe issue permits deletion of properties but does not allow overwriting their original behavior.\n\nThis issue is patched on 4.17.23",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.3,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:lodash:lodash",
+                        "isKev": false
+                    },
+                    {
+                        "name": "GMS-2018-10",
+                        "link": null,
+                        "description": "Functions in Lodash ( merge, mergeWith, defaultsDeep) can modify the prototype of \"Object\" if given malicious data. This can lead to denial of service or remote code execution.",
+                        "cweId": "CWE-937",
+                        "cweLabel": null,
+                        "cvssScore": 0.0,
+                        "criticity": "UNKNOWN",
+                        "cpe": null,
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "4.17.5",
+            "safestVersion": "4.17.23"
+        },
+        {
+            "id": 43211,
+            "componentId": "mustache.npm",
+            "name": "mustache.npm",
+            "version": "2.3.0",
+            "release": 1478622318000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "4.2.0",
+            "lastRelease": 1616959679000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 46299,
+            "componentId": "ind/silk.pkg",
+            "name": "ind/silk.pkg",
+            "version": "1.1.2",
+            "release": 1419897600000,
+            "languages": "shell",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "1.1.2",
+            "lastRelease": 1419897600000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 80.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 47675,
+            "componentId": "jquery.npm",
+            "name": "jquery.npm",
+            "version": "3.1.1",
+            "release": 1474583569000,
+            "languages": "javascript",
+            "status": "whitelist",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "4.0.0",
+            "lastRelease": 1768696093000,
+            "nbVersionPreviousYear": 3,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "jquery",
+                "product": "jquery",
+                "version": "3.1.1",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2007-2379",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2007-2379",
+                        "description": "The jQuery framework exchanges data using JavaScript Object Notation (JSON) without an associated protection scheme, which allows remote attackers to obtain the data via a web page that retrieves the data through a URL in the SRC attribute of a SCRIPT element and captures the data using other JavaScript code, aka \"JavaScript Hijacking.\"",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.0,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:jquery:jquery",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2019-11358",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+                        "description": "jQuery before 3.4.0, as used in Drupal, Backdrop CMS, and other products, mishandles jQuery.extend(true, {}, ...) because of Object.prototype pollution. If an unsanitized source object contained an enumerable __proto__ property, it could extend the native Object.prototype.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.1,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:jquery:jquery",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2020-11022",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-11022",
+                        "description": "In jQuery versions greater than or equal to 1.2 and before 3.5.0, passing HTML from untrusted sources - even after sanitizing it - to one of jQuery's DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted code. This problem is patched in jQuery 3.5.0.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.9,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:jquery:jquery",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2020-11023",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-11023",
+                        "description": "In jQuery versions greater than or equal to 1.0.3 and before 3.5.0, passing HTML containing <option> elements from untrusted sources - even after sanitizing it - to one of jQuery's DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted code. This problem is patched in jQuery 3.5.0.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.9,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:jquery:jquery",
+                        "isKev": true
+                    },
+                    {
+                        "name": "CVE-2020-23064",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-23064",
+                        "description": "Cross Site Scripting vulnerability in jQuery 2.2.0 through 3.x before 3.5.0 allows a remote attacker to execute arbitrary code via the <options> element.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.1,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:jquery:jquery",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "3.4.0",
+            "safestVersion": "3.5.0"
+        },
+        {
+            "id": 51277,
+            "componentId": "eslint-plugin-react.npm",
+            "name": "eslint-plugin-react.npm",
+            "version": "6.8.0",
+            "release": 1480895551000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "7.37.5",
+            "lastRelease": 1743710475000,
+            "nbVersionPreviousYear": 2,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51278,
+            "componentId": "redux.npm",
+            "name": "redux.npm",
+            "version": "3.6.0",
+            "release": 1473013457000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "5.0.1",
+            "lastRelease": 1703350048000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51279,
+            "componentId": "gulp-sourcemaps.npm",
+            "name": "gulp-sourcemaps.npm",
+            "version": "1.9.1",
+            "release": 1479757472000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 9,
+                    "name": "ISC License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "3.0.0",
+            "lastRelease": 1605105799000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51280,
+            "componentId": "react-router.npm",
+            "name": "react-router.npm",
+            "version": "3.0.0",
+            "release": 1477355878000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "0.0.0-nightly-3f168fb75-20260206",
+            "lastRelease": 1770362639000,
+            "nbVersionPreviousYear": 431,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "react-router",
+                "product": "react-router",
+                "version": "3.0.0",
+                "vulnerabilities": [
+                    {
+                        "name": "GHSA-f46r-rw29-r322",
+                        "link": null,
+                        "description": "This advisory is a duplicate of CVE-2025-43864 and has been removed.",
+                        "cweId": "CWE-755",
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": null,
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "6.30.2",
+            "safestVersion": "6.30.2"
+        },
+        {
+            "id": 51281,
+            "componentId": "react-dom.npm",
+            "name": "react-dom.npm",
+            "version": "15.0.0",
+            "release": 1460064344000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 3,
+                    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "0.0.0-experimental-4842fbea-20260217",
+            "lastRelease": 1771432488000,
+            "nbVersionPreviousYear": 522,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51284,
+            "componentId": "babel-plugin-transform-object-rest-spread.npm",
+            "name": "babel-plugin-transform-object-rest-spread.npm",
+            "version": "6.20.2",
+            "release": 1481264123000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "7.0.0-beta.3",
+            "lastRelease": 1508087517000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51285,
+            "componentId": "toxy.npm",
+            "name": "toxy.npm",
+            "version": "0.3.12",
+            "release": 1455908981000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "0.3.16",
+            "lastRelease": 1542356183000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51286,
+            "componentId": "gulp-clean-css.npm",
+            "name": "gulp-clean-css.npm",
+            "version": "2.0.10",
+            "release": 1465257673000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "4.3.0",
+            "lastRelease": 1584287151000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51287,
+            "componentId": "http-proxy-middleware.npm",
+            "name": "http-proxy-middleware.npm",
+            "version": "0.17.3",
+            "release": 1481145720000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "3.0.5",
+            "lastRelease": 1744287266000,
+            "nbVersionPreviousYear": 4,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "http-proxy-middleware",
+                "product": "http-proxy-middleware",
+                "version": "0.17.3",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2024-21536",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-21536",
+                        "description": "Versions of the package http-proxy-middleware before 2.0.7, from 3.0.0 and before 3.0.3 are vulnerable to Denial of Service (DoS) due to an UnhandledPromiseRejection error thrown by micromatch. An attacker could kill the Node.js process and crash the server by making requests to certain paths.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:chimurai:http-proxy-middleware",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "2.0.7",
+            "safestVersion": "2.0.9"
+        },
+        {
+            "id": 51288,
+            "componentId": "react.npm",
+            "name": "react.npm",
+            "version": "15.0.0",
+            "release": 1460064342000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 3,
+                    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "0.0.0-experimental-4842fbea-20260217",
+            "lastRelease": 1771432480000,
+            "nbVersionPreviousYear": 522,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51289,
+            "componentId": "gulp-live-server.npm",
+            "name": "gulp-live-server.npm",
+            "version": "0.0.30",
+            "release": 1465187033000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 26149,
+                    "name": "Do What The F*ck You Want To Public License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "0.0.31",
+            "lastRelease": 1500082687000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51290,
+            "componentId": "fs.npm",
+            "name": "fs.npm",
+            "version": "0.0.1-security",
+            "release": 1471975018000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 9,
+                    "name": "ISC License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "0.0.1-security",
+            "lastRelease": 1471975018000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51291,
+            "componentId": "eslint-loader.npm",
+            "name": "eslint-loader.npm",
+            "version": "1.3.0",
+            "release": 1455690237000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "4.0.2",
+            "lastRelease": 1587758405000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51292,
+            "componentId": "react-hot-loader.npm",
+            "name": "react-hot-loader.npm",
+            "version": "1.3.1",
+            "release": 1480336045000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "4.13.1",
+            "lastRelease": 1668313271000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51293,
+            "componentId": "react-redux.npm",
+            "name": "react-redux.npm",
+            "version": "5.0.1",
+            "release": 1481736269000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "9.2.0",
+            "lastRelease": 1733872005000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51294,
+            "componentId": "object-assign-shim.npm",
+            "name": "object-assign-shim.npm",
+            "version": "1.0.0",
+            "release": 1431688963000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "1.0.0",
+            "lastRelease": 1431688963000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51295,
+            "componentId": "react-router-bootstrap.npm",
+            "name": "react-router-bootstrap.npm",
+            "version": "0.23.1",
+            "release": 1469475827000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "0.26.3",
+            "lastRelease": 1719545331000,
+            "nbVersionPreviousYear": 1,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51296,
+            "componentId": "del.npm",
+            "name": "del.npm",
+            "version": "2.2.0",
+            "release": 1449438794000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "8.0.1",
+            "lastRelease": 1758206828000,
+            "nbVersionPreviousYear": 1,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51298,
+            "componentId": "gulp-mocha-phantomjs.npm",
+            "name": "gulp-mocha-phantomjs.npm",
+            "version": "0.12.0",
+            "release": 1474701800000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "0.12.2",
+            "lastRelease": 1511148391000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51299,
+            "componentId": "html-pdf.npm",
+            "name": "html-pdf.npm",
+            "version": "2.1.0",
+            "release": 1471468772000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "3.0.1",
+            "lastRelease": 1620376301000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "html-pdf",
+                "product": "html-pdf",
+                "version": "2.1.0",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2019-15138",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-15138",
+                        "description": "The html-pdf package 2.2.0 for Node.js has an arbitrary file read vulnerability via an HTML file that uses XMLHttpRequest to access a file:/// URL.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:html-pdf_project:html-pdf",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "3.0.1",
+            "safestVersion": "3.0.1"
+        },
+        {
+            "id": 51300,
+            "componentId": "babel-loader.npm",
+            "name": "babel-loader.npm",
+            "version": "6.2.4",
+            "release": 1456567901000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "10.0.0",
+            "lastRelease": 1740688063000,
+            "nbVersionPreviousYear": 1,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51301,
+            "componentId": "babel-preset-react.npm",
+            "name": "babel-preset-react.npm",
+            "version": "6.5.0",
+            "release": 1454803701000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "7.0.0-beta.3",
+            "lastRelease": 1508073131000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51302,
+            "componentId": "webpack-hot-middleware.npm",
+            "name": "webpack-hot-middleware.npm",
+            "version": "2.13.2",
+            "release": 1478631699000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "2.26.1",
+            "lastRelease": 1706824244000,
+            "nbVersionPreviousYear": 3,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51303,
+            "componentId": "gulp-webpack.npm",
+            "name": "gulp-webpack.npm",
+            "version": "1.5.0",
+            "release": 1433521820000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "1.5.0",
+            "lastRelease": 1433521820000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51305,
+            "componentId": "webpack-dev-middleware.npm",
+            "name": "webpack-dev-middleware.npm",
+            "version": "1.6.1",
+            "release": 1459002208000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "7.4.5",
+            "lastRelease": 1758733225000,
+            "nbVersionPreviousYear": 3,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "webpack-dev-middleware",
+                "product": "webpack-dev-middleware",
+                "version": "1.6.1",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2024-29180",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-29180",
+                        "description": "Prior to versions 7.1.0, 6.1.2, and 5.3.4, the webpack-dev-middleware development middleware for devpack does not validate the supplied URL address sufficiently before returning the local file. It is possible to access any file on the developer's machine. The middleware can either work with the physical filesystem when reading the files or it can use a virtualized in-memory `memfs` filesystem. If `writeToDisk` configuration option is set to `true`, the physical filesystem is used. The `getFilenameFromUrl` method is used to parse URL and build the local file path. The public path prefix is stripped from the URL, and the `unsecaped` path suffix is appended to the `outputPath`. As the URL is not unescaped and normalized automatically before calling the midlleware, it is possible to use `%2e` and `%2f` sequences to perform path traversal attack.\n\nDevelopers using `webpack-dev-server` or `webpack-dev-middleware` are affected by the issue. When the project is started, an attacker might access any file on the developer's machine and exfiltrate the content. If the development server is listening on a public IP address (or `0.0.0.0`), an attacker on the local network can access the local files without any interaction from the victim (direct connection to the port). If the server allows access from third-party domains, an attacker can send a malicious link to the victim. When visited, the client side script can connect to the local server and exfiltrate the local files. Starting with fixed versions 7.1.0, 6.1.2, and 5.3.4, the URL is unescaped and normalized before any further processing.",
+                        "cweId": "CWE-22",
+                        "cweLabel": null,
+                        "cvssScore": 7.4,
+                        "criticity": "HIGH",
+                        "cpe": null,
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "5.3.4",
+            "safestVersion": "5.3.4"
+        },
+        {
+            "id": 51306,
+            "componentId": "gulp-uglify.npm",
+            "name": "gulp-uglify.npm",
+            "version": "2.0.0",
+            "release": 1470088541000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "3.0.2",
+            "lastRelease": 1551468084000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51307,
+            "componentId": "gulp-mocha.npm",
+            "name": "gulp-mocha.npm",
+            "version": "3.0.1",
+            "release": 1471046812000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "10.0.1",
+            "lastRelease": 1713560933000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51308,
+            "componentId": "gulp-load-plugins.npm",
+            "name": "gulp-load-plugins.npm",
+            "version": "1.4.0",
+            "release": 1477932790000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "2.0.8",
+            "lastRelease": 1661785489000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51309,
+            "componentId": "gulp-compile-handlebars.npm",
+            "name": "gulp-compile-handlebars.npm",
+            "version": "0.6.1",
+            "release": 1449955546000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "0.6.1",
+            "lastRelease": 1449955546000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51310,
+            "componentId": "gulp-autoprefixer.npm",
+            "name": "gulp-autoprefixer.npm",
+            "version": "3.1.0",
+            "release": 1444932683000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "10.0.0",
+            "lastRelease": 1757625993000,
+            "nbVersionPreviousYear": 1,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51322,
+            "componentId": "gulp-rev-all.npm",
+            "name": "gulp-rev-all.npm",
+            "version": "0.9.7",
+            "release": 1474825289000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "4.0.0",
+            "lastRelease": 1671218500000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51324,
+            "componentId": "react-overlays.npm",
+            "name": "react-overlays.npm",
+            "version": "0.6.10",
+            "release": 1475528211000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "5.2.1",
+            "lastRelease": 1663361888000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51326,
+            "componentId": "eslint.npm",
+            "name": "eslint.npm",
+            "version": "3.12.2",
+            "release": 1481743342000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "10.0.0",
+            "lastRelease": 1770417047000,
+            "nbVersionPreviousYear": 31,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "eslint",
+                "product": "eslint",
+                "version": "3.12.2",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2025-50537",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-50537",
+                        "description": "Stack overflow vulnerability in eslint before 9.26.0 when serializing objects with circular references in eslint/lib/shared/serialization.js. The exploit is triggered via the RuleTester.run() method, which validates test cases and checks for duplicates. During validation, the internal function checkDuplicateTestCase() is called, which in turn uses the isSerializable() function for serialization checks. When a circular reference object is passed in, isSerializable() enters infinite recursion, ultimately causing a stack overflow.",
+                        "cweId": "CWE-674",
+                        "cweLabel": null,
+                        "cvssScore": 5.5,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "9.26.0",
+            "safestVersion": "9.26.0"
+        },
+        {
+            "id": 51327,
+            "componentId": "deps-ok.npm",
+            "name": "deps-ok.npm",
+            "version": "1.2.0",
+            "release": 1472706941000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "1.4.1",
+            "lastRelease": 1524598197000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51328,
+            "componentId": "babel-preset-es2015.npm",
+            "name": "babel-preset-es2015.npm",
+            "version": "6.9.0",
+            "release": 1463510985000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "7.0.0-beta.3",
+            "lastRelease": 1508073171000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51329,
+            "componentId": "webpack.npm",
+            "name": "webpack.npm",
+            "version": "1.14.0",
+            "release": 1481098023000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "5.105.1",
+            "lastRelease": 1770735663000,
+            "nbVersionPreviousYear": 24,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "webpack",
+                "product": "webpack",
+                "version": "1.14.0",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2024-43788",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-43788",
+                        "description": "Webpack is a module bundler. Its main purpose is to bundle JavaScript files for usage in a browser, yet it is also capable of transforming, bundling, or packaging just about any resource or asset. The webpack developers have discovered a DOM Clobbering vulnerability in Webpack\u2019s `AutoPublicPathRuntimeModule`. The DOM Clobbering gadget in the module can lead to cross-site scripting (XSS) in web pages where scriptless attacker-controlled HTML elements (e.g., an `img` tag with an unsanitized `name` attribute) are present. Real-world exploitation of this gadget has been observed in the Canvas LMS which allows a XSS attack to happen through a javascript code compiled by Webpack (the vulnerable part is from Webpack). DOM Clobbering is a type of code-reuse attack where the attacker first embeds a piece of non-script, seemingly benign HTML markups in the webpage (e.g. through a post or comment) and leverages the gadgets (pieces of js code) living in the existing javascript code to transform it into executable code. This vulnerability can lead to cross-site scripting (XSS) on websites that include Webpack-generated files and allow users to inject certain scriptless HTML tags with improperly sanitized name or id attributes. This issue has been addressed in release version 5.94.0. All users are advised to upgrade. There are no known workarounds for this issue.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.1,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:webpack.js:webpack",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "5.94.0",
+            "safestVersion": "5.104.1"
+        },
+        {
+            "id": 51330,
+            "componentId": "gulp-watch.npm",
+            "name": "gulp-watch.npm",
+            "version": "4.3.5",
+            "release": 1439964466000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "5.0.1",
+            "lastRelease": 1532371520000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51331,
+            "componentId": "gulp-sass.npm",
+            "name": "gulp-sass.npm",
+            "version": "3.0.0",
+            "release": 1481378173000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "6.0.1",
+            "lastRelease": 1741165064000,
+            "nbVersionPreviousYear": 1,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51332,
+            "componentId": "react-bootstrap-datetimepicker.npm",
+            "name": "react-bootstrap-datetimepicker.npm",
+            "version": "0.0.22",
+            "release": 1447293513000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "0.0.22",
+            "lastRelease": 1447293513000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51333,
+            "componentId": "react-bootstrap.npm",
+            "name": "react-bootstrap.npm",
+            "version": "0.30.7",
+            "release": 1479845051000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "3.0.0-beta.5",
+            "lastRelease": 1758519255000,
+            "nbVersionPreviousYear": 8,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51335,
+            "componentId": "react-datetime.npm",
+            "name": "react-datetime.npm",
+            "version": "2.8.6",
+            "release": 1486744291000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "3.3.1",
+            "lastRelease": 1734106387000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51336,
+            "componentId": "gulp-size.npm",
+            "name": "gulp-size.npm",
+            "version": "2.1.0",
+            "release": 1457618252000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "5.0.0",
+            "lastRelease": 1698788296000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51337,
+            "componentId": "bluebird.npm",
+            "name": "bluebird.npm",
+            "version": "3.3.4",
+            "release": 1457387266000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "3.7.2",
+            "lastRelease": 1574981740000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51338,
+            "componentId": "babel-core.npm",
+            "name": "babel-core.npm",
+            "version": "6.9.1",
+            "release": 1464551410000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "6.26.3",
+            "lastRelease": 1524822424000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        }
+    ],
+    "partialComponents": [
+        {
+            "name": "Moq",
+            "technology": "C#",
+            "type": "Unit Testing framework",
+            "versions": [
+                ""
+            ],
+            "license": "BSD",
+            "editor": "https://github.com/Moq/moq4/",
+            "description": "The most popular and friendly mocking framework for .NET",
+            "dependencyLevel": null
+        },
+        {
+            "name": "underscore",
+            "technology": "JavaScript",
+            "type": "Web applications",
+            "versions": [
+                ""
+            ],
+            "license": "MIT",
+            "editor": "http://underscorejs.org/",
+            "description": "JavaScript library that provides a whole mess of useful functional programming helpers without extending any built-in objects. It\u00c3\u00af\u00c2\u00bf\u00c2\u00bds the answer to the question: \u00c3\u00af\u00c2\u00bf\u00c2\u00bdIf I sit down in front of a blank HTML page, and want to start being productive immediately, what do I need?\u00c3\u00af\u00c2\u00bf\u00c2\u00bd",
+            "dependencyLevel": null
+        },
+        {
+            "name": "schoolbus-client",
+            "technology": "JavaScript",
+            "type": "",
+            "versions": [
+                "0.0.1"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "Jquery",
+            "technology": "JavaScript",
+            "type": "Web & Mobile applications",
+            "versions": [
+                "3.1.1"
+            ],
+            "license": "MIT",
+            "editor": "http://www.jquery.com",
+            "description": "jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.",
+            "dependencyLevel": null
+        }
+    ]
+}

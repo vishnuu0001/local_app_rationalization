@@ -1,0 +1,902 @@
+{
+    "id": 13404,
+    "name": "msl",
+    "domains": [
+        {
+            "id": 1622,
+            "name": "Core Business Applications"
+        },
+        {
+            "id": 12908,
+            "name": "PE Firm"
+        },
+        {
+            "id": 1455,
+            "name": "Open Source"
+        }
+    ],
+    "metrics": [
+        {
+            "snapshotLabel": "Open Source #5 - July 2017_msl",
+            "snapshotDate": 1517374800000,
+            "softwareAgility": 0.5951672196388245,
+            "softwareAgilityAdded": 0.5951672196388245,
+            "softwareElegance": 0.5726369023323059,
+            "softwareEleganceAdded": 0.5726369023323059,
+            "softwareResiliency": 0.6081761717796326,
+            "softwareResiliencyAdded": 0.6081761717796326,
+            "softwareHealth": 0.5919934312502543,
+            "openSourceSafety": 1.0,
+            "openSourceLicense": 1.0,
+            "openSourceObsolescence": null,
+            "openSourceCVE": 1.0,
+            "businessImpact": 0.31725888324873097,
+            "roarIndex": 0.12697733502538075,
+            "backFiredFP": 2260.0,
+            "backFiredFPAdded": 2260.0,
+            "technicalDebt": 351279.66435456276,
+            "maintenanceRecordedFTE": 2.0,
+            "maintenanceRecommendedFTE": 1.70616869666123,
+            "cloudReady": 0.4882509388824292,
+            "cloudReadyScan": 0.7564625850340136,
+            "boosters": 0.0,
+            "blockers": 0.05442176870748299,
+            "roadblocks": 119.0,
+            "cloudEffort": 1785,
+            "cloudReadySurvey": 0.2200392927308448,
+            "greenIndex": null,
+            "greenIndexScan": null,
+            "greenIndexSurvey": null,
+            "greenOccurrences": null,
+            "greenEffort": null,
+            "greenDetail": [
+                {
+                    "technology": "Java",
+                    "greenIndexScan": 0.0,
+                    "greenIndexDetails": null
+                },
+                {
+                    "technology": "C/C++",
+                    "greenIndexScan": 0.0,
+                    "greenIndexDetails": null
+                },
+                {
+                    "technology": "Ksh",
+                    "greenIndexScan": 0.0,
+                    "greenIndexDetails": null
+                },
+                {
+                    "technology": "JavaScript",
+                    "greenIndexScan": 0.0,
+                    "greenIndexDetails": null
+                }
+            ],
+            "totalLinesOfCode": 120025,
+            "totalLinesOfCodeAdded": 120025,
+            "totalLinesOfCodeModified": 0,
+            "totalFiles": 817,
+            "totalFilesAdded": 817,
+            "totalFilesModified": 0,
+            "cloudReadyDetail": [
+                {
+                    "technology": "Java",
+                    "cloudReadyScan": 0.0,
+                    "cloudReadyDetails": [
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Access_Control",
+                                "display": "Access Control List : Using Access Control List",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Access_Control",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Critical",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 12.71860095389507,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Configuration_Except_WebConfig",
+                                "display": "Application Settings Configuration : Using other configuration files than Web configuration",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Configuration_Except_WebConfig",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 0.1589825119236884,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Application_Server_Dependencies",
+                                "display": "Execution Environment : Application server dependencies",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Application_Server_Dependencies",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Framework"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 2.384737678855326,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_File_System",
+                                "display": "Execution Environment : Using file system",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_File_System",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 0.6359300476947536,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_InterApplication_MiddleWare",
+                                "display": "Inter Application Messaging : Using a middleware application",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_InterApplication_MiddleWare",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Medium",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 2.5437201907790143,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Directory_Manipulation_Practice",
+                                "display": "Persistent Files : Perform Directory Manipulation",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Directory_Manipulation_Practice",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 0.6359300476947536,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "File_Manipulation_Practice",
+                                "display": "Persistent Files : Perform File Manipulation",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#File_Manipulation_Practice",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": -5.442176870748299,
+                            "roadblocks": 119.0,
+                            "cloudEffort": 1785,
+                            "files": [
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\msl\\msl-1.1211.0\\examples/mslcli/client/src/main/java/mslcli/common/util\\SharedUtil.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\msl\\msl-1.1211.0\\examples/kancolle/src/main/java/kancolle/app\\KanColle.java"
+                            ],
+                            "triggered": true
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Access_To_Environment_Variable",
+                                "display": "Execution Environment : Access to environment variable",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Access_To_Environment_Variable",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 1.2718600953895072,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Impersonate_Identity",
+                                "display": "Security & User Authentication : Using impersonate Identity",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Impersonate_Identity",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Critical",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 12.71860095389507,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_SecuredProtocols",
+                                "display": "Security & User Authentication : Use of unsecured network protocols or URI libraries",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_SecuredProtocols",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 1.2718600953895072,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false,
+                            "cloudRequirementsDetail": [
+                                {
+                                    "cloudRequirement": {
+                                        "id": "Use_SecuredProtocolsHTTP",
+                                        "display": "Security & User Authentication : Use of unsecured network protocols (HTTP)",
+                                        "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_SecuredProtocols",
+                                        "ruleType": "BLOCKER",
+                                        "rulePlatform": null,
+                                        "rulePlatformLabel": null,
+                                        "criticality": "Low",
+                                        "impacts": [
+                                            "Coding"
+                                        ],
+                                        "parent": null
+                                    },
+                                    "roadblocks": 0.0,
+                                    "cloudEffort": null,
+                                    "files": null
+                                },
+                                {
+                                    "cloudRequirement": {
+                                        "id": "Use_SecuredProtocolsFTP",
+                                        "display": "Security & User Authentication : Use of unsecured network protocols (FTP)",
+                                        "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_SecuredProtocols",
+                                        "ruleType": "BLOCKER",
+                                        "rulePlatform": null,
+                                        "rulePlatformLabel": null,
+                                        "criticality": "Low",
+                                        "impacts": [
+                                            "Coding"
+                                        ],
+                                        "parent": null
+                                    },
+                                    "roadblocks": 0.0,
+                                    "cloudEffort": null,
+                                    "files": null
+                                }
+                            ]
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Hardcoded_IP_Address",
+                                "display": "Execution Environment : Using hardcoded network IP address",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Hardcoded_IP_Address",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 1.2718600953895072,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Stateful_Session",
+                                "display": "Persistent Files : Using stateful session (Servlet)",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Stateful_Session",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "High",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 2.384737678855326,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Stateful_Session_Spring",
+                                "display": "Persistent Files : Using stateful session (Spring)",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Stateful_Session_Spring",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "High",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 2.384737678855326,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        }
+                    ]
+                }
+            ],
+            "customIndicators": [
+                {
+                    "metricId": 10023356,
+                    "value": "0.09090909090909091"
+                },
+                {
+                    "metricId": 10006001,
+                    "value": "0.46808510638297873"
+                },
+                {
+                    "metricId": 10006305,
+                    "value": "0.48717948717948717"
+                },
+                {
+                    "metricId": 10013600,
+                    "value": "0.8666666666666667"
+                },
+                {
+                    "metricId": 10006302,
+                    "value": "0.1728395061728395"
+                },
+                {
+                    "metricId": 10006301,
+                    "value": "0.47368421052631576"
+                },
+                {
+                    "metricId": 10016304,
+                    "value": null
+                }
+            ],
+            "technologies": [
+                {
+                    "technology": "Java",
+                    "totalLinesOfCode": 50629,
+                    "totalFiles": 424,
+                    "softwareAgility": 0.642361581325531,
+                    "softwareElegance": 0.6407572627067566,
+                    "softwareResiliency": 0.788851261138916,
+                    "softwareHealth": 0.6906567017237345,
+                    "softwareAgilityDetail": {
+                        "highLinesOfCode": 14505,
+                        "mediumLinesOfCode": 24696,
+                        "lowLinesOfCode": 11428
+                    },
+                    "softwareEleganceDetail": {
+                        "highLinesOfCode": 21978,
+                        "mediumLinesOfCode": 11011,
+                        "lowLinesOfCode": 17640
+                    },
+                    "softwareResiliencyDetail": {
+                        "highLinesOfCode": 31936,
+                        "mediumLinesOfCode": 15404,
+                        "lowLinesOfCode": 3289
+                    },
+                    "softwareHealthDetail": {
+                        "highLinesOfCode": 22806,
+                        "mediumLinesOfCode": 17037,
+                        "lowLinesOfCode": 10785
+                    }
+                },
+                {
+                    "technology": "C/C++",
+                    "totalLinesOfCode": 31,
+                    "totalFiles": 1,
+                    "softwareAgility": 0.8500000238418579,
+                    "softwareElegance": 0.8999999761581421,
+                    "softwareResiliency": 0.75,
+                    "softwareHealth": 0.8333333333333334,
+                    "softwareAgilityDetail": {
+                        "highLinesOfCode": 31,
+                        "mediumLinesOfCode": 0,
+                        "lowLinesOfCode": 0
+                    },
+                    "softwareEleganceDetail": {
+                        "highLinesOfCode": 31,
+                        "mediumLinesOfCode": 0,
+                        "lowLinesOfCode": 0
+                    },
+                    "softwareResiliencyDetail": {
+                        "highLinesOfCode": 0,
+                        "mediumLinesOfCode": 31,
+                        "lowLinesOfCode": 0
+                    },
+                    "softwareHealthDetail": {
+                        "highLinesOfCode": 20,
+                        "mediumLinesOfCode": 10,
+                        "lowLinesOfCode": 0
+                    }
+                },
+                {
+                    "technology": "Ksh",
+                    "totalLinesOfCode": 183,
+                    "totalFiles": 10,
+                    "softwareAgility": 0.7565573453903198,
+                    "softwareElegance": 0.931693971157074,
+                    "softwareResiliency": 0.5770491361618042,
+                    "softwareHealth": 0.755100150903066,
+                    "softwareAgilityDetail": {
+                        "highLinesOfCode": 138,
+                        "mediumLinesOfCode": 45,
+                        "lowLinesOfCode": 0
+                    },
+                    "softwareEleganceDetail": {
+                        "highLinesOfCode": 183,
+                        "mediumLinesOfCode": 0,
+                        "lowLinesOfCode": 0
+                    },
+                    "softwareResiliencyDetail": {
+                        "highLinesOfCode": 25,
+                        "mediumLinesOfCode": 33,
+                        "lowLinesOfCode": 125
+                    },
+                    "softwareHealthDetail": {
+                        "highLinesOfCode": 115,
+                        "mediumLinesOfCode": 26,
+                        "lowLinesOfCode": 41
+                    }
+                },
+                {
+                    "technology": "JavaScript",
+                    "totalLinesOfCode": 69182,
+                    "totalFiles": 382,
+                    "softwareAgility": 0.5600881576538086,
+                    "softwareElegance": 0.5216883420944214,
+                    "softwareResiliency": 0.47597262263298035,
+                    "softwareHealth": 0.5192497074604034,
+                    "softwareAgilityDetail": {
+                        "highLinesOfCode": 14425,
+                        "mediumLinesOfCode": 25795,
+                        "lowLinesOfCode": 28962
+                    },
+                    "softwareEleganceDetail": {
+                        "highLinesOfCode": 934,
+                        "mediumLinesOfCode": 22400,
+                        "lowLinesOfCode": 45848
+                    },
+                    "softwareResiliencyDetail": {
+                        "highLinesOfCode": 3340,
+                        "mediumLinesOfCode": 32533,
+                        "lowLinesOfCode": 33309
+                    },
+                    "softwareHealthDetail": {
+                        "highLinesOfCode": 6233,
+                        "mediumLinesOfCode": 26909,
+                        "lowLinesOfCode": 36039
+                    }
+                }
+            ],
+            "components": []
+        }
+    ],
+    "surveys": [
+        {
+            "id": 371,
+            "ref": "CAST_MAINT",
+            "name": "Software Maintenance Estimate",
+            "questions": [
+                {
+                    "label": "What is the percentage of change to the base code in the last 12 months?",
+                    "value": "55.0",
+                    "questionId": 1000121
+                },
+                {
+                    "label": "What is the average skill level of the development team on this type of application?",
+                    "value": "3 years",
+                    "questionId": 1000015,
+                    "choiceId": 1000069
+                },
+                {
+                    "label": "What percentage of the development effort has been spent on maintenance in the last 12 months?",
+                    "value": "20.0",
+                    "questionId": 1000012
+                },
+                {
+                    "label": "What is the annual staff turnover within the development team?",
+                    "value": "5%",
+                    "questionId": 1000016,
+                    "choiceId": 1000142
+                },
+                {
+                    "label": "What is the CMMI level of the organization?",
+                    "value": "Level 3",
+                    "questionId": 1000032,
+                    "choiceId": 1000257
+                }
+            ]
+        },
+        {
+            "id": 1700,
+            "name": "Business Alignment Assessment",
+            "questions": [
+                {
+                    "label": "[Portfolio Management] How many Business processes does the application support?",
+                    "shortLabel": "",
+                    "value": "5 to 9 processes",
+                    "questionId": 10001304,
+                    "choiceId": 10007403
+                },
+                {
+                    "label": "[Portfolio Management] What is the primary capability that this application supports? (APQC short)",
+                    "shortLabel": "What is the primary capability that this application supports",
+                    "value": " 5.0 - Deliver Services",
+                    "questionId": 10006306,
+                    "choiceId": 10012800
+                },
+                {
+                    "label": "[Portfolio Management] What is the application's life cycle stage?",
+                    "shortLabel": "Application LifeCycle",
+                    "value": "Production - Maturity",
+                    "questionId": 10006307,
+                    "choiceId": 10012905
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "ref": "CAST_BI",
+            "name": "Business Impact",
+            "questions": [
+                {
+                    "label": "What is the average number of FTE (Full Time Equivalent) resources that have worked on the source code for this application over the last 12 months?",
+                    "shortLabel": "",
+                    "value": "10.0",
+                    "questionId": 1000011
+                },
+                {
+                    "label": "Is this application aligned with the company's future technology direction?",
+                    "shortLabel": "",
+                    "value": "Yes",
+                    "questionId": 1000009,
+                    "choiceId": 1000042
+                },
+                {
+                    "label": "The number of major releases delivered over the last 12 months for this application?",
+                    "shortLabel": "",
+                    "value": "Less than 4",
+                    "questionId": 1000006,
+                    "choiceId": 1000452
+                },
+                {
+                    "label": "Could failure of this application lead to loss of customer confidence? Please define the level of impact.",
+                    "value": "Very High",
+                    "questionId": 1000022,
+                    "choiceId": 1000223
+                },
+                {
+                    "label": "Could failure of this application lead to harm of the company's public image? Please define the level of impact.",
+                    "value": "Medium",
+                    "questionId": 1000021,
+                    "choiceId": 1000001
+                },
+                {
+                    "label": "Could failure of this application lead to loss of revenue or business opportunity? Please define the level of impact.",
+                    "value": "Medium",
+                    "questionId": 1000020,
+                    "choiceId": 1000407
+                },
+                {
+                    "label": "Could failure of this application lead to disruption? Please define the level of impact.",
+                    "value": "Medium",
+                    "questionId": 1000019,
+                    "choiceId": 1000193
+                },
+                {
+                    "label": "What is the approximate number of end users for this application?",
+                    "shortLabel": "",
+                    "value": "100 to 500",
+                    "questionId": 1000018,
+                    "choiceId": 1000396
+                },
+                {
+                    "label": "Does the application serve internal or external users?",
+                    "value": "External users",
+                    "questionId": 1000017,
+                    "choiceId": 1000203
+                }
+            ]
+        },
+        {
+            "id": 373,
+            "ref": "CAST_APP",
+            "name": "Application Properties",
+            "questions": [
+                {
+                    "label": "What is the application type?",
+                    "shortLabel": "",
+                    "value": "Inventory Management",
+                    "questionId": 1000004,
+                    "choiceId": 1000435
+                },
+                {
+                    "label": "Application Owner's name",
+                    "value": "MMU",
+                    "questionId": 1000002
+                },
+                {
+                    "label": "Is this application a custom application or a Commercial Off The Shelf product?",
+                    "shortLabel": "",
+                    "value": "Customized COTS",
+                    "questionId": 1000427,
+                    "choiceId": 1000531
+                },
+                {
+                    "label": "In what year was this application first put into production?",
+                    "shortLabel": "",
+                    "value": "2011",
+                    "questionId": 1000033
+                }
+            ]
+        },
+        {
+            "id": 1701,
+            "name": "IaaS Assessment",
+            "questions": [
+                {
+                    "label": "[IaaS] Performance - Elasticity",
+                    "shortLabel": "",
+                    "value": "Med Low (Moderate spikes regularly)",
+                    "questionId": 10003000,
+                    "choiceId": 10009401
+                },
+                {
+                    "label": "[IaaS] Performance - Scalability",
+                    "shortLabel": "",
+                    "value": "Slow, Linear Growth",
+                    "questionId": 10003001,
+                    "choiceId": 10009406
+                },
+                {
+                    "label": "[IaaS] Performance - Latency",
+                    "shortLabel": "",
+                    "value": " > 500ms",
+                    "questionId": 10003003,
+                    "choiceId": 10009415
+                },
+                {
+                    "label": "[IaaS] Performance - Throughput",
+                    "shortLabel": "",
+                    "value": "< 1 Mbps",
+                    "questionId": 10003004,
+                    "choiceId": 10009420
+                },
+                {
+                    "label": "[IaaS] Operations - Business Continuity",
+                    "shortLabel": "",
+                    "value": "Moderate Availability required (99% - \"two nines\") ",
+                    "questionId": 10003104,
+                    "choiceId": 10009534
+                },
+                {
+                    "label": "[IaaS] Security & Compliance - Jurisdiction",
+                    "shortLabel": "",
+                    "value": "Local restrictions",
+                    "questionId": 10003107,
+                    "choiceId": 10009547
+                },
+                {
+                    "label": "[IaaS] Architecture - Application - Complexity",
+                    "shortLabel": "",
+                    "value": "Med High, (N tier, med integration w/other apps (5-10))",
+                    "questionId": 10003008,
+                    "choiceId": 10009441
+                },
+                {
+                    "label": "[IaaS] Architecture - Infrastructure - Hardware Life Expectancy",
+                    "shortLabel": "",
+                    "value": "3-4 years",
+                    "questionId": 10003014,
+                    "choiceId": 10009471
+                },
+                {
+                    "label": "[IaaS] Financial - Operating Cost",
+                    "shortLabel": "",
+                    "value": "Med Low (No SLAs, Minimal staffing)",
+                    "questionId": 10003015,
+                    "choiceId": 10009476
+                }
+            ]
+        },
+        {
+            "id": 1702,
+            "name": "TCO Assessment",
+            "questions": [
+                {
+                    "label": "[TCO] What is the Total Cost of Ownership for this application?",
+                    "shortLabel": "",
+                    "value": "High",
+                    "questionId": 10006303,
+                    "choiceId": 10012700
+                },
+                {
+                    "label": "[TCO] What is the evolution of the TCO?",
+                    "shortLabel": "",
+                    "value": "Increasing",
+                    "questionId": 10006304,
+                    "choiceId": 10012704
+                }
+            ]
+        },
+        {
+            "id": 938,
+            "ref": "CAST_CLOUD",
+            "name": "Cloud Readiness Assessment",
+            "questions": [
+                {
+                    "label": "[Business Drivers] Does this application correspond to a specific workload?",
+                    "shortLabel": "",
+                    "value": "Big Data",
+                    "questionId": 10000901,
+                    "choiceId": 10006805
+                },
+                {
+                    "label": "[Technical Enablers] Does this application depend on other services or applications?",
+                    "shortLabel": "",
+                    "value": "Internal services exposed through an API",
+                    "questionId": 10000808,
+                    "choiceId": 10006731
+                },
+                {
+                    "label": "[Technical Enablers] What is the database provider for this application?",
+                    "shortLabel": "",
+                    "value": "Standard but not supported as a service in the Cloud (IaaS)",
+                    "questionId": 10000809,
+                    "choiceId": 10006735
+                },
+                {
+                    "label": "[Process Maturity] What is the average skill on Cloud technologies and practices within the development team for this application?",
+                    "shortLabel": "",
+                    "value": "Basic knowledge",
+                    "questionId": 10000810,
+                    "choiceId": 10006739
+                },
+                {
+                    "label": "[Business Drivers] What is the current (or expected) Service Level Agreement for this application?",
+                    "shortLabel": "",
+                    "value": "No specifically defined SLA",
+                    "questionId": 10000811,
+                    "choiceId": 10006742
+                },
+                {
+                    "label": "[Process Maturity] What is the evolution model and feedback loop approach for this application?",
+                    "shortLabel": "",
+                    "value": "Waterfall",
+                    "questionId": 10000800,
+                    "choiceId": 10006700
+                },
+                {
+                    "label": "[Technical Enablers] What is the current deployment platform for this application?",
+                    "shortLabel": "",
+                    "value": "Back-End application",
+                    "questionId": 10000801,
+                    "choiceId": 10006708
+                },
+                {
+                    "label": "[Technical Enablers] What is the current user authentication mechanism used by this application?",
+                    "shortLabel": "",
+                    "value": "Single Sign On",
+                    "questionId": 10000802,
+                    "choiceId": 10006710
+                },
+                {
+                    "label": "[Technical Enablers]  How is this application exposed to external services/applications?",
+                    "shortLabel": "",
+                    "value": "API exposed on other network protocol",
+                    "questionId": 10000803,
+                    "choiceId": 10006715
+                },
+                {
+                    "label": "[Business Drivers] How is data consumed from this application?",
+                    "shortLabel": "",
+                    "value": "Classic Storage",
+                    "questionId": 10000805,
+                    "choiceId": 10006722
+                },
+                {
+                    "label": "[Process Maturity] What is the level of deployment process automation for provisioning and configuration for this application?",
+                    "shortLabel": "",
+                    "value": "No automation",
+                    "questionId": 10000806,
+                    "choiceId": 10006723
+                },
+                {
+                    "label": "[Technical Enablers] Is this application multi-tenant?",
+                    "shortLabel": "",
+                    "value": "No (single-tenant)",
+                    "questionId": 10000807,
+                    "choiceId": 10006726
+                }
+            ]
+        }
+    ],
+    "tags": [
+        {
+            "id": 2304,
+            "label": "CR+BI+CustomCode"
+        },
+        {
+            "id": 166,
+            "label": "_Rs-Replace/Repurchase {Med BI, High Risk, High Cost, Low IaaS/PaaS}"
+        }
+    ]
+}

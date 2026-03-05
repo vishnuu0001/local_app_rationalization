@@ -1,0 +1,540 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PHP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__MissingSetter",
+                                    "detail": [
+                                        {
+                                            "application_id": 8360,
+                                            "application_name": "People Finder",
+                                            "counter": 1.0,
+                                            "effort": 0.33333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__String",
+                                    "detail": [
+                                        {
+                                            "application_id": 8360,
+                                            "application_name": "People Finder",
+                                            "counter": 561.0,
+                                            "effort": 93.50001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__SQL",
+                                    "detail": [
+                                        {
+                                            "application_id": 8360,
+                                            "application_name": "People Finder",
+                                            "counter": 3.0,
+                                            "effort": 30.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__VariableDefinitionCheck",
+                                    "detail": [
+                                        {
+                                            "application_id": 8360,
+                                            "application_name": "People Finder",
+                                            "counter": 493.0,
+                                            "effort": 82.16667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__Debug",
+                                    "detail": [
+                                        {
+                                            "application_id": 8360,
+                                            "application_name": "People Finder",
+                                            "counter": 3.0,
+                                            "effort": 0.5
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PHP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__Parameters",
+                                    "detail": [
+                                        {
+                                            "application_id": 8360,
+                                            "application_name": "People Finder",
+                                            "counter": 2.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__EmptyStatement",
+                                    "detail": [
+                                        {
+                                            "application_id": 8360,
+                                            "application_name": "People Finder",
+                                            "counter": 116.0,
+                                            "effort": 19.333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__Constructor",
+                                    "detail": [
+                                        {
+                                            "application_id": 8360,
+                                            "application_name": "People Finder",
+                                            "counter": 10.0,
+                                            "effort": 1.6666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__Unconditionnal",
+                                    "detail": [
+                                        {
+                                            "application_id": 8360,
+                                            "application_name": "People Finder",
+                                            "counter": 3.0,
+                                            "effort": 1.5000001
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PHP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__SuspiciousLoop",
+                                    "detail": [
+                                        {
+                                            "application_id": 8360,
+                                            "application_name": "People Finder",
+                                            "counter": 1.0,
+                                            "effort": 0.16666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__MissingIdentical",
+                                    "detail": [
+                                        {
+                                            "application_id": 8360,
+                                            "application_name": "People Finder",
+                                            "counter": 10511.0,
+                                            "effort": 875.9167
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__Object",
+                                    "detail": [
+                                        {
+                                            "application_id": 8360,
+                                            "application_name": "People Finder",
+                                            "counter": 1107.0,
+                                            "effort": 369.00003
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__BadLoop",
+                                    "detail": [
+                                        {
+                                            "application_id": 8360,
+                                            "application_name": "People Finder",
+                                            "counter": 64.0,
+                                            "effort": 32.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__MissingBreakInCasePath",
+                                    "detail": [
+                                        {
+                                            "application_id": 8360,
+                                            "application_name": "People Finder",
+                                            "counter": 105.0,
+                                            "effort": 8.75
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PHP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__EndComment",
+                                    "detail": [
+                                        {
+                                            "application_id": 8360,
+                                            "application_name": "People Finder",
+                                            "counter": 4265.0,
+                                            "effort": 355.4167
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 8360,
+                                            "application_name": "People Finder",
+                                            "counter": 148.0,
+                                            "effort": 148.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__ClassNameIsNotFileName",
+                                    "detail": [
+                                        {
+                                            "application_id": 8360,
+                                            "application_name": "People Finder",
+                                            "counter": 464.0,
+                                            "effort": 77.333336
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__Elseif",
+                                    "detail": [
+                                        {
+                                            "application_id": 8360,
+                                            "application_name": "People Finder",
+                                            "counter": 497.0,
+                                            "effort": 41.416668
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__FileNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 8360,
+                                            "application_name": "People Finder",
+                                            "counter": 686.0,
+                                            "effort": 114.333336
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__ClassNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 8360,
+                                            "application_name": "People Finder",
+                                            "counter": 49.0,
+                                            "effort": 8.166667
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PHP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 8360,
+                                            "application_name": "People Finder",
+                                            "counter": 2009.0,
+                                            "effort": 167.41667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__IncDec",
+                                    "detail": [
+                                        {
+                                            "application_id": 8360,
+                                            "application_name": "People Finder",
+                                            "counter": 7.0,
+                                            "effort": 0.5833334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__CommentedThrow",
+                                    "detail": [
+                                        {
+                                            "application_id": 8360,
+                                            "application_name": "People Finder",
+                                            "counter": 35.0,
+                                            "effort": 5.8333335
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__FunctionNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 8360,
+                                            "application_name": "People Finder",
+                                            "counter": 9.0,
+                                            "effort": 1.5000001
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PHP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__ConstructorNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 8360,
+                                            "application_name": "People Finder",
+                                            "counter": 219.0,
+                                            "effort": 18.25
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__UnusedParameters",
+                                    "detail": [
+                                        {
+                                            "application_id": 8360,
+                                            "application_name": "People Finder",
+                                            "counter": 236.0,
+                                            "effort": 118.00001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__Overriding",
+                                    "detail": [
+                                        {
+                                            "application_id": 8360,
+                                            "application_name": "People Finder",
+                                            "counter": 4.0,
+                                            "effort": 0.33333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 8360,
+                                            "application_name": "People Finder",
+                                            "counter": 185.0,
+                                            "effort": 185.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__Undocumented",
+                                    "detail": [
+                                        {
+                                            "application_id": 8360,
+                                            "application_name": "People Finder",
+                                            "counter": 802.0,
+                                            "effort": 267.33334
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PHP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__NBMETH",
+                                    "detail": [
+                                        {
+                                            "application_id": 8360,
+                                            "application_name": "People Finder",
+                                            "counter": 132.39998,
+                                            "effort": 661.9999
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 8360,
+                                            "application_name": "People Finder",
+                                            "counter": 59.316673,
+                                            "effort": 296.58337
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PHP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__NestedLoop",
+                                    "detail": [
+                                        {
+                                            "application_id": 8360,
+                                            "application_name": "People Finder",
+                                            "counter": 296.0,
+                                            "effort": 2960.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PHP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__DepthCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 8360,
+                                            "application_name": "People Finder",
+                                            "counter": 43.0,
+                                            "effort": 215.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__ComplexConditions",
+                                    "detail": [
+                                        {
+                                            "application_id": 8360,
+                                            "application_name": "People Finder",
+                                            "counter": 22.0,
+                                            "effort": 220.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

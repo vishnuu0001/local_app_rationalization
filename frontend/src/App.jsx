@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -14,8 +14,24 @@ import StandardizationERP from './components/business-capability/Standardization
 import FinalTraceabilityMatrix from './components/business-capability/FinalTraceabilityMatrix';
 import IndustryTemplates from './components/IndustryTemplates';
 import GoldenData from './components/GoldenData';
+import axios from 'axios';
+
+const API_BASE = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
 
 function App() {
+  useEffect(() => {
+    // Reset all derived/analysis data once per browser session
+    const SESSION_KEY = 'app_reset_done';
+    if (!sessionStorage.getItem(SESSION_KEY)) {
+      axios.post(`${API_BASE}/reset`)
+        .then(() => {
+          sessionStorage.setItem(SESSION_KEY, '1');
+          console.log('[App] Data reset on load.');
+        })
+        .catch(err => console.warn('[App] Reset call failed:', err.message));
+    }
+  }, []);
+
   return (
     <ErrorBoundary>
       <BrowserRouter>

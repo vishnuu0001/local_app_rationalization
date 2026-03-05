@@ -1,0 +1,251 @@
+{
+    "id": 10271,
+    "name": "NASA",
+    "domains": [
+        {
+            "id": 256,
+            "name": "Corporate Systems & Finance"
+        },
+        {
+            "id": 12908,
+            "name": "PE Firm"
+        }
+    ],
+    "metrics": [
+        {
+            "snapshotLabel": "TrendCampaign_4_NASA",
+            "snapshotDate": 1488171600000,
+            "softwareAgility": 0.6088290214538574,
+            "softwareAgilityAdded": 0.6088290214538574,
+            "softwareElegance": 0.7838672995567322,
+            "softwareEleganceAdded": 0.7838672995567322,
+            "softwareResiliency": 0.865044355392456,
+            "softwareResiliencyAdded": 0.865044355392456,
+            "softwareHealth": 0.7525802254676819,
+            "openSourceSafety": 1.0,
+            "openSourceLicense": 1.0,
+            "openSourceObsolescence": null,
+            "openSourceCVE": 1.0,
+            "businessImpact": 0.25380710659898476,
+            "roarIndex": 0.04487629137055839,
+            "backFiredFP": 1987.0,
+            "backFiredFPAdded": 1987.0,
+            "technicalDebt": 333436.07316589355,
+            "maintenanceRecordedFTE": 1.6000000000000003,
+            "maintenanceRecommendedFTE": 0.12369460726246849,
+            "greenIndex": null,
+            "greenIndexScan": null,
+            "greenIndexSurvey": null,
+            "greenOccurrences": null,
+            "greenEffort": null,
+            "greenDetail": [
+                {
+                    "technology": "Java",
+                    "greenIndexScan": 0.0,
+                    "greenIndexDetails": null
+                }
+            ],
+            "totalLinesOfCode": 105335,
+            "totalLinesOfCodeAdded": 105335,
+            "totalLinesOfCodeModified": 0,
+            "totalFiles": 1124,
+            "totalFilesAdded": 1124,
+            "totalFilesModified": 0,
+            "customIndicators": [
+                {
+                    "metricId": 10023356,
+                    "value": "0.10101010101010101"
+                },
+                {
+                    "metricId": 10006001,
+                    "value": "0.25"
+                },
+                {
+                    "metricId": 10006305,
+                    "value": "-1.0"
+                },
+                {
+                    "metricId": 10013600,
+                    "value": "-1.0"
+                },
+                {
+                    "metricId": 10006302,
+                    "value": "-1.0"
+                },
+                {
+                    "metricId": 10006301,
+                    "value": "-1.0"
+                },
+                {
+                    "metricId": 10016304,
+                    "value": "-1.0"
+                }
+            ],
+            "technologies": [
+                {
+                    "technology": "Java",
+                    "totalLinesOfCode": 105335,
+                    "totalFiles": 1124,
+                    "softwareAgility": 0.6088290214538574,
+                    "softwareElegance": 0.7838672995567322,
+                    "softwareResiliency": 0.865044355392456,
+                    "softwareHealth": 0.7525802254676819,
+                    "softwareAgilityDetail": {
+                        "highLinesOfCode": 24292,
+                        "mediumLinesOfCode": 47951,
+                        "lowLinesOfCode": 33092
+                    },
+                    "softwareEleganceDetail": {
+                        "highLinesOfCode": 65355,
+                        "mediumLinesOfCode": 23232,
+                        "lowLinesOfCode": 16748
+                    },
+                    "softwareResiliencyDetail": {
+                        "highLinesOfCode": 85117,
+                        "mediumLinesOfCode": 15814,
+                        "lowLinesOfCode": 4404
+                    },
+                    "softwareHealthDetail": {
+                        "highLinesOfCode": 58254,
+                        "mediumLinesOfCode": 28999,
+                        "lowLinesOfCode": 18081
+                    }
+                }
+            ],
+            "components": []
+        }
+    ],
+    "surveys": [
+        {
+            "id": 371,
+            "ref": "CAST_MAINT",
+            "name": "Software Maintenance Estimate",
+            "questions": [
+                {
+                    "label": "What is the average skill level of the development team on this type of application?",
+                    "value": "6 years",
+                    "questionId": 1000015,
+                    "choiceId": 1000070
+                },
+                {
+                    "label": "What percentage of the development effort has been spent on maintenance in the last 12 months?",
+                    "value": "20",
+                    "questionId": 1000012
+                },
+                {
+                    "label": "What is the CMMI level of the organization?",
+                    "value": "Level 4",
+                    "questionId": 1000032,
+                    "choiceId": 1000258
+                },
+                {
+                    "label": "What is the percentage of change to the base code in the last 12 months?",
+                    "value": "5",
+                    "questionId": 1000121
+                },
+                {
+                    "label": "What is the annual staff turnover within the development team?",
+                    "value": "3%",
+                    "questionId": 1000016,
+                    "choiceId": 1000141
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "ref": "CAST_BI",
+            "name": "Business Impact",
+            "questions": [
+                {
+                    "label": "What is the average number of FTE (Full Time Equivalent) resources that have worked on the source code for this application over the last 12 months?",
+                    "shortLabel": "",
+                    "value": "8",
+                    "questionId": 1000011
+                },
+                {
+                    "label": "Is this application aligned with the company's future technology direction?",
+                    "shortLabel": "",
+                    "value": "No",
+                    "questionId": 1000009,
+                    "choiceId": 1000043
+                },
+                {
+                    "label": "The number of major releases delivered over the last 12 months for this application?",
+                    "shortLabel": "",
+                    "value": "Less than 4",
+                    "questionId": 1000006,
+                    "choiceId": 1000452
+                },
+                {
+                    "label": "Could failure of this application lead to loss of customer confidence? Please define the level of impact.",
+                    "value": "High",
+                    "questionId": 1000022,
+                    "choiceId": 1000222
+                },
+                {
+                    "label": "Could failure of this application lead to harm of the company's public image? Please define the level of impact.",
+                    "value": "Medium",
+                    "questionId": 1000021,
+                    "choiceId": 1000001
+                },
+                {
+                    "label": "Could failure of this application lead to loss of revenue or business opportunity? Please define the level of impact.",
+                    "value": "Medium",
+                    "questionId": 1000020,
+                    "choiceId": 1000407
+                },
+                {
+                    "label": "Could failure of this application lead to disruption? Please define the level of impact.",
+                    "value": "Very High",
+                    "questionId": 1000019,
+                    "choiceId": 1000195
+                },
+                {
+                    "label": "What is the approximate number of end users for this application?",
+                    "shortLabel": "",
+                    "value": "100 to 500",
+                    "questionId": 1000018,
+                    "choiceId": 1000396
+                },
+                {
+                    "label": "Does the application serve internal or external users?",
+                    "value": "Internal users or business processes",
+                    "questionId": 1000017,
+                    "choiceId": 1000204
+                }
+            ]
+        },
+        {
+            "id": 373,
+            "ref": "CAST_APP",
+            "name": "Application Properties",
+            "questions": [
+                {
+                    "label": "Is this application a custom application or a Commercial Off The Shelf product?",
+                    "shortLabel": "",
+                    "value": "Custom Application",
+                    "questionId": 1000427,
+                    "choiceId": 1000529
+                },
+                {
+                    "label": "What is the application type?",
+                    "shortLabel": "",
+                    "value": "Testing and Clinical Trials",
+                    "questionId": 1000004,
+                    "choiceId": 1000441
+                },
+                {
+                    "label": "Application Owner's name",
+                    "value": "Michael MULLER",
+                    "questionId": 1000002
+                },
+                {
+                    "label": "In what year was this application first put into production?",
+                    "shortLabel": "",
+                    "value": "2010",
+                    "questionId": 1000033
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,492 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 10272,
+                                            "application_name": "PubNub",
+                                            "counter": 337.0,
+                                            "effort": 1011.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__IllegalThrows",
+                                    "detail": [
+                                        {
+                                            "application_id": 10272,
+                                            "application_name": "PubNub",
+                                            "counter": 8.0,
+                                            "effort": 40.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingHashcode",
+                                    "detail": [
+                                        {
+                                            "application_id": 10272,
+                                            "application_name": "PubNub",
+                                            "counter": 1.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__RiskyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 10272,
+                                            "application_name": "PubNub",
+                                            "counter": 135.0,
+                                            "effort": 675.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__Instanceof",
+                                    "detail": [
+                                        {
+                                            "application_id": 10272,
+                                            "application_name": "PubNub",
+                                            "counter": 125.0,
+                                            "effort": 1250.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__PublicAttributes",
+                                    "detail": [
+                                        {
+                                            "application_id": 10272,
+                                            "application_name": "PubNub",
+                                            "counter": 123.0,
+                                            "effort": 123.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingBraces2",
+                                    "detail": [
+                                        {
+                                            "application_id": 10272,
+                                            "application_name": "PubNub",
+                                            "counter": 155.0,
+                                            "effort": 155.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__EmptyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 10272,
+                                            "application_name": "PubNub",
+                                            "counter": 96.0,
+                                            "effort": 480.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingDefault",
+                                    "detail": [
+                                        {
+                                            "application_id": 10272,
+                                            "application_name": "PubNub",
+                                            "counter": 6.0,
+                                            "effort": 6.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 10272,
+                                            "application_name": "PubNub",
+                                            "counter": 11804.0,
+                                            "effort": 11804.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingBreakInSwitch",
+                                    "detail": [
+                                        {
+                                            "application_id": 10272,
+                                            "application_name": "PubNub",
+                                            "counter": 9.0,
+                                            "effort": 0.75000006
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BugPatterns",
+                                    "detail": [
+                                        {
+                                            "application_id": 10272,
+                                            "application_name": "PubNub",
+                                            "counter": 2.0,
+                                            "effort": 2.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 10272,
+                                            "application_name": "PubNub",
+                                            "counter": 7.0,
+                                            "effort": 7.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 10272,
+                                            "application_name": "PubNub",
+                                            "counter": 462.0,
+                                            "effort": 38.500004
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ClassDefinitions",
+                                    "detail": [
+                                        {
+                                            "application_id": 10272,
+                                            "application_name": "PubNub",
+                                            "counter": 26.0,
+                                            "effort": 130.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__StarImport",
+                                    "detail": [
+                                        {
+                                            "application_id": 10272,
+                                            "application_name": "PubNub",
+                                            "counter": 30.0,
+                                            "effort": 30.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 10272,
+                                            "application_name": "PubNub",
+                                            "counter": 148.0,
+                                            "effort": 148.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 10272,
+                                            "application_name": "PubNub",
+                                            "counter": 42.0,
+                                            "effort": 3.5000002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingAutomatedDoc2",
+                                    "detail": [
+                                        {
+                                            "application_id": 10272,
+                                            "application_name": "PubNub",
+                                            "counter": 997.0,
+                                            "effort": 997.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 10272,
+                                            "application_name": "PubNub",
+                                            "counter": 467.0,
+                                            "effort": 38.916668
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 10272,
+                                            "application_name": "PubNub",
+                                            "counter": 210.0,
+                                            "effort": 17.5
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 10272,
+                                            "application_name": "PubNub",
+                                            "counter": 2565.2004,
+                                            "effort": 2565.2004
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__Ternary",
+                                    "detail": [
+                                        {
+                                            "application_id": 10272,
+                                            "application_name": "PubNub",
+                                            "counter": 106.0,
+                                            "effort": 106.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadDeclarationOrder",
+                                    "detail": [
+                                        {
+                                            "application_id": 10272,
+                                            "application_name": "PubNub",
+                                            "counter": 24.0,
+                                            "effort": 24.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 10272,
+                                            "application_name": "PubNub",
+                                            "counter": 54.0,
+                                            "effort": 4.5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 10272,
+                                            "application_name": "PubNub",
+                                            "counter": 28.0,
+                                            "effort": 280.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 10272,
+                                            "application_name": "PubNub",
+                                            "counter": 42292.0,
+                                            "effort": 42292.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 10272,
+                                            "application_name": "PubNub",
+                                            "counter": 18.983334,
+                                            "effort": 94.91667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 10272,
+                                            "application_name": "PubNub",
+                                            "counter": 19.320002,
+                                            "effort": 96.600006
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ComplexConditions",
+                                    "detail": [
+                                        {
+                                            "application_id": 10272,
+                                            "application_name": "PubNub",
+                                            "counter": 4.0,
+                                            "effort": 40.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,786 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 22067.0,
+                                            "effort": 66201.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ClassesComparisons",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 116.0,
+                                            "effort": 1160.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__IllegalThrows",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 42.0,
+                                            "effort": 210.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__TmpFileName",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 8.0,
+                                            "effort": 80.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__VarDecl",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 84.0,
+                                            "effort": 14.000001
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingHashcode",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 6.0,
+                                            "effort": 60.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__RiskyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 37.0,
+                                            "effort": 185.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__Instanceof",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 304.0,
+                                            "effort": 3040.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__OverloadEquals",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 4.0,
+                                            "effort": 40.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__OutOfFinallyJumps",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 4.0,
+                                            "effort": 20.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__Intrinsics",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 164.0,
+                                            "effort": 164.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 1.4000001,
+                                            "effort": 1.4000001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__SuspLastCase",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 2.0,
+                                            "effort": 0.33333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__Pipes",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 7.0,
+                                            "effort": 1.1666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__PublicAttributes",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 260.0,
+                                            "effort": 260.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingBraces2",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 49.0,
+                                            "effort": 49.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__EmptyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 52.0,
+                                            "effort": 260.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingDefault",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 2.0,
+                                            "effort": 2.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 150927.0,
+                                            "effort": 150927.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingBreakInSwitch",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 14.0,
+                                            "effort": 1.1666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__AssignmentsInConditionalExpr",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 6.0,
+                                            "effort": 3.0000002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BugPatterns",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 102.0,
+                                            "effort": 102.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__ExitNoValue",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 11.0,
+                                            "effort": 1.8333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__MissingDefault",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 1.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 30.0,
+                                            "effort": 30.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 6926.0,
+                                            "effort": 577.1667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ClassDefinitions",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 484.0,
+                                            "effort": 2420.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__StarImport",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 8.0,
+                                            "effort": 8.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 1592.0,
+                                            "effort": 1592.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 1.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__ShortVarName",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 3.0,
+                                            "effort": 0.5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 22.0,
+                                            "effort": 22.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 88.0,
+                                            "effort": 7.3333335
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingAutomatedDoc2",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 16056.0,
+                                            "effort": 16056.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 4473.0,
+                                            "effort": 372.75003
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 808.0,
+                                            "effort": 67.333336
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 264.80002,
+                                            "effort": 264.80002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__ExportNames",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 1.0,
+                                            "effort": 0.5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__LocalNames",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 58.0,
+                                            "effort": 9.666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 28273.428,
+                                            "effort": 28273.428
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__Ternary",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 1345.0,
+                                            "effort": 1345.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadDeclarationOrder",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 157.0,
+                                            "effort": 157.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 2023.0,
+                                            "effort": 168.58334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 176.0,
+                                            "effort": 1760.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 4.0,
+                                            "effort": 0.33333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__ContinuationChar",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 7.0,
+                                            "effort": 1.1666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 541797.0,
+                                            "effort": 541797.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 2.8833332,
+                                            "effort": 14.416666
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 52.853336,
+                                            "effort": 264.2667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 60.139988,
+                                            "effort": 300.69995
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 10270,
+                                            "application_name": "Mahout",
+                                            "counter": 0.55,
+                                            "effort": 2.75
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

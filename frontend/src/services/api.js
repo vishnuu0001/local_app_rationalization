@@ -169,5 +169,10 @@ export const generateGoldenData = () => apiClient.post('/golden-data/generate');
 export const getGoldenDataPreview = () => apiClient.get('/golden-data/preview');
 export const getGoldenDataDownloadUrl = () => `${API_BASE}/golden-data/download`;
 export const clearGoldenData = () => apiClient.post('/golden-data/clear');
+export const getGoldenDataRecords = (page = 1, perPage = 200, search = '') =>
+  apiClient.get('/golden-data/records', { params: { page, per_page: perPage, search } });
+export const updateGoldenDataRecord = (appId, data) =>
+  apiClient.put(`/golden-data/records/${encodeURIComponent(appId)}`, data);
+export const regenerateGoldenExcel = () => apiClient.post('/golden-data/regenerate-excel');
 
 export default apiClient;

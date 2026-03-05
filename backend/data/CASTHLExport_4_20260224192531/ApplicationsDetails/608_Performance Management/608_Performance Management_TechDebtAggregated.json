@@ -1,0 +1,396 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 608,
+                                            "application_name": "Performance Management",
+                                            "counter": 28.0,
+                                            "effort": 84.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__RiskyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 608,
+                                            "application_name": "Performance Management",
+                                            "counter": 47.0,
+                                            "effort": 235.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__PublicAttributes",
+                                    "detail": [
+                                        {
+                                            "application_id": 608,
+                                            "application_name": "Performance Management",
+                                            "counter": 38.0,
+                                            "effort": 38.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingBraces2",
+                                    "detail": [
+                                        {
+                                            "application_id": 608,
+                                            "application_name": "Performance Management",
+                                            "counter": 27.0,
+                                            "effort": 27.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 608,
+                                            "application_name": "Performance Management",
+                                            "counter": 4009.0,
+                                            "effort": 4009.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingBreakInSwitch",
+                                    "detail": [
+                                        {
+                                            "application_id": 608,
+                                            "application_name": "Performance Management",
+                                            "counter": 3.0,
+                                            "effort": 0.25
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 608,
+                                            "application_name": "Performance Management",
+                                            "counter": 29.0,
+                                            "effort": 29.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 608,
+                                            "application_name": "Performance Management",
+                                            "counter": 138.0,
+                                            "effort": 11.500001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ClassDefinitions",
+                                    "detail": [
+                                        {
+                                            "application_id": 608,
+                                            "application_name": "Performance Management",
+                                            "counter": 5.0,
+                                            "effort": 25.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__StarImport",
+                                    "detail": [
+                                        {
+                                            "application_id": 608,
+                                            "application_name": "Performance Management",
+                                            "counter": 1.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 608,
+                                            "application_name": "Performance Management",
+                                            "counter": 3269.0,
+                                            "effort": 3269.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 608,
+                                            "application_name": "Performance Management",
+                                            "counter": 294.0,
+                                            "effort": 24.500002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingAutomatedDoc2",
+                                    "detail": [
+                                        {
+                                            "application_id": 608,
+                                            "application_name": "Performance Management",
+                                            "counter": 162.0,
+                                            "effort": 162.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 608,
+                                            "application_name": "Performance Management",
+                                            "counter": 236.0,
+                                            "effort": 19.666668
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 608,
+                                            "application_name": "Performance Management",
+                                            "counter": 14.0,
+                                            "effort": 1.1666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 608,
+                                            "application_name": "Performance Management",
+                                            "counter": 257.4,
+                                            "effort": 257.4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__Ternary",
+                                    "detail": [
+                                        {
+                                            "application_id": 608,
+                                            "application_name": "Performance Management",
+                                            "counter": 11.0,
+                                            "effort": 11.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadDeclarationOrder",
+                                    "detail": [
+                                        {
+                                            "application_id": 608,
+                                            "application_name": "Performance Management",
+                                            "counter": 4.0,
+                                            "effort": 4.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 608,
+                                            "application_name": "Performance Management",
+                                            "counter": 128.0,
+                                            "effort": 10.666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 608,
+                                            "application_name": "Performance Management",
+                                            "counter": 55.0,
+                                            "effort": 550.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 608,
+                                            "application_name": "Performance Management",
+                                            "counter": 13547.0,
+                                            "effort": 13547.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 608,
+                                            "application_name": "Performance Management",
+                                            "counter": 0.17666666,
+                                            "effort": 0.8833333
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 608,
+                                            "application_name": "Performance Management",
+                                            "counter": 1.18,
+                                            "effort": 5.8999996
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

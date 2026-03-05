@@ -1,0 +1,276 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "SWIFT",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "SWIFT__MissingFinalElse",
+                                    "detail": [
+                                        {
+                                            "application_id": 37864,
+                                            "application_name": "SwiftGuide",
+                                            "counter": 1.0,
+                                            "effort": 0.16666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "SWIFT",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "SWIFT__UnusedParameters",
+                                    "detail": [
+                                        {
+                                            "application_id": 37864,
+                                            "application_name": "SwiftGuide",
+                                            "counter": 25.0,
+                                            "effort": 4.166667
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "SWIFT",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "SWIFT__EmptyArtifact",
+                                    "detail": [
+                                        {
+                                            "application_id": 37864,
+                                            "application_name": "SwiftGuide",
+                                            "counter": 5.0,
+                                            "effort": 2.5000002
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "SWIFT",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "SWIFT__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 37864,
+                                            "application_name": "SwiftGuide",
+                                            "counter": 110.0,
+                                            "effort": 9.166667
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "SWIFT",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "SWIFT__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 37864,
+                                            "application_name": "SwiftGuide",
+                                            "counter": 47.839996,
+                                            "effort": 47.839996
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "SWIFT__MultDecl",
+                                    "detail": [
+                                        {
+                                            "application_id": 37864,
+                                            "application_name": "SwiftGuide",
+                                            "counter": 5.0,
+                                            "effort": 0.4166667
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "SWIFT",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "SWIFT__LargeSwitchCase",
+                                    "detail": [
+                                        {
+                                            "application_id": 37864,
+                                            "application_name": "SwiftGuide",
+                                            "counter": 7.0,
+                                            "effort": 7.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "SWIFT__NBMETH",
+                                    "detail": [
+                                        {
+                                            "application_id": 37864,
+                                            "application_name": "SwiftGuide",
+                                            "counter": 47.5,
+                                            "effort": 237.5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "SWIFT__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 37864,
+                                            "application_name": "SwiftGuide",
+                                            "counter": 19.32,
+                                            "effort": 96.6
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "SWIFT__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 37864,
+                                            "application_name": "SwiftGuide",
+                                            "counter": 2.6,
+                                            "effort": 2.6
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "SWIFT",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "SWIFT__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 37864,
+                                            "application_name": "SwiftGuide",
+                                            "counter": 30.5,
+                                            "effort": 152.5
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "SWIFT",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "SWIFT__Nested",
+                                    "detail": [
+                                        {
+                                            "application_id": 37864,
+                                            "application_name": "SwiftGuide",
+                                            "counter": 1.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "SWIFT__MethodsWithTooMuchParameters",
+                                    "detail": [
+                                        {
+                                            "application_id": 37864,
+                                            "application_name": "SwiftGuide",
+                                            "counter": 11.0,
+                                            "effort": 55.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

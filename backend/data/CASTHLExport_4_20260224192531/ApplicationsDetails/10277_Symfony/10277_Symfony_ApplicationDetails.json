@@ -1,0 +1,251 @@
+{
+    "id": 10277,
+    "name": "Symfony",
+    "domains": [
+        {
+            "id": 1454,
+            "name": "System Integrator Alpha"
+        },
+        {
+            "id": 12912,
+            "name": "Portfolio Company Delta"
+        }
+    ],
+    "metrics": [
+        {
+            "snapshotLabel": "TrendCampaign_4_Symfony",
+            "snapshotDate": 1488171600000,
+            "softwareAgility": 0.7994193434715271,
+            "softwareAgilityAdded": 0.7994193434715271,
+            "softwareElegance": 0.8430086970329285,
+            "softwareEleganceAdded": 0.8430086970329285,
+            "softwareResiliency": 0.9008068442344666,
+            "softwareResiliencyAdded": 0.9008068442344666,
+            "softwareHealth": 0.8477449615796407,
+            "openSourceSafety": 1.0,
+            "openSourceLicense": 1.0,
+            "openSourceObsolescence": null,
+            "openSourceCVE": 1.0,
+            "businessImpact": 0.6421319796954315,
+            "roarIndex": 0.07762832262436548,
+            "backFiredFP": 3344.0,
+            "backFiredFPAdded": 3344.0,
+            "technicalDebt": 9480.150787591934,
+            "maintenanceRecordedFTE": 2.0,
+            "maintenanceRecommendedFTE": 0.43723080721124824,
+            "greenIndex": null,
+            "greenIndexScan": null,
+            "greenIndexSurvey": null,
+            "greenOccurrences": null,
+            "greenEffort": null,
+            "greenDetail": [
+                {
+                    "technology": "PHP",
+                    "greenIndexScan": 0.0,
+                    "greenIndexDetails": null
+                }
+            ],
+            "totalLinesOfCode": 177238,
+            "totalLinesOfCodeAdded": 177238,
+            "totalLinesOfCodeModified": 0,
+            "totalFiles": 2903,
+            "totalFilesAdded": 2903,
+            "totalFilesModified": 0,
+            "customIndicators": [
+                {
+                    "metricId": 10023356,
+                    "value": "0.10101010101010101"
+                },
+                {
+                    "metricId": 10006001,
+                    "value": "0.6666666666666666"
+                },
+                {
+                    "metricId": 10006305,
+                    "value": "-1.0"
+                },
+                {
+                    "metricId": 10013600,
+                    "value": "-1.0"
+                },
+                {
+                    "metricId": 10006302,
+                    "value": "-1.0"
+                },
+                {
+                    "metricId": 10006301,
+                    "value": "-1.0"
+                },
+                {
+                    "metricId": 10016304,
+                    "value": "-1.0"
+                }
+            ],
+            "technologies": [
+                {
+                    "technology": "PHP",
+                    "totalLinesOfCode": 177238,
+                    "totalFiles": 2903,
+                    "softwareAgility": 0.7994193434715271,
+                    "softwareElegance": 0.8430086970329285,
+                    "softwareResiliency": 0.9008068442344666,
+                    "softwareHealth": 0.8477449615796407,
+                    "softwareAgilityDetail": {
+                        "highLinesOfCode": 126961,
+                        "mediumLinesOfCode": 49669,
+                        "lowLinesOfCode": 608
+                    },
+                    "softwareEleganceDetail": {
+                        "highLinesOfCode": 128778,
+                        "mediumLinesOfCode": 25546,
+                        "lowLinesOfCode": 22914
+                    },
+                    "softwareResiliencyDetail": {
+                        "highLinesOfCode": 152759,
+                        "mediumLinesOfCode": 21442,
+                        "lowLinesOfCode": 3037
+                    },
+                    "softwareHealthDetail": {
+                        "highLinesOfCode": 136166,
+                        "mediumLinesOfCode": 32219,
+                        "lowLinesOfCode": 8853
+                    }
+                }
+            ],
+            "components": []
+        }
+    ],
+    "surveys": [
+        {
+            "id": 371,
+            "ref": "CAST_MAINT",
+            "name": "Software Maintenance Estimate",
+            "questions": [
+                {
+                    "label": "What is the average skill level of the development team on this type of application?",
+                    "value": "3 years",
+                    "questionId": 1000015,
+                    "choiceId": 1000069
+                },
+                {
+                    "label": "What percentage of the development effort has been spent on maintenance in the last 12 months?",
+                    "value": "20",
+                    "questionId": 1000012
+                },
+                {
+                    "label": "What is the CMMI level of the organization?",
+                    "value": "Level 4",
+                    "questionId": 1000032,
+                    "choiceId": 1000258
+                },
+                {
+                    "label": "What is the percentage of change to the base code in the last 12 months?",
+                    "value": "10",
+                    "questionId": 1000121
+                },
+                {
+                    "label": "What is the annual staff turnover within the development team?",
+                    "value": "5%",
+                    "questionId": 1000016,
+                    "choiceId": 1000142
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "ref": "CAST_BI",
+            "name": "Business Impact",
+            "questions": [
+                {
+                    "label": "What is the average number of FTE (Full Time Equivalent) resources that have worked on the source code for this application over the last 12 months?",
+                    "shortLabel": "",
+                    "value": "10",
+                    "questionId": 1000011
+                },
+                {
+                    "label": "Is this application aligned with the company's future technology direction?",
+                    "shortLabel": "",
+                    "value": "Yes",
+                    "questionId": 1000009,
+                    "choiceId": 1000042
+                },
+                {
+                    "label": "The number of major releases delivered over the last 12 months for this application?",
+                    "shortLabel": "",
+                    "value": "4 to 6",
+                    "questionId": 1000006,
+                    "choiceId": 1000453
+                },
+                {
+                    "label": "Could failure of this application lead to loss of customer confidence? Please define the level of impact.",
+                    "value": "High",
+                    "questionId": 1000022,
+                    "choiceId": 1000222
+                },
+                {
+                    "label": "Could failure of this application lead to harm of the company's public image? Please define the level of impact.",
+                    "value": "High",
+                    "questionId": 1000021,
+                    "choiceId": 1000002
+                },
+                {
+                    "label": "Could failure of this application lead to loss of revenue or business opportunity? Please define the level of impact.",
+                    "value": "High",
+                    "questionId": 1000020,
+                    "choiceId": 1000408
+                },
+                {
+                    "label": "Could failure of this application lead to disruption? Please define the level of impact.",
+                    "value": "High",
+                    "questionId": 1000019,
+                    "choiceId": 1000194
+                },
+                {
+                    "label": "What is the approximate number of end users for this application?",
+                    "shortLabel": "",
+                    "value": "More than 2500",
+                    "questionId": 1000018,
+                    "choiceId": 1000398
+                },
+                {
+                    "label": "Does the application serve internal or external users?",
+                    "value": "Both",
+                    "questionId": 1000017,
+                    "choiceId": 1000205
+                }
+            ]
+        },
+        {
+            "id": 373,
+            "ref": "CAST_APP",
+            "name": "Application Properties",
+            "questions": [
+                {
+                    "label": "Is this application a custom application or a Commercial Off The Shelf product?",
+                    "shortLabel": "",
+                    "value": "Custom Application",
+                    "questionId": 1000427,
+                    "choiceId": 1000529
+                },
+                {
+                    "label": "What is the application type?",
+                    "shortLabel": "",
+                    "value": "Consumer Lending",
+                    "questionId": 1000004,
+                    "choiceId": 1000428
+                },
+                {
+                    "label": "Application Owner's name",
+                    "value": "Michael MULLER",
+                    "questionId": 1000002
+                },
+                {
+                    "label": "In what year was this application first put into production?",
+                    "shortLabel": "",
+                    "value": "2010",
+                    "questionId": 1000033
+                }
+            ]
+        }
+    ]
+}

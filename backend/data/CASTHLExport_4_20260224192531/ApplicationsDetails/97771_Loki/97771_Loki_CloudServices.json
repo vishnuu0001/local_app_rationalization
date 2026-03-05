@@ -1,0 +1,1093 @@
+[
+    {
+        "platformId": "aws",
+        "platformName": "Amazon Web Services",
+        "platformUrl": "https://www.aws.com",
+        "recommendations": [
+            {
+                "id": "aws_batch",
+                "name": "AWS Batch",
+                "category": "Compute",
+                "description": "Fully managed batch processing at any scale",
+                "url": "https://aws.amazon.com/batch/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Getting Started with AWS Batch",
+                        "url": "https://aws.amazon.com/batch/getting-started/?nc=sn&loc=4"
+                    }
+                ],
+                "considerations": "For your ETL use cases, you might consider using AWS Glue. For other batch-oriented use cases, including some ETL use cases, AWS Batch might be a better fit",
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "KSH",
+                        "details": {
+                            "loc": 4642.0,
+                            "label": "Ksh"
+                        }
+                    },
+                    {
+                        "type": "technology",
+                        "ruleId": "PYTHON",
+                        "details": {
+                            "loc": 8645.0,
+                            "label": "Python"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "aws_bigdata",
+                "name": "Amazon Athena",
+                "category": "Analytics",
+                "description": "Start querying data instantly. Get results in seconds. Pay only for the queries you run.",
+                "url": "https://aws.amazon.com/athena/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Amazon Athena resources",
+                        "url": "https://aws.amazon.com/athena/resources/"
+                    }
+                ],
+                "considerations": "You should consider Amazon Athena over Redshift if your predominent requirements are portability and cost vs. performance and scale.",
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "JAVA",
+                        "details": {
+                            "loc": 392535.0,
+                            "label": "Java"
+                        }
+                    },
+                    {
+                        "type": "technology",
+                        "ruleId": "PYTHON",
+                        "details": {
+                            "loc": 8645.0,
+                            "label": "Python"
+                        }
+                    },
+                    {
+                        "type": "sca",
+                        "ruleId": "-e git+https://github.com/datastax/python-driver.git@cassandra-test#egg:",
+                        "details": {
+                            "repo": null
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "aws_cloudsearch",
+                "name": "Amazon CloudSearch",
+                "category": "AI + Machine Learning",
+                "description": "For more flexibility in search and analytics capabilities, try Amazon OpenSearch Service",
+                "url": "https://aws.amazon.com/cloudsearch/?nc1=h_ls",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Documentation",
+                        "url": "https://docs.aws.amazon.com/?nc2=h_rsc_lrn_docs"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "sca",
+                        "ruleId": "ElasticSearch.NET",
+                        "details": {
+                            "repo": null
+                        }
+                    },
+                    {
+                        "type": "sca",
+                        "ruleId": "elastic/elasticsearch",
+                        "details": {
+                            "repo": null
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "aws_ec2",
+                "name": "Amazon EC2",
+                "category": "Compute",
+                "description": "Secure and resizable compute capacity in the cloud. Launch applications when needed without upfront commitments",
+                "url": "https://aws.amazon.com/ec2/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Getting Started with Amazon EC2",
+                        "url": "https://aws.amazon.com/ec2/getting-started/"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "JAVA",
+                        "details": {
+                            "loc": 392535.0,
+                            "label": "Java"
+                        }
+                    },
+                    {
+                        "type": "technology",
+                        "ruleId": "PYTHON",
+                        "details": {
+                            "loc": 8645.0,
+                            "label": "Python"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "aws_containers",
+                "name": "Amazon Elastic Container Service (ECS)",
+                "category": "Container",
+                "description": "Highly secure, reliable, and scalable way to run containers",
+                "url": "https://aws.amazon.com/ecs/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Amazon Elastic Container Service resources",
+                        "url": "https://aws.amazon.com/ecs/resources/"
+                    }
+                ],
+                "considerations": "The applicability of this recommendation will depend on your organization's container strategy, and which target is recommended as part of this strategy: Virtual machines, Individual containers, Kubernetes clusters, etc. Your container strategy will also inform how processes and people impact the technology choices, if for example a DevOps strategy or a Microservices strategy exists.",
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "JAVA",
+                        "details": {
+                            "loc": 392535.0,
+                            "label": "Java"
+                        }
+                    },
+                    {
+                        "type": "technology",
+                        "ruleId": "PYTHON",
+                        "details": {
+                            "loc": 8645.0,
+                            "label": "Python"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "aws_eks",
+                "name": "Amazon Elastic Kubernetes Service (EKS)",
+                "category": "Container",
+                "description": "Managed service to start, run, and scale Kubernetes",
+                "url": "https://aws.amazon.com/eks/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Amazon Elastic Kubernetes Service resources",
+                        "url": "https://aws.amazon.com/eks/resources/"
+                    }
+                ],
+                "considerations": "The applicability of this recommendation will depend on your organization's container strategy, and which target is recommended as part of this strategy: Virtual machines, Individual containers, Kubernetes clusters, etc. Your container strategy will also inform how processes and people impact the technology choices, if for example a DevOps strategy or a Microservices strategy exists.",
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "JAVA",
+                        "details": {
+                            "loc": 392535.0,
+                            "label": "Java"
+                        }
+                    },
+                    {
+                        "type": "technology",
+                        "ruleId": "PYTHON",
+                        "details": {
+                            "loc": 8645.0,
+                            "label": "Python"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "aws_redshift",
+                "name": "Amazon Redshift",
+                "category": "Databases",
+                "description": "Fastest, easiest, and most widely used cloud data warehouse.",
+                "url": "https://aws.amazon.com/redshift/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Amazon Redshift resources",
+                        "url": "https://aws.amazon.com/redshift/resources"
+                    }
+                ],
+                "considerations": "You should consider Amazon Athena over Redshift if your predominent requirements are portability and cost vs. performance and scale.",
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "JAVA",
+                        "details": {
+                            "loc": 392535.0,
+                            "label": "Java"
+                        }
+                    },
+                    {
+                        "type": "technology",
+                        "ruleId": "PYTHON",
+                        "details": {
+                            "loc": 8645.0,
+                            "label": "Python"
+                        }
+                    },
+                    {
+                        "type": "sca",
+                        "ruleId": "-e git+https://github.com/datastax/python-driver.git@cassandra-test#egg:",
+                        "details": {
+                            "repo": null
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "aws_s3",
+                "name": "Amazon S3",
+                "category": "Storage",
+                "description": "Object storage built to store and retrieve any amount of data from anywhere",
+                "url": "https://aws.amazon.com/s3/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Getting started with Amazon S3",
+                        "url": "https://aws.amazon.com/s3/getting-started/?nc=sn&loc=5"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "cloudready",
+                        "ruleId": "File_Manipulation_Practice",
+                        "details": {
+                            "technoLabel": "Python",
+                            "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#File_Manipulation_Practice",
+                            "categoryLabel": "Persistent Files",
+                            "count": 80.0,
+                            "label": "Perform File Manipulation",
+                            "type": "BLOCKER"
+                        }
+                    },
+                    {
+                        "type": "cloudready",
+                        "ruleId": "File_Manipulation_Practice",
+                        "details": {
+                            "technoLabel": "Java",
+                            "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#File_Manipulation_Practice",
+                            "categoryLabel": "Persistent Files",
+                            "count": 728.0,
+                            "label": "Perform File Manipulation",
+                            "type": "BLOCKER"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "aws_openshift",
+                "name": "Red Hat OpenShift Service on AWS",
+                "category": "Container",
+                "description": "Managed OpenShift integration in the cloud. Red Hat OpenShift Service on AWS (ROSA) provides an integrated experience with OpenShift. You can use the wide range of AWS compute, database, analytics, machine learning (ML), networking, mobile, and other services to build secure and scalable applications faster.",
+                "url": "https://aws.amazon.com/rosa/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Red Hat OpenShift Service on AWS FAQs",
+                        "url": "https://aws.amazon.com/rosa/faqs/"
+                    }
+                ],
+                "considerations": "The applicability of this recommendation will depend on your organization's container strategy, and which target is recommended as part of this strategy: Virtual machines, Individual containers, Kubernetes clusters, etc. Your container strategy will also inform how processes and people impact the technology choices, if for example a DevOps strategy or a Microservices strategy exists.",
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "JAVA",
+                        "details": {
+                            "loc": 392535.0,
+                            "label": "Java"
+                        }
+                    },
+                    {
+                        "type": "technology",
+                        "ruleId": "PYTHON",
+                        "details": {
+                            "loc": 8645.0,
+                            "label": "Python"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "platformId": "azure",
+        "platformName": "Microsoft Azure",
+        "platformUrl": "https://azure.microsoft.com",
+        "recommendations": [
+            {
+                "id": "azure_appservice",
+                "name": "Azure App Service",
+                "category": "Compute",
+                "description": "Build, deploy, and scale web apps on a fully managed platform",
+                "url": "https://azure.microsoft.com/en-us/services/app-service/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "App Service Documentation",
+                        "url": "https://docs.microsoft.com/en-us/azure/app-service/"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "JAVA",
+                        "details": {
+                            "loc": 392535.0,
+                            "label": "Java"
+                        }
+                    },
+                    {
+                        "type": "technology",
+                        "ruleId": "PYTHON",
+                        "details": {
+                            "loc": 8645.0,
+                            "label": "Python"
+                        }
+                    },
+                    {
+                        "type": "technology",
+                        "ruleId": "JS",
+                        "details": {
+                            "loc": 17.0,
+                            "label": "JavaScript"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "azure_batch",
+                "name": "Azure Batch",
+                "category": "Compute",
+                "description": "Cloud-scale job scheduling and compute management",
+                "url": "https://azure.microsoft.com/en-us/services/batch/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Azure Batch documentation",
+                        "url": "https://docs.microsoft.com/en-us/azure/batch/"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "KSH",
+                        "details": {
+                            "loc": 4642.0,
+                            "label": "Ksh"
+                        }
+                    },
+                    {
+                        "type": "technology",
+                        "ruleId": "PYTHON",
+                        "details": {
+                            "loc": 8645.0,
+                            "label": "Python"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "azure_containerapps",
+                "name": "Azure Container Apps",
+                "category": "Container",
+                "description": "Build and deploy fully managed, cloud- native apps and microservices using serverless containers",
+                "url": "https://azure.microsoft.com/en-us/products/container-apps",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Quickstart: Deploy your first container app with containerapp up",
+                        "url": "https://learn.microsoft.com/en-us/azure/container-apps/get-started?ocid=AID3042118&tabs=bash"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "JAVA",
+                        "details": {
+                            "loc": 392535.0,
+                            "label": "Java"
+                        }
+                    },
+                    {
+                        "type": "technology",
+                        "ruleId": "PYTHON",
+                        "details": {
+                            "loc": 8645.0,
+                            "label": "Python"
+                        }
+                    },
+                    {
+                        "type": "technology",
+                        "ruleId": "JS",
+                        "details": {
+                            "loc": 17.0,
+                            "label": "JavaScript"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "azure_bigdata",
+                "name": "Azure Data Lake Analytics",
+                "category": "Analytics",
+                "description": "An on-demand analytics job service to power intelligent action",
+                "url": "https://azure.microsoft.com/en-us/services/data-lake-analytics/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Azure Data Lake Analytics Documentation",
+                        "url": "https://docs.microsoft.com/en-us/azure/data-lake-analytics/"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "JAVA",
+                        "details": {
+                            "loc": 392535.0,
+                            "label": "Java"
+                        }
+                    },
+                    {
+                        "type": "technology",
+                        "ruleId": "PYTHON",
+                        "details": {
+                            "loc": 8645.0,
+                            "label": "Python"
+                        }
+                    },
+                    {
+                        "type": "sca",
+                        "ruleId": "-e git+https://github.com/datastax/python-driver.git@cassandra-test#egg:",
+                        "details": {
+                            "repo": null
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "azure_elasticsearch",
+                "name": "Azure Elastic Search",
+                "category": "AI + Machine Learning",
+                "description": "The Elastic Search AI Platform brings together the precision of search and the intelligence of AI",
+                "url": "https://azuremarketplace.microsoft.com/en/marketplace/apps/elastic.ec-azure-pp?tab=overview",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "How to deploy and manage Elastic on Microsoft Azure",
+                        "url": "https://www.elastic.co/blog/getting-started-with-the-azure-integration-enhancement"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "sca",
+                        "ruleId": "ElasticSearch.NET",
+                        "details": {
+                            "repo": null
+                        }
+                    },
+                    {
+                        "type": "sca",
+                        "ruleId": "elastic/elasticsearch",
+                        "details": {
+                            "repo": null
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "azure_containers",
+                "name": "Azure Kubernetes Service (AKS)",
+                "category": "Container",
+                "description": "Highly available, secure, and fully managed Kubernetes service",
+                "url": "https://azure.microsoft.com/en-us/services/kubernetes-service/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Azure Kubernetes Service (AKS) documentation",
+                        "url": "https://docs.microsoft.com/en-us/azure/aks/"
+                    }
+                ],
+                "considerations": "The applicability of this recommendation will depend on your organization's container strategy, and which target is recommended as part of this strategy: Virtual machines, Individual containers, Kubernetes clusters, etc. Your container strategy will also inform how processes and people impact the technology choices, if for example a DevOps strategy or a Microservices strategy exists.",
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "JAVA",
+                        "details": {
+                            "loc": 392535.0,
+                            "label": "Java"
+                        }
+                    },
+                    {
+                        "type": "technology",
+                        "ruleId": "PYTHON",
+                        "details": {
+                            "loc": 8645.0,
+                            "label": "Python"
+                        }
+                    },
+                    {
+                        "type": "technology",
+                        "ruleId": "JS",
+                        "details": {
+                            "loc": 17.0,
+                            "label": "JavaScript"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "azure_openshift",
+                "name": "Azure Red Hat OpenShift",
+                "category": "Container",
+                "description": "Build, deploy, and scale apps on OpenShift with confidence. Azure Red Hat OpenShift provides highly available, fully managed OpenShift clusters on demand, monitored and operated jointly by Microsoft and Red Hat. Kubernetes is at the core of Red Hat OpenShift. OpenShift brings added-value features to complement Kubernetes, making it a turnkey container platform as a service (PaaS) with a significantly improved developer and operator experience.",
+                "url": "https://azure.microsoft.com/en-us/products/openshift",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Intro to Azure Red Hat OpenShift",
+                        "url": "https://learn.microsoft.com/en-us/azure/openshift/intro-openshift"
+                    }
+                ],
+                "considerations": "The applicability of this recommendation will depend on your organization's container strategy, and which target is recommended as part of this strategy: Virtual machines, Individual containers, Kubernetes clusters, etc. Your container strategy will also inform how processes and people impact the technology choices, if for example a DevOps strategy or a Microservices strategy exists.",
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "JAVA",
+                        "details": {
+                            "loc": 392535.0,
+                            "label": "Java"
+                        }
+                    },
+                    {
+                        "type": "technology",
+                        "ruleId": "PYTHON",
+                        "details": {
+                            "loc": 8645.0,
+                            "label": "Python"
+                        }
+                    },
+                    {
+                        "type": "technology",
+                        "ruleId": "JS",
+                        "details": {
+                            "loc": 17.0,
+                            "label": "JavaScript"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "azure_storage",
+                "name": "Azure Storage",
+                "category": "Storage",
+                "description": "Offload the heavy lifting of datacenter management",
+                "url": "https://azure.microsoft.com/en-us/services/storage/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Azure Storage Documentation",
+                        "url": "https://docs.microsoft.com/en-us/azure/storage/"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "cloudready",
+                        "ruleId": "File_Manipulation_Practice",
+                        "details": {
+                            "technoLabel": "Python",
+                            "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#File_Manipulation_Practice",
+                            "categoryLabel": "Persistent Files",
+                            "count": 80.0,
+                            "label": "Perform File Manipulation",
+                            "type": "BLOCKER"
+                        }
+                    },
+                    {
+                        "type": "cloudready",
+                        "ruleId": "File_Manipulation_Practice",
+                        "details": {
+                            "technoLabel": "Java",
+                            "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#File_Manipulation_Practice",
+                            "categoryLabel": "Persistent Files",
+                            "count": 728.0,
+                            "label": "Perform File Manipulation",
+                            "type": "BLOCKER"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "azure_iaas",
+                "name": "Azure infrastructure as a service (IaaS)",
+                "category": "Compute",
+                "description": "Meet all your cloud infrastructure needs",
+                "url": "https://azure.microsoft.com/en-us/overview/what-is-azure/iaas/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Linux virtual machines in Azure",
+                        "url": "https://docs.microsoft.com/en-us/azure/virtual-machines/linux/"
+                    },
+                    {
+                        "type": "General",
+                        "title": "Windows virtual machines in Azure",
+                        "url": "https://docs.microsoft.com/en-us/azure/virtual-machines/windows/"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "JAVA",
+                        "details": {
+                            "loc": 392535.0,
+                            "label": "Java"
+                        }
+                    },
+                    {
+                        "type": "technology",
+                        "ruleId": "PYTHON",
+                        "details": {
+                            "loc": 8645.0,
+                            "label": "Python"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "platformId": "gcp",
+        "platformName": "Google Cloud",
+        "platformUrl": "https://cloud.google.com",
+        "recommendations": [
+            {
+                "id": "gcp_bigquery",
+                "name": "BigQuery",
+                "category": "Analytics",
+                "description": "Serverless, highly scalable, and cost-effective multicloud data warehouse designed for business agility.",
+                "url": "https://cloud.google.com/bigquery",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "BigQuery Documentation",
+                        "url": "https://cloud.google.com/bigquery#section-5"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "JAVA",
+                        "details": {
+                            "loc": 392535.0,
+                            "label": "Java"
+                        }
+                    },
+                    {
+                        "type": "technology",
+                        "ruleId": "PYTHON",
+                        "details": {
+                            "loc": 8645.0,
+                            "label": "Python"
+                        }
+                    },
+                    {
+                        "type": "sca",
+                        "ruleId": "-e git+https://github.com/datastax/python-driver.git@cassandra-test#egg:",
+                        "details": {
+                            "repo": null
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "gcp_cloudrun",
+                "name": "Cloud Run",
+                "category": "Compute",
+                "description": "Develop and deploy highly scalable containerized applications on a fully managed serverless platform.",
+                "url": "https://cloud.google.com/run",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Cloud Run Documentation",
+                        "url": "https://cloud.google.com/run#section-5"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "JAVA",
+                        "details": {
+                            "loc": 392535.0,
+                            "label": "Java"
+                        }
+                    },
+                    {
+                        "type": "technology",
+                        "ruleId": "PYTHON",
+                        "details": {
+                            "loc": 8645.0,
+                            "label": "Python"
+                        }
+                    },
+                    {
+                        "type": "technology",
+                        "ruleId": "JS",
+                        "details": {
+                            "loc": 17.0,
+                            "label": "JavaScript"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "gcp_storage",
+                "name": "Cloud Storage",
+                "category": "Storage",
+                "description": "Object storage for companies of all sizes. Store any amount of data. Retrieve it as often as you\u2019d like.",
+                "url": "https://cloud.google.com/storage",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Cloud Storage Documentation",
+                        "url": "https://cloud.google.com/storage#section-4"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "cloudready",
+                        "ruleId": "File_Manipulation_Practice",
+                        "details": {
+                            "technoLabel": "Python",
+                            "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#File_Manipulation_Practice",
+                            "categoryLabel": "Persistent Files",
+                            "count": 80.0,
+                            "label": "Perform File Manipulation",
+                            "type": "BLOCKER"
+                        }
+                    },
+                    {
+                        "type": "cloudready",
+                        "ruleId": "File_Manipulation_Practice",
+                        "details": {
+                            "technoLabel": "Java",
+                            "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#File_Manipulation_Practice",
+                            "categoryLabel": "Persistent Files",
+                            "count": 728.0,
+                            "label": "Perform File Manipulation",
+                            "type": "BLOCKER"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "gcp_containers",
+                "name": "Google Kubernetes Engine (GKE Autopilot)",
+                "category": "Container",
+                "description": "GKE Autopilot mode is a hands-off, fully managed solution that manages your entire cluster\u2019s infrastructure without worrying about configuring and monitoring nodes, while still delivering a complete Kubernetes experience.",
+                "url": "https://cloud.google.com/kubernetes-engine",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Google Kubernetes Engine documentation",
+                        "url": "https://cloud.google.com/kubernetes-engine/docs/concepts/autopilot-overview"
+                    }
+                ],
+                "considerations": "The applicability of this recommendation will depend on your organization's container strategy, and which target is recommended as part of this strategy: Virtual machines, Individual containers, Kubernetes clusters, etc. Your container strategy will also inform how processes and people impact the technology choices, if for example a DevOps strategy or a Microservices strategy exists.",
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "JAVA",
+                        "details": {
+                            "loc": 392535.0,
+                            "label": "Java"
+                        }
+                    },
+                    {
+                        "type": "technology",
+                        "ruleId": "PYTHON",
+                        "details": {
+                            "loc": 8645.0,
+                            "label": "Python"
+                        }
+                    },
+                    {
+                        "type": "technology",
+                        "ruleId": "JS",
+                        "details": {
+                            "loc": 17.0,
+                            "label": "JavaScript"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "platformId": "ibm",
+        "platformName": "IBM Cloud",
+        "platformUrl": "https://www.ibm.com/cloud",
+        "recommendations": [
+            {
+                "id": "ibm_workloadautomation",
+                "name": "IBM App Connect",
+                "category": "Integration",
+                "description": "Optimize and automate complex workloads for greater IT efficiency",
+                "url": "https://www.ibm.com/cloud/app-connect",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "IBM Workload Automation: Resources",
+                        "url": "https://www.ibm.com/products/workload-automation/resources"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "KSH",
+                        "details": {
+                            "loc": 4642.0,
+                            "label": "Ksh"
+                        }
+                    },
+                    {
+                        "type": "technology",
+                        "ruleId": "PYTHON",
+                        "details": {
+                            "loc": 8645.0,
+                            "label": "Python"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "ibm_kubernetes",
+                "name": "IBM Cloud Kubernetes Service",
+                "category": "Container",
+                "description": "Deploy secure, highly available clusters in a native Kubernetes experience",
+                "url": "https://www.ibm.com/cloud/kubernetes-service",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Getting started with IBM Cloud Kubernetes Service",
+                        "url": "https://cloud.ibm.com/docs/containers?topic=containers-getting-started"
+                    }
+                ],
+                "considerations": "The applicability of this recommendation will depend on your organization's container strategy, and which target is recommended as part of this strategy: Virtual machines, Individual containers, Kubernetes clusters, etc. Your container strategy will also inform how processes and people impact the technology choices, if for example a DevOps strategy or a Microservices strategy exists. If you have a hybrid or multi-Cloud strategy, or depend on middleware that is produced/supported by OpenShift or IBM, consider Red Hat OpenShift instead.",
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "JAVA",
+                        "details": {
+                            "loc": 392535.0,
+                            "label": "Java"
+                        }
+                    },
+                    {
+                        "type": "technology",
+                        "ruleId": "PYTHON",
+                        "details": {
+                            "loc": 8645.0,
+                            "label": "Python"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "ibm_objectstorage",
+                "name": "IBM Cloud Object Storage",
+                "category": "Storage",
+                "description": "Flexible, cost-effective and scalable cloud storage for unstructured data",
+                "url": "https://www.ibm.com/cloud/object-storage",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Getting started with IBM Cloud Object Storage",
+                        "url": "https://cloud.ibm.com/docs/cloud-object-storage?topic=cloud-object-storage-getting-started-cloud-object-storage"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "cloudready",
+                        "ruleId": "File_Manipulation_Practice",
+                        "details": {
+                            "technoLabel": "Python",
+                            "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#File_Manipulation_Practice",
+                            "categoryLabel": "Persistent Files",
+                            "count": 80.0,
+                            "label": "Perform File Manipulation",
+                            "type": "BLOCKER"
+                        }
+                    },
+                    {
+                        "type": "cloudready",
+                        "ruleId": "File_Manipulation_Practice",
+                        "details": {
+                            "technoLabel": "Java",
+                            "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#File_Manipulation_Practice",
+                            "categoryLabel": "Persistent Files",
+                            "count": 728.0,
+                            "label": "Perform File Manipulation",
+                            "type": "BLOCKER"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "ibm_virtualserversvpc",
+                "name": "IBM Cloud Virtual Server for VPC",
+                "category": "Compute",
+                "description": "Some providers make VPC confusing. We don't. Intel processors help make IBM Cloud VPC simple, powerful and secure",
+                "url": "https://www.ibm.com/cloud/vpc",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Getting started with Virtual Private Cloud (VPC)",
+                        "url": "https://cloud.ibm.com/docs/vpc"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "JAVA",
+                        "details": {
+                            "loc": 392535.0,
+                            "label": "Java"
+                        }
+                    },
+                    {
+                        "type": "technology",
+                        "ruleId": "PYTHON",
+                        "details": {
+                            "loc": 8645.0,
+                            "label": "Python"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "ibm_openshiftkubernetes",
+                "name": "Red Hat OpenShift on IBM Cloud",
+                "category": "Container",
+                "description": "Deploy highly available, fully managed clusters with a click",
+                "url": "https://www.ibm.com/cloud/openshift",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Getting started with Red Hat OpenShift on IBM Cloud",
+                        "url": "https://cloud.ibm.com/docs/openshift?topic=openshift-getting-started"
+                    }
+                ],
+                "considerations": "The applicability of this recommendation will depend on your organization's container strategy, and which target is recommended as part of this strategy: Virtual machines, Individual containers, Kubernetes clusters, etc. Your container strategy will also inform how processes and people impact the technology choices, if for example a DevOps strategy or a Microservices strategy exists. If you don't have a hybrid or multi-Cloud strategy, have specific requirements for your Cloud platform, consider IBM Kubernetes instead.",
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "JAVA",
+                        "details": {
+                            "loc": 392535.0,
+                            "label": "Java"
+                        }
+                    },
+                    {
+                        "type": "technology",
+                        "ruleId": "PYTHON",
+                        "details": {
+                            "loc": 8645.0,
+                            "label": "Python"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "platformId": "oraclecloud",
+        "platformName": "Oracle Cloud",
+        "platformUrl": "https://www.oracle.com/cloud/",
+        "recommendations": [
+            {
+                "id": "oracle_containerinstances",
+                "name": "Container Instances",
+                "category": "Containers",
+                "description": "Container Instance is a serverless compute service for running containers in a simple, quick, and secure way without managing any infrastructure",
+                "url": "https://www.oracle.com/cloud/cloud-native/container-instances/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Documentation",
+                        "url": "https://docs.oracle.com/en-us/iaas/Content/container-instances/home.htm"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "JAVA",
+                        "details": {
+                            "loc": 392535.0,
+                            "label": "Java"
+                        }
+                    },
+                    {
+                        "type": "technology",
+                        "ruleId": "PYTHON",
+                        "details": {
+                            "loc": 8645.0,
+                            "label": "Python"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "oracle_filestorage",
+                "name": "File Storage",
+                "category": "Storage",
+                "description": "Managed network file system to provide scalable, distributed, enterprise-grade storage. Typically supports NFS",
+                "url": "https://www.oracle.com/cloud/storage/file-storage/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Documentation",
+                        "url": "https://docs.oracle.com/en-us/iaas/Content/File/Concepts/filestorageoverview.htm"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "cloudready",
+                        "ruleId": "File_Manipulation_Practice",
+                        "details": {
+                            "technoLabel": "Python",
+                            "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#File_Manipulation_Practice",
+                            "categoryLabel": "Persistent Files",
+                            "count": 80.0,
+                            "label": "Perform File Manipulation",
+                            "type": "BLOCKER"
+                        }
+                    },
+                    {
+                        "type": "cloudready",
+                        "ruleId": "File_Manipulation_Practice",
+                        "details": {
+                            "technoLabel": "Java",
+                            "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#File_Manipulation_Practice",
+                            "categoryLabel": "Persistent Files",
+                            "count": 728.0,
+                            "label": "Perform File Manipulation",
+                            "type": "BLOCKER"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]

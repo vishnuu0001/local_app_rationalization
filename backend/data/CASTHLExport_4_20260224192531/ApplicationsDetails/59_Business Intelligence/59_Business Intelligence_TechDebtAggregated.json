@@ -1,0 +1,420 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 59,
+                                            "application_name": "Business Intelligence",
+                                            "counter": 4957.0,
+                                            "effort": 14871.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__SQL",
+                                    "detail": [
+                                        {
+                                            "application_id": 59,
+                                            "application_name": "Business Intelligence",
+                                            "counter": 2.0,
+                                            "effort": 20.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__SimpleCompute",
+                                    "detail": [
+                                        {
+                                            "application_id": 59,
+                                            "application_name": "Business Intelligence",
+                                            "counter": 3.0,
+                                            "effort": 3.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__ParaNameWithoutDot",
+                                    "detail": [
+                                        {
+                                            "application_id": 59,
+                                            "application_name": "Business Intelligence",
+                                            "counter": 564.0,
+                                            "effort": 47.000004
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__NoCopyClause",
+                                    "detail": [
+                                        {
+                                            "application_id": 59,
+                                            "application_name": "Business Intelligence",
+                                            "counter": 197.0,
+                                            "effort": 197.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__BadZone",
+                                    "detail": [
+                                        {
+                                            "application_id": 59,
+                                            "application_name": "Business Intelligence",
+                                            "counter": 44.0,
+                                            "effort": 3.6666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__CuriousFilePb",
+                                    "detail": [
+                                        {
+                                            "application_id": 59,
+                                            "application_name": "Business Intelligence",
+                                            "counter": 24.0,
+                                            "effort": 24.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__ProhibitedKeyword",
+                                    "detail": [
+                                        {
+                                            "application_id": 59,
+                                            "application_name": "Business Intelligence",
+                                            "counter": 3983.0,
+                                            "effort": 19915.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__SeriousFilePb",
+                                    "detail": [
+                                        {
+                                            "application_id": 59,
+                                            "application_name": "Business Intelligence",
+                                            "counter": 81.0,
+                                            "effort": 81.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__MissingDefault",
+                                    "detail": [
+                                        {
+                                            "application_id": 59,
+                                            "application_name": "Business Intelligence",
+                                            "counter": 75.0,
+                                            "effort": 75.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__MissingEnd",
+                                    "detail": [
+                                        {
+                                            "application_id": 59,
+                                            "application_name": "Business Intelligence",
+                                            "counter": 2578.0,
+                                            "effort": 2578.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__DuplicatedParaName",
+                                    "detail": [
+                                        {
+                                            "application_id": 59,
+                                            "application_name": "Business Intelligence",
+                                            "counter": 27.0,
+                                            "effort": 4.5
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__BadInit",
+                                    "detail": [
+                                        {
+                                            "application_id": 59,
+                                            "application_name": "Business Intelligence",
+                                            "counter": 266.0,
+                                            "effort": 266.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__BackPerform",
+                                    "detail": [
+                                        {
+                                            "application_id": 59,
+                                            "application_name": "Business Intelligence",
+                                            "counter": 171.0,
+                                            "effort": 2565.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 59,
+                                            "application_name": "Business Intelligence",
+                                            "counter": 1556.0,
+                                            "effort": 129.66667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__MultAffect",
+                                    "detail": [
+                                        {
+                                            "application_id": 59,
+                                            "application_name": "Business Intelligence",
+                                            "counter": 5971.0,
+                                            "effort": 1990.3335
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 59,
+                                            "application_name": "Business Intelligence",
+                                            "counter": 9554.4,
+                                            "effort": 9554.4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__BadEndClauseAlign",
+                                    "detail": [
+                                        {
+                                            "application_id": 59,
+                                            "application_name": "Business Intelligence",
+                                            "counter": 728.0,
+                                            "effort": 60.666668
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 59,
+                                            "application_name": "Business Intelligence",
+                                            "counter": 46.0,
+                                            "effort": 460.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__NbFiles",
+                                    "detail": [
+                                        {
+                                            "application_id": 59,
+                                            "application_name": "Business Intelligence",
+                                            "counter": 78.5,
+                                            "effort": 392.5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 59,
+                                            "application_name": "Business Intelligence",
+                                            "counter": 61.044292,
+                                            "effort": 305.22147
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__DONNEES",
+                                    "detail": [
+                                        {
+                                            "application_id": 59,
+                                            "application_name": "Business Intelligence",
+                                            "counter": 4471.0,
+                                            "effort": 4471.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 59,
+                                            "application_name": "Business Intelligence",
+                                            "counter": 24.461113,
+                                            "effort": 122.305565
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__ComplexConditions",
+                                    "detail": [
+                                        {
+                                            "application_id": 59,
+                                            "application_name": "Business Intelligence",
+                                            "counter": 143.0,
+                                            "effort": 1430.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,2178 @@
+{
+    "snapshotLabel": "2019-01-24-Custom_Indicators on Cust Facing Apps_lucee",
+    "snapshotDate": 1548910800000,
+    "applicationCodeLines": null,
+    "applicationFiles": 4666.0,
+    "thirdPartyCodeLines": null,
+    "thirdPartyFiles": 159.0,
+    "thirdParties": [
+        {
+            "id": 5679,
+            "componentId": "org.apache.lucene:lucene-facet",
+            "name": "org.apache.lucene:lucene-facet",
+            "version": "5.2.1",
+            "release": 1434320857000,
+            "languages": "java",
+            "lifeSpan": "Active",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "10.3.2",
+            "lastRelease": 1763373000000,
+            "nbVersionPreviousYear": 9,
+            "numberOfCodeLines": -1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 6042,
+            "componentId": "org.slf4j:slf4j-api",
+            "name": "org.slf4j:slf4j-api",
+            "version": "1.7.12",
+            "release": 1427403005000,
+            "languages": "java",
+            "lifeSpan": "Active",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "2.0.17",
+            "lastRelease": 1740501780000,
+            "nbVersionPreviousYear": 1,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 9318,
+            "componentId": "commons-discovery:commons-discovery",
+            "name": "commons-discovery:commons-discovery",
+            "version": "0.5",
+            "release": 1304258304000,
+            "languages": "java",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "0.5",
+            "lastRelease": 1304258304000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 20270,
+            "componentId": "org.ow2.asm:asm-all",
+            "name": "org.ow2.asm:asm-all",
+            "version": "4.2",
+            "release": 1381564949000,
+            "languages": "java",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 26140,
+                    "name": "BSD Licenses Family",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "6.0_BETA",
+            "lastRelease": 1500317084000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 21920,
+            "componentId": "javax.el:javax.el-api",
+            "name": "javax.el:javax.el-api",
+            "version": "3.0.0",
+            "release": 1366930365000,
+            "languages": "java",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 26144,
+                    "name": "Common Development and Distribution License 1.1",
+                    "compliance": "partial"
+                },
+                {
+                    "id": 26145,
+                    "name": "GNU General Public License v2.0 w/Classpath exception",
+                    "compliance": "partial"
+                }
+            ],
+            "lastVersion": "3.0.1-b06",
+            "lastRelease": 1528154244000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 28633,
+            "componentId": "commons-net:commons-net",
+            "name": "commons-net:commons-net",
+            "version": "3.3",
+            "release": 1370645545000,
+            "languages": "java",
+            "lifeSpan": "Active",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "3.12.0",
+            "lastRelease": 1753704120000,
+            "nbVersionPreviousYear": 1,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "commons-net",
+                "product": "commons-net",
+                "version": "3.3",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2021-37533",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-37533",
+                        "description": "Prior to Apache Commons Net 3.9.0, Net's FTP client trusts the host from PASV response by default. A malicious server can redirect the Commons Net code to use a different host, but the user has to connect to the malicious server in the first place. This may lead to leakage of information about services running on the private network of the client. The default in version 3.9.0 is now false to ignore such hosts, as cURL does. See https://issues.apache.org/jira/browse/NET-711.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.5,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:apache:commons_net",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "3.9.0",
+            "safestVersion": "3.9.0"
+        },
+        {
+            "id": 31963,
+            "componentId": "javax.servlet:javax.servlet-api",
+            "name": "javax.servlet:javax.servlet-api",
+            "version": "3.1.0",
+            "release": 1366933959000,
+            "languages": "java",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 26144,
+                    "name": "Common Development and Distribution License 1.1",
+                    "compliance": "partial"
+                },
+                {
+                    "id": 26145,
+                    "name": "GNU General Public License v2.0 w/Classpath exception",
+                    "compliance": "partial"
+                }
+            ],
+            "lastVersion": "4.0.1",
+            "lastRelease": 1524208760000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 43874,
+            "componentId": "log4j:log4j",
+            "name": "log4j:log4j",
+            "version": "1.2.17",
+            "release": 1338025419000,
+            "languages": "java",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "1.2.17",
+            "lastRelease": 1338025419000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "log4j",
+                "product": "log4j",
+                "version": "1.2.17",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2019-17571",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-17571",
+                        "description": "Included in Log4j 1.2 is a SocketServer class that is vulnerable to deserialization of untrusted data which can be exploited to remotely execute arbitrary code when combined with a deserialization gadget when listening to untrusted network traffic for log data. This affects Log4j versions up to 1.2 up to 1.2.17.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 9.8,
+                        "criticity": "CRITICAL",
+                        "cpe": "cpe:/a:apache:log4j",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2020-9488",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-9488",
+                        "description": "Improper validation of certificate with host mismatch in Apache Log4j SMTP appender. This could allow an SMTPS connection to be intercepted by a man-in-the-middle attack which could leak any log messages sent through that appender. Fixed in Apache Log4j 2.12.3 and 2.13.1",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 3.7,
+                        "criticity": "LOW",
+                        "cpe": "cpe:/a:apache:log4j",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2020-9493",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-9493",
+                        "description": "A deserialization flaw was found in Apache Chainsaw versions prior to 2.1.0 which could lead to malicious code execution.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 9.8,
+                        "criticity": "CRITICAL",
+                        "cpe": "cpe:/a:apache:log4j",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2021-4104",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-4104",
+                        "description": "JMSAppender in Log4j 1.2 is vulnerable to deserialization of untrusted data when the attacker has write access to the Log4j configuration. The attacker can provide TopicBindingName and TopicConnectionFactoryBindingName configurations causing JMSAppender to perform JNDI requests that result in remote code execution in a similar fashion to CVE-2021-44228. Note this issue only affects Log4j 1.2 when specifically configured to use JMSAppender, which is not the default. Apache Log4j 1.2 reached end of life in August 2015. Users should upgrade to Log4j 2 as it addresses numerous other issues from the previous versions.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:apache:log4j",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2022-23302",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-23302",
+                        "description": "JMSSink in all versions of Log4j 1.x is vulnerable to deserialization of untrusted data when the attacker has write access to the Log4j configuration or if the configuration references an LDAP service the attacker has access to. The attacker can provide a TopicConnectionFactoryBindingName configuration causing JMSSink to perform JNDI requests that result in remote code execution in a similar fashion to CVE-2021-4104. Note this issue only affects Log4j 1.x when specifically configured to use JMSSink, which is not the default. Apache Log4j 1.2 reached end of life in August 2015. Users should upgrade to Log4j 2 as it addresses numerous other issues from the previous versions.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 8.8,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:qos:reload4j",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2022-23305",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-23305",
+                        "description": "By design, the JDBCAppender in Log4j 1.2.x accepts an SQL statement as a configuration parameter where the values to be inserted are converters from PatternLayout. The message converter, %m, is likely to always be included. This allows attackers to manipulate the SQL by entering crafted strings into input fields or headers of an application that are logged allowing unintended SQL queries to be executed. Note this issue only affects Log4j 1.x when specifically configured to use the JDBCAppender, which is not the default. Beginning in version 2.0-beta8, the JDBCAppender was re-introduced with proper support for parameterized SQL queries and further customization over the columns written to in logs. Apache Log4j 1.2 reached end of life in August 2015. Users should upgrade to Log4j 2 as it addresses numerous other issues from the previous versions.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 9.8,
+                        "criticity": "CRITICAL",
+                        "cpe": "cpe:/a:apache:log4j",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2022-23307",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-23307",
+                        "description": "CVE-2020-9493 identified a deserialization issue that was present in Apache Chainsaw. Prior to Chainsaw V2.0 Chainsaw was a component of Apache Log4j 1.2.x where the same issue exists.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 8.8,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:apache:log4j",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2023-26464",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-26464",
+                        "description": "** UNSUPPORTED WHEN ASSIGNED **\n\nWhen using the Chainsaw or SocketAppender components with Log4j 1.x on JRE less than 1.7, an attacker that manages to cause a logging entry involving a specially-crafted (ie, deeply nested) \nhashmap or hashtable (depending on which logging component is in use) to be processed could exhaust the available memory in the virtual machine and achieve Denial of Service when the object is deserialized.\n\nThis issue affects Apache Log4j before 2. Affected users are recommended to update to Log4j 2.x.\n\nNOTE: This vulnerability only affects products that are no longer supported by the maintainer.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:apache:log4j",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [
+                {
+                    "cwe": "CWE-390",
+                    "label": "Detection of Error Condition Without Action",
+                    "rules": [
+                        {
+                            "aipRuleId": 1060020,
+                            "label": "Avoid empty catch blocks for methods with high fan-in",
+                            "occurrences": 2
+                        }
+                    ],
+                    "id": 390,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-79",
+                    "label": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
+                    "rules": [
+                        {
+                            "aipRuleId": 8408,
+                            "label": "Avoid reflected cross-site scripting (non persistent)",
+                            "occurrences": 6
+                        }
+                    ],
+                    "id": 79,
+                    "isDangerousWeakness": true
+                },
+                {
+                    "cwe": "CWE-477",
+                    "label": "Use of Obsolete Function",
+                    "rules": [
+                        {
+                            "aipRuleId": 8220,
+                            "label": "Avoid using deprecated method, constructor, field, type or package",
+                            "occurrences": 11
+                        }
+                    ],
+                    "id": 477,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1073",
+                    "label": "Non-SQL Invokable Control Element with Excessive Number of Data Resource Accesses",
+                    "rules": [
+                        {
+                            "aipRuleId": 8110,
+                            "label": "Avoid not using dedicated stored procedures when processing multiple data accesses",
+                            "occurrences": 8
+                        }
+                    ],
+                    "id": 1073,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1091",
+                    "label": "Use of Object without Invoking Destructor Method",
+                    "rules": [
+                        {
+                            "aipRuleId": 7562,
+                            "label": "Avoid static Field of type collection",
+                            "occurrences": 9
+                        }
+                    ],
+                    "id": 1091,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-478",
+                    "label": "Missing Default Case in Switch Statement",
+                    "rules": [
+                        {
+                            "aipRuleId": 8028,
+                            "label": "Avoid missing default in switch statements",
+                            "occurrences": 5
+                        }
+                    ],
+                    "id": 478,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1043",
+                    "label": "Data Element Aggregating an Excessively Large Number of Non-Primitive Elements",
+                    "rules": [
+                        {
+                            "aipRuleId": 7424,
+                            "label": "Avoid using SQL queries inside a loop",
+                            "occurrences": 4
+                        }
+                    ],
+                    "id": 1043,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1080",
+                    "label": "Source Code File with Excessive Number of Lines of Code",
+                    "rules": [
+                        {
+                            "aipRuleId": 7842,
+                            "label": "Avoid large Artifacts - too many Lines of Code",
+                            "occurrences": 4
+                        }
+                    ],
+                    "id": 1080,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1061",
+                    "label": "Insufficient Encapsulation",
+                    "rules": [
+                        {
+                            "aipRuleId": 7830,
+                            "label": "Avoid unreferenced Interfaces",
+                            "occurrences": 1
+                        },
+                        {
+                            "aipRuleId": 7908,
+                            "label": "Avoid unreferenced Methods",
+                            "occurrences": 1061
+                        },
+                        {
+                            "aipRuleId": 7832,
+                            "label": "Avoid unreferenced Classes",
+                            "occurrences": 54
+                        },
+                        {
+                            "aipRuleId": 7912,
+                            "label": "Avoid unreferenced Data Members",
+                            "occurrences": 60
+                        }
+                    ],
+                    "id": 1061,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1048",
+                    "label": "Invokable Control Element with Large Number of Outward Calls",
+                    "rules": [
+                        {
+                            "aipRuleId": 7778,
+                            "label": "Avoid Artifacts with High Fan-Out",
+                            "occurrences": 1714
+                        }
+                    ],
+                    "id": 1048,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-23",
+                    "label": "Relative Path Traversal",
+                    "rules": [
+                        {
+                            "aipRuleId": 7752,
+                            "label": "Avoid file path manipulation vulnerabilities",
+                            "occurrences": 2
+                        }
+                    ],
+                    "id": 23,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1084",
+                    "label": "Invokable Control Element with Excessive File or Data Access Operations",
+                    "rules": [
+                        {
+                            "aipRuleId": 7424,
+                            "label": "Avoid using SQL queries inside a loop",
+                            "occurrences": 4
+                        }
+                    ],
+                    "id": 1084,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-22",
+                    "label": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')",
+                    "rules": [
+                        {
+                            "aipRuleId": 7752,
+                            "label": "Avoid file path manipulation vulnerabilities",
+                            "occurrences": 2
+                        }
+                    ],
+                    "id": 22,
+                    "isDangerousWeakness": true
+                },
+                {
+                    "cwe": "CWE-1075",
+                    "label": "Unconditional Control Flow Transfer outside of Switch Block",
+                    "rules": [
+                        {
+                            "aipRuleId": 8028,
+                            "label": "Avoid missing default in switch statements",
+                            "occurrences": 5
+                        }
+                    ],
+                    "id": 1075,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-111",
+                    "label": "Direct Use of Unsafe JNI",
+                    "rules": [
+                        {
+                            "aipRuleId": 4612,
+                            "label": "Avoid using native Methods (JNI)",
+                            "occurrences": 4
+                        }
+                    ],
+                    "id": 111,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-391",
+                    "label": "Unchecked Error Condition",
+                    "rules": [
+                        {
+                            "aipRuleId": 1060020,
+                            "label": "Avoid empty catch blocks for methods with high fan-in",
+                            "occurrences": 2
+                        },
+                        {
+                            "aipRuleId": 7788,
+                            "label": "Avoid empty catch blocks",
+                            "occurrences": 56
+                        }
+                    ],
+                    "id": 391,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1121",
+                    "label": "Excessive McCabe Cyclomatic Complexity",
+                    "rules": [
+                        {
+                            "aipRuleId": 7776,
+                            "label": "Avoid Artifacts with High Fan-In",
+                            "occurrences": 303
+                        },
+                        {
+                            "aipRuleId": 7766,
+                            "label": "Avoid Artifacts with High Cyclomatic Complexity",
+                            "occurrences": 13
+                        }
+                    ],
+                    "id": 1121,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-681",
+                    "label": "Incorrect Conversion between Numeric Types",
+                    "rules": [
+                        {
+                            "aipRuleId": 8216,
+                            "label": "Avoid using incompatible mutation",
+                            "occurrences": 19
+                        }
+                    ],
+                    "id": 681,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-674",
+                    "label": "Uncontrolled Recursion",
+                    "rules": [
+                        {
+                            "aipRuleId": 7388,
+                            "label": "Avoid artifacts having recursive calls",
+                            "occurrences": 12
+                        }
+                    ],
+                    "id": 674,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-73",
+                    "label": "External Control of File Name or Path",
+                    "rules": [
+                        {
+                            "aipRuleId": 4594,
+                            "label": "Avoid using 'java.io.File'",
+                            "occurrences": 138
+                        },
+                        {
+                            "aipRuleId": 7752,
+                            "label": "Avoid file path manipulation vulnerabilities",
+                            "occurrences": 2
+                        }
+                    ],
+                    "id": 73,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-36",
+                    "label": "Absolute Path Traversal",
+                    "rules": [
+                        {
+                            "aipRuleId": 7752,
+                            "label": "Avoid file path manipulation vulnerabilities",
+                            "occurrences": 2
+                        }
+                    ],
+                    "id": 36,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1050",
+                    "label": "Excessive Platform Resource Consumption within a Loop",
+                    "rules": [
+                        {
+                            "aipRuleId": 1060018,
+                            "label": "Avoid String concatenation in loops for artifacts with high fan in",
+                            "occurrences": 11
+                        },
+                        {
+                            "aipRuleId": 7424,
+                            "label": "Avoid using SQL queries inside a loop",
+                            "occurrences": 4
+                        },
+                        {
+                            "aipRuleId": 7204,
+                            "label": "Avoid method invocation in a loop termination expression",
+                            "occurrences": 45
+                        },
+                        {
+                            "aipRuleId": 7210,
+                            "label": "Avoid instantiations inside loops",
+                            "occurrences": 80
+                        }
+                    ],
+                    "id": 1050,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1064",
+                    "label": "Invokable Control Element with Signature Containing an Excessive Number of Parameters",
+                    "rules": [
+                        {
+                            "aipRuleId": 7770,
+                            "label": "Avoid Artifacts with too many parameters",
+                            "occurrences": 3
+                        }
+                    ],
+                    "id": 1064,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1124",
+                    "label": "Excessively Deep Nesting",
+                    "rules": [
+                        {
+                            "aipRuleId": 7768,
+                            "label": "Avoid Artifacts with High Depth of Code",
+                            "occurrences": 22
+                        }
+                    ],
+                    "id": 1124,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-778",
+                    "label": "Insufficient Logging",
+                    "rules": [
+                        {
+                            "aipRuleId": 7652,
+                            "label": "Avoid throwing an exception in a catch block without chaining it",
+                            "occurrences": 10
+                        }
+                    ],
+                    "id": 778,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-134",
+                    "label": "Use of Externally-Controlled Format String",
+                    "rules": [
+                        {
+                            "aipRuleId": 8098,
+                            "label": "Avoid uncontrolled format string",
+                            "occurrences": 2
+                        }
+                    ],
+                    "id": 134,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-576",
+                    "label": "EJB Bad Practices: Use of Java I/O",
+                    "rules": [
+                        {
+                            "aipRuleId": 4594,
+                            "label": "Avoid using 'java.io.File'",
+                            "occurrences": 138
+                        }
+                    ],
+                    "id": 576,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1053",
+                    "label": "Missing Documentation for Design",
+                    "rules": [
+                        {
+                            "aipRuleId": 7838,
+                            "label": "Avoid undocumented Methods",
+                            "occurrences": 991
+                        }
+                    ],
+                    "id": 1053,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-489",
+                    "label": "Leftover Debug Code",
+                    "rules": [
+                        {
+                            "aipRuleId": 4702,
+                            "label": "Avoid using 'Throwable.printStackTrace()' with no argument",
+                            "occurrences": 38
+                        }
+                    ],
+                    "id": 489,
+                    "isDangerousWeakness": false
+                }
+            ]
+        },
+        {
+            "id": 43982,
+            "componentId": "junit:junit",
+            "name": "junit:junit",
+            "version": "3.8.1",
+            "release": 1179178458000,
+            "languages": "java",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 26159,
+                    "name": "Common Public License 1.0",
+                    "compliance": "partial"
+                }
+            ],
+            "lastVersion": "4.13.2",
+            "lastRelease": 1613233914000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 44079,
+            "componentId": "commons-codec:commons-codec",
+            "name": "commons-codec:commons-codec",
+            "version": "1.9",
+            "release": 1387598259000,
+            "languages": "java",
+            "lifeSpan": "Active",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "1.21.0",
+            "lastRelease": 1769177820000,
+            "nbVersionPreviousYear": 3,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 44547,
+            "componentId": "xom:xom",
+            "name": "xom:xom",
+            "version": "1.2.5",
+            "release": 1273645330000,
+            "languages": "java",
+            "lifeSpan": "Active",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 8,
+                    "name": "GNU Lesser General Public License v2.1 only",
+                    "compliance": "partial"
+                }
+            ],
+            "lastVersion": "1.3.9",
+            "lastRelease": 1684098911000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 44582,
+            "componentId": "javax.servlet.jsp:jsp-api",
+            "name": "javax.servlet.jsp:jsp-api",
+            "version": "2.2",
+            "release": 1274316530000,
+            "languages": "java",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 26144,
+                    "name": "Common Development and Distribution License 1.1",
+                    "compliance": "partial"
+                },
+                {
+                    "id": 26145,
+                    "name": "GNU General Public License v2.0 w/Classpath exception",
+                    "compliance": "partial"
+                }
+            ],
+            "lastVersion": "2.2.1-b03",
+            "lastRelease": 1294697832000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51403,
+            "componentId": "org.apache.tika:tika-core",
+            "name": "org.apache.tika:tika-core",
+            "version": "1.10",
+            "release": 1438495703000,
+            "languages": "java",
+            "lifeSpan": "Active",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "3.2.3",
+            "lastRelease": 1757601540000,
+            "nbVersionPreviousYear": 7,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "org.apache.tika",
+                "product": "tika-core",
+                "version": "1.10",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2016-4434",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2016-4434",
+                        "description": "Apache Tika before 1.13 does not properly initialize the XML parser or choose handlers, which might allow remote attackers to conduct XML External Entity (XXE) attacks via vectors involving (1) spreadsheets in OOXML files and (2) XMP metadata in PDF and other file formats, a related issue to CVE-2016-2175.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.8,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:apache:tika",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2016-6809",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2016-6809",
+                        "description": "Apache Tika before 1.14 allows Java code execution for serialized objects embedded in MATLAB files. The issue exists because Tika invokes JMatIO to do native deserialization.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 9.8,
+                        "criticity": "CRITICAL",
+                        "cpe": "cpe:/a:apache:tika",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2018-11761",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-11761",
+                        "description": "In Apache Tika 0.1 to 1.18, the XML parsers were not configured to limit entity expansion. They were therefore vulnerable to an entity expansion vulnerability which can lead to a denial of service attack.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:apache:tika",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2018-11762",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-11762",
+                        "description": "In Apache Tika 0.9 to 1.18, in a rare edge case where a user does not specify an extract directory on the commandline (--extract-dir=) and the input file has an embedded file with an absolute path, such as \"C:/evil.bat\", tika-app would overwrite that file.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.9,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:apache:tika",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2018-11796",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-11796",
+                        "description": "In Apache Tika 1.19 (CVE-2018-11761), we added an entity expansion limit for XML parsing. However, Tika reuses SAXParsers and calls reset() after each parse, which, for Xerces2 parsers, as per the documentation, removes the user-specified SecurityManager and thus removes entity expansion limits after the first parse. Apache Tika versions from 0.1 to 1.19 are therefore still vulnerable to entity expansions which can lead to a denial of service attack. Users should upgrade to 1.19.1 or later.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:apache:tika",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2018-1335",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-1335",
+                        "description": "From Apache Tika versions 1.7 to 1.17, clients could send carefully crafted headers to tika-server that could be used to inject commands into the command line of the server running tika-server. This vulnerability only affects those running tika-server on a server that is open to untrusted clients. The mitigation is to upgrade to Tika 1.18.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 8.1,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:apache:tika",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2018-1338",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-1338",
+                        "description": "A carefully crafted (or fuzzed) file can trigger an infinite loop in Apache Tika's BPGParser in versions of Apache Tika before 1.18.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.5,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:apache:tika",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2018-1339",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-1339",
+                        "description": "A carefully crafted (or fuzzed) file can trigger an infinite loop in Apache Tika's ChmParser in versions of Apache Tika before 1.18.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.5,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:apache:tika",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2018-17197",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-17197",
+                        "description": "A carefully crafted or corrupt sqlite file can cause an infinite loop in Apache Tika's SQLite3Parser in versions 1.8-1.19.1 of Apache Tika.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.5,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:apache:tika",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2018-8017",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-8017",
+                        "description": "In Apache Tika 1.2 to 1.18, a carefully crafted file can trigger an infinite loop in the IptcAnpaParser.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.5,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:apache:tika",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2019-10088",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-10088",
+                        "description": "A carefully crafted or corrupt zip file can cause an OOM in Apache Tika's RecursiveParserWrapper in versions 1.7-1.21. Users should upgrade to 1.22 or later.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 8.8,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:apache:tika",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2019-10094",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-10094",
+                        "description": "A carefully crafted package/compressed file that, when unzipped/uncompressed yields the same file (a quine), causes a StackOverflowError in Apache Tika's RecursiveParserWrapper in versions 1.7-1.21. Apache Tika users should upgrade to 1.22 or later.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.8,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:apache:tika",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2020-1950",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-1950",
+                        "description": "A carefully crafted or corrupt PSD file can cause excessive memory usage in Apache Tika's PSDParser in versions 1.0-1.23.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.5,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:apache:tika",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2020-1951",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-1951",
+                        "description": "A carefully crafted or corrupt PSD file can cause an infinite loop in Apache Tika's PSDParser in versions 1.0-1.23.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.5,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:apache:tika",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2021-28657",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-28657",
+                        "description": "A carefully crafted or corrupt file may trigger an infinite loop in Tika's MP3Parser up to and including Tika 1.25. Apache Tika users should upgrade to 1.26 or later.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.5,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:apache:tika",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2022-25169",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-25169",
+                        "description": "The BPG parser in versions of Apache Tika before 1.28.2 and 2.4.0 may allocate an unreasonable amount of memory on carefully crafted files.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.5,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:apache:tika",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2022-30126",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-30126",
+                        "description": "In Apache Tika, a regular expression in our StandardsText class, used by the StandardsExtractingContentHandler could lead to a denial of service caused by backtracking on a specially crafted file. This only affects users who are running the StandardsExtractingContentHandler, which is a non-standard handler. This is fixed in 1.28.2 and 2.4.0",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.5,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:apache:tika",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2022-30973",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-30973",
+                        "description": "We failed to apply the fix for CVE-2022-30126 to the 1.x branch in the 1.28.2 release. In Apache Tika, a regular expression in the StandardsText class, used by the StandardsExtractingContentHandler could lead to a denial of service caused by backtracking on a specially crafted file. This only affects users who are running the StandardsExtractingContentHandler, which is a non-standard handler. This is fixed in 1.28.3.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.5,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:apache:tika",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2022-33879",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-33879",
+                        "description": "The initial fixes in CVE-2022-30126 and CVE-2022-30973 for regexes in the StandardsExtractingContentHandler were insufficient, and we found a separate, new regex DoS in a different regex in the StandardsExtractingContentHandler. These are now fixed in 1.28.4 and 2.4.1.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 3.3,
+                        "criticity": "LOW",
+                        "cpe": "cpe:/a:apache:tika",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [
+                {
+                    "cwe": "CWE-1061",
+                    "label": "Insufficient Encapsulation",
+                    "rules": [
+                        {
+                            "aipRuleId": 7830,
+                            "label": "Avoid unreferenced Interfaces",
+                            "occurrences": 12
+                        },
+                        {
+                            "aipRuleId": 7832,
+                            "label": "Avoid unreferenced Classes",
+                            "occurrences": 52
+                        },
+                        {
+                            "aipRuleId": 7912,
+                            "label": "Avoid unreferenced Data Members",
+                            "occurrences": 101
+                        },
+                        {
+                            "aipRuleId": 7908,
+                            "label": "Avoid unreferenced Methods",
+                            "occurrences": 338
+                        }
+                    ],
+                    "id": 1061,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-390",
+                    "label": "Detection of Error Condition Without Action",
+                    "rules": [
+                        {
+                            "aipRuleId": 1060020,
+                            "label": "Avoid empty catch blocks for methods with high fan-in",
+                            "occurrences": 10
+                        }
+                    ],
+                    "id": 390,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-778",
+                    "label": "Insufficient Logging",
+                    "rules": [
+                        {
+                            "aipRuleId": 7652,
+                            "label": "Avoid throwing an exception in a catch block without chaining it",
+                            "occurrences": 6
+                        }
+                    ],
+                    "id": 778,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-477",
+                    "label": "Use of Obsolete Function",
+                    "rules": [
+                        {
+                            "aipRuleId": 8220,
+                            "label": "Avoid using deprecated method, constructor, field, type or package",
+                            "occurrences": 1
+                        }
+                    ],
+                    "id": 477,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-576",
+                    "label": "EJB Bad Practices: Use of Java I/O",
+                    "rules": [
+                        {
+                            "aipRuleId": 4594,
+                            "label": "Avoid using 'java.io.File'",
+                            "occurrences": 61
+                        }
+                    ],
+                    "id": 576,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-78",
+                    "label": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')",
+                    "rules": [
+                        {
+                            "aipRuleId": 4598,
+                            "label": "Avoid using 'java.lang.Runtime.exec()'",
+                            "occurrences": 7
+                        }
+                    ],
+                    "id": 78,
+                    "isDangerousWeakness": true
+                },
+                {
+                    "cwe": "CWE-681",
+                    "label": "Incorrect Conversion between Numeric Types",
+                    "rules": [
+                        {
+                            "aipRuleId": 8216,
+                            "label": "Avoid using incompatible mutation",
+                            "occurrences": 59
+                        }
+                    ],
+                    "id": 681,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1080",
+                    "label": "Source Code File with Excessive Number of Lines of Code",
+                    "rules": [
+                        {
+                            "aipRuleId": 7842,
+                            "label": "Avoid large Artifacts - too many Lines of Code",
+                            "occurrences": 3
+                        }
+                    ],
+                    "id": 1080,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1075",
+                    "label": "Unconditional Control Flow Transfer outside of Switch Block",
+                    "rules": [
+                        {
+                            "aipRuleId": 8028,
+                            "label": "Avoid missing default in switch statements",
+                            "occurrences": 1
+                        }
+                    ],
+                    "id": 1075,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-391",
+                    "label": "Unchecked Error Condition",
+                    "rules": [
+                        {
+                            "aipRuleId": 7788,
+                            "label": "Avoid empty catch blocks",
+                            "occurrences": 65
+                        },
+                        {
+                            "aipRuleId": 1060020,
+                            "label": "Avoid empty catch blocks for methods with high fan-in",
+                            "occurrences": 10
+                        }
+                    ],
+                    "id": 391,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1053",
+                    "label": "Missing Documentation for Design",
+                    "rules": [
+                        {
+                            "aipRuleId": 7838,
+                            "label": "Avoid undocumented Methods",
+                            "occurrences": 738
+                        }
+                    ],
+                    "id": 1053,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-73",
+                    "label": "External Control of File Name or Path",
+                    "rules": [
+                        {
+                            "aipRuleId": 4594,
+                            "label": "Avoid using 'java.io.File'",
+                            "occurrences": 61
+                        },
+                        {
+                            "aipRuleId": 7752,
+                            "label": "Avoid file path manipulation vulnerabilities",
+                            "occurrences": 11
+                        }
+                    ],
+                    "id": 73,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1069",
+                    "label": "Empty Exception Block",
+                    "rules": [
+                        {
+                            "aipRuleId": 1060004,
+                            "label": "Avoid Empty Finally Block When Calling Resource",
+                            "occurrences": 9
+                        }
+                    ],
+                    "id": 1069,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1121",
+                    "label": "Excessive McCabe Cyclomatic Complexity",
+                    "rules": [
+                        {
+                            "aipRuleId": 7776,
+                            "label": "Avoid Artifacts with High Fan-In",
+                            "occurrences": 265
+                        },
+                        {
+                            "aipRuleId": 7766,
+                            "label": "Avoid Artifacts with High Cyclomatic Complexity",
+                            "occurrences": 5
+                        }
+                    ],
+                    "id": 1121,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-22",
+                    "label": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')",
+                    "rules": [
+                        {
+                            "aipRuleId": 7752,
+                            "label": "Avoid file path manipulation vulnerabilities",
+                            "occurrences": 11
+                        }
+                    ],
+                    "id": 22,
+                    "isDangerousWeakness": true
+                },
+                {
+                    "cwe": "CWE-674",
+                    "label": "Uncontrolled Recursion",
+                    "rules": [
+                        {
+                            "aipRuleId": 7388,
+                            "label": "Avoid artifacts having recursive calls",
+                            "occurrences": 14
+                        }
+                    ],
+                    "id": 674,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-489",
+                    "label": "Leftover Debug Code",
+                    "rules": [
+                        {
+                            "aipRuleId": 4702,
+                            "label": "Avoid using 'Throwable.printStackTrace()' with no argument",
+                            "occurrences": 9
+                        }
+                    ],
+                    "id": 489,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-36",
+                    "label": "Absolute Path Traversal",
+                    "rules": [
+                        {
+                            "aipRuleId": 7752,
+                            "label": "Avoid file path manipulation vulnerabilities",
+                            "occurrences": 11
+                        }
+                    ],
+                    "id": 36,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1091",
+                    "label": "Use of Object without Invoking Destructor Method",
+                    "rules": [
+                        {
+                            "aipRuleId": 7562,
+                            "label": "Avoid static Field of type collection",
+                            "occurrences": 1
+                        }
+                    ],
+                    "id": 1091,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-478",
+                    "label": "Missing Default Case in Switch Statement",
+                    "rules": [
+                        {
+                            "aipRuleId": 8028,
+                            "label": "Avoid missing default in switch statements",
+                            "occurrences": 1
+                        }
+                    ],
+                    "id": 478,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1048",
+                    "label": "Invokable Control Element with Large Number of Outward Calls",
+                    "rules": [
+                        {
+                            "aipRuleId": 7778,
+                            "label": "Avoid Artifacts with High Fan-Out",
+                            "occurrences": 756
+                        }
+                    ],
+                    "id": 1048,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1050",
+                    "label": "Excessive Platform Resource Consumption within a Loop",
+                    "rules": [
+                        {
+                            "aipRuleId": 7210,
+                            "label": "Avoid instantiations inside loops",
+                            "occurrences": 27
+                        },
+                        {
+                            "aipRuleId": 7204,
+                            "label": "Avoid method invocation in a loop termination expression",
+                            "occurrences": 49
+                        }
+                    ],
+                    "id": 1050,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-611",
+                    "label": "Improper Restriction of XML External Entity Reference",
+                    "rules": [
+                        {
+                            "aipRuleId": 1039034,
+                            "label": "Avoid using SAXParserFactory without restriction of XML External Entity Reference (XXE)",
+                            "occurrences": 4
+                        }
+                    ],
+                    "id": 611,
+                    "isDangerousWeakness": true
+                },
+                {
+                    "cwe": "CWE-23",
+                    "label": "Relative Path Traversal",
+                    "rules": [
+                        {
+                            "aipRuleId": 7752,
+                            "label": "Avoid file path manipulation vulnerabilities",
+                            "occurrences": 11
+                        }
+                    ],
+                    "id": 23,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1124",
+                    "label": "Excessively Deep Nesting",
+                    "rules": [
+                        {
+                            "aipRuleId": 7768,
+                            "label": "Avoid Artifacts with High Depth of Code",
+                            "occurrences": 12
+                        }
+                    ],
+                    "id": 1124,
+                    "isDangerousWeakness": false
+                }
+            ],
+            "saferClosestVersion": "1.14",
+            "safestVersion": "3.2.2"
+        },
+        {
+            "id": 51404,
+            "componentId": "org.lucee:jzlib",
+            "name": "org.lucee:jzlib",
+            "version": "1.1.3",
+            "release": 1461326470000,
+            "languages": "java",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 26140,
+                    "name": "BSD Licenses Family",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "1.1.3",
+            "lastRelease": 1461326470000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51945,
+            "componentId": "org.apache.felix:org.apache.felix.framework",
+            "name": "org.apache.felix:org.apache.felix.framework",
+            "version": "5.6.10",
+            "release": 1510323862000,
+            "languages": "java",
+            "lifeSpan": "Active",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "7.0.5",
+            "lastRelease": 1653648633000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 82353,
+            "componentId": "hsqldb:hsqldb",
+            "name": "hsqldb:hsqldb",
+            "version": "1.8.0.10",
+            "release": 1242768027000,
+            "languages": "java",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 1,
+                    "name": "NOASSERTION",
+                    "compliance": "undefined"
+                }
+            ],
+            "lastVersion": "1.8.0.10",
+            "lastRelease": 1242768027000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 370146,
+            "componentId": "tinymce/tinymce",
+            "name": "tinymce/tinymce",
+            "version": "2.0.7",
+            "release": 1161077469000,
+            "languages": "typescript",
+            "lifeSpan": "Active",
+            "origin": "Scan",
+            "licenses": [],
+            "lastVersion": "8.0.1",
+            "lastRelease": 1753662562000,
+            "nbVersionPreviousYear": 16,
+            "numberOfCodeLines": 52965.0,
+            "numberOfFiles": 8.0,
+            "cve": {
+                "vendor": "tinymce",
+                "product": "tinymce",
+                "version": "2.0.7",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2019-1010091",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-1010091",
+                        "description": "tinymce 4.7.11, 4.7.12 is affected by: CWE-79: Improper Neutralization of Input During Web Page Generation. The impact is: JavaScript code execution. The component is: Media element. The attack vector is: The victim must paste malicious content to media element's embed tab.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.1,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:tiny:tinymce",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2020-12648",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-12648",
+                        "description": "A cross-site scripting (XSS) vulnerability in TinyMCE 5.2.1 and earlier allows remote attackers to inject arbitrary web script when configured in classic editing mode.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.1,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:tiny:tinymce",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2020-17480",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-17480",
+                        "description": "TinyMCE before 4.9.7 and 5.x before 5.1.4 allows XSS in the core parser, the paste plugin, and the visualchars plugin by using the clipboard or APIs to insert content into the editor.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.1,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:tiny:tinymce",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2022-23494",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-23494",
+                        "description": "tinymce is an open source rich text editor. A cross-site scripting (XSS) vulnerability was discovered in the alert and confirm dialogs when these dialogs were provided with malicious HTML content. This can occur in plugins that use the alert or confirm dialogs, such as in the `image` plugin, which presents these dialogs when certain errors occur. The vulnerability allowed arbitrary JavaScript execution when an alert presented in the TinyMCE UI for the current user. This vulnerability has been patched in TinyMCE 5.10.7 and TinyMCE 6.3.1 by ensuring HTML sanitization was still performed after unwrapping invalid elements. Users are advised to upgrade to either 5.10.7 or 6.3.1. Users unable to upgrade may ensure the the `images_upload_handler` returns a valid value as per the images_upload_handler documentation.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.4,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:tiny:tinymce",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2023-45818",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-45818",
+                        "description": "TinyMCE is an open source rich text editor. A mutation cross-site scripting (mXSS) vulnerability was discovered in TinyMCE\u2019s core undo and redo functionality. When a carefully-crafted HTML snippet passes the XSS sanitisation layer, it is manipulated as a string by internal trimming functions before being stored in the undo stack. If the HTML snippet is restored from the undo stack, the combination of the string manipulation and reparative parsing by either the browser's native [DOMParser API](https://developer.mozilla.org/en-US/docs/Web/API/DOMParser) (TinyMCE 6) or the SaxParser API (TinyMCE 5) mutates the HTML maliciously, allowing an XSS payload to be executed. This vulnerability has been patched in TinyMCE 5.10.8 and TinyMCE 6.7.1 by ensuring HTML is trimmed using node-level manipulation instead of string manipulation. Users are advised to upgrade. There are no known workarounds for this vulnerability.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.1,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:tiny:tinymce",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2023-45819",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-45819",
+                        "description": "TinyMCE is an open source rich text editor. A cross-site scripting (XSS) vulnerability was discovered in TinyMCE\u2019s Notification Manager API. The vulnerability exploits TinyMCE's unfiltered notification system, which is used in error handling. The conditions for this exploit requires carefully crafted malicious content to have been inserted into the editor and a notification to have been triggered. When a notification was opened, the HTML within the text argument was displayed unfiltered in the notification. The vulnerability allowed arbitrary JavaScript execution when an notification presented in the TinyMCE UI for the current user.  This issue could also be exploited by any integration which uses a TinyMCE notification to display unfiltered HTML content. This vulnerability has been patched in TinyMCE 5.10.8 and TinyMCE 6.7.1 by ensuring that the HTML displayed in the notification is sanitized, preventing the exploit. Users are advised to upgrade. There are no known workarounds for this vulnerability.\n",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.1,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:tiny:tinymce",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2023-48219",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-48219",
+                        "description": "TinyMCE is an open source rich text editor. A mutation cross-site scripting (mXSS) vulnerability was discovered in TinyMCE\u2019s core undo/redo functionality and other APIs and plugins. Text nodes within specific parents are not escaped upon serialization according to the HTML standard. If such text nodes contain a special character reserved as an internal marker, they can be combined with other HTML patterns to form malicious snippets. These snippets pass the initial sanitisation layer when the content is parsed into the editor body, but can trigger XSS when the special internal marker is removed from the content and re-parsed. his vulnerability has been patched in TinyMCE versions 6.7.3 and 5.10.9. Users are advised to upgrade. There are no known workarounds for this vulnerability.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.1,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:tiny:tinymce",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2024-21908",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-21908",
+                        "description": "TinyMCE versions before 5.9.0 are affected by a stored cross-site scripting vulnerability. An unauthenticated and remote attacker could insert crafted HTML into the editor resulting in arbitrary JavaScript execution in another user's browser.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.1,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:tiny:tinymce",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2024-21910",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-21910",
+                        "description": "TinyMCE versions before 5.10.0 are affected by a cross-site scripting vulnerability. A remote and unauthenticated attacker could introduce crafted image or link URLs that would result in the execution of arbitrary JavaScript in an editing user's browser.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.1,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:tiny:tinymce",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2024-21911",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-21911",
+                        "description": "TinyMCE versions before 5.6.0 are affected by a stored cross-site scripting vulnerability. An unauthenticated and remote attacker could insert crafted HTML into the editor resulting in arbitrary JavaScript execution in another user's browser.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.1,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:tiny:tinymce",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2024-29203",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-29203",
+                        "description": "TinyMCE is an open source rich text editor. A\u00a0cross-site scripting (XSS) vulnerability was discovered in TinyMCE\u2019s content insertion code.  This allowed `iframe` elements containing malicious code to execute when inserted into the editor.  These `iframe` elements are restricted in their permissions by same-origin browser protections, but could still trigger operations such as downloading of malicious assets. This vulnerability is fixed in 6.8.1.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 4.3,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:tiny:tinymce",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2024-29881",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-29881",
+                        "description": "TinyMCE is an open source rich text editor.  A cross-site scripting (XSS) vulnerability was discovered in TinyMCE\u2019s content loading and content inserting code. A SVG image could be loaded though an `object` or `embed` element and that image could potentially contain a XSS payload. This vulnerability is fixed in 6.8.1 and 7.0.0.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 4.3,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:tiny:tinymce",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2024-38356",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-38356",
+                        "description": "TinyMCE is an open source rich text editor. A cross-site scripting (XSS) vulnerability was discovered in TinyMCE\u2019s content extraction code. When using the `noneditable_regexp` option, specially crafted HTML attributes containing malicious code were able to be executed when content was extracted from the editor. This vulnerability has been patched in TinyMCE 7.2.0, TinyMCE 6.8.4 and TinyMCE 5.11.0 LTS by ensuring that, when using the `noneditable_regexp` option, any content within an attribute is properly verified to match the configured regular expression before being added. Users are advised to upgrade. There are no known workarounds for this vulnerability.\n",
+                        "cweId": "CWE-79",
+                        "cweLabel": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
+                        "cvssScore": 6.1,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2024-38357",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-38357",
+                        "description": "TinyMCE is an open source rich text editor. A cross-site scripting (XSS) vulnerability was discovered in TinyMCE\u2019s content parsing code. This allowed specially crafted noscript elements containing malicious code to be executed when that content was loaded into the editor. This vulnerability has been patched in TinyMCE 7.2.0, TinyMCE 6.8.4 and TinyMCE 5.11.0 LTS by ensuring that content within noscript elements are properly parsed. Users are advised to upgrade. There are no known workarounds for this vulnerability.\n",
+                        "cweId": "CWE-79",
+                        "cweLabel": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
+                        "cvssScore": 6.1,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "GHSA-9hcv-j9pv-qmph",
+                        "link": null,
+                        "description": "A [cross-site scripting (XSS)](https://owasp.org/www-community/attacks/xss/) vulnerability was discovered in TinyMCE\u2019s content extraction code. When using the `noneditable_regexp` option, specially crafted HTML attributes containing malicious code were able to be executed when content was extracted from the editor.",
+                        "cweId": "CWE-79",
+                        "cweLabel": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
+                        "cvssScore": 6.1,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "GHSA-w9jx-4g6g-rp7x",
+                        "link": null,
+                        "description": "A [cross-site scripting (XSS)](https://owasp.org/www-community/attacks/xss/) vulnerability was discovered in TinyMCE\u2019s content parsing code. This allowed specially crafted noscript elements containing malicious code to be executed when that content was loaded into the editor.",
+                        "cweId": "CWE-79",
+                        "cweLabel": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
+                        "cvssScore": 6.1,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "GMS-2020-789",
+                        "link": null,
+                        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') in tinymce.",
+                        "cweId": "CWE-79",
+                        "cweLabel": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
+                        "cvssScore": 0.0,
+                        "criticity": "UNKNOWN",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "GMS-2021-189",
+                        "link": null,
+                        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') in tinymce.",
+                        "cweId": "CWE-79",
+                        "cweLabel": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
+                        "cvssScore": 0.0,
+                        "criticity": "UNKNOWN",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "GMS-2021-190",
+                        "link": null,
+                        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') in tinymce.",
+                        "cweId": "CWE-79",
+                        "cweLabel": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
+                        "cvssScore": 0.0,
+                        "criticity": "UNKNOWN",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "GMS-2021-191",
+                        "link": null,
+                        "description": "A regex denial of service (ReDoS) vulnerability was discovered in a dependency of the `codesample` plugin.",
+                        "cweId": "CWE-937",
+                        "cweLabel": null,
+                        "cvssScore": 0.0,
+                        "criticity": "UNKNOWN",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "GMS-2021-192",
+                        "link": null,
+                        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') in tinymce.",
+                        "cweId": "CWE-79",
+                        "cweLabel": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
+                        "cvssScore": 0.0,
+                        "criticity": "UNKNOWN",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "GMS-2021-193",
+                        "link": null,
+                        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') in tinymce.",
+                        "cweId": "CWE-79",
+                        "cweLabel": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
+                        "cvssScore": 0.0,
+                        "criticity": "UNKNOWN",
+                        "cpe": null,
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "@ephox/katamari-assertions@2.0.7",
+            "safestVersion": "@ephox/sand@3.0.0"
+        },
+        {
+            "id": 558845,
+            "componentId": "lucee/Lucee",
+            "name": "lucee/Lucee",
+            "version": "5.3.6.62",
+            "release": 1592840694000,
+            "languages": "java",
+            "lifeSpan": "Active",
+            "origin": "Scan",
+            "licenses": [],
+            "lastVersion": "5.3.10.30",
+            "lastRelease": 1657805707000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 448584.0,
+            "numberOfFiles": 124.0,
+            "cve": {
+                "vendor": "lucee",
+                "product": "Lucee",
+                "version": "5.3.6.62",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2021-21307",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-21307",
+                        "description": "Lucee Server is a dynamic, Java based (JSR-223), tag and scripting language used for rapid web application development. In Lucee Admin before versions 5.3.7.47, 5.3.6.68 or 5.3.5.96 there is an unauthenticated remote code exploit. This is fixed in versions 5.3.7.47, 5.3.6.68 or 5.3.5.96. As a workaround, one can block access to the Lucee Administrator.",
+                        "cweId": "CWE-862",
+                        "cweLabel": null,
+                        "cvssScore": 9.8,
+                        "criticity": "CRITICAL",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2023-38693",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-38693",
+                        "description": "Lucee Server (or simply Lucee) is a dynamic, Java based, tag and scripting language used for rapid web application development. The Lucee REST endpoint is vulnerable to RCE via an XML XXE attack. This vulnerability is fixed in Lucee 5.4.3.2, 5.3.12.1, 5.3.7.59, 5.3.8.236, and 5.3.9.173.",
+                        "cweId": "CWE-611",
+                        "cweLabel": "Improper Restriction of XML External Entity Reference",
+                        "cvssScore": 9.8,
+                        "criticity": "CRITICAL",
+                        "cpe": null,
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "5.3.8.13",
+            "safestVersion": "5.3.8.13"
+        },
+        {
+            "id": 558879,
+            "componentId": "org.lucee:lucee",
+            "name": "org.lucee:lucee",
+            "version": "5.2.4.35-RC",
+            "release": 1504276275000,
+            "languages": "java",
+            "lifeSpan": "Active",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 8,
+                    "name": "GNU Lesser General Public License v2.1 only",
+                    "compliance": "partial"
+                }
+            ],
+            "lastVersion": "7.1.0.36-ALPHA",
+            "lastRelease": 1769807280000,
+            "nbVersionPreviousYear": 69,
+            "numberOfCodeLines": 193.0,
+            "numberOfFiles": 8.0,
+            "cve": {
+                "vendor": "org.lucee",
+                "product": "lucee",
+                "version": "5.2.4.35-RC",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2023-38693",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-38693",
+                        "description": "Lucee Server (or simply Lucee) is a dynamic, Java based, tag and scripting language used for rapid web application development. The Lucee REST endpoint is vulnerable to RCE via an XML XXE attack. This vulnerability is fixed in Lucee 5.4.3.2, 5.3.12.1, 5.3.7.59, 5.3.8.236, and 5.3.9.173.",
+                        "cweId": "CWE-611",
+                        "cweLabel": "Improper Restriction of XML External Entity Reference",
+                        "cvssScore": 9.8,
+                        "criticity": "CRITICAL",
+                        "cpe": null,
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "5.3.12.1",
+            "safestVersion": "5.3.12.1"
+        },
+        {
+            "id": 558881,
+            "componentId": "getrailo/railo",
+            "name": "getrailo/railo",
+            "version": "4.0.1.005",
+            "release": 1351759367000,
+            "languages": "java",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 8,
+                    "name": "GNU Lesser General Public License v2.1 only",
+                    "compliance": "partial"
+                }
+            ],
+            "lastVersion": "4.2.2.005",
+            "lastRelease": 1418891231000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 40870.0,
+            "numberOfFiles": 3.0,
+            "cve": {
+                "vendor": "getrailo",
+                "product": "railo",
+                "version": "4.0.1.005",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2014-5468",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2014-5468",
+                        "description": "A File Inclusion vulnerability exists in Railo 4.2.1 and earlier via a specially-crafted URL request to the thumbnail.cfm to specify a malicious PNG file, which could let a remote malicious user obtain sensitive information or execute arbitrary code.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 8.8,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:getrailo:railo",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "4.2.1.001",
+            "safestVersion": "4.2.1.001"
+        }
+    ],
+    "partialComponents": [
+        {
+            "name": "RMI",
+            "technology": "Java",
+            "type": "Application development",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "http://docs.oracle.com/javase/1.5.0/docs/guide/rmi/index.html",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "discovered",
+            "technology": "JavaScript",
+            "type": "",
+            "versions": [
+                "http://www.jquery.com"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "Jquery",
+            "technology": "JavaScript",
+            "type": "Web & Mobile applications",
+            "versions": [
+                "1.9"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "activation",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                "1.4.7.0002L"
+            ],
+            "license": "GPL",
+            "editor": "https://mvnrepository.com/artifact/javax.mail/mail",
+            "description": "JavaMail API (compat)",
+            "dependencyLevel": null
+        },
+        {
+            "name": "oro",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                "2.0.8"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "jaas",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                "1.2.4"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "extractor",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                "2.8.1.0002L"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "jcifs",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                "1.3.17"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "css2",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                "0.9.4"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "codec",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                "1.1.2.0003L"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "dom",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                "1.1.0"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "concurrent",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                "2.2.0"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "server",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                "1.0.20"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "jacob",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                "1.16.1"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "javasysmon",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                "0.3.3"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "jencrypt",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                "1.4.2.04"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "image",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                "1.0.0.R1534292"
+            ],
+            "license": "Apache",
+            "editor": "https://mvnrepository.com/artifact/org.apache.commons/commons-lang3",
+            "description": "Apache Commons Lang, a package of Java utility classes for the",
+            "dependencyLevel": null
+        },
+        {
+            "name": "xdb",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                "1.0.0"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "xmlparserv2",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                "1.2.2"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "xmpcore",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                "5.1.2.0002L"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "api",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                "1.0.1.0002L"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "ldap",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                "1.2.4"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        }
+    ]
+}

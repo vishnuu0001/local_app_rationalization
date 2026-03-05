@@ -1,0 +1,408 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 10267,
+                                            "application_name": "Cloudera",
+                                            "counter": 1083.0,
+                                            "effort": 3249.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ClassesComparisons",
+                                    "detail": [
+                                        {
+                                            "application_id": 10267,
+                                            "application_name": "Cloudera",
+                                            "counter": 1.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__RiskyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 10267,
+                                            "application_name": "Cloudera",
+                                            "counter": 14.0,
+                                            "effort": 70.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__Instanceof",
+                                    "detail": [
+                                        {
+                                            "application_id": 10267,
+                                            "application_name": "Cloudera",
+                                            "counter": 64.0,
+                                            "effort": 640.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__PublicAttributes",
+                                    "detail": [
+                                        {
+                                            "application_id": 10267,
+                                            "application_name": "Cloudera",
+                                            "counter": 15.0,
+                                            "effort": 15.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__EmptyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 10267,
+                                            "application_name": "Cloudera",
+                                            "counter": 20.0,
+                                            "effort": 100.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingDefault",
+                                    "detail": [
+                                        {
+                                            "application_id": 10267,
+                                            "application_name": "Cloudera",
+                                            "counter": 3.0,
+                                            "effort": 3.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 10267,
+                                            "application_name": "Cloudera",
+                                            "counter": 17745.0,
+                                            "effort": 17745.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BugPatterns",
+                                    "detail": [
+                                        {
+                                            "application_id": 10267,
+                                            "application_name": "Cloudera",
+                                            "counter": 17.0,
+                                            "effort": 17.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 10267,
+                                            "application_name": "Cloudera",
+                                            "counter": 1096.0,
+                                            "effort": 91.333336
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ClassDefinitions",
+                                    "detail": [
+                                        {
+                                            "application_id": 10267,
+                                            "application_name": "Cloudera",
+                                            "counter": 48.0,
+                                            "effort": 240.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 10267,
+                                            "application_name": "Cloudera",
+                                            "counter": 213.0,
+                                            "effort": 213.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 10267,
+                                            "application_name": "Cloudera",
+                                            "counter": 12.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingAutomatedDoc2",
+                                    "detail": [
+                                        {
+                                            "application_id": 10267,
+                                            "application_name": "Cloudera",
+                                            "counter": 1659.0,
+                                            "effort": 1659.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 10267,
+                                            "application_name": "Cloudera",
+                                            "counter": 748.0,
+                                            "effort": 62.333336
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 10267,
+                                            "application_name": "Cloudera",
+                                            "counter": 46.0,
+                                            "effort": 3.8333335
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 10267,
+                                            "application_name": "Cloudera",
+                                            "counter": 3888.7983,
+                                            "effort": 3888.7983
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__Ternary",
+                                    "detail": [
+                                        {
+                                            "application_id": 10267,
+                                            "application_name": "Cloudera",
+                                            "counter": 214.0,
+                                            "effort": 214.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadDeclarationOrder",
+                                    "detail": [
+                                        {
+                                            "application_id": 10267,
+                                            "application_name": "Cloudera",
+                                            "counter": 30.0,
+                                            "effort": 30.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 10267,
+                                            "application_name": "Cloudera",
+                                            "counter": 42.0,
+                                            "effort": 3.5000002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 10267,
+                                            "application_name": "Cloudera",
+                                            "counter": 13.0,
+                                            "effort": 130.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 10267,
+                                            "application_name": "Cloudera",
+                                            "counter": 65472.0,
+                                            "effort": 65472.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 10267,
+                                            "application_name": "Cloudera",
+                                            "counter": 3.5666666,
+                                            "effort": 17.833332
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 10267,
+                                            "application_name": "Cloudera",
+                                            "counter": 4.92,
+                                            "effort": 24.6
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

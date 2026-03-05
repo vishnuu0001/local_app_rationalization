@@ -1,0 +1,516 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 37877,
+                                            "application_name": "AzureDevOps",
+                                            "counter": 401.0,
+                                            "effort": 1203.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__UnusedParameters",
+                                    "detail": [
+                                        {
+                                            "application_id": 37877,
+                                            "application_name": "AzureDevOps",
+                                            "counter": 37.0,
+                                            "effort": 18.500002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ClassesComparisons",
+                                    "detail": [
+                                        {
+                                            "application_id": 37877,
+                                            "application_name": "AzureDevOps",
+                                            "counter": 2.0,
+                                            "effort": 20.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__Ellipsis",
+                                    "detail": [
+                                        {
+                                            "application_id": 37877,
+                                            "application_name": "AzureDevOps",
+                                            "counter": 16.0,
+                                            "effort": 240.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__LiteralValue",
+                                    "detail": [
+                                        {
+                                            "application_id": 37877,
+                                            "application_name": "AzureDevOps",
+                                            "counter": 12.0,
+                                            "effort": 12.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__IllegalThrows",
+                                    "detail": [
+                                        {
+                                            "application_id": 37877,
+                                            "application_name": "AzureDevOps",
+                                            "counter": 1.0,
+                                            "effort": 5.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__RiskyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 37877,
+                                            "application_name": "AzureDevOps",
+                                            "counter": 31.0,
+                                            "effort": 155.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__Instanceof",
+                                    "detail": [
+                                        {
+                                            "application_id": 37877,
+                                            "application_name": "AzureDevOps",
+                                            "counter": 48.0,
+                                            "effort": 480.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__EqualsNotTestingParameter",
+                                    "detail": [
+                                        {
+                                            "application_id": 37877,
+                                            "application_name": "AzureDevOps",
+                                            "counter": 27.0,
+                                            "effort": 27.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__EndLoopTest",
+                                    "detail": [
+                                        {
+                                            "application_id": 37877,
+                                            "application_name": "AzureDevOps",
+                                            "counter": 5.0,
+                                            "effort": 50.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__PublicAttributes",
+                                    "detail": [
+                                        {
+                                            "application_id": 37877,
+                                            "application_name": "AzureDevOps",
+                                            "counter": 58.0,
+                                            "effort": 58.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__EmptyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 37877,
+                                            "application_name": "AzureDevOps",
+                                            "counter": 2.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 37877,
+                                            "application_name": "AzureDevOps",
+                                            "counter": 26.389988,
+                                            "effort": 26.389988
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BugPatterns",
+                                    "detail": [
+                                        {
+                                            "application_id": 37877,
+                                            "application_name": "AzureDevOps",
+                                            "counter": 4.0,
+                                            "effort": 4.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 37877,
+                                            "application_name": "AzureDevOps",
+                                            "counter": 388.0,
+                                            "effort": 32.333336
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ClassDefinitions",
+                                    "detail": [
+                                        {
+                                            "application_id": 37877,
+                                            "application_name": "AzureDevOps",
+                                            "counter": 42.0,
+                                            "effort": 210.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__StarImport",
+                                    "detail": [
+                                        {
+                                            "application_id": 37877,
+                                            "application_name": "AzureDevOps",
+                                            "counter": 2.0,
+                                            "effort": 2.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 37877,
+                                            "application_name": "AzureDevOps",
+                                            "counter": 436.0,
+                                            "effort": 436.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__EmptyArtifact",
+                                    "detail": [
+                                        {
+                                            "application_id": 37877,
+                                            "application_name": "AzureDevOps",
+                                            "counter": 18.0,
+                                            "effort": 9.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__InlineComment",
+                                    "detail": [
+                                        {
+                                            "application_id": 37877,
+                                            "application_name": "AzureDevOps",
+                                            "counter": 19.0,
+                                            "effort": 19.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingAutomatedDoc2",
+                                    "detail": [
+                                        {
+                                            "application_id": 37877,
+                                            "application_name": "AzureDevOps",
+                                            "counter": 704.0,
+                                            "effort": 704.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 37877,
+                                            "application_name": "AzureDevOps",
+                                            "counter": 221.0,
+                                            "effort": 18.416668
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 37877,
+                                            "application_name": "AzureDevOps",
+                                            "counter": 5.0,
+                                            "effort": 0.4166667
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 37877,
+                                            "application_name": "AzureDevOps",
+                                            "counter": 813.19025,
+                                            "effort": 813.19025
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__Ternary",
+                                    "detail": [
+                                        {
+                                            "application_id": 37877,
+                                            "application_name": "AzureDevOps",
+                                            "counter": 55.0,
+                                            "effort": 55.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadDeclarationOrder",
+                                    "detail": [
+                                        {
+                                            "application_id": 37877,
+                                            "application_name": "AzureDevOps",
+                                            "counter": 123.0,
+                                            "effort": 123.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 37877,
+                                            "application_name": "AzureDevOps",
+                                            "counter": 10.0,
+                                            "effort": 0.8333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__NestedTryCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 37877,
+                                            "application_name": "AzureDevOps",
+                                            "counter": 4.0,
+                                            "effort": 40.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 37877,
+                                            "application_name": "AzureDevOps",
+                                            "counter": 29.949997,
+                                            "effort": 29.949997
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 37877,
+                                            "application_name": "AzureDevOps",
+                                            "counter": 186.45164,
+                                            "effort": 932.25824
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 37877,
+                                            "application_name": "AzureDevOps",
+                                            "counter": 181.19992,
+                                            "effort": 905.99963
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ComplexOperands",
+                                    "detail": [
+                                        {
+                                            "application_id": 37877,
+                                            "application_name": "AzureDevOps",
+                                            "counter": 69.0,
+                                            "effort": 69.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

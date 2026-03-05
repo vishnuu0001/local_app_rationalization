@@ -1,0 +1,192 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 24107,
+                                            "application_name": "CloudFoundry",
+                                            "counter": 1.0,
+                                            "effort": 3.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 24107,
+                                            "application_name": "CloudFoundry",
+                                            "counter": 0.5,
+                                            "effort": 0.5
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__MissingBraces2",
+                                    "detail": [
+                                        {
+                                            "application_id": 24107,
+                                            "application_name": "CloudFoundry",
+                                            "counter": 3.0,
+                                            "effort": 0.5
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 24107,
+                                            "application_name": "CloudFoundry",
+                                            "counter": 9.0,
+                                            "effort": 0.75000006
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__MissingAutomatedDoc2",
+                                    "detail": [
+                                        {
+                                            "application_id": 24107,
+                                            "application_name": "CloudFoundry",
+                                            "counter": 2.0,
+                                            "effort": 2.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 24107,
+                                            "application_name": "CloudFoundry",
+                                            "counter": 26.400002,
+                                            "effort": 26.400002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 24107,
+                                            "application_name": "CloudFoundry",
+                                            "counter": 6.0,
+                                            "effort": 0.5
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 24107,
+                                            "application_name": "CloudFoundry",
+                                            "counter": 1.6500001,
+                                            "effort": 1.6500001
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

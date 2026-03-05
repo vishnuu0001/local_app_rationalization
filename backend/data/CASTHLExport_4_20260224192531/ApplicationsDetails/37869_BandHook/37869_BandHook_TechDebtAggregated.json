@@ -1,0 +1,186 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__VarDecl",
+                                    "detail": [
+                                        {
+                                            "application_id": 37869,
+                                            "application_name": "BandHook",
+                                            "counter": 23.0,
+                                            "effort": 3.8333335
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__Intrinsics",
+                                    "detail": [
+                                        {
+                                            "application_id": 37869,
+                                            "application_name": "BandHook",
+                                            "counter": 25.0,
+                                            "effort": 25.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 37869,
+                                            "application_name": "BandHook",
+                                            "counter": 0.3,
+                                            "effort": 0.3
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__Pipes",
+                                    "detail": [
+                                        {
+                                            "application_id": 37869,
+                                            "application_name": "BandHook",
+                                            "counter": 2.0,
+                                            "effort": 0.33333334
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__MissingDefault",
+                                    "detail": [
+                                        {
+                                            "application_id": 37869,
+                                            "application_name": "BandHook",
+                                            "counter": 2.0,
+                                            "effort": 2.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__ShortVarName",
+                                    "detail": [
+                                        {
+                                            "application_id": 37869,
+                                            "application_name": "BandHook",
+                                            "counter": 2.0,
+                                            "effort": 0.33333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 37869,
+                                            "application_name": "BandHook",
+                                            "counter": 1.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 37869,
+                                            "application_name": "BandHook",
+                                            "counter": 16.800003,
+                                            "effort": 16.800003
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__LocalNames",
+                                    "detail": [
+                                        {
+                                            "application_id": 37869,
+                                            "application_name": "BandHook",
+                                            "counter": 17.0,
+                                            "effort": 2.8333335
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

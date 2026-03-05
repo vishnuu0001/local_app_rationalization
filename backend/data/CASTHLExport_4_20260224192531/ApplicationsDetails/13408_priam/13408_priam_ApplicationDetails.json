@@ -1,0 +1,1357 @@
+{
+    "id": 13408,
+    "name": "priam",
+    "domains": [
+        {
+            "id": 1622,
+            "name": "Core Business Applications"
+        },
+        {
+            "id": 12911,
+            "name": "Portfolio Company Gamma"
+        },
+        {
+            "id": 9752,
+            "name": "AWS Workshop"
+        },
+        {
+            "id": 1455,
+            "name": "Open Source"
+        }
+    ],
+    "metrics": [
+        {
+            "snapshotLabel": "AWS WAR Survey for Reliability_priam",
+            "snapshotDate": 1582088400000,
+            "softwareAgility": 0.6418135762214661,
+            "softwareAgilityAdded": 0.631761908531189,
+            "softwareElegance": 0.9510454535484314,
+            "softwareEleganceAdded": 0.9361507892608643,
+            "softwareResiliency": 0.8249825239181519,
+            "softwareResiliencyAdded": 0.81206214427948,
+            "softwareHealth": 0.8059471845626831,
+            "openSourceSafety": 0.9697613658945331,
+            "openSourceLicense": null,
+            "openSourceObsolescence": null,
+            "openSourceCVE": null,
+            "businessImpact": 0.20812182741116753,
+            "roarIndex": 0.03498981624365483,
+            "backFiredFP": 355.0,
+            "backFiredFPAdded": 355.0,
+            "technicalDebt": 43312.016481377184,
+            "maintenanceRecordedFTE": 1.0,
+            "maintenanceRecommendedFTE": 0.00984657303,
+            "cloudReady": 0.5753921607935906,
+            "cloudReadyScan": 0.4140456182472989,
+            "boosters": 0.029411764705882353,
+            "blockers": 0.4897959183673469,
+            "roadblocks": 182.0,
+            "cloudEffort": 2785,
+            "cloudReadySurvey": 0.7367387033398821,
+            "greenIndex": null,
+            "greenIndexScan": null,
+            "greenIndexSurvey": null,
+            "greenOccurrences": null,
+            "greenEffort": null,
+            "greenDetail": [
+                {
+                    "technology": "Java",
+                    "greenIndexScan": 0.0,
+                    "greenIndexDetails": null
+                },
+                {
+                    "technology": "Groovy",
+                    "greenIndexScan": 0.0,
+                    "greenIndexDetails": null
+                },
+                {
+                    "technology": "Ksh",
+                    "greenIndexScan": 0.0,
+                    "greenIndexDetails": null
+                }
+            ],
+            "totalLinesOfCode": 18900,
+            "totalLinesOfCodeAdded": 18900,
+            "totalLinesOfCodeModified": 0,
+            "totalFiles": 252,
+            "totalFilesAdded": 252,
+            "totalFilesModified": 0,
+            "cloudReadyDetail": [
+                {
+                    "technology": "Java",
+                    "cloudReadyScan": 0.0,
+                    "cloudReadyDetails": [
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Access_Control",
+                                "display": "Access Control List : Using Access Control List",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Access_Control",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Critical",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": -27.2108843537415,
+                            "roadblocks": 2.0,
+                            "cloudEffort": 180,
+                            "files": [
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\backupv2\\FileUploadResult.java",
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\config\\PriamConfigurationPersister.java"
+                            ],
+                            "triggered": true
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Configuration_Except_WebConfig",
+                                "display": "Application Settings Configuration : Using other configuration files than Web configuration",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Configuration_Except_WebConfig",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 0.1589825119236884,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Application_Server_Dependencies",
+                                "display": "Execution Environment : Application server dependencies",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Application_Server_Dependencies",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Framework"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 2.384737678855326,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_File_System",
+                                "display": "Execution Environment : Using file system",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_File_System",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": -5.442176870748299,
+                            "roadblocks": 15.0,
+                            "cloudEffort": 225,
+                            "files": [
+                                "priam\\src\\test\\java\\com\\netflix\\priam\\resources\\BackupServletTest.java",
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\cli\\StaticMembership.java",
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\config\\IConfiguration.java",
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\defaultimpl\\CassandraProcessManager.java",
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\config\\PriamConfiguration.java",
+                                "priam\\src\\test\\java\\com\\netflix\\priam\\config\\FakeConfiguration.java",
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\cred\\ClearCredential.java"
+                            ],
+                            "triggered": true
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_InterApplication_MiddleWare",
+                                "display": "Inter Application Messaging : Using a middleware application",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_InterApplication_MiddleWare",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Medium",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 2.5437201907790143,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Directory_Manipulation_Practice",
+                                "display": "Persistent Files : Perform Directory Manipulation",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Directory_Manipulation_Practice",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": -5.442176870748299,
+                            "roadblocks": 1.0,
+                            "cloudEffort": 15,
+                            "files": [
+                                "priam\\src\\test\\java\\com\\netflix\\priam\\backup\\TestS3FileSystem.java",
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\backup\\AbstractFileSystem.java",
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\services\\SnapshotMetaService.java",
+                                "priam\\src\\test\\java\\com\\netflix\\priam\\backup\\TestSnapshotStatusMgr.java",
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\aws\\S3EncryptedFileSystem.java",
+                                "priam\\src\\test\\java\\com\\netflix\\priam\\restore\\TestPostRestoreHook.java",
+                                "priam\\src\\test\\java\\com\\netflix\\priam\\utils\\BackupFileUtils.java",
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\backup\\FileSnapshotStatusMgr.java",
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\restore\\PostRestoreHook.java",
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\restore\\EncryptedRestoreBase.java",
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\restore\\AbstractRestore.java",
+                                "priam\\src\\test\\java\\com\\netflix\\priam\\backup\\TestBackup.java",
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\backupv2\\MetaV1Proxy.java",
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\backup\\IncrementalMetaData.java",
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\backup\\MetaData.java",
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\backup\\AbstractBackup.java",
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\backupv2\\MetaV2Proxy.java",
+                                "priam\\src\\test\\java\\com\\netflix\\priam\\tuner\\dse\\DseTunerTest.java",
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\identity\\DoubleRing.java",
+                                "priam\\src\\test\\java\\com\\netflix\\priam\\backupv2\\TestForgottenFileManager.java",
+                                "priam\\src\\test\\java\\com\\netflix\\priam\\backup\\TestBackupFile.java",
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\config\\PriamConfigurationPersister.java",
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\backup\\AbstractBackupPath.java"
+                            ],
+                            "triggered": true
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "File_Manipulation_Practice",
+                                "display": "Persistent Files : Perform File Manipulation",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#File_Manipulation_Practice",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": -5.442176870748299,
+                            "roadblocks": 145.0,
+                            "cloudEffort": 2175,
+                            "files": [
+                                "priam\\src\\test\\java\\com\\netflix\\priam\\backup\\TestS3FileSystem.java",
+                                "priam\\src\\test\\java\\com\\netflix\\priam\\backupv2\\TestBackupUtils.java",
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\google\\GoogleEncryptedFileSystem.java",
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\backup\\AbstractFileSystem.java",
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\cryptography\\pgp\\PgpCryptography.java",
+                                "priam\\src\\test\\java\\com\\netflix\\priam\\backup\\TestSnapshotStatusMgr.java",
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\aws\\S3EncryptedFileSystem.java",
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\utils\\SystemUtils.java",
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\compress\\SnappyCompression.java",
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\backup\\CommitLogBackup.java",
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\services\\BackupTTLService.java",
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\restore\\PostRestoreHook.java",
+                                "priam\\src\\test\\java\\com\\netflix\\priam\\backup\\TestBackup.java",
+                                "priam\\src\\test\\java\\com\\netflix\\priam\\backupv2\\TestMetaV2Proxy.java",
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\defaultimpl\\CassandraProcessManager.java",
+                                "priam\\src\\test\\java\\com\\netflix\\priam\\services\\TestBackupTTLService.java",
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\backupv2\\MetaV2Proxy.java",
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\tuner\\StandardTuner.java",
+                                "priam\\src\\test\\java\\com\\netflix\\priam\\backupv2\\TestForgottenFileManager.java",
+                                "priam\\src\\test\\java\\com\\netflix\\priam\\backup\\TestBackupFile.java",
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\config\\PriamConfigurationPersister.java",
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\tuner\\dse\\AuditLogTunerLog4J.java",
+                                "priam\\src\\test\\java\\com\\netflix\\priam\\restore\\TestPostRestoreHook.java",
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\aws\\S3FileSystem.java",
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\utils\\CassandraMonitor.java",
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\backupv2\\ForgottenFilesManager.java",
+                                "priam\\src\\test\\java\\com\\netflix\\priam\\utils\\BackupFileUtils.java",
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\backup\\FileSnapshotStatusMgr.java",
+                                "priam\\src\\test\\java\\com\\netflix\\priam\\tuner\\StandardTunerTest.java",
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\restore\\EncryptedRestoreBase.java",
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\restore\\AbstractRestore.java",
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\backupv2\\MetaV1Proxy.java",
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\backup\\IncrementalMetaData.java",
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\backup\\MetaData.java",
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\backup\\AbstractBackup.java",
+                                "priam\\src\\test\\java\\com\\netflix\\priam\\backup\\TestCompression.java",
+                                "priam\\src\\test\\java\\com\\netflix\\priam\\tuner\\dse\\DseTunerTest.java",
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\identity\\DoubleRing.java",
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\backup\\AbstractBackupPath.java"
+                            ],
+                            "triggered": true
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Access_To_Environment_Variable",
+                                "display": "Execution Environment : Access to environment variable",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Access_To_Environment_Variable",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 1.2718600953895072,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Impersonate_Identity",
+                                "display": "Security & User Authentication : Using impersonate Identity",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Impersonate_Identity",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Critical",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 12.71860095389507,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_SecuredProtocols",
+                                "display": "Security & User Authentication : Use of unsecured network protocols or URI libraries",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_SecuredProtocols",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": -2.7210884353741496,
+                            "roadblocks": 17.0,
+                            "cloudEffort": 170,
+                            "files": [
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\identity\\config\\AWSInstanceInfo.java",
+                                "priam-cass-extensions\\src\\main\\java\\com\\netflix\\priam\\cassandra\\extensions\\PriamStartupAgent.java",
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\resources\\BackupServlet.java",
+                                "priam-cass-extensions\\src\\main\\java\\com\\netflix\\priam\\cassandra\\extensions\\NFSeedProvider.java",
+                                "priam\\src\\main\\java\\com\\netflix\\priam\\identity\\token\\DeadTokenRetriever.java"
+                            ],
+                            "triggered": true,
+                            "cloudRequirementsDetail": [
+                                {
+                                    "cloudRequirement": {
+                                        "id": "Use_SecuredProtocolsHTTP",
+                                        "display": "Security & User Authentication : Use of unsecured network protocols (HTTP)",
+                                        "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_SecuredProtocols",
+                                        "ruleType": "BLOCKER",
+                                        "rulePlatform": null,
+                                        "rulePlatformLabel": null,
+                                        "criticality": "Low",
+                                        "impacts": [
+                                            "Coding"
+                                        ],
+                                        "parent": null
+                                    },
+                                    "roadblocks": 0.0,
+                                    "cloudEffort": null,
+                                    "files": null
+                                },
+                                {
+                                    "cloudRequirement": {
+                                        "id": "Use_SecuredProtocolsFTP",
+                                        "display": "Security & User Authentication : Use of unsecured network protocols (FTP)",
+                                        "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_SecuredProtocols",
+                                        "ruleType": "BLOCKER",
+                                        "rulePlatform": null,
+                                        "rulePlatformLabel": null,
+                                        "criticality": "Low",
+                                        "impacts": [
+                                            "Coding"
+                                        ],
+                                        "parent": null
+                                    },
+                                    "roadblocks": 0.0,
+                                    "cloudEffort": null,
+                                    "files": null
+                                }
+                            ]
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Hardcoded_IP_Address",
+                                "display": "Execution Environment : Using hardcoded network IP address",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Hardcoded_IP_Address",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": -2.7210884353741496,
+                            "roadblocks": 2.0,
+                            "cloudEffort": 20,
+                            "files": [
+                                "priam\\src\\test\\java\\com\\netflix\\priam\\resources\\CassandraConfigTest.java",
+                                "priam\\src\\test\\java\\com\\netflix\\priam\\resources\\PriamInstanceResourceTest.java"
+                            ],
+                            "triggered": true
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Stateful_Session",
+                                "display": "Persistent Files : Using stateful session (Servlet)",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Stateful_Session",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "High",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 2.384737678855326,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Stateful_Session_Spring",
+                                "display": "Persistent Files : Using stateful session (Spring)",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Stateful_Session_Spring",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "High",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 2.384737678855326,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Cloud_Storage_AWS",
+                                "display": "Registry Settings : Using a Cloud-based data storage",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Cloud_Storage",
+                                "ruleType": "BOOSTER",
+                                "rulePlatform": "AWS",
+                                "rulePlatformLabel": "AWS",
+                                "criticality": "Low",
+                                "impacts": null,
+                                "parent": null
+                            },
+                            "contributionScore": 2.941176470588235,
+                            "roadblocks": 0.0,
+                            "cloudEffort": null,
+                            "files": null,
+                            "triggered": true
+                        }
+                    ]
+                }
+            ],
+            "customIndicators": [
+                {
+                    "metricId": 10023356,
+                    "value": "0.0707070707070707"
+                },
+                {
+                    "metricId": 10006001,
+                    "value": "0.2978723404255319"
+                },
+                {
+                    "metricId": 10006305,
+                    "value": "0.48717948717948717"
+                },
+                {
+                    "metricId": 10013600,
+                    "value": "0.7333333333333333"
+                },
+                {
+                    "metricId": 10006302,
+                    "value": "0.5679012345679012"
+                },
+                {
+                    "metricId": 10006301,
+                    "value": "0.3684210526315789"
+                },
+                {
+                    "metricId": 10016304,
+                    "value": "1.0"
+                }
+            ],
+            "technologies": [
+                {
+                    "technology": "Java",
+                    "totalLinesOfCode": 18447,
+                    "totalFiles": 245,
+                    "softwareAgility": 0.6407613754272461,
+                    "softwareElegance": 0.9513010382652283,
+                    "softwareResiliency": 0.8273906111717224,
+                    "softwareHealth": 0.8064843416213989,
+                    "softwareAgilityDetail": {
+                        "highLinesOfCode": 3464,
+                        "mediumLinesOfCode": 12010,
+                        "lowLinesOfCode": 2973
+                    },
+                    "softwareEleganceDetail": {
+                        "highLinesOfCode": 17298,
+                        "mediumLinesOfCode": 1149,
+                        "lowLinesOfCode": 0
+                    },
+                    "softwareResiliencyDetail": {
+                        "highLinesOfCode": 13142,
+                        "mediumLinesOfCode": 4654,
+                        "lowLinesOfCode": 651
+                    },
+                    "softwareHealthDetail": {
+                        "highLinesOfCode": 11301,
+                        "mediumLinesOfCode": 5937,
+                        "lowLinesOfCode": 1208
+                    }
+                },
+                {
+                    "technology": "Groovy",
+                    "totalLinesOfCode": 296,
+                    "totalFiles": 4,
+                    "softwareHealthDetail": {
+                        "highLinesOfCode": null,
+                        "mediumLinesOfCode": null,
+                        "lowLinesOfCode": null
+                    }
+                },
+                {
+                    "technology": "Ksh",
+                    "totalLinesOfCode": 157,
+                    "totalFiles": 3,
+                    "softwareAgility": 0.7654458284378052,
+                    "softwareElegance": 0.9210190773010254,
+                    "softwareResiliency": 0.5420382022857666,
+                    "softwareHealth": 0.7428343693415324,
+                    "softwareAgilityDetail": {
+                        "highLinesOfCode": 137,
+                        "mediumLinesOfCode": 20,
+                        "lowLinesOfCode": 0
+                    },
+                    "softwareEleganceDetail": {
+                        "highLinesOfCode": 157,
+                        "mediumLinesOfCode": 0,
+                        "lowLinesOfCode": 0
+                    },
+                    "softwareResiliencyDetail": {
+                        "highLinesOfCode": 0,
+                        "mediumLinesOfCode": 33,
+                        "lowLinesOfCode": 124
+                    },
+                    "softwareHealthDetail": {
+                        "highLinesOfCode": 98,
+                        "mediumLinesOfCode": 17,
+                        "lowLinesOfCode": 41
+                    }
+                }
+            ],
+            "vulnerabilities": [
+                {
+                    "name": "CVE-2021-29425",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2021-29425",
+                    "description": "In Apache Commons IO before 2.7, When invoking the method FileNameUtils.normalize with an improper input string, like \"//../foo\", or \"\\\\..\\foo\", the result would be the same value, thus possibly providing access to files in the parent directory, but not further above (thus \"limited\" path traversal), if the calling code would use the result to construct a path value.",
+                    "references": [
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r47ab6f68cbba8e730f42c4ea752f3a44eb95fb09064070f2476bb401@%3Cdev.creadur.apache.org%3E",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r2bc986a070457daca457a54fe71ee09d2584c24dc262336ca32b6a19@%3Cdev.creadur.apache.org%3E",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r27b1eedda37468256c4bb768fde1e8b79b37ec975cbbfd0d65a7ac34@%3Cdev.myfaces.apache.org%3E",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rfd01af05babc95b8949e6d8ea78d9834699e1b06981040dde419a330@%3Cdev.commons.apache.org%3E",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/ra8ef65aedc086d2d3d21492b4c08ae0eb8a3a42cc52e29ba1bc009d8@%3Cdev.creadur.apache.org%3E",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r8efcbabde973ea72f5e0933adc48ef1425db5cde850bf641b3993f31@%3Cdev.commons.apache.org%3E",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "https://issues.apache.org/jira/browse/IO-556",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rc359823b5500e9a9a2572678ddb8e01d3505a7ffcadfa8d13b8780ab%40%3Cuser.commons.apache.org%3E",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r8569a41d565ca880a4dee0e645dad1cd17ab4a92e68055ad9ebb7375@%3Cdev.creadur.apache.org%3E",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r523a6ffad58f71c4f3761e3cee72df878e48cdc89ebdce933be1475c@%3Cdev.creadur.apache.org%3E",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/raa053846cae9d497606027816ae87b4e002b2e0eb66cb0dee710e1f5@%3Cdev.creadur.apache.org%3E",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r873d5ddafc0a68fd999725e559776dc4971d1ab39c0f5cc81bd9bc04@%3Ccommits.pulsar.apache.org%3E",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rfa2f08b7c0caf80ca9f4a18bd875918fdd4e894e2ea47942a4589b9c@%3Cdev.creadur.apache.org%3E",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rbebd3e19651baa7a4a5503a9901c95989df9d40602c8e35cb05d3eb5@%3Cdev.creadur.apache.org%3E",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r0d73e2071d1f1afe1a15da14c5b6feb2cf17e3871168d5a3c8451436@%3Ccommits.pulsar.apache.org%3E",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r1c2f4683c35696cf6f863e3c107e37ec41305b1930dd40c17260de71@%3Ccommits.pulsar.apache.org%3E",
+                            "source": null
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "cwes": [
+                        {
+                            "id": "CWE-22",
+                            "dangerousWeakness": false
+                        }
+                    ],
+                    "criticityLabel": "MEDIUM",
+                    "cvssScore": 5.3,
+                    "source": "GITLAB",
+                    "cweId": "CWE-22",
+                    "criticityCategory": "MEDIUM",
+                    "advisory": false,
+                    "isKev": false
+                },
+                {
+                    "matchedCPE": "cpe:/a:apache:commons_io",
+                    "name": "CVE-2024-47554",
+                    "publishedDate": "2024-10-03T12:15:02.613Z",
+                    "lastUpdateDate": "2025-07-10T21:10:32.113Z",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2024-47554",
+                    "description": "Uncontrolled Resource Consumption vulnerability in Apache Commons IO.\n\nThe org.apache.commons.io.input.XmlStreamReader class may excessively consume CPU resources when processing maliciously crafted input.\n\n\nThis issue affects Apache Commons IO: from 2.0 before 2.14.0.\n\nUsers are recommended to upgrade to version 2.14.0 or later, which fixes the issue.",
+                    "references": [
+                        {
+                            "name": "Mailing List",
+                            "url": "http://www.openwall.com/lists/oss-security/2024/10/03/2",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Mailing List",
+                            "url": "https://lists.apache.org/thread/6ozr91rr9cj5lm0zyhv30bsp317hk5z1",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://security.netapp.com/advisory/ntap-20250131-0010/",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "criticityLabel": "MEDIUM",
+                    "cvssScore": 4.3,
+                    "cvssAccessVector": "NETWORK",
+                    "cvssAccessComplexity": "LOW",
+                    "cvssAuthentication": "REQUIRED",
+                    "cvssConfidentialityImpact": "NONE",
+                    "cvssAvailabilityImpact": "LOW",
+                    "source": "NVD",
+                    "criticityCategory": "MEDIUM",
+                    "advisory": false,
+                    "isKev": false
+                },
+                {
+                    "name": "CVE-2012-5783",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2012-5783",
+                    "description": "Apache Commons HttpClient 3.x, as used in Amazon Flexible Payments Service (FPS) merchant Java SDK and other products, does not verify that the server hostname matches a domain name in the subject's Common Name (CN) or subjectAltName field of the X.509 certificate, which allows man-in-the-middle attackers to spoof SSL servers via an arbitrary valid certificate.",
+                    "references": [
+                        {
+                            "name": null,
+                            "url": "http://www.cs.utexas.edu/~shmat/shmat_ccs12.pdf",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "http://lists.opensuse.org/opensuse-updates/2013-02/msg00078.html",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "http://lists.opensuse.org/opensuse-updates/2013-04/msg00053.html",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "http://lists.opensuse.org/opensuse-updates/2013-04/msg00040.html",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "http://rhn.redhat.com/errata/RHSA-2013-0682.html",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "http://rhn.redhat.com/errata/RHSA-2013-1853.html",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "http://rhn.redhat.com/errata/RHSA-2013-1147.html",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "http://rhn.redhat.com/errata/RHSA-2014-0224.html",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "http://www.ubuntu.com/usn/USN-2769-1",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "http://rhn.redhat.com/errata/RHSA-2013-0681.html",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "http://rhn.redhat.com/errata/RHSA-2013-0270.html",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "http://rhn.redhat.com/errata/RHSA-2013-0679.html",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "http://www.securityfocus.com/bid/58073",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "https://access.redhat.com/errata/RHSA-2017:0868",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "http://rhn.redhat.com/errata/RHSA-2013-0680.html",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/79984",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "https://issues.apache.org/jira/browse/HTTPCLIENT-1265",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "http://lists.opensuse.org/opensuse-updates/2013-04/msg00041.html",
+                            "source": null
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "cwes": [
+                        {
+                            "id": "CWE-295",
+                            "label": "Improper Certificate Validation",
+                            "dangerousWeakness": false
+                        }
+                    ],
+                    "criticityLabel": "MEDIUM",
+                    "cvssScore": 5.8,
+                    "source": "GITLAB",
+                    "cweId": "CWE-295",
+                    "cweLabel": "Improper Certificate Validation",
+                    "criticityCategory": "MEDIUM",
+                    "advisory": false,
+                    "isKev": false
+                },
+                {
+                    "matchedCPE": "cpe:/a:netflix:priam",
+                    "name": "CVE-2021-28100",
+                    "publishedDate": "2021-03-24T01:15:13.650Z",
+                    "lastUpdateDate": "2024-11-21T10:59:05.557Z",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2021-28100",
+                    "description": "Priam uses File.createTempFile, which gives the permissions on that file -rw-r--r--. An attacker with read access to the local filesystem can read anything written there by the Priam process.",
+                    "references": [
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://github.com/Netflix/security-bulletins/blob/master/advisories/nflx-2021-002.md",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://github.com/Netflix/security-bulletins/blob/master/advisories/nflx-2021-002.md",
+                            "source": "security-report@netflix.com"
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "criticityLabel": "MEDIUM",
+                    "cvssScore": 5.5,
+                    "cvssAccessVector": "LOCAL",
+                    "cvssAccessComplexity": "LOW",
+                    "cvssAuthentication": "NONE",
+                    "cvssConfidentialityImpact": "HIGH",
+                    "cvssAvailabilityImpact": "NONE",
+                    "source": "NVD",
+                    "criticityCategory": "MEDIUM",
+                    "advisory": false,
+                    "isKev": false
+                }
+            ],
+            "components": [
+                {
+                    "id": 21777,
+                    "name": "commons-logging:commons-logging",
+                    "version": "1.2",
+                    "cves": [],
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 51571,
+                    "name": "com.netflix.priam:priam",
+                    "version": "3.1.70",
+                    "cves": [
+                        {
+                            "name": "CVE-2021-28100"
+                        }
+                    ],
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 51572,
+                    "name": "com.netflix.priam:priam-cass-extensions",
+                    "version": "3.1.65",
+                    "cves": [
+                        {
+                            "name": "CVE-2021-28100"
+                        }
+                    ],
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 15781,
+                    "name": "commons-cli:commons-cli",
+                    "version": "1.4",
+                    "cves": [],
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 558752,
+                    "name": "Netflix/Priam",
+                    "version": "3.11.59",
+                    "cves": [
+                        {
+                            "name": "CVE-2021-28100"
+                        }
+                    ],
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 21115,
+                    "name": "commons-httpclient:commons-httpclient",
+                    "version": "3.1",
+                    "cves": [
+                        {
+                            "name": "CVE-2012-5783"
+                        }
+                    ],
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 14590,
+                    "name": "commons-io:commons-io",
+                    "version": "2.6",
+                    "cves": [
+                        {
+                            "name": "CVE-2021-29425"
+                        },
+                        {
+                            "name": "CVE-2024-47554"
+                        }
+                    ],
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 19646,
+                    "name": "joda-time:joda-time",
+                    "version": "2.10.1",
+                    "cves": [],
+                    "lifeSpan": "N/A"
+                }
+            ]
+        }
+    ],
+    "surveys": [
+        {
+            "id": 371,
+            "ref": "CAST_MAINT",
+            "name": "Software Maintenance Estimate",
+            "questions": [
+                {
+                    "label": "What is the percentage of change to the base code in the last 12 months?",
+                    "value": "10.0",
+                    "questionId": 1000121
+                },
+                {
+                    "label": "What is the average skill level of the development team on this type of application?",
+                    "value": "< 2 months",
+                    "questionId": 1000015,
+                    "choiceId": 1000066
+                },
+                {
+                    "label": "What percentage of the development effort has been spent on maintenance in the last 12 months?",
+                    "value": "10.0",
+                    "questionId": 1000012
+                },
+                {
+                    "label": "What is the annual staff turnover within the development team?",
+                    "value": "3%",
+                    "questionId": 1000016,
+                    "choiceId": 1000141
+                },
+                {
+                    "label": "What is the CMMI level of the organization?",
+                    "value": "Level 1 (upper half)",
+                    "questionId": 1000032,
+                    "choiceId": 1000255
+                }
+            ]
+        },
+        {
+            "id": 1700,
+            "name": "Business Alignment Assessment",
+            "questions": [
+                {
+                    "label": "[Portfolio Management] How many Business processes does the application support?",
+                    "shortLabel": "",
+                    "value": "2 to 4 processes",
+                    "questionId": 10001304,
+                    "choiceId": 10007402
+                },
+                {
+                    "label": "[Portfolio Management] What is the primary capability that this application supports? (APQC short)",
+                    "shortLabel": "What is the primary capability that this application supports",
+                    "value": " 5.0 - Deliver Services",
+                    "questionId": 10006306,
+                    "choiceId": 10012800
+                },
+                {
+                    "label": "[Portfolio Management] What is the application's life cycle stage?",
+                    "shortLabel": "Application LifeCycle",
+                    "value": "Production - Maturity",
+                    "questionId": 10006307,
+                    "choiceId": 10012905
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "ref": "CAST_BI",
+            "name": "Business Impact",
+            "questions": [
+                {
+                    "label": "What is the average number of FTE (Full Time Equivalent) resources that have worked on the source code for this application over the last 12 months?",
+                    "shortLabel": "",
+                    "value": "10.0",
+                    "questionId": 1000011
+                },
+                {
+                    "label": "Is this application aligned with the company's future technology direction?",
+                    "shortLabel": "",
+                    "value": "No",
+                    "questionId": 1000009,
+                    "choiceId": 1000043
+                },
+                {
+                    "label": "The number of major releases delivered over the last 12 months for this application?",
+                    "shortLabel": "",
+                    "value": "4 to 6",
+                    "questionId": 1000006,
+                    "choiceId": 1000453
+                },
+                {
+                    "label": "Could failure of this application lead to loss of customer confidence? Please define the level of impact.",
+                    "value": "Low",
+                    "questionId": 1000022,
+                    "choiceId": 1000220
+                },
+                {
+                    "label": "Could failure of this application lead to harm of the company's public image? Please define the level of impact.",
+                    "value": "Low",
+                    "questionId": 1000021,
+                    "choiceId": 1000000
+                },
+                {
+                    "label": "Could failure of this application lead to loss of revenue or business opportunity? Please define the level of impact.",
+                    "value": "Medium",
+                    "questionId": 1000020,
+                    "choiceId": 1000407
+                },
+                {
+                    "label": "Could failure of this application lead to disruption? Please define the level of impact.",
+                    "value": "Low",
+                    "questionId": 1000019,
+                    "choiceId": 1000192
+                },
+                {
+                    "label": "What is the approximate number of end users for this application?",
+                    "shortLabel": "",
+                    "value": "Less than 100",
+                    "questionId": 1000018,
+                    "choiceId": 1000395
+                },
+                {
+                    "label": "Does the application serve internal or external users?",
+                    "value": "Internal users or business processes",
+                    "questionId": 1000017,
+                    "choiceId": 1000204
+                }
+            ]
+        },
+        {
+            "id": 373,
+            "ref": "CAST_APP",
+            "name": "Application Properties",
+            "questions": [
+                {
+                    "label": "What is the application type?",
+                    "shortLabel": "",
+                    "value": "Production Planning",
+                    "questionId": 1000004,
+                    "choiceId": 1000437
+                },
+                {
+                    "label": "Application Owner's name",
+                    "value": "JFR",
+                    "questionId": 1000002
+                },
+                {
+                    "label": "Is this application a custom application or a Commercial Off The Shelf product?",
+                    "shortLabel": "",
+                    "value": "Custom Application",
+                    "questionId": 1000427,
+                    "choiceId": 1000529
+                },
+                {
+                    "label": "In what year was this application first put into production?",
+                    "shortLabel": "",
+                    "value": "2013",
+                    "questionId": 1000033
+                }
+            ]
+        },
+        {
+            "id": 1701,
+            "name": "IaaS Assessment",
+            "questions": [
+                {
+                    "label": "[IaaS] Performance - Elasticity",
+                    "shortLabel": "",
+                    "value": "Med Low (Moderate spikes regularly)",
+                    "questionId": 10003000,
+                    "choiceId": 10009401
+                },
+                {
+                    "label": "[IaaS] Performance - Scalability",
+                    "shortLabel": "",
+                    "value": "Slow, Linear Growth",
+                    "questionId": 10003001,
+                    "choiceId": 10009406
+                },
+                {
+                    "label": "[IaaS] Performance - Latency",
+                    "shortLabel": "",
+                    "value": "High Performance Computing (<1ms)",
+                    "questionId": 10003003,
+                    "choiceId": 10009419
+                },
+                {
+                    "label": "[IaaS] Performance - Throughput",
+                    "shortLabel": "",
+                    "value": "5-25 Mbps",
+                    "questionId": 10003004,
+                    "choiceId": 10009422
+                },
+                {
+                    "label": "[IaaS] Operations - Business Continuity",
+                    "shortLabel": "",
+                    "value": "High Availability required (99.9% - \"three nines\")",
+                    "questionId": 10003104,
+                    "choiceId": 10009535
+                },
+                {
+                    "label": "[IaaS] Security & Compliance - Jurisdiction",
+                    "shortLabel": "",
+                    "value": "Restricted to a nation",
+                    "questionId": 10003107,
+                    "choiceId": 10009549
+                },
+                {
+                    "label": "[IaaS] Architecture - Application - Complexity",
+                    "shortLabel": "",
+                    "value": "Med Low, (UI with database backend)",
+                    "questionId": 10003008,
+                    "choiceId": 10009443
+                },
+                {
+                    "label": "[IaaS] Architecture - Infrastructure - Hardware Life Expectancy",
+                    "shortLabel": "",
+                    "value": "1-2 years",
+                    "questionId": 10003014,
+                    "choiceId": 10009473
+                },
+                {
+                    "label": "[IaaS] Financial - Operating Cost",
+                    "shortLabel": "",
+                    "value": "Med (Moderate SLAs, Minimal staffing)",
+                    "questionId": 10003015,
+                    "choiceId": 10009477
+                }
+            ]
+        },
+        {
+            "id": 1702,
+            "name": "TCO Assessment",
+            "questions": [
+                {
+                    "label": "[TCO] What is the Total Cost of Ownership for this application?",
+                    "shortLabel": "",
+                    "value": "High",
+                    "questionId": 10006303,
+                    "choiceId": 10012700
+                },
+                {
+                    "label": "[TCO] What is the evolution of the TCO?",
+                    "shortLabel": "",
+                    "value": "Increasing",
+                    "questionId": 10006304,
+                    "choiceId": 10012704
+                }
+            ]
+        },
+        {
+            "id": 2918,
+            "name": "AWS Well Architected Review - Reliability Survey",
+            "questions": [
+                {
+                    "label": "REL 1 How do you manage service limits?",
+                    "shortLabel": "Rel 1",
+                    "value": "Use automated monitoring and management of limits",
+                    "questionId": 10016302,
+                    "choiceId": 10024904
+                },
+                {
+                    "label": "REL 2 How do you manage your network topology?",
+                    "shortLabel": "REL 2",
+                    "value": "Enforce non-overlapping private IP address ranges",
+                    "questionId": 10016303,
+                    "choiceId": 10024907
+                }
+            ]
+        },
+        {
+            "id": 938,
+            "ref": "CAST_CLOUD",
+            "name": "Cloud Readiness Assessment",
+            "questions": [
+                {
+                    "label": "[Business Drivers] Does this application correspond to a specific workload?",
+                    "shortLabel": "",
+                    "value": "MicroServices & Containers",
+                    "questionId": 10000901,
+                    "choiceId": 10006807
+                },
+                {
+                    "label": "[Technical Enablers] Does this application depend on other services or applications?",
+                    "shortLabel": "",
+                    "value": "Internal services exposed through an API",
+                    "questionId": 10000808,
+                    "choiceId": 10006731
+                },
+                {
+                    "label": "[Technical Enablers] What is the database provider for this application?",
+                    "shortLabel": "",
+                    "value": "Standard and supported as a service in the Cloud (PaaS)",
+                    "questionId": 10000809,
+                    "choiceId": 10006734
+                },
+                {
+                    "label": "[Process Maturity] What is the average skill on Cloud technologies and practices within the development team for this application?",
+                    "shortLabel": "",
+                    "value": "Experts",
+                    "questionId": 10000810,
+                    "choiceId": 10006741
+                },
+                {
+                    "label": "[Business Drivers] What is the current (or expected) Service Level Agreement for this application?",
+                    "shortLabel": "",
+                    "value": "SLA with continuity of service",
+                    "questionId": 10000811,
+                    "choiceId": 10006744
+                },
+                {
+                    "label": "[Process Maturity] What is the evolution model and feedback loop approach for this application?",
+                    "shortLabel": "",
+                    "value": "DevOps",
+                    "questionId": 10000800,
+                    "choiceId": 10006702
+                },
+                {
+                    "label": "[Technical Enablers] What is the current deployment platform for this application?",
+                    "shortLabel": "",
+                    "value": "Web application",
+                    "questionId": 10000801,
+                    "choiceId": 10006707
+                },
+                {
+                    "label": "[Technical Enablers] What is the current user authentication mechanism used by this application?",
+                    "shortLabel": "",
+                    "value": "Login/Password authentication",
+                    "questionId": 10000802,
+                    "choiceId": 10006711
+                },
+                {
+                    "label": "[Technical Enablers]  How is this application exposed to external services/applications?",
+                    "shortLabel": "",
+                    "value": "REST API exposed",
+                    "questionId": 10000803,
+                    "choiceId": 10006714
+                },
+                {
+                    "label": "[Business Drivers] How is data consumed from this application?",
+                    "shortLabel": "",
+                    "value": "Data Analytics",
+                    "questionId": 10000805,
+                    "choiceId": 10006721
+                },
+                {
+                    "label": "[Process Maturity] What is the level of deployment process automation for provisioning and configuration for this application?",
+                    "shortLabel": "",
+                    "value": "Semi-automated",
+                    "questionId": 10000806,
+                    "choiceId": 10006724
+                },
+                {
+                    "label": "[Technical Enablers] Is this application multi-tenant?",
+                    "shortLabel": "",
+                    "value": "Yes, multi-tenant front with a dedicated schema (with common database)",
+                    "questionId": 10000807,
+                    "choiceId": 10006728
+                }
+            ]
+        }
+    ],
+    "tags": [
+        {
+            "id": 2207,
+            "label": "AWS WAR Reliability"
+        },
+        {
+            "id": 168,
+            "label": "_Rs-RePlatform {Med BI, Low Risk, High Cost, High PaaS}"
+        },
+        {
+            "id": 256,
+            "label": "Cloud Blockers"
+        },
+        {
+            "id": 253,
+            "label": "AWS Cloud Boosters"
+        },
+        {
+            "id": 302,
+            "label": "CVE - Critical Severity"
+        },
+        {
+            "id": 59,
+            "label": "SCA / OSS"
+        },
+        {
+            "id": 2304,
+            "label": "CR+BI+CustomCode"
+        }
+    ]
+}

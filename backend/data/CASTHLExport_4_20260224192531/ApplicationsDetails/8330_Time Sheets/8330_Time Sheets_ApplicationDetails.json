@@ -1,0 +1,151 @@
+{
+    "id": 8330,
+    "name": "Time Sheets",
+    "domains": [
+        {
+            "id": 393,
+            "name": "Bangalore Captive"
+        },
+        {
+            "id": 254,
+            "name": "Sales and Marketing"
+        },
+        {
+            "id": 12910,
+            "name": "Portfolio Company Beta"
+        }
+    ],
+    "surveys": [
+        {
+            "id": 371,
+            "ref": "CAST_MAINT",
+            "name": "Software Maintenance Estimate",
+            "questions": [
+                {
+                    "label": "What is the average skill level of the development team on this type of application?",
+                    "value": "1 year",
+                    "questionId": 1000015,
+                    "choiceId": 1000068
+                },
+                {
+                    "label": "What percentage of the development effort has been spent on maintenance in the last 12 months?",
+                    "value": "0",
+                    "questionId": 1000012
+                },
+                {
+                    "label": "What is the annual staff turnover within the development team?",
+                    "value": "10%",
+                    "questionId": 1000016,
+                    "choiceId": 1000143
+                },
+                {
+                    "label": "What is the CMMI level of the organization?",
+                    "value": "Level 2",
+                    "questionId": 1000032,
+                    "choiceId": 1000256
+                },
+                {
+                    "label": "What is the percentage of change to the base code in the last 12 months?",
+                    "value": "15",
+                    "questionId": 1000121
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "ref": "CAST_BI",
+            "name": "Business Impact",
+            "questions": [
+                {
+                    "label": "What is the average number of FTE (Full Time Equivalent) resources that have worked on the source code for this application over the last 12 months?",
+                    "shortLabel": "",
+                    "value": "7",
+                    "questionId": 1000011
+                },
+                {
+                    "label": "Is this application aligned with the company's future technology direction?",
+                    "shortLabel": "",
+                    "value": "Yes",
+                    "questionId": 1000009,
+                    "choiceId": 1000042
+                },
+                {
+                    "label": "The number of major releases delivered over the last 12 months for this application?",
+                    "shortLabel": "",
+                    "value": "4 to 6",
+                    "questionId": 1000006,
+                    "choiceId": 1000453
+                },
+                {
+                    "label": "Could failure of this application lead to loss of customer confidence? Please define the level of impact.",
+                    "value": "Very High",
+                    "questionId": 1000022,
+                    "choiceId": 1000223
+                },
+                {
+                    "label": "Could failure of this application lead to harm of the company's public image? Please define the level of impact.",
+                    "value": "Medium",
+                    "questionId": 1000021,
+                    "choiceId": 1000001
+                },
+                {
+                    "label": "Could failure of this application lead to loss of revenue or business opportunity? Please define the level of impact.",
+                    "value": "High",
+                    "questionId": 1000020,
+                    "choiceId": 1000408
+                },
+                {
+                    "label": "Could failure of this application lead to disruption? Please define the level of impact.",
+                    "value": "Low",
+                    "questionId": 1000019,
+                    "choiceId": 1000192
+                },
+                {
+                    "label": "What is the approximate number of end users for this application?",
+                    "shortLabel": "",
+                    "value": "100 to 500",
+                    "questionId": 1000018,
+                    "choiceId": 1000396
+                },
+                {
+                    "label": "Does the application serve internal or external users?",
+                    "value": "Internal users or business processes",
+                    "questionId": 1000017,
+                    "choiceId": 1000204
+                }
+            ]
+        },
+        {
+            "id": 373,
+            "ref": "CAST_APP",
+            "name": "Application Properties",
+            "questions": [
+                {
+                    "label": "What is the application type?",
+                    "shortLabel": "",
+                    "value": "Global Securities",
+                    "questionId": 1000004,
+                    "choiceId": 1000434
+                },
+                {
+                    "label": "Application Owner's name",
+                    "value": "Alexandra Szynkarski",
+                    "questionId": 1000002
+                },
+                {
+                    "label": "Is this application a custom application or a Commercial Off The Shelf product?",
+                    "shortLabel": "",
+                    "value": "Custom Application",
+                    "questionId": 1000427,
+                    "choiceId": 1000529
+                },
+                {
+                    "label": "In what year was this application first put into production?",
+                    "shortLabel": "",
+                    "value": "2008",
+                    "questionId": 1000033
+                }
+            ]
+        }
+    ]
+}

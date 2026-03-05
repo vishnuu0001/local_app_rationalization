@@ -1,0 +1,31 @@
+[
+    {
+        "id": "Use_Configuration_Except_WebConfig-CSHARP",
+        "display": "Application Settings Configuration : Using other configuration files than Web configuration",
+        "criticality": "Low",
+        "impacts": [
+            "Container only"
+        ],
+        "roadblocks": 1.0,
+        "cloudEffort": 15,
+        "files": [
+            "C:\\Users\\NBA\\Downloads\\CloudReadyPivotal/Id_Config_EventLogTraceListener/KO_Id_Config_EventLogTraceListener/app.config"
+        ]
+    },
+    {
+        "id": "Use_File_System-CSHARP",
+        "display": "Execution Environment : Using file system",
+        "criticality": "Low",
+        "impacts": [
+            "Code",
+            "Container only"
+        ],
+        "roadblocks": 3.0,
+        "cloudEffort": 45,
+        "files": [
+            "Id_Config_EventLogTraceListenerCS\\OK\\OK.cs",
+            "Id_New_EventLogCS\\OK_Id_New_EventLog.cs",
+            "Id_New_EventLogTraceListenerCS\\OK_Id_New_EventLogTraceListener.cs"
+        ]
+    }
+]

@@ -1,0 +1,420 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 8171,
+                                            "application_name": "B2B Interface",
+                                            "counter": 13708.0,
+                                            "effort": 41124.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__SQL",
+                                    "detail": [
+                                        {
+                                            "application_id": 8171,
+                                            "application_name": "B2B Interface",
+                                            "counter": 1.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__SimpleCompute",
+                                    "detail": [
+                                        {
+                                            "application_id": 8171,
+                                            "application_name": "B2B Interface",
+                                            "counter": 15.0,
+                                            "effort": 15.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__ParaNameWithoutDot",
+                                    "detail": [
+                                        {
+                                            "application_id": 8171,
+                                            "application_name": "B2B Interface",
+                                            "counter": 5321.0,
+                                            "effort": 443.4167
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__NoCopyClause",
+                                    "detail": [
+                                        {
+                                            "application_id": 8171,
+                                            "application_name": "B2B Interface",
+                                            "counter": 80.0,
+                                            "effort": 80.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__BadZone",
+                                    "detail": [
+                                        {
+                                            "application_id": 8171,
+                                            "application_name": "B2B Interface",
+                                            "counter": 126.0,
+                                            "effort": 10.500001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__CuriousFilePb",
+                                    "detail": [
+                                        {
+                                            "application_id": 8171,
+                                            "application_name": "B2B Interface",
+                                            "counter": 15.0,
+                                            "effort": 15.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__ProhibitedKeyword",
+                                    "detail": [
+                                        {
+                                            "application_id": 8171,
+                                            "application_name": "B2B Interface",
+                                            "counter": 8882.0,
+                                            "effort": 44410.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__SeriousFilePb",
+                                    "detail": [
+                                        {
+                                            "application_id": 8171,
+                                            "application_name": "B2B Interface",
+                                            "counter": 243.0,
+                                            "effort": 243.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__MissingDefault",
+                                    "detail": [
+                                        {
+                                            "application_id": 8171,
+                                            "application_name": "B2B Interface",
+                                            "counter": 113.0,
+                                            "effort": 113.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__MissingEnd",
+                                    "detail": [
+                                        {
+                                            "application_id": 8171,
+                                            "application_name": "B2B Interface",
+                                            "counter": 26842.0,
+                                            "effort": 26842.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__DuplicatedParaName",
+                                    "detail": [
+                                        {
+                                            "application_id": 8171,
+                                            "application_name": "B2B Interface",
+                                            "counter": 3978.0,
+                                            "effort": 663.00006
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__BadInit",
+                                    "detail": [
+                                        {
+                                            "application_id": 8171,
+                                            "application_name": "B2B Interface",
+                                            "counter": 82.0,
+                                            "effort": 82.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__BackPerform",
+                                    "detail": [
+                                        {
+                                            "application_id": 8171,
+                                            "application_name": "B2B Interface",
+                                            "counter": 405.0,
+                                            "effort": 6075.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 8171,
+                                            "application_name": "B2B Interface",
+                                            "counter": 5542.0,
+                                            "effort": 461.83334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__MultAffect",
+                                    "detail": [
+                                        {
+                                            "application_id": 8171,
+                                            "application_name": "B2B Interface",
+                                            "counter": 9432.0,
+                                            "effort": 3144.0002
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 8171,
+                                            "application_name": "B2B Interface",
+                                            "counter": 20411.205,
+                                            "effort": 20411.205
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__BadEndClauseAlign",
+                                    "detail": [
+                                        {
+                                            "application_id": 8171,
+                                            "application_name": "B2B Interface",
+                                            "counter": 3366.0,
+                                            "effort": 280.5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 8171,
+                                            "application_name": "B2B Interface",
+                                            "counter": 60.0,
+                                            "effort": 600.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__NbFiles",
+                                    "detail": [
+                                        {
+                                            "application_id": 8171,
+                                            "application_name": "B2B Interface",
+                                            "counter": 38.25,
+                                            "effort": 191.25
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 8171,
+                                            "application_name": "B2B Interface",
+                                            "counter": 207.73143,
+                                            "effort": 1038.6571
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__DONNEES",
+                                    "detail": [
+                                        {
+                                            "application_id": 8171,
+                                            "application_name": "B2B Interface",
+                                            "counter": 9726.0,
+                                            "effort": 9726.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 8171,
+                                            "application_name": "B2B Interface",
+                                            "counter": 147.98335,
+                                            "effort": 739.91675
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__ComplexConditions",
+                                    "detail": [
+                                        {
+                                            "application_id": 8171,
+                                            "application_name": "B2B Interface",
+                                            "counter": 426.0,
+                                            "effort": 4260.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

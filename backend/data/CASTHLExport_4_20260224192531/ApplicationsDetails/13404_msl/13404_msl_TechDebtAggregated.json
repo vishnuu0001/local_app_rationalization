@@ -1,0 +1,1296 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 1546.0,
+                                            "effort": 4638.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ClassesComparisons",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 51.0,
+                                            "effort": 510.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__IllegalThrows",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 10.0,
+                                            "effort": 50.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 5.0,
+                                            "effort": 25.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__VarDecl",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 35.0,
+                                            "effort": 5.8333335
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__Array",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 50.0,
+                                            "effort": 8.333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__String",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 7062.0,
+                                            "effort": 588.50006
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MissingSemicolon",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 32.0,
+                                            "effort": 2.6666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 4436.0,
+                                            "effort": 13308.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 107.79993,
+                                            "effort": 107.79993
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__RiskyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 4.0,
+                                            "effort": 20.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__Instanceof",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 385.0,
+                                            "effort": 3850.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__OverloadEquals",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 44.0,
+                                            "effort": 440.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__OutOfFinallyJumps",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 1.0,
+                                            "effort": 5.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__PublicAttributes",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 1.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__MissingClassDestructor2",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 1.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__Intrinsics",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 37.0,
+                                            "effort": 37.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 0.3,
+                                            "effort": 0.3
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__Pipes",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 2.0,
+                                            "effort": 0.33333334
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__StrongDataAccess",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 3212.0,
+                                            "effort": 1070.6667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MissingBraces",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 1451.0,
+                                            "effort": 241.83334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BehaviourAlteration",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 2.0,
+                                            "effort": 30.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadLoop",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 59.0,
+                                            "effort": 295.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MissingBreakInCasePath",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 69.0,
+                                            "effort": 5.7500005
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__PublicAttributes",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 220.0,
+                                            "effort": 220.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingBraces2",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 1405.0,
+                                            "effort": 1405.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__EmptyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 33.0,
+                                            "effort": 165.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingDefault",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 8.0,
+                                            "effort": 8.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 23228.0,
+                                            "effort": 23228.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingBreakInSwitch",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 4.0,
+                                            "effort": 0.33333334
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__MissingClassDestructor",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 1.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__ExplicitExit",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 7.0,
+                                            "effort": 1.1666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__MissingDefault",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 2.0,
+                                            "effort": 2.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__This",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 2487.0,
+                                            "effort": 37305.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__InnerFunction",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 4.0,
+                                            "effort": 1.3333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MissingIdentical",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 1663.0,
+                                            "effort": 138.58334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__DepthCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 1.0,
+                                            "effort": 5.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__EndLoopTest",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 8.0,
+                                            "effort": 80.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__AssignmentsInConditionalExpr",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 1.0,
+                                            "effort": 0.5
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 32.0,
+                                            "effort": 32.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 1086.0,
+                                            "effort": 90.50001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ClassDefinitions",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 161.0,
+                                            "effort": 805.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__StarImport",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 9.0,
+                                            "effort": 9.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 526.0,
+                                            "effort": 526.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 4.0,
+                                            "effort": 0.33333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 4.0,
+                                            "effort": 0.33333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 1.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 7.0,
+                                            "effort": 7.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__ShortVarName",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 2.0,
+                                            "effort": 0.33333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 8.0,
+                                            "effort": 8.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 11687.0,
+                                            "effort": 973.9167
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__Prototype",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 23893.0,
+                                            "effort": 1991.0835
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 4386.0,
+                                            "effort": 365.50003
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 2339.0,
+                                            "effort": 194.91667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingAutomatedDoc2",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 1357.0,
+                                            "effort": 1357.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 732.0,
+                                            "effort": 61.000004
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 300.0,
+                                            "effort": 25.000002
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 3.0,
+                                            "effort": 0.25
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 26.4,
+                                            "effort": 26.4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__LocalNames",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 28.0,
+                                            "effort": 4.666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 1053.0,
+                                            "effort": 87.75001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 94.0,
+                                            "effort": 7.833334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MultDecl",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 577.0,
+                                            "effort": 48.083336
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 3877.9995,
+                                            "effort": 3877.9995
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__Ternary",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 239.0,
+                                            "effort": 239.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadDeclarationOrder",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 325.0,
+                                            "effort": 325.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 55.0,
+                                            "effort": 4.5833335
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 34.0,
+                                            "effort": 340.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 2144.8901,
+                                            "effort": 2144.8901
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadDeclarationOrder",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 77.0,
+                                            "effort": 77.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__VarDecl",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 4128.0,
+                                            "effort": 688.00006
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__ApplicationGlobalVariables",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 154.0,
+                                            "effort": 25.666668
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 55.0,
+                                            "effort": 550.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 84244.0,
+                                            "effort": 84244.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 5.0,
+                                            "effort": 25.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 0.041666668,
+                                            "effort": 0.20833334
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 7401.445,
+                                            "effort": 37007.223
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 335.96,
+                                            "effort": 335.96
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 48.519997,
+                                            "effort": 242.59998
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 24.940004,
+                                            "effort": 124.70002
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__NBATTRIB",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 1.0,
+                                            "effort": 5.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__Include",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 2.0,
+                                            "effort": 2.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__NBMETH",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 25227.0,
+                                            "effort": 126135.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ComplexConditions",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 6.0,
+                                            "effort": 60.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__ComplexConditions",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 5.0,
+                                            "effort": 50.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 13404,
+                                            "application_name": "msl",
+                                            "counter": 75.0,
+                                            "effort": 375.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

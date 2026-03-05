@@ -1,0 +1,804 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 26.0,
+                                            "effort": 78.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__IllegalThrows",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 11.0,
+                                            "effort": 55.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__String",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 97.0,
+                                            "effort": 8.083334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MissingSemicolon",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 883.0,
+                                            "effort": 73.583336
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 91.0,
+                                            "effort": 273.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 18.739998,
+                                            "effort": 18.739998
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__RiskyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 17.0,
+                                            "effort": 85.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__Instanceof",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 6.0,
+                                            "effort": 60.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__StrongDataAccess",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 564.0,
+                                            "effort": 188.00002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__Eval",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 1.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MissingBraces",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 124.0,
+                                            "effort": 20.666668
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadLoop",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 2.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__PublicAttributes",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 3.0,
+                                            "effort": 3.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingBraces2",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 42.0,
+                                            "effort": 42.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__EmptyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 6.0,
+                                            "effort": 30.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingDefault",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 2.0,
+                                            "effort": 2.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 2688.0,
+                                            "effort": 2688.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__This",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 591.0,
+                                            "effort": 8865.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MissingIdentical",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 187.0,
+                                            "effort": 15.583334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__EndLoopTest",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 1.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MultilineInstruction",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 14.0,
+                                            "effort": 1.1666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 7.0,
+                                            "effort": 7.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 91.0,
+                                            "effort": 7.5833335
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ClassDefinitions",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 4.0,
+                                            "effort": 20.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 17.0,
+                                            "effort": 17.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 230.0,
+                                            "effort": 19.166668
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__Prototype",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 33.0,
+                                            "effort": 2.7500002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 672.0,
+                                            "effort": 56.000004
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__ImmediateFuncCall",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 23.0,
+                                            "effort": 1.9166667
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 10.0,
+                                            "effort": 0.8333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingAutomatedDoc2",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 235.0,
+                                            "effort": 235.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 101.0,
+                                            "effort": 8.416667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 6.0,
+                                            "effort": 0.5
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 35.0,
+                                            "effort": 2.9166667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 50.0,
+                                            "effort": 4.166667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MultDecl",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 8.0,
+                                            "effort": 0.6666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 693.8,
+                                            "effort": 693.8
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__Ternary",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 5.0,
+                                            "effort": 5.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadDeclarationOrder",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 7.0,
+                                            "effort": 7.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 7.0,
+                                            "effort": 0.5833334
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 68.840004,
+                                            "effort": 68.840004
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadDeclarationOrder",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 17.0,
+                                            "effort": 17.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__VarDecl",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 109.0,
+                                            "effort": 18.166668
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__ApplicationGlobalVariables",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 8.0,
+                                            "effort": 1.3333334
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 9057.0,
+                                            "effort": 9057.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 319.99997,
+                                            "effort": 1599.9999
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 21.859999,
+                                            "effort": 21.859999
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 0.84333336,
+                                            "effort": 4.2166667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 0.04,
+                                            "effort": 0.19999999
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__NBMETH",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 359.0,
+                                            "effort": 1795.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__ComplexConditions",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 1.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 10028,
+                                            "application_name": "DeliveryServer",
+                                            "counter": 7.0,
+                                            "effort": 35.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

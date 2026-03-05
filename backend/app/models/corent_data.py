@@ -11,6 +11,8 @@ class CorentData(db.Model):
     business_owner = db.Column(db.String(255))
     platform_host = db.Column(db.String(255))
     server_type = db.Column(db.String(255))
+    server_ip = db.Column(db.String(100))
+    server_name = db.Column(db.String(255))
     operating_system = db.Column(db.String(255))
     cpu_core = db.Column(db.String(100))
     memory = db.Column(db.String(100))
@@ -61,6 +63,8 @@ class CorentData(db.Model):
             'business_owner': self.business_owner,
             'platform_host': self.platform_host,
             'server_type': self.server_type,
+            'server_ip': self.server_ip,
+            'server_name': self.server_name,
             'operating_system': self.operating_system,
             'cpu_core': self.cpu_core,
             'memory': self.memory,

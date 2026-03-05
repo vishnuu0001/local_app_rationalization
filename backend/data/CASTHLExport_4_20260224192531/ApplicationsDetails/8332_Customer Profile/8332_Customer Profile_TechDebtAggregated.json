@@ -1,0 +1,564 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "OBJCCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 8332,
+                                            "application_name": "Customer Profile",
+                                            "counter": 58.0,
+                                            "effort": 174.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__PragmaMark",
+                                    "detail": [
+                                        {
+                                            "application_id": 8332,
+                                            "application_name": "Customer Profile",
+                                            "counter": 70.0,
+                                            "effort": 700.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 8332,
+                                            "application_name": "Customer Profile",
+                                            "counter": 57.300003,
+                                            "effort": 57.300003
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__ResourceManagement",
+                                    "detail": [
+                                        {
+                                            "application_id": 8332,
+                                            "application_name": "Customer Profile",
+                                            "counter": 1.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__RiskyFunctionCalls",
+                                    "detail": [
+                                        {
+                                            "application_id": 8332,
+                                            "application_name": "Customer Profile",
+                                            "counter": 7.0,
+                                            "effort": 70.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__ResourceManagement2",
+                                    "detail": [
+                                        {
+                                            "application_id": 8332,
+                                            "application_name": "Customer Profile",
+                                            "counter": 1.0,
+                                            "effort": 0.5
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "OBJCCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__MacroUnparenthesedParams",
+                                    "detail": [
+                                        {
+                                            "application_id": 8332,
+                                            "application_name": "Customer Profile",
+                                            "counter": 1.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__MissingBraces",
+                                    "detail": [
+                                        {
+                                            "application_id": 8332,
+                                            "application_name": "Customer Profile",
+                                            "counter": 117.0,
+                                            "effort": 19.500002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__BooleanPitfall",
+                                    "detail": [
+                                        {
+                                            "application_id": 8332,
+                                            "application_name": "Customer Profile",
+                                            "counter": 1.0,
+                                            "effort": 0.25
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__Data",
+                                    "detail": [
+                                        {
+                                            "application_id": 8332,
+                                            "application_name": "Customer Profile",
+                                            "counter": 74.0,
+                                            "effort": 1110.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "OBJCCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__MissingDefault",
+                                    "detail": [
+                                        {
+                                            "application_id": 8332,
+                                            "application_name": "Customer Profile",
+                                            "counter": 2.0,
+                                            "effort": 2.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__UninitializedLocalVariables",
+                                    "detail": [
+                                        {
+                                            "application_id": 8332,
+                                            "application_name": "Customer Profile",
+                                            "counter": 8.0,
+                                            "effort": 1.3333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__NSLog",
+                                    "detail": [
+                                        {
+                                            "application_id": 8332,
+                                            "application_name": "Customer Profile",
+                                            "counter": 5.0,
+                                            "effort": 0.8333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__MissingBreakInCasePath",
+                                    "detail": [
+                                        {
+                                            "application_id": 8332,
+                                            "application_name": "Customer Profile",
+                                            "counter": 1.0,
+                                            "effort": 0.083333336
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__AssignmentsInConditionalExpr",
+                                    "detail": [
+                                        {
+                                            "application_id": 8332,
+                                            "application_name": "Customer Profile",
+                                            "counter": 1.0,
+                                            "effort": 0.5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__BugPatterns",
+                                    "detail": [
+                                        {
+                                            "application_id": 8332,
+                                            "application_name": "Customer Profile",
+                                            "counter": 2.0,
+                                            "effort": 2.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "OBJCCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 8332,
+                                            "application_name": "Customer Profile",
+                                            "counter": 15.0,
+                                            "effort": 15.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 8332,
+                                            "application_name": "Customer Profile",
+                                            "counter": 187.0,
+                                            "effort": 15.583334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 8332,
+                                            "application_name": "Customer Profile",
+                                            "counter": 134.0,
+                                            "effort": 11.166667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 8332,
+                                            "application_name": "Customer Profile",
+                                            "counter": 70.0,
+                                            "effort": 5.8333335
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 8332,
+                                            "application_name": "Customer Profile",
+                                            "counter": 7.0,
+                                            "effort": 7.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "OBJCCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__Ternary",
+                                    "detail": [
+                                        {
+                                            "application_id": 8332,
+                                            "application_name": "Customer Profile",
+                                            "counter": 36.0,
+                                            "effort": 36.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 8332,
+                                            "application_name": "Customer Profile",
+                                            "counter": 153.0,
+                                            "effort": 12.750001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__BadDeclarationOrder",
+                                    "detail": [
+                                        {
+                                            "application_id": 8332,
+                                            "application_name": "Customer Profile",
+                                            "counter": 1.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__ClassImplementations",
+                                    "detail": [
+                                        {
+                                            "application_id": 8332,
+                                            "application_name": "Customer Profile",
+                                            "counter": 10.0,
+                                            "effort": 50.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 8332,
+                                            "application_name": "Customer Profile",
+                                            "counter": 25.0,
+                                            "effort": 2.0833335
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__BoxedOrLiteral",
+                                    "detail": [
+                                        {
+                                            "application_id": 8332,
+                                            "application_name": "Customer Profile",
+                                            "counter": 5.0,
+                                            "effort": 0.8333334
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "OBJCCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 8332,
+                                            "application_name": "Customer Profile",
+                                            "counter": 1064.0,
+                                            "effort": 1064.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__PreprocDirective",
+                                    "detail": [
+                                        {
+                                            "application_id": 8332,
+                                            "application_name": "Customer Profile",
+                                            "counter": 32.0,
+                                            "effort": 32.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__NegativeComparison",
+                                    "detail": [
+                                        {
+                                            "application_id": 8332,
+                                            "application_name": "Customer Profile",
+                                            "counter": 74.0,
+                                            "effort": 24.666668
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 8332,
+                                            "application_name": "Customer Profile",
+                                            "counter": 2.0,
+                                            "effort": 20.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "OBJCCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 8332,
+                                            "application_name": "Customer Profile",
+                                            "counter": 2.8939998,
+                                            "effort": 14.469999
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 8332,
+                                            "application_name": "Customer Profile",
+                                            "counter": 96.96002,
+                                            "effort": 96.96002
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "OBJCCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 8332,
+                                            "application_name": "Customer Profile",
+                                            "counter": 8.2,
+                                            "effort": 41.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "OBJCCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__NBMETH",
+                                    "detail": [
+                                        {
+                                            "application_id": 8332,
+                                            "application_name": "Customer Profile",
+                                            "counter": 445.0,
+                                            "effort": 2225.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__ComplexConditions",
+                                    "detail": [
+                                        {
+                                            "application_id": 8332,
+                                            "application_name": "Customer Profile",
+                                            "counter": 4.0,
+                                            "effort": 40.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

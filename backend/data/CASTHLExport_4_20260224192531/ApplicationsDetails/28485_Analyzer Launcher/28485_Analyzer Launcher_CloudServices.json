@@ -1,0 +1,554 @@
+[
+    {
+        "platformId": "aws",
+        "platformName": "Amazon Web Services",
+        "platformUrl": "https://www.aws.com",
+        "recommendations": [
+            {
+                "id": "aws_batch",
+                "name": "AWS Batch",
+                "category": "Compute",
+                "description": "Fully managed batch processing at any scale",
+                "url": "https://aws.amazon.com/batch/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Getting Started with AWS Batch",
+                        "url": "https://aws.amazon.com/batch/getting-started/?nc=sn&loc=4"
+                    }
+                ],
+                "considerations": "For your ETL use cases, you might consider using AWS Glue. For other batch-oriented use cases, including some ETL use cases, AWS Batch might be a better fit",
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "KSH",
+                        "details": {
+                            "loc": 36.0,
+                            "label": "Ksh"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "aws_ec2",
+                "name": "Amazon EC2",
+                "category": "Compute",
+                "description": "Secure and resizable compute capacity in the cloud. Launch applications when needed without upfront commitments",
+                "url": "https://aws.amazon.com/ec2/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Getting Started with Amazon EC2",
+                        "url": "https://aws.amazon.com/ec2/getting-started/"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "PHP",
+                        "details": {
+                            "loc": 698.0,
+                            "label": "PHP"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "aws_mongodb",
+                "name": "MongoDB on AWS",
+                "category": "Databases",
+                "description": "Scalable NoSQL database with document-oriented storage on the AWS Cloud",
+                "url": "https://aws.amazon.com/quickstart/architecture/mongodb/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "MongoDB on the AWS Cloud: Quick Start Reference Deployment",
+                        "url": "https://docs.aws.amazon.com/quickstart/latest/mongodb/welcome.html"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "sca",
+                        "ruleId": "mongodb.npm",
+                        "details": {
+                            "repo": null
+                        }
+                    },
+                    {
+                        "type": "sca",
+                        "ruleId": "mongodb:",
+                        "details": {
+                            "repo": null
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "platformId": "azure",
+        "platformName": "Microsoft Azure",
+        "platformUrl": "https://azure.microsoft.com",
+        "recommendations": [
+            {
+                "id": "azure_appservice",
+                "name": "Azure App Service",
+                "category": "Compute",
+                "description": "Build, deploy, and scale web apps on a fully managed platform",
+                "url": "https://azure.microsoft.com/en-us/services/app-service/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "App Service Documentation",
+                        "url": "https://docs.microsoft.com/en-us/azure/app-service/"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "JS",
+                        "details": {
+                            "loc": 68635.0,
+                            "label": "JavaScript"
+                        }
+                    },
+                    {
+                        "type": "technology",
+                        "ruleId": "PHP",
+                        "details": {
+                            "loc": 698.0,
+                            "label": "PHP"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "azure_batch",
+                "name": "Azure Batch",
+                "category": "Compute",
+                "description": "Cloud-scale job scheduling and compute management",
+                "url": "https://azure.microsoft.com/en-us/services/batch/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Azure Batch documentation",
+                        "url": "https://docs.microsoft.com/en-us/azure/batch/"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "KSH",
+                        "details": {
+                            "loc": 36.0,
+                            "label": "Ksh"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "azure_containerapps",
+                "name": "Azure Container Apps",
+                "category": "Container",
+                "description": "Build and deploy fully managed, cloud- native apps and microservices using serverless containers",
+                "url": "https://azure.microsoft.com/en-us/products/container-apps",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Quickstart: Deploy your first container app with containerapp up",
+                        "url": "https://learn.microsoft.com/en-us/azure/container-apps/get-started?ocid=AID3042118&tabs=bash"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "JS",
+                        "details": {
+                            "loc": 68635.0,
+                            "label": "JavaScript"
+                        }
+                    },
+                    {
+                        "type": "technology",
+                        "ruleId": "PHP",
+                        "details": {
+                            "loc": 698.0,
+                            "label": "PHP"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "azure_mongodb",
+                "name": "Azure Cosmos DB",
+                "category": "Databases",
+                "description": "Globally distributed, multi-model database service for any scale",
+                "url": "https://azure.microsoft.com/en-us/services/cosmos-db/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Azure CosmosDB tutorial for MongoDB",
+                        "url": "https://docs.microsoft.com/en-us/azure/cosmos-db/tutorial-query-mongodb"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "sca",
+                        "ruleId": "mongodb.npm",
+                        "details": {
+                            "repo": null
+                        }
+                    },
+                    {
+                        "type": "sca",
+                        "ruleId": "mongodb:",
+                        "details": {
+                            "repo": null
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "azure_containers",
+                "name": "Azure Kubernetes Service (AKS)",
+                "category": "Container",
+                "description": "Highly available, secure, and fully managed Kubernetes service",
+                "url": "https://azure.microsoft.com/en-us/services/kubernetes-service/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Azure Kubernetes Service (AKS) documentation",
+                        "url": "https://docs.microsoft.com/en-us/azure/aks/"
+                    }
+                ],
+                "considerations": "The applicability of this recommendation will depend on your organization's container strategy, and which target is recommended as part of this strategy: Virtual machines, Individual containers, Kubernetes clusters, etc. Your container strategy will also inform how processes and people impact the technology choices, if for example a DevOps strategy or a Microservices strategy exists.",
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "JS",
+                        "details": {
+                            "loc": 68635.0,
+                            "label": "JavaScript"
+                        }
+                    },
+                    {
+                        "type": "technology",
+                        "ruleId": "PHP",
+                        "details": {
+                            "loc": 698.0,
+                            "label": "PHP"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "azure_openshift",
+                "name": "Azure Red Hat OpenShift",
+                "category": "Container",
+                "description": "Build, deploy, and scale apps on OpenShift with confidence. Azure Red Hat OpenShift provides highly available, fully managed OpenShift clusters on demand, monitored and operated jointly by Microsoft and Red Hat. Kubernetes is at the core of Red Hat OpenShift. OpenShift brings added-value features to complement Kubernetes, making it a turnkey container platform as a service (PaaS) with a significantly improved developer and operator experience.",
+                "url": "https://azure.microsoft.com/en-us/products/openshift",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Intro to Azure Red Hat OpenShift",
+                        "url": "https://learn.microsoft.com/en-us/azure/openshift/intro-openshift"
+                    }
+                ],
+                "considerations": "The applicability of this recommendation will depend on your organization's container strategy, and which target is recommended as part of this strategy: Virtual machines, Individual containers, Kubernetes clusters, etc. Your container strategy will also inform how processes and people impact the technology choices, if for example a DevOps strategy or a Microservices strategy exists.",
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "JS",
+                        "details": {
+                            "loc": 68635.0,
+                            "label": "JavaScript"
+                        }
+                    },
+                    {
+                        "type": "technology",
+                        "ruleId": "PHP",
+                        "details": {
+                            "loc": 698.0,
+                            "label": "PHP"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "azure_iaas",
+                "name": "Azure infrastructure as a service (IaaS)",
+                "category": "Compute",
+                "description": "Meet all your cloud infrastructure needs",
+                "url": "https://azure.microsoft.com/en-us/overview/what-is-azure/iaas/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Linux virtual machines in Azure",
+                        "url": "https://docs.microsoft.com/en-us/azure/virtual-machines/linux/"
+                    },
+                    {
+                        "type": "General",
+                        "title": "Windows virtual machines in Azure",
+                        "url": "https://docs.microsoft.com/en-us/azure/virtual-machines/windows/"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "PHP",
+                        "details": {
+                            "loc": 698.0,
+                            "label": "PHP"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "azure_mongodb_atlas",
+                "name": "MongoDB Atlas on Azure",
+                "category": "Databases",
+                "description": "Run your fully managed MongoDB workloads on Azure with MongoDB Atlas, a global developer data platform with the versatility you need to build modern and scalable applications.",
+                "url": "https://azure.microsoft.com/en-us/solutions/mongodb",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Resources and documentation",
+                        "url": "https://azure.microsoft.com/en-us/solutions/mongodb#Resources-4"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "sca",
+                        "ruleId": "mongodb.npm",
+                        "details": {
+                            "repo": null
+                        }
+                    },
+                    {
+                        "type": "sca",
+                        "ruleId": "mongodb:",
+                        "details": {
+                            "repo": null
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "platformId": "gcp",
+        "platformName": "Google Cloud",
+        "platformUrl": "https://cloud.google.com",
+        "recommendations": [
+            {
+                "id": "gcp_cloudrun",
+                "name": "Cloud Run",
+                "category": "Compute",
+                "description": "Develop and deploy highly scalable containerized applications on a fully managed serverless platform.",
+                "url": "https://cloud.google.com/run",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Cloud Run Documentation",
+                        "url": "https://cloud.google.com/run#section-5"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "JS",
+                        "details": {
+                            "loc": 68635.0,
+                            "label": "JavaScript"
+                        }
+                    },
+                    {
+                        "type": "technology",
+                        "ruleId": "PHP",
+                        "details": {
+                            "loc": 698.0,
+                            "label": "PHP"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "gcp_containers",
+                "name": "Google Kubernetes Engine (GKE Autopilot)",
+                "category": "Container",
+                "description": "GKE Autopilot mode is a hands-off, fully managed solution that manages your entire cluster\u2019s infrastructure without worrying about configuring and monitoring nodes, while still delivering a complete Kubernetes experience.",
+                "url": "https://cloud.google.com/kubernetes-engine",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Google Kubernetes Engine documentation",
+                        "url": "https://cloud.google.com/kubernetes-engine/docs/concepts/autopilot-overview"
+                    }
+                ],
+                "considerations": "The applicability of this recommendation will depend on your organization's container strategy, and which target is recommended as part of this strategy: Virtual machines, Individual containers, Kubernetes clusters, etc. Your container strategy will also inform how processes and people impact the technology choices, if for example a DevOps strategy or a Microservices strategy exists.",
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "JS",
+                        "details": {
+                            "loc": 68635.0,
+                            "label": "JavaScript"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "mongodb_atlas",
+                "name": "MongoDB Atlas on Google Cloud",
+                "category": "Databases",
+                "description": "A fully managed, global cloud database from MongoDB that combines a flexible JSON\u2010like data model, rich querying and indexing, and elastic scalability while automating time\u2010consuming database admin tasks.",
+                "url": "https://cloud.google.com/mongodb",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "MongoDB Atlas with Serverless VPC Access in Google Cloud",
+                        "url": "https://cloud.google.com/community/tutorials/serverless-vpc-access-private-mongodb-atlas"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "sca",
+                        "ruleId": "mongodb.npm",
+                        "details": {
+                            "repo": null
+                        }
+                    },
+                    {
+                        "type": "sca",
+                        "ruleId": "mongodb:",
+                        "details": {
+                            "repo": null
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "platformId": "ibm",
+        "platformName": "IBM Cloud",
+        "platformUrl": "https://www.ibm.com/cloud",
+        "recommendations": [
+            {
+                "id": "ibm_workloadautomation",
+                "name": "IBM App Connect",
+                "category": "Integration",
+                "description": "Optimize and automate complex workloads for greater IT efficiency",
+                "url": "https://www.ibm.com/cloud/app-connect",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "IBM Workload Automation: Resources",
+                        "url": "https://www.ibm.com/products/workload-automation/resources"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "KSH",
+                        "details": {
+                            "loc": 36.0,
+                            "label": "Ksh"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "ibm_virtualserversvpc",
+                "name": "IBM Cloud Virtual Server for VPC",
+                "category": "Compute",
+                "description": "Some providers make VPC confusing. We don't. Intel processors help make IBM Cloud VPC simple, powerful and secure",
+                "url": "https://www.ibm.com/cloud/vpc",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Getting started with Virtual Private Cloud (VPC)",
+                        "url": "https://cloud.ibm.com/docs/vpc"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "PHP",
+                        "details": {
+                            "loc": 698.0,
+                            "label": "PHP"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "ibm_mongodb",
+                "name": "IBM Databases for MongoDB",
+                "category": "Databases",
+                "description": "MongoDB as a service, built enterprise-ready with native integration into IBM Cloud",
+                "url": "https://www.ibm.com/cloud/databases-for-mongodb",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "IBM Cloud Databases for MongoDB features",
+                        "url": "https://www.ibm.com/cloud/databases-for-mongodb/features"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "sca",
+                        "ruleId": "mongodb.npm",
+                        "details": {
+                            "repo": null
+                        }
+                    },
+                    {
+                        "type": "sca",
+                        "ruleId": "mongodb:",
+                        "details": {
+                            "repo": null
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "platformId": "oraclecloud",
+        "platformName": "Oracle Cloud",
+        "platformUrl": "https://www.oracle.com/cloud/",
+        "recommendations": [
+            {
+                "id": "oracle_autonomousjson",
+                "name": "Autonomous JSON Database",
+                "category": "Databases",
+                "description": "Oracle Autonomous JSON Database is a cloud document database service that makes it simple to develop JSON-centric applications",
+                "url": "https://www.oracle.com/autonomous-database/autonomous-json-database/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Get started",
+                        "url": "https://www.oracle.com/autonomous-database/autonomous-json-database/get-started/"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "sca",
+                        "ruleId": "mongodb.npm",
+                        "details": {
+                            "repo": null
+                        }
+                    },
+                    {
+                        "type": "sca",
+                        "ruleId": "mongodb:",
+                        "details": {
+                            "repo": null
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]

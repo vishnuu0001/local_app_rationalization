@@ -1,0 +1,983 @@
+{
+    "id": 42326,
+    "name": "NodeCobol",
+    "domains": [
+        {
+            "id": 1622,
+            "name": "Core Business Applications"
+        },
+        {
+            "id": 12910,
+            "name": "Portfolio Company Beta"
+        }
+    ],
+    "metrics": [
+        {
+            "snapshotLabel": "Cobol Apps for Cloud Patterns_NodeCobol",
+            "snapshotDate": 1591848000000,
+            "softwareAgility": 0.626539945602417,
+            "softwareElegance": 0.7982612252235413,
+            "softwareResiliency": 0.9234736561775208,
+            "softwareHealth": 0.7827582756678263,
+            "openSourceSafety": 0.8608907723349054,
+            "openSourceLicense": 1.0,
+            "openSourceObsolescence": 0.5826723170047161,
+            "openSourceCVE": 1.0,
+            "businessImpact": 0.7893401015228426,
+            "roarIndex": 0.103610520642132,
+            "backFiredFP": 8.0,
+            "technicalDebt": 280.9499992057681,
+            "maintenanceRecordedFTE": 25.0,
+            "maintenanceRecommendedFTE": 0.0,
+            "cloudReady": 0.6328513881328253,
+            "cloudReadyScan": 0.6928484848484849,
+            "boosters": 0.0,
+            "blockers": 0.13393939393939394,
+            "roadblocks": 166.0,
+            "cloudEffort": 890,
+            "cloudReadySurvey": 0.5728542914171657,
+            "greenIndex": null,
+            "greenIndexScan": null,
+            "greenIndexSurvey": null,
+            "greenOccurrences": null,
+            "greenEffort": null,
+            "greenDetail": [
+                {
+                    "technology": "Cobol",
+                    "greenIndexScan": 0.0,
+                    "greenIndexDetails": null
+                },
+                {
+                    "technology": "JavaScript",
+                    "greenIndexScan": 0.0,
+                    "greenIndexDetails": null
+                }
+            ],
+            "totalLinesOfCode": 475,
+            "totalFiles": 17,
+            "cloudReadyDetail": [
+                {
+                    "technology": "Cobol",
+                    "cloudReadyScan": 0.7563636363636363,
+                    "cloudReadyDetails": [
+                        {
+                            "cloudRequirement": {
+                                "id": "Avoid_Code_Skipped",
+                                "display": "Code Execution : Avoid code that can accidentally get skipped",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Avoid_Code_Skipped",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Medium",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": -5.454545454545454,
+                            "roadblocks": 160.0,
+                            "cloudEffort": 800,
+                            "files": [
+                                "cobol-samples\\happy-birthday.cbl",
+                                "examples\\images.cbl",
+                                "examples\\happy-birthday.cbl",
+                                "examples\\read.cbl",
+                                "examples\\args.cbl",
+                                "cobol-samples\\hopper.cbl"
+                            ],
+                            "triggered": true
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_HexaConstants",
+                                "display": "Code Execution : Avoid using hexadecimal constants in mainframes",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_HexaConstants",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "High",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 4.232804232804233,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_ALTER_statement",
+                                "display": "Code Execution : Avoid using ALTER statements in mainframes",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_ALTER_statement",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 4.232804232804233,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_PackedDecimal",
+                                "display": "Code Execution : Avoid using packed Decimal unique way of representation of decimal data in mainframes",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_PackedDecimal",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 4.232804232804233,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Binary",
+                                "display": "Code Execution : Avoid using binary data type in mainframes",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Binary",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 4.232804232804233,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_CAPanvaletCommand",
+                                "display": "Code Execution : Avoid using CA Panvalet Command in mainframes specific of Z/OS",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_CAPanvaletCommand",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "High",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 4.232804232804233,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_DLICalls",
+                                "display": "Execution Environment : Avoid using DL/I Calls",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_DLICalls",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "High",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 4.232804232804233,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_DoubleByteCharacter",
+                                "display": "Code Execution : Avoid using Double Byte character in mainframes",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_DoubleByteCharacter",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 4.232804232804233,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_GOTO_statement",
+                                "display": "Code Execution : Avoid using GOTO statements in mainframes",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_GOTO_statement",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "High",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 4.232804232804233,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_DecimalPointComma",
+                                "display": "Code Execution : Avoid using DECIMAL POINT IS A COMMA clause in mainframes specific to Z/OS",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_DecimalPointComma",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 4.232804232804233,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_CurrencySign",
+                                "display": "Code Execution : Avoid using CURRENCY SIGN clause in mainframes specific to Z/OS",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_CurrencySign",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 4.232804232804233,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_OccurClause",
+                                "display": "Execution Environment : Avoid using OCCURS clause in mainframes",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_OccurClause",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 4.232804232804233,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_RedefinesClause",
+                                "display": "Execution Environment : Avoid using REDEFINES clause in mainframes",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_RedefinesClause",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 4.232804232804233,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_DummyTable",
+                                "display": "Code Execution : Avoid using the SYSIBM.SYSDUMMY1 dummy table in mainframes",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_DummyTable",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 4.232804232804233,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        }
+                    ]
+                },
+                {
+                    "technology": "JavaScript",
+                    "cloudReadyScan": 0.6293333333333333,
+                    "cloudReadyDetails": [
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Access_Control",
+                                "display": "Access Control List : Using Access Control List",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Access_Control",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Critical",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 34.33476394849785,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Crypto_API",
+                                "display": "Data Encryption Key : Using Crypto API",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Crypto_API",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 3.4334763948497855,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Directory_Manipulation_Practice",
+                                "display": "Persistent Files : Perform Directory Manipulation",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Directory_Manipulation_Practice",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": -10.666666666666668,
+                            "roadblocks": 3.0,
+                            "cloudEffort": 45,
+                            "files": [
+                                "lib\\index.js",
+                                "lib\\move\\index.js",
+                                "lib\\compile\\index.js"
+                            ],
+                            "triggered": true
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "File_Manipulation_Practice",
+                                "display": "Persistent Files : Perform File Manipulation",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#File_Manipulation_Practice",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": -10.666666666666668,
+                            "roadblocks": 3.0,
+                            "cloudEffort": 45,
+                            "files": [
+                                "lib\\index.js",
+                                "lib\\move\\index.js",
+                                "lib\\run\\index.js"
+                            ],
+                            "triggered": true
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Access_To_Environment_Variable",
+                                "display": "Execution Environment : Access to environment variable",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Access_To_Environment_Variable",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 3.4334763948497855,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_SecuredProtocols",
+                                "display": "Security & User Authentication : Use of unsecured network protocols or URI libraries",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_SecuredProtocols",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 3.4334763948497855,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false,
+                            "cloudRequirementsDetail": [
+                                {
+                                    "cloudRequirement": {
+                                        "id": "Use_SecuredProtocolsHTTP",
+                                        "display": "Security & User Authentication : Use of unsecured network protocols (HTTP)",
+                                        "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_SecuredProtocols",
+                                        "ruleType": "BLOCKER",
+                                        "rulePlatform": null,
+                                        "rulePlatformLabel": null,
+                                        "criticality": "Low",
+                                        "impacts": [
+                                            "Coding"
+                                        ],
+                                        "parent": null
+                                    },
+                                    "roadblocks": 0.0,
+                                    "cloudEffort": null,
+                                    "files": null
+                                },
+                                {
+                                    "cloudRequirement": {
+                                        "id": "Use_SecuredProtocolsFTP",
+                                        "display": "Security & User Authentication : Use of unsecured network protocols (FTP)",
+                                        "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_SecuredProtocols",
+                                        "ruleType": "BLOCKER",
+                                        "rulePlatform": null,
+                                        "rulePlatformLabel": null,
+                                        "criticality": "Low",
+                                        "impacts": [
+                                            "Coding"
+                                        ],
+                                        "parent": null
+                                    },
+                                    "roadblocks": 0.0,
+                                    "cloudEffort": null,
+                                    "files": null
+                                }
+                            ]
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Hardcoded_IP_Address",
+                                "display": "Execution Environment : Using hardcoded network IP address",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Hardcoded_IP_Address",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 3.4334763948497855,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Avoid_Code_Skipped",
+                                "display": "Code Execution : Avoid code that can accidentally get skipped",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Avoid_Code_Skipped",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Medium",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 2.575107296137339,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        }
+                    ]
+                }
+            ],
+            "customIndicators": [
+                {
+                    "metricId": 10023356,
+                    "value": "0.30303030303030304"
+                },
+                {
+                    "metricId": 10006001,
+                    "value": "0.8191489361702128"
+                },
+                {
+                    "metricId": 10013600,
+                    "value": "0.8666666666666667"
+                }
+            ],
+            "technologies": [
+                {
+                    "technology": "Cobol",
+                    "totalLinesOfCode": 301,
+                    "totalFiles": 6,
+                    "softwareAgility": 0.625,
+                    "softwareElegance": 0.8574751019477844,
+                    "softwareResiliency": 0.9622923135757446,
+                    "softwareHealth": 0.8149224718411764,
+                    "softwareAgilityDetail": {
+                        "highLinesOfCode": 0,
+                        "mediumLinesOfCode": 301,
+                        "lowLinesOfCode": 0
+                    },
+                    "softwareEleganceDetail": {
+                        "highLinesOfCode": 301,
+                        "mediumLinesOfCode": 0,
+                        "lowLinesOfCode": 0
+                    },
+                    "softwareResiliencyDetail": {
+                        "highLinesOfCode": 289,
+                        "mediumLinesOfCode": 12,
+                        "lowLinesOfCode": 0
+                    },
+                    "softwareHealthDetail": {
+                        "highLinesOfCode": 196,
+                        "mediumLinesOfCode": 104,
+                        "lowLinesOfCode": 0
+                    }
+                },
+                {
+                    "technology": "JavaScript",
+                    "totalLinesOfCode": 174,
+                    "totalFiles": 11,
+                    "softwareAgility": 0.6292039155960083,
+                    "softwareElegance": 0.6958280205726624,
+                    "softwareResiliency": 0.8563218116760254,
+                    "softwareHealth": 0.727117915948232,
+                    "softwareAgilityDetail": {
+                        "highLinesOfCode": 35,
+                        "mediumLinesOfCode": 111,
+                        "lowLinesOfCode": 28
+                    },
+                    "softwareEleganceDetail": {
+                        "highLinesOfCode": 47,
+                        "mediumLinesOfCode": 127,
+                        "lowLinesOfCode": 0
+                    },
+                    "softwareResiliencyDetail": {
+                        "highLinesOfCode": 105,
+                        "mediumLinesOfCode": 69,
+                        "lowLinesOfCode": 0
+                    },
+                    "softwareHealthDetail": {
+                        "highLinesOfCode": 62,
+                        "mediumLinesOfCode": 102,
+                        "lowLinesOfCode": 9
+                    }
+                }
+            ],
+            "vulnerabilities": [
+                {
+                    "matchedCPE": "cpe:/a:raszi:tmp",
+                    "name": "CVE-2025-54798",
+                    "publishedDate": "2025-08-07T01:15:26.203Z",
+                    "lastUpdateDate": "2025-11-03T20:19:15.177Z",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2025-54798",
+                    "description": "tmp is a temporary file and directory creator for node.js. In versions 0.2.3 and below, tmp is vulnerable to an arbitrary temporary file / directory write via symbolic link dir parameter. This is fixed in version 0.2.4.",
+                    "references": [
+                        {
+                            "name": null,
+                            "url": "https://lists.debian.org/debian-lts-announce/2025/08/msg00007.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://github.com/raszi/node-tmp/security/advisories/GHSA-52f5-9888-hmc6",
+                            "source": "security-advisories@github.com"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://github.com/raszi/node-tmp/security/advisories/GHSA-52f5-9888-hmc6",
+                            "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0"
+                        },
+                        {
+                            "name": "Issue Tracking",
+                            "url": "https://github.com/raszi/node-tmp/issues/207",
+                            "source": "security-advisories@github.com"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://github.com/raszi/node-tmp/commit/188b25e529496e37adaf1a1d9dccb40019a08b1b",
+                            "source": "security-advisories@github.com"
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "criticityLabel": "LOW",
+                    "cvssScore": 2.5,
+                    "cvssAccessVector": "LOCAL",
+                    "cvssAccessComplexity": "HIGH",
+                    "cvssAuthentication": "NONE",
+                    "cvssConfidentialityImpact": "NONE",
+                    "cvssAvailabilityImpact": "NONE",
+                    "source": "NVD",
+                    "criticityCategory": "LOW",
+                    "advisory": false,
+                    "isKev": false
+                }
+            ],
+            "components": [
+                {
+                    "id": 192802,
+                    "name": "cobol.npm",
+                    "version": "2.0.1",
+                    "cves": [],
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 192803,
+                    "name": "one-by-one.npm",
+                    "version": "2.0.0",
+                    "cves": [],
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 192800,
+                    "name": "ul.npm",
+                    "version": "5.0.0",
+                    "cves": [],
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 192801,
+                    "name": "tmp.npm",
+                    "version": "0.0.26",
+                    "cves": [
+                        {
+                            "name": "CVE-2025-54798"
+                        }
+                    ],
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 65576,
+                    "name": "sliced.npm",
+                    "version": "1.0.1",
+                    "cves": [],
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 58571,
+                    "name": "which.npm",
+                    "version": "1.1.1",
+                    "cves": [],
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 192799,
+                    "name": "oargv.npm",
+                    "version": "2.0.0",
+                    "cves": [],
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 192796,
+                    "name": "IonicaBizau/node-cobol",
+                    "cves": [],
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 192797,
+                    "name": "cobol.npm",
+                    "version": "1.5.5",
+                    "cves": [],
+                    "lifeSpan": "N/A"
+                }
+            ]
+        }
+    ],
+    "surveys": [
+        {
+            "id": 4,
+            "ref": "CAST_BI",
+            "name": "Business Impact",
+            "questions": [
+                {
+                    "label": "What is the average number of FTE (Full Time Equivalent) resources that have worked on the source code for this application over the last 12 months?",
+                    "shortLabel": "",
+                    "value": "25.0",
+                    "questionId": 1000011
+                },
+                {
+                    "label": "Is this application aligned with the company's future technology direction?",
+                    "shortLabel": "",
+                    "value": "Yes",
+                    "questionId": 1000009,
+                    "choiceId": 1000042
+                },
+                {
+                    "label": "The number of major releases delivered over the last 12 months for this application?",
+                    "shortLabel": "",
+                    "value": "7 to 12",
+                    "questionId": 1000006,
+                    "choiceId": 1000454
+                },
+                {
+                    "label": "Could failure of this application lead to loss of customer confidence? Please define the level of impact.",
+                    "value": "Very High",
+                    "questionId": 1000022,
+                    "choiceId": 1000223
+                },
+                {
+                    "label": "Could failure of this application lead to harm of the company's public image? Please define the level of impact.",
+                    "value": "Very High",
+                    "questionId": 1000021,
+                    "choiceId": 1000003
+                },
+                {
+                    "label": "Could failure of this application lead to loss of revenue or business opportunity? Please define the level of impact.",
+                    "value": "High",
+                    "questionId": 1000020,
+                    "choiceId": 1000408
+                },
+                {
+                    "label": "Could failure of this application lead to disruption? Please define the level of impact.",
+                    "value": "High",
+                    "questionId": 1000019,
+                    "choiceId": 1000194
+                },
+                {
+                    "label": "What is the approximate number of end users for this application?",
+                    "shortLabel": "",
+                    "value": "More than 2500",
+                    "questionId": 1000018,
+                    "choiceId": 1000398
+                },
+                {
+                    "label": "Does the application serve internal or external users?",
+                    "value": "Both",
+                    "questionId": 1000017,
+                    "choiceId": 1000205
+                }
+            ]
+        },
+        {
+            "id": 373,
+            "ref": "CAST_APP",
+            "name": "Application Properties",
+            "questions": [
+                {
+                    "label": "What is the application type?",
+                    "shortLabel": "",
+                    "value": "Inventory Management",
+                    "questionId": 1000004,
+                    "choiceId": 1000435
+                },
+                {
+                    "label": "Application Owner's name",
+                    "value": "G Money",
+                    "questionId": 1000002
+                },
+                {
+                    "label": "Is this application a custom application or a Commercial Off The Shelf product?",
+                    "shortLabel": "",
+                    "value": "Custom Application",
+                    "questionId": 1000427,
+                    "choiceId": 1000529
+                },
+                {
+                    "label": "In what year was this application first put into production?",
+                    "shortLabel": "",
+                    "value": "1990",
+                    "questionId": 1000033
+                }
+            ]
+        },
+        {
+            "id": 2393,
+            "name": "Application Links",
+            "questions": [
+                {
+                    "label": "FTP Connection",
+                    "shortLabel": "FTP links",
+                    "value": "1591904645575,2,3",
+                    "questionId": 10012400
+                },
+                {
+                    "label": "SOAP Connection",
+                    "shortLabel": "SOAP links",
+                    "value": "1591904645575,2,3",
+                    "questionId": 10012401
+                },
+                {
+                    "label": "API Connection",
+                    "shortLabel": "API links",
+                    "value": "1591904645575,2,3",
+                    "questionId": 10012402
+                }
+            ]
+        },
+        {
+            "id": 938,
+            "ref": "CAST_CLOUD",
+            "name": "Cloud Readiness Assessment",
+            "questions": [
+                {
+                    "label": "[Business Drivers] Does this application correspond to a specific workload?",
+                    "shortLabel": "",
+                    "value": "Big Compute",
+                    "questionId": 10000901,
+                    "choiceId": 10006806
+                },
+                {
+                    "label": "[Technical Enablers] Does this application depend on other services or applications?",
+                    "shortLabel": "",
+                    "value": "Internal services exposed through an API",
+                    "questionId": 10000808,
+                    "choiceId": 10006731
+                },
+                {
+                    "label": "[Technical Enablers] What is the database provider for this application?",
+                    "shortLabel": "",
+                    "value": "Standard and supported as a service in the Cloud (PaaS)",
+                    "questionId": 10000809,
+                    "choiceId": 10006734
+                },
+                {
+                    "label": "[Process Maturity] What is the average skill on Cloud technologies and practices within the development team for this application?",
+                    "shortLabel": "",
+                    "value": "Advanced skills & experience",
+                    "questionId": 10000810,
+                    "choiceId": 10006740
+                },
+                {
+                    "label": "[Business Drivers] What is the current (or expected) Service Level Agreement for this application?",
+                    "shortLabel": "",
+                    "value": "SLA with continuity of service",
+                    "questionId": 10000811,
+                    "choiceId": 10006744
+                },
+                {
+                    "label": "[Process Maturity] What is the evolution model and feedback loop approach for this application?",
+                    "shortLabel": "",
+                    "value": "DevOps",
+                    "questionId": 10000800,
+                    "choiceId": 10006702
+                },
+                {
+                    "label": "[Technical Enablers] What is the current deployment platform for this application?",
+                    "shortLabel": "",
+                    "value": "Back-End application",
+                    "questionId": 10000801,
+                    "choiceId": 10006708
+                },
+                {
+                    "label": "[Technical Enablers] What is the current user authentication mechanism used by this application?",
+                    "shortLabel": "",
+                    "value": "Single Sign On",
+                    "questionId": 10000802,
+                    "choiceId": 10006710
+                },
+                {
+                    "label": "[Technical Enablers]  How is this application exposed to external services/applications?",
+                    "shortLabel": "",
+                    "value": "API exposed on other network protocol",
+                    "questionId": 10000803,
+                    "choiceId": 10006715
+                },
+                {
+                    "label": "[Business Drivers] How is data consumed from this application?",
+                    "shortLabel": "",
+                    "value": "Information Management",
+                    "questionId": 10000805,
+                    "choiceId": 10006810
+                },
+                {
+                    "label": "[Process Maturity] What is the level of deployment process automation for provisioning and configuration for this application?",
+                    "shortLabel": "",
+                    "value": "Fully-automated",
+                    "questionId": 10000806,
+                    "choiceId": 10006725
+                },
+                {
+                    "label": "[Technical Enablers] Is this application multi-tenant?",
+                    "shortLabel": "",
+                    "value": "Full multi-tenant application",
+                    "questionId": 10000807,
+                    "choiceId": 10006729
+                }
+            ]
+        }
+    ],
+    "tags": [
+        {
+            "id": 3100,
+            "label": "Cobol Cloud Patterns"
+        }
+    ]
+}

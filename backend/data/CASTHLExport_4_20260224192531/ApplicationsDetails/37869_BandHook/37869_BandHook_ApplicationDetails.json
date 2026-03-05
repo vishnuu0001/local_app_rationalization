@@ -1,0 +1,352 @@
+{
+    "id": 37869,
+    "name": "BandHook",
+    "domains": [
+        {
+            "id": 1622,
+            "name": "Core Business Applications"
+        },
+        {
+            "id": 12909,
+            "name": "Portfolio Company Alpha"
+        }
+    ],
+    "metrics": [
+        {
+            "snapshotLabel": "Kotlin App Dec 2019_BandHook",
+            "snapshotDate": 1576558800000,
+            "softwareAgility": 0.800000011920929,
+            "softwareElegance": 1.0,
+            "softwareResiliency": 0.5,
+            "softwareHealth": 0.7666666706403097,
+            "openSourceSafety": 1.0,
+            "openSourceLicense": 1.0,
+            "openSourceObsolescence": null,
+            "openSourceCVE": 1.0,
+            "businessImpact": 0.7461928934010152,
+            "roarIndex": 0.2760913705583756,
+            "technicalDebt": 52.43333673477173,
+            "maintenanceRecordedFTE": 25.0,
+            "maintenanceRecommendedFTE": 0.0,
+            "cloudReady": 0.3988212180746562,
+            "cloudReadySurvey": 0.3988212180746562,
+            "greenIndex": null,
+            "greenIndexScan": null,
+            "greenIndexSurvey": null,
+            "greenOccurrences": null,
+            "greenEffort": null,
+            "greenDetail": [
+                {
+                    "technology": "Ksh",
+                    "greenIndexScan": 0.0,
+                    "greenIndexDetails": null
+                },
+                {
+                    "technology": "Kotlin",
+                    "greenIndexScan": 0.0,
+                    "greenIndexDetails": null
+                }
+            ],
+            "totalLinesOfCode": 3203,
+            "totalFiles": 131,
+            "customIndicators": [
+                {
+                    "metricId": 10023356,
+                    "value": "0.050505050505050504"
+                },
+                {
+                    "metricId": 10006001,
+                    "value": "0.7872340425531915"
+                },
+                {
+                    "metricId": 10006305,
+                    "value": "-1.0"
+                },
+                {
+                    "metricId": 10013600,
+                    "value": "0.3333333333333333"
+                },
+                {
+                    "metricId": 10006302,
+                    "value": "-1.0"
+                },
+                {
+                    "metricId": 10006301,
+                    "value": "-1.0"
+                },
+                {
+                    "metricId": 10016304,
+                    "value": "-1.0"
+                }
+            ],
+            "technologies": [
+                {
+                    "technology": "Ksh",
+                    "totalLinesOfCode": 116,
+                    "totalFiles": 1,
+                    "softwareAgility": 0.800000011920929,
+                    "softwareElegance": 1.0,
+                    "softwareResiliency": 0.5,
+                    "softwareHealth": 0.7666666706403097,
+                    "softwareAgilityDetail": {
+                        "highLinesOfCode": 116,
+                        "mediumLinesOfCode": 0,
+                        "lowLinesOfCode": 0
+                    },
+                    "softwareEleganceDetail": {
+                        "highLinesOfCode": 116,
+                        "mediumLinesOfCode": 0,
+                        "lowLinesOfCode": 0
+                    },
+                    "softwareResiliencyDetail": {
+                        "highLinesOfCode": 0,
+                        "mediumLinesOfCode": 0,
+                        "lowLinesOfCode": 116
+                    },
+                    "softwareHealthDetail": {
+                        "highLinesOfCode": 77,
+                        "mediumLinesOfCode": 0,
+                        "lowLinesOfCode": 38
+                    }
+                },
+                {
+                    "technology": "Kotlin",
+                    "totalLinesOfCode": 3087,
+                    "totalFiles": 130,
+                    "softwareHealthDetail": {
+                        "highLinesOfCode": null,
+                        "mediumLinesOfCode": null,
+                        "lowLinesOfCode": null
+                    }
+                }
+            ],
+            "components": [
+                {
+                    "id": 121676,
+                    "name": "antoniolg/Bandhook-Kotlin",
+                    "cves": [],
+                    "lifeSpan": "N/A"
+                }
+            ]
+        }
+    ],
+    "surveys": [
+        {
+            "id": 4,
+            "ref": "CAST_BI",
+            "name": "Business Impact",
+            "questions": [
+                {
+                    "label": "What is the average number of FTE (Full Time Equivalent) resources that have worked on the source code for this application over the last 12 months?",
+                    "shortLabel": "",
+                    "value": "25.0",
+                    "questionId": 1000011
+                },
+                {
+                    "label": "Is this application aligned with the company's future technology direction?",
+                    "shortLabel": "",
+                    "value": "Yes",
+                    "questionId": 1000009,
+                    "choiceId": 1000042
+                },
+                {
+                    "label": "The number of major releases delivered over the last 12 months for this application?",
+                    "shortLabel": "",
+                    "value": "7 to 12",
+                    "questionId": 1000006,
+                    "choiceId": 1000454
+                },
+                {
+                    "label": "Could failure of this application lead to loss of customer confidence? Please define the level of impact.",
+                    "value": "Medium",
+                    "questionId": 1000022,
+                    "choiceId": 1000221
+                },
+                {
+                    "label": "Could failure of this application lead to harm of the company's public image? Please define the level of impact.",
+                    "value": "Very High",
+                    "questionId": 1000021,
+                    "choiceId": 1000003
+                },
+                {
+                    "label": "Could failure of this application lead to loss of revenue or business opportunity? Please define the level of impact.",
+                    "value": "Medium",
+                    "questionId": 1000020,
+                    "choiceId": 1000407
+                },
+                {
+                    "label": "Could failure of this application lead to disruption? Please define the level of impact.",
+                    "value": "High",
+                    "questionId": 1000019,
+                    "choiceId": 1000194
+                },
+                {
+                    "label": "What is the approximate number of end users for this application?",
+                    "shortLabel": "",
+                    "value": "More than 2500",
+                    "questionId": 1000018,
+                    "choiceId": 1000398
+                },
+                {
+                    "label": "Does the application serve internal or external users?",
+                    "value": "External users",
+                    "questionId": 1000017,
+                    "choiceId": 1000203
+                }
+            ]
+        },
+        {
+            "id": 373,
+            "ref": "CAST_APP",
+            "name": "Application Properties",
+            "questions": [
+                {
+                    "label": "What is the application type?",
+                    "shortLabel": "",
+                    "value": "Production Planning",
+                    "questionId": 1000004,
+                    "choiceId": 1000437
+                },
+                {
+                    "label": "Application Owner's name",
+                    "value": "G Money",
+                    "questionId": 1000002
+                },
+                {
+                    "label": "Is this application a custom application or a Commercial Off The Shelf product?",
+                    "shortLabel": "",
+                    "value": "Custom Application",
+                    "questionId": 1000427,
+                    "choiceId": 1000529
+                },
+                {
+                    "label": "In what year was this application first put into production?",
+                    "shortLabel": "",
+                    "value": "2015",
+                    "questionId": 1000033
+                }
+            ]
+        },
+        {
+            "id": 2393,
+            "name": "Application Links",
+            "questions": [
+                {
+                    "label": "FTP Connection",
+                    "shortLabel": "FTP links",
+                    "value": "1575996207163,2,3",
+                    "questionId": 10012400
+                },
+                {
+                    "label": "SOAP Connection",
+                    "shortLabel": "SOAP links",
+                    "value": "1575996207163,2,3",
+                    "questionId": 10012401
+                },
+                {
+                    "label": "API Connection",
+                    "shortLabel": "API links",
+                    "value": "1575996207163,2,3",
+                    "questionId": 10012402
+                }
+            ]
+        },
+        {
+            "id": 938,
+            "ref": "CAST_CLOUD",
+            "name": "Cloud Readiness Assessment",
+            "questions": [
+                {
+                    "label": "[Business Drivers] Does this application correspond to a specific workload?",
+                    "shortLabel": "",
+                    "value": "IoT - Internet of Things",
+                    "questionId": 10000901,
+                    "choiceId": 10006804
+                },
+                {
+                    "label": "[Technical Enablers] Does this application depend on other services or applications?",
+                    "shortLabel": "",
+                    "value": "External services",
+                    "questionId": 10000808,
+                    "choiceId": 10006733
+                },
+                {
+                    "label": "[Technical Enablers] What is the database provider for this application?",
+                    "shortLabel": "",
+                    "value": "Standard but not supported as a service in the Cloud (IaaS)",
+                    "questionId": 10000809,
+                    "choiceId": 10006735
+                },
+                {
+                    "label": "[Process Maturity] What is the average skill on Cloud technologies and practices within the development team for this application?",
+                    "shortLabel": "",
+                    "value": "Basic knowledge",
+                    "questionId": 10000810,
+                    "choiceId": 10006739
+                },
+                {
+                    "label": "[Business Drivers] What is the current (or expected) Service Level Agreement for this application?",
+                    "shortLabel": "",
+                    "value": "SLA with maintenance timeframe",
+                    "questionId": 10000811,
+                    "choiceId": 10006743
+                },
+                {
+                    "label": "[Process Maturity] What is the evolution model and feedback loop approach for this application?",
+                    "shortLabel": "",
+                    "value": "Continuous Delivery",
+                    "questionId": 10000800,
+                    "choiceId": 10006701
+                },
+                {
+                    "label": "[Technical Enablers] What is the current deployment platform for this application?",
+                    "shortLabel": "",
+                    "value": "Mobile or Tablet application",
+                    "questionId": 10000801,
+                    "choiceId": 10006705
+                },
+                {
+                    "label": "[Technical Enablers] What is the current user authentication mechanism used by this application?",
+                    "shortLabel": "",
+                    "value": "Multifactor Authenticator",
+                    "questionId": 10000802,
+                    "choiceId": 10006712
+                },
+                {
+                    "label": "[Technical Enablers]  How is this application exposed to external services/applications?",
+                    "shortLabel": "",
+                    "value": "REST API exposed",
+                    "questionId": 10000803,
+                    "choiceId": 10006714
+                },
+                {
+                    "label": "[Business Drivers] How is data consumed from this application?",
+                    "shortLabel": "",
+                    "value": "Classic Storage",
+                    "questionId": 10000805,
+                    "choiceId": 10006722
+                },
+                {
+                    "label": "[Process Maturity] What is the level of deployment process automation for provisioning and configuration for this application?",
+                    "shortLabel": "",
+                    "value": "Fully-automated",
+                    "questionId": 10000806,
+                    "choiceId": 10006725
+                },
+                {
+                    "label": "[Technical Enablers] Is this application multi-tenant?",
+                    "shortLabel": "",
+                    "value": "Full multi-tenant application",
+                    "questionId": 10000807,
+                    "choiceId": 10006729
+                }
+            ]
+        }
+    ],
+    "tags": [
+        {
+            "id": 1853,
+            "label": "Kotlin"
+        }
+    ]
+}

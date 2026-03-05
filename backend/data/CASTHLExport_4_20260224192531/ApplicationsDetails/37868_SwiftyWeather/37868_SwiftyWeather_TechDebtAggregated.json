@@ -1,0 +1,288 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "SWIFT",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "SWIFT__String",
+                                    "detail": [
+                                        {
+                                            "application_id": 37868,
+                                            "application_name": "SwiftyWeather",
+                                            "counter": 40.0,
+                                            "effort": 10.000001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "SWIFT__HardCodedPaths",
+                                    "detail": [
+                                        {
+                                            "application_id": 37868,
+                                            "application_name": "SwiftyWeather",
+                                            "counter": 1.0,
+                                            "effort": 15.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "SWIFT",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "SWIFT__UnusedParameters",
+                                    "detail": [
+                                        {
+                                            "application_id": 37868,
+                                            "application_name": "SwiftyWeather",
+                                            "counter": 12.0,
+                                            "effort": 2.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "SWIFT",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "SWIFT__DangerousCast",
+                                    "detail": [
+                                        {
+                                            "application_id": 37868,
+                                            "application_name": "SwiftyWeather",
+                                            "counter": 2.0,
+                                            "effort": 0.16666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "SWIFT__MultipleReturn",
+                                    "detail": [
+                                        {
+                                            "application_id": 37868,
+                                            "application_name": "SwiftyWeather",
+                                            "counter": 1.0,
+                                            "effort": 0.5
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "SWIFT",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "SWIFT__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 37868,
+                                            "application_name": "SwiftyWeather",
+                                            "counter": 48.0,
+                                            "effort": 4.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "SWIFT",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "SWIFT__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 37868,
+                                            "application_name": "SwiftyWeather",
+                                            "counter": 116.60001,
+                                            "effort": 116.60001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "SWIFT__Ternary",
+                                    "detail": [
+                                        {
+                                            "application_id": 37868,
+                                            "application_name": "SwiftyWeather",
+                                            "counter": 1.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "SWIFT",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "SWIFT__LargeSwitchCase",
+                                    "detail": [
+                                        {
+                                            "application_id": 37868,
+                                            "application_name": "SwiftyWeather",
+                                            "counter": 115.0,
+                                            "effort": 115.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "SWIFT__NBMETH",
+                                    "detail": [
+                                        {
+                                            "application_id": 37868,
+                                            "application_name": "SwiftyWeather",
+                                            "counter": 10.5,
+                                            "effort": 52.5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "SWIFT__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 37868,
+                                            "application_name": "SwiftyWeather",
+                                            "counter": 26.800001,
+                                            "effort": 134.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "SWIFT__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 37868,
+                                            "application_name": "SwiftyWeather",
+                                            "counter": 1.2,
+                                            "effort": 1.2
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "SWIFT",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "SWIFT__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 37868,
+                                            "application_name": "SwiftyWeather",
+                                            "counter": 73.75,
+                                            "effort": 368.75
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "SWIFT",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "SWIFT__Nested",
+                                    "detail": [
+                                        {
+                                            "application_id": 37868,
+                                            "application_name": "SwiftyWeather",
+                                            "counter": 7.0,
+                                            "effort": 70.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

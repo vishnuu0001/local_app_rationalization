@@ -1,0 +1,192 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__StrongDataAccess",
+                                    "detail": [
+                                        {
+                                            "application_id": 10260,
+                                            "application_name": "Roswell",
+                                            "counter": 1.0,
+                                            "effort": 0.33333334
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MissingIdentical",
+                                    "detail": [
+                                        {
+                                            "application_id": 10260,
+                                            "application_name": "Roswell",
+                                            "counter": 1.0,
+                                            "effort": 0.083333336
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 10260,
+                                            "application_name": "Roswell",
+                                            "counter": 2.0,
+                                            "effort": 0.16666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 10260,
+                                            "application_name": "Roswell",
+                                            "counter": 8.0,
+                                            "effort": 0.6666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 10260,
+                                            "application_name": "Roswell",
+                                            "counter": 1.0,
+                                            "effort": 0.083333336
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 10260,
+                                            "application_name": "Roswell",
+                                            "counter": 2.0,
+                                            "effort": 0.16666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 10260,
+                                            "application_name": "Roswell",
+                                            "counter": 1.47,
+                                            "effort": 1.47
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 10260,
+                                            "application_name": "Roswell",
+                                            "counter": 1.3333334,
+                                            "effort": 6.666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

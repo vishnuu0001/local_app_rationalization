@@ -1,0 +1,980 @@
+{
+    "snapshotLabel": "SCA_SCA",
+    "snapshotDate": 1540526400000,
+    "applicationCodeLines": null,
+    "applicationFiles": 4073.0,
+    "thirdPartyCodeLines": null,
+    "thirdPartyFiles": 3123.0,
+    "thirdParties": [
+        {
+            "id": 4,
+            "componentId": "elving/swag",
+            "name": "elving/swag",
+            "version": "v0.6.1",
+            "release": 1393595113000,
+            "languages": "coffeescript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "v0.7.0",
+            "lastRelease": 1399302084000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 591.0,
+            "numberOfFiles": 12.0,
+            "cwes": []
+        },
+        {
+            "id": 14,
+            "componentId": "jashkenas/coffeescript",
+            "name": "jashkenas/coffeescript",
+            "version": "1.8.0",
+            "release": 1409070269000,
+            "languages": "coffeescript",
+            "lifeSpan": "Active",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "2.7.0",
+            "lastRelease": 1650767272000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 2504.0,
+            "numberOfFiles": 47.0,
+            "cwes": []
+        },
+        {
+            "id": 257,
+            "componentId": "GNOME/gnome-builder",
+            "name": "GNOME/gnome-builder",
+            "version": "GNOME_BUILDER_3_16_0",
+            "release": 1427185697000,
+            "languages": "c",
+            "lifeSpan": "Active",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 5,
+                    "name": "GNU General Public License v3.0 only",
+                    "compliance": "notCompliant"
+                }
+            ],
+            "lastVersion": "48.2",
+            "lastRelease": 1752016412000,
+            "nbVersionPreviousYear": 9,
+            "numberOfCodeLines": 54.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 6276,
+            "componentId": "coffee-script.npm",
+            "name": "coffee-script.npm",
+            "version": "0.9.4",
+            "release": 1293217416000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "1.12.7",
+            "lastRelease": 1500274516000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 10.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 9208,
+            "componentId": "bootstrap-switch.npm",
+            "name": "bootstrap-switch.npm",
+            "version": "3.3.2",
+            "release": 1422193921000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "3.4.0",
+            "lastRelease": 1555148278000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 383.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 9209,
+            "componentId": "Bttstrp/bootstrap-switch",
+            "name": "Bttstrp/bootstrap-switch",
+            "version": "v3.1.0",
+            "release": 1414253524000,
+            "languages": "pug",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "v3.3.4",
+            "lastRelease": 1488047548000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 21.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 45700,
+            "componentId": "ansible-alicloud.py",
+            "name": "ansible-alicloud.py",
+            "version": "1.3.1",
+            "release": 1516673102000,
+            "languages": "python",
+            "lifeSpan": "Active",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "1.20.0",
+            "lastRelease": 1658132570000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 2.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "ansible-alicloud",
+                "product": "ansible-alicloud",
+                "version": "1.3.1",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2016-9587",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2016-9587",
+                        "description": "Ansible before versions 2.1.4, 2.2.1 is vulnerable to an improper input validation in Ansible's handling of data sent from client systems. An attacker with control over a client system being managed by Ansible and the ability to send facts back to the Ansible server could use this flaw to execute arbitrary code on the Ansible server using the Ansible server privileges.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 8.1,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:ansible:ansible",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": []
+        },
+        {
+            "id": 45702,
+            "componentId": "F5Networks/f5-ansible",
+            "name": "F5Networks/f5-ansible",
+            "languages": "python",
+            "origin": "Scan",
+            "licenses": [],
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 997.0,
+            "numberOfFiles": 5.0,
+            "cwes": []
+        },
+        {
+            "id": 45703,
+            "componentId": "sphinx-rtd-theme.py",
+            "name": "sphinx-rtd-theme.py",
+            "version": "0.1.5",
+            "release": 1383857008000,
+            "languages": "python",
+            "lifeSpan": "Active",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 26140,
+                    "name": "BSD Licenses Family",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "3.1.0",
+            "lastRelease": 1768233811000,
+            "nbVersionPreviousYear": 3,
+            "numberOfCodeLines": 7.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 45704,
+            "componentId": "readthedocs/sphinx_rtd_theme",
+            "name": "readthedocs/sphinx_rtd_theme",
+            "version": "0.1.8",
+            "release": 1430778863000,
+            "languages": "sass",
+            "lifeSpan": "Active",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 26211,
+                    "name": "SIL Open Font License 1.1",
+                    "compliance": "compliant"
+                },
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                },
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "3.0.2",
+            "lastRelease": 1731495760000,
+            "nbVersionPreviousYear": 1,
+            "numberOfCodeLines": 7.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 45707,
+            "componentId": "ansible/ansible",
+            "name": "ansible/ansible",
+            "version": "v2.8.0a1",
+            "release": 1554421040000,
+            "languages": "python",
+            "lifeSpan": "Active",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 5,
+                    "name": "GNU General Public License v3.0 only",
+                    "compliance": "notCompliant"
+                }
+            ],
+            "lastVersion": "v2.20.2",
+            "lastRelease": 1769714402000,
+            "nbVersionPreviousYear": 70,
+            "numberOfCodeLines": 150394.0,
+            "numberOfFiles": 617.0,
+            "cve": {
+                "vendor": "ansible",
+                "product": "ansible",
+                "version": "v2.8.0a1",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2019-14846",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-14846",
+                        "description": "In Ansible, all Ansible Engine versions up to ansible-engine 2.8.5, ansible-engine 2.7.13, ansible-engine 2.6.19, were logging at the DEBUG level which lead to a disclosure of credentials if a plugin used a library that logged credentials at the DEBUG level. This flaw does not affect Ansible modules, as those are executed in a separate process.",
+                        "cweId": "CWE-532",
+                        "cweLabel": "Insertion of Sensitive Information into Log File",
+                        "cvssScore": 7.8,
+                        "criticity": "HIGH",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2023-5764",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-5764",
+                        "description": "A template injection flaw was found in Ansible where a user's controller internal templating operations may remove the unsafe designation from template data. This issue could allow an attacker to use a specially crafted file to introduce code injection when supplying templating data.",
+                        "cweId": "CWE-1336",
+                        "cweLabel": null,
+                        "cvssScore": 7.8,
+                        "criticity": "HIGH",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2024-0690",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-0690",
+                        "description": "An information disclosure flaw was found in ansible-core due to a failure to respect the ANSIBLE_NO_LOG configuration in some scenarios. It was discovered that information is still included in the output in certain tasks, such as loop items. Depending on the task, this issue may include sensitive information, such as decrypted secret values.",
+                        "cweId": "CWE-116",
+                        "cweLabel": null,
+                        "cvssScore": 5.5,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2024-11079",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-11079",
+                        "description": "A flaw was found in Ansible-Core. This vulnerability allows attackers to bypass unsafe content protections using the hostvars object to reference and execute templated content. This issue can lead to arbitrary code execution if remote data or module outputs are improperly templated within playbooks.",
+                        "cweId": "CWE-20",
+                        "cweLabel": null,
+                        "cvssScore": 5.5,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2024-8775",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-8775",
+                        "description": "A flaw was found in Ansible, where sensitive information stored in Ansible Vault files can be exposed in plaintext during the execution of a playbook. This occurs when using tasks such as include_vars to load vaulted variables without setting the no_log: true parameter, resulting in sensitive data being printed in the playbook output or logs. This can lead to the unintentional disclosure of secrets like passwords or API keys, compromising security and potentially allowing unauthorized access or actions.",
+                        "cweId": "CWE-532",
+                        "cweLabel": "Insertion of Sensitive Information into Log File",
+                        "cvssScore": 5.5,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2024-9902",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-9902",
+                        "description": "A flaw was found in Ansible. The ansible-core `user` module can allow an unprivileged user to silently create or replace the contents of any file on any system path and take ownership of it when a privileged user executes the `user` module against the unprivileged user's home directory. If the unprivileged user has traversal permissions on the directory containing the exploited target file, they retain full control over the contents of the file as its owner.",
+                        "cweId": "CWE-863",
+                        "cweLabel": null,
+                        "cvssScore": 6.3,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "stable-2.9-branchpoint",
+            "safestVersion": "stable-2.9-branchpoint"
+        },
+        {
+            "id": 51219,
+            "componentId": "tochka-developers/jsonrpc-doc.pkg",
+            "name": "tochka-developers/jsonrpc-doc.pkg",
+            "version": "v1.0.0",
+            "release": 1517211998000,
+            "languages": "css",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "v1.1.1",
+            "lastRelease": 1562677223000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51220,
+            "componentId": "ansible.py",
+            "name": "ansible.py",
+            "version": "2.8.0rc3",
+            "release": 1557511468000,
+            "languages": "python",
+            "lifeSpan": "Active",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 5,
+                    "name": "GNU General Public License v3.0 only",
+                    "compliance": "notCompliant"
+                }
+            ],
+            "lastVersion": "13.3.0",
+            "lastRelease": 1769719377000,
+            "nbVersionPreviousYear": 41,
+            "numberOfCodeLines": 310189.0,
+            "numberOfFiles": 2296.0,
+            "cve": {
+                "vendor": "ansible",
+                "product": "ansible",
+                "version": "2.8.0rc3",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2019-10156",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-10156",
+                        "description": "A flaw was discovered in the way Ansible templating was implemented in versions before 2.6.18, 2.7.12 and 2.8.2, causing the possibility of information disclosure through unexpected variable substitution. By taking advantage of unintended variable substitution the content of any variable may be disclosed.",
+                        "cweId": "CWE-200",
+                        "cweLabel": null,
+                        "cvssScore": 5.4,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2019-10217",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-10217",
+                        "description": "A flaw was found in ansible 2.8.0 before 2.8.4. Fields managing sensitive data should be set as such by no_log feature. Some of these fields in GCP modules are not set properly. service_account_contents() which is common class for all gcp modules is not setting no_log to True. Any sensitive data managed by that function would be leak as an output when running ansible playbooks.",
+                        "cweId": "CWE-200",
+                        "cweLabel": null,
+                        "cvssScore": 6.5,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2019-14846",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-14846",
+                        "description": "In Ansible, all Ansible Engine versions up to ansible-engine 2.8.5, ansible-engine 2.7.13, ansible-engine 2.6.19, were logging at the DEBUG level which lead to a disclosure of credentials if a plugin used a library that logged credentials at the DEBUG level. This flaw does not affect Ansible modules, as those are executed in a separate process.",
+                        "cweId": "CWE-532",
+                        "cweLabel": "Insertion of Sensitive Information into Log File",
+                        "cvssScore": 7.8,
+                        "criticity": "HIGH",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2019-14858",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-14858",
+                        "description": "A vulnerability was found in Ansible engine 2.x up to 2.8 and Ansible tower 3.x up to 3.5. When a module has an argument_spec with sub parameters marked as no_log, passing an invalid parameter name to the module will cause the task to fail before the no_log options in the sub parameters are processed. As a result, data in the sub parameter fields will not be masked and will be displayed if Ansible is run with increased verbosity and present in the module invocation arguments for the task.",
+                        "cweId": "CWE-532",
+                        "cweLabel": "Insertion of Sensitive Information into Log File",
+                        "cvssScore": 5.5,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2019-14864",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-14864",
+                        "description": "Ansible, versions 2.9.x before 2.9.1, 2.8.x before 2.8.7 and Ansible versions 2.7.x before 2.7.15, is not respecting the flag no_log set it to True when Sumologic and Splunk callback plugins are used send tasks results events to collectors. This would discloses and collects any sensitive data.",
+                        "cweId": "CWE-532",
+                        "cweLabel": "Insertion of Sensitive Information into Log File",
+                        "cvssScore": 6.5,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2019-14904",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-14904",
+                        "description": "A flaw was found in the solaris_zone module from the Ansible Community modules. When setting the name for the zone on the Solaris host, the zone name is checked by listing the process with the 'ps' bare command on the remote machine. An attacker could take advantage of this flaw by crafting the name of the zone and executing arbitrary commands in the remote host. Ansible Engine 2.7.15, 2.8.7, and 2.9.2 as well as previous versions are affected.",
+                        "cweId": "CWE-78",
+                        "cweLabel": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')",
+                        "cvssScore": 7.3,
+                        "criticity": "HIGH",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2019-14905",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-14905",
+                        "description": "A vulnerability was found in Ansible Engine versions 2.9.x before 2.9.3, 2.8.x before 2.8.8, 2.7.x before 2.7.16 and earlier, where in Ansible's nxos_file_copy module can be used to copy files to a flash or bootflash on NXOS devices. Malicious code could craft the filename parameter to perform OS command injections. This could result in a loss of confidentiality of the system among other issues.",
+                        "cweId": "CWE-610",
+                        "cweLabel": null,
+                        "cvssScore": 5.6,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2020-10684",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-10684",
+                        "description": "A flaw was found in Ansible Engine, all versions 2.7.x, 2.8.x and 2.9.x prior to 2.7.17, 2.8.9 and 2.9.6 respectively, when using ansible_facts as a subkey of itself and promoting it to a variable when inject is enabled, overwriting the ansible_facts after the clean. An attacker could take advantage of this by altering the ansible_facts, such as ansible_hosts, users and any other key data which would lead into privilege escalation or code injection.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.9,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:redhat:openstack",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2020-10685",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-10685",
+                        "description": "A flaw was found in Ansible Engine affecting Ansible Engine versions 2.7.x before 2.7.17 and 2.8.x before 2.8.11 and 2.9.x before 2.9.7 as well as Ansible Tower before and including versions 3.4.5 and 3.5.5 and 3.6.3 when using modules which decrypts vault files such as assemble, script, unarchive, win_copy, aws_s3 or copy modules. The temporary directory is created in /tmp leaves the s ts unencrypted. On Operating Systems which /tmp is not a tmpfs but part of the root partition, the directory is only cleared on boot and the decryp emains when the host is switched off. The system will be vulnerable when the system is not running. So decrypted data must be cleared as soon as possible and the data which normally is encrypted ble.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.0,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:redhat:openstack",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2020-10729",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-10729",
+                        "description": "A flaw was found in the use of insufficiently random values in Ansible. Two random password lookups of the same length generate the equal value as the template caching action for the same file since no re-evaluation happens. The highest threat from this vulnerability would be that all passwords are exposed at once for the file. This flaw affects Ansible Engine versions before 2.9.6.",
+                        "cweId": "CWE-330",
+                        "cweLabel": null,
+                        "cvssScore": 5.5,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2020-10744",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-10744",
+                        "description": "An incomplete fix was found for the fix of the flaw CVE-2020-1733 ansible: insecure temporary directory when running become_user from become directive. The provided fix is insufficient to prevent the race condition on systems using ACLs and FUSE filesystems. Ansible Engine 2.7.18, 2.8.12, and 2.9.9 as well as previous versions are affected and Ansible Tower 3.4.5, 3.5.6 and 3.6.4 as well as previous versions are affected.",
+                        "cweId": "CWE-668",
+                        "cweLabel": null,
+                        "cvssScore": 5.0,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2020-14330",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-14330",
+                        "description": "An Improper Output Neutralization for Logs flaw was found in Ansible when using the uri module, where sensitive data is exposed to content and json output. This flaw allows an attacker to access the logs or outputs of performed tasks to read keys used in playbooks from other users within the uri module. The highest threat from this vulnerability is to data confidentiality.",
+                        "cweId": "CWE-116",
+                        "cweLabel": null,
+                        "cvssScore": 5.5,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2020-14332",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-14332",
+                        "description": "A flaw was found in the Ansible Engine when using module_args. Tasks executed with check mode (--check-mode) do not properly neutralize sensitive data exposed in the event data. This flaw allows unauthorized users to read this data. The highest threat from this vulnerability is to confidentiality.",
+                        "cweId": "CWE-532",
+                        "cweLabel": "Insertion of Sensitive Information into Log File",
+                        "cvssScore": 5.5,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2020-14365",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-14365",
+                        "description": "A flaw was found in the Ansible Engine, in ansible-engine 2.8.x before 2.8.15 and ansible-engine 2.9.x before 2.9.13, when installing packages using the dnf module. GPG signatures are ignored during installation even when disable_gpg_check is set to False, which is the default behavior. This flaw leads to malicious packages being installed on the system and arbitrary code executed via package installation scripts. The highest threat from this vulnerability is to integrity and system availability.",
+                        "cweId": "CWE-347",
+                        "cweLabel": "Improper Verification of Cryptographic Signature",
+                        "cvssScore": 7.1,
+                        "criticity": "HIGH",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2020-1733",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-1733",
+                        "description": "A race condition flaw was found in Ansible Engine 2.7.17 and prior, 2.8.9 and prior, 2.9.6 and prior when running a playbook with an unprivileged become user. When Ansible needs to run a module with become user, the temporary directory is created in /var/tmp. This directory is created with \"umask 77 && mkdir -p <dir>\"; this operation does not fail if the directory already exists and is owned by another user. An attacker could take advantage to gain control of the become user as the target directory can be retrieved by iterating '/proc/<pid>/cmdline'.",
+                        "cweId": "CWE-668",
+                        "cweLabel": null,
+                        "cvssScore": 5.0,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2020-1734",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-1734",
+                        "description": "A flaw was found in the pipe lookup plugin of ansible. Arbitrary commands can be run, when the pipe lookup plugin uses subprocess.Popen() with shell=True, by overwriting ansible facts and the variable is not escaped by quote plugin. An attacker could take advantage and run arbitrary commands by overwriting the ansible facts.",
+                        "cweId": "CWE-78",
+                        "cweLabel": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')",
+                        "cvssScore": 7.4,
+                        "criticity": "HIGH",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2020-1735",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-1735",
+                        "description": "A flaw was found in the Ansible Engine when the fetch module is used. An attacker could intercept the module, inject a new path, and then choose a new destination path on the controller node. All versions in 2.7.x, 2.8.x and 2.9.x branches are believed to be vulnerable.",
+                        "cweId": "CWE-22",
+                        "cweLabel": null,
+                        "cvssScore": 4.6,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2020-1736",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-1736",
+                        "description": "A flaw was found in Ansible Engine when a file is moved using atomic_move primitive as the file mode cannot be specified. This sets the destination files world-readable if the destination file does not exist and if the file exists, the file could be changed to have less restrictive permissions before the move. This could lead to the disclosure of sensitive data. All versions in 2.7.x, 2.8.x and 2.9.x branches are believed to be vulnerable.",
+                        "cweId": "CWE-732",
+                        "cweLabel": null,
+                        "cvssScore": 3.3,
+                        "criticity": "LOW",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2020-1737",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-1737",
+                        "description": "A flaw was found in Ansible 2.7.17 and prior, 2.8.9 and prior, and 2.9.6 and prior when using the Extract-Zip function from the win_unzip module as the extracted file(s) are not checked if they belong to the destination folder. An attacker could take advantage of this flaw by crafting an archive anywhere in the file system, using a path traversal. This issue is fixed in 2.10.",
+                        "cweId": "CWE-22",
+                        "cweLabel": null,
+                        "cvssScore": 7.8,
+                        "criticity": "HIGH",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2020-1738",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-1738",
+                        "description": "A flaw was found in Ansible Engine when the module package or service is used and the parameter 'use' is not specified. If a previous task is executed with a malicious user, the module sent can be selected by the attacker using the ansible facts file. All versions in 2.7.x, 2.8.x and 2.9.x branches are believed to be vulnerable.",
+                        "cweId": "CWE-88",
+                        "cweLabel": "Improper Neutralization of Argument Delimiters in a Command ('Argument Injection')",
+                        "cvssScore": 3.9,
+                        "criticity": "LOW",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2020-1739",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-1739",
+                        "description": "A flaw was found in Ansible 2.7.16 and prior, 2.8.8 and prior, and 2.9.5 and prior when a password is set with the argument \"password\" of svn module, it is used on svn command line, disclosing to other users within the same node. An attacker could take advantage by reading the cmdline file from that particular PID on the procfs.",
+                        "cweId": "CWE-200",
+                        "cweLabel": null,
+                        "cvssScore": 3.9,
+                        "criticity": "LOW",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2020-1740",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-1740",
+                        "description": "A flaw was found in Ansible Engine when using Ansible Vault for editing encrypted files. When a user executes \"ansible-vault edit\", another user on the same computer can read the old and new secret, as it is created in a temporary file with mkstemp and the returned file descriptor is closed and the method write_data is called to write the existing secret in the file. This method will delete the file before recreating it insecurely. All versions in 2.7.x, 2.8.x and 2.9.x branches are believed to be vulnerable.",
+                        "cweId": "CWE-200",
+                        "cweLabel": null,
+                        "cvssScore": 4.7,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2020-1746",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-1746",
+                        "description": "A flaw was found in the Ansible Engine affecting Ansible Engine versions 2.7.x before 2.7.17 and 2.8.x before 2.8.11 and 2.9.x before 2.9.7 as well as Ansible Tower before and including versions 3.4.5 and 3.5.5 and 3.6.3 when the ldap_attr and ldap_entry community modules are used. The issue discloses the LDAP bind password to stdout or a log file if a playbook task is written using the bind_pw in the parameters field. The highest threat from this vulnerability is data confidentiality.",
+                        "cweId": "CWE-200",
+                        "cweLabel": null,
+                        "cvssScore": 5.0,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2020-1753",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-1753",
+                        "description": "A security flaw was found in Ansible Engine, all Ansible 2.7.x versions prior to 2.7.17, all Ansible 2.8.x versions prior to 2.8.11 and all Ansible 2.9.x versions prior to 2.9.7, when managing kubernetes using the k8s module. Sensitive parameters such as passwords and tokens are passed to kubectl from the command line, not using an environment variable or an input configuration file. This will disclose passwords and tokens from process list and no_log directive from debug module would not have any effect making these secrets being disclosed on stdout and log files.",
+                        "cweId": "CWE-532",
+                        "cweLabel": "Insertion of Sensitive Information into Log File",
+                        "cvssScore": 5.5,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2020-20178",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-20178",
+                        "description": "A flaw was found in OpenLDAP. This flaw allows an attacker who can send a malicious packet to be processed by OpenLDAP\u00e2\u0080\u0099s slapd server, to trigger an assertion failure. The highest threat from this vulnerability is to system availability.",
+                        "cweId": "CWE-617",
+                        "cweLabel": "Reachable Assertion",
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2020-25635",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-25635",
+                        "description": "A flaw was found in Ansible Base when using the aws_ssm connection plugin as garbage collector is not happening after playbook run is completed. Files would remain in the bucket exposing the data. This issue affects directly data confidentiality.",
+                        "cweId": "CWE-212",
+                        "cweLabel": "Improper Removal of Sensitive Information Before Storage or Transfer",
+                        "cvssScore": 5.5,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2021-20178",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-20178",
+                        "description": "A flaw was found in ansible module where credentials are disclosed in the console log by default and not protected by the security feature when using the bitbucket_pipeline_variable module. This flaw allows an attacker to steal bitbucket_pipeline credentials. The highest threat from this vulnerability is to confidentiality.",
+                        "cweId": "CWE-532",
+                        "cweLabel": "Insertion of Sensitive Information into Log File",
+                        "cvssScore": 5.5,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2021-20180",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-20180",
+                        "description": "A flaw was found in ansible module where credentials are disclosed in the console log by default and not protected by the security feature when using the bitbucket_pipeline_variable module. This flaw allows an attacker to steal bitbucket_pipeline credentials. The highest threat from this vulnerability is to confidentiality.",
+                        "cweId": "CWE-532",
+                        "cweLabel": "Insertion of Sensitive Information into Log File",
+                        "cvssScore": 5.5,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2021-20191",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-20191",
+                        "description": "A flaw was found in ansible. Credentials, such as secrets, are being disclosed in console log by default and not protected by no_log feature when using those modules. An attacker can take advantage of this information to steal those credentials. The highest threat from this vulnerability is to data confidentiality. Versions before ansible 2.9.18 are affected.",
+                        "cweId": "CWE-532",
+                        "cweLabel": "Insertion of Sensitive Information into Log File",
+                        "cvssScore": 5.5,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2021-20228",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-20228",
+                        "description": "A flaw was found in the Ansible Engine 2.9.18, where sensitive info is not masked by default and is not protected by the no_log feature when using the sub-option feature of the basic.py module. This flaw allows an attacker to obtain sensitive information. The highest threat from this vulnerability is to confidentiality.",
+                        "cweId": "CWE-200",
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2021-3583",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-3583",
+                        "description": "A flaw was found in Ansible, where a user's controller is vulnerable to template injection. This issue can occur through facts used in the template if the user is trying to put templates in multi-line YAML strings and the facts being handled do not routinely include special template characters. This flaw allows attackers to perform command injection, which discloses sensitive information. The highest threat from this vulnerability is to confidentiality and integrity.",
+                        "cweId": "CWE-77",
+                        "cweLabel": null,
+                        "cvssScore": 7.1,
+                        "criticity": "HIGH",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2021-3620",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-3620",
+                        "description": "A flaw was found in Ansible Engine's ansible-connection module, where sensitive information such as the Ansible user credentials is disclosed by default in the traceback error message. The highest threat from this vulnerability is to confidentiality.",
+                        "cweId": "CWE-209",
+                        "cweLabel": "Generation of Error Message Containing Sensitive Information",
+                        "cvssScore": 5.5,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2022-3697",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-3697",
+                        "description": "A flaw was found in Ansible in the amazon.aws collection when using the tower_callback parameter from the amazon.aws.ec2_instance module. This flaw allows an attacker to take advantage of this issue as the module is handling the parameter insecurely, leading to the password leaking in the logs.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2023-5115",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-5115",
+                        "description": "An absolute path traversal attack exists in the Ansible automation platform. This flaw allows an attacker to craft a malicious Ansible role and make the victim execute the role. A symlink can be used to overwrite a file outside of the extraction path.",
+                        "cweId": "CWE-22",
+                        "cweLabel": null,
+                        "cvssScore": 6.3,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2023-5764",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-5764",
+                        "description": "A template injection flaw was found in Ansible where a user's controller internal templating operations may remove the unsafe designation from template data. This issue could allow an attacker to use a specially crafted file to introduce code injection when supplying templating data.",
+                        "cweId": "CWE-1336",
+                        "cweLabel": null,
+                        "cvssScore": 7.8,
+                        "criticity": "HIGH",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2025-14010",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-14010",
+                        "description": "A flaw was found in ansible-collection-community-general. This vulnerability allows for information exposure (IE) of sensitive credentials, specifically plaintext passwords, via verbose output when running Ansible with debug modes. Attackers with access to logs could retrieve these secrets and potentially compromise Keycloak accounts or administrative access.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.5,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "2.8.4",
+            "safestVersion": "12.2.0"
+        },
+        {
+            "id": 51222,
+            "componentId": "GNOME/nautilus",
+            "name": "GNOME/nautilus",
+            "version": "3.31.90",
+            "release": 1549469502000,
+            "languages": "c",
+            "lifeSpan": "Active",
+            "origin": "Scan",
+            "licenses": [],
+            "lastVersion": "49.beta",
+            "lastRelease": 1754177966000,
+            "nbVersionPreviousYear": 18,
+            "numberOfCodeLines": 73810.0,
+            "numberOfFiles": 136.0,
+            "cwes": []
+        },
+        {
+            "id": 51520,
+            "componentId": "nni-yds.py",
+            "name": "nni-yds.py",
+            "version": "0.3.6",
+            "release": 1543478672000,
+            "languages": "python",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "0.3.7",
+            "lastRelease": 1543481037000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 8.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51536,
+            "componentId": "google/styleguide",
+            "name": "google/styleguide",
+            "languages": "html",
+            "origin": "Scan",
+            "licenses": [],
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 2246.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        }
+    ],
+    "partialComponents": [
+        {
+            "name": "AngularJS",
+            "technology": "JavaScript",
+            "type": "Web & Mobile applications",
+            "versions": [
+                ""
+            ],
+            "license": "MIT",
+            "editor": "http://angularjs.org/",
+            "description": "AngularJS lets you extend HTML vocabulary for your application. The resulting environment is extraordinarily expressive, readable, and quick to develop.",
+            "dependencyLevel": null
+        },
+        {
+            "name": "cryptography",
+            "technology": "Python",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "https://cryptography.io/en/latest/",
+            "description": "A package designed to expose cryptographic primitives and recipes to Python developers.",
+            "dependencyLevel": null
+        },
+        {
+            "name": "GTK",
+            "technology": "C/C++",
+            "type": "UI framework",
+            "versions": [
+                ""
+            ],
+            "license": "LGPL",
+            "editor": "http://www.gtk.org/",
+            "description": "GTK+, or the GIMP Toolkit, is a multi-platform toolkit for creating graphical user interfaces. Offering a complete set of widgets, GTK+ is suitable for projects ranging from small one-off tools to complete application suites.",
+            "dependencyLevel": null
+        },
+        {
+            "name": "jinja2",
+            "technology": "Python",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "Other",
+            "editor": "https://github.com/pallets/jinja",
+            "description": "A modern and designer friendly templating language.",
+            "dependencyLevel": null
+        },
+        {
+            "name": "Jquery",
+            "technology": "JavaScript",
+            "type": "Web & Mobile applications",
+            "versions": [
+                ""
+            ],
+            "license": "MIT",
+            "editor": "http://www.jquery.com",
+            "description": "jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.",
+            "dependencyLevel": null
+        },
+        {
+            "name": "netaddr",
+            "technology": "Python",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "MIT License",
+            "editor": "https://github.com/drkjam/netaddr/",
+            "description": "A network address manipulation library for Python",
+            "dependencyLevel": null
+        },
+        {
+            "name": "paramiko",
+            "technology": "Python",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "http://www.paramiko.org/",
+            "description": "A Python (2.6+. 3.3+) implementation of the SSHv2 protocol. providing both client and server functionality.",
+            "dependencyLevel": null
+        },
+        {
+            "name": "PyYAML",
+            "technology": "Python",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "http://pyyaml.org/",
+            "description": "YAML implementations for Python.",
+            "dependencyLevel": null
+        },
+        {
+            "name": "sphinx",
+            "technology": "Python",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "BSD License",
+            "editor": "http://sphinx-doc.org/",
+            "description": "Python documentation generator",
+            "dependencyLevel": null
+        },
+        {
+            "name": "pyfg>=0.50",
+            "technology": "Python",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        }
+    ]
+}

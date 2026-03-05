@@ -1,0 +1,1116 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 1482.0,
+                                            "effort": 4446.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ClassesComparisons",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 54.0,
+                                            "effort": 540.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__RiskyFunctionCalls",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 2.0,
+                                            "effort": 2.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__IllegalThrows",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 111.0,
+                                            "effort": 555.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__VarDecl",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 93.0,
+                                            "effort": 15.500001
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PL1",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__String",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 34.0,
+                                            "effort": 17.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__String",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 26.0,
+                                            "effort": 2.1666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MissingSemicolon",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 5.0,
+                                            "effort": 0.4166667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 2.17,
+                                            "effort": 2.17
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingHashcode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 7.0,
+                                            "effort": 70.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__RiskyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 277.0,
+                                            "effort": 1385.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__Instanceof",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 2219.0,
+                                            "effort": 22190.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__OverloadEquals",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 18.0,
+                                            "effort": 180.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__OutOfFinallyJumps",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 1.0,
+                                            "effort": 5.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__Intrinsics",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 121.0,
+                                            "effort": 121.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 1.3000002,
+                                            "effort": 1.3000002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__Pipes",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 4.0,
+                                            "effort": 0.6666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__StrongDataAccess",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 2.0,
+                                            "effort": 0.6666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MissingBraces",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 18.0,
+                                            "effort": 3.0000002
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__PublicAttributes",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 732.0,
+                                            "effort": 732.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingBraces2",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 3659.0,
+                                            "effort": 3659.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__EmptyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 260.0,
+                                            "effort": 1300.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingDefault",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 70.0,
+                                            "effort": 70.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 156088.0,
+                                            "effort": 156088.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingBreakInSwitch",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 41.0,
+                                            "effort": 3.4166667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BugPatterns",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 10.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__MissingDefault",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 4.0,
+                                            "effort": 4.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__This",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 2.0,
+                                            "effort": 30.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MissingIdentical",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 10.0,
+                                            "effort": 0.8333334
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 17.0,
+                                            "effort": 17.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 5449.0,
+                                            "effort": 454.08334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ClassDefinitions",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 500.0,
+                                            "effort": 2500.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__StarImport",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 383.0,
+                                            "effort": 383.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 2544.0,
+                                            "effort": 2544.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__ShortVarName",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 12.0,
+                                            "effort": 2.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 7.0,
+                                            "effort": 7.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PL1",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 9.0,
+                                            "effort": 9.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 265.0,
+                                            "effort": 22.083334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 144.0,
+                                            "effort": 12.000001
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 2472.0,
+                                            "effort": 206.00002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingAutomatedDoc2",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 49627.0,
+                                            "effort": 49627.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 2611.0,
+                                            "effort": 217.58334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 3827.0,
+                                            "effort": 318.9167
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 54.50001,
+                                            "effort": 54.50001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__LocalNames",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 59.0,
+                                            "effort": 9.833334
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PL1",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 56.0,
+                                            "effort": 4.666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 19.0,
+                                            "effort": 1.5833334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 11.0,
+                                            "effort": 0.9166667
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 19332.205,
+                                            "effort": 19332.205
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__Ternary",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 872.0,
+                                            "effort": 872.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadDeclarationOrder",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 166.0,
+                                            "effort": 166.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 2406.0,
+                                            "effort": 200.50002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 366.0,
+                                            "effort": 3660.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 1.0,
+                                            "effort": 0.083333336
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__ContinuationChar",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 1.0,
+                                            "effort": 0.16666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PL1",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 287.19998,
+                                            "effort": 287.19998
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 8.400001,
+                                            "effort": 8.400001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadDeclarationOrder",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 2.0,
+                                            "effort": 2.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__VarDecl",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 6.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__ApplicationGlobalVariables",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 19.0,
+                                            "effort": 3.1666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 541721.0,
+                                            "effort": 541721.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 0.72499996,
+                                            "effort": 3.6249998
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PL1",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 0.33,
+                                            "effort": 0.33
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 5.5555553,
+                                            "effort": 27.777777
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 1.9,
+                                            "effort": 1.9
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 150.60666,
+                                            "effort": 753.0333
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 294.38013,
+                                            "effort": 1471.9006
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__NBMETH",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 1.0,
+                                            "effort": 5.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ComplexConditions",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 21.0,
+                                            "effort": 210.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 0.175,
+                                            "effort": 0.875
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__ComplexConditions",
+                                    "detail": [
+                                        {
+                                            "application_id": 13397,
+                                            "application_name": "groovy",
+                                            "counter": 2.0,
+                                            "effort": 20.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

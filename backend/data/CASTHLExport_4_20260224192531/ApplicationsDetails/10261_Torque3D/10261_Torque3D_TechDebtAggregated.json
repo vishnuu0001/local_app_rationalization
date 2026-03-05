@@ -1,0 +1,1188 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 590.0,
+                                            "effort": 1770.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JSP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__UselessDependencies",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 760.0,
+                                            "effort": 63.333336
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__FileNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 334.0,
+                                            "effort": 167.00002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__FileLocation",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 332.0,
+                                            "effort": 166.00002
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__Array",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 12.0,
+                                            "effort": 2.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__String",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 8448.0,
+                                            "effort": 704.00006
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MissingSemicolon",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 1986.0,
+                                            "effort": 165.50002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__DangerousTypes",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 4.0,
+                                            "effort": 0.6666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 172.0,
+                                            "effort": 516.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 88.36996,
+                                            "effort": 88.36996
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MultilineString",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 6.0,
+                                            "effort": 3.0000002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__Scope",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 8.0,
+                                            "effort": 1.3333334
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingHashcode",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 1.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__RiskyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 382.0,
+                                            "effort": 1910.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__Instanceof",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 16.0,
+                                            "effort": 160.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JSP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__MissingErrorPage",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 350.0,
+                                            "effort": 350.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__TagLibraryDescriptor",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 350.0,
+                                            "effort": 350.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__TooManyJavaCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 110.0,
+                                            "effort": 110.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__StrongDataAccess",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 3194.0,
+                                            "effort": 1064.6667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__Eval",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 2.0,
+                                            "effort": 20.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MissingBraces",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 324.0,
+                                            "effort": 54.000004
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__Object",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 2.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadLoop",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 9.0,
+                                            "effort": 45.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__PublicAttributes",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 1453.0,
+                                            "effort": 1453.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingBraces2",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 31.0,
+                                            "effort": 31.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__EmptyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 32.0,
+                                            "effort": 160.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 29162.0,
+                                            "effort": 29162.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BugPatterns",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 3.0,
+                                            "effort": 3.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JSP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__Unsecure",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 350.0,
+                                            "effort": 3500.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__DeprecatedFeature",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 110.0,
+                                            "effort": 1100.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__This",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 1733.0,
+                                            "effort": 25995.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MissingIdentical",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 958.0,
+                                            "effort": 79.833336
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__EndLoopTest",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 3.0,
+                                            "effort": 30.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__AssignmentsInConditionalExpr",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 10.0,
+                                            "effort": 5.0000005
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MultilineInstruction",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 45.0,
+                                            "effort": 3.7500002
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 230.0,
+                                            "effort": 230.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 1445.0,
+                                            "effort": 120.41667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ClassDefinitions",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 4.0,
+                                            "effort": 20.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__StarImport",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 140.0,
+                                            "effort": 140.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 1248.0,
+                                            "effort": 1248.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JSP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 164.0,
+                                            "effort": 164.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__String",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 8.0,
+                                            "effort": 0.6666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 4939.0,
+                                            "effort": 411.58334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__SuspiciousIndentations",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 6582.0,
+                                            "effort": 548.5
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 1424.0,
+                                            "effort": 118.66667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__Prototype",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 280.0,
+                                            "effort": 23.333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 4439.0,
+                                            "effort": 369.9167
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__ImmediateFuncCall",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 50.0,
+                                            "effort": 4.166667
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 923.0,
+                                            "effort": 76.91667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingAutomatedDoc2",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 5352.0,
+                                            "effort": 5352.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 1346.0,
+                                            "effort": 112.16667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 26.0,
+                                            "effort": 2.1666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JSP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__JSPComment",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 92.0,
+                                            "effort": 15.333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__HtmlComment",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 686.0,
+                                            "effort": 114.333336
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 821.0,
+                                            "effort": 68.41667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 855.0,
+                                            "effort": 71.25
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MultDecl",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 193.0,
+                                            "effort": 16.083334
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 8885.189,
+                                            "effort": 8885.189
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__Ternary",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 409.0,
+                                            "effort": 409.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadDeclarationOrder",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 85.0,
+                                            "effort": 85.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 1805.0,
+                                            "effort": 150.41667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 102.0,
+                                            "effort": 1020.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JSP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__TagFormat",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 450.0,
+                                            "effort": 37.500004
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 4.2599983,
+                                            "effort": 4.2599983
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__WeakCommentRate2",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 3.2999976,
+                                            "effort": 3.2999976
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__BadDeclarationOrder",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 346.0,
+                                            "effort": 346.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 1009.1404,
+                                            "effort": 1009.1404
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadDeclarationOrder",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 10.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__VarDecl",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 204.0,
+                                            "effort": 34.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__ApplicationGlobalVariables",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 88.0,
+                                            "effort": 14.666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 6.0,
+                                            "effort": 60.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 109563.0,
+                                            "effort": 109563.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 2755.6663,
+                                            "effort": 13778.331
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 226.76001,
+                                            "effort": 226.76001
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 15.51,
+                                            "effort": 77.55
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 6.8399997,
+                                            "effort": 34.199997
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JSP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__SectionNumber",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 4.0,
+                                            "effort": 20.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__NBMETH",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 810.0,
+                                            "effort": 4050.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ComplexConditions",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 1.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 10261,
+                                            "application_name": "Torque3D",
+                                            "counter": 17.0,
+                                            "effort": 85.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

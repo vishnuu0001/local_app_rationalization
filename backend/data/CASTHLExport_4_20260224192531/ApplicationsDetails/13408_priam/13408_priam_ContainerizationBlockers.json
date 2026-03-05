@@ -1,0 +1,141 @@
+[
+    {
+        "id": "Use_Hardcoded_IP_Address-JAVA",
+        "display": "Execution Environment : Using hardcoded network IP address",
+        "criticality": "Low",
+        "impacts": [
+            "Code"
+        ],
+        "roadblocks": 2.0,
+        "cloudEffort": 20,
+        "files": [
+            "priam\\src\\test\\java\\com\\netflix\\priam\\resources\\CassandraConfigTest.java",
+            "priam\\src\\test\\java\\com\\netflix\\priam\\resources\\PriamInstanceResourceTest.java"
+        ]
+    },
+    {
+        "id": "Directory_Manipulation_Practice-JAVA",
+        "display": "Persistent Files : Perform Directory Manipulation",
+        "criticality": "Low",
+        "impacts": [
+            "Code",
+            "Container only"
+        ],
+        "roadblocks": 1.0,
+        "cloudEffort": 15,
+        "files": [
+            "priam\\src\\test\\java\\com\\netflix\\priam\\backup\\TestS3FileSystem.java",
+            "priam\\src\\main\\java\\com\\netflix\\priam\\backup\\AbstractFileSystem.java",
+            "priam\\src\\main\\java\\com\\netflix\\priam\\services\\SnapshotMetaService.java",
+            "priam\\src\\test\\java\\com\\netflix\\priam\\backup\\TestSnapshotStatusMgr.java",
+            "priam\\src\\main\\java\\com\\netflix\\priam\\aws\\S3EncryptedFileSystem.java",
+            "priam\\src\\test\\java\\com\\netflix\\priam\\restore\\TestPostRestoreHook.java",
+            "priam\\src\\test\\java\\com\\netflix\\priam\\utils\\BackupFileUtils.java",
+            "priam\\src\\main\\java\\com\\netflix\\priam\\backup\\FileSnapshotStatusMgr.java",
+            "priam\\src\\main\\java\\com\\netflix\\priam\\restore\\PostRestoreHook.java",
+            "priam\\src\\main\\java\\com\\netflix\\priam\\restore\\EncryptedRestoreBase.java",
+            "priam\\src\\main\\java\\com\\netflix\\priam\\restore\\AbstractRestore.java",
+            "priam\\src\\test\\java\\com\\netflix\\priam\\backup\\TestBackup.java",
+            "priam\\src\\main\\java\\com\\netflix\\priam\\backupv2\\MetaV1Proxy.java",
+            "priam\\src\\main\\java\\com\\netflix\\priam\\backup\\IncrementalMetaData.java",
+            "priam\\src\\main\\java\\com\\netflix\\priam\\backup\\MetaData.java",
+            "priam\\src\\main\\java\\com\\netflix\\priam\\backup\\AbstractBackup.java",
+            "priam\\src\\main\\java\\com\\netflix\\priam\\backupv2\\MetaV2Proxy.java",
+            "priam\\src\\test\\java\\com\\netflix\\priam\\tuner\\dse\\DseTunerTest.java",
+            "priam\\src\\main\\java\\com\\netflix\\priam\\identity\\DoubleRing.java",
+            "priam\\src\\test\\java\\com\\netflix\\priam\\backupv2\\TestForgottenFileManager.java",
+            "priam\\src\\test\\java\\com\\netflix\\priam\\backup\\TestBackupFile.java",
+            "priam\\src\\main\\java\\com\\netflix\\priam\\config\\PriamConfigurationPersister.java",
+            "priam\\src\\main\\java\\com\\netflix\\priam\\backup\\AbstractBackupPath.java"
+        ]
+    },
+    {
+        "id": "Use_File_System-JAVA",
+        "display": "Execution Environment : Using file system",
+        "criticality": "Low",
+        "impacts": [
+            "Code",
+            "Container only"
+        ],
+        "roadblocks": 15.0,
+        "cloudEffort": 225,
+        "files": [
+            "priam\\src\\test\\java\\com\\netflix\\priam\\resources\\BackupServletTest.java",
+            "priam\\src\\main\\java\\com\\netflix\\priam\\cli\\StaticMembership.java",
+            "priam\\src\\main\\java\\com\\netflix\\priam\\config\\IConfiguration.java",
+            "priam\\src\\main\\java\\com\\netflix\\priam\\defaultimpl\\CassandraProcessManager.java",
+            "priam\\src\\main\\java\\com\\netflix\\priam\\config\\PriamConfiguration.java",
+            "priam\\src\\test\\java\\com\\netflix\\priam\\config\\FakeConfiguration.java",
+            "priam\\src\\main\\java\\com\\netflix\\priam\\cred\\ClearCredential.java"
+        ]
+    },
+    {
+        "id": "Use_SecuredProtocols-JAVA",
+        "display": "Security & User Authentication : Use of unsecured network protocols or URI libraries",
+        "criticality": "Low",
+        "impacts": [
+            "Code"
+        ],
+        "roadblocks": 17.0,
+        "cloudEffort": 170,
+        "files": [
+            "priam\\src\\main\\java\\com\\netflix\\priam\\identity\\config\\AWSInstanceInfo.java",
+            "priam-cass-extensions\\src\\main\\java\\com\\netflix\\priam\\cassandra\\extensions\\PriamStartupAgent.java",
+            "priam\\src\\main\\java\\com\\netflix\\priam\\resources\\BackupServlet.java",
+            "priam-cass-extensions\\src\\main\\java\\com\\netflix\\priam\\cassandra\\extensions\\NFSeedProvider.java",
+            "priam\\src\\main\\java\\com\\netflix\\priam\\identity\\token\\DeadTokenRetriever.java"
+        ]
+    },
+    {
+        "id": "File_Manipulation_Practice-JAVA",
+        "display": "Persistent Files : Perform File Manipulation",
+        "criticality": "Low",
+        "impacts": [
+            "Code",
+            "Container only"
+        ],
+        "roadblocks": 145.0,
+        "cloudEffort": 2175,
+        "files": [
+            "priam\\src\\test\\java\\com\\netflix\\priam\\backup\\TestS3FileSystem.java",
+            "priam\\src\\test\\java\\com\\netflix\\priam\\backupv2\\TestBackupUtils.java",
+            "priam\\src\\main\\java\\com\\netflix\\priam\\google\\GoogleEncryptedFileSystem.java",
+            "priam\\src\\main\\java\\com\\netflix\\priam\\backup\\AbstractFileSystem.java",
+            "priam\\src\\main\\java\\com\\netflix\\priam\\cryptography\\pgp\\PgpCryptography.java",
+            "priam\\src\\test\\java\\com\\netflix\\priam\\backup\\TestSnapshotStatusMgr.java",
+            "priam\\src\\main\\java\\com\\netflix\\priam\\aws\\S3EncryptedFileSystem.java",
+            "priam\\src\\main\\java\\com\\netflix\\priam\\utils\\SystemUtils.java",
+            "priam\\src\\main\\java\\com\\netflix\\priam\\compress\\SnappyCompression.java",
+            "priam\\src\\main\\java\\com\\netflix\\priam\\backup\\CommitLogBackup.java",
+            "priam\\src\\main\\java\\com\\netflix\\priam\\services\\BackupTTLService.java",
+            "priam\\src\\main\\java\\com\\netflix\\priam\\restore\\PostRestoreHook.java",
+            "priam\\src\\test\\java\\com\\netflix\\priam\\backup\\TestBackup.java",
+            "priam\\src\\test\\java\\com\\netflix\\priam\\backupv2\\TestMetaV2Proxy.java",
+            "priam\\src\\main\\java\\com\\netflix\\priam\\defaultimpl\\CassandraProcessManager.java",
+            "priam\\src\\test\\java\\com\\netflix\\priam\\services\\TestBackupTTLService.java",
+            "priam\\src\\main\\java\\com\\netflix\\priam\\backupv2\\MetaV2Proxy.java",
+            "priam\\src\\main\\java\\com\\netflix\\priam\\tuner\\StandardTuner.java",
+            "priam\\src\\test\\java\\com\\netflix\\priam\\backupv2\\TestForgottenFileManager.java",
+            "priam\\src\\test\\java\\com\\netflix\\priam\\backup\\TestBackupFile.java",
+            "priam\\src\\main\\java\\com\\netflix\\priam\\config\\PriamConfigurationPersister.java",
+            "priam\\src\\main\\java\\com\\netflix\\priam\\tuner\\dse\\AuditLogTunerLog4J.java",
+            "priam\\src\\test\\java\\com\\netflix\\priam\\restore\\TestPostRestoreHook.java",
+            "priam\\src\\main\\java\\com\\netflix\\priam\\aws\\S3FileSystem.java",
+            "priam\\src\\main\\java\\com\\netflix\\priam\\utils\\CassandraMonitor.java",
+            "priam\\src\\main\\java\\com\\netflix\\priam\\backupv2\\ForgottenFilesManager.java",
+            "priam\\src\\test\\java\\com\\netflix\\priam\\utils\\BackupFileUtils.java",
+            "priam\\src\\main\\java\\com\\netflix\\priam\\backup\\FileSnapshotStatusMgr.java",
+            "priam\\src\\test\\java\\com\\netflix\\priam\\tuner\\StandardTunerTest.java",
+            "priam\\src\\main\\java\\com\\netflix\\priam\\restore\\EncryptedRestoreBase.java",
+            "priam\\src\\main\\java\\com\\netflix\\priam\\restore\\AbstractRestore.java",
+            "priam\\src\\main\\java\\com\\netflix\\priam\\backupv2\\MetaV1Proxy.java",
+            "priam\\src\\main\\java\\com\\netflix\\priam\\backup\\IncrementalMetaData.java",
+            "priam\\src\\main\\java\\com\\netflix\\priam\\backup\\MetaData.java",
+            "priam\\src\\main\\java\\com\\netflix\\priam\\backup\\AbstractBackup.java",
+            "priam\\src\\test\\java\\com\\netflix\\priam\\backup\\TestCompression.java",
+            "priam\\src\\test\\java\\com\\netflix\\priam\\tuner\\dse\\DseTunerTest.java",
+            "priam\\src\\main\\java\\com\\netflix\\priam\\identity\\DoubleRing.java",
+            "priam\\src\\main\\java\\com\\netflix\\priam\\backup\\AbstractBackupPath.java"
+        ]
+    }
+]

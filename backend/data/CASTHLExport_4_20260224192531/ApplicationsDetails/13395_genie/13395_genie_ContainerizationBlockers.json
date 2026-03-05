@@ -1,0 +1,138 @@
+[
+    {
+        "id": "Use_SecuredProtocols-PYTHON",
+        "display": "Security & User Authentication : Use of unsecured network protocols or URI libraries",
+        "criticality": "Low",
+        "impacts": [
+            "Code"
+        ],
+        "roadblocks": 8.0,
+        "cloudEffort": 80,
+        "files": [
+            "genie-demo\\src\\main\\docker\\client\\example\\run_spark_shell_job.py",
+            "genie-demo\\src\\main\\docker\\client\\example\\reset_tags.py",
+            "genie-demo\\src\\main\\docker\\client\\example\\run_spark_submit_job.py",
+            "genie-demo\\src\\main\\docker\\client\\example\\run_hdfs_job.py",
+            "genie-demo\\src\\main\\docker\\client\\example\\run_yarn_job.py",
+            "genie-demo\\src\\main\\docker\\client\\example\\run_hadoop_job.py",
+            "genie-demo\\src\\main\\docker\\client\\example\\move_tags.py",
+            "genie-demo\\src\\main\\docker\\client\\example\\init_demo.py"
+        ]
+    },
+    {
+        "id": "Directory_Manipulation_Practice-JAVA",
+        "display": "Persistent Files : Perform Directory Manipulation",
+        "criticality": "Low",
+        "impacts": [
+            "Code",
+            "Container only"
+        ],
+        "roadblocks": 5.0,
+        "cloudEffort": 75,
+        "files": [
+            "genie-web\\src\\main\\java\\com\\netflix\\genie\\web\\services\\impl\\FileSystemAttachmentService.java",
+            "genie-web\\src\\main\\java\\com\\netflix\\genie\\web\\resources\\writers\\DefaultDirectoryWriter.java",
+            "genie-agent\\src\\main\\java\\com\\netflix\\genie\\agent\\execution\\services\\impl\\LaunchJobServiceImpl.java",
+            "genie-agent\\src\\main\\java\\com\\netflix\\genie\\agent\\cli\\DownloadCommand.java",
+            "genie-web\\src\\main\\java\\com\\netflix\\genie\\web\\tasks\\node\\DiskCleanupTask.java",
+            "genie-web\\src\\test\\java\\com\\netflix\\genie\\web\\configs\\GenieApiAutoConfigurationUnitTests.java",
+            "genie-web\\src\\test\\java\\com\\netflix\\genie\\web\\controllers\\JobRestControllerIntegrationTests.java",
+            "genie-agent\\src\\main\\java\\com\\netflix\\genie\\agent\\execution\\services\\impl\\DownloadServiceImpl.java",
+            "genie-web\\src\\test\\java\\com\\netflix\\genie\\web\\tasks\\node\\DiskCleanupTaskUnitTests.java",
+            "genie-test-web\\src\\main\\java\\com\\netflix\\genie\\test\\web\\configs\\IntegrationTestingConfiguration.java",
+            "genie-web\\src\\test\\java\\com\\netflix\\genie\\web\\services\\impl\\FileSystemAttachmentServiceUnitTests.java",
+            "genie-web\\src\\test\\java\\com\\netflix\\genie\\web\\resources\\handlers\\GenieResourceHttpRequestHandlerUnitTests.java",
+            "genie-web\\src\\main\\java\\com\\netflix\\genie\\web\\jobs\\workflow\\impl\\GenieBaseTask.java",
+            "genie-web\\src\\main\\java\\com\\netflix\\genie\\web\\services\\impl\\LocalJobRunner.java",
+            "genie-web\\src\\test\\java\\com\\netflix\\genie\\web\\resources\\writers\\DefaultDirectoryWriterUnitTests.java",
+            "genie-web\\src\\main\\java\\com\\netflix\\genie\\web\\tasks\\job\\JobCompletionService.java",
+            "genie-web\\src\\test\\java\\com\\netflix\\genie\\web\\jobs\\workflow\\impl\\InitialSetupTaskUnitTest.java",
+            "genie-web\\src\\main\\java\\com\\netflix\\genie\\web\\resources\\handlers\\GenieResourceHttpRequestHandler.java",
+            "genie-web\\src\\main\\java\\com\\netflix\\genie\\web\\configs\\GenieApiAutoConfiguration.java",
+            "genie-agent\\src\\main\\java\\com\\netflix\\genie\\agent\\execution\\services\\impl\\FetchingCacheServiceImpl.java"
+        ]
+    },
+    {
+        "id": "File_Manipulation_Practice-PYTHON",
+        "display": "Persistent Files : Perform File Manipulation",
+        "criticality": "Low",
+        "impacts": [
+            "Code",
+            "Container only"
+        ],
+        "roadblocks": 1.0,
+        "cloudEffort": 15,
+        "files": [
+            "genie-demo\\src\\main\\docker\\client\\example\\init_demo.py"
+        ]
+    },
+    {
+        "id": "Use_SecuredProtocols-JAVA",
+        "display": "Security & User Authentication : Use of unsecured network protocols or URI libraries",
+        "criticality": "Low",
+        "impacts": [
+            "Code"
+        ],
+        "roadblocks": 12.0,
+        "cloudEffort": 120,
+        "files": [
+            "genie-client\\src\\test\\java\\com\\netflix\\genie\\client\\security\\oauth2\\impl\\OAuth2SecurityInterceptorUnitTests.java",
+            "genie-client\\src\\test\\java\\com\\netflix\\genie\\client\\GenieClientsIntegrationTestsBase.java",
+            "genie-security\\src\\test\\java\\com\\netflix\\genie\\security\\oauth2\\pingfederate\\PingFederateRemoteTokenServicesUnitTests.java",
+            "genie-web\\src\\test\\java\\com\\netflix\\genie\\web\\services\\impl\\S3FileTransferImplUnitTests.java",
+            "genie-web\\src\\test\\java\\com\\netflix\\genie\\web\\services\\impl\\HttpFileTransferImplTest.java",
+            "genie-web\\src\\main\\java\\com\\netflix\\genie\\web\\configs\\GenieSwaggerAutoConfiguration.java",
+            "genie-web\\src\\test\\java\\com\\netflix\\genie\\web\\resources\\writers\\DefaultDirectoryWriterUnitTests.java",
+            "genie-client\\src\\test\\java\\com\\netflix\\genie\\client\\security\\oauth2\\TokenFetcherUnitTests.java",
+            "genie-client\\src\\test\\java\\com\\netflix\\genie\\client\\interceptors\\ResponseMappingInterceptorUnitTests.java"
+        ]
+    },
+    {
+        "id": "File_Manipulation_Practice-JAVA",
+        "display": "Persistent Files : Perform File Manipulation",
+        "criticality": "Low",
+        "impacts": [
+            "Code",
+            "Container only"
+        ],
+        "roadblocks": 154.0,
+        "cloudEffort": 2310,
+        "files": [
+            "genie-common-internal\\src\\main\\java\\com\\netflix\\genie\\common\\internal\\dto\\v4\\AgentConfigRequest.java",
+            "genie-agent\\src\\main\\java\\com\\netflix\\genie\\agent\\cli\\ArgumentConverters.java",
+            "genie-agent\\src\\main\\java\\com\\netflix\\genie\\agent\\utils\\EnvUtils.java",
+            "genie-web\\src\\test\\java\\com\\netflix\\genie\\web\\services\\impl\\LocalJobRunnerUnitTests.java",
+            "genie-web\\src\\main\\java\\com\\netflix\\genie\\web\\jobs\\workflow\\impl\\JobKickoffTask.java",
+            "genie-common-internal\\src\\main\\java\\com\\netflix\\genie\\common\\internal\\dto\\v4\\converters\\JobServiceProtoConverter.java",
+            "genie-agent\\src\\test\\java\\com\\netflix\\genie\\agent\\execution\\services\\impl\\FetchingCacheServiceImplTests.java",
+            "genie-web\\src\\test\\java\\com\\netflix\\genie\\web\\tasks\\node\\DiskCleanupTaskUnitTests.java",
+            "genie-web\\src\\main\\java\\com\\netflix\\genie\\web\\services\\impl\\JobSpecificationServiceImpl.java",
+            "genie-web\\src\\test\\java\\com\\netflix\\genie\\web\\services\\impl\\JobKillServiceV3UnitTests.java",
+            "genie-agent\\src\\main\\java\\com\\netflix\\genie\\agent\\cli\\ResolveJobSpecCommand.java",
+            "genie-agent\\src\\main\\java\\com\\netflix\\genie\\agent\\utils\\PathUtils.java",
+            "genie-web\\src\\test\\java\\com\\netflix\\genie\\web\\resources\\handlers\\GenieResourceHttpRequestHandlerUnitTests.java",
+            "genie-web\\src\\main\\java\\com\\netflix\\genie\\web\\jobs\\workflow\\impl\\GenieBaseTask.java",
+            "genie-agent\\src\\main\\java\\com\\netflix\\genie\\agent\\execution\\statemachine\\actions\\SetUpJobAction.java",
+            "genie-web\\src\\test\\java\\com\\netflix\\genie\\web\\jpa\\services\\JpaJobPersistenceImplIntegrationTests.java",
+            "genie-agent\\src\\main\\java\\com\\netflix\\genie\\agent\\cli\\CacheArgumentsImpl.java",
+            "genie-web\\src\\main\\java\\com\\netflix\\genie\\web\\services\\impl\\S3FileTransferImpl.java",
+            "genie-web\\src\\main\\java\\com\\netflix\\genie\\web\\resources\\handlers\\GenieResourceHttpRequestHandler.java",
+            "genie-agent\\src\\main\\java\\com\\netflix\\genie\\agent\\execution\\services\\impl\\FetchingCacheServiceImpl.java",
+            "genie-web\\src\\main\\java\\com\\netflix\\genie\\web\\services\\impl\\FileSystemAttachmentService.java",
+            "genie-web\\src\\test\\java\\com\\netflix\\genie\\web\\services\\impl\\LocalFileTransferImplUnitTests.java",
+            "genie-web\\src\\main\\java\\com\\netflix\\genie\\web\\services\\impl\\HttpFileTransferImpl.java",
+            "genie-web\\src\\main\\java\\com\\netflix\\genie\\web\\tasks\\job\\JobMonitoringCoordinator.java",
+            "genie-web\\src\\test\\java\\com\\netflix\\genie\\web\\controllers\\JobRestControllerIntegrationTests.java",
+            "genie-agent\\src\\main\\java\\com\\netflix\\genie\\agent\\execution\\services\\impl\\DownloadServiceImpl.java",
+            "genie-web\\src\\test\\java\\com\\netflix\\genie\\web\\services\\impl\\FileSystemAttachmentServiceUnitTests.java",
+            "genie-web\\src\\main\\java\\com\\netflix\\genie\\web\\jobs\\workflow\\impl\\InitialSetupTask.java",
+            "genie-web\\src\\main\\java\\com\\netflix\\genie\\web\\services\\impl\\LocalJobRunner.java",
+            "genie-web\\src\\main\\java\\com\\netflix\\genie\\web\\services\\impl\\CacheGenieFileTransferService.java",
+            "genie-web\\src\\test\\java\\com\\netflix\\genie\\web\\services\\impl\\JobCoordinatorServiceImplUnitTests.java",
+            "genie-web\\src\\main\\java\\com\\netflix\\genie\\web\\tasks\\job\\JobCompletionService.java",
+            "genie-web\\src\\test\\java\\com\\netflix\\genie\\web\\jobs\\workflow\\impl\\InitialSetupTaskUnitTest.java",
+            "genie-agent\\src\\main\\java\\com\\netflix\\genie\\agent\\cli\\JobRequestArgumentsImpl.java",
+            "genie-web\\src\\main\\java\\com\\netflix\\genie\\web\\services\\impl\\JobKillServiceV3.java"
+        ]
+    }
+]

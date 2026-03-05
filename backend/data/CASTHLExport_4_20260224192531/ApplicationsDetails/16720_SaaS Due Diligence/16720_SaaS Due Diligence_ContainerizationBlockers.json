@@ -1,0 +1,155 @@
+[
+    {
+        "id": "Use_File_System-PHP",
+        "display": "Execution Environment : Using file system",
+        "criticality": "Low",
+        "impacts": [
+            "Code",
+            "Container only"
+        ],
+        "roadblocks": 2.0,
+        "cloudEffort": 30,
+        "files": [
+            "js\\bower_components\\datatables\\examples\\server_side\\scripts\\ssp.class.php",
+            "js\\node_modules\\@bower_components\\datatables\\examples\\server_side\\scripts\\ssp.class.php"
+        ]
+    },
+    {
+        "id": "Use_SecuredProtocols-PYTHON",
+        "display": "Security & User Authentication : Use of unsecured network protocols or URI libraries",
+        "criticality": "Low",
+        "impacts": [
+            "Code"
+        ],
+        "roadblocks": 1.0,
+        "cloudEffort": 10,
+        "files": [
+            "node_modules\\sqlite3\\node_modules\\nan\\cpplint.py"
+        ]
+    },
+    {
+        "id": "Use_Configuration_Except_WebConfig-CSHARP",
+        "display": "Application Settings Configuration : Using other configuration files than Web configuration",
+        "criticality": "Low",
+        "impacts": [
+            "Container only"
+        ],
+        "roadblocks": 1.0,
+        "cloudEffort": 15,
+        "files": [
+            "C:\\Users\\BGU\\git\\hlhf\\Highlight\\Highlight-Portal\\src\\main/js/bower_components/jquery-file-download/src/packages.config"
+        ]
+    },
+    {
+        "id": "File_Manipulation_Practice-PYTHON",
+        "display": "Persistent Files : Perform File Manipulation",
+        "criticality": "Low",
+        "impacts": [
+            "Code",
+            "Container only"
+        ],
+        "roadblocks": 17.0,
+        "cloudEffort": 255,
+        "files": [
+            "js\\node_modules\\@bower_components\\xregexp\\tools\\parse-categories.py",
+            "js\\node_modules\\@bower_components\\xregexp\\tools\\parse-scripts.py",
+            "node_modules\\sqlite3\\node_modules\\nan\\cpplint.py",
+            "node_modules\\sqlite3\\deps\\extract.py",
+            "js\\bower_components\\xregexp\\tools\\parse-scripts.py",
+            "js\\bower_components\\xregexp\\tools\\parse-categories.py"
+        ]
+    },
+    {
+        "id": "Use_COM_Components-CSHARP",
+        "display": "Code Execution : Using COM Components",
+        "criticality": "High",
+        "impacts": [
+            "Container only"
+        ],
+        "roadblocks": 2.0,
+        "cloudEffort": 240,
+        "files": [
+            "js\\bower_components\\jquery-file-download\\src\\Properties\\AssemblyInfo.cs",
+            "js\\node_modules\\@bower_components\\jquery-file-download\\src\\Properties\\AssemblyInfo.cs"
+        ]
+    },
+    {
+        "id": "Use_Stateful_Session-JAVA",
+        "display": "Persistent Files : Using stateful session (Servlet)",
+        "criticality": "High",
+        "impacts": [
+            "Code",
+            "Container Architecture"
+        ],
+        "roadblocks": 1.0,
+        "cloudEffort": 10
+    },
+    {
+        "id": "Use_SecuredProtocols-JAVA",
+        "display": "Security & User Authentication : Use of unsecured network protocols or URI libraries",
+        "criticality": "Low",
+        "impacts": [
+            "Code"
+        ],
+        "roadblocks": 3.0,
+        "cloudEffort": 30,
+        "files": [
+            "java\\com\\castsoftware\\highlight\\security\\TokenServiceImpl.java",
+            "java\\com\\castsoftware\\highlight\\webservices\\SpringRestApplicationNew.java",
+            "java\\com\\castsoftware\\highlight\\business\\dump\\CompanyXMLDump.java"
+        ]
+    },
+    {
+        "id": "Use_File_System-PYTHON",
+        "display": "Execution Environment : Using file system",
+        "criticality": "Low",
+        "impacts": [
+            "Code",
+            "Container only"
+        ],
+        "roadblocks": 7.0,
+        "cloudEffort": 105,
+        "files": [
+            "node_modules\\sqlite3\\node_modules\\nan\\cpplint.py",
+            "node_modules\\sqlite3\\deps\\extract.py"
+        ]
+    },
+    {
+        "id": "Directory_Manipulation_Practice-PYTHON",
+        "display": "Persistent Files : Perform Directory Manipulation",
+        "criticality": "Low",
+        "impacts": [
+            "Code",
+            "Container only"
+        ],
+        "roadblocks": 16.0,
+        "cloudEffort": 240,
+        "files": [
+            "node_modules\\sqlite3\\node_modules\\nan\\cpplint.py"
+        ]
+    },
+    {
+        "id": "File_Manipulation_Practice-JAVA",
+        "display": "Persistent Files : Perform File Manipulation",
+        "criticality": "Low",
+        "impacts": [
+            "Code",
+            "Container only"
+        ],
+        "roadblocks": 25.0,
+        "cloudEffort": 375,
+        "files": [
+            "java\\com\\castsoftware\\highlight\\hibernate\\util\\HibernateUtil.java",
+            "spring\\com\\castsoftware\\highlight\\SpringBootApplication.java",
+            "java\\com\\castsoftware\\highlight\\LocalizationManager.java",
+            "java\\com\\castsoftware\\highlight\\DatabaseBootstrap.java",
+            "java\\com\\castsoftware\\highlight\\jobs\\notifications\\NotificationGenerator.java",
+            "java\\com\\castsoftware\\highlight\\applicationresult\\service\\ApplicationResultServiceImpl.java",
+            "java\\com\\castsoftware\\highlight\\jobs\\notifications\\NotificationCleanup.java",
+            "java\\com\\castsoftware\\highlight\\administration\\DatabaseSchema.java",
+            "java\\com\\castsoftware\\highlight\\jobs\\reports\\ReportGenerator.java",
+            "java\\com\\castsoftware\\highlight\\jobs\\reports\\ReportCleanup.java",
+            "java\\com\\castsoftware\\highlight\\jobs\\mails\\MailsSender.java"
+        ]
+    }
+]

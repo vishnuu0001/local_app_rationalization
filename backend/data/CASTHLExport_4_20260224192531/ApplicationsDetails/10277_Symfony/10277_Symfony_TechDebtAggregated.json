@@ -1,0 +1,504 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PHP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__String",
+                                    "detail": [
+                                        {
+                                            "application_id": 10277,
+                                            "application_name": "Symfony",
+                                            "counter": 218.0,
+                                            "effort": 36.333336
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__VariableDefinitionCheck",
+                                    "detail": [
+                                        {
+                                            "application_id": 10277,
+                                            "application_name": "Symfony",
+                                            "counter": 290.0,
+                                            "effort": 48.333336
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__Debug",
+                                    "detail": [
+                                        {
+                                            "application_id": 10277,
+                                            "application_name": "Symfony",
+                                            "counter": 5.0,
+                                            "effort": 0.8333334
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PHP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__EmptyStatement",
+                                    "detail": [
+                                        {
+                                            "application_id": 10277,
+                                            "application_name": "Symfony",
+                                            "counter": 63.0,
+                                            "effort": 10.500001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__Parameters",
+                                    "detail": [
+                                        {
+                                            "application_id": 10277,
+                                            "application_name": "Symfony",
+                                            "counter": 19.0,
+                                            "effort": 9.500001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__Constructor",
+                                    "detail": [
+                                        {
+                                            "application_id": 10277,
+                                            "application_name": "Symfony",
+                                            "counter": 7.0,
+                                            "effort": 1.1666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__Unconditionnal",
+                                    "detail": [
+                                        {
+                                            "application_id": 10277,
+                                            "application_name": "Symfony",
+                                            "counter": 3.0,
+                                            "effort": 1.5000001
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PHP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__MissingIdentical",
+                                    "detail": [
+                                        {
+                                            "application_id": 10277,
+                                            "application_name": "Symfony",
+                                            "counter": 7044.0,
+                                            "effort": 587.00006
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__EmptyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 10277,
+                                            "application_name": "Symfony",
+                                            "counter": 36.0,
+                                            "effort": 180.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__Object",
+                                    "detail": [
+                                        {
+                                            "application_id": 10277,
+                                            "application_name": "Symfony",
+                                            "counter": 3869.0,
+                                            "effort": 1289.6667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__BadLoop",
+                                    "detail": [
+                                        {
+                                            "application_id": 10277,
+                                            "application_name": "Symfony",
+                                            "counter": 7.0,
+                                            "effort": 3.5000002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__MissingBreakInCasePath",
+                                    "detail": [
+                                        {
+                                            "application_id": 10277,
+                                            "application_name": "Symfony",
+                                            "counter": 225.0,
+                                            "effort": 18.750002
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PHP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__EndComment",
+                                    "detail": [
+                                        {
+                                            "application_id": 10277,
+                                            "application_name": "Symfony",
+                                            "counter": 18371.0,
+                                            "effort": 1530.9167
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 10277,
+                                            "application_name": "Symfony",
+                                            "counter": 22.0,
+                                            "effort": 22.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__ClassNameIsNotFileName",
+                                    "detail": [
+                                        {
+                                            "application_id": 10277,
+                                            "application_name": "Symfony",
+                                            "counter": 48.0,
+                                            "effort": 8.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__Elseif",
+                                    "detail": [
+                                        {
+                                            "application_id": 10277,
+                                            "application_name": "Symfony",
+                                            "counter": 540.0,
+                                            "effort": 45.000004
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__FileNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 10277,
+                                            "application_name": "Symfony",
+                                            "counter": 141.0,
+                                            "effort": 23.500002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__ClassNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 10277,
+                                            "application_name": "Symfony",
+                                            "counter": 12.0,
+                                            "effort": 2.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PHP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 10277,
+                                            "application_name": "Symfony",
+                                            "counter": 1768.0,
+                                            "effort": 147.33334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__IncDec",
+                                    "detail": [
+                                        {
+                                            "application_id": 10277,
+                                            "application_name": "Symfony",
+                                            "counter": 23.0,
+                                            "effort": 1.9166667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__CommentedThrow",
+                                    "detail": [
+                                        {
+                                            "application_id": 10277,
+                                            "application_name": "Symfony",
+                                            "counter": 729.0,
+                                            "effort": 121.50001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__FunctionNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 10277,
+                                            "application_name": "Symfony",
+                                            "counter": 588.0,
+                                            "effort": 98.00001
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PHP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__UnusedParameters",
+                                    "detail": [
+                                        {
+                                            "application_id": 10277,
+                                            "application_name": "Symfony",
+                                            "counter": 322.0,
+                                            "effort": 161.00002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__Overriding",
+                                    "detail": [
+                                        {
+                                            "application_id": 10277,
+                                            "application_name": "Symfony",
+                                            "counter": 53.0,
+                                            "effort": 4.416667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 10277,
+                                            "application_name": "Symfony",
+                                            "counter": 28.0,
+                                            "effort": 28.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__Undocumented",
+                                    "detail": [
+                                        {
+                                            "application_id": 10277,
+                                            "application_name": "Symfony",
+                                            "counter": 362.0,
+                                            "effort": 120.66667
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PHP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__NBMETH",
+                                    "detail": [
+                                        {
+                                            "application_id": 10277,
+                                            "application_name": "Symfony",
+                                            "counter": 467.0001,
+                                            "effort": 2335.0005
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 10277,
+                                            "application_name": "Symfony",
+                                            "counter": 60.763336,
+                                            "effort": 303.81668
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PHP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__NestedLoop",
+                                    "detail": [
+                                        {
+                                            "application_id": 10277,
+                                            "application_name": "Symfony",
+                                            "counter": 214.0,
+                                            "effort": 2140.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PHP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__DepthCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 10277,
+                                            "application_name": "Symfony",
+                                            "counter": 8.0,
+                                            "effort": 40.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__ComplexConditions",
+                                    "detail": [
+                                        {
+                                            "application_id": 10277,
+                                            "application_name": "Symfony",
+                                            "counter": 16.0,
+                                            "effort": 160.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

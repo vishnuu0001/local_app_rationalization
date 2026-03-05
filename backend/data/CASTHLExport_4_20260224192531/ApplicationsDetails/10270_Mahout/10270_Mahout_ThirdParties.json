@@ -1,0 +1,106 @@
+{
+    "snapshotLabel": "Survey Mahout and Another_Mahout",
+    "snapshotDate": 1526356800000,
+    "applicationCodeLines": null,
+    "applicationFiles": 2458.0,
+    "thirdPartyCodeLines": null,
+    "thirdPartyFiles": 2.0,
+    "thirdParties": [
+        {
+            "id": 5749,
+            "componentId": "commons-io:commons-io",
+            "name": "commons-io:commons-io",
+            "version": "2.4",
+            "release": 1339539726000,
+            "languages": "java",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "2.21.0",
+            "lastRelease": 1762288020000,
+            "nbVersionPreviousYear": 4,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "commons-io",
+                "product": "commons-io",
+                "version": "2.4",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2021-29425",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-29425",
+                        "description": "In Apache Commons IO before 2.7, When invoking the method FileNameUtils.normalize with an improper input string, like \"//../foo\", or \"\\\\..\\foo\", the result would be the same value, thus possibly providing access to files in the parent directory, but not further above (thus \"limited\" path traversal), if the calling code would use the result to construct a path value.",
+                        "cweId": "CWE-22",
+                        "cweLabel": null,
+                        "cvssScore": 5.3,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2024-47554",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-47554",
+                        "description": "Uncontrolled Resource Consumption vulnerability in Apache Commons IO.\n\nThe org.apache.commons.io.input.XmlStreamReader class may excessively consume CPU resources when processing maliciously crafted input.\n\n\nThis issue affects Apache Commons IO: from 2.0 before 2.14.0.\n\nUsers are recommended to upgrade to version 2.14.0 or later, which fixes the issue.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 4.3,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:apache:commons_io",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "2.7",
+            "safestVersion": "2.14.0"
+        },
+        {
+            "id": 20896,
+            "componentId": "commons-lang:commons-lang",
+            "name": "commons-lang:commons-lang",
+            "version": "2.6",
+            "release": 1295216507000,
+            "languages": "java",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "2.6",
+            "lastRelease": 1295216507000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "commons-lang",
+                "product": "commons-lang",
+                "version": "2.6",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2025-48924",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-48924",
+                        "description": "Uncontrolled Recursion vulnerability in Apache Commons Lang.\n\nThis issue affects Apache Commons Lang: Starting with\u00a0commons-lang:commons-lang\u00a02.0 to 2.6, and, from org.apache.commons:commons-lang3 3.0 before\u00a03.18.0.\n\nThe methods ClassUtils.getClass(...) can throw\u00a0StackOverflowError on very long inputs. Because an Error is usually not handled by applications and libraries, a \nStackOverflowError could\u00a0cause an application to stop.\n\nUsers are recommended to upgrade to version 3.18.0, which fixes the issue.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.3,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:apache:commons_lang",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": []
+        }
+    ],
+    "partialComponents": []
+}

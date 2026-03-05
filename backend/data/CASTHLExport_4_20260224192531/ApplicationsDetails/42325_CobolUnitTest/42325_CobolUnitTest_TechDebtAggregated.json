@@ -1,0 +1,762 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 42325,
+                                            "application_name": "CobolUnitTest",
+                                            "counter": 340.0,
+                                            "effort": 1020.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__SimpleCompute",
+                                    "detail": [
+                                        {
+                                            "application_id": 42325,
+                                            "application_name": "CobolUnitTest",
+                                            "counter": 22.0,
+                                            "effort": 22.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__NoCopyClause",
+                                    "detail": [
+                                        {
+                                            "application_id": 42325,
+                                            "application_name": "CobolUnitTest",
+                                            "counter": 6.0,
+                                            "effort": 6.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__Getopt",
+                                    "detail": [
+                                        {
+                                            "application_id": 42325,
+                                            "application_name": "CobolUnitTest",
+                                            "counter": 2.0,
+                                            "effort": 20.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__VarDecl",
+                                    "detail": [
+                                        {
+                                            "application_id": 42325,
+                                            "application_name": "CobolUnitTest",
+                                            "counter": 17.0,
+                                            "effort": 2.8333335
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 42325,
+                                            "application_name": "CobolUnitTest",
+                                            "counter": 1.0,
+                                            "effort": 3.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__BadZone",
+                                    "detail": [
+                                        {
+                                            "application_id": 42325,
+                                            "application_name": "CobolUnitTest",
+                                            "counter": 8.0,
+                                            "effort": 0.6666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__CuriousFilePb",
+                                    "detail": [
+                                        {
+                                            "application_id": 42325,
+                                            "application_name": "CobolUnitTest",
+                                            "counter": 7.0,
+                                            "effort": 7.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__ProhibitedKeyword",
+                                    "detail": [
+                                        {
+                                            "application_id": 42325,
+                                            "application_name": "CobolUnitTest",
+                                            "counter": 35.0,
+                                            "effort": 175.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__ContigusLevel",
+                                    "detail": [
+                                        {
+                                            "application_id": 42325,
+                                            "application_name": "CobolUnitTest",
+                                            "counter": 1.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__Intrinsics",
+                                    "detail": [
+                                        {
+                                            "application_id": 42325,
+                                            "application_name": "CobolUnitTest",
+                                            "counter": 16.0,
+                                            "effort": 16.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 42325,
+                                            "application_name": "CobolUnitTest",
+                                            "counter": 0.1,
+                                            "effort": 0.1
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__ConcatInLoop",
+                                    "detail": [
+                                        {
+                                            "application_id": 42325,
+                                            "application_name": "CobolUnitTest",
+                                            "counter": 1.0,
+                                            "effort": 0.5
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__SeriousFilePb",
+                                    "detail": [
+                                        {
+                                            "application_id": 42325,
+                                            "application_name": "CobolUnitTest",
+                                            "counter": 22.0,
+                                            "effort": 22.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__MissingDefault",
+                                    "detail": [
+                                        {
+                                            "application_id": 42325,
+                                            "application_name": "CobolUnitTest",
+                                            "counter": 6.0,
+                                            "effort": 6.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__VarNotUsed",
+                                    "detail": [
+                                        {
+                                            "application_id": 42325,
+                                            "application_name": "CobolUnitTest",
+                                            "counter": 14.0,
+                                            "effort": 1.1666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__MissingEnd",
+                                    "detail": [
+                                        {
+                                            "application_id": 42325,
+                                            "application_name": "CobolUnitTest",
+                                            "counter": 16.0,
+                                            "effort": 16.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__ExplicitExit",
+                                    "detail": [
+                                        {
+                                            "application_id": 42325,
+                                            "application_name": "CobolUnitTest",
+                                            "counter": 1.0,
+                                            "effort": 0.16666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__MissingDefault",
+                                    "detail": [
+                                        {
+                                            "application_id": 42325,
+                                            "application_name": "CobolUnitTest",
+                                            "counter": 2.0,
+                                            "effort": 2.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 42325,
+                                            "application_name": "CobolUnitTest",
+                                            "counter": 4.0,
+                                            "effort": 4.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__BadInit",
+                                    "detail": [
+                                        {
+                                            "application_id": 42325,
+                                            "application_name": "CobolUnitTest",
+                                            "counter": 70.0,
+                                            "effort": 70.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 42325,
+                                            "application_name": "CobolUnitTest",
+                                            "counter": 4.0,
+                                            "effort": 4.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 42325,
+                                            "application_name": "CobolUnitTest",
+                                            "counter": 5.0,
+                                            "effort": 5.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__String",
+                                    "detail": [
+                                        {
+                                            "application_id": 42325,
+                                            "application_name": "CobolUnitTest",
+                                            "counter": 480.0,
+                                            "effort": 40.000004
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 42325,
+                                            "application_name": "CobolUnitTest",
+                                            "counter": 2.0,
+                                            "effort": 0.16666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__MultipleImports",
+                                    "detail": [
+                                        {
+                                            "application_id": 42325,
+                                            "application_name": "CobolUnitTest",
+                                            "counter": 1.0,
+                                            "effort": 0.16666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__ArtifactSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 42325,
+                                            "application_name": "CobolUnitTest",
+                                            "counter": 1.0,
+                                            "effort": 0.083333336
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__BackPerform",
+                                    "detail": [
+                                        {
+                                            "application_id": 42325,
+                                            "application_name": "CobolUnitTest",
+                                            "counter": 44.0,
+                                            "effort": 660.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 42325,
+                                            "application_name": "CobolUnitTest",
+                                            "counter": 2.0,
+                                            "effort": 0.16666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__MultAffect",
+                                    "detail": [
+                                        {
+                                            "application_id": 42325,
+                                            "application_name": "CobolUnitTest",
+                                            "counter": 10.0,
+                                            "effort": 3.3333335
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 42325,
+                                            "application_name": "CobolUnitTest",
+                                            "counter": 47.100006,
+                                            "effort": 47.100006
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__LocalNames",
+                                    "detail": [
+                                        {
+                                            "application_id": 42325,
+                                            "application_name": "CobolUnitTest",
+                                            "counter": 17.0,
+                                            "effort": 2.8333335
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 42325,
+                                            "application_name": "CobolUnitTest",
+                                            "counter": 4.0,
+                                            "effort": 0.33333334
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 42325,
+                                            "application_name": "CobolUnitTest",
+                                            "counter": 458.00006,
+                                            "effort": 458.00006
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__BadEndClauseAlign",
+                                    "detail": [
+                                        {
+                                            "application_id": 42325,
+                                            "application_name": "CobolUnitTest",
+                                            "counter": 53.0,
+                                            "effort": 4.416667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 42325,
+                                            "application_name": "CobolUnitTest",
+                                            "counter": 11.0,
+                                            "effort": 110.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__ContinuationChar",
+                                    "detail": [
+                                        {
+                                            "application_id": 42325,
+                                            "application_name": "CobolUnitTest",
+                                            "counter": 2.0,
+                                            "effort": 0.33333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 42325,
+                                            "application_name": "CobolUnitTest",
+                                            "counter": 12.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 42325,
+                                            "application_name": "CobolUnitTest",
+                                            "counter": 8.0,
+                                            "effort": 8.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__SuspiciousIndentations",
+                                    "detail": [
+                                        {
+                                            "application_id": 42325,
+                                            "application_name": "CobolUnitTest",
+                                            "counter": 2.0,
+                                            "effort": 0.16666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 42325,
+                                            "application_name": "CobolUnitTest",
+                                            "counter": 4.4071426,
+                                            "effort": 22.035713
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__LocalVar",
+                                    "detail": [
+                                        {
+                                            "application_id": 42325,
+                                            "application_name": "CobolUnitTest",
+                                            "counter": 2.0,
+                                            "effort": 0.33333334
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__DONNEES",
+                                    "detail": [
+                                        {
+                                            "application_id": 42325,
+                                            "application_name": "CobolUnitTest",
+                                            "counter": 337.0,
+                                            "effort": 337.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 42325,
+                                            "application_name": "CobolUnitTest",
+                                            "counter": 1.4833333,
+                                            "effort": 7.416667
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 42325,
+                                            "application_name": "CobolUnitTest",
+                                            "counter": 6.0,
+                                            "effort": 30.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__ComplexConditions",
+                                    "detail": [
+                                        {
+                                            "application_id": 42325,
+                                            "application_name": "CobolUnitTest",
+                                            "counter": 5.0,
+                                            "effort": 50.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

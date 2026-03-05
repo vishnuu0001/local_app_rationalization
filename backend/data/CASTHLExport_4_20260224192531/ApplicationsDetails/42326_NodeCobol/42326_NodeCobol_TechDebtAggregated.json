@@ -1,0 +1,450 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__ParaNameWithoutDot",
+                                    "detail": [
+                                        {
+                                            "application_id": 42326,
+                                            "application_name": "NodeCobol",
+                                            "counter": 15.0,
+                                            "effort": 1.2500001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__NoCopyClause",
+                                    "detail": [
+                                        {
+                                            "application_id": 42326,
+                                            "application_name": "NodeCobol",
+                                            "counter": 1.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__String",
+                                    "detail": [
+                                        {
+                                            "application_id": 42326,
+                                            "application_name": "NodeCobol",
+                                            "counter": 44.0,
+                                            "effort": 3.6666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 42326,
+                                            "application_name": "NodeCobol",
+                                            "counter": 1.19,
+                                            "effort": 1.19
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__ProhibitedKeyword",
+                                    "detail": [
+                                        {
+                                            "application_id": 42326,
+                                            "application_name": "NodeCobol",
+                                            "counter": 1.0,
+                                            "effort": 5.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__StrongDataAccess",
+                                    "detail": [
+                                        {
+                                            "application_id": 42326,
+                                            "application_name": "NodeCobol",
+                                            "counter": 7.0,
+                                            "effort": 2.3333335
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__SeriousFilePb",
+                                    "detail": [
+                                        {
+                                            "application_id": 42326,
+                                            "application_name": "NodeCobol",
+                                            "counter": 10.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__DuplicatedParaName",
+                                    "detail": [
+                                        {
+                                            "application_id": 42326,
+                                            "application_name": "NodeCobol",
+                                            "counter": 3.0,
+                                            "effort": 0.5
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__This",
+                                    "detail": [
+                                        {
+                                            "application_id": 42326,
+                                            "application_name": "NodeCobol",
+                                            "counter": 1.0,
+                                            "effort": 15.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MissingIdentical",
+                                    "detail": [
+                                        {
+                                            "application_id": 42326,
+                                            "application_name": "NodeCobol",
+                                            "counter": 9.0,
+                                            "effort": 0.75000006
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 42326,
+                                            "application_name": "NodeCobol",
+                                            "counter": 12.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 42326,
+                                            "application_name": "NodeCobol",
+                                            "counter": 78.0,
+                                            "effort": 6.5000005
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 42326,
+                                            "application_name": "NodeCobol",
+                                            "counter": 9.0,
+                                            "effort": 0.75000006
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 42326,
+                                            "application_name": "NodeCobol",
+                                            "counter": 2.0,
+                                            "effort": 0.16666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MultDecl",
+                                    "detail": [
+                                        {
+                                            "application_id": 42326,
+                                            "application_name": "NodeCobol",
+                                            "counter": 6.0,
+                                            "effort": 0.5
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 42326,
+                                            "application_name": "NodeCobol",
+                                            "counter": 60.2,
+                                            "effort": 60.2
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__BadEndClauseAlign",
+                                    "detail": [
+                                        {
+                                            "application_id": 42326,
+                                            "application_name": "NodeCobol",
+                                            "counter": 1.0,
+                                            "effort": 0.083333336
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 42326,
+                                            "application_name": "NodeCobol",
+                                            "counter": 4.9,
+                                            "effort": 4.9
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__VarDecl",
+                                    "detail": [
+                                        {
+                                            "application_id": 42326,
+                                            "application_name": "NodeCobol",
+                                            "counter": 1.0,
+                                            "effort": 0.16666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__ApplicationGlobalVariables",
+                                    "detail": [
+                                        {
+                                            "application_id": 42326,
+                                            "application_name": "NodeCobol",
+                                            "counter": 4.0,
+                                            "effort": 0.6666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 42326,
+                                            "application_name": "NodeCobol",
+                                            "counter": 1.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 42326,
+                                            "application_name": "NodeCobol",
+                                            "counter": 10.333333,
+                                            "effort": 51.666664
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 42326,
+                                            "application_name": "NodeCobol",
+                                            "counter": 2.6599998,
+                                            "effort": 2.6599998
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__DONNEES",
+                                    "detail": [
+                                        {
+                                            "application_id": 42326,
+                                            "application_name": "NodeCobol",
+                                            "counter": 1.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__NBMETH",
+                                    "detail": [
+                                        {
+                                            "application_id": 42326,
+                                            "application_name": "NodeCobol",
+                                            "counter": 20.0,
+                                            "effort": 100.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

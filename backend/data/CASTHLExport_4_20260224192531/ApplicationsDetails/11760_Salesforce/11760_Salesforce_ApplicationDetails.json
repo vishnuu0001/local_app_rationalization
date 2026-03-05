@@ -1,0 +1,166 @@
+{
+    "id": 11760,
+    "name": "Salesforce",
+    "domains": [
+        {
+            "id": 254,
+            "name": "Sales and Marketing"
+        },
+        {
+            "id": 12908,
+            "name": "PE Firm"
+        },
+        {
+            "id": 1101,
+            "name": "COTS Tools"
+        }
+    ],
+    "metrics": [
+        {
+            "snapshotLabel": "COTS v2_Salesforce",
+            "snapshotDate": 1491710400000,
+            "openSourceSafety": 1.0,
+            "openSourceLicense": 1.0,
+            "openSourceObsolescence": null,
+            "openSourceCVE": null,
+            "businessImpact": 0.2868020304568528,
+            "roarIndex": 0.2868020304568528,
+            "maintenanceRecordedFTE": 0.0,
+            "greenIndex": null,
+            "greenIndexScan": null,
+            "greenIndexSurvey": null,
+            "greenOccurrences": null,
+            "greenEffort": null,
+            "greenDetail": [],
+            "customIndicators": [
+                {
+                    "metricId": 10023356,
+                    "value": "0.1111111111111111"
+                },
+                {
+                    "metricId": 10006001,
+                    "value": "0.2777777777777778"
+                },
+                {
+                    "metricId": 10006305,
+                    "value": "-1.0"
+                },
+                {
+                    "metricId": 10013600,
+                    "value": "-1.0"
+                },
+                {
+                    "metricId": 10006302,
+                    "value": "-1.0"
+                },
+                {
+                    "metricId": 10006301,
+                    "value": "-1.0"
+                },
+                {
+                    "metricId": 10016304,
+                    "value": "-1.0"
+                }
+            ],
+            "components": []
+        }
+    ],
+    "surveys": [
+        {
+            "id": 4,
+            "ref": "CAST_BI",
+            "name": "Business Impact",
+            "questions": [
+                {
+                    "label": "What is the average number of FTE (Full Time Equivalent) resources that have worked on the source code for this application over the last 12 months?",
+                    "shortLabel": "",
+                    "value": "1.0",
+                    "questionId": 1000011
+                },
+                {
+                    "label": "Is this application aligned with the company's future technology direction?",
+                    "shortLabel": "",
+                    "value": "No",
+                    "questionId": 1000009,
+                    "choiceId": 1000043
+                },
+                {
+                    "label": "The number of major releases delivered over the last 12 months for this application?",
+                    "shortLabel": "",
+                    "value": "7 to 12",
+                    "questionId": 1000006,
+                    "choiceId": 1000454
+                },
+                {
+                    "label": "Could failure of this application lead to loss of customer confidence? Please define the level of impact.",
+                    "value": "Medium",
+                    "questionId": 1000022,
+                    "choiceId": 1000221
+                },
+                {
+                    "label": "Could failure of this application lead to harm of the company's public image? Please define the level of impact.",
+                    "value": "Medium",
+                    "questionId": 1000021,
+                    "choiceId": 1000001
+                },
+                {
+                    "label": "Could failure of this application lead to loss of revenue or business opportunity? Please define the level of impact.",
+                    "value": "Medium",
+                    "questionId": 1000020,
+                    "choiceId": 1000407
+                },
+                {
+                    "label": "Could failure of this application lead to disruption? Please define the level of impact.",
+                    "value": "Medium",
+                    "questionId": 1000019,
+                    "choiceId": 1000193
+                },
+                {
+                    "label": "What is the approximate number of end users for this application?",
+                    "shortLabel": "",
+                    "value": "100 to 500",
+                    "questionId": 1000018,
+                    "choiceId": 1000396
+                },
+                {
+                    "label": "Does the application serve internal or external users?",
+                    "value": "Internal users or business processes",
+                    "questionId": 1000017,
+                    "choiceId": 1000204
+                }
+            ]
+        },
+        {
+            "id": 373,
+            "ref": "CAST_APP",
+            "name": "Application Properties",
+            "questions": [
+                {
+                    "label": "Is this application a custom application or a Commercial Off The Shelf product?",
+                    "shortLabel": "",
+                    "value": "COTS (Commercial Off The Shelf)",
+                    "questionId": 1000427,
+                    "choiceId": 1000530
+                },
+                {
+                    "label": "What is the application type?",
+                    "shortLabel": "",
+                    "value": "CRM",
+                    "questionId": 1000004,
+                    "choiceId": 1000430
+                },
+                {
+                    "label": "Application Owner's name",
+                    "value": "Michael MULLER",
+                    "questionId": 1000002
+                },
+                {
+                    "label": "In what year was this application first put into production?",
+                    "shortLabel": "",
+                    "value": "2009",
+                    "questionId": 1000033
+                }
+            ]
+        }
+    ]
+}

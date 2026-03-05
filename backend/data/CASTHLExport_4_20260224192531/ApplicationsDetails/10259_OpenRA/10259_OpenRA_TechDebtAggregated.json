@@ -1,0 +1,444 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__Finalize",
+                                    "detail": [
+                                        {
+                                            "application_id": 10259,
+                                            "application_name": "OpenRA",
+                                            "counter": 6.0,
+                                            "effort": 60.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 10259,
+                                            "application_name": "OpenRA",
+                                            "counter": 6188.0,
+                                            "effort": 18564.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 10259,
+                                            "application_name": "OpenRA",
+                                            "counter": 449.0004,
+                                            "effort": 449.0004
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__MissingBraces2",
+                                    "detail": [
+                                        {
+                                            "application_id": 10259,
+                                            "application_name": "OpenRA",
+                                            "counter": 4504.0,
+                                            "effort": 750.6667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__Instanceof",
+                                    "detail": [
+                                        {
+                                            "application_id": 10259,
+                                            "application_name": "OpenRA",
+                                            "counter": 44.0,
+                                            "effort": 440.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__PublicAttributes",
+                                    "detail": [
+                                        {
+                                            "application_id": 10259,
+                                            "application_name": "OpenRA",
+                                            "counter": 2510.0,
+                                            "effort": 2510.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__EmptyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 10259,
+                                            "application_name": "OpenRA",
+                                            "counter": 25.0,
+                                            "effort": 125.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__MissingDefault",
+                                    "detail": [
+                                        {
+                                            "application_id": 10259,
+                                            "application_name": "OpenRA",
+                                            "counter": 33.0,
+                                            "effort": 33.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__AssignmentsInConditionalExpr",
+                                    "detail": [
+                                        {
+                                            "application_id": 10259,
+                                            "application_name": "OpenRA",
+                                            "counter": 97.0,
+                                            "effort": 48.500004
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__BugPatterns",
+                                    "detail": [
+                                        {
+                                            "application_id": 10259,
+                                            "application_name": "OpenRA",
+                                            "counter": 36.0,
+                                            "effort": 36.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 10259,
+                                            "application_name": "OpenRA",
+                                            "counter": 898.0,
+                                            "effort": 898.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 10259,
+                                            "application_name": "OpenRA",
+                                            "counter": 385.0,
+                                            "effort": 32.083336
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 10259,
+                                            "application_name": "OpenRA",
+                                            "counter": 2552.0,
+                                            "effort": 212.66667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__ClassDefinitions",
+                                    "detail": [
+                                        {
+                                            "application_id": 10259,
+                                            "application_name": "OpenRA",
+                                            "counter": 652.0,
+                                            "effort": 3260.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 10259,
+                                            "application_name": "OpenRA",
+                                            "counter": 2487.0,
+                                            "effort": 207.25002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 10259,
+                                            "application_name": "OpenRA",
+                                            "counter": 10.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__MissingAutomatedDoc2",
+                                    "detail": [
+                                        {
+                                            "application_id": 10259,
+                                            "application_name": "OpenRA",
+                                            "counter": 6786.0,
+                                            "effort": 6786.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__BadDeclarationOrder",
+                                    "detail": [
+                                        {
+                                            "application_id": 10259,
+                                            "application_name": "OpenRA",
+                                            "counter": 5043.0,
+                                            "effort": 5043.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 10259,
+                                            "application_name": "OpenRA",
+                                            "counter": 3347.0,
+                                            "effort": 278.9167
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 10259,
+                                            "application_name": "OpenRA",
+                                            "counter": 12788.605,
+                                            "effort": 12788.605
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 10259,
+                                            "application_name": "OpenRA",
+                                            "counter": 7.0,
+                                            "effort": 0.5833334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 10259,
+                                            "application_name": "OpenRA",
+                                            "counter": 124.0,
+                                            "effort": 1240.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 10259,
+                                            "application_name": "OpenRA",
+                                            "counter": 20.516663,
+                                            "effort": 102.58331
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 10259,
+                                            "application_name": "OpenRA",
+                                            "counter": 629.0995,
+                                            "effort": 629.0995
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 10259,
+                                            "application_name": "OpenRA",
+                                            "counter": 24.040005,
+                                            "effort": 120.20003
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__ComplexConditions",
+                                    "detail": [
+                                        {
+                                            "application_id": 10259,
+                                            "application_name": "OpenRA",
+                                            "counter": 8.0,
+                                            "effort": 80.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

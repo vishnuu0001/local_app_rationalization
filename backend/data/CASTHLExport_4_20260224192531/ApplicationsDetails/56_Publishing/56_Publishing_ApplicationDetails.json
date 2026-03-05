@@ -1,0 +1,285 @@
+{
+    "id": 56,
+    "name": "Publishing",
+    "domains": [
+        {
+            "id": 1454,
+            "name": "System Integrator Alpha"
+        },
+        {
+            "id": 12912,
+            "name": "Portfolio Company Delta"
+        }
+    ],
+    "metrics": [
+        {
+            "snapshotLabel": "June 2014 - June 2016_Publishing",
+            "snapshotDate": 1467259200000,
+            "softwareAgility": 0.5878111720085144,
+            "softwareAgilityAdded": 0.5878111720085144,
+            "softwareElegance": 0.732325553894043,
+            "softwareEleganceAdded": 0.732325553894043,
+            "softwareResiliency": 0.8057723641395569,
+            "softwareResiliencyAdded": 0.8057723641395569,
+            "softwareHealth": 0.7086363633473715,
+            "openSourceSafety": 1.0,
+            "openSourceLicense": 1.0,
+            "openSourceObsolescence": null,
+            "openSourceCVE": 1.0,
+            "businessImpact": 0.39593908629441626,
+            "roarIndex": 0.09134834113705585,
+            "backFiredFP": 1279.0,
+            "backFiredFPAdded": 1279.0,
+            "technicalDebt": 33194.27265024185,
+            "maintenanceRecordedFTE": 3.0,
+            "maintenanceRecommendedFTE": 1.4990127824237396,
+            "greenIndex": null,
+            "greenIndexScan": null,
+            "greenIndexSurvey": null,
+            "greenOccurrences": null,
+            "greenEffort": null,
+            "greenDetail": [
+                {
+                    "technology": "C#",
+                    "greenIndexScan": 0.0,
+                    "greenIndexDetails": null
+                },
+                {
+                    "technology": "VB/VB.Net",
+                    "greenIndexScan": 0.0,
+                    "greenIndexDetails": null
+                }
+            ],
+            "totalLinesOfCode": 75844,
+            "totalLinesOfCodeAdded": 75844,
+            "totalLinesOfCodeModified": 0,
+            "totalFiles": 927,
+            "totalFilesAdded": 927,
+            "totalFilesModified": 0,
+            "customIndicators": [
+                {
+                    "metricId": 10023356,
+                    "value": "0.13131313131313133"
+                },
+                {
+                    "metricId": 10006001,
+                    "value": "0.4444444444444444"
+                },
+                {
+                    "metricId": 10006305,
+                    "value": "-1.0"
+                },
+                {
+                    "metricId": 10013600,
+                    "value": "-1.0"
+                },
+                {
+                    "metricId": 10006302,
+                    "value": "-1.0"
+                },
+                {
+                    "metricId": 10006301,
+                    "value": "-1.0"
+                },
+                {
+                    "metricId": 10016304,
+                    "value": "-1.0"
+                }
+            ],
+            "technologies": [
+                {
+                    "technology": "C#",
+                    "totalLinesOfCode": 54301,
+                    "totalFiles": 771,
+                    "softwareAgility": 0.5442224740982056,
+                    "softwareElegance": 0.7709636688232422,
+                    "softwareResiliency": 0.8242329955101013,
+                    "softwareHealth": 0.7131397128105164,
+                    "softwareAgilityDetail": {
+                        "highLinesOfCode": 7894,
+                        "mediumLinesOfCode": 25241,
+                        "lowLinesOfCode": 21166
+                    },
+                    "softwareEleganceDetail": {
+                        "highLinesOfCode": 34373,
+                        "mediumLinesOfCode": 8015,
+                        "lowLinesOfCode": 11913
+                    },
+                    "softwareResiliencyDetail": {
+                        "highLinesOfCode": 36289,
+                        "mediumLinesOfCode": 17832,
+                        "lowLinesOfCode": 180
+                    },
+                    "softwareHealthDetail": {
+                        "highLinesOfCode": 26185,
+                        "mediumLinesOfCode": 17029,
+                        "lowLinesOfCode": 11086
+                    }
+                },
+                {
+                    "technology": "VB/VB.Net",
+                    "totalLinesOfCode": 21543,
+                    "totalFiles": 156,
+                    "softwareAgility": 0.6976802349090576,
+                    "softwareElegance": 0.6349347829818726,
+                    "softwareResiliency": 0.7592408061027527,
+                    "softwareHealth": 0.6972852746645609,
+                    "softwareAgilityDetail": {
+                        "highLinesOfCode": 4094,
+                        "mediumLinesOfCode": 17449,
+                        "lowLinesOfCode": 0
+                    },
+                    "softwareEleganceDetail": {
+                        "highLinesOfCode": 7307,
+                        "mediumLinesOfCode": 9339,
+                        "lowLinesOfCode": 4897
+                    },
+                    "softwareResiliencyDetail": {
+                        "highLinesOfCode": 14493,
+                        "mediumLinesOfCode": 2142,
+                        "lowLinesOfCode": 4908
+                    },
+                    "softwareHealthDetail": {
+                        "highLinesOfCode": 8631,
+                        "mediumLinesOfCode": 9643,
+                        "lowLinesOfCode": 3268
+                    }
+                }
+            ],
+            "components": []
+        }
+    ],
+    "surveys": [
+        {
+            "id": 371,
+            "ref": "CAST_MAINT",
+            "name": "Software Maintenance Estimate",
+            "questions": [
+                {
+                    "label": "What is the average skill level of the development team on this type of application?",
+                    "value": "1 year",
+                    "questionId": 1000015,
+                    "choiceId": 1000068
+                },
+                {
+                    "label": "What percentage of the development effort has been spent on maintenance in the last 12 months?",
+                    "value": "60",
+                    "questionId": 1000012
+                },
+                {
+                    "label": "What is the annual staff turnover within the development team?",
+                    "value": "10%",
+                    "questionId": 1000016,
+                    "choiceId": 1000143
+                },
+                {
+                    "label": "What is the CMMI level of the organization?",
+                    "value": "Level 1 (upper half)",
+                    "questionId": 1000032,
+                    "choiceId": 1000255
+                },
+                {
+                    "label": "What is the percentage of change to the base code in the last 12 months?",
+                    "value": "15",
+                    "questionId": 1000121
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "ref": "CAST_BI",
+            "name": "Business Impact",
+            "questions": [
+                {
+                    "label": "What is the average number of FTE (Full Time Equivalent) resources that have worked on the source code for this application over the last 12 months?",
+                    "shortLabel": "",
+                    "value": "5.0",
+                    "questionId": 1000011
+                },
+                {
+                    "label": "Is this application aligned with the company's future technology direction?",
+                    "shortLabel": "",
+                    "value": "No",
+                    "questionId": 1000009,
+                    "choiceId": 1000043
+                },
+                {
+                    "label": "The number of major releases delivered over the last 12 months for this application?",
+                    "shortLabel": "",
+                    "value": "4 to 6",
+                    "questionId": 1000006,
+                    "choiceId": 1000453
+                },
+                {
+                    "label": "Could failure of this application lead to loss of customer confidence? Please define the level of impact.",
+                    "value": "Very High",
+                    "questionId": 1000022,
+                    "choiceId": 1000223
+                },
+                {
+                    "label": "Could failure of this application lead to harm of the company's public image? Please define the level of impact.",
+                    "value": "High",
+                    "questionId": 1000021,
+                    "choiceId": 1000002
+                },
+                {
+                    "label": "Could failure of this application lead to loss of revenue or business opportunity? Please define the level of impact.",
+                    "value": "Very High",
+                    "questionId": 1000020,
+                    "choiceId": 1000409
+                },
+                {
+                    "label": "Could failure of this application lead to disruption? Please define the level of impact.",
+                    "value": "Very High",
+                    "questionId": 1000019,
+                    "choiceId": 1000195
+                },
+                {
+                    "label": "What is the approximate number of end users for this application?",
+                    "shortLabel": "",
+                    "value": "100 to 500",
+                    "questionId": 1000018,
+                    "choiceId": 1000396
+                },
+                {
+                    "label": "Does the application serve internal or external users?",
+                    "value": "Internal users or business processes",
+                    "questionId": 1000017,
+                    "choiceId": 1000204
+                }
+            ]
+        },
+        {
+            "id": 373,
+            "ref": "CAST_APP",
+            "name": "Application Properties",
+            "questions": [
+                {
+                    "label": "What is the application type?",
+                    "shortLabel": "",
+                    "value": "Content Management and Publishing",
+                    "questionId": 1000004,
+                    "choiceId": 1000429
+                },
+                {
+                    "label": "Application Owner's name",
+                    "value": "Alexandra Szynkarski",
+                    "questionId": 1000002
+                },
+                {
+                    "label": "Is this application a custom application or a Commercial Off The Shelf product?",
+                    "shortLabel": "",
+                    "value": "Custom Application",
+                    "questionId": 1000427,
+                    "choiceId": 1000529
+                },
+                {
+                    "label": "In what year was this application first put into production?",
+                    "shortLabel": "",
+                    "value": "2007",
+                    "questionId": 1000033
+                }
+            ]
+        }
+    ]
+}

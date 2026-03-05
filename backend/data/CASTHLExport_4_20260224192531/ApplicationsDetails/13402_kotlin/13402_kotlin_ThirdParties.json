@@ -1,0 +1,959 @@
+{
+    "snapshotLabel": "Open Source #5 - July 2017_kotlin",
+    "snapshotDate": 1517374800000,
+    "applicationCodeLines": null,
+    "applicationFiles": 5450.0,
+    "thirdPartyCodeLines": null,
+    "thirdPartyFiles": 13.0,
+    "thirdParties": [
+        {
+            "id": 5749,
+            "componentId": "commons-io:commons-io",
+            "name": "commons-io:commons-io",
+            "version": "2.4",
+            "release": 1339539726000,
+            "languages": "java",
+            "lifeSpan": "Active",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "2.21.0",
+            "lastRelease": 1762288020000,
+            "nbVersionPreviousYear": 4,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "commons-io",
+                "product": "commons-io",
+                "version": "2.4",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2021-29425",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-29425",
+                        "description": "In Apache Commons IO before 2.7, When invoking the method FileNameUtils.normalize with an improper input string, like \"//../foo\", or \"\\\\..\\foo\", the result would be the same value, thus possibly providing access to files in the parent directory, but not further above (thus \"limited\" path traversal), if the calling code would use the result to construct a path value.",
+                        "cweId": "CWE-22",
+                        "cweLabel": null,
+                        "cvssScore": 5.3,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2024-47554",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-47554",
+                        "description": "Uncontrolled Resource Consumption vulnerability in Apache Commons IO.\n\nThe org.apache.commons.io.input.XmlStreamReader class may excessively consume CPU resources when processing maliciously crafted input.\n\n\nThis issue affects Apache Commons IO: from 2.0 before 2.14.0.\n\nUsers are recommended to upgrade to version 2.14.0 or later, which fixes the issue.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 4.3,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:apache:commons_io",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "2.7",
+            "safestVersion": "2.14.0"
+        },
+        {
+            "id": 19448,
+            "componentId": "org.apache.maven.plugin-testing:maven-plugin-testing-harness",
+            "name": "org.apache.maven.plugin-testing:maven-plugin-testing-harness",
+            "version": "3.3.0",
+            "release": 1418858531000,
+            "languages": "java",
+            "lifeSpan": "Active",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "3.5.0",
+            "lastRelease": 1767822600000,
+            "nbVersionPreviousYear": 3,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 21105,
+            "componentId": "org.sonatype.aether:aether-api",
+            "name": "org.sonatype.aether:aether-api",
+            "version": "1.13.1",
+            "release": 1322573310000,
+            "languages": "java",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 14,
+                    "name": "Eclipse Public License 1.0",
+                    "compliance": "partial"
+                }
+            ],
+            "lastVersion": "1.13.1",
+            "lastRelease": 1322573310000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 23265,
+            "componentId": "org.apache.maven:maven-core",
+            "name": "org.apache.maven:maven-core",
+            "version": "3.0.5",
+            "release": 1361281929000,
+            "languages": "java",
+            "lifeSpan": "Active",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "3.9.12",
+            "lastRelease": 1765617480000,
+            "nbVersionPreviousYear": 7,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "org.apache.maven",
+                "product": "maven-core",
+                "version": "3.0.5",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2021-26291",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-26291",
+                        "description": "Apache Maven will follow repositories that are defined in a dependency\u2019s Project Object Model (pom) which may be surprising to some users, resulting in potential risk if a malicious actor takes over that repository or is able to insert themselves into a position to pretend to be that repository. Maven is changing the default behavior in 3.8.1+ to no longer follow http (non-SSL) repository references by default. More details available in the referenced urls. If you are currently using a repository manager to govern the repositories used by your builds, you are unaffected by the risks present in the legacy behavior, and are unaffected by this vulnerability and change to default behavior. See this link for more information about repository management: https://maven.apache.org/repository-management.html",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 9.1,
+                        "criticity": "CRITICAL",
+                        "cpe": "cpe:/a:apache:maven",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "3.8.1",
+            "safestVersion": "3.8.1"
+        },
+        {
+            "id": 28571,
+            "componentId": "org.jsoup:jsoup",
+            "name": "org.jsoup:jsoup",
+            "version": "1.8.2",
+            "release": 1428986661000,
+            "languages": "java",
+            "lifeSpan": "Active",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "1.22.1",
+            "lastRelease": 1767235320000,
+            "nbVersionPreviousYear": 5,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "org.jsoup",
+                "product": "jsoup",
+                "version": "1.8.2",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2015-6748",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2015-6748",
+                        "description": "Cross-site scripting (XSS) vulnerability in jsoup before 1.8.3.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.1,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:jsoup:jsoup",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2021-37714",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-37714",
+                        "description": "jsoup is a Java library for working with HTML. Those using jsoup versions prior to 1.14.2 to parse untrusted HTML or XML may be vulnerable to DOS attacks. If the parser is run on user supplied input, an attacker may supply content that causes the parser to get stuck (loop indefinitely until cancelled), to complete more slowly than usual, or to throw an unexpected exception. This effect may support a denial of service attack. The issue is patched in version 1.14.2. There are a few available workarounds. Users may rate limit input parsing, limit the size of inputs based on system resources, and/or implement thread watchdogs to cap and timeout parse runtimes.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:quarkus:quarkus",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2022-36033",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-36033",
+                        "description": "jsoup is a Java HTML parser, built for HTML editing, cleaning, scraping, and cross-site scripting (XSS) safety. jsoup may incorrectly sanitize HTML including `javascript:` URL expressions, which could allow XSS attacks when a reader subsequently clicks that link. If the non-default `SafeList.preserveRelativeLinks` option is enabled, HTML including `javascript:` URLs that have been crafted with control characters will not be sanitized. If the site that this HTML is published on does not set a Content Security Policy, an XSS attack is then possible. This issue is patched in jsoup 1.15.3. Users should upgrade to this version. Additionally, as the unsanitized input may have been persisted, old content should be cleaned again using the updated version. To remediate this issue without immediately upgrading: - disable `SafeList.preserveRelativeLinks`, which will rewrite input URLs as absolute URLs - ensure an appropriate [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) is defined. (This should be used regardless of upgrading, as a defence-in-depth best practice.)",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.1,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:jsoup:jsoup",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [
+                {
+                    "cwe": "CWE-1080",
+                    "label": "Source Code File with Excessive Number of Lines of Code",
+                    "rules": [
+                        {
+                            "aipRuleId": 7842,
+                            "label": "Avoid large Artifacts - too many Lines of Code",
+                            "occurrences": 1
+                        }
+                    ],
+                    "id": 1080,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-681",
+                    "label": "Incorrect Conversion between Numeric Types",
+                    "rules": [
+                        {
+                            "aipRuleId": 8216,
+                            "label": "Avoid using incompatible mutation",
+                            "occurrences": 5
+                        }
+                    ],
+                    "id": 681,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-778",
+                    "label": "Insufficient Logging",
+                    "rules": [
+                        {
+                            "aipRuleId": 7652,
+                            "label": "Avoid throwing an exception in a catch block without chaining it",
+                            "occurrences": 3
+                        }
+                    ],
+                    "id": 778,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1086",
+                    "label": "Class with Excessive Number of Child Classes",
+                    "rules": [
+                        {
+                            "aipRuleId": 7792,
+                            "label": "Avoid Classes with a High Number Of Children",
+                            "occurrences": 3
+                        }
+                    ],
+                    "id": 1086,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1053",
+                    "label": "Missing Documentation for Design",
+                    "rules": [
+                        {
+                            "aipRuleId": 7838,
+                            "label": "Avoid undocumented Methods",
+                            "occurrences": 945
+                        }
+                    ],
+                    "id": 1053,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-390",
+                    "label": "Detection of Error Condition Without Action",
+                    "rules": [
+                        {
+                            "aipRuleId": 1060020,
+                            "label": "Avoid empty catch blocks for methods with high fan-in",
+                            "occurrences": 1
+                        }
+                    ],
+                    "id": 390,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1061",
+                    "label": "Insufficient Encapsulation",
+                    "rules": [
+                        {
+                            "aipRuleId": 7912,
+                            "label": "Avoid unreferenced Data Members",
+                            "occurrences": 1
+                        },
+                        {
+                            "aipRuleId": 7908,
+                            "label": "Avoid unreferenced Methods",
+                            "occurrences": 535
+                        },
+                        {
+                            "aipRuleId": 7832,
+                            "label": "Avoid unreferenced Classes",
+                            "occurrences": 33
+                        }
+                    ],
+                    "id": 1061,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-674",
+                    "label": "Uncontrolled Recursion",
+                    "rules": [
+                        {
+                            "aipRuleId": 7388,
+                            "label": "Avoid artifacts having recursive calls",
+                            "occurrences": 9
+                        }
+                    ],
+                    "id": 674,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-319",
+                    "label": "Cleartext Transmission of Sensitive Information",
+                    "rules": [
+                        {
+                            "aipRuleId": 1039002,
+                            "label": "Avoid using deprecated SSL protocols to secure connection",
+                            "occurrences": 1
+                        }
+                    ],
+                    "id": 319,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-73",
+                    "label": "External Control of File Name or Path",
+                    "rules": [
+                        {
+                            "aipRuleId": 4594,
+                            "label": "Avoid using 'java.io.File'",
+                            "occurrences": 23
+                        }
+                    ],
+                    "id": 73,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-478",
+                    "label": "Missing Default Case in Switch Statement",
+                    "rules": [
+                        {
+                            "aipRuleId": 8028,
+                            "label": "Avoid missing default in switch statements",
+                            "occurrences": 6
+                        }
+                    ],
+                    "id": 478,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1121",
+                    "label": "Excessive McCabe Cyclomatic Complexity",
+                    "rules": [
+                        {
+                            "aipRuleId": 7776,
+                            "label": "Avoid Artifacts with High Fan-In",
+                            "occurrences": 231
+                        },
+                        {
+                            "aipRuleId": 7766,
+                            "label": "Avoid Artifacts with High Cyclomatic Complexity",
+                            "occurrences": 7
+                        }
+                    ],
+                    "id": 1121,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1124",
+                    "label": "Excessively Deep Nesting",
+                    "rules": [
+                        {
+                            "aipRuleId": 7768,
+                            "label": "Avoid Artifacts with High Depth of Code",
+                            "occurrences": 18
+                        }
+                    ],
+                    "id": 1124,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-391",
+                    "label": "Unchecked Error Condition",
+                    "rules": [
+                        {
+                            "aipRuleId": 7788,
+                            "label": "Avoid empty catch blocks",
+                            "occurrences": 8
+                        },
+                        {
+                            "aipRuleId": 1060020,
+                            "label": "Avoid empty catch blocks for methods with high fan-in",
+                            "occurrences": 1
+                        }
+                    ],
+                    "id": 391,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1075",
+                    "label": "Unconditional Control Flow Transfer outside of Switch Block",
+                    "rules": [
+                        {
+                            "aipRuleId": 8028,
+                            "label": "Avoid missing default in switch statements",
+                            "occurrences": 6
+                        }
+                    ],
+                    "id": 1075,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-576",
+                    "label": "EJB Bad Practices: Use of Java I/O",
+                    "rules": [
+                        {
+                            "aipRuleId": 4594,
+                            "label": "Avoid using 'java.io.File'",
+                            "occurrences": 23
+                        }
+                    ],
+                    "id": 576,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1050",
+                    "label": "Excessive Platform Resource Consumption within a Loop",
+                    "rules": [
+                        {
+                            "aipRuleId": 7210,
+                            "label": "Avoid instantiations inside loops",
+                            "occurrences": 9
+                        },
+                        {
+                            "aipRuleId": 7204,
+                            "label": "Avoid method invocation in a loop termination expression",
+                            "occurrences": 32
+                        }
+                    ],
+                    "id": 1050,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1048",
+                    "label": "Invokable Control Element with Large Number of Outward Calls",
+                    "rules": [
+                        {
+                            "aipRuleId": 7778,
+                            "label": "Avoid Artifacts with High Fan-Out",
+                            "occurrences": 803
+                        }
+                    ],
+                    "id": 1048,
+                    "isDangerousWeakness": false
+                }
+            ],
+            "saferClosestVersion": "1.8.3",
+            "safestVersion": "1.15.3"
+        },
+        {
+            "id": 51135,
+            "componentId": "com.android.tools.build:gradle",
+            "name": "com.android.tools.build:gradle",
+            "version": "1.1.0",
+            "release": 1424219940000,
+            "languages": "java",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "2.3.0",
+            "lastRelease": 1488838140000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51136,
+            "componentId": "com.jcabi:jcabi-aether",
+            "name": "com.jcabi:jcabi-aether",
+            "version": "0.10.1",
+            "release": 1412181300000,
+            "languages": "java",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 26140,
+                    "name": "BSD Licenses Family",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "0.10.1",
+            "lastRelease": 1412181300000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51137,
+            "componentId": "org.apache.maven.plugins:maven-compiler-plugin",
+            "name": "org.apache.maven.plugins:maven-compiler-plugin",
+            "version": "3.5.1",
+            "release": 1454785461000,
+            "languages": "java",
+            "lifeSpan": "Active",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "4.0.0-beta-4",
+            "lastRelease": 1769474820000,
+            "nbVersionPreviousYear": 6,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51138,
+            "componentId": "org.apache.maven.plugin-tools:maven-plugin-annotations",
+            "name": "org.apache.maven.plugin-tools:maven-plugin-annotations",
+            "version": "3.4",
+            "release": 1420149521000,
+            "languages": "java",
+            "lifeSpan": "Active",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "3.15.2",
+            "lastRelease": 1760988120000,
+            "nbVersionPreviousYear": 2,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51139,
+            "componentId": "kotlin.npm",
+            "name": "kotlin.npm",
+            "version": "1.0.0",
+            "release": 1476177890000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "1.9.25",
+            "lastRelease": 1721388730000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51140,
+            "componentId": "org.codehaus.groovy:groovy-all",
+            "name": "org.codehaus.groovy:groovy-all",
+            "version": "2.4.4",
+            "release": 1437037134000,
+            "languages": "java",
+            "lifeSpan": "Active",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "3.0.25",
+            "lastRelease": 1748316780000,
+            "nbVersionPreviousYear": 2,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "org.codehaus.groovy",
+                "product": "groovy-all",
+                "version": "2.4.4",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2016-6814",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2016-6814",
+                        "description": "When an application with unsupported Codehaus versions of Groovy from 1.7.0 to 2.4.3, Apache Groovy 2.4.4 to 2.4.7 on classpath uses standard Java serialization mechanisms, e.g. to communicate between servers or to store local data, it was possible for an attacker to bake a special serialized object that will execute code directly when deserialized. All applications which rely on serialization and do not isolate the code which deserializes objects were subject to this vulnerability.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 9.8,
+                        "criticity": "CRITICAL",
+                        "cpe": "cpe:/a:apache:groovy",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2020-17521",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-17521",
+                        "description": "Apache Groovy provides extension methods to aid with creating temporary directories. Prior to this fix, Groovy's implementation of those extension methods was using a now superseded Java JDK method call that is potentially not secure on some operating systems in some contexts. Users not using the extension methods mentioned in the advisory are not affected, but may wish to read the advisory for further details. Versions Affected: 2.0 to 2.4.20, 2.5.0 to 2.5.13, 3.0.0 to 3.0.6, and 4.0.0-alpha-1. Fixed in versions 2.4.21, 2.5.14, 3.0.7, 4.0.0-alpha-2.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.5,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:apache:atlas",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "2.4.8",
+            "safestVersion": "2.4.21"
+        },
+        {
+            "id": 51141,
+            "componentId": "kotlin-compiler.npm",
+            "name": "kotlin-compiler.npm",
+            "version": "0.0.0",
+            "release": 1476360812000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "2.3.20-Beta2",
+            "lastRelease": 1769684639000,
+            "nbVersionPreviousYear": 33,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 52057,
+            "componentId": "com.google.dagger:dagger",
+            "name": "com.google.dagger:dagger",
+            "version": "2.9",
+            "release": 1486142040000,
+            "languages": "java",
+            "lifeSpan": "Active",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "2.59",
+            "lastRelease": 1768953840000,
+            "nbVersionPreviousYear": 8,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        }
+    ],
+    "partialComponents": [
+        {
+            "name": "kotlin-daemon-client",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "native-platform",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "GWT",
+            "technology": "Java",
+            "type": "UI Framework",
+            "versions": [
+                ""
+            ],
+            "license": "Apache License 2.0",
+            "editor": "http://www.gwtproject.org/",
+            "description": "Google Web Toolkit is a development toolkit for building and optimizing complex browser-based applications. Its goal is to enable productive development of high-performance web applications without the developer having to be an expert in browser quirks, XMLHttpRequest, and JavaScript.",
+            "dependencyLevel": null
+        },
+        {
+            "name": "JPA",
+            "technology": "Java",
+            "type": "Java Specification Requests",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "kotlin-compiler",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "Jquery",
+            "technology": "JavaScript",
+            "type": "Web & Mobile applications",
+            "versions": [
+                ""
+            ],
+            "license": "MIT",
+            "editor": "http://www.jquery.com",
+            "description": "jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.",
+            "dependencyLevel": null
+        },
+        {
+            "name": "tools",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                "1.8.0"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "kotlin-reflect",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                "${kotlin.version}"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "kotlin-stdlib",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                "wrong-version"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "antlr4-runtime",
+            "technology": "Java",
+            "type": "Runtime Platform",
+            "versions": [
+                "4.5.3"
+            ],
+            "license": "Apache License 2.0",
+            "editor": "https://ant.apache.org/",
+            "description": "Apache Ant is a Java library and command-line tool whose mission is to drive processes described in build files as targets and extension points dependent upon each other",
+            "dependencyLevel": null
+        },
+        {
+            "name": "junit",
+            "technology": "Java",
+            "type": "Unit Testing Framework",
+            "versions": [
+                "${junit-version}"
+            ],
+            "license": "Eclipse Public License",
+            "editor": "http://junit.org/junit4/",
+            "description": "JUnit is a simple framework to write repeatable tests. It is an instance of the xUnit architecture for unit testing frameworks.",
+            "dependencyLevel": null
+        },
+        {
+            "name": "kotlin-stdlib-jre8",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                "$VERSION$"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "kotlin-stdlib-js",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                "$VERSION$"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "kotlin-test-js",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                "${project.version}"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "kotlin-test-junit",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                "${project.version}"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "selenium-java",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                "${selenium.version}"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "kool-javafx",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                "1.0-SNAPSHOT"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "test-extension",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                "${project.version}"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "test-multimodule-shared",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                "${project.version}"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "kotlin-js-library-example",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                "${project.version}"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "kotlin-maven-allopen",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                "${kotlin.version}"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "kotlin-maven-noarg",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                "${kotlin.version}"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        }
+    ]
+}

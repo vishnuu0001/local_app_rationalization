@@ -1,0 +1,1128 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 0.2,
+                                            "effort": 0.2
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__ResourceManagement",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 1.0,
+                                            "effort": 0.5
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__TmpFileName",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 4.0,
+                                            "effort": 40.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__VarDecl",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 28.0,
+                                            "effort": 4.666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__Finalize",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 21.0,
+                                            "effort": 210.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 47099.0,
+                                            "effort": 141297.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 3270.2126,
+                                            "effort": 3270.2126
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__IllegalThrows",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 2.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "VB",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 34108.0,
+                                            "effort": 102324.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__OnError",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 295.0,
+                                            "effort": 1475.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__InstanceOf",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 1958.0,
+                                            "effort": 19580.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__MissingBraces2",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 2.0,
+                                            "effort": 0.33333334
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__Intrinsics",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 16.0,
+                                            "effort": 16.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 0.1,
+                                            "effort": 0.1
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__Pipes",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 4.0,
+                                            "effort": 0.6666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__MissingBraces2",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 1481.0,
+                                            "effort": 246.83334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__Instanceof",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 2471.0,
+                                            "effort": 24710.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "VB",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__MissingExplicitOnOption",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 39.0,
+                                            "effort": 195.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__PublicAttributes",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 8343.0,
+                                            "effort": 8343.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 2805.608,
+                                            "effort": 2805.608
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__MissingStrictOnOption",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 16.0,
+                                            "effort": 80.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__RiskyFunctionCalls",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 3768.0,
+                                            "effort": 37680.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__MissingIncludeProtections",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 1.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__PublicAttributes",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 7785.0,
+                                            "effort": 7785.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__EmptyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 189.0,
+                                            "effort": 945.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__MissingDefault",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 451.0,
+                                            "effort": 451.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__AssignmentsInConditionalExpr",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 321.0,
+                                            "effort": 160.50002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__BugPatterns",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 2081.0,
+                                            "effort": 2081.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "VB",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__EmptyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 97.0,
+                                            "effort": 485.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__MissingDefault",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 687.0,
+                                            "effort": 687.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__BugPatterns",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 10328.0,
+                                            "effort": 10328.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 1.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 5.0,
+                                            "effort": 0.4166667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 9.0,
+                                            "effort": 0.75000006
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 2.0,
+                                            "effort": 0.16666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 7.0,
+                                            "effort": 7.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__ShortVarName",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 1.0,
+                                            "effort": 0.16666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 8.0,
+                                            "effort": 8.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 130.0,
+                                            "effort": 130.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 62868.0,
+                                            "effort": 5239.0005
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 20780.0,
+                                            "effort": 1731.6667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__ClassDefinitions",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 13976.0,
+                                            "effort": 69880.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 14041.0,
+                                            "effort": 1170.0834
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 14243.0,
+                                            "effort": 14243.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "VB",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 109.0,
+                                            "effort": 109.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__ClassDefinitions",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 15600.0,
+                                            "effort": 78000.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 9797.0,
+                                            "effort": 9797.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 24.0,
+                                            "effort": 2.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 36.900005,
+                                            "effort": 36.900005
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__ExportNames",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 2.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__LocalNames",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 27.0,
+                                            "effort": 4.5
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__MissingAutomatedDoc2",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 127627.0,
+                                            "effort": 127627.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__BadDeclarationOrder",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 56535.0,
+                                            "effort": 56535.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 17298.0,
+                                            "effort": 1441.5001
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "VB",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 109317.0,
+                                            "effort": 9109.75
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 21.2,
+                                            "effort": 21.2
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__BadDeclarationOrder",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 1.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 186684.14,
+                                            "effort": 186684.14
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 22712.0,
+                                            "effort": 1892.6667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 1333.0,
+                                            "effort": 13330.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "VB",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__UnparametrizedNext",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 4723.0,
+                                            "effort": 787.1667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 130490.04,
+                                            "effort": 130490.04
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 45124.0,
+                                            "effort": 3760.3335
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 1289.0,
+                                            "effort": 12890.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 0.66,
+                                            "effort": 0.66
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 1903.7197,
+                                            "effort": 9518.599
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 4375.8525,
+                                            "effort": 4375.8525
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "VB",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 1892.0199,
+                                            "effort": 9460.1
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 5361.5,
+                                            "effort": 5361.5
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 1185.16,
+                                            "effort": 5925.8003
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "VB",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 1107.64,
+                                            "effort": 5538.2
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__ComplexConditions",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 99.0,
+                                            "effort": 990.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "VB",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__ComplexConditions",
+                                    "detail": [
+                                        {
+                                            "application_id": 13411,
+                                            "application_name": "roslyn",
+                                            "counter": 589.0,
+                                            "effort": 589.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

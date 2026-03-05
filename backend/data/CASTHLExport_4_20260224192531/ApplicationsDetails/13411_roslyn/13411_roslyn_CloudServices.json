@@ -1,0 +1,700 @@
+[
+    {
+        "platformId": "aws",
+        "platformName": "Amazon Web Services",
+        "platformUrl": "https://www.aws.com",
+        "recommendations": [
+            {
+                "id": "aws_batch",
+                "name": "AWS Batch",
+                "category": "Compute",
+                "description": "Fully managed batch processing at any scale",
+                "url": "https://aws.amazon.com/batch/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Getting Started with AWS Batch",
+                        "url": "https://aws.amazon.com/batch/getting-started/?nc=sn&loc=4"
+                    }
+                ],
+                "considerations": "For your ETL use cases, you might consider using AWS Glue. For other batch-oriented use cases, including some ETL use cases, AWS Batch might be a better fit",
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "KSH",
+                        "details": {
+                            "loc": 207.0,
+                            "label": "Ksh"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "aws_cloudwatch",
+                "name": "Amazon CloudWatch",
+                "category": "DevOps",
+                "description": "Observability of your AWS resources and applications on AWS and on-premises",
+                "url": "https://aws.amazon.com/cloudwatch/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Getting started with Amazon CloudWatch",
+                        "url": "https://aws.amazon.com/cloudwatch/getting-started/"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "cloudready",
+                        "ruleId": "Use_Explicit_Logging_API",
+                        "details": {
+                            "technoLabel": "C#",
+                            "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Explicit_Logging_API",
+                            "categoryLabel": "Application Logs",
+                            "count": 0.0,
+                            "label": "Correct usage of Logging",
+                            "type": "BOOSTER"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "aws_ec2",
+                "name": "Amazon EC2",
+                "category": "Compute",
+                "description": "Secure and resizable compute capacity in the cloud. Launch applications when needed without upfront commitments",
+                "url": "https://aws.amazon.com/ec2/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Getting Started with Amazon EC2",
+                        "url": "https://aws.amazon.com/ec2/getting-started/"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "CSHARP",
+                        "details": {
+                            "loc": 1334841.0,
+                            "label": "C#"
+                        }
+                    },
+                    {
+                        "type": "technology",
+                        "ruleId": "VB",
+                        "details": {
+                            "loc": 913378.0,
+                            "label": "VB/VB.Net"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "aws_s3",
+                "name": "Amazon S3",
+                "category": "Storage",
+                "description": "Object storage built to store and retrieve any amount of data from anywhere",
+                "url": "https://aws.amazon.com/s3/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Getting started with Amazon S3",
+                        "url": "https://aws.amazon.com/s3/getting-started/?nc=sn&loc=5"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "cloudready",
+                        "ruleId": "Use_Explicit_Logging_API",
+                        "details": {
+                            "technoLabel": "C#",
+                            "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Explicit_Logging_API",
+                            "categoryLabel": "Application Logs",
+                            "count": 0.0,
+                            "label": "Correct usage of Logging",
+                            "type": "BOOSTER"
+                        }
+                    },
+                    {
+                        "type": "cloudready",
+                        "ruleId": "File_Manipulation_Practice",
+                        "details": {
+                            "technoLabel": "VB/VB.Net",
+                            "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#File_Manipulation_Practice",
+                            "categoryLabel": "Persistent Files",
+                            "count": 10.0,
+                            "label": "Perform File Manipulation",
+                            "type": "BLOCKER"
+                        }
+                    },
+                    {
+                        "type": "cloudready",
+                        "ruleId": "File_Manipulation_Practice",
+                        "details": {
+                            "technoLabel": "C#",
+                            "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#File_Manipulation_Practice",
+                            "categoryLabel": "Persistent Files",
+                            "count": 177.0,
+                            "label": "Perform File Manipulation",
+                            "type": "BLOCKER"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "platformId": "azure",
+        "platformName": "Microsoft Azure",
+        "platformUrl": "https://azure.microsoft.com",
+        "recommendations": [
+            {
+                "id": "azure_appservice",
+                "name": "Azure App Service",
+                "category": "Compute",
+                "description": "Build, deploy, and scale web apps on a fully managed platform",
+                "url": "https://azure.microsoft.com/en-us/services/app-service/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "App Service Documentation",
+                        "url": "https://docs.microsoft.com/en-us/azure/app-service/"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "CSHARP",
+                        "details": {
+                            "loc": 1334841.0,
+                            "label": "C#"
+                        }
+                    },
+                    {
+                        "type": "technology",
+                        "ruleId": "VB",
+                        "details": {
+                            "loc": 913378.0,
+                            "label": "VB/VB.Net"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "azure_batch",
+                "name": "Azure Batch",
+                "category": "Compute",
+                "description": "Cloud-scale job scheduling and compute management",
+                "url": "https://azure.microsoft.com/en-us/services/batch/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Azure Batch documentation",
+                        "url": "https://docs.microsoft.com/en-us/azure/batch/"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "KSH",
+                        "details": {
+                            "loc": 207.0,
+                            "label": "Ksh"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "azure_logging",
+                "name": "Azure Monitor",
+                "category": "DevOps",
+                "description": "Full observability into your applications, infrastructure, and network",
+                "url": "https://azure.microsoft.com/en-us/services/monitor/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Azure Monitor overview",
+                        "url": "https://docs.microsoft.com/en-us/azure/azure-monitor/overview"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "cloudready",
+                        "ruleId": "Use_Explicit_Logging_API",
+                        "details": {
+                            "technoLabel": "C#",
+                            "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Explicit_Logging_API",
+                            "categoryLabel": "Application Logs",
+                            "count": 0.0,
+                            "label": "Correct usage of Logging",
+                            "type": "BOOSTER"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "azure_storage",
+                "name": "Azure Storage",
+                "category": "Storage",
+                "description": "Offload the heavy lifting of datacenter management",
+                "url": "https://azure.microsoft.com/en-us/services/storage/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Azure Storage Documentation",
+                        "url": "https://docs.microsoft.com/en-us/azure/storage/"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "cloudready",
+                        "ruleId": "Use_Explicit_Logging_API",
+                        "details": {
+                            "technoLabel": "C#",
+                            "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Explicit_Logging_API",
+                            "categoryLabel": "Application Logs",
+                            "count": 0.0,
+                            "label": "Correct usage of Logging",
+                            "type": "BOOSTER"
+                        }
+                    },
+                    {
+                        "type": "cloudready",
+                        "ruleId": "File_Manipulation_Practice",
+                        "details": {
+                            "technoLabel": "VB/VB.Net",
+                            "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#File_Manipulation_Practice",
+                            "categoryLabel": "Persistent Files",
+                            "count": 10.0,
+                            "label": "Perform File Manipulation",
+                            "type": "BLOCKER"
+                        }
+                    },
+                    {
+                        "type": "cloudready",
+                        "ruleId": "File_Manipulation_Practice",
+                        "details": {
+                            "technoLabel": "C#",
+                            "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#File_Manipulation_Practice",
+                            "categoryLabel": "Persistent Files",
+                            "count": 177.0,
+                            "label": "Perform File Manipulation",
+                            "type": "BLOCKER"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "azure_iaas",
+                "name": "Azure infrastructure as a service (IaaS)",
+                "category": "Compute",
+                "description": "Meet all your cloud infrastructure needs",
+                "url": "https://azure.microsoft.com/en-us/overview/what-is-azure/iaas/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Linux virtual machines in Azure",
+                        "url": "https://docs.microsoft.com/en-us/azure/virtual-machines/linux/"
+                    },
+                    {
+                        "type": "General",
+                        "title": "Windows virtual machines in Azure",
+                        "url": "https://docs.microsoft.com/en-us/azure/virtual-machines/windows/"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "CSHARP",
+                        "details": {
+                            "loc": 1334841.0,
+                            "label": "C#"
+                        }
+                    },
+                    {
+                        "type": "technology",
+                        "ruleId": "VB",
+                        "details": {
+                            "loc": 913378.0,
+                            "label": "VB/VB.Net"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "platformId": "gcp",
+        "platformName": "Google Cloud",
+        "platformUrl": "https://cloud.google.com",
+        "recommendations": [
+            {
+                "id": "gcp_cloudmonitoring",
+                "name": "Cloud Monitoring",
+                "category": "DevOps",
+                "description": "Gain visibility into the performance, availability, and health of your applications and infrastructure.",
+                "url": "https://cloud.google.com/monitoring",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "CLoud Monitoring documentation",
+                        "url": "https://cloud.google.com/monitoring#section-4"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "cloudready",
+                        "ruleId": "Use_Explicit_Logging_API",
+                        "details": {
+                            "technoLabel": "C#",
+                            "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Explicit_Logging_API",
+                            "categoryLabel": "Application Logs",
+                            "count": 0.0,
+                            "label": "Correct usage of Logging",
+                            "type": "BOOSTER"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "gcp_cloudrun",
+                "name": "Cloud Run",
+                "category": "Compute",
+                "description": "Develop and deploy highly scalable containerized applications on a fully managed serverless platform.",
+                "url": "https://cloud.google.com/run",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Cloud Run Documentation",
+                        "url": "https://cloud.google.com/run#section-5"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "CSHARP",
+                        "details": {
+                            "loc": 1334841.0,
+                            "label": "C#"
+                        }
+                    },
+                    {
+                        "type": "technology",
+                        "ruleId": "VB",
+                        "details": {
+                            "loc": 913378.0,
+                            "label": "VB/VB.Net"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "gcp_storage",
+                "name": "Cloud Storage",
+                "category": "Storage",
+                "description": "Object storage for companies of all sizes. Store any amount of data. Retrieve it as often as you\u2019d like.",
+                "url": "https://cloud.google.com/storage",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Cloud Storage Documentation",
+                        "url": "https://cloud.google.com/storage#section-4"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "cloudready",
+                        "ruleId": "Use_Explicit_Logging_API",
+                        "details": {
+                            "technoLabel": "C#",
+                            "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Explicit_Logging_API",
+                            "categoryLabel": "Application Logs",
+                            "count": 0.0,
+                            "label": "Correct usage of Logging",
+                            "type": "BOOSTER"
+                        }
+                    },
+                    {
+                        "type": "cloudready",
+                        "ruleId": "File_Manipulation_Practice",
+                        "details": {
+                            "technoLabel": "VB/VB.Net",
+                            "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#File_Manipulation_Practice",
+                            "categoryLabel": "Persistent Files",
+                            "count": 10.0,
+                            "label": "Perform File Manipulation",
+                            "type": "BLOCKER"
+                        }
+                    },
+                    {
+                        "type": "cloudready",
+                        "ruleId": "File_Manipulation_Practice",
+                        "details": {
+                            "technoLabel": "C#",
+                            "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#File_Manipulation_Practice",
+                            "categoryLabel": "Persistent Files",
+                            "count": 177.0,
+                            "label": "Perform File Manipulation",
+                            "type": "BLOCKER"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "gcp_containers",
+                "name": "Google Kubernetes Engine (GKE Autopilot)",
+                "category": "Container",
+                "description": "GKE Autopilot mode is a hands-off, fully managed solution that manages your entire cluster\u2019s infrastructure without worrying about configuring and monitoring nodes, while still delivering a complete Kubernetes experience.",
+                "url": "https://cloud.google.com/kubernetes-engine",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Google Kubernetes Engine documentation",
+                        "url": "https://cloud.google.com/kubernetes-engine/docs/concepts/autopilot-overview"
+                    }
+                ],
+                "considerations": "The applicability of this recommendation will depend on your organization's container strategy, and which target is recommended as part of this strategy: Virtual machines, Individual containers, Kubernetes clusters, etc. Your container strategy will also inform how processes and people impact the technology choices, if for example a DevOps strategy or a Microservices strategy exists.",
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "CSHARP",
+                        "details": {
+                            "loc": 1334841.0,
+                            "label": "C#"
+                        }
+                    },
+                    {
+                        "type": "technology",
+                        "ruleId": "VB",
+                        "details": {
+                            "loc": 913378.0,
+                            "label": "VB/VB.Net"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "platformId": "ibm",
+        "platformName": "IBM Cloud",
+        "platformUrl": "https://www.ibm.com/cloud",
+        "recommendations": [
+            {
+                "id": "ibm_workloadautomation",
+                "name": "IBM App Connect",
+                "category": "Integration",
+                "description": "Optimize and automate complex workloads for greater IT efficiency",
+                "url": "https://www.ibm.com/cloud/app-connect",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "IBM Workload Automation: Resources",
+                        "url": "https://www.ibm.com/products/workload-automation/resources"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "KSH",
+                        "details": {
+                            "loc": 207.0,
+                            "label": "Ksh"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "ibm_cloudmonitoringsysdig",
+                "name": "IBM Cloud Monitoring with Sysdig",
+                "category": "DevOps",
+                "description": "Get operational visibility into Kubernetes-based applications, services and platforms",
+                "url": "https://www.ibm.com/uk-en/cloud/sysdig",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Introducing IBM Cloud Monitoring with Sysdig",
+                        "url": "https://www.ibm.com/cloud/blog/announcements/increase-observability-by-using-ibm-cloud-monitoring-with-sysdig"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "cloudready",
+                        "ruleId": "Use_Explicit_Logging_API",
+                        "details": {
+                            "technoLabel": "C#",
+                            "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Explicit_Logging_API",
+                            "categoryLabel": "Application Logs",
+                            "count": 0.0,
+                            "label": "Correct usage of Logging",
+                            "type": "BOOSTER"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "ibm_objectstorage",
+                "name": "IBM Cloud Object Storage",
+                "category": "Storage",
+                "description": "Flexible, cost-effective and scalable cloud storage for unstructured data",
+                "url": "https://www.ibm.com/cloud/object-storage",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Getting started with IBM Cloud Object Storage",
+                        "url": "https://cloud.ibm.com/docs/cloud-object-storage?topic=cloud-object-storage-getting-started-cloud-object-storage"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "cloudready",
+                        "ruleId": "Use_Explicit_Logging_API",
+                        "details": {
+                            "technoLabel": "C#",
+                            "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Explicit_Logging_API",
+                            "categoryLabel": "Application Logs",
+                            "count": 0.0,
+                            "label": "Correct usage of Logging",
+                            "type": "BOOSTER"
+                        }
+                    },
+                    {
+                        "type": "cloudready",
+                        "ruleId": "File_Manipulation_Practice",
+                        "details": {
+                            "technoLabel": "VB/VB.Net",
+                            "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#File_Manipulation_Practice",
+                            "categoryLabel": "Persistent Files",
+                            "count": 10.0,
+                            "label": "Perform File Manipulation",
+                            "type": "BLOCKER"
+                        }
+                    },
+                    {
+                        "type": "cloudready",
+                        "ruleId": "File_Manipulation_Practice",
+                        "details": {
+                            "technoLabel": "C#",
+                            "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#File_Manipulation_Practice",
+                            "categoryLabel": "Persistent Files",
+                            "count": 177.0,
+                            "label": "Perform File Manipulation",
+                            "type": "BLOCKER"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "ibm_virtualserversvpc",
+                "name": "IBM Cloud Virtual Server for VPC",
+                "category": "Compute",
+                "description": "Some providers make VPC confusing. We don't. Intel processors help make IBM Cloud VPC simple, powerful and secure",
+                "url": "https://www.ibm.com/cloud/vpc",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Getting started with Virtual Private Cloud (VPC)",
+                        "url": "https://cloud.ibm.com/docs/vpc"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "CSHARP",
+                        "details": {
+                            "loc": 1334841.0,
+                            "label": "C#"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "platformId": "oraclecloud",
+        "platformName": "Oracle Cloud",
+        "platformUrl": "https://www.oracle.com/cloud/",
+        "recommendations": [
+            {
+                "id": "oracle_filestorage",
+                "name": "File Storage",
+                "category": "Storage",
+                "description": "Managed network file system to provide scalable, distributed, enterprise-grade storage. Typically supports NFS",
+                "url": "https://www.oracle.com/cloud/storage/file-storage/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Documentation",
+                        "url": "https://docs.oracle.com/en-us/iaas/Content/File/Concepts/filestorageoverview.htm"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "cloudready",
+                        "ruleId": "Use_Explicit_Logging_API",
+                        "details": {
+                            "technoLabel": "C#",
+                            "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Explicit_Logging_API",
+                            "categoryLabel": "Application Logs",
+                            "count": 0.0,
+                            "label": "Correct usage of Logging",
+                            "type": "BOOSTER"
+                        }
+                    },
+                    {
+                        "type": "cloudready",
+                        "ruleId": "File_Manipulation_Practice",
+                        "details": {
+                            "technoLabel": "VB/VB.Net",
+                            "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#File_Manipulation_Practice",
+                            "categoryLabel": "Persistent Files",
+                            "count": 10.0,
+                            "label": "Perform File Manipulation",
+                            "type": "BLOCKER"
+                        }
+                    },
+                    {
+                        "type": "cloudready",
+                        "ruleId": "File_Manipulation_Practice",
+                        "details": {
+                            "technoLabel": "C#",
+                            "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#File_Manipulation_Practice",
+                            "categoryLabel": "Persistent Files",
+                            "count": 177.0,
+                            "label": "Perform File Manipulation",
+                            "type": "BLOCKER"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "oracle_logginganalytics",
+                "name": "Logging Analytics",
+                "category": "DevOps",
+                "description": "Service to index, enrich, aggregate, explore, search, analyze, correlate, visualize, and monitor log data from applications and cloud infrastructure",
+                "url": "https://www.oracle.com/manageability/logging-analytics/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Use Cases",
+                        "url": "https://docs.oracle.com/en-us/iaas/logging-analytics/doc/typical-use-cases.html"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "cloudready",
+                        "ruleId": "Use_Explicit_Logging_API",
+                        "details": {
+                            "technoLabel": "C#",
+                            "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Explicit_Logging_API",
+                            "categoryLabel": "Application Logs",
+                            "count": 0.0,
+                            "label": "Correct usage of Logging",
+                            "type": "BOOSTER"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]

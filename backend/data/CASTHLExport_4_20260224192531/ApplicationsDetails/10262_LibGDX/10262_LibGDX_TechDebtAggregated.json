@@ -1,0 +1,1230 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 11055.0,
+                                            "effort": 33165.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ClassesComparisons",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 31.0,
+                                            "effort": 310.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__RiskyFunctionCalls",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 2.0,
+                                            "effort": 2.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__IllegalThrows",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 165.0,
+                                            "effort": 825.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__StructDefinitions",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 503.0,
+                                            "effort": 2515.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 26947.0,
+                                            "effort": 80841.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__RiskyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 7.0,
+                                            "effort": 35.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__MissingBraces",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 5734.0,
+                                            "effort": 5734.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 1070.9999,
+                                            "effort": 1070.9999
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__StructuredTypedefs",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 46.0,
+                                            "effort": 230.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__ResourceManagement",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 353.0,
+                                            "effort": 176.50002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__BadDynamicClassDefinitions",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 154.0,
+                                            "effort": 770.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 3161.22,
+                                            "effort": 15806.1
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__ResourceManagement2",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 22.0,
+                                            "effort": 11.000001
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingHashcode",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 13.0,
+                                            "effort": 130.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__RiskyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 239.0,
+                                            "effort": 1195.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__Instanceof",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 455.0,
+                                            "effort": 4550.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__OverloadEquals",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 15.0,
+                                            "effort": 150.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__PublicAttributes",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 2415.0,
+                                            "effort": 2415.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__MacroDefinitions",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 567.0,
+                                            "effort": 1134.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__MissingBraces2",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 4182.0,
+                                            "effort": 697.00006
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__MissingClassDestructor2",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 298.0,
+                                            "effort": 298.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__Data",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 609.0,
+                                            "effort": 9135.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__MissingBreakInCasePath",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 51.0,
+                                            "effort": 4.25
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__MallocFreeUses",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 14.0,
+                                            "effort": 14.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__RiskyFunctionCalls",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 62.0,
+                                            "effort": 620.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__MissingClassConstructor",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 164.0,
+                                            "effort": 164.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__PublicAttributes",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 5791.0,
+                                            "effort": 5791.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingBraces2",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 8491.0,
+                                            "effort": 8491.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__EmptyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 97.0,
+                                            "effort": 485.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingDefault",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 90.0,
+                                            "effort": 90.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 178217.0,
+                                            "effort": 178217.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingBreakInSwitch",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 43.0,
+                                            "effort": 3.5833335
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__AssignmentsInConditionalExpr",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 11.0,
+                                            "effort": 5.5000005
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BugPatterns",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 39.0,
+                                            "effort": 39.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__MacroUnparenthesedParams",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 121.0,
+                                            "effort": 121.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__EmptyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 1.0,
+                                            "effort": 5.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__MissingDefault",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 62.0,
+                                            "effort": 62.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__UninitializedLocalVariables",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 852.0,
+                                            "effort": 142.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__MissingClassDestructor",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 298.0,
+                                            "effort": 298.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__MultipleInheritances",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 19.0,
+                                            "effort": 285.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__AssignmentsInConditionalExpr",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 8.0,
+                                            "effort": 4.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__Union",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 21.0,
+                                            "effort": 105.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__MissingIncludeProtections",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 12.0,
+                                            "effort": 12.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__BugPatterns",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 147.0,
+                                            "effort": 147.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 1754.0,
+                                            "effort": 1754.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 12685.0,
+                                            "effort": 1057.0834
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ClassDefinitions",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 674.0,
+                                            "effort": 3370.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__StarImport",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 593.0,
+                                            "effort": 593.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 5907.0,
+                                            "effort": 5907.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 303.0,
+                                            "effort": 303.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 12338.0,
+                                            "effort": 1028.1667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 1112.0,
+                                            "effort": 92.66667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__ClassDefinitions",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 372.0,
+                                            "effort": 1860.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 3218.0,
+                                            "effort": 268.1667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 1845.0,
+                                            "effort": 1845.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 3697.0,
+                                            "effort": 308.08334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingAutomatedDoc2",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 54154.0,
+                                            "effort": 54154.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 17271.0,
+                                            "effort": 1439.2501
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 5985.0,
+                                            "effort": 498.75003
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 6314.0,
+                                            "effort": 526.1667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__ClassImplementations",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 359.0,
+                                            "effort": 1795.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 6757.0,
+                                            "effort": 563.0834
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 31450.543,
+                                            "effort": 31450.543
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__Ternary",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 2612.0,
+                                            "effort": 2612.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadDeclarationOrder",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 646.0,
+                                            "effort": 646.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 1209.0,
+                                            "effort": 100.75001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 203.0,
+                                            "effort": 2030.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 47546.61,
+                                            "effort": 47546.61
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__Ternary",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 1239.0,
+                                            "effort": 1239.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__PreprocDirective",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 1977.0,
+                                            "effort": 1977.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__BadDeclarationOrder",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 110.0,
+                                            "effort": 110.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 298.0,
+                                            "effort": 2980.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 673616.0,
+                                            "effort": 673616.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__OtherLanguage",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 43.0,
+                                            "effort": 645.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 545.5639,
+                                            "effort": 2727.8196
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 3296.0215,
+                                            "effort": 3296.0215
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 3161.22,
+                                            "effort": 15806.1
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 159.18668,
+                                            "effort": 795.93335
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 256.62,
+                                            "effort": 1283.1
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__NBATTRIB",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 3713.0,
+                                            "effort": 18565.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__Include",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 51.0,
+                                            "effort": 51.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ComplexConditions",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 25.0,
+                                            "effort": 250.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__NBMETHDecl",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 14.466666,
+                                            "effort": 72.33333
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__ComplexConditions",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 30.0,
+                                            "effort": 300.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__Inheritance",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 19.0,
+                                            "effort": 95.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__ComplexOperands",
+                                    "detail": [
+                                        {
+                                            "application_id": 10262,
+                                            "application_name": "LibGDX",
+                                            "counter": 195.0,
+                                            "effort": 195.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

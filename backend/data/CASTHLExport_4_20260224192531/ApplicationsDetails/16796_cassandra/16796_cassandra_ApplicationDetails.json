@@ -1,0 +1,1193 @@
+{
+    "id": 16796,
+    "name": "cassandra",
+    "domains": [
+        {
+            "id": 10814,
+            "name": "Critical Business Applications"
+        }
+    ],
+    "metrics": [
+        {
+            "snapshotLabel": "GDPR Assessment_cassandra",
+            "snapshotDate": 1522209600000,
+            "softwareAgility": 0.4250689446926117,
+            "softwareElegance": 0.6275241374969482,
+            "softwareResiliency": 0.5525779128074646,
+            "softwareHealth": 0.5350569983323415,
+            "openSourceSafety": 1.0,
+            "openSourceLicense": 1.0,
+            "openSourceObsolescence": null,
+            "openSourceCVE": 1.0,
+            "businessImpact": 0.3020304568527919,
+            "roarIndex": 0.13445905079187817,
+            "backFiredFP": 8008.0,
+            "technicalDebt": 1452928.0896617696,
+            "maintenanceRecordedFTE": 1.0,
+            "maintenanceRecommendedFTE": 1.911328551205549,
+            "cloudReady": 0.48404233992221646,
+            "cloudReadyScan": 0.40816326530612246,
+            "boosters": 0.0,
+            "blockers": 0.4897959183673469,
+            "roadblocks": 1326.0,
+            "cloudEffort": 19690,
+            "cloudReadySurvey": 0.5599214145383105,
+            "greenIndex": null,
+            "greenIndexScan": null,
+            "greenIndexSurvey": null,
+            "greenOccurrences": null,
+            "greenEffort": null,
+            "greenDetail": [
+                {
+                    "technology": "Java",
+                    "greenIndexScan": 0.0,
+                    "greenIndexDetails": null
+                },
+                {
+                    "technology": "Python",
+                    "greenIndexScan": 0.0,
+                    "greenIndexDetails": null
+                },
+                {
+                    "technology": "JavaScript",
+                    "greenIndexScan": 0.0,
+                    "greenIndexDetails": null
+                }
+            ],
+            "totalLinesOfCode": 402839,
+            "totalFiles": 2227,
+            "cloudReadyDetail": [
+                {
+                    "technology": "Java",
+                    "cloudReadyScan": 0.0,
+                    "cloudReadyDetails": [
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Access_Control",
+                                "display": "Access Control List : Using Access Control List",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Access_Control",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Critical",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": -27.2108843537415,
+                            "roadblocks": 8.0,
+                            "cloudEffort": 720,
+                            "files": [
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/utils\\DirectorySizeCalculator.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/index/sasi\\SASIIndexTest.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/tools\\SSTableRepairedAtSetter.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/io/util\\FileUtils.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/db/commitlog\\CommitLogSegmentManagerCDC.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/service\\StartupChecks.java"
+                            ],
+                            "triggered": true
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Configuration_Except_WebConfig",
+                                "display": "Application Settings Configuration : Using other configuration files than Web configuration",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Configuration_Except_WebConfig",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 0.1589825119236884,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Application_Server_Dependencies",
+                                "display": "Execution Environment : Application server dependencies",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Application_Server_Dependencies",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Framework"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 2.384737678855326,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_File_System",
+                                "display": "Execution Environment : Using file system",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_File_System",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": -5.442176870748299,
+                            "roadblocks": 1.0,
+                            "cloudEffort": 15,
+                            "files": [
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/utils\\KeyGenerator.java"
+                            ],
+                            "triggered": true
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_InterApplication_MiddleWare",
+                                "display": "Inter Application Messaging : Using a middleware application",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_InterApplication_MiddleWare",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Medium",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 2.5437201907790143,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Directory_Manipulation_Practice",
+                                "display": "Persistent Files : Perform Directory Manipulation",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Directory_Manipulation_Practice",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": -5.442176870748299,
+                            "roadblocks": 5.0,
+                            "cloudEffort": 75,
+                            "files": [
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/db/lifecycle\\LogFile.java",
+                                "c:\\temp\\apache\\cassandra\\test/long/org/apache/cassandra/db/commitlog\\CommitLogStressTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/io/compress\\CompressedRandomAccessReaderTest.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/db\\Directories.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/io/sstable/format\\SSTableFlushObserverTest.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/cache\\AutoSavingCache.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/triggers\\CustomClassLoader.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra\\AbstractSerializationsTester.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/cql3\\CQLTester.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/index/sasi\\SSTableIndex.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/service\\StartupChecks.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/db/lifecycle\\LogTransactionTest.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/db/lifecycle\\LogTransaction.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/io/compress\\CompressedSequentialWriterTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/microbench/org/apache/cassandra/test/microbench\\CompactionBench.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/db\\DirectoriesTest.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/service\\StorageService.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/db/commitlog\\CommitLogUpgradeTestMaker.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/db/commitlog\\CommitLogSegmentManagerCDCTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/io/util\\ChecksummedSequentialWriterTest.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/db/lifecycle\\LogReplica.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/db/lifecycle\\RealTransactionsTest.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/io/sstable\\SSTable.java",
+                                "c:\\temp\\apache\\cassandra\\test/long/org/apache/cassandra/streaming\\LongStreamingTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/db\\MmapFileTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/io/util\\DataOutputTest.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/tools\\LoaderOptions.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/hints\\HintsReaderTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/io/util\\SequentialWriterTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/io/sstable\\SSTableLoaderTest.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/io/util\\FileUtils.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/db\\ColumnFamilyStore.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/io/sstable\\LegacySSTableTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/service\\StorageServiceServerTest.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/io/util\\RewindableDataInputStreamPlus.java",
+                                "c:\\temp\\apache\\cassandra\\test/long/org/apache/cassandra/io/sstable\\CQLSSTableWriterLongTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/io/sstable/format\\ClientModeSSTableTest.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/index/sasi/disk\\PerSSTableIndexWriter.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/hints\\HintsDispatchExecutor.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/io/sstable/metadata\\MetadataSerializer.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/db/lifecycle\\LogAwareFileLister.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/io/sstable\\SSTableUtils.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/db\\WindowsFailedSnapshotTracker.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/tools\\ToolsTester.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/db/commitlog\\CommitLogArchiver.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/db/commitlog\\CommitLogReaderTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/io/sstable\\CQLSSTableWriterTest.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/utils\\CoalescingStrategies.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra\\SchemaLoader.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/io/sstable\\Descriptor.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/db\\BlacklistedDirectories.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/hadoop/cql3\\CqlBulkRecordWriter.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/db\\SystemKeyspaceTest.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/hints\\HintsStore.java",
+                                "c:\\temp\\apache\\cassandra\\tools/stress/src/org/apache/cassandra/stress\\CompactionStress.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/db\\ScrubTest.java"
+                            ],
+                            "triggered": true
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "File_Manipulation_Practice",
+                                "display": "Persistent Files : Perform File Manipulation",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#File_Manipulation_Practice",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": -5.442176870748299,
+                            "roadblocks": 1152.0,
+                            "cloudEffort": 17280,
+                            "files": [
+                                "c:\\temp\\apache\\cassandra\\test/long/org/apache/cassandra/db/commitlog\\CommitLogStressTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/io/sstable/format\\SSTableFlushObserverTest.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/hints\\HintsWriter.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/db/commitlog\\CommitLogTestReplayer.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra\\AbstractSerializationsTester.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/io/sstable/format/big\\BigTableWriter.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/index/sasi/disk\\TokenTreeTest.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/service\\StartupChecks.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/net\\CompactEndpointSerializationHelper.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/db/lifecycle\\LogTransactionTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/db\\DirectoriesTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/cql3/validation/operations\\TTLTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/db/commitlog\\CommitLogUpgradeTestMaker.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/io\\FSWriteError.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/locator\\CloudstackSnitch.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/db/commitlog\\CommitLogSegmentManagerCDCTest.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/io/compress\\CompressionMetadata.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/hints\\LegacyHintsMigratorTest.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/streaming\\StreamReader.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/tools\\SSTableRepairedAtSetter.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/io/compress\\CompressedSequentialWriter.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/io/sstable\\KeyIterator.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/io/sstable\\SSTable.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/db/commitlog\\CommitLog.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/db/compaction\\Scrubber.java",
+                                "c:\\temp\\apache\\cassandra\\test/long/org/apache/cassandra/streaming\\LongStreamingTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/db\\RecoveryManagerMissingHeaderTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/io/util\\DataOutputTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/io/sstable\\DescriptorTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/db\\VerifyTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/hints\\HintsReaderTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/io/util\\SequentialWriterTest.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/tools\\SSTableExport.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/io/sstable\\SSTableLoaderTest.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/db\\ColumnFamilyStore.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/db/compaction\\CompactionManager.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/utils\\FBUtilities.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/schema\\DefsTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/db\\DiskBoundaryManagerTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/io/sstable\\SSTableCorruptionDetectionTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/utils\\KeyGenerator.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/db/lifecycle\\LogRecord.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/io\\FSReadError.java",
+                                "c:\\temp\\apache\\cassandra\\test/long/org/apache/cassandra/io/sstable\\CQLSSTableWriterLongTest.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/index/sasi/disk\\PerSSTableIndexWriter.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/hints\\HintsDispatchExecutor.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/streaming\\StreamWriter.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/db/commitlog\\CommitLogReader.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/utils\\HeapUtils.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/io/util\\SequentialWriter.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/db\\WindowsFailedSnapshotTracker.java",
+                                "c:\\temp\\apache\\cassandra\\test/long/org/apache/cassandra/hints\\HintsWriteThenReadTest.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/db/commitlog\\CommitLogSegmentManagerCDC.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/db/commitlog\\CommitlogShutdownTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/db/commitlog\\SegmentReaderTest.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/tools\\StandaloneSplitter.java",
+                                "c:\\temp\\apache\\cassandra\\tools/stress/src/org/apache/cassandra/stress\\StressGraph.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/io/sstable\\CQLSSTableWriterTest.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/utils\\CoalescingStrategies.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/hints\\HintsDescriptorTest.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/io/sstable\\SSTableLoader.java",
+                                "c:\\temp\\apache\\cassandra\\test/microbench/org/apache/cassandra/test/microbench\\DirectorySizerBench.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/db\\ColumnFamilyStoreTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra\\SchemaLoader.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/tools\\SSTableMetadataViewer.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/utils\\ByteBufferUtil.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/db\\BlacklistedDirectories.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/hadoop/cql3\\CqlBulkRecordWriter.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/index/sasi\\SASIIndexBuilder.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/hints\\HintsStore.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/io/sstable\\BigTableWriterTest.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/io/sstable\\CQLSSTableWriter.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/io/util\\MmappedRegionsTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/db\\ScrubTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/io/compress\\CompressorTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/io/compress\\CompressedRandomAccessReaderTest.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/db\\Directories.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/cache\\AutoSavingCache.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/io/util\\DataIntegrityMetadata.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/service\\CassandraDaemon.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/triggers\\CustomClassLoader.java",
+                                "c:\\temp\\apache\\cassandra\\test/long/org/apache/cassandra/cql3\\CorruptionTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/cql3\\CQLTester.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/utils\\NativeLibrary.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/db/lifecycle\\LogTransaction.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/io/compress\\CompressedSequentialWriterTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/microbench/org/apache/cassandra/test/microbench\\CompactionBench.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/index/sasi/disk\\OnDiskIndexTest.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/service\\StorageService.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/utils\\ResourceWatcher.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/io/util\\RandomAccessReaderTest.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/io/util\\ChecksumWriter.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/io/util\\BufferedRandomAccessFileTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/utils\\SerializationsTest.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/io/util\\ChannelProxy.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/db/lifecycle\\LogReplica.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/db/lifecycle\\RealTransactionsTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/index/sasi/disk\\PerSSTableIndexWriterTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/service\\StartupChecksTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/utils\\BloomFilterTest.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/index/sasi/conf\\DataTracker.java",
+                                "c:\\temp\\apache\\cassandra\\tools/stress/src/org/apache/cassandra/stress/settings\\SettingsLog.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/db/commitlog\\CommitLogTest.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/tools\\LoaderOptions.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/db\\ReadResponse.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/io/util\\FileUtils.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra\\MockSchema.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/io/sstable/format\\SSTableReader.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/hints\\AlteredHints.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/io/sstable\\LegacySSTableTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/service\\StorageServiceServerTest.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/gms\\FailureDetector.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/db/compaction\\Verifier.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/io/util\\RewindableDataInputStreamPlus.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/io/sstable/format\\ClientModeSSTableTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/streaming/compression\\CompressedInputStreamTest.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/db\\SystemKeyspace.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/db/commitlog\\CommitLogSegment.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/io/sstable/metadata\\MetadataSerializer.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/tools\\CompactionStressTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/io/sstable\\SSTableUtils.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/io/util\\ChecksummedRandomAccessReaderTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/hints\\ChecksummedDataInputTest.java",
+                                "c:\\temp\\apache\\cassandra\\tools/stress/src/org/apache/cassandra/io/sstable\\StressCQLSSTableWriter.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/tools\\ToolsTester.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/db/commitlog\\CommitLogArchiver.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/db/commitlog\\CommitLogUpgradeTest.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/config\\DatabaseDescriptor.java",
+                                "c:\\temp\\apache\\cassandra\\tools/stress/src/org/apache/cassandra/stress/settings\\SettingsCommandUser.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/io/util\\RewindableDataInputStreamPlusTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/db/commitlog\\CommitLogReaderTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/index/sasi/utils\\MappedBufferTest.java",
+                                "c:\\temp\\apache\\cassandra\\tools/stress/src/org/apache/cassandra/stress/settings\\SettingsNode.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/io/util\\NIODataInputStreamTest.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/hints\\HintsService.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/tools\\NodeTool.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/index/sasi/disk\\OnDiskIndexBuilder.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/io/sstable\\Descriptor.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/cql3/validation/operations\\DropRecreateAndRestoreTest.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/io/sstable/metadata\\LegacyMetadataSerializer.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/db/compaction\\Upgrader.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/db\\SystemKeyspaceTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/io/util\\FileUtilsTest.java",
+                                "c:\\temp\\apache\\cassandra\\tools/stress/src/org/apache/cassandra/stress\\CompactionStress.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/db\\RowIndexEntryTest.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/io/sstable\\CorruptSSTableException.java"
+                            ],
+                            "triggered": true
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Access_To_Environment_Variable",
+                                "display": "Execution Environment : Access to environment variable",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Access_To_Environment_Variable",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 1.2718600953895072,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Impersonate_Identity",
+                                "display": "Security & User Authentication : Using impersonate Identity",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Impersonate_Identity",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Critical",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 12.71860095389507,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_SecuredProtocols",
+                                "display": "Security & User Authentication : Use of unsecured network protocols or URI libraries",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_SecuredProtocols",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": -2.7210884353741496,
+                            "roadblocks": 12.0,
+                            "cloudEffort": 120,
+                            "files": [
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/cql3/validation/operations\\SelectLimitTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/cql3/validation/operations\\CreateTest.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/locator\\GoogleCloudSnitch.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/locator\\CloudstackSnitch.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/locator\\Ec2MultiRegionSnitch.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/locator\\Ec2Snitch.java"
+                            ],
+                            "triggered": true,
+                            "cloudRequirementsDetail": [
+                                {
+                                    "cloudRequirement": {
+                                        "id": "Use_SecuredProtocolsHTTP",
+                                        "display": "Security & User Authentication : Use of unsecured network protocols (HTTP)",
+                                        "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_SecuredProtocols",
+                                        "ruleType": "BLOCKER",
+                                        "rulePlatform": null,
+                                        "rulePlatformLabel": null,
+                                        "criticality": "Low",
+                                        "impacts": [
+                                            "Coding"
+                                        ],
+                                        "parent": null
+                                    },
+                                    "roadblocks": 0.0,
+                                    "cloudEffort": null,
+                                    "files": null
+                                },
+                                {
+                                    "cloudRequirement": {
+                                        "id": "Use_SecuredProtocolsFTP",
+                                        "display": "Security & User Authentication : Use of unsecured network protocols (FTP)",
+                                        "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_SecuredProtocols",
+                                        "ruleType": "BLOCKER",
+                                        "rulePlatform": null,
+                                        "rulePlatformLabel": null,
+                                        "criticality": "Low",
+                                        "impacts": [
+                                            "Coding"
+                                        ],
+                                        "parent": null
+                                    },
+                                    "roadblocks": 0.0,
+                                    "cloudEffort": null,
+                                    "files": null
+                                }
+                            ]
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Hardcoded_IP_Address",
+                                "display": "Execution Environment : Using hardcoded network IP address",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Hardcoded_IP_Address",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": -2.7210884353741496,
+                            "roadblocks": 148.0,
+                            "cloudEffort": 1480,
+                            "files": [
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/hints\\HintTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/cql3/validation/entities\\JsonTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/metrics\\CQLMetricsTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/service\\StorageProxyTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/transport\\ErrorMessageTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/cql3\\PreparedStatementsTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/cql3\\BatchTests.java",
+                                "c:\\temp\\apache\\cassandra\\test/long/org/apache/cassandra/cql3\\CorruptionTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/net\\MessagingServiceTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/batchlog\\BatchlogManagerTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/cql3/functions\\CastFctsTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/cql3/validation/operations\\CreateTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/utils\\FBUtilitiesTest.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/utils\\JMXServerUtils.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/repair\\RepairSessionTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/locator\\CloudstackSnitchTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/service\\LeaveAndBootstrapTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/microbench/org/apache/cassandra/test/microbench\\PendingRangesBench.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/gms\\EndpointStateTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/repair\\ValidatorTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/metrics\\HintedHandOffMetricsTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/gms\\PendingRangeCalculatorServiceTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/locator\\GoogleCloudSnitchTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/db\\CleanupTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/utils\\CassandraVersionTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/locator\\TokenMetadataTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/repair/messages\\RepairOptionTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/locator\\ReplicationStrategyEndpointCacheTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/service\\ActiveRepairServiceTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/service\\StorageServiceServerTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/net\\OutboundTcpConnectionTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/repair/messages\\RepairMessageSerializationsTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/db\\DiskBoundaryManagerTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/gms\\SerializationsTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/locator\\PendingRangeMapsTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/dht\\BootStrapperTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/locator\\OldNetworkTopologyStrategyTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/repair\\LocalSyncTaskTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/gms\\GossipDigestTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/cql3\\PstmtPersistenceTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/db/view\\ViewUtilsTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/locator\\DynamicEndpointSnitchTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/service\\MoveTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/db\\RowCacheTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/net\\WriteCallbackInfoTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/net\\RateBasedBackPressureTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/locator\\EC2SnitchTest.java",
+                                "c:\\temp\\apache\\cassandra\\src/java/org/apache/cassandra/tools\\NodeTool.java",
+                                "c:\\temp\\apache\\cassandra\\tools/stress/src/org/apache/cassandra/stress\\StressServer.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/locator\\SimpleStrategyTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra\\Util.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/db\\SystemKeyspaceTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/locator\\PropertyFileSnitchTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/cql3\\ViewSchemaTest.java",
+                                "c:\\temp\\apache\\cassandra\\test/unit/org/apache/cassandra/tools\\BulkLoaderTest.java"
+                            ],
+                            "triggered": true
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Stateful_Session",
+                                "display": "Persistent Files : Using stateful session (Servlet)",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Stateful_Session",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "High",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 2.384737678855326,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Stateful_Session_Spring",
+                                "display": "Persistent Files : Using stateful session (Spring)",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Stateful_Session_Spring",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "High",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 2.384737678855326,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        }
+                    ]
+                }
+            ],
+            "customIndicators": [
+                {
+                    "metricId": 10023356,
+                    "value": "0.04040404040404041"
+                },
+                {
+                    "metricId": 10006001,
+                    "value": "0.5531914893617021"
+                },
+                {
+                    "metricId": 10006305,
+                    "value": "0.1794871794871795"
+                },
+                {
+                    "metricId": 10013600,
+                    "value": "0.6"
+                },
+                {
+                    "metricId": 10006302,
+                    "value": "0.7160493827160493"
+                },
+                {
+                    "metricId": 10006301,
+                    "value": "0.17543859649122806"
+                },
+                {
+                    "metricId": 10016304,
+                    "value": "-1.0"
+                }
+            ],
+            "technologies": [
+                {
+                    "technology": "Java",
+                    "totalLinesOfCode": 394284,
+                    "totalFiles": 2195,
+                    "softwareAgility": 0.42155444622039795,
+                    "softwareElegance": 0.6330018639564514,
+                    "softwareResiliency": 0.5569262504577637,
+                    "softwareHealth": 0.537160853544871,
+                    "softwareAgilityDetail": {
+                        "highLinesOfCode": 24762,
+                        "mediumLinesOfCode": 129271,
+                        "lowLinesOfCode": 240251
+                    },
+                    "softwareEleganceDetail": {
+                        "highLinesOfCode": 174345,
+                        "mediumLinesOfCode": 91123,
+                        "lowLinesOfCode": 128816
+                    },
+                    "softwareResiliencyDetail": {
+                        "highLinesOfCode": 126146,
+                        "mediumLinesOfCode": 107129,
+                        "lowLinesOfCode": 161009
+                    },
+                    "softwareHealthDetail": {
+                        "highLinesOfCode": 108417,
+                        "mediumLinesOfCode": 109174,
+                        "lowLinesOfCode": 176692
+                    }
+                },
+                {
+                    "technology": "Python",
+                    "totalLinesOfCode": 8538,
+                    "totalFiles": 30,
+                    "softwareAgility": 0.5875367522239685,
+                    "softwareElegance": 0.373823344707489,
+                    "softwareResiliency": 0.3510645031929016,
+                    "softwareHealth": 0.4374748667081197,
+                    "softwareAgilityDetail": {
+                        "highLinesOfCode": 1340,
+                        "mediumLinesOfCode": 4708,
+                        "lowLinesOfCode": 2490
+                    },
+                    "softwareEleganceDetail": {
+                        "highLinesOfCode": 223,
+                        "mediumLinesOfCode": 1619,
+                        "lowLinesOfCode": 6696
+                    },
+                    "softwareResiliencyDetail": {
+                        "highLinesOfCode": 1857,
+                        "mediumLinesOfCode": 1404,
+                        "lowLinesOfCode": 5277
+                    },
+                    "softwareHealthDetail": {
+                        "highLinesOfCode": 1140,
+                        "mediumLinesOfCode": 2577,
+                        "lowLinesOfCode": 4821
+                    }
+                },
+                {
+                    "technology": "JavaScript",
+                    "totalLinesOfCode": 17,
+                    "totalFiles": 2,
+                    "softwareAgility": 0.33986926078796387,
+                    "softwareElegance": 1.0,
+                    "softwareResiliency": 0.9074074029922485,
+                    "softwareHealth": 0.7490922212600708,
+                    "softwareAgilityDetail": {
+                        "highLinesOfCode": 0,
+                        "mediumLinesOfCode": 0,
+                        "lowLinesOfCode": 17
+                    },
+                    "softwareEleganceDetail": {
+                        "highLinesOfCode": 17,
+                        "mediumLinesOfCode": 0,
+                        "lowLinesOfCode": 0
+                    },
+                    "softwareResiliencyDetail": {
+                        "highLinesOfCode": 17,
+                        "mediumLinesOfCode": 0,
+                        "lowLinesOfCode": 0
+                    },
+                    "softwareHealthDetail": {
+                        "highLinesOfCode": 11,
+                        "mediumLinesOfCode": 0,
+                        "lowLinesOfCode": 5
+                    }
+                }
+            ],
+            "components": []
+        }
+    ],
+    "surveys": [
+        {
+            "id": 371,
+            "ref": "CAST_MAINT",
+            "name": "Software Maintenance Estimate",
+            "questions": [
+                {
+                    "label": "What is the percentage of change to the base code in the last 12 months?",
+                    "value": "20.0",
+                    "questionId": 1000121
+                },
+                {
+                    "label": "What is the average skill level of the development team on this type of application?",
+                    "value": "1 year",
+                    "questionId": 1000015,
+                    "choiceId": 1000068
+                },
+                {
+                    "label": "What percentage of the development effort has been spent on maintenance in the last 12 months?",
+                    "value": "20.0",
+                    "questionId": 1000012
+                },
+                {
+                    "label": "What is the annual staff turnover within the development team?",
+                    "value": "3%",
+                    "questionId": 1000016,
+                    "choiceId": 1000141
+                },
+                {
+                    "label": "What is the CMMI level of the organization?",
+                    "value": "Level 3",
+                    "questionId": 1000032,
+                    "choiceId": 1000257
+                }
+            ]
+        },
+        {
+            "id": 1700,
+            "name": "Business Alignment Assessment",
+            "questions": [
+                {
+                    "label": "[Portfolio Management] How many Business processes does the application support?",
+                    "shortLabel": "",
+                    "value": "1 process",
+                    "questionId": 10001304,
+                    "choiceId": 10007401
+                },
+                {
+                    "label": "[Portfolio Management] What is the primary capability that this application supports? (APQC short)",
+                    "shortLabel": "What is the primary capability that this application supports",
+                    "value": "10.0 - Acquire, Construct, and Manage Assets",
+                    "questionId": 10006306,
+                    "choiceId": 10012805
+                },
+                {
+                    "label": "[Portfolio Management] What is the application's life cycle stage?",
+                    "shortLabel": "Application LifeCycle",
+                    "value": "Production - Early Stage",
+                    "questionId": 10006307,
+                    "choiceId": 10012904
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "ref": "CAST_BI",
+            "name": "Business Impact",
+            "questions": [
+                {
+                    "label": "What is the average number of FTE (Full Time Equivalent) resources that have worked on the source code for this application over the last 12 months?",
+                    "shortLabel": "",
+                    "value": "5.0",
+                    "questionId": 1000011
+                },
+                {
+                    "label": "Is this application aligned with the company's future technology direction?",
+                    "shortLabel": "",
+                    "value": "Yes",
+                    "questionId": 1000009,
+                    "choiceId": 1000042
+                },
+                {
+                    "label": "The number of major releases delivered over the last 12 months for this application?",
+                    "shortLabel": "",
+                    "value": "Less than 4",
+                    "questionId": 1000006,
+                    "choiceId": 1000452
+                },
+                {
+                    "label": "Could failure of this application lead to loss of customer confidence? Please define the level of impact.",
+                    "value": "Low",
+                    "questionId": 1000022,
+                    "choiceId": 1000220
+                },
+                {
+                    "label": "Could failure of this application lead to harm of the company's public image? Please define the level of impact.",
+                    "value": "High",
+                    "questionId": 1000021,
+                    "choiceId": 1000002
+                },
+                {
+                    "label": "Could failure of this application lead to loss of revenue or business opportunity? Please define the level of impact.",
+                    "value": "Medium",
+                    "questionId": 1000020,
+                    "choiceId": 1000407
+                },
+                {
+                    "label": "Could failure of this application lead to disruption? Please define the level of impact.",
+                    "value": "Medium",
+                    "questionId": 1000019,
+                    "choiceId": 1000193
+                },
+                {
+                    "label": "What is the approximate number of end users for this application?",
+                    "shortLabel": "",
+                    "value": "100 to 500",
+                    "questionId": 1000018,
+                    "choiceId": 1000396
+                },
+                {
+                    "label": "Does the application serve internal or external users?",
+                    "value": "External users",
+                    "questionId": 1000017,
+                    "choiceId": 1000203
+                }
+            ]
+        },
+        {
+            "id": 373,
+            "ref": "CAST_APP",
+            "name": "Application Properties",
+            "questions": [
+                {
+                    "label": "What is the application type?",
+                    "shortLabel": "",
+                    "value": "Supply chain management system",
+                    "questionId": 1000004,
+                    "choiceId": 1000440
+                },
+                {
+                    "label": "Application Owner's name",
+                    "value": "JAS",
+                    "questionId": 1000002
+                },
+                {
+                    "label": "Is this application a custom application or a Commercial Off The Shelf product?",
+                    "shortLabel": "",
+                    "value": "Custom Application",
+                    "questionId": 1000427,
+                    "choiceId": 1000529
+                },
+                {
+                    "label": "In what year was this application first put into production?",
+                    "shortLabel": "",
+                    "value": "2016",
+                    "questionId": 1000033
+                }
+            ]
+        },
+        {
+            "id": 1701,
+            "name": "IaaS Assessment",
+            "questions": [
+                {
+                    "label": "[IaaS] Performance - Elasticity",
+                    "shortLabel": "",
+                    "value": "Med High (Severe spikes regularly)",
+                    "questionId": 10003000,
+                    "choiceId": 10009403
+                },
+                {
+                    "label": "[IaaS] Performance - Scalability",
+                    "shortLabel": "",
+                    "value": "Known Exponential Growth",
+                    "questionId": 10003001,
+                    "choiceId": 10009408
+                },
+                {
+                    "label": "[IaaS] Performance - Latency",
+                    "shortLabel": "",
+                    "value": "< 100ms",
+                    "questionId": 10003003,
+                    "choiceId": 10009418
+                },
+                {
+                    "label": "[IaaS] Performance - Throughput",
+                    "shortLabel": "",
+                    "value": "25-50 Mbps",
+                    "questionId": 10003004,
+                    "choiceId": 10009423
+                },
+                {
+                    "label": "[IaaS] Operations - Business Continuity",
+                    "shortLabel": "",
+                    "value": "High Availability required (99.9% - \"three nines\")",
+                    "questionId": 10003104,
+                    "choiceId": 10009535
+                },
+                {
+                    "label": "[IaaS] Security & Compliance - Jurisdiction",
+                    "shortLabel": "",
+                    "value": "Restricted to continent",
+                    "questionId": 10003107,
+                    "choiceId": 10009550
+                },
+                {
+                    "label": "[IaaS] Architecture - Application - Complexity",
+                    "shortLabel": "",
+                    "value": "Med Low, (UI with database backend)",
+                    "questionId": 10003008,
+                    "choiceId": 10009443
+                },
+                {
+                    "label": "[IaaS] Architecture - Infrastructure - Hardware Life Expectancy",
+                    "shortLabel": "",
+                    "value": "3-4 years",
+                    "questionId": 10003014,
+                    "choiceId": 10009471
+                },
+                {
+                    "label": "[IaaS] Financial - Operating Cost",
+                    "shortLabel": "",
+                    "value": "Med High (High SLAs, some staffing)",
+                    "questionId": 10003015,
+                    "choiceId": 10009478
+                }
+            ]
+        },
+        {
+            "id": 1702,
+            "name": "TCO Assessment",
+            "questions": [
+                {
+                    "label": "[TCO] What is the Total Cost of Ownership for this application?",
+                    "shortLabel": "",
+                    "value": "Medium",
+                    "questionId": 10006303,
+                    "choiceId": 10012609
+                },
+                {
+                    "label": "[TCO] What is the evolution of the TCO?",
+                    "shortLabel": "",
+                    "value": "Steady",
+                    "questionId": 10006304,
+                    "choiceId": 10012703
+                }
+            ]
+        },
+        {
+            "id": 938,
+            "ref": "CAST_CLOUD",
+            "name": "Cloud Readiness Assessment",
+            "questions": [
+                {
+                    "label": "[Business Drivers] Does this application correspond to a specific workload?",
+                    "shortLabel": "",
+                    "value": "Other / Not Applicable",
+                    "questionId": 10000901,
+                    "choiceId": 1000923
+                },
+                {
+                    "label": "[Technical Enablers] Does this application depend on other services or applications?",
+                    "shortLabel": "",
+                    "value": "No dependency",
+                    "questionId": 10000808,
+                    "choiceId": 10006730
+                },
+                {
+                    "label": "[Technical Enablers] What is the database provider for this application?",
+                    "shortLabel": "",
+                    "value": "Standard but not supported as a service in the Cloud (IaaS)",
+                    "questionId": 10000809,
+                    "choiceId": 10006735
+                },
+                {
+                    "label": "[Process Maturity] What is the average skill on Cloud technologies and practices within the development team for this application?",
+                    "shortLabel": "",
+                    "value": "Advanced skills & experience",
+                    "questionId": 10000810,
+                    "choiceId": 10006740
+                },
+                {
+                    "label": "[Business Drivers] What is the current (or expected) Service Level Agreement for this application?",
+                    "shortLabel": "",
+                    "value": "SLA with maintenance timeframe",
+                    "questionId": 10000811,
+                    "choiceId": 10006743
+                },
+                {
+                    "label": "[Process Maturity] What is the evolution model and feedback loop approach for this application?",
+                    "shortLabel": "",
+                    "value": "DevOps",
+                    "questionId": 10000800,
+                    "choiceId": 10006702
+                },
+                {
+                    "label": "[Technical Enablers] What is the current deployment platform for this application?",
+                    "shortLabel": "",
+                    "value": "Web application",
+                    "questionId": 10000801,
+                    "choiceId": 10006707
+                },
+                {
+                    "label": "[Technical Enablers] What is the current user authentication mechanism used by this application?",
+                    "shortLabel": "",
+                    "value": "Single Sign On",
+                    "questionId": 10000802,
+                    "choiceId": 10006710
+                },
+                {
+                    "label": "[Technical Enablers]  How is this application exposed to external services/applications?",
+                    "shortLabel": "",
+                    "value": "REST API exposed",
+                    "questionId": 10000803,
+                    "choiceId": 10006714
+                },
+                {
+                    "label": "[Business Drivers] How is data consumed from this application?",
+                    "shortLabel": "",
+                    "value": "Classic Storage",
+                    "questionId": 10000805,
+                    "choiceId": 10006722
+                },
+                {
+                    "label": "[Process Maturity] What is the level of deployment process automation for provisioning and configuration for this application?",
+                    "shortLabel": "",
+                    "value": "Semi-automated",
+                    "questionId": 10000806,
+                    "choiceId": 10006724
+                },
+                {
+                    "label": "[Technical Enablers] Is this application multi-tenant?",
+                    "shortLabel": "",
+                    "value": "Yes, multi-tenant front with a dedicated schema (with common database)",
+                    "questionId": 10000807,
+                    "choiceId": 10006728
+                }
+            ]
+        },
+        {
+            "id": 1261,
+            "name": "GDPR Assessment",
+            "questions": [
+                {
+                    "label": "[GDPR] Is the processing of Personally Identifiable Data for the application sub-contracted to a third-party?",
+                    "shortLabel": "",
+                    "value": "No",
+                    "questionId": 10003832,
+                    "choiceId": 10010199
+                },
+                {
+                    "label": "[GDPR] Is the Data Retention Policy defined for the application data?",
+                    "value": "Yes",
+                    "questionId": 10003833,
+                    "choiceId": 10010202
+                },
+                {
+                    "label": "[GDPR] Is the Data Retention Policy of the application data effectively applied?",
+                    "value": "Yes",
+                    "questionId": 10003834,
+                    "choiceId": 10010205
+                },
+                {
+                    "label": "[GDPR] Does the application manipulate Personally Identifiable Information data?",
+                    "value": "Yes",
+                    "questionId": 10003835,
+                    "choiceId": 10010209
+                },
+                {
+                    "label": "[GDPR] Is the user consent collected from the application?",
+                    "value": "Yes, the consent request is in place",
+                    "questionId": 10003836,
+                    "choiceId": 10010212
+                },
+                {
+                    "label": "[GDPR] Is Personally Identifiable Data of the application transmitted to third-party organizations?",
+                    "value": "Yes, outside the European Union",
+                    "questionId": 10003837,
+                    "choiceId": 10010217
+                },
+                {
+                    "label": "[GDPR] Does the application allow users to access their own PII data?",
+                    "value": "Yes, in read and write modes (modification, correction, deletion...)",
+                    "questionId": 10003838,
+                    "choiceId": 10010219
+                },
+                {
+                    "label": "[GDPR] Who is the Data Processor for the application, in charge of processing personal data?",
+                    "value": "Michael MULLER",
+                    "questionId": 10003839
+                },
+                {
+                    "label": "[GDPR] Is the Data Processor for the application identified?",
+                    "value": "No",
+                    "questionId": 10003831,
+                    "choiceId": 10010198
+                }
+            ]
+        }
+    ],
+    "tags": [
+        {
+            "id": 54,
+            "label": "Data Privacy / KeyWord"
+        },
+        {
+            "id": 2304,
+            "label": "CR+BI+CustomCode"
+        },
+        {
+            "id": 1350,
+            "label": "GDPR"
+        },
+        {
+            "id": 256,
+            "label": "Cloud Blockers"
+        }
+    ]
+}

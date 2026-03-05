@@ -1,0 +1,343 @@
+{
+    "id": 8320,
+    "name": "Back-End Management",
+    "domains": [
+        {
+            "id": 254,
+            "name": "Sales and Marketing"
+        },
+        {
+            "id": 12909,
+            "name": "Portfolio Company Alpha"
+        }
+    ],
+    "metrics": [
+        {
+            "snapshotLabel": "CR Survey for Rearchitect Apps_Back-End Management",
+            "snapshotDate": 1634702400000,
+            "softwareAgility": 0.2245449721813202,
+            "softwareAgilityAdded": 0.2245449721813202,
+            "softwareElegance": 0.295610636472702,
+            "softwareEleganceAdded": 0.295610636472702,
+            "softwareResiliency": 0.5688604116439819,
+            "softwareResiliencyAdded": 0.5688604116439819,
+            "softwareHealth": 0.3630053400993347,
+            "openSourceLicense": null,
+            "openSourceObsolescence": null,
+            "openSourceCVE": null,
+            "businessImpact": 0.3350253807106599,
+            "roarIndex": 0.17428727040609135,
+            "backFiredFP": 702.0,
+            "backFiredFPAdded": 702.0,
+            "technicalDebt": 19206.58326524496,
+            "maintenanceRecordedFTE": 0.7000000000000001,
+            "maintenanceRecommendedFTE": 0.03555041887975965,
+            "cloudReady": 0.5109780439121756,
+            "cloudReadySurvey": 0.5109780439121756,
+            "greenIndex": null,
+            "greenIndexScan": null,
+            "greenIndexSurvey": null,
+            "greenOccurrences": null,
+            "greenEffort": null,
+            "greenDetail": [
+                {
+                    "technology": "Objective C/C++",
+                    "greenIndexScan": 0.0,
+                    "greenIndexDetails": null
+                }
+            ],
+            "totalLinesOfCode": 18955,
+            "totalLinesOfCodeAdded": 18955,
+            "totalLinesOfCodeModified": 0,
+            "totalFiles": 87,
+            "totalFilesAdded": 87,
+            "totalFilesModified": 0,
+            "customIndicators": [
+                {
+                    "metricId": 10023356,
+                    "value": "0.10101010101010101"
+                },
+                {
+                    "metricId": 10006001,
+                    "value": "0.43617021276595747"
+                },
+                {
+                    "metricId": 10006305,
+                    "value": null
+                },
+                {
+                    "metricId": 10013600,
+                    "value": "0.26666666666666666"
+                },
+                {
+                    "metricId": 10006302,
+                    "value": null
+                },
+                {
+                    "metricId": 10006301,
+                    "value": null
+                },
+                {
+                    "metricId": 10016304,
+                    "value": null
+                }
+            ],
+            "technologies": [
+                {
+                    "technology": "Objective C/C++",
+                    "totalLinesOfCode": 18955,
+                    "totalFiles": 87,
+                    "softwareAgility": 0.2245449721813202,
+                    "softwareElegance": 0.295610636472702,
+                    "softwareResiliency": 0.5688604116439819,
+                    "softwareHealth": 0.3630053400993347,
+                    "softwareAgilityDetail": {
+                        "highLinesOfCode": 469,
+                        "mediumLinesOfCode": 1544,
+                        "lowLinesOfCode": 16942
+                    },
+                    "softwareEleganceDetail": {
+                        "highLinesOfCode": 3570,
+                        "mediumLinesOfCode": 1817,
+                        "lowLinesOfCode": 13568
+                    },
+                    "softwareResiliencyDetail": {
+                        "highLinesOfCode": 4448,
+                        "mediumLinesOfCode": 8534,
+                        "lowLinesOfCode": 5973
+                    },
+                    "softwareHealthDetail": {
+                        "highLinesOfCode": 2829,
+                        "mediumLinesOfCode": 3965,
+                        "lowLinesOfCode": 12161
+                    }
+                }
+            ],
+            "components": []
+        }
+    ],
+    "surveys": [
+        {
+            "id": 371,
+            "ref": "CAST_MAINT",
+            "name": "Software Maintenance Estimate",
+            "questions": [
+                {
+                    "label": "What is the average skill level of the development team on this type of application?",
+                    "value": "6 months",
+                    "questionId": 1000015,
+                    "choiceId": 1000067
+                },
+                {
+                    "label": "What percentage of the development effort has been spent on maintenance in the last 12 months?",
+                    "value": "10",
+                    "questionId": 1000012
+                },
+                {
+                    "label": "What is the annual staff turnover within the development team?",
+                    "value": "10%",
+                    "questionId": 1000016,
+                    "choiceId": 1000143
+                },
+                {
+                    "label": "What is the CMMI level of the organization?",
+                    "value": "Level 1 (upper half)",
+                    "questionId": 1000032,
+                    "choiceId": 1000255
+                },
+                {
+                    "label": "What is the percentage of change to the base code in the last 12 months?",
+                    "value": "15",
+                    "questionId": 1000121
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "ref": "CAST_BI",
+            "name": "Business Impact",
+            "questions": [
+                {
+                    "label": "What is the average number of FTE (Full Time Equivalent) resources that have worked on the source code for this application over the last 12 months?",
+                    "shortLabel": "",
+                    "value": "7",
+                    "questionId": 1000011
+                },
+                {
+                    "label": "Is this application aligned with the company's future technology direction?",
+                    "shortLabel": "",
+                    "value": "Yes",
+                    "questionId": 1000009,
+                    "choiceId": 1000042
+                },
+                {
+                    "label": "The number of major releases delivered over the last 12 months for this application?",
+                    "shortLabel": "",
+                    "value": "Less than 4",
+                    "questionId": 1000006,
+                    "choiceId": 1000452
+                },
+                {
+                    "label": "Could failure of this application lead to loss of customer confidence? Please define the level of impact.",
+                    "value": "Very High",
+                    "questionId": 1000022,
+                    "choiceId": 1000223
+                },
+                {
+                    "label": "Could failure of this application lead to harm of the company's public image? Please define the level of impact.",
+                    "value": "High",
+                    "questionId": 1000021,
+                    "choiceId": 1000002
+                },
+                {
+                    "label": "Could failure of this application lead to loss of revenue or business opportunity? Please define the level of impact.",
+                    "value": "Low",
+                    "questionId": 1000020,
+                    "choiceId": 1000406
+                },
+                {
+                    "label": "Could failure of this application lead to disruption? Please define the level of impact.",
+                    "value": "Medium",
+                    "questionId": 1000019,
+                    "choiceId": 1000193
+                },
+                {
+                    "label": "What is the approximate number of end users for this application?",
+                    "shortLabel": "",
+                    "value": "100 to 500",
+                    "questionId": 1000018,
+                    "choiceId": 1000396
+                },
+                {
+                    "label": "Does the application serve internal or external users?",
+                    "value": "Both",
+                    "questionId": 1000017,
+                    "choiceId": 1000205
+                }
+            ]
+        },
+        {
+            "id": 373,
+            "ref": "CAST_APP",
+            "name": "Application Properties",
+            "questions": [
+                {
+                    "label": "What is the application type?",
+                    "shortLabel": "",
+                    "value": "Algorithmic Trading",
+                    "questionId": 1000004,
+                    "choiceId": 1000424
+                },
+                {
+                    "label": "Application Owner's name",
+                    "value": "Alexandra Szynkarski",
+                    "questionId": 1000002
+                },
+                {
+                    "label": "Is this application a custom application or a Commercial Off The Shelf product?",
+                    "shortLabel": "",
+                    "value": "Custom Application",
+                    "questionId": 1000427,
+                    "choiceId": 1000529
+                },
+                {
+                    "label": "In what year was this application first put into production?",
+                    "shortLabel": "",
+                    "value": "2010",
+                    "questionId": 1000033
+                }
+            ]
+        },
+        {
+            "id": 938,
+            "ref": "CAST_CLOUD",
+            "name": "Cloud Readiness Assessment",
+            "questions": [
+                {
+                    "label": "[Business Drivers] Does this application correspond to a specific workload?",
+                    "shortLabel": "",
+                    "value": "Big Data",
+                    "questionId": 10000901,
+                    "choiceId": 10006805
+                },
+                {
+                    "label": "[Technical Enablers] Does this application depend on other services or applications?",
+                    "shortLabel": "",
+                    "value": "No dependency",
+                    "questionId": 10000808,
+                    "choiceId": 10006730
+                },
+                {
+                    "label": "[Technical Enablers] What is the database provider for this application?",
+                    "shortLabel": "",
+                    "value": "Standard and supported as a service in the Cloud (PaaS)",
+                    "questionId": 10000809,
+                    "choiceId": 10006734
+                },
+                {
+                    "label": "[Process Maturity] What is the average skill on Cloud technologies and practices within the development team for this application?",
+                    "shortLabel": "",
+                    "value": "None",
+                    "questionId": 10000810,
+                    "choiceId": 10006738
+                },
+                {
+                    "label": "[Business Drivers] What is the current (or expected) Service Level Agreement for this application?",
+                    "shortLabel": "",
+                    "value": "No specifically defined SLA",
+                    "questionId": 10000811,
+                    "choiceId": 10006742
+                },
+                {
+                    "label": "[Process Maturity] What is the evolution model and feedback loop approach for this application?",
+                    "shortLabel": "",
+                    "value": "Waterfall",
+                    "questionId": 10000800,
+                    "choiceId": 10006700
+                },
+                {
+                    "label": "[Technical Enablers] What is the current deployment platform for this application?",
+                    "shortLabel": "",
+                    "value": "Mobile or Tablet application",
+                    "questionId": 10000801,
+                    "choiceId": 10006705
+                },
+                {
+                    "label": "[Technical Enablers] What is the current user authentication mechanism used by this application?",
+                    "shortLabel": "",
+                    "value": "Enterprise AD",
+                    "questionId": 10000802,
+                    "choiceId": 10006709
+                },
+                {
+                    "label": "[Technical Enablers]  How is this application exposed to external services/applications?",
+                    "shortLabel": "",
+                    "value": "Standalone (no interaction)",
+                    "questionId": 10000803,
+                    "choiceId": 10006713
+                },
+                {
+                    "label": "[Business Drivers] How is data consumed from this application?",
+                    "shortLabel": "",
+                    "value": "Other / Not Applicable",
+                    "questionId": 10000805,
+                    "choiceId": 1000924
+                },
+                {
+                    "label": "[Process Maturity] What is the level of deployment process automation for provisioning and configuration for this application?",
+                    "shortLabel": "",
+                    "value": "No automation",
+                    "questionId": 10000806,
+                    "choiceId": 10006723
+                },
+                {
+                    "label": "[Technical Enablers] Is this application multi-tenant?",
+                    "shortLabel": "",
+                    "value": "No (single-tenant)",
+                    "questionId": 10000807,
+                    "choiceId": 10006726
+                }
+            ]
+        }
+    ]
+}

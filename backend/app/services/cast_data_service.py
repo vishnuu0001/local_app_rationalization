@@ -59,6 +59,7 @@ class CASTDataService:
                     # Populate fields from inventory data
                     cast_record.programming_language = app_data.get('primary_language')
                     # NOTE: application_type removed - now sourced from CorentData/IndustryData
+                    cast_record.repo_name = app_data.get('repo', '') or ''
                     cast_record.source_code_availability = 'Available' if app_data.get('repo') else 'Not Available'
                     
                     # LOC and modules info
@@ -194,6 +195,10 @@ class CASTDataService:
             column_mapping = {
                 'APP ID': 'app_id',
                 'APP NAME': 'app_name',
+                'REPO NAME': 'repo_name',
+                'Repo Name': 'repo_name',
+                'REPO': 'repo_name',
+                'Repo': 'repo_name',
                 'Application Architecture': 'application_architecture',
                 'Source Code Availability': 'source_code_availability',
                 'Programming Language': 'programming_language',

@@ -1,0 +1,624 @@
+{
+    "snapshotLabel": "TrendCampaign_4_gitPHP",
+    "snapshotDate": 1488171600000,
+    "applicationCodeLines": null,
+    "applicationFiles": 138.0,
+    "thirdPartyCodeLines": null,
+    "thirdPartyFiles": 2.0,
+    "thirdParties": [
+        {
+            "id": 41492,
+            "componentId": "org.javassist:javassist",
+            "name": "org.javassist:javassist",
+            "version": "3.18.1-GA",
+            "release": 1377887942000,
+            "languages": "java",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 26156,
+                    "name": "Mozilla Public License 1.1",
+                    "compliance": "partial"
+                },
+                {
+                    "id": 8,
+                    "name": "GNU Lesser General Public License v2.1 only",
+                    "compliance": "partial"
+                },
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "3.30.2-GA",
+            "lastRelease": 1703435540000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 43874,
+            "componentId": "log4j:log4j",
+            "name": "log4j:log4j",
+            "version": "1.2.17",
+            "release": 1338025419000,
+            "languages": "java",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "1.2.17",
+            "lastRelease": 1338025419000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "log4j",
+                "product": "log4j",
+                "version": "1.2.17",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2020-9493",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-9493",
+                        "description": "A deserialization flaw was found in Apache Chainsaw versions prior to 2.1.0 which could lead to malicious code execution.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 9.8,
+                        "criticity": "CRITICAL",
+                        "cpe": "cpe:/a:apache:log4j",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2021-4104",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-4104",
+                        "description": "JMSAppender in Log4j 1.2 is vulnerable to deserialization of untrusted data when the attacker has write access to the Log4j configuration. The attacker can provide TopicBindingName and TopicConnectionFactoryBindingName configurations causing JMSAppender to perform JNDI requests that result in remote code execution in a similar fashion to CVE-2021-44228. Note this issue only affects Log4j 1.2 when specifically configured to use JMSAppender, which is not the default. Apache Log4j 1.2 reached end of life in August 2015. Users should upgrade to Log4j 2 as it addresses numerous other issues from the previous versions.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:apache:log4j",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2022-23302",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-23302",
+                        "description": "JMSSink in all versions of Log4j 1.x is vulnerable to deserialization of untrusted data when the attacker has write access to the Log4j configuration or if the configuration references an LDAP service the attacker has access to. The attacker can provide a TopicConnectionFactoryBindingName configuration causing JMSSink to perform JNDI requests that result in remote code execution in a similar fashion to CVE-2021-4104. Note this issue only affects Log4j 1.x when specifically configured to use JMSSink, which is not the default. Apache Log4j 1.2 reached end of life in August 2015. Users should upgrade to Log4j 2 as it addresses numerous other issues from the previous versions.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 8.8,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:qos:reload4j",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2022-23305",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-23305",
+                        "description": "By design, the JDBCAppender in Log4j 1.2.x accepts an SQL statement as a configuration parameter where the values to be inserted are converters from PatternLayout. The message converter, %m, is likely to always be included. This allows attackers to manipulate the SQL by entering crafted strings into input fields or headers of an application that are logged allowing unintended SQL queries to be executed. Note this issue only affects Log4j 1.x when specifically configured to use the JDBCAppender, which is not the default. Beginning in version 2.0-beta8, the JDBCAppender was re-introduced with proper support for parameterized SQL queries and further customization over the columns written to in logs. Apache Log4j 1.2 reached end of life in August 2015. Users should upgrade to Log4j 2 as it addresses numerous other issues from the previous versions.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 9.8,
+                        "criticity": "CRITICAL",
+                        "cpe": "cpe:/a:apache:log4j",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2022-23307",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-23307",
+                        "description": "CVE-2020-9493 identified a deserialization issue that was present in Apache Chainsaw. Prior to Chainsaw V2.0 Chainsaw was a component of Apache Log4j 1.2.x where the same issue exists.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 8.8,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:apache:log4j",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2023-26464",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-26464",
+                        "description": "** UNSUPPORTED WHEN ASSIGNED **\n\nWhen using the Chainsaw or SocketAppender components with Log4j 1.x on JRE less than 1.7, an attacker that manages to cause a logging entry involving a specially-crafted (ie, deeply nested) \nhashmap or hashtable (depending on which logging component is in use) to be processed could exhaust the available memory in the virtual machine and achieve Denial of Service when the object is deserialized.\n\nThis issue affects Apache Log4j before 2. Affected users are recommended to update to Log4j 2.x.\n\nNOTE: This vulnerability only affects products that are no longer supported by the maintainer.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:apache:log4j",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [
+                {
+                    "cwe": "CWE-390",
+                    "label": "Detection of Error Condition Without Action",
+                    "rules": [
+                        {
+                            "aipRuleId": 1060020,
+                            "label": "Avoid empty catch blocks for methods with high fan-in",
+                            "occurrences": 2
+                        }
+                    ],
+                    "id": 390,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-79",
+                    "label": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
+                    "rules": [
+                        {
+                            "aipRuleId": 8408,
+                            "label": "Avoid reflected cross-site scripting (non persistent)",
+                            "occurrences": 6
+                        }
+                    ],
+                    "id": 79,
+                    "isDangerousWeakness": true
+                },
+                {
+                    "cwe": "CWE-477",
+                    "label": "Use of Obsolete Function",
+                    "rules": [
+                        {
+                            "aipRuleId": 8220,
+                            "label": "Avoid using deprecated method, constructor, field, type or package",
+                            "occurrences": 11
+                        }
+                    ],
+                    "id": 477,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1073",
+                    "label": "Non-SQL Invokable Control Element with Excessive Number of Data Resource Accesses",
+                    "rules": [
+                        {
+                            "aipRuleId": 8110,
+                            "label": "Avoid not using dedicated stored procedures when processing multiple data accesses",
+                            "occurrences": 8
+                        }
+                    ],
+                    "id": 1073,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1091",
+                    "label": "Use of Object without Invoking Destructor Method",
+                    "rules": [
+                        {
+                            "aipRuleId": 7562,
+                            "label": "Avoid static Field of type collection",
+                            "occurrences": 9
+                        }
+                    ],
+                    "id": 1091,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-478",
+                    "label": "Missing Default Case in Switch Statement",
+                    "rules": [
+                        {
+                            "aipRuleId": 8028,
+                            "label": "Avoid missing default in switch statements",
+                            "occurrences": 5
+                        }
+                    ],
+                    "id": 478,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1043",
+                    "label": "Data Element Aggregating an Excessively Large Number of Non-Primitive Elements",
+                    "rules": [
+                        {
+                            "aipRuleId": 7424,
+                            "label": "Avoid using SQL queries inside a loop",
+                            "occurrences": 4
+                        }
+                    ],
+                    "id": 1043,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1080",
+                    "label": "Source Code File with Excessive Number of Lines of Code",
+                    "rules": [
+                        {
+                            "aipRuleId": 7842,
+                            "label": "Avoid large Artifacts - too many Lines of Code",
+                            "occurrences": 4
+                        }
+                    ],
+                    "id": 1080,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1061",
+                    "label": "Insufficient Encapsulation",
+                    "rules": [
+                        {
+                            "aipRuleId": 7830,
+                            "label": "Avoid unreferenced Interfaces",
+                            "occurrences": 1
+                        },
+                        {
+                            "aipRuleId": 7908,
+                            "label": "Avoid unreferenced Methods",
+                            "occurrences": 1061
+                        },
+                        {
+                            "aipRuleId": 7832,
+                            "label": "Avoid unreferenced Classes",
+                            "occurrences": 54
+                        },
+                        {
+                            "aipRuleId": 7912,
+                            "label": "Avoid unreferenced Data Members",
+                            "occurrences": 60
+                        }
+                    ],
+                    "id": 1061,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1048",
+                    "label": "Invokable Control Element with Large Number of Outward Calls",
+                    "rules": [
+                        {
+                            "aipRuleId": 7778,
+                            "label": "Avoid Artifacts with High Fan-Out",
+                            "occurrences": 1714
+                        }
+                    ],
+                    "id": 1048,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-23",
+                    "label": "Relative Path Traversal",
+                    "rules": [
+                        {
+                            "aipRuleId": 7752,
+                            "label": "Avoid file path manipulation vulnerabilities",
+                            "occurrences": 2
+                        }
+                    ],
+                    "id": 23,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1084",
+                    "label": "Invokable Control Element with Excessive File or Data Access Operations",
+                    "rules": [
+                        {
+                            "aipRuleId": 7424,
+                            "label": "Avoid using SQL queries inside a loop",
+                            "occurrences": 4
+                        }
+                    ],
+                    "id": 1084,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-22",
+                    "label": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')",
+                    "rules": [
+                        {
+                            "aipRuleId": 7752,
+                            "label": "Avoid file path manipulation vulnerabilities",
+                            "occurrences": 2
+                        }
+                    ],
+                    "id": 22,
+                    "isDangerousWeakness": true
+                },
+                {
+                    "cwe": "CWE-1075",
+                    "label": "Unconditional Control Flow Transfer outside of Switch Block",
+                    "rules": [
+                        {
+                            "aipRuleId": 8028,
+                            "label": "Avoid missing default in switch statements",
+                            "occurrences": 5
+                        }
+                    ],
+                    "id": 1075,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-111",
+                    "label": "Direct Use of Unsafe JNI",
+                    "rules": [
+                        {
+                            "aipRuleId": 4612,
+                            "label": "Avoid using native Methods (JNI)",
+                            "occurrences": 4
+                        }
+                    ],
+                    "id": 111,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-391",
+                    "label": "Unchecked Error Condition",
+                    "rules": [
+                        {
+                            "aipRuleId": 1060020,
+                            "label": "Avoid empty catch blocks for methods with high fan-in",
+                            "occurrences": 2
+                        },
+                        {
+                            "aipRuleId": 7788,
+                            "label": "Avoid empty catch blocks",
+                            "occurrences": 56
+                        }
+                    ],
+                    "id": 391,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1121",
+                    "label": "Excessive McCabe Cyclomatic Complexity",
+                    "rules": [
+                        {
+                            "aipRuleId": 7776,
+                            "label": "Avoid Artifacts with High Fan-In",
+                            "occurrences": 303
+                        },
+                        {
+                            "aipRuleId": 7766,
+                            "label": "Avoid Artifacts with High Cyclomatic Complexity",
+                            "occurrences": 13
+                        }
+                    ],
+                    "id": 1121,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-681",
+                    "label": "Incorrect Conversion between Numeric Types",
+                    "rules": [
+                        {
+                            "aipRuleId": 8216,
+                            "label": "Avoid using incompatible mutation",
+                            "occurrences": 19
+                        }
+                    ],
+                    "id": 681,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-674",
+                    "label": "Uncontrolled Recursion",
+                    "rules": [
+                        {
+                            "aipRuleId": 7388,
+                            "label": "Avoid artifacts having recursive calls",
+                            "occurrences": 12
+                        }
+                    ],
+                    "id": 674,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-73",
+                    "label": "External Control of File Name or Path",
+                    "rules": [
+                        {
+                            "aipRuleId": 4594,
+                            "label": "Avoid using 'java.io.File'",
+                            "occurrences": 138
+                        },
+                        {
+                            "aipRuleId": 7752,
+                            "label": "Avoid file path manipulation vulnerabilities",
+                            "occurrences": 2
+                        }
+                    ],
+                    "id": 73,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-36",
+                    "label": "Absolute Path Traversal",
+                    "rules": [
+                        {
+                            "aipRuleId": 7752,
+                            "label": "Avoid file path manipulation vulnerabilities",
+                            "occurrences": 2
+                        }
+                    ],
+                    "id": 36,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1050",
+                    "label": "Excessive Platform Resource Consumption within a Loop",
+                    "rules": [
+                        {
+                            "aipRuleId": 1060018,
+                            "label": "Avoid String concatenation in loops for artifacts with high fan in",
+                            "occurrences": 11
+                        },
+                        {
+                            "aipRuleId": 7424,
+                            "label": "Avoid using SQL queries inside a loop",
+                            "occurrences": 4
+                        },
+                        {
+                            "aipRuleId": 7204,
+                            "label": "Avoid method invocation in a loop termination expression",
+                            "occurrences": 45
+                        },
+                        {
+                            "aipRuleId": 7210,
+                            "label": "Avoid instantiations inside loops",
+                            "occurrences": 80
+                        }
+                    ],
+                    "id": 1050,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1064",
+                    "label": "Invokable Control Element with Signature Containing an Excessive Number of Parameters",
+                    "rules": [
+                        {
+                            "aipRuleId": 7770,
+                            "label": "Avoid Artifacts with too many parameters",
+                            "occurrences": 3
+                        }
+                    ],
+                    "id": 1064,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1124",
+                    "label": "Excessively Deep Nesting",
+                    "rules": [
+                        {
+                            "aipRuleId": 7768,
+                            "label": "Avoid Artifacts with High Depth of Code",
+                            "occurrences": 22
+                        }
+                    ],
+                    "id": 1124,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-778",
+                    "label": "Insufficient Logging",
+                    "rules": [
+                        {
+                            "aipRuleId": 7652,
+                            "label": "Avoid throwing an exception in a catch block without chaining it",
+                            "occurrences": 10
+                        }
+                    ],
+                    "id": 778,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-134",
+                    "label": "Use of Externally-Controlled Format String",
+                    "rules": [
+                        {
+                            "aipRuleId": 8098,
+                            "label": "Avoid uncontrolled format string",
+                            "occurrences": 2
+                        }
+                    ],
+                    "id": 134,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-576",
+                    "label": "EJB Bad Practices: Use of Java I/O",
+                    "rules": [
+                        {
+                            "aipRuleId": 4594,
+                            "label": "Avoid using 'java.io.File'",
+                            "occurrences": 138
+                        }
+                    ],
+                    "id": 576,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1053",
+                    "label": "Missing Documentation for Design",
+                    "rules": [
+                        {
+                            "aipRuleId": 7838,
+                            "label": "Avoid undocumented Methods",
+                            "occurrences": 991
+                        }
+                    ],
+                    "id": 1053,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-489",
+                    "label": "Leftover Debug Code",
+                    "rules": [
+                        {
+                            "aipRuleId": 4702,
+                            "label": "Avoid using 'Throwable.printStackTrace()' with no argument",
+                            "occurrences": 38
+                        }
+                    ],
+                    "id": 489,
+                    "isDangerousWeakness": false
+                }
+            ]
+        }
+    ],
+    "partialComponents": [
+        {
+            "name": "dom4j",
+            "technology": "Java",
+            "type": "Library",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "http://dom4j.github.io/",
+            "description": "Dom4j is flexible XML framework for Java.",
+            "dependencyLevel": null
+        },
+        {
+            "name": "JPA",
+            "technology": "Java",
+            "type": "Java Specification Requests",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "junit",
+            "technology": "Java",
+            "type": "Unit Testing Framework",
+            "versions": [
+                "$junit"
+            ],
+            "license": "Eclipse Public License",
+            "editor": "http://junit.org/junit4/",
+            "description": "JUnit is a simple framework to write repeatable tests. It is an instance of the xUnit architecture for unit testing frameworks.",
+            "dependencyLevel": null
+        },
+        {
+            "name": "hibernate-envers",
+            "technology": "Java",
+            "type": "Library",
+            "versions": [
+                "$version"
+            ],
+            "license": "LGPL 2.1",
+            "editor": "http://hibernate.org/",
+            "description": "Hibernate\u00ef\u00bf\u00bdan open source Java persistence framework project",
+            "dependencyLevel": null
+        },
+        {
+            "name": "Hibernate",
+            "technology": "Java",
+            "type": "Library",
+            "versions": [
+                "4"
+            ],
+            "license": "LGPL 2.1",
+            "editor": "http://hibernate.org/",
+            "description": "Hibernate\u00ef\u00bf\u00bdan open source Java persistence framework project",
+            "dependencyLevel": null
+        }
+    ]
+}

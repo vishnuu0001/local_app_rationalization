@@ -1,0 +1,101 @@
+[
+    {
+        "id": "Use_OS_Dependency-CSHARP",
+        "display": "Execution Environment : Using system DLLs",
+        "criticality": "High",
+        "impacts": [
+            "Container only"
+        ],
+        "roadblocks": 109.0,
+        "cloudEffort": 1090,
+        "files": [
+            "BlueSky.Cloud.Framework\\BlueSky.Cloud.Common.InWebo\\InWeboMAccess\\IW.cs"
+        ]
+    },
+    {
+        "id": "Directory_Manipulation_Practice-CSHARP",
+        "display": "Persistent Files : Perform Directory Manipulation",
+        "criticality": "Low",
+        "impacts": [
+            "Code",
+            "Container only"
+        ],
+        "roadblocks": 2.0,
+        "cloudEffort": 30,
+        "files": [
+            "BlueSky.Cloud.Framework\\BlueSky.Cloud.Common.InWebo\\InWeboMAccess\\IWAPI.cs"
+        ]
+    },
+    {
+        "id": "Use_COM_Components-CSHARP",
+        "display": "Code Execution : Using COM Components",
+        "criticality": "High",
+        "impacts": [
+            "Container only"
+        ],
+        "roadblocks": 32.0,
+        "cloudEffort": 3840,
+        "files": [
+            "BlueSky.Cloud.Framework\\BlueSky.Cloud.Common.Permission\\Properties\\AssemblyInfo.cs",
+            "BlueSky.Cloud.Framework\\BlueSky.Cloud.Common\\SecureStringExtension.cs",
+            "BlueSky.Cloud.Framework\\BlueSky.Cloud.Common.Vault\\Properties\\AssemblyInfo.cs",
+            "BlueSky.Cloud.Framework\\BlueSky.Cloud.Common\\Properties\\AssemblyInfo.cs",
+            "BlueSky.Cloud.Framework\\BlueSky.Cloud.Common.Trc\\Properties\\AssemblyInfo.cs",
+            "BlueSky.Cloud.Framework\\BlueSky.Cloud.Common.InWebo\\InWeboMAccess\\IW.cs",
+            "BlueSky.Cloud.Framework\\BlueSky.Cloud.Common.Trc.Tests\\Properties\\AssemblyInfo.cs",
+            "BlueSky.Cloud.Framework\\BlueSky.Cloud.Common.Reporting.Manager\\Properties\\AssemblyInfo.cs",
+            "BlueSky.Cloud.Framework\\BlueSky.Cloud.Common.Uid\\Properties\\AssemblyInfo.cs",
+            "BlueSky.Cloud.Framework\\BlueSky.Cloud.Common.Reporting.Base\\Properties\\AssemblyInfo.cs",
+            "BlueSky.Cloud.Framework\\BlueSky.Cloud.Common.TrcClient\\Properties\\AssemblyInfo.cs",
+            "BlueSky.Cloud.Framework\\BlueSky.Cloud.Common.Sto.Tests\\Properties\\AssemblyInfo.cs",
+            "BlueSky.Cloud.Framework\\BlueSky.Cloud.Common.Clock.Tests\\Properties\\AssemblyInfo.cs",
+            "BlueSky.Cloud.Framework\\BlueSky.Cloud.Common.ClientSDK\\Properties\\AssemblyInfo.cs",
+            "BlueSky.Cloud.Framework\\BlueSky.Cloud.Common.Cnx\\Properties\\AssemblyInfo.cs",
+            "BlueSky.Cloud.Framework\\BlueSky.Cloud.Common.Wcf\\Properties\\AssemblyInfo.cs",
+            "BlueSky.Cloud.Framework\\BlueSky.Cloud.Common.WebApi\\Properties\\AssemblyInfo.cs",
+            "BlueSky.Cloud.Framework\\BlueSky.Cloud.Common.Wcf\\Permission\\PermissionAttribute.cs",
+            "BlueSky.Cloud.Framework\\BlueSky.Cloud.Common.Cache\\Properties\\AssemblyInfo.cs",
+            "BlueSky.Cloud.Framework\\BlueSky.Cloud.Common.Sto\\Properties\\AssemblyInfo.cs",
+            "BlueSky.Cloud.Framework\\BlueSky.Cloud.Common.HockeyApp\\Properties\\AssemblyInfo.cs",
+            "BlueSky.Cloud.Framework\\BlueSky.Cloud.Common.SidClientSDK\\Properties\\AssemblyInfo.cs",
+            "BlueSky.Cloud.Framework\\BlueSky.Cloud.Common.InWebo\\Properties\\AssemblyInfo.cs",
+            "BlueSky.Cloud.Framework\\BlueSky.Cloud.Common.CnxQueuer\\Properties\\AssemblyInfo.cs",
+            "BlueSky.Cloud.Framework\\BlueSky.Cloud.Common.Permission.Generator\\Properties\\AssemblyInfo.cs",
+            "BlueSky.Cloud.Framework\\BlueSky.Cloud.Common.Cache.Tests\\Properties\\AssemblyInfo.cs",
+            "BlueSky.Cloud.Framework\\BlueSky.Cloud.Common.Tests\\Properties\\AssemblyInfo.cs",
+            "BlueSky.Cloud.Framework\\BlueSky.Cloud.Common.VaultTests\\Properties\\AssemblyInfo.cs",
+            "BlueSky.Cloud.Framework\\BlueSky.Cloud.Common.Clock\\Properties\\AssemblyInfo.cs",
+            "BlueSky.Cloud.Framework\\BlueSky.Cloud.Common.StoTests\\Properties\\AssemblyInfo.cs",
+            "BlueSky.Cloud.Framework\\BlueSky.Cloud.Common.Reporting.Generator\\Properties\\AssemblyInfo.cs",
+            "BlueSky.Cloud.Framework\\BlueSky.Cloud.Common.Sid\\Properties\\AssemblyInfo.cs"
+        ]
+    },
+    {
+        "id": "Use_File_System-CSHARP",
+        "display": "Execution Environment : Using file system",
+        "criticality": "Low",
+        "impacts": [
+            "Code",
+            "Container only"
+        ],
+        "roadblocks": 4.0,
+        "cloudEffort": 60,
+        "files": [
+            "BlueSky.Cloud.Framework\\BlueSky.Cloud.Common.Sto.Tests\\FileStorageTests.cs"
+        ]
+    },
+    {
+        "id": "File_Manipulation_Practice-CSHARP",
+        "display": "Persistent Files : Perform File Manipulation",
+        "criticality": "Low",
+        "impacts": [
+            "Code",
+            "Container only"
+        ],
+        "roadblocks": 1.0,
+        "cloudEffort": 15,
+        "files": [
+            "BlueSky.Cloud.Framework\\BlueSky.Cloud.Common.InWebo\\Helpers\\XmlConfigManager.cs"
+        ]
+    }
+]

@@ -162,6 +162,7 @@ def create_app(config_name=None):
         ('app.routes.correlation_bp', 'correlation_bp'),
         ('app.routes.capability_bp', 'capability_bp'),
         ('app.routes.golden_data_bp', 'golden_data_bp'),
+        ('app.routes.reset_bp', 'reset_bp'),
     ]
 
     for module_name, blueprint_attr in blueprint_modules:
@@ -179,7 +180,8 @@ def create_app(config_name=None):
             # Import all models to register them with SQLAlchemy
             from app.models import (
                 infrastructure, code, application, pdf_report,
-                correlation, analysis, capability, cast, corent_data
+                correlation, analysis, capability, cast, corent_data,
+                golden_data
             )
             
             db.create_all()

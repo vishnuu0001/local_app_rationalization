@@ -1,0 +1,1812 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 33186.0,
+                                            "effort": 99558.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ClassesComparisons",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 274.0,
+                                            "effort": 2740.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__RiskyFunctionCalls",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 12.0,
+                                            "effort": 12.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__IllegalThrows",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 736.0,
+                                            "effort": 3680.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 394.0,
+                                            "effort": 1182.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__RiskyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 2.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__MissingBraces",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 416.0,
+                                            "effort": 416.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 75.6,
+                                            "effort": 75.6
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__ResourceManagement",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 107.0,
+                                            "effort": 53.500004
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__BadDynamicClassDefinitions",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 2.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 46.4,
+                                            "effort": 232.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__ResourceManagement2",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 30.0,
+                                            "effort": 15.000001
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 15.0,
+                                            "effort": 45.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__RiskyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 2.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__Array",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 13.0,
+                                            "effort": 2.1666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__String",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 1248.0,
+                                            "effort": 104.00001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MissingSemicolon",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 8.0,
+                                            "effort": 0.6666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 456.0,
+                                            "effort": 1368.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 62.999996,
+                                            "effort": 62.999996
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingHashcode",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 12.0,
+                                            "effort": 120.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__RiskyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 2178.0,
+                                            "effort": 10890.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__Instanceof",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 1763.0,
+                                            "effort": 17630.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__OverloadEquals",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 11.0,
+                                            "effort": 110.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__OutOfFinallyJumps",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 29.0,
+                                            "effort": 145.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__MacroDefinitions",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 2.0,
+                                            "effort": 4.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__MissingClassDestructor2",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 25.0,
+                                            "effort": 25.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__Data",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 371.0,
+                                            "effort": 5565.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__MissingBreakInCasePath",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 11.0,
+                                            "effort": 0.9166667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__RiskyFunctionCalls",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 186.0,
+                                            "effort": 1860.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__MissingClassConstructor",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 22.0,
+                                            "effort": 22.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__MultipleReturn",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 1.0,
+                                            "effort": 0.5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__ConcatInLoop",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 7.0,
+                                            "effort": 3.5000002
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__StrongDataAccess",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 1374.0,
+                                            "effort": 458.00003
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MissingBraces",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 644.0,
+                                            "effort": 107.333336
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadLoop",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 30.0,
+                                            "effort": 150.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MissingBreakInCasePath",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 7.0,
+                                            "effort": 0.5833334
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__PublicAttributes",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 8367.0,
+                                            "effort": 8367.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingBraces2",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 2936.0,
+                                            "effort": 2936.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__EmptyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 1415.0,
+                                            "effort": 7075.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingDefault",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 107.0,
+                                            "effort": 107.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 533172.0,
+                                            "effort": 533172.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingBreakInSwitch",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 137.0,
+                                            "effort": 11.416667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__AssignmentsInConditionalExpr",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 25.0,
+                                            "effort": 12.500001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BugPatterns",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 635.0,
+                                            "effort": 635.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__MacroUnparenthesedParams",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 37.0,
+                                            "effort": 37.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__MissingDefault",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 5.0,
+                                            "effort": 5.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__UninitializedLocalVariables",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 372.0,
+                                            "effort": 62.000004
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__MissingClassDestructor",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 25.0,
+                                            "effort": 25.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__AssignmentsInConditionalExpr",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 16.0,
+                                            "effort": 8.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__BugPatterns",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 38.0,
+                                            "effort": 38.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__UnusedVar",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 8.0,
+                                            "effort": 8.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__FileGlobalVariables",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 24.0,
+                                            "effort": 24.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__StringFormat",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 4.0,
+                                            "effort": 0.33333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__NamingConflict",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 2.0,
+                                            "effort": 0.33333334
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__This",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 351.0,
+                                            "effort": 5265.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__InnerFunction",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 2.0,
+                                            "effort": 0.6666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MissingIdentical",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 656.0,
+                                            "effort": 54.666668
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__DepthCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 2.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__EndLoopTest",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 13.0,
+                                            "effort": 130.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__AssignmentsInConditionalExpr",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 116.0,
+                                            "effort": 58.000004
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 42.0,
+                                            "effort": 42.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 28384.0,
+                                            "effort": 2365.3335
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ClassDefinitions",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 4102.0,
+                                            "effort": 20510.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__StarImport",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 1121.0,
+                                            "effort": 1121.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 3776.0,
+                                            "effort": 3776.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 9.0,
+                                            "effort": 9.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 321.0,
+                                            "effort": 26.750002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 104.0,
+                                            "effort": 8.666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__ClassDefinitions",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 46.0,
+                                            "effort": 230.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 353.0,
+                                            "effort": 29.416668
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 41.0,
+                                            "effort": 41.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__String",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 791.0,
+                                            "effort": 65.91667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 2.0,
+                                            "effort": 0.16666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 169.0,
+                                            "effort": 28.166668
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 28.0,
+                                            "effort": 2.3333335
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__ArtifactSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 17.0,
+                                            "effort": 1.4166667
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 588.0,
+                                            "effort": 49.000004
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__Prototype",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 982.0,
+                                            "effort": 81.833336
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 498.0,
+                                            "effort": 41.500004
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__ImmediateFuncCall",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 2.0,
+                                            "effort": 0.16666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 203.0,
+                                            "effort": 16.916668
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingAutomatedDoc2",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 67924.0,
+                                            "effort": 67924.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 20789.0,
+                                            "effort": 1732.4167
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 4992.0,
+                                            "effort": 416.00003
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 139.0,
+                                            "effort": 11.583334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__ClassImplementations",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 27.0,
+                                            "effort": 135.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 565.0,
+                                            "effort": 47.083336
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 9.0,
+                                            "effort": 0.75000006
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 250.0,
+                                            "effort": 20.833334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 54.0,
+                                            "effort": 4.5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MultDecl",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 415.0,
+                                            "effort": 34.583336
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 133240.0,
+                                            "effort": 133240.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__Ternary",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 5822.0,
+                                            "effort": 5822.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadDeclarationOrder",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 1384.0,
+                                            "effort": 1384.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 6765.0,
+                                            "effort": 563.75
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 534.0,
+                                            "effort": 5340.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 3056.6006,
+                                            "effort": 3056.6006
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__Ternary",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 96.0,
+                                            "effort": 96.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__PreprocDirective",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 242.0,
+                                            "effort": 242.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__BadDeclarationOrder",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 6.0,
+                                            "effort": 6.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 15.0,
+                                            "effort": 150.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 118.04001,
+                                            "effort": 118.04001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__SuspiciousIndentations",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 36.0,
+                                            "effort": 3.0000002
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 653.9201,
+                                            "effort": 653.9201
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadDeclarationOrder",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 376.0,
+                                            "effort": 376.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__VarDecl",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 384.0,
+                                            "effort": 64.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__ApplicationGlobalVariables",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 171.0,
+                                            "effort": 28.500002
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 1949163.0,
+                                            "effort": 1949163.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__OtherLanguage",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 95.0,
+                                            "effort": 1425.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 13.731333,
+                                            "effort": 68.65666
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 651.1099,
+                                            "effort": 651.1099
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 46.4,
+                                            "effort": 232.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__LocalVar",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 39.0,
+                                            "effort": 6.5000005
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 8.6,
+                                            "effort": 43.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 1136.2223,
+                                            "effort": 5681.1113
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 312.12,
+                                            "effort": 312.12
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 1069.5363,
+                                            "effort": 5347.681
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 704.1997,
+                                            "effort": 3520.9985
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__NBATTRIB",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 8.0,
+                                            "effort": 40.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__MethodsWithTooMuchParameters",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 1.0,
+                                            "effort": 5.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 96.0,
+                                            "effort": 480.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__NBMETH",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 1646.0,
+                                            "effort": 8230.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ComplexConditions",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 29.0,
+                                            "effort": 290.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__NBMETHDecl",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 0.06666667,
+                                            "effort": 0.33333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__ComplexConditions",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 1.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__ComplexConditions",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 2.0,
+                                            "effort": 20.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 16797,
+                                            "application_name": "hadoop",
+                                            "counter": 58.0,
+                                            "effort": 290.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

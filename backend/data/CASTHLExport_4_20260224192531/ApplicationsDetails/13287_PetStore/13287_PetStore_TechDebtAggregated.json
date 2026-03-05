@@ -1,0 +1,948 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 71.0,
+                                            "effort": 213.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ClassesComparisons",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 6.0,
+                                            "effort": 60.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__IllegalThrows",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 5.0,
+                                            "effort": 25.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__VarDecl",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 86.0,
+                                            "effort": 14.333334
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JSP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__StarImport",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 3.0,
+                                            "effort": 3.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__UselessDependencies",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 7.0,
+                                            "effort": 0.5833334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__FileNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 83.0,
+                                            "effort": 41.500004
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__FileLocation",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 76.0,
+                                            "effort": 38.000004
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__RiskyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 125.0,
+                                            "effort": 625.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__Instanceof",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 33.0,
+                                            "effort": 330.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__Intrinsics",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 101.0,
+                                            "effort": 101.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 0.1,
+                                            "effort": 0.1
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__Pipes",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 1.0,
+                                            "effort": 0.16666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JSP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__MissingErrorPage",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 102.0,
+                                            "effort": 102.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__TooManyJavaCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 17.0,
+                                            "effort": 17.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__PublicAttributes",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 57.0,
+                                            "effort": 57.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingBraces2",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 84.0,
+                                            "effort": 84.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__EmptyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 33.0,
+                                            "effort": 165.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingDefault",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 2.0,
+                                            "effort": 2.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 9697.0,
+                                            "effort": 9697.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingBreakInSwitch",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 2.0,
+                                            "effort": 0.16666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__AssignmentsInConditionalExpr",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 17.0,
+                                            "effort": 8.5
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JSP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__Unsecure",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 49.0,
+                                            "effort": 490.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__DeprecatedFeature",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 17.0,
+                                            "effort": 170.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__MissingCatch",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 1.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__UntrustedData",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 3.0,
+                                            "effort": 3.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 580.0,
+                                            "effort": 48.333336
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ClassDefinitions",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 27.0,
+                                            "effort": 135.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__StarImport",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 407.0,
+                                            "effort": 407.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 94.0,
+                                            "effort": 94.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 17.0,
+                                            "effort": 17.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__ShortVarName",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 1.0,
+                                            "effort": 0.16666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 17.0,
+                                            "effort": 17.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JSP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 4.0,
+                                            "effort": 4.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 347.0,
+                                            "effort": 28.916668
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__SuspiciousIndentations",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 11.0,
+                                            "effort": 0.9166667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 1.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 55.0,
+                                            "effort": 4.5833335
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingAutomatedDoc2",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 1797.0,
+                                            "effort": 1797.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 599.0,
+                                            "effort": 49.916668
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 125.0,
+                                            "effort": 10.416667
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 75.8,
+                                            "effort": 75.8
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__LocalNames",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 82.0,
+                                            "effort": 13.666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JSP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__JSPComment",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 60.0,
+                                            "effort": 10.000001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__HtmlComment",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 35.0,
+                                            "effort": 5.8333335
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 2234.6006,
+                                            "effort": 2234.6006
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__Ternary",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 82.0,
+                                            "effort": 82.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadDeclarationOrder",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 26.0,
+                                            "effort": 26.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 131.0,
+                                            "effort": 10.916667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 18.0,
+                                            "effort": 180.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JSP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__TagFormat",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 8.0,
+                                            "effort": 0.6666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 0.52,
+                                            "effort": 0.52
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__WeakCommentRate2",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 0.06,
+                                            "effort": 0.06
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__BadDeclarationOrder",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 5.0,
+                                            "effort": 5.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 1.0,
+                                            "effort": 0.083333336
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 34582.0,
+                                            "effort": 34582.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JSP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 3.75,
+                                            "effort": 18.75
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 1.44,
+                                            "effort": 1.44
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 2.5633335,
+                                            "effort": 12.816668
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 3.0,
+                                            "effort": 15.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JSP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__SectionNumber",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 9.0,
+                                            "effort": 45.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JSP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 13287,
+                                            "application_name": "PetStore",
+                                            "counter": 6.0,
+                                            "effort": 30.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

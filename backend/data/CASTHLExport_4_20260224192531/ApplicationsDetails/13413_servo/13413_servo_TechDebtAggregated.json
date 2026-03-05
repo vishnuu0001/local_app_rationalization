@@ -1,0 +1,1218 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__VarDecl",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 34.0,
+                                            "effort": 5.666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 5215.0,
+                                            "effort": 15645.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__IllegalException",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 3.0,
+                                            "effort": 0.5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__RiskyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 157.0,
+                                            "effort": 785.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__UnecessaryMethod",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 15.0,
+                                            "effort": 7.5000005
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__StarImport",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 55.0,
+                                            "effort": 55.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__UnusedImport",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 2080.0,
+                                            "effort": 173.33334
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__String",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 194.0,
+                                            "effort": 16.166668
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MissingSemicolon",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 46.0,
+                                            "effort": 3.8333335
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 67.0,
+                                            "effort": 201.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 12.81,
+                                            "effort": 12.81
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__Scope",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 4.0,
+                                            "effort": 0.6666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__Intrinsics",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 10.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 0.2,
+                                            "effort": 0.2
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__SuspLastCase",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 1.0,
+                                            "effort": 0.16666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__Pipes",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 2.0,
+                                            "effort": 0.33333334
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__MultipleReturn",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 630.0,
+                                            "effort": 315.00003
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__EmptyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 96.0,
+                                            "effort": 480.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__UnnecessaryConcat",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 46.0,
+                                            "effort": 3.8333335
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__MagicMethods",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 5.0,
+                                            "effort": 1.6666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__ConstructorReturn",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 2.0,
+                                            "effort": 0.5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__UnexpectedGetter",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 52.0,
+                                            "effort": 26.000002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__Inheritance",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 70.0,
+                                            "effort": 11.666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__ConcatInLoop",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 39.0,
+                                            "effort": 19.500002
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__StrongDataAccess",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 467.0,
+                                            "effort": 155.66667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MissingBraces",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 14.0,
+                                            "effort": 2.3333335
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadLoop",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 3.0,
+                                            "effort": 15.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__MissingDefault",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 2.0,
+                                            "effort": 2.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__ExplicitExit",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 2.0,
+                                            "effort": 0.33333334
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__UnusedArg",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 1447.0,
+                                            "effort": 120.583336
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__UnusedVar",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 2620.0,
+                                            "effort": 2620.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__ImportConflict",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 43.0,
+                                            "effort": 7.166667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__FileGlobalVariables",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 644.0,
+                                            "effort": 644.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__UnsignificantReturn",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 287.0,
+                                            "effort": 47.833336
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__StringFormat",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 824.0,
+                                            "effort": 68.66667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__NamingConflict",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 13.0,
+                                            "effort": 2.1666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__This",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 393.0,
+                                            "effort": 786.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MissingIdentical",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 100.0,
+                                            "effort": 8.333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__EndLoopTest",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 1.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 5.0,
+                                            "effort": 5.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__ShortVarName",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 1.0,
+                                            "effort": 0.16666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 13.0,
+                                            "effort": 13.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__String",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 43767.0,
+                                            "effort": 3647.2502
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 19245.0,
+                                            "effort": 1603.7501
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 110438.0,
+                                            "effort": 18406.334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 3302.0,
+                                            "effort": 275.1667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__MultipleImports",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 1.0,
+                                            "effort": 0.16666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__ArtifactSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 1487.0,
+                                            "effort": 123.91667
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 228.0,
+                                            "effort": 19.000002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__Prototype",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 248.0,
+                                            "effort": 20.666668
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 517.0,
+                                            "effort": 43.083336
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__ImmediateFuncCall",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 1.0,
+                                            "effort": 0.083333336
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 23.0,
+                                            "effort": 23.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__LocalNames",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 9.0,
+                                            "effort": 1.5000001
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__RangeBoundary",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 9.0,
+                                            "effort": 1.5000001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__AutomaticNumbering",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 406.0,
+                                            "effort": 33.833336
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 1759.0,
+                                            "effort": 146.58334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__Import_Alias",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 1.0,
+                                            "effort": 0.16666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 302.0,
+                                            "effort": 3020.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__ConditionReadability",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 3.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 216.0,
+                                            "effort": 18.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 362.0,
+                                            "effort": 30.166668
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MultDecl",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 24.0,
+                                            "effort": 2.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 4.0,
+                                            "effort": 40.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 219502.73,
+                                            "effort": 219502.73
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__Instanceof",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 29.0,
+                                            "effort": 290.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__ComparisonToSingleton",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 2.0,
+                                            "effort": 0.33333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__MultilineInstruction",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 288.0,
+                                            "effort": 24.000002
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 117.69997,
+                                            "effort": 117.69997
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadDeclarationOrder",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 32.0,
+                                            "effort": 32.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__VarDecl",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 111.0,
+                                            "effort": 18.500002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__ApplicationGlobalVariables",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 81.0,
+                                            "effort": 13.500001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 13.0,
+                                            "effort": 130.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__LocalVar",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 5244.0,
+                                            "effort": 874.00006
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 14676.557,
+                                            "effort": 73382.78
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 325.44443,
+                                            "effort": 1627.2222
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 24.979996,
+                                            "effort": 24.979996
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__MethodsWithTooMuchParameters",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 674.0,
+                                            "effort": 3370.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 16141.0,
+                                            "effort": 80705.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__NBMETH",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 268.0,
+                                            "effort": 1340.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__ComplexClasses",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 2733.0,
+                                            "effort": 1366.5001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__ComplexConditions",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 9.0,
+                                            "effort": 90.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 13413,
+                                            "application_name": "servo",
+                                            "counter": 6.0,
+                                            "effort": 30.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

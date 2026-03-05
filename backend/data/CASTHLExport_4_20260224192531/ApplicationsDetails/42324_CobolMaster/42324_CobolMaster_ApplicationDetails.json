@@ -1,0 +1,678 @@
+{
+    "id": 42324,
+    "name": "CobolMaster",
+    "domains": [
+        {
+            "id": 1622,
+            "name": "Core Business Applications"
+        },
+        {
+            "id": 12911,
+            "name": "Portfolio Company Gamma"
+        }
+    ],
+    "metrics": [
+        {
+            "snapshotLabel": "Cobol Apps for Cloud Patterns_CobolMaster",
+            "snapshotDate": 1591848000000,
+            "softwareAgility": 0.7171943187713623,
+            "softwareElegance": 1.0,
+            "softwareResiliency": 0.8268831968307495,
+            "softwareHealth": 0.8480258385340372,
+            "openSourceSafety": 1.0,
+            "openSourceLicense": 1.0,
+            "openSourceObsolescence": null,
+            "openSourceCVE": 1.0,
+            "businessImpact": 0.41624365482233505,
+            "roarIndex": 0.062212746497461925,
+            "backFiredFP": 16.0,
+            "technicalDebt": 840.1166806221008,
+            "maintenanceRecordedFTE": 50.0,
+            "maintenanceRecommendedFTE": 0.0,
+            "cloudReady": 0.28909805322378995,
+            "cloudReadyScan": 0.40727272727272723,
+            "boosters": 0.0,
+            "blockers": 0.49090909090909096,
+            "roadblocks": 218.0,
+            "cloudEffort": 5160,
+            "cloudReadySurvey": 0.17092337917485265,
+            "greenIndex": null,
+            "greenIndexScan": null,
+            "greenIndexSurvey": null,
+            "greenOccurrences": null,
+            "greenEffort": null,
+            "greenDetail": [
+                {
+                    "technology": "Cobol",
+                    "greenIndexScan": 0.0,
+                    "greenIndexDetails": null
+                }
+            ],
+            "totalLinesOfCode": 886,
+            "totalFiles": 49,
+            "cloudReadyDetail": [
+                {
+                    "technology": "Cobol",
+                    "cloudReadyScan": 0.40727272727272723,
+                    "cloudReadyDetails": [
+                        {
+                            "cloudRequirement": {
+                                "id": "Avoid_Code_Skipped",
+                                "display": "Code Execution : Avoid code that can accidentally get skipped",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Avoid_Code_Skipped",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Medium",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": -5.454545454545454,
+                            "roadblocks": 144.0,
+                            "cloudEffort": 720,
+                            "files": [
+                                "OpenCobol\\Conditions\\NegatedCondition.cbl",
+                                "OpenCobol\\Sort\\InsertSort.cbl",
+                                "AS400\\QCBLLESRC\\TABULKY1.CBLLE",
+                                "AS400\\COBOL_examples\\Logging\\QCBLLESRC\\LOG0010CB.cblle",
+                                "OpenCobol\\Struct\\Struct.cbl",
+                                "OpenCobol\\Sort\\BubbleSort.cbl",
+                                "OpenCobol\\Database\\OpenFileRecordKey.cbl",
+                                "AS400\\COBOL_examples\\PictureClause\\QCBLLESRC\\PICTURE1.CBLLE",
+                                "OpenCobol\\Games\\raylib\\core_random_values.cbl",
+                                "OpenCobol\\Memory\\Pointer.cbl",
+                                "OpenCobol\\Database\\StatusCode.cbl",
+                                "OpenCobol\\Database\\SequentialRead.cbl",
+                                "AS400\\COBOL_examples\\MoveClause\\QCBLLESRC\\SUBSTR1.CBLLE",
+                                "OpenCobol\\Conditions\\ClassCondition.cbl",
+                                "AS400\\QCBLLESRC\\TABULKY2.CBLLE",
+                                "AS400\\COBOL_examples\\PictureClause\\QCBLLESRC\\PICTURE4.CBLLE",
+                                "OpenCobol\\Conditions\\CombinedConditions.cbl",
+                                "OpenCobol\\Conditions\\ConditionStatement.cbl",
+                                "OpenCobol\\Conditions\\ConditionNameCondition.cbl",
+                                "AS400\\QCBLLESRC\\COND1.CBLLE",
+                                "AS400\\COBOL_examples\\MoveClause\\QCBLLESRC\\MOVE2.CBLLE",
+                                "OpenCobol\\HelloWorld.cbl",
+                                "OpenCobol\\Memory\\Address.cbl",
+                                "OpenCobol\\Conditions\\SignCondition.cbl",
+                                "OpenCobol\\SQLite\\Hello_SQLITE.cbl",
+                                "OpenCobol\\Loops\\ForLoop.cbl",
+                                "OpenCobol\\Random\\RandomBingo.cbl",
+                                "OpenCobol\\Loops\\While.cbl",
+                                "OpenCobol\\Sort\\SelectSort.cbl",
+                                "OpenCobol\\Conditions\\RelationCondition.cbl",
+                                "OpenCobol\\Database\\OpenFileSequential.cbl",
+                                "AS400\\COBOL_examples\\PictureClause\\QCBLLESRC\\PICTURE3.CBLLE",
+                                "OpenCobol\\Games\\raylib\\core_basic_window.cbl",
+                                "OpenCobol\\Date\\DateAndTime.cbl",
+                                "AS400\\COBOL_examples\\MoveClause\\QCBLLESRC\\SUBSTR2.CBLLE",
+                                "AS400\\COBOL_examples\\CallingExample\\QCBLLESRC\\CALLER.CBLLE",
+                                "OpenCobol\\String\\String.cbl",
+                                "OpenCobol\\Conditions\\EvaluteVerb.cbl",
+                                "OpenCobol\\Random\\RandomNumbers.cbl",
+                                "AS400\\COBOL_examples\\MoveClause\\QCBLLESRC\\MOVE1.CBLLE",
+                                "AS400\\COBOL_examples\\CallingExample\\QCBLLESRC\\NESTEDCALL.CBLLE"
+                            ],
+                            "triggered": true
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_HexaConstants",
+                                "display": "Code Execution : Avoid using hexadecimal constants in mainframes",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_HexaConstants",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "High",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 4.232804232804233,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_ALTER_statement",
+                                "display": "Code Execution : Avoid using ALTER statements in mainframes",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_ALTER_statement",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 4.232804232804233,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_PackedDecimal",
+                                "display": "Code Execution : Avoid using packed Decimal unique way of representation of decimal data in mainframes",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_PackedDecimal",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": -7.2727272727272725,
+                            "roadblocks": 23.0,
+                            "cloudEffort": 1380,
+                            "files": [
+                                "AS400\\COBOL_examples\\CallingExample\\QCBLLESRC\\CALLER.CBLLE",
+                                "AS400\\COBOL_examples\\CallingExample\\QCBLLESRC\\HERON.CBLLE",
+                                "AS400\\COBOL_examples\\CallingExample\\QCBLLESRC\\NESTEDCALL.CBLLE",
+                                "AS400\\COBOL_examples\\PictureClause\\QCBLLESRC\\PICTURE1.CBLLE"
+                            ],
+                            "triggered": true
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Binary",
+                                "display": "Code Execution : Avoid using binary data type in mainframes",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Binary",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": -7.2727272727272725,
+                            "roadblocks": 29.0,
+                            "cloudEffort": 1740,
+                            "files": [
+                                "OpenCobol\\SQLite\\Hello_SQLITE.cbl",
+                                "OpenCobol\\Games\\raylib\\core_random_values.cbl",
+                                "OpenCobol\\Games\\raylib\\core_basic_window.cbl",
+                                "AS400\\COBOL_examples\\PictureClause\\QCBLLESRC\\PICTURE2.CBLLE",
+                                "AS400\\QCBLLESRC\\DUMP_FULL.CBLLE"
+                            ],
+                            "triggered": true
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_CAPanvaletCommand",
+                                "display": "Code Execution : Avoid using CA Panvalet Command in mainframes specific of Z/OS",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_CAPanvaletCommand",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "High",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 4.232804232804233,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_DLICalls",
+                                "display": "Execution Environment : Avoid using DL/I Calls",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_DLICalls",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "High",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 4.232804232804233,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_DoubleByteCharacter",
+                                "display": "Code Execution : Avoid using Double Byte character in mainframes",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_DoubleByteCharacter",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 4.232804232804233,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_GOTO_statement",
+                                "display": "Code Execution : Avoid using GOTO statements in mainframes",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_GOTO_statement",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "High",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": -7.2727272727272725,
+                            "roadblocks": 8.0,
+                            "cloudEffort": 480,
+                            "files": [
+                                "AS400\\QCBLLESRC\\STAPOR.CBLLE",
+                                "AS400\\QCBLLESRC\\STAOBR_2.CBLLE"
+                            ],
+                            "triggered": true
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_DecimalPointComma",
+                                "display": "Code Execution : Avoid using DECIMAL POINT IS A COMMA clause in mainframes specific to Z/OS",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_DecimalPointComma",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 4.232804232804233,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_CurrencySign",
+                                "display": "Code Execution : Avoid using CURRENCY SIGN clause in mainframes specific to Z/OS",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_CurrencySign",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": -7.2727272727272725,
+                            "roadblocks": 1.0,
+                            "cloudEffort": 60,
+                            "files": [
+                                "AS400\\COBOL_examples\\PictureClause\\QCBLLESRC\\PICTURE3.CBLLE"
+                            ],
+                            "triggered": true
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_OccurClause",
+                                "display": "Execution Environment : Avoid using OCCURS clause in mainframes",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_OccurClause",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": -7.2727272727272725,
+                            "roadblocks": 12.0,
+                            "cloudEffort": 720,
+                            "files": [
+                                "OpenCobol\\SQLite\\Hello_SQLITE.cbl",
+                                "OpenCobol\\Random\\RandomBingo.cbl",
+                                "AS400\\QCBLLESRC\\TABULKY2.CBLLE",
+                                "OpenCobol\\Sort\\InsertSort.cbl",
+                                "AS400\\COBOL_examples\\PictureClause\\QCBLLESRC\\PICTURE4.CBLLE",
+                                "OpenCobol\\Sort\\SelectSort.cbl",
+                                "AS400\\QCBLLESRC\\TABULKY1.CBLLE",
+                                "OpenCobol\\Struct\\Struct.cbl",
+                                "OpenCobol\\Sort\\BubbleSort.cbl"
+                            ],
+                            "triggered": true
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_RedefinesClause",
+                                "display": "Execution Environment : Avoid using REDEFINES clause in mainframes",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_RedefinesClause",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": -7.2727272727272725,
+                            "roadblocks": 1.0,
+                            "cloudEffort": 60,
+                            "files": [
+                                "AS400\\QCBLLESRC\\TABULKY1.CBLLE"
+                            ],
+                            "triggered": true
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_DummyTable",
+                                "display": "Code Execution : Avoid using the SYSIBM.SYSDUMMY1 dummy table in mainframes",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_DummyTable",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 4.232804232804233,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        }
+                    ]
+                }
+            ],
+            "customIndicators": [
+                {
+                    "metricId": 10023356,
+                    "value": "0.30303030303030304"
+                },
+                {
+                    "metricId": 10006001,
+                    "value": "0.3191489361702128"
+                },
+                {
+                    "metricId": 10013600,
+                    "value": "0.8666666666666667"
+                }
+            ],
+            "technologies": [
+                {
+                    "technology": "Cobol",
+                    "totalLinesOfCode": 886,
+                    "totalFiles": 49,
+                    "softwareAgility": 0.7171943187713623,
+                    "softwareElegance": 1.0,
+                    "softwareResiliency": 0.8268831968307495,
+                    "softwareHealth": 0.8480258385340372,
+                    "softwareAgilityDetail": {
+                        "highLinesOfCode": 265,
+                        "mediumLinesOfCode": 601,
+                        "lowLinesOfCode": 20
+                    },
+                    "softwareEleganceDetail": {
+                        "highLinesOfCode": 886,
+                        "mediumLinesOfCode": 0,
+                        "lowLinesOfCode": 0
+                    },
+                    "softwareResiliencyDetail": {
+                        "highLinesOfCode": 624,
+                        "mediumLinesOfCode": 262,
+                        "lowLinesOfCode": 0
+                    },
+                    "softwareHealthDetail": {
+                        "highLinesOfCode": 591,
+                        "mediumLinesOfCode": 287,
+                        "lowLinesOfCode": 6
+                    }
+                }
+            ],
+            "components": []
+        }
+    ],
+    "surveys": [
+        {
+            "id": 4,
+            "ref": "CAST_BI",
+            "name": "Business Impact",
+            "questions": [
+                {
+                    "label": "What is the average number of FTE (Full Time Equivalent) resources that have worked on the source code for this application over the last 12 months?",
+                    "shortLabel": "",
+                    "value": "50.0",
+                    "questionId": 1000011
+                },
+                {
+                    "label": "Is this application aligned with the company's future technology direction?",
+                    "shortLabel": "",
+                    "value": "Yes",
+                    "questionId": 1000009,
+                    "choiceId": 1000042
+                },
+                {
+                    "label": "The number of major releases delivered over the last 12 months for this application?",
+                    "shortLabel": "",
+                    "value": "4 to 6",
+                    "questionId": 1000006,
+                    "choiceId": 1000453
+                },
+                {
+                    "label": "Could failure of this application lead to loss of customer confidence? Please define the level of impact.",
+                    "value": "Low",
+                    "questionId": 1000022,
+                    "choiceId": 1000220
+                },
+                {
+                    "label": "Could failure of this application lead to harm of the company's public image? Please define the level of impact.",
+                    "value": "High",
+                    "questionId": 1000021,
+                    "choiceId": 1000002
+                },
+                {
+                    "label": "Could failure of this application lead to loss of revenue or business opportunity? Please define the level of impact.",
+                    "value": "Medium",
+                    "questionId": 1000020,
+                    "choiceId": 1000407
+                },
+                {
+                    "label": "Could failure of this application lead to disruption? Please define the level of impact.",
+                    "value": "Medium",
+                    "questionId": 1000019,
+                    "choiceId": 1000193
+                },
+                {
+                    "label": "What is the approximate number of end users for this application?",
+                    "shortLabel": "",
+                    "value": "100 to 500",
+                    "questionId": 1000018,
+                    "choiceId": 1000396
+                },
+                {
+                    "label": "Does the application serve internal or external users?",
+                    "value": "Internal users or business processes",
+                    "questionId": 1000017,
+                    "choiceId": 1000204
+                }
+            ]
+        },
+        {
+            "id": 373,
+            "ref": "CAST_APP",
+            "name": "Application Properties",
+            "questions": [
+                {
+                    "label": "What is the application type?",
+                    "shortLabel": "",
+                    "value": "Data Mining and Business Intelligence",
+                    "questionId": 1000004,
+                    "choiceId": 1000431
+                },
+                {
+                    "label": "Application Owner's name",
+                    "value": "G Money",
+                    "questionId": 1000002
+                },
+                {
+                    "label": "Is this application a custom application or a Commercial Off The Shelf product?",
+                    "shortLabel": "",
+                    "value": "Custom Application",
+                    "questionId": 1000427,
+                    "choiceId": 1000529
+                },
+                {
+                    "label": "In what year was this application first put into production?",
+                    "shortLabel": "",
+                    "value": "1990",
+                    "questionId": 1000033
+                }
+            ]
+        },
+        {
+            "id": 2393,
+            "name": "Application Links",
+            "questions": [
+                {
+                    "label": "FTP Connection",
+                    "shortLabel": "FTP links",
+                    "value": "1593697172264,2,3",
+                    "questionId": 10012400
+                },
+                {
+                    "label": "SOAP Connection",
+                    "shortLabel": "SOAP links",
+                    "value": "1593697172264,2,3",
+                    "questionId": 10012401
+                },
+                {
+                    "label": "API Connection",
+                    "shortLabel": "API links",
+                    "value": "1593697172264,2,3",
+                    "questionId": 10012402
+                }
+            ]
+        },
+        {
+            "id": 938,
+            "ref": "CAST_CLOUD",
+            "name": "Cloud Readiness Assessment",
+            "questions": [
+                {
+                    "label": "[Business Drivers] Does this application correspond to a specific workload?",
+                    "shortLabel": "",
+                    "value": "Big Data",
+                    "questionId": 10000901,
+                    "choiceId": 10006805
+                },
+                {
+                    "label": "[Technical Enablers] Does this application depend on other services or applications?",
+                    "shortLabel": "",
+                    "value": "Internal services not exposed",
+                    "questionId": 10000808,
+                    "choiceId": 10006732
+                },
+                {
+                    "label": "[Technical Enablers] What is the database provider for this application?",
+                    "shortLabel": "",
+                    "value": "Proprietary but deployable in the Cloud (IaaS)",
+                    "questionId": 10000809,
+                    "choiceId": 10006736
+                },
+                {
+                    "label": "[Process Maturity] What is the average skill on Cloud technologies and practices within the development team for this application?",
+                    "shortLabel": "",
+                    "value": "Basic knowledge",
+                    "questionId": 10000810,
+                    "choiceId": 10006739
+                },
+                {
+                    "label": "[Business Drivers] What is the current (or expected) Service Level Agreement for this application?",
+                    "shortLabel": "",
+                    "value": "SLA with maintenance timeframe",
+                    "questionId": 10000811,
+                    "choiceId": 10006743
+                },
+                {
+                    "label": "[Process Maturity] What is the evolution model and feedback loop approach for this application?",
+                    "shortLabel": "",
+                    "value": "Waterfall",
+                    "questionId": 10000800,
+                    "choiceId": 10006700
+                },
+                {
+                    "label": "[Technical Enablers] What is the current deployment platform for this application?",
+                    "shortLabel": "",
+                    "value": "Back-End application",
+                    "questionId": 10000801,
+                    "choiceId": 10006708
+                },
+                {
+                    "label": "[Technical Enablers] What is the current user authentication mechanism used by this application?",
+                    "shortLabel": "",
+                    "value": "Login/Password authentication",
+                    "questionId": 10000802,
+                    "choiceId": 10006711
+                },
+                {
+                    "label": "[Technical Enablers]  How is this application exposed to external services/applications?",
+                    "shortLabel": "",
+                    "value": "API non exposed on a network protocol",
+                    "questionId": 10000803,
+                    "choiceId": 10007800
+                },
+                {
+                    "label": "[Business Drivers] How is data consumed from this application?",
+                    "shortLabel": "",
+                    "value": "Data Analytics",
+                    "questionId": 10000805,
+                    "choiceId": 10006721
+                },
+                {
+                    "label": "[Process Maturity] What is the level of deployment process automation for provisioning and configuration for this application?",
+                    "shortLabel": "",
+                    "value": "No automation",
+                    "questionId": 10000806,
+                    "choiceId": 10006723
+                },
+                {
+                    "label": "[Technical Enablers] Is this application multi-tenant?",
+                    "shortLabel": "",
+                    "value": "No (single-tenant)",
+                    "questionId": 10000807,
+                    "choiceId": 10006726
+                }
+            ]
+        }
+    ],
+    "tags": [
+        {
+            "id": 3100,
+            "label": "Cobol Cloud Patterns"
+        }
+    ]
+}

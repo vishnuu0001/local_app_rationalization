@@ -1,0 +1,976 @@
+[
+    {
+        "id": 153,
+        "override": false,
+        "segmentationGroupRef": "",
+        "name": "Portfolio Advisor for VMware Departure",
+        "description": "Automatically build a roadmap for migrating applications from VMware virtual machines to an optimal deployment on the cloud and identify the recommended path.",
+        "segments": [
+            {
+                "id": 717,
+                "segmentGroupId": 153,
+                "segmentRef": "_seg_1",
+                "name": "Cloud-based VM",
+                "description": "A recommendation to move the application to a cloud-based virtual machine using Infrastructure as a Service (IaaS).",
+                "color": "#4A3749",
+                "matchingRules": [
+                    {
+                        "description": "High Business Impact",
+                        "formula": "BI > 75",
+                        "points": 10
+                    },
+                    {
+                        "description": "Low CloudReady score",
+                        "formula": "CloudScan < 64",
+                        "points": 10
+                    },
+                    {
+                        "description": "Medium/High Software Health",
+                        "formula": "Health > 53",
+                        "points": 10
+                    },
+                    {
+                        "description": "Medium/High Open Source Safety score",
+                        "formula": "OSS > 63 and OSS < 81 and OSS_Cve < 2",
+                        "points": 10
+                    },
+                    {
+                        "description": "High Software Complexity (low Software Elegance)",
+                        "formula": "Elegance < 40",
+                        "points": 15
+                    }
+                ]
+            },
+            {
+                "id": 718,
+                "segmentGroupId": 153,
+                "segmentRef": "_seg_2",
+                "name": "Containerize",
+                "description": "A recommendation to perform modest modifications of the application code without changing the architecture or functionality so that it can be deployed on the cloud in a container using Container as a Service (CaaS) or using Platform as a Service (PaaS).",
+                "color": "#A7C3F7",
+                "matchingRules": [
+                    {
+                        "description": "High Business Impact",
+                        "formula": "BI > 75",
+                        "points": 20
+                    },
+                    {
+                        "description": "High CloudReady score",
+                        "formula": "CloudScan > 64",
+                        "points": 10
+                    },
+                    {
+                        "description": "High Software Health",
+                        "formula": "Health > 75",
+                        "points": 10
+                    },
+                    {
+                        "description": "High Open Source Safety score",
+                        "formula": "OSS > 81",
+                        "points": 10
+                    },
+                    {
+                        "description": "Medium/Low Software Complexity (medium/high Software Elegance)",
+                        "formula": "Elegance > 40",
+                        "points": 10
+                    }
+                ]
+            },
+            {
+                "id": 719,
+                "segmentGroupId": 153,
+                "segmentRef": "_seg_3",
+                "name": "Rearchitect",
+                "description": "A recommendation to dramatically modify the application code thereby altering the architecture to improve the health of the application and enable it to be deployed in the cloud using Platform as a Service (PaaS) or deployed serverless using Function as a Service (FaaS).",
+                "color": "#276FF3",
+                "matchingRules": [
+                    {
+                        "description": "High Business Impact",
+                        "formula": "BI > 75",
+                        "points": 9
+                    },
+                    {
+                        "description": "Low Software Health",
+                        "formula": "Health < 53",
+                        "points": 10
+                    },
+                    {
+                        "description": "High Software Complexity (low Software Elegance)",
+                        "formula": "Elegance < 40",
+                        "points": 10
+                    },
+                    {
+                        "description": "Medium CloudReady score",
+                        "formula": "CloudScan > 64 and CloudScan < 75",
+                        "points": 10
+                    },
+                    {
+                        "description": "Low Open Source Safety score",
+                        "formula": "OSS < 63",
+                        "points": 10
+                    }
+                ]
+            },
+            {
+                "id": 720,
+                "segmentGroupId": 153,
+                "segmentRef": "_seg_4",
+                "name": "Rebuild",
+                "description": "A recommendation to discard the code of the application and develop it again in the cloud using Platform as a Service (PaaS) or serverless using Function as a Service (FaaS).",
+                "color": "#0B378A",
+                "matchingRules": [
+                    {
+                        "description": "Medium Business Impact",
+                        "formula": "BI > 30 and BI < 75",
+                        "points": 10
+                    },
+                    {
+                        "description": "Low Software Health",
+                        "formula": "Health < 53",
+                        "points": 11
+                    },
+                    {
+                        "description": "Low CloudReady score",
+                        "formula": "CloudScan < 64",
+                        "points": 11
+                    }
+                ]
+            },
+            {
+                "id": 721,
+                "segmentGroupId": 153,
+                "segmentRef": "_seg_5",
+                "name": "Retire",
+                "description": "A recommendation to discard the application altogether or potentially replace it with a commercial Software as a Service (SaaS) alternative.",
+                "color": "#CE2D2D",
+                "matchingRules": [
+                    {
+                        "description": "Low Business Impact",
+                        "formula": "BI < 30",
+                        "points": 10
+                    },
+                    {
+                        "description": "Low CloudReady score",
+                        "formula": "CloudScan < 64",
+                        "points": 9
+                    },
+                    {
+                        "description": "Low Software Health",
+                        "formula": "Health < 53",
+                        "points": 12
+                    }
+                ]
+            }
+        ],
+        "segmentationStatus": "production",
+        "castSegmentation": false
+    },
+    {
+        "id": 1,
+        "override": false,
+        "segmentationGroupRef": "Cloud5R",
+        "name": "Portfolio Advisor for Cloud",
+        "description": "Dramatically speed up the time for developing a cloud migration portfolio roadmap with automatic recommendations on how to segment applications into different migration categories such as: Rehost, Refactor, Retire, etc. CAST Highlight includes the innovative Portfolio Advisor for Cloud, a dedicated portfolio-level report that automatically recommends migration segments for each application.",
+        "displayConfiguration": {
+            "x": "cloudReady",
+            "y": "softwareHealth",
+            "z": "cloudEffort",
+            "tableIndicators": [
+                "cloudReady",
+                "cloudAlertCounter",
+                "cloudEffort",
+                "openSourceSafety"
+            ]
+        },
+        "segments": [
+            {
+                "id": 1,
+                "segmentGroupId": 1,
+                "segmentRef": "Cloud5R_Seg2",
+                "name": "Rehost",
+                "description": "A recommendation to change the infrastructure configuration of the application in order to \u201cLift & Shift\u201d it to the cloud using Infrastructure as a Service (IaaS).",
+                "color": "#03CEA4",
+                "matchingRules": [
+                    {
+                        "description": "High Business Impact",
+                        "formula": "BI > 75",
+                        "points": 10
+                    },
+                    {
+                        "description": "Low Cloud Maturity score",
+                        "formula": "CloudScan < 64",
+                        "points": 10
+                    },
+                    {
+                        "description": "Medium/High Software Health",
+                        "formula": "Health > 53",
+                        "points": 10
+                    },
+                    {
+                        "description": "Medium/High Open Source Safety score",
+                        "formula": "OSS > 63 and OSS < 81 and OSS_Cve < 2",
+                        "points": 10
+                    },
+                    {
+                        "description": "High Software Complexity (low Software Elegance)",
+                        "formula": "Elegance < 40",
+                        "points": 15
+                    },
+                    {
+                        "description": "Current state is On-premise",
+                        "formula": "CloudSurvey =is= notnull and QUESTION_REF_CAST_CLOUD_CURRENTSTATE =in= (CAST_CLOUD_CURRENTSTATE:ON_PREM)",
+                        "points": 20
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "segmentGroupId": 1,
+                "segmentRef": "Cloud5R_Seg1",
+                "name": "Refactor",
+                "description": "A recommendation to perform modest modifications of the application code without changing the architecture or functionality so that it can be migrated to the cloud in a container using Container as a Service (CaaS) or using Platform as a Service (PaaS).",
+                "color": "#345995",
+                "matchingRules": [
+                    {
+                        "description": "High Business Impact",
+                        "formula": "BI > 75 and CloudScan =is= notnull",
+                        "points": 20
+                    },
+                    {
+                        "description": "High Cloud Maturity score",
+                        "formula": "CloudScan > 64",
+                        "points": 10
+                    },
+                    {
+                        "description": "High Software Health",
+                        "formula": "Health > 75",
+                        "points": 10
+                    },
+                    {
+                        "description": "High Open Source Safety score",
+                        "formula": "OSS > 81",
+                        "points": 10
+                    },
+                    {
+                        "description": "Medium/Low Software Complexity (medium/high Software Elegance)",
+                        "formula": "Elegance > 40",
+                        "points": 10
+                    },
+                    {
+                        "description": "Current state is not full Cloud",
+                        "formula": "CloudSurvey =is= notnull and QUESTION_REF_CAST_CLOUD_CURRENTSTATE =in= (CAST_CLOUD_CURRENTSTATE:ON_PREM, CAST_CLOUD_CURRENTSTATE:HYBRID)",
+                        "points": 20
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "segmentGroupId": 1,
+                "segmentRef": "Cloud5R_Seg3",
+                "name": "Rearchitect",
+                "description": "A recommendation to dramatically modify the application code thereby altering the architecture to improve the health of the application and enable it to be migrated to the cloud using Platform as a Service (PaaS) or deployed serverless using Function as a Service (FaaS).",
+                "color": "#F4B333",
+                "matchingRules": [
+                    {
+                        "description": "High Business Impact and CloudScan =is= notnull",
+                        "formula": "BI > 75",
+                        "points": 9
+                    },
+                    {
+                        "description": "Low Software Health",
+                        "formula": "Health < 53",
+                        "points": 10
+                    },
+                    {
+                        "description": "High Software Complexity (low Software Elegance)",
+                        "formula": "Elegance < 40",
+                        "points": 10
+                    },
+                    {
+                        "description": "Medium Cloud Maturity score",
+                        "formula": "CloudScan > 64 and CloudScan < 75",
+                        "points": 10
+                    },
+                    {
+                        "description": "Low Open Source Safety score",
+                        "formula": "OSS < 63",
+                        "points": 10
+                    },
+                    {
+                        "description": "Current state is not full Cloud",
+                        "formula": "CloudSurvey =is= notnull and QUESTION_REF_CAST_CLOUD_CURRENTSTATE =in= (CAST_CLOUD_CURRENTSTATE:ON_PREM, CAST_CLOUD_CURRENTSTATE:HYBRID)",
+                        "points": 20
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "segmentGroupId": 1,
+                "segmentRef": "Cloud5R_Seg4",
+                "name": "Rebuild",
+                "description": "A recommendation to discard the code of the application and develop it again in the cloud using Platform as a Service (PaaS) or serverless using Function as a Service (FaaS).",
+                "color": "#5B3A63",
+                "matchingRules": [
+                    {
+                        "description": "Medium Business Impact",
+                        "formula": "BI > 30 and BI < 75",
+                        "points": 10
+                    },
+                    {
+                        "description": "Low Software Health",
+                        "formula": "Health < 53",
+                        "points": 11
+                    },
+                    {
+                        "description": "Low Cloud Maturity score",
+                        "formula": "CloudScan < 64",
+                        "points": 11
+                    },
+                    {
+                        "description": "Current state is On-Premise",
+                        "formula": "CloudSurvey =is= notnull and QUESTION_REF_CAST_CLOUD_CURRENTSTATE =in= (CAST_CLOUD_CURRENTSTATE:ON_PREM)",
+                        "points": 20
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "segmentGroupId": 1,
+                "segmentRef": "Cloud5R_Seg5",
+                "name": "Retire",
+                "description": "A recommendation to discard the application altogether or potentially replace it with a commercial Software as a Service (SaaS) alternative.",
+                "color": "#E40066",
+                "matchingRules": [
+                    {
+                        "description": "Low Business Impact",
+                        "formula": "BI < 30",
+                        "points": 10
+                    },
+                    {
+                        "description": "Low Cloud Maturity score",
+                        "formula": "CloudScan < 64",
+                        "points": 9
+                    },
+                    {
+                        "description": "Low Software Health",
+                        "formula": "Health < 53",
+                        "points": 12
+                    },
+                    {
+                        "description": "Current state is On-Premise",
+                        "formula": "CloudSurvey =is= notnull and QUESTION_REF_CAST_CLOUD_CURRENTSTATE =in= (CAST_CLOUD_CURRENTSTATE:ON_PREM)",
+                        "points": 20
+                    }
+                ]
+            }
+        ],
+        "segmentationStatus": "production",
+        "castSegmentation": true
+    },
+    {
+        "id": 2,
+        "override": false,
+        "segmentationGroupRef": "OpenSource5R",
+        "name": "Portfolio Advisor for Open Source",
+        "description": "The CAST Highlight Portfolio Advisor for Open Source is a dedicated portfolio-level report that automatically recommends priority actions for each application. Rapidly prioritize the applications with Open Source components that should be remediated based on the application context and get automatic recommendations that identify the actions to take such as: Fix Vulnerabilities, Upgrade Components, Evaluate Legal Risk, etc.",
+        "displayConfiguration": {
+            "x": "openSourceSafety",
+            "y": "businessValue",
+            "z": "openSourceCVE",
+            "tableIndicators": [
+                "openSourceSafety",
+                "openSourceLicense",
+                "openSourceObsolescence",
+                "openSourceCVE"
+            ]
+        },
+        "segments": [
+            {
+                "id": 6,
+                "segmentGroupId": 2,
+                "segmentRef": "OpenSource5R_Seg1",
+                "name": "Immediate Attention",
+                "description": "Critical applications with mutliple types of 3rd party component risk (security, legal, operational).",
+                "color": "#E40066",
+                "matchingRules": [
+                    {
+                        "description": "High Business Impact",
+                        "formula": "BI > 75 and OSS < 100",
+                        "points": 10
+                    },
+                    {
+                        "description": "Low Open Source Safety score",
+                        "formula": "OSS < 50",
+                        "points": 10
+                    }
+                ]
+            },
+            {
+                "id": 7,
+                "segmentGroupId": 2,
+                "segmentRef": "OpenSource5R_Seg2",
+                "name": "Fix Vulnerabilities",
+                "description": "Critical applications with severe security vulnerabilities.",
+                "color": "#333333",
+                "matchingRules": [
+                    {
+                        "description": "High Business Impact",
+                        "formula": "BI > 75 and OSS < 100",
+                        "points": 10
+                    },
+                    {
+                        "description": "Low OSS Security score",
+                        "formula": "OSS_cve < 50 and OSS_cve =is= notnull",
+                        "points": 10
+                    }
+                ]
+            },
+            {
+                "id": 8,
+                "segmentGroupId": 2,
+                "segmentRef": "OpenSource5R_Seg3",
+                "name": "Evaluate Legal Risk",
+                "description": "Critical applications with risky 3rd party component licenses.",
+                "color": "#F4B333",
+                "matchingRules": [
+                    {
+                        "description": "High Business Impact",
+                        "formula": "BI > 75 and OSS < 100",
+                        "points": 10
+                    },
+                    {
+                        "description": "Low OSS License score",
+                        "formula": "OSS_license < 70 and OSS_license =is= notnull",
+                        "points": 10
+                    }
+                ]
+            },
+            {
+                "id": 9,
+                "segmentGroupId": 2,
+                "segmentRef": "OpenSource5R_Seg4",
+                "name": "Upgrade Components",
+                "description": "Critical applications with out of date 3rd party components.",
+                "color": "#345995",
+                "matchingRules": [
+                    {
+                        "description": "High Business Impact",
+                        "formula": "BI > 75 and OSS < 100",
+                        "points": 10
+                    },
+                    {
+                        "description": "Low OSS Obsolescence score",
+                        "formula": "OSS_obsolescence < 60 and OSS_obsolescence =is= notnull",
+                        "points": 10
+                    }
+                ]
+            },
+            {
+                "id": 10,
+                "segmentGroupId": 2,
+                "segmentRef": "OpenSource5R_Seg5",
+                "name": "Consider Alternate Components",
+                "description": "Less impactful applications with one or more 3rd party component risks.",
+                "color": "#5B3A63",
+                "matchingRules": [
+                    {
+                        "description": "Medium or High Business Impact",
+                        "formula": "BI > 50 and BI < 75 and OSS < 100",
+                        "points": 10
+                    },
+                    {
+                        "description": "Low Open Source Safety",
+                        "formula": "OSS < 50 and OSS =is= notnull",
+                        "points": 10
+                    }
+                ]
+            },
+            {
+                "id": 11,
+                "segmentGroupId": 2,
+                "segmentRef": "OpenSource5R_Seg6",
+                "name": "Role Models",
+                "description": "Applications that are using safer 3rd party components.",
+                "color": "#03CEA4",
+                "matchingRules": [
+                    {
+                        "description": "High Open Source Safety",
+                        "formula": "OSS > 95 and OSS < 100 and OSS =is= notnull",
+                        "points": 10
+                    }
+                ]
+            }
+        ],
+        "segmentationStatus": "production",
+        "castSegmentation": true
+    },
+    {
+        "id": 269,
+        "override": false,
+        "segmentationGroupRef": "TechDebt",
+        "name": "Portfolio Advisor for Technical Debt",
+        "description": "Identify and prioritize Technical Debt mitigation effort across your portfolio, whether it comes from the code, obsolete technologies, or aging third-party OSS components. Note: For optimal results, ensure you submitted the Business Impact survey and used recent versions of CAST Highlight to scan applications.",
+        "displayConfiguration": {
+            "x": "openSourceObsolescence",
+            "y": "businessValue",
+            "z": "technicalDebt",
+            "tableIndicators": null
+        },
+        "segments": [
+            {
+                "id": 1236,
+                "segmentGroupId": 269,
+                "segmentRef": "TechDebt_seg_1",
+                "name": "Top Priorities (Bad Debt)",
+                "description": "Business-critical applications with severely high tech debt",
+                "color": "#E40066",
+                "matchingRules": [
+                    {
+                        "description": "High Business Impact and High TechDebt density or High BI and Low Obsolescence or High BI and deprecated technologies",
+                        "formula": "BI >= 50 and TechDebtDensity >= 1 and OSS_obsolescence < 50 and (appData < '{\"name\": \"JDK\", \"version\":\"17\"}' or appData < '{\"name\": \"Springboot\", \"version\":\"3.3\"}' or appData <= '{\"name\": \".NET\", \"version\":\"7\"}' or appData <= '{\"name\": \".NET core\", \"version\":\"3.1\"}' or appData < '{\"name\": \".NET standard\", \"version\":\"2.0\"}' or appData < '{\"name\": \".NET framework\", \"version\":\"999\"}' or appData <= '{\"name\": \"ASP.NET\", \"version\":\"4.7.2\"}')",
+                        "points": 10
+                    }
+                ]
+            },
+            {
+                "id": 1237,
+                "segmentGroupId": 269,
+                "segmentRef": "TechDebt_seg_2",
+                "name": "Low Software Health",
+                "description": "Business-critical applications with resiliency, agility, complexity issues.",
+                "color": "#5B3A63",
+                "matchingRules": [
+                    {
+                        "description": "High Business Impact and low Software Health",
+                        "formula": "BI >= 50 and Health < 50",
+                        "points": 20
+                    }
+                ]
+            },
+            {
+                "id": 1238,
+                "segmentGroupId": 269,
+                "segmentRef": "TechDebt_seg_3",
+                "name": "Obsolete Technology Versions",
+                "description": "Business-critical applications with old versions of technologies.",
+                "color": "#F4B333",
+                "matchingRules": [
+                    {
+                        "description": "High Business Impact and Obsolete technology versions",
+                        "formula": "BI >= 50 and (appData < '{\"name\": \"JDK\", \"version\":\"17\"}' or appData < '{\"name\": \"Springboot\", \"version\":\"3.3\"}' or appData <= '{\"name\": \".NET\", \"version\":\"7\"}' or appData <= '{\"name\": \".NET core\", \"version\":\"3.1\"}' or appData < '{\"name\": \".NET standard\", \"version\":\"2.0\"}' or appData < '{\"name\": \".NET framework\", \"version\":\"999\"}' or appData <= '{\"name\": \"ASP.NET\", \"version\":\"4.7.2\"}')",
+                        "points": 9
+                    }
+                ]
+            },
+            {
+                "id": 1239,
+                "segmentGroupId": 269,
+                "segmentRef": "TechDebt_seg_4",
+                "name": "Outdated Open Source",
+                "description": "Business-critical applications with old versions of open-source components.",
+                "color": "#345995",
+                "matchingRules": [
+                    {
+                        "description": "High Business Impact and low Obsolescence score",
+                        "formula": "BI >= 50 and OSS_obsolescence <= 50",
+                        "points": 10
+                    }
+                ]
+            },
+            {
+                "id": 1240,
+                "segmentGroupId": 269,
+                "segmentRef": "TechDebt_seg_5",
+                "name": "Acceptable (Good Debt)",
+                "description": "Less business-critical applications with low tech debt.",
+                "color": "#03CEA4",
+                "matchingRules": [
+                    {
+                        "description": "Low Business Impact, Low Tech Debt Density, Low Obsolescence, Up-to-date technologies",
+                        "formula": "BI < 50 and BI >= 0 and TechDebtDensity > 0 and TechDebtDensity < 1 and OSS_obsolescence > 50 and (appData >= '{\"name\": \"JDK\", \"version\":\"17\"}' or appData >= '{\"name\": \"Springboot\", \"version\":\"3.3\"}' or appData > '{\"name\": \".NET\", \"version\":\"7\"}' or appData > '{\"name\": \".NET core\", \"version\":\"3.1\"}' or appData >= '{\"name\": \".NET standard\", \"version\":\"2.0\"}' or appData >= '{\"name\": \".NET framework\", \"version\":\"999\"}' or appData > '{\"name\": \"ASP.NET\", \"version\":\"4.7.2\"}')",
+                        "points": 10
+                    }
+                ]
+            }
+        ],
+        "segmentationStatus": "draft",
+        "castSegmentation": true
+    },
+    {
+        "id": 63,
+        "override": false,
+        "segmentationGroupRef": "SoftwareMaintenance",
+        "name": "Portfolio Advisor for Software Maintenance",
+        "description": "Optimize costs across your application portfolio with this dedicated portfolio-level report that automatically recommends software maintenance actions. Instantly identify opportunities to optimize development resource allocation, improve team skills, reduce turnover, and gather deeper software intelligence insights.",
+        "displayConfiguration": {
+            "x": "maintenanceActualCost",
+            "y": "maintenanceEstimatedCost",
+            "z": "modifiedActualCodeSize",
+            "tableIndicators": [
+                "maintenanceActualCost",
+                "maintenanceEstimatedCost",
+                "modifiedActualCodeSize",
+                "softwareHealth"
+            ]
+        },
+        "segments": [
+            {
+                "id": 261,
+                "segmentGroupId": 63,
+                "segmentRef": "SoftwareMaintenance_seg_1",
+                "name": "Invest Resources",
+                "description": "Business critical applications that would benefit from more development resources (according to the COCOMO II model recommended maintenance effort).",
+                "color": "#F4B333",
+                "matchingRules": [
+                    {
+                        "description": "High Business Impact and Recorded Maintenance effort lower than Recommended Maintenance effort",
+                        "formula": "BI > 75 and MaintenanceRecorded < val_MaintenanceRecommended",
+                        "points": 10
+                    }
+                ]
+            },
+            {
+                "id": 262,
+                "segmentGroupId": 63,
+                "segmentRef": "SoftwareMaintenance_seg_2",
+                "name": "Reallocate Resources",
+                "description": "Less business critical applications that are healthy and may have more development resources than necessary (according to the COCOMO II model recommended maintenance effort).",
+                "color": "#98C1D9",
+                "matchingRules": [
+                    {
+                        "description": "Low Business Impact, High Software Health, Recommended Maintenance effort lower than Recorded Maintenance effort",
+                        "formula": "BI < 33 and Health > 75 and MaintenanceRecorded > val_MaintenanceRecommended",
+                        "points": 10
+                    }
+                ]
+            },
+            {
+                "id": 263,
+                "segmentGroupId": 63,
+                "segmentRef": "SoftwareMaintenance_seg_3",
+                "name": "Develop Team Skills",
+                "description": "Applications with lower Software Health and Open Source Safety scores where team members have less experience.",
+                "color": "#3D5A80",
+                "matchingRules": [
+                    {
+                        "description": "Low/Mid Software Health and Open Source Safety, Skill level < 1 year",
+                        "formula": "Health < 64 and OSS < 60 and QUESTION_REF_CAST_MAINT_DEVSKILL =in= (CAST_MAINT_DEVSKILL:LESS2MONTH,CAST_MAINT_DEVSKILL:6MONTH,CAST_MAINT_DEVSKILL:1YEAR)",
+                        "points": 11
+                    }
+                ]
+            },
+            {
+                "id": 264,
+                "segmentGroupId": 63,
+                "segmentRef": "SoftwareMaintenance_seg_4",
+                "name": "Reduce Turnover",
+                "description": "Business critical applications with development teams experiencing a high turnover rate, representing significant future risk.",
+                "color": "#EE6C4D",
+                "matchingRules": [
+                    {
+                        "description": "High Business Impact, Turnover > 25%",
+                        "formula": "BI > 75 and QUESTION_REF_CAST_MAINT_TURNOVER =in= (CAST_MAINT_TURNOVER:30PCT,CAST_MAINT_TURNOVER:25PCT)",
+                        "points": 10
+                    }
+                ]
+            },
+            {
+                "id": 265,
+                "segmentGroupId": 63,
+                "segmentRef": "SoftwareMaintenance_seg_5",
+                "name": "Get Deeper Software Intelligence",
+                "description": "Business critical applications with high complexity that require deeper insights using CAST Imaging to centralize application knowledge and better understand software interactions.",
+                "color": "#293241",
+                "matchingRules": [
+                    {
+                        "description": "High Business Impact, High complexity, Turnover > 25%, low/medium skills",
+                        "formula": "BI > 75 and Elegance < 54 and (QUESTION_REF_CAST_MAINT_TURNOVER =in= (CAST_MAINT_TURNOVER:30PCT,CAST_MAINT_TURNOVER:25PCT) or QUESTION_REF_CAST_MAINT_DEVSKILL =in= (CAST_MAINT_DEVSKILL:LESS2MONTH,CAST_MAINT_DEVSKILL:6MONTH,CAST_MAINT_DEVSKILL:1YEAR))",
+                        "points": 10
+                    }
+                ]
+            },
+            {
+                "id": 266,
+                "segmentGroupId": 63,
+                "segmentRef": "SoftwareMaintenance_seg_6",
+                "name": "Role Models",
+                "description": "Applications with high Software Health, high Open Source Safety, and appropriate allocation of resources (according to the COCOMO II model recommended maintenance effort).",
+                "color": "#03CEA4",
+                "matchingRules": [
+                    {
+                        "description": "High Software Health, High Open Source Safety, Recommended Maintenance lower than Recorded Maintenance",
+                        "formula": "Health > 74 and OSS > 83 and MaintenanceRecorded > val_MaintenanceRecommended and (QUESTION_REF_CAST_MAINT_DEVSKILL =in= (CAST_MAINT_DEVSKILL:3YEARS,CAST_MAINT_DEVSKILL:6YEARS) or QUESTION_REF_CAST_MAINT_TURNOVER =in= (CAST_MAINT_TURNOVER:3PCT,CAST_MAINT_TURNOVER:5PCT,CAST_MAINT_TURNOVER:10PCT))",
+                        "points": 10
+                    }
+                ]
+            }
+        ],
+        "segmentationStatus": "production",
+        "castSegmentation": true
+    },
+    {
+        "id": 270,
+        "override": false,
+        "segmentationGroupRef": "ObsoleteTech",
+        "name": "Portfolio Advisor for Obsolete Technologies",
+        "description": "Identify applications and prioritize technology upgrades to supported versions.",
+        "displayConfiguration": {
+            "x": "openSourceObsolescence",
+            "y": "businessValue",
+            "z": "technicalDebt",
+            "tableIndicators": null
+        },
+        "segments": [
+            {
+                "id": 1241,
+                "segmentGroupId": 270,
+                "segmentRef": "obsoletech_1",
+                "name": "Update First",
+                "description": "Business-critical applications with obsolete technology versions (e.g., Java, .NET, Spring Boot).",
+                "color": "#E40066",
+                "matchingRules": [
+                    {
+                        "description": "High Business Impact and obsolete technology versions",
+                        "formula": "BI >= 50 and (appData < '{\"name\": \"JDK\", \"version\":\"17\"}' or appData < '{\"name\": \"Springboot\", \"version\":\"3.3\"}' or appData <= '{\"name\": \".NET\", \"version\":\"7\"}' or appData <= '{\"name\": \".NET core\", \"version\":\"3.1\"}' or appData < '{\"name\": \".NET standard\", \"version\":\"2.0\"}' or appData < '{\"name\": \".NET framework\", \"version\":\"999\"}' or appData <= '{\"name\": \"ASP.NET\", \"version\":\"4.7.2\"}')",
+                        "points": 10
+                    }
+                ]
+            },
+            {
+                "id": 1242,
+                "segmentGroupId": 270,
+                "segmentRef": "obsoletech_2",
+                "name": "Update Next",
+                "description": "Less critical applications with obsolete technology versions.",
+                "color": "#5B3A63",
+                "matchingRules": [
+                    {
+                        "description": "Low Business Impact and obsolete technology versions",
+                        "formula": "BI < 50 and (appData < '{\"name\": \"JDK\", \"version\":\"17\"}' or appData < '{\"name\": \"Springboot\", \"version\":\"3.3\"}' or appData <= '{\"name\": \".NET\", \"version\":\"7\"}' or appData <= '{\"name\": \".NET core\", \"version\":\"3.1\"}' or appData < '{\"name\": \".NET standard\", \"version\":\"2.0\"}' or appData < '{\"name\": \".NET framework\", \"version\":\"999\"}' or appData <= '{\"name\": \"ASP.NET\", \"version\":\"4.7.2\"}')",
+                        "points": 20
+                    }
+                ]
+            },
+            {
+                "id": 1243,
+                "segmentGroupId": 270,
+                "segmentRef": "obsoletech_3",
+                "name": "Up-To-Date",
+                "description": "Applications using recent technology versions.",
+                "color": "#F4B333",
+                "matchingRules": [
+                    {
+                        "description": "Up-to-date technology versions",
+                        "formula": "appData >= '{\"name\": \"JDK\", \"version\":\"17\"}' or appData >= '{\"name\": \"Springboot\", \"version\":\"3.3\"}' or appData > '{\"name\": \".NET\", \"version\":\"7\"}' or appData > '{\"name\": \".NET core\", \"version\":\"3.1\"}' or appData >= '{\"name\": \".NET standard\", \"version\":\"2.0\"}' or appData >= '{\"name\": \".NET framework\", \"version\":\"999\"}' or appData > '{\"name\": \"ASP.NET\", \"version\":\"4.7.2\"}'",
+                        "points": 9
+                    }
+                ]
+            }
+        ],
+        "segmentationStatus": "draft",
+        "castSegmentation": true
+    },
+    {
+        "id": 98,
+        "override": false,
+        "segmentationGroupRef": "CloudWaves",
+        "name": "Cloud Migration Wave Advisor",
+        "description": "This dashboard recommends the sequence of applications to migrate to the cloud for optimal results. Recommendations are based on various insights such as the Business Impact of applications, Cloud Maturity score, estimated effort, and segment (rehost, refactor, rearchitect, etc.) as well as detected technologies. Note that the  applications in the Retire segment from the Portfolio Advisor for Cloud are NOT included in the Wave recommendations. For optimal recommendations, the Business Impact and Cloud Maturity surveys should be completed.",
+        "segments": [
+            {
+                "id": 431,
+                "segmentGroupId": 98,
+                "segmentRef": "CloudWaves_Wave1",
+                "name": "Wave 1 - Quick Wins",
+                "description": "Migrate now with minimal effort and risk.",
+                "color": "#96CAED",
+                "matchingRules": [
+                    {
+                        "description": "Low Business Impact and High Cloud maturity and Low Cloud Effort. Not in Rebuild, Rearchitect or Retire segments.     (10pts)",
+                        "formula": "BI =is= notnull and BI <= 50 and CloudScan =is= notnull and CloudMaturity > 50 and ((FTE <= 0 and CloudEstEffort < 'Math(5*60*8)') or (FTE > 0 and CloudEstEffort < 'Math(0.25*60*8*17.5*QUESTION_REF_CAST_BI_FTE)')) and Segment:Cloud5R =in= (Cloud5R_Seg1, Cloud5R_Seg2)",
+                        "points": 10
+                    },
+                    {
+                        "description": "Low Business Impact and High Cloud maturity and Low Cloud Effort in Rearchitect segment.     (5pts)",
+                        "formula": "BI =is= notnull and BI <= 50 and CloudScan =is= notnull and CloudMaturity > 50 and ((FTE <= 0 and CloudEstEffort < 'Math(5*60*8)') or (FTE > 0 and CloudEstEffort < 'Math(0.25*60*8*17.5*QUESTION_REF_CAST_BI_FTE)')) and Segment:Cloud5R =in= (Cloud5R_Seg3)",
+                        "points": 5
+                    },
+                    {
+                        "description": "Standalone application (no other applications depending on it). Not in Retire segment.     (3pts)",
+                        "formula": "QUESTION_REF_CAST_CLOUD_INTERACT =in= (CAST_CLOUD_INTERACT:STANDALONE) and Segment:Cloud5R =out= (Cloud5R_Seg5)",
+                        "points": 3
+                    },
+                    {
+                        "description": "No dependency (the current application doesn't depend on other applications). Not in Retire segment.     (3pts)",
+                        "formula": "QUESTION_REF_CAST_CLOUD_DEPENDENCY =in= (CAST_CLOUD_DEPENDENCY:NO_DEP) and Segment:Cloud5R =out= (Cloud5R_Seg5)",
+                        "points": 3
+                    }
+                ]
+            },
+            {
+                "id": 432,
+                "segmentGroupId": 98,
+                "segmentRef": "CloudWaves_Wave2",
+                "name": "Wave 2 - Core Cloud",
+                "description": "Migrate next while also modernizing.",
+                "color": "#2280BF",
+                "matchingRules": [
+                    {
+                        "description": "High Business Impact and High Cloud Maturity or High Cloud Maturity and Low Business Impact and High Cloud Effort. Not in Rebuild or Retire segments.     (10pts)",
+                        "formula": "Segment:Cloud5R =in= (Cloud5R_Seg1, Cloud5R_Seg2, Cloud5R_Seg3) and ((BI =is= notnull and BI > 50 and CloudMaturity =is= notnull and CloudMaturity > 50 ) or (BI =is= notnull and BI <= 50 and CloudScan =is= notnull and CloudMaturity > 50 and ((FTE <= 0 and CloudEstEffort >= 'Math(5*60*8)') or (FTE > 0 and CloudEstEffort >= 'Math(0.25*60*8*17.5*QUESTION_REF_CAST_BI_FTE)'))))",
+                        "points": 10
+                    }
+                ]
+            },
+            {
+                "id": 433,
+                "segmentGroupId": 98,
+                "segmentRef": "CloudWaves_Wave3",
+                "name": "Wave 3 - Long Term Bets",
+                "description": "Migrate and then modernize later.",
+                "color": "#185D8B",
+                "matchingRules": [
+                    {
+                        "description": "Low Cloud Maturity score or applications in Rebuild with High Cloud Maturity and High Business Impact. Not in Retire segment.     (10pts)",
+                        "formula": "(CloudMaturity =is= notnull and CloudMaturity <= 50 and Segment:Cloud5R =in= (Cloud5R_Seg1, Cloud5R_Seg2, Cloud5R_Seg3)) or (CloudMaturity =is= notnull and CloudMaturity > 50 and BI =is= notnull and BI > 50 and Segment:Cloud5R =in= (Cloud5R_Seg4) )",
+                        "points": 10
+                    }
+                ]
+            },
+            {
+                "id": 434,
+                "segmentGroupId": 98,
+                "segmentRef": "CloudWaves_Wave4",
+                "name": "Wave 4 - Pursue Later",
+                "description": "Modernize first and then migrate.",
+                "color": "#0C2F45",
+                "matchingRules": [
+                    {
+                        "description": "Applications in Rebuild with Low Business Impact or Low Cloud Maturity or Mainframe-SAP systems or applications not using a cloud compatible database. Not in Retire segment.     (20pts)",
+                        "formula": "(((CloudMaturity =is= notnull and CloudMaturity <= 50) or (BI =is= notnull and BI <= 50)) and Segment:Cloud5R =in= (Cloud5R_Seg4) ) or (technologies =in= (ASSEMBLY, COBOL, JCL, CICS, IMS, ABAP, PL1, DB2, CLIST, EGL, Easytrieve, RPG3, RPG4) or QUESTION_REF_CAST_CLOUD_DATAMODEL =in= (CAST_CLOUD_DATAMODEL:NOT_COMPATIBLE) and Segment:Cloud5R =in= (Cloud5R_Seg1, Cloud5R_Seg2, Cloud5R_Seg3, Cloud5R_Seg4))",
+                        "points": 20
+                    }
+                ]
+            },
+            {
+                "id": 435,
+                "segmentGroupId": 98,
+                "segmentRef": "CloudWaves_Wave5",
+                "name": "More assessment needed",
+                "description": "No Business Impact nor Cloud Maturity.",
+                "color": "#DDDDDD",
+                "matchingRules": [
+                    {
+                        "description": "No Business Impact or no Cloud Maturity score and not a Mainframe-SAP systems. Not in Retire segment.    (15pts)",
+                        "formula": "(BI =is= null or CloudMaturity =is= null) and Segment:Cloud5R =out= (Cloud5R_Seg5)",
+                        "points": 15
+                    }
+                ]
+            }
+        ],
+        "segmentationStatus": "production",
+        "castSegmentation": true
+    },
+    {
+        "id": 56,
+        "override": false,
+        "segmentationGroupRef": "Green5R",
+        "name": "Portfolio Advisor for Green",
+        "description": "The CAST Highlight Portfolio Advisor for Green is a dedicated portfolio-level report that automatically identifies opportunities to improve sustainability and Green Impact of applications across your portfolio. Rapidly prioritize the applications that should be remediated based on the application context and get automatic recommendations that identify Quick Wins, Longer Term Opportunities, and Role Models to use when planning your sustainability initiatives.",
+        "displayConfiguration": {
+            "x": "greenIndex",
+            "y": "greenEffort",
+            "z": "greenAlertCounter",
+            "tableIndicators": [
+                "greenIndex",
+                "greenIndexScan",
+                "greenAlertCounter",
+                "greenEffort"
+            ]
+        },
+        "segments": [
+            {
+                "id": 235,
+                "segmentGroupId": 56,
+                "segmentRef": "Green5R_Seg2",
+                "name": "Quick Wins",
+                "description": "Applications that represent the best opportunity to improve your Green Impact score with the least amount of effort.",
+                "color": "#429EA6",
+                "matchingRules": [
+                    {
+                        "description": "Low Green Impact score",
+                        "formula": "GreenImpact > 0 and GreenImpact < 65",
+                        "points": 10
+                    },
+                    {
+                        "description": "Low Green Effort",
+                        "formula": "GreenEffort < 4800",
+                        "points": 10
+                    }
+                ]
+            },
+            {
+                "id": 236,
+                "segmentGroupId": 56,
+                "segmentRef": "Green5R_Seg1",
+                "name": "Rising Stars",
+                "description": "Business critical applications that will require more effort to improve the Green Impact score but will be strategic for the organization for the foreseeable future.",
+                "color": "#254441",
+                "matchingRules": [
+                    {
+                        "description": "High Business Impact",
+                        "formula": "GreenImpact > 0 and BI > 75",
+                        "points": 10
+                    },
+                    {
+                        "description": "Low Green Impact score",
+                        "formula": "GreenImpact > 0 and GreenImpact < 65",
+                        "points": 10
+                    },
+                    {
+                        "description": "Medium Green Effort",
+                        "formula": "GreenEffort > 4800 and GreenEffort < 24000",
+                        "points": 10
+                    }
+                ]
+            },
+            {
+                "id": 237,
+                "segmentGroupId": 56,
+                "segmentRef": "Green5R_Seg3",
+                "name": "Role Models",
+                "description": "Applications that are already using environmentally friendly coding practices.",
+                "color": "#79BF00",
+                "matchingRules": [
+                    {
+                        "description": "High Green Impact score",
+                        "formula": "GreenImpact > 83",
+                        "points": 11
+                    }
+                ]
+            },
+            {
+                "id": 238,
+                "segmentGroupId": 56,
+                "segmentRef": "Green5R_Seg4",
+                "name": "Long-Term Investments",
+                "description": "Applications that have a low Green Impact score and will require significant effort to improve, but will have a strong payoff in the long run.",
+                "color": "#694966",
+                "matchingRules": [
+                    {
+                        "description": "Low Green Impact score",
+                        "formula": "GreenImpact > 0 and GreenImpact < 65",
+                        "points": 10
+                    },
+                    {
+                        "description": "High Green Effort",
+                        "formula": "GreenEffort > 24000",
+                        "points": 10
+                    }
+                ]
+            }
+        ],
+        "segmentationStatus": "production",
+        "castSegmentation": true
+    }
+]

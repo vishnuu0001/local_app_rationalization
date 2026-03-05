@@ -1,0 +1,420 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 605,
+                                            "application_name": "Enterprise Returns",
+                                            "counter": 4616.0,
+                                            "effort": 13848.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__SQL",
+                                    "detail": [
+                                        {
+                                            "application_id": 605,
+                                            "application_name": "Enterprise Returns",
+                                            "counter": 2.0,
+                                            "effort": 20.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__SimpleCompute",
+                                    "detail": [
+                                        {
+                                            "application_id": 605,
+                                            "application_name": "Enterprise Returns",
+                                            "counter": 3.0,
+                                            "effort": 3.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__ParaNameWithoutDot",
+                                    "detail": [
+                                        {
+                                            "application_id": 605,
+                                            "application_name": "Enterprise Returns",
+                                            "counter": 245.0,
+                                            "effort": 20.416668
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__NoCopyClause",
+                                    "detail": [
+                                        {
+                                            "application_id": 605,
+                                            "application_name": "Enterprise Returns",
+                                            "counter": 210.0,
+                                            "effort": 210.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__BadZone",
+                                    "detail": [
+                                        {
+                                            "application_id": 605,
+                                            "application_name": "Enterprise Returns",
+                                            "counter": 46.0,
+                                            "effort": 3.8333335
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__CuriousFilePb",
+                                    "detail": [
+                                        {
+                                            "application_id": 605,
+                                            "application_name": "Enterprise Returns",
+                                            "counter": 30.0,
+                                            "effort": 30.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__ProhibitedKeyword",
+                                    "detail": [
+                                        {
+                                            "application_id": 605,
+                                            "application_name": "Enterprise Returns",
+                                            "counter": 4128.0,
+                                            "effort": 20640.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__SeriousFilePb",
+                                    "detail": [
+                                        {
+                                            "application_id": 605,
+                                            "application_name": "Enterprise Returns",
+                                            "counter": 85.0,
+                                            "effort": 85.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__MissingDefault",
+                                    "detail": [
+                                        {
+                                            "application_id": 605,
+                                            "application_name": "Enterprise Returns",
+                                            "counter": 90.0,
+                                            "effort": 90.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__MissingEnd",
+                                    "detail": [
+                                        {
+                                            "application_id": 605,
+                                            "application_name": "Enterprise Returns",
+                                            "counter": 1258.0,
+                                            "effort": 1258.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__DuplicatedParaName",
+                                    "detail": [
+                                        {
+                                            "application_id": 605,
+                                            "application_name": "Enterprise Returns",
+                                            "counter": 27.0,
+                                            "effort": 4.5
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__BadInit",
+                                    "detail": [
+                                        {
+                                            "application_id": 605,
+                                            "application_name": "Enterprise Returns",
+                                            "counter": 300.0,
+                                            "effort": 300.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__BackPerform",
+                                    "detail": [
+                                        {
+                                            "application_id": 605,
+                                            "application_name": "Enterprise Returns",
+                                            "counter": 160.0,
+                                            "effort": 2400.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 605,
+                                            "application_name": "Enterprise Returns",
+                                            "counter": 669.0,
+                                            "effort": 55.750004
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__MultAffect",
+                                    "detail": [
+                                        {
+                                            "application_id": 605,
+                                            "application_name": "Enterprise Returns",
+                                            "counter": 5271.0,
+                                            "effort": 1757.0001
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 605,
+                                            "application_name": "Enterprise Returns",
+                                            "counter": 10702.803,
+                                            "effort": 10702.803
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__BadEndClauseAlign",
+                                    "detail": [
+                                        {
+                                            "application_id": 605,
+                                            "application_name": "Enterprise Returns",
+                                            "counter": 592.0,
+                                            "effort": 49.333336
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 605,
+                                            "application_name": "Enterprise Returns",
+                                            "counter": 36.0,
+                                            "effort": 360.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__NbFiles",
+                                    "detail": [
+                                        {
+                                            "application_id": 605,
+                                            "application_name": "Enterprise Returns",
+                                            "counter": 58.25,
+                                            "effort": 291.25
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 605,
+                                            "application_name": "Enterprise Returns",
+                                            "counter": 65.737144,
+                                            "effort": 328.68573
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__DONNEES",
+                                    "detail": [
+                                        {
+                                            "application_id": 605,
+                                            "application_name": "Enterprise Returns",
+                                            "counter": 4257.0,
+                                            "effort": 4257.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 605,
+                                            "application_name": "Enterprise Returns",
+                                            "counter": 17.622223,
+                                            "effort": 88.111115
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__ComplexConditions",
+                                    "detail": [
+                                        {
+                                            "application_id": 605,
+                                            "application_name": "Enterprise Returns",
+                                            "counter": 137.0,
+                                            "effort": 1370.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

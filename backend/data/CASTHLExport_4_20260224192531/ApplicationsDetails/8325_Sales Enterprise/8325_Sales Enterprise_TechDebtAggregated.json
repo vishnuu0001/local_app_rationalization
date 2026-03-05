@@ -1,0 +1,540 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "OBJCCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 8325,
+                                            "application_name": "Sales Enterprise",
+                                            "counter": 139.0,
+                                            "effort": 417.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 8325,
+                                            "application_name": "Sales Enterprise",
+                                            "counter": 92.79998,
+                                            "effort": 92.79998
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__RiskyFunctionCalls",
+                                    "detail": [
+                                        {
+                                            "application_id": 8325,
+                                            "application_name": "Sales Enterprise",
+                                            "counter": 2.0,
+                                            "effort": 20.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__ResourceManagement2",
+                                    "detail": [
+                                        {
+                                            "application_id": 8325,
+                                            "application_name": "Sales Enterprise",
+                                            "counter": 4.0,
+                                            "effort": 2.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "OBJCCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__MacroUnparenthesedParams",
+                                    "detail": [
+                                        {
+                                            "application_id": 8325,
+                                            "application_name": "Sales Enterprise",
+                                            "counter": 2.0,
+                                            "effort": 2.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__MissingBraces",
+                                    "detail": [
+                                        {
+                                            "application_id": 8325,
+                                            "application_name": "Sales Enterprise",
+                                            "counter": 540.0,
+                                            "effort": 90.00001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__BooleanPitfall",
+                                    "detail": [
+                                        {
+                                            "application_id": 8325,
+                                            "application_name": "Sales Enterprise",
+                                            "counter": 3.0,
+                                            "effort": 0.75000006
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__Data",
+                                    "detail": [
+                                        {
+                                            "application_id": 8325,
+                                            "application_name": "Sales Enterprise",
+                                            "counter": 8.0,
+                                            "effort": 120.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "OBJCCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__MissingDefault",
+                                    "detail": [
+                                        {
+                                            "application_id": 8325,
+                                            "application_name": "Sales Enterprise",
+                                            "counter": 3.0,
+                                            "effort": 3.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__UninitializedLocalVariables",
+                                    "detail": [
+                                        {
+                                            "application_id": 8325,
+                                            "application_name": "Sales Enterprise",
+                                            "counter": 50.0,
+                                            "effort": 8.333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__NSLog",
+                                    "detail": [
+                                        {
+                                            "application_id": 8325,
+                                            "application_name": "Sales Enterprise",
+                                            "counter": 40.0,
+                                            "effort": 6.666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__AssignmentsInConditionalExpr",
+                                    "detail": [
+                                        {
+                                            "application_id": 8325,
+                                            "application_name": "Sales Enterprise",
+                                            "counter": 109.0,
+                                            "effort": 54.500004
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__BugPatterns",
+                                    "detail": [
+                                        {
+                                            "application_id": 8325,
+                                            "application_name": "Sales Enterprise",
+                                            "counter": 14.0,
+                                            "effort": 14.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "OBJCCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 8325,
+                                            "application_name": "Sales Enterprise",
+                                            "counter": 17.0,
+                                            "effort": 17.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 8325,
+                                            "application_name": "Sales Enterprise",
+                                            "counter": 80.0,
+                                            "effort": 6.666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 8325,
+                                            "application_name": "Sales Enterprise",
+                                            "counter": 936.0,
+                                            "effort": 78.00001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 8325,
+                                            "application_name": "Sales Enterprise",
+                                            "counter": 44.0,
+                                            "effort": 3.6666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 8325,
+                                            "application_name": "Sales Enterprise",
+                                            "counter": 166.0,
+                                            "effort": 166.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "OBJCCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__Ternary",
+                                    "detail": [
+                                        {
+                                            "application_id": 8325,
+                                            "application_name": "Sales Enterprise",
+                                            "counter": 18.0,
+                                            "effort": 18.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 8325,
+                                            "application_name": "Sales Enterprise",
+                                            "counter": 156.0,
+                                            "effort": 13.000001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__BadDeclarationOrder",
+                                    "detail": [
+                                        {
+                                            "application_id": 8325,
+                                            "application_name": "Sales Enterprise",
+                                            "counter": 23.0,
+                                            "effort": 23.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__ClassImplementations",
+                                    "detail": [
+                                        {
+                                            "application_id": 8325,
+                                            "application_name": "Sales Enterprise",
+                                            "counter": 74.0,
+                                            "effort": 370.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 8325,
+                                            "application_name": "Sales Enterprise",
+                                            "counter": 155.0,
+                                            "effort": 12.916667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__BoxedOrLiteral",
+                                    "detail": [
+                                        {
+                                            "application_id": 8325,
+                                            "application_name": "Sales Enterprise",
+                                            "counter": 14.0,
+                                            "effort": 2.3333335
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "OBJCCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 8325,
+                                            "application_name": "Sales Enterprise",
+                                            "counter": 956.00024,
+                                            "effort": 956.00024
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__PreprocDirective",
+                                    "detail": [
+                                        {
+                                            "application_id": 8325,
+                                            "application_name": "Sales Enterprise",
+                                            "counter": 13.0,
+                                            "effort": 13.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__NegativeComparison",
+                                    "detail": [
+                                        {
+                                            "application_id": 8325,
+                                            "application_name": "Sales Enterprise",
+                                            "counter": 114.0,
+                                            "effort": 38.000004
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__UntaggedParameters",
+                                    "detail": [
+                                        {
+                                            "application_id": 8325,
+                                            "application_name": "Sales Enterprise",
+                                            "counter": 2.0,
+                                            "effort": 0.33333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 8325,
+                                            "application_name": "Sales Enterprise",
+                                            "counter": 77.0,
+                                            "effort": 770.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "OBJCCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 8325,
+                                            "application_name": "Sales Enterprise",
+                                            "counter": 0.74600005,
+                                            "effort": 3.7300003
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 8325,
+                                            "application_name": "Sales Enterprise",
+                                            "counter": 219.12006,
+                                            "effort": 219.12006
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "OBJCCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 8325,
+                                            "application_name": "Sales Enterprise",
+                                            "counter": 6.3199997,
+                                            "effort": 31.599998
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "OBJCCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__NBMETH",
+                                    "detail": [
+                                        {
+                                            "application_id": 8325,
+                                            "application_name": "Sales Enterprise",
+                                            "counter": 1177.0,
+                                            "effort": 5885.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__ComplexConditions",
+                                    "detail": [
+                                        {
+                                            "application_id": 8325,
+                                            "application_name": "Sales Enterprise",
+                                            "counter": 1.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

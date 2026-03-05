@@ -1,0 +1,47 @@
+[
+    {
+        "id": "Use_SecuredProtocols-CSHARP",
+        "display": "Security & User Authentication : Use of unsecured network protocols or URI libraries",
+        "criticality": "Low",
+        "impacts": [
+            "Code"
+        ],
+        "roadblocks": 6.0,
+        "cloudEffort": 60,
+        "files": [
+            "src\\Fleck.Tests\\WebSocketConnectionInfoTests.cs",
+            "src\\Fleck.Tests\\RequestParserTests.cs",
+            "src\\Fleck.Tests\\Draft76HandlerTests.cs",
+            "src\\Fleck.Tests\\Hybi13HandlerTests.cs"
+        ]
+    },
+    {
+        "id": "Use_COM_Components-CSHARP",
+        "display": "Code Execution : Using COM Components",
+        "criticality": "High",
+        "impacts": [
+            "Container only"
+        ],
+        "roadblocks": 3.0,
+        "cloudEffort": 360,
+        "files": [
+            "src\\Fleck\\WebSocketServer.cs",
+            "src\\Fleck\\Helpers\\FleckRuntime.cs",
+            "src\\Fleck\\SocketWrapper.cs"
+        ]
+    },
+    {
+        "id": "Use_Hardcoded_IP_Address-CSHARP",
+        "display": "Execution Environment : Using hardcoded network IP address",
+        "criticality": "Low",
+        "impacts": [
+            "Code"
+        ],
+        "roadblocks": 2.0,
+        "cloudEffort": 20,
+        "files": [
+            "src\\Fleck.Tests\\WebSocketConnectionInfoTests.cs",
+            "src\\Fleck.Tests\\WebSocketServerTests.cs"
+        ]
+    }
+]

@@ -1,0 +1,536 @@
+[
+    {
+        "platformId": "aws",
+        "platformName": "Amazon Web Services",
+        "platformUrl": "https://www.aws.com",
+        "recommendations": [
+            {
+                "id": "aws_emr",
+                "name": "Amazon EMR",
+                "category": "Analytics",
+                "description": "Easily Run and Scale Apache Spark, Hadoop, HBase, Presto, Hive, and other Big Data Frameworks",
+                "url": "https://aws.amazon.com/emr/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Getting Started with Amazon EMR",
+                        "url": "https://aws.amazon.com/emr/getting-started/"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "sca",
+                        "ruleId": "archiver.npm",
+                        "details": {
+                            "repo": null
+                        }
+                    },
+                    {
+                        "type": "sca",
+                        "ruleId": "archiver:",
+                        "details": {
+                            "repo": null
+                        }
+                    },
+                    {
+                        "type": "sca",
+                        "ruleId": "archiver-utils:",
+                        "details": {
+                            "repo": null
+                        }
+                    },
+                    {
+                        "type": "sca",
+                        "ruleId": "archiver-utils.npm",
+                        "details": {
+                            "repo": null
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "aws_sqs",
+                "name": "Amazon Simple Queue Service",
+                "category": "Integration",
+                "description": "Fully managed message queues for microservices, distributed systems, and serverless applications",
+                "url": "https://aws.amazon.com/sqs/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Amazon SQS resources",
+                        "url": "https://aws.amazon.com/sqs/resources/"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "sca",
+                        "ruleId": "@aws-sdk/client-sqs:",
+                        "details": {
+                            "repo": null
+                        }
+                    },
+                    {
+                        "type": "sca",
+                        "ruleId": "@aws-sdk/middleware-sdk-sqs:",
+                        "details": {
+                            "repo": null
+                        }
+                    },
+                    {
+                        "type": "sca",
+                        "ruleId": "@aws-sdk/middleware-sdk-sqs.npm",
+                        "details": {
+                            "repo": null
+                        }
+                    },
+                    {
+                        "type": "sca",
+                        "ruleId": "@aws-sdk/client-sqs.npm",
+                        "details": {
+                            "repo": null
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "platformId": "azure",
+        "platformName": "Microsoft Azure",
+        "platformUrl": "https://azure.microsoft.com",
+        "recommendations": [
+            {
+                "id": "azure_appservice",
+                "name": "Azure App Service",
+                "category": "Compute",
+                "description": "Build, deploy, and scale web apps on a fully managed platform",
+                "url": "https://azure.microsoft.com/en-us/services/app-service/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "App Service Documentation",
+                        "url": "https://docs.microsoft.com/en-us/azure/app-service/"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "JS",
+                        "details": {
+                            "loc": 21.0,
+                            "label": "JavaScript"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "azure_containerapps",
+                "name": "Azure Container Apps",
+                "category": "Container",
+                "description": "Build and deploy fully managed, cloud- native apps and microservices using serverless containers",
+                "url": "https://azure.microsoft.com/en-us/products/container-apps",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Quickstart: Deploy your first container app with containerapp up",
+                        "url": "https://learn.microsoft.com/en-us/azure/container-apps/get-started?ocid=AID3042118&tabs=bash"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "JS",
+                        "details": {
+                            "loc": 21.0,
+                            "label": "JavaScript"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "azure_containers",
+                "name": "Azure Kubernetes Service (AKS)",
+                "category": "Container",
+                "description": "Highly available, secure, and fully managed Kubernetes service",
+                "url": "https://azure.microsoft.com/en-us/services/kubernetes-service/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Azure Kubernetes Service (AKS) documentation",
+                        "url": "https://docs.microsoft.com/en-us/azure/aks/"
+                    }
+                ],
+                "considerations": "The applicability of this recommendation will depend on your organization's container strategy, and which target is recommended as part of this strategy: Virtual machines, Individual containers, Kubernetes clusters, etc. Your container strategy will also inform how processes and people impact the technology choices, if for example a DevOps strategy or a Microservices strategy exists.",
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "JS",
+                        "details": {
+                            "loc": 21.0,
+                            "label": "JavaScript"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "azure_openshift",
+                "name": "Azure Red Hat OpenShift",
+                "category": "Container",
+                "description": "Build, deploy, and scale apps on OpenShift with confidence. Azure Red Hat OpenShift provides highly available, fully managed OpenShift clusters on demand, monitored and operated jointly by Microsoft and Red Hat. Kubernetes is at the core of Red Hat OpenShift. OpenShift brings added-value features to complement Kubernetes, making it a turnkey container platform as a service (PaaS) with a significantly improved developer and operator experience.",
+                "url": "https://azure.microsoft.com/en-us/products/openshift",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Intro to Azure Red Hat OpenShift",
+                        "url": "https://learn.microsoft.com/en-us/azure/openshift/intro-openshift"
+                    }
+                ],
+                "considerations": "The applicability of this recommendation will depend on your organization's container strategy, and which target is recommended as part of this strategy: Virtual machines, Individual containers, Kubernetes clusters, etc. Your container strategy will also inform how processes and people impact the technology choices, if for example a DevOps strategy or a Microservices strategy exists.",
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "JS",
+                        "details": {
+                            "loc": 21.0,
+                            "label": "JavaScript"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "azure_messaging",
+                "name": "Azure Service Bus",
+                "category": "Integration",
+                "description": "Reliable cloud messaging as a service (MaaS) and simple hybrid integration",
+                "url": "https://azure.microsoft.com/en-us/services/service-bus/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Service Bus Documentation",
+                        "url": "https://docs.microsoft.com/en-us/azure/service-bus/"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "sca",
+                        "ruleId": "@aws-sdk/client-sqs:",
+                        "details": {
+                            "repo": null
+                        }
+                    },
+                    {
+                        "type": "sca",
+                        "ruleId": "@aws-sdk/middleware-sdk-sqs:",
+                        "details": {
+                            "repo": null
+                        }
+                    },
+                    {
+                        "type": "sca",
+                        "ruleId": "@aws-sdk/middleware-sdk-sqs.npm",
+                        "details": {
+                            "repo": null
+                        }
+                    },
+                    {
+                        "type": "sca",
+                        "ruleId": "@aws-sdk/client-sqs.npm",
+                        "details": {
+                            "repo": null
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "azure_fabric",
+                "name": "Microsoft Fabric",
+                "category": "Analytics",
+                "description": "Reshape how everyone accesses, manages, and acts on data with a single, AI-powered platform",
+                "url": "https://www.microsoft.com/en-us/microsoft-fabric",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Get started with Microsoft Fabric",
+                        "url": "https://www.microsoft.com/en-us/microsoft-fabric/getting-started"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "sca",
+                        "ruleId": "archiver.npm",
+                        "details": {
+                            "repo": null
+                        }
+                    },
+                    {
+                        "type": "sca",
+                        "ruleId": "archiver:",
+                        "details": {
+                            "repo": null
+                        }
+                    },
+                    {
+                        "type": "sca",
+                        "ruleId": "archiver-utils:",
+                        "details": {
+                            "repo": null
+                        }
+                    },
+                    {
+                        "type": "sca",
+                        "ruleId": "archiver-utils.npm",
+                        "details": {
+                            "repo": null
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "platformId": "gcp",
+        "platformName": "Google Cloud",
+        "platformUrl": "https://cloud.google.com",
+        "recommendations": [
+            {
+                "id": "gcp_cloudrun",
+                "name": "Cloud Run",
+                "category": "Compute",
+                "description": "Develop and deploy highly scalable containerized applications on a fully managed serverless platform.",
+                "url": "https://cloud.google.com/run",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Cloud Run Documentation",
+                        "url": "https://cloud.google.com/run#section-5"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "JS",
+                        "details": {
+                            "loc": 21.0,
+                            "label": "JavaScript"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "gcp_dataproc",
+                "name": "Dataproc",
+                "category": "Analytics",
+                "description": "Dataproc is a fully managed and highly scalable service for running Apache Spark, Apache Flink, Presto, and 30+ open source tools and frameworks. Use Dataproc for data lake modernization, ETL, and secure data science, at planet scale, fully integrated with Google Cloud, at a fraction of the cost.",
+                "url": "https://cloud.google.com/dataproc",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Dataproc quickstarts",
+                        "url": "https://cloud.google.com/dataproc/docs/quickstarts"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "sca",
+                        "ruleId": "archiver.npm",
+                        "details": {
+                            "repo": null
+                        }
+                    },
+                    {
+                        "type": "sca",
+                        "ruleId": "archiver:",
+                        "details": {
+                            "repo": null
+                        }
+                    },
+                    {
+                        "type": "sca",
+                        "ruleId": "archiver-utils:",
+                        "details": {
+                            "repo": null
+                        }
+                    },
+                    {
+                        "type": "sca",
+                        "ruleId": "archiver-utils.npm",
+                        "details": {
+                            "repo": null
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "gcp_containers",
+                "name": "Google Kubernetes Engine (GKE Autopilot)",
+                "category": "Container",
+                "description": "GKE Autopilot mode is a hands-off, fully managed solution that manages your entire cluster\u2019s infrastructure without worrying about configuring and monitoring nodes, while still delivering a complete Kubernetes experience.",
+                "url": "https://cloud.google.com/kubernetes-engine",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Google Kubernetes Engine documentation",
+                        "url": "https://cloud.google.com/kubernetes-engine/docs/concepts/autopilot-overview"
+                    }
+                ],
+                "considerations": "The applicability of this recommendation will depend on your organization's container strategy, and which target is recommended as part of this strategy: Virtual machines, Individual containers, Kubernetes clusters, etc. Your container strategy will also inform how processes and people impact the technology choices, if for example a DevOps strategy or a Microservices strategy exists.",
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "JS",
+                        "details": {
+                            "loc": 21.0,
+                            "label": "JavaScript"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "gcp_pubsub",
+                "name": "Pub/Sub",
+                "category": "Analytics",
+                "description": "Messaging and ingestion for event-driven systems and streaming analytics.",
+                "url": "https://cloud.google.com/pubsub",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Pub/Sub Documentation",
+                        "url": "https://cloud.google.com/pubsub#section-5"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "sca",
+                        "ruleId": "@aws-sdk/client-sqs:",
+                        "details": {
+                            "repo": null
+                        }
+                    },
+                    {
+                        "type": "sca",
+                        "ruleId": "@aws-sdk/middleware-sdk-sqs:",
+                        "details": {
+                            "repo": null
+                        }
+                    },
+                    {
+                        "type": "sca",
+                        "ruleId": "@aws-sdk/middleware-sdk-sqs.npm",
+                        "details": {
+                            "repo": null
+                        }
+                    },
+                    {
+                        "type": "sca",
+                        "ruleId": "@aws-sdk/client-sqs.npm",
+                        "details": {
+                            "repo": null
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "platformId": "ibm",
+        "platformName": "IBM Cloud",
+        "platformUrl": "https://www.ibm.com/cloud",
+        "recommendations": [
+            {
+                "id": "ibm_analytics",
+                "name": "IBM Analytics Engine",
+                "category": "Analytics",
+                "description": "A single Hadoop and Spark service providing an environment to develop and deploy advanced analytics applications in minutes",
+                "url": "https://www.ibm.com/cloud/analytics-engine",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "IBM Analytics Engine features",
+                        "url": "https://www.ibm.com/cloud/analytics-engine/details"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "sca",
+                        "ruleId": "archiver.npm",
+                        "details": {
+                            "repo": null
+                        }
+                    },
+                    {
+                        "type": "sca",
+                        "ruleId": "archiver:",
+                        "details": {
+                            "repo": null
+                        }
+                    },
+                    {
+                        "type": "sca",
+                        "ruleId": "archiver-utils:",
+                        "details": {
+                            "repo": null
+                        }
+                    },
+                    {
+                        "type": "sca",
+                        "ruleId": "archiver-utils.npm",
+                        "details": {
+                            "repo": null
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "platformId": "oraclecloud",
+        "platformName": "Oracle Cloud",
+        "platformUrl": "https://www.oracle.com/cloud/",
+        "recommendations": [
+            {
+                "id": "oracle_bigdata",
+                "name": "Big Data",
+                "category": "Analytics",
+                "description": "Managed Hadoop cluster system to accomodate 'big data' and analytics workloads",
+                "url": "https://www.oracle.com/big-data/big-data-service/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Documentation",
+                        "url": "https://www.oracle.com/big-data/big-data-service/"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "sca",
+                        "ruleId": "archiver.npm",
+                        "details": {
+                            "repo": null
+                        }
+                    },
+                    {
+                        "type": "sca",
+                        "ruleId": "archiver:",
+                        "details": {
+                            "repo": null
+                        }
+                    },
+                    {
+                        "type": "sca",
+                        "ruleId": "archiver-utils:",
+                        "details": {
+                            "repo": null
+                        }
+                    },
+                    {
+                        "type": "sca",
+                        "ruleId": "archiver-utils.npm",
+                        "details": {
+                            "repo": null
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]

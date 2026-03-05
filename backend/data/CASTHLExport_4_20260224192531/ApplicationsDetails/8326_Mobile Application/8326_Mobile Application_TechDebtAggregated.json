@@ -1,0 +1,312 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "OBJCCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 8326,
+                                            "application_name": "Mobile Application",
+                                            "counter": 45.0,
+                                            "effort": 135.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 8326,
+                                            "application_name": "Mobile Application",
+                                            "counter": 16.5,
+                                            "effort": 16.5
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "OBJCCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__MissingBraces",
+                                    "detail": [
+                                        {
+                                            "application_id": 8326,
+                                            "application_name": "Mobile Application",
+                                            "counter": 121.0,
+                                            "effort": 20.166668
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "OBJCCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__UninitializedLocalVariables",
+                                    "detail": [
+                                        {
+                                            "application_id": 8326,
+                                            "application_name": "Mobile Application",
+                                            "counter": 1.0,
+                                            "effort": 0.16666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__NSLog",
+                                    "detail": [
+                                        {
+                                            "application_id": 8326,
+                                            "application_name": "Mobile Application",
+                                            "counter": 12.0,
+                                            "effort": 2.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__AssignmentsInConditionalExpr",
+                                    "detail": [
+                                        {
+                                            "application_id": 8326,
+                                            "application_name": "Mobile Application",
+                                            "counter": 15.0,
+                                            "effort": 7.5000005
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "OBJCCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 8326,
+                                            "application_name": "Mobile Application",
+                                            "counter": 45.0,
+                                            "effort": 45.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 8326,
+                                            "application_name": "Mobile Application",
+                                            "counter": 27.0,
+                                            "effort": 2.25
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 8326,
+                                            "application_name": "Mobile Application",
+                                            "counter": 94.0,
+                                            "effort": 7.833334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 8326,
+                                            "application_name": "Mobile Application",
+                                            "counter": 4.0,
+                                            "effort": 0.33333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 8326,
+                                            "application_name": "Mobile Application",
+                                            "counter": 27.0,
+                                            "effort": 27.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "OBJCCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__BadDeclarationOrder",
+                                    "detail": [
+                                        {
+                                            "application_id": 8326,
+                                            "application_name": "Mobile Application",
+                                            "counter": 20.0,
+                                            "effort": 20.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "OBJCCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 8326,
+                                            "application_name": "Mobile Application",
+                                            "counter": 230.19998,
+                                            "effort": 230.19998
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__NegativeComparison",
+                                    "detail": [
+                                        {
+                                            "application_id": 8326,
+                                            "application_name": "Mobile Application",
+                                            "counter": 5.0,
+                                            "effort": 1.6666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "OBJCCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 8326,
+                                            "application_name": "Mobile Application",
+                                            "counter": 57.75,
+                                            "effort": 57.75
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "OBJCCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__NBMETH",
+                                    "detail": [
+                                        {
+                                            "application_id": 8326,
+                                            "application_name": "Mobile Application",
+                                            "counter": 63.0,
+                                            "effort": 315.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

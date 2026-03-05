@@ -1,0 +1,432 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__Finalize",
+                                    "detail": [
+                                        {
+                                            "application_id": 607,
+                                            "application_name": "Customer Data",
+                                            "counter": 10.0,
+                                            "effort": 100.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 607,
+                                            "application_name": "Customer Data",
+                                            "counter": 1396.0,
+                                            "effort": 4188.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 607,
+                                            "application_name": "Customer Data",
+                                            "counter": 301.70035,
+                                            "effort": 301.70035
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__MissingBraces2",
+                                    "detail": [
+                                        {
+                                            "application_id": 607,
+                                            "application_name": "Customer Data",
+                                            "counter": 1997.0,
+                                            "effort": 332.83334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__Instanceof",
+                                    "detail": [
+                                        {
+                                            "application_id": 607,
+                                            "application_name": "Customer Data",
+                                            "counter": 224.0,
+                                            "effort": 2240.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__PublicAttributes",
+                                    "detail": [
+                                        {
+                                            "application_id": 607,
+                                            "application_name": "Customer Data",
+                                            "counter": 162.0,
+                                            "effort": 162.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__MissingDefault",
+                                    "detail": [
+                                        {
+                                            "application_id": 607,
+                                            "application_name": "Customer Data",
+                                            "counter": 23.0,
+                                            "effort": 23.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__AssignmentsInConditionalExpr",
+                                    "detail": [
+                                        {
+                                            "application_id": 607,
+                                            "application_name": "Customer Data",
+                                            "counter": 8.0,
+                                            "effort": 4.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__BugPatterns",
+                                    "detail": [
+                                        {
+                                            "application_id": 607,
+                                            "application_name": "Customer Data",
+                                            "counter": 25.0,
+                                            "effort": 25.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 607,
+                                            "application_name": "Customer Data",
+                                            "counter": 114.0,
+                                            "effort": 114.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 607,
+                                            "application_name": "Customer Data",
+                                            "counter": 657.0,
+                                            "effort": 54.750004
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 607,
+                                            "application_name": "Customer Data",
+                                            "counter": 664.0,
+                                            "effort": 55.333336
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__ClassDefinitions",
+                                    "detail": [
+                                        {
+                                            "application_id": 607,
+                                            "application_name": "Customer Data",
+                                            "counter": 80.0,
+                                            "effort": 400.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 607,
+                                            "application_name": "Customer Data",
+                                            "counter": 1414.0,
+                                            "effort": 117.833336
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 607,
+                                            "application_name": "Customer Data",
+                                            "counter": 926.0,
+                                            "effort": 926.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__MissingAutomatedDoc2",
+                                    "detail": [
+                                        {
+                                            "application_id": 607,
+                                            "application_name": "Customer Data",
+                                            "counter": 3194.0,
+                                            "effort": 3194.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__BadDeclarationOrder",
+                                    "detail": [
+                                        {
+                                            "application_id": 607,
+                                            "application_name": "Customer Data",
+                                            "counter": 3085.0,
+                                            "effort": 3085.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 607,
+                                            "application_name": "Customer Data",
+                                            "counter": 426.0,
+                                            "effort": 35.5
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 607,
+                                            "application_name": "Customer Data",
+                                            "counter": 7962.5986,
+                                            "effort": 7962.5986
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 607,
+                                            "application_name": "Customer Data",
+                                            "counter": 675.0,
+                                            "effort": 56.250004
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 607,
+                                            "application_name": "Customer Data",
+                                            "counter": 116.0,
+                                            "effort": 1160.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 607,
+                                            "application_name": "Customer Data",
+                                            "counter": 32.003334,
+                                            "effort": 160.01666
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 607,
+                                            "application_name": "Customer Data",
+                                            "counter": 506.05984,
+                                            "effort": 506.05984
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 607,
+                                            "application_name": "Customer Data",
+                                            "counter": 43.100006,
+                                            "effort": 215.50003
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__ComplexConditions",
+                                    "detail": [
+                                        {
+                                            "application_id": 607,
+                                            "application_name": "Customer Data",
+                                            "counter": 3.0,
+                                            "effort": 30.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

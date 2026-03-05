@@ -1,7 +1,9 @@
 #!/usr/bin/env python
 """
-Script to replicate IndustryData records to CorentData and CASTData
-for unified correlation across all three data sources
+Script to replicate IndustryData records to CorentData.
+NOTE: CASTData is intentionally NOT replicated here — it must be loaded
+from the real source Excel (data/CASTReport.xlsx) via the upload endpoint.
+Replacing CASTData with synthetic clones would corrupt correlation statistics.
 """
 
 import sys
@@ -14,7 +16,7 @@ from app.models.corent_data import CorentData
 from app.models.cast import CASTData
 
 def replicate_industry_data_to_all_sources():
-    """Replicate IndustryData records to CorentData and CASTData"""
+    """Replicate IndustryData records to CorentData only. CASTData is preserved."""
     app = create_app('development')
     
     with app.app_context():
@@ -24,12 +26,11 @@ def replicate_industry_data_to_all_sources():
         industry_items = IndustryData.query.all()
         print(f"[*] Found {len(industry_items)} IndustryData records")
         
-        # Clear existing CorentData and CASTData
-        print("[*] Clearing existing CorentData and CASTData...")
+        # Clear existing CorentData only (NOT CASTData — real CAST data from Excel must be preserved)
+        print("[*] Clearing existing CorentData (CASTData is preserved from real Excel source)...")
         CorentData.query.delete()
-        CASTData.query.delete()
         db.session.commit()
-        print("[OK] Cleared old data\n")
+        print("[OK] Cleared old CorentData\n")
         
         # Replicate to CorentData
         print("[*] Replicating to CorentData...")
@@ -53,26 +54,9 @@ def replicate_industry_data_to_all_sources():
         db.session.commit()
         print(f"[OK] Created {len(corent_records)} CorentData records\n")
         
-        # Replicate to CASTData
-        print("[*] Replicating to CASTData...")
-        cast_records = []
-        for ind in industry_items:
-            cast = CASTData(
-                app_id=ind.app_id,
-                app_name=ind.app_name,
-                application_architecture=getattr(ind, 'architecture_type', 'N-tier'),
-                source_code_availability='Unknown',
-                programming_language='Unknown',
-                component_coupling='0.0',
-                cloud_suitability=getattr(ind, 'cloud_suitability', None) or 'Unknown',
-                volume_external_dependencies='0',
-                code_design='Unknown'
-            )
-            cast_records.append(cast)
-        
-        db.session.add_all(cast_records)
-        db.session.commit()
-        print(f"[OK] Created {len(cast_records)} CASTData records\n")
+        # CASTData is NOT replicated here — it must come from data/CASTReport.xlsx
+        print("[*] Skipping CASTData replication (real data preserved from Excel source)...")
+        print(f"[OK] CASTData unchanged: {CASTData.query.count()} records\n")
         
         # Verify counts
         ind_count = IndustryData.query.count()
@@ -85,11 +69,12 @@ def replicate_industry_data_to_all_sources():
         print(f"CASTData: {cast_count} records")
         print(f"TOTAL: {ind_count + corent_count + cast_count} records")
         
-        if ind_count == corent_count == cast_count == len(industry_items):
-            print("\n[✓] SUCCESS - All three databases now have the same 195 records!")
+        if ind_count == corent_count == len(industry_items):
+            print("\n[✓] SUCCESS - IndustryData and CorentData are in sync!")
+            print(f"    CASTData has {cast_count} records (from real Excel source, unchanged)")
             return True
         else:
-            print("\n[✗] ERROR - Record counts don't match!")
+            print("\n[✗] ERROR - IndustryData and CorentData counts don't match!")
             return False
 
 if __name__ == '__main__':

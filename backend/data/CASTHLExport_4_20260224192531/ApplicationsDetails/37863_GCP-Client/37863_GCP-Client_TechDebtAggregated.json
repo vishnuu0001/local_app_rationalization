@@ -1,0 +1,1230 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PLSQL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PLSQL__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 19.0,
+                                            "effort": 57.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PLSQL__NotEfficiencyType",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 2.0,
+                                            "effort": 0.6666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 5795.0,
+                                            "effort": 17385.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__UnusedParameters",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 882.0,
+                                            "effort": 441.00003
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ClassesComparisons",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 13.0,
+                                            "effort": 130.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__Ellipsis",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 519.0,
+                                            "effort": 7785.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__NotEfficiencyType",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 38.0,
+                                            "effort": 38.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__LiteralValue",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 43.0,
+                                            "effort": 43.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ProtectedMemberInFinalClass",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 559.0,
+                                            "effort": 559.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__IllegalThrows",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 113.0,
+                                            "effort": 565.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__TmpFileName",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 1.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__VarDecl",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 14.0,
+                                            "effort": 2.3333335
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MissingSemicolon",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 1.0,
+                                            "effort": 0.083333336
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 0.14,
+                                            "effort": 0.14
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__RiskyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 118.0,
+                                            "effort": 590.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__Constructor",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 67.0,
+                                            "effort": 67.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__Instanceof",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 1388.0,
+                                            "effort": 13880.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__EqualsNotTestingParameter",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 54.0,
+                                            "effort": 54.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__OverloadEquals",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 168.0,
+                                            "effort": 1680.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__WithSeveralExit_Loop",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 1.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__EndLoopTest",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 466.0,
+                                            "effort": 4660.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__OutOfFinallyJumps",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 1.0,
+                                            "effort": 5.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__OnlyRethrowingCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 8.0,
+                                            "effort": 40.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__Intrinsics",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 4.0,
+                                            "effort": 4.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__Pipes",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 6.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__StrongDataAccess",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 1.0,
+                                            "effort": 0.33333334
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__PublicAttributes",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 1553.0,
+                                            "effort": 1553.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingBraces2",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 1643.0,
+                                            "effort": 1643.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__EmptyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 150.0,
+                                            "effort": 750.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingDefault",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 31.0,
+                                            "effort": 31.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 981.2208,
+                                            "effort": 981.2208
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingBreakInSwitch",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 75.0,
+                                            "effort": 6.2500005
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingBreakInCasePath",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 8.0,
+                                            "effort": 0.6666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BugPatterns",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 60.0,
+                                            "effort": 60.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__UnusedVar",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 1.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__FileGlobalVariables",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 14.0,
+                                            "effort": 14.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MissingIdentical",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 2.0,
+                                            "effort": 0.16666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PLSQL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PLSQL__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 8.0,
+                                            "effort": 8.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 4940.0,
+                                            "effort": 411.6667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ClassDefinitions",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 818.0,
+                                            "effort": 4090.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__StarImport",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 4.0,
+                                            "effort": 4.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 4732.0,
+                                            "effort": 4732.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__EmptyArtifact",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 166.0,
+                                            "effort": 83.00001
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 1.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 1.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 17.0,
+                                            "effort": 1.4166667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 6.0,
+                                            "effort": 0.5
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 53.0,
+                                            "effort": 4.416667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__Prototype",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 4.0,
+                                            "effort": 0.33333334
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__InlineComment",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 192.0,
+                                            "effort": 192.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 147.0,
+                                            "effort": 12.250001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingAutomatedDoc2",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 17847.0,
+                                            "effort": 17847.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 5653.0,
+                                            "effort": 471.08334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 2262.0,
+                                            "effort": 188.50002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__SmallSwitchCase",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 48.0,
+                                            "effort": 480.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 17.400002,
+                                            "effort": 17.400002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__ExportNames",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 3.0,
+                                            "effort": 1.5000001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__LocalNames",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 16.0,
+                                            "effort": 2.6666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PLSQL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PLSQL__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 13.0,
+                                            "effort": 13.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 29351.998,
+                                            "effort": 29351.998
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__Ternary",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 1599.0,
+                                            "effort": 1599.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadDeclarationOrder",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 887.0,
+                                            "effort": 887.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 61.0,
+                                            "effort": 5.0833335
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__NestedTryCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 32.0,
+                                            "effort": 320.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 60.0,
+                                            "effort": 600.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__ContinuationChar",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 5.0,
+                                            "effort": 0.8333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 1.0,
+                                            "effort": 0.083333336
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 1.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 23.2,
+                                            "effort": 23.2
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__SuspiciousIndentations",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 2.0,
+                                            "effort": 0.16666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 1.03,
+                                            "effort": 1.03
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PLSQL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PLSQL__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 0.8,
+                                            "effort": 4.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 1851.1506,
+                                            "effort": 1851.1506
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 0.1,
+                                            "effort": 0.5
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 1.0,
+                                            "effort": 5.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 7337.904,
+                                            "effort": 36689.52
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 8074.797,
+                                            "effort": 40373.984
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 5.0,
+                                            "effort": 25.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__NBMETH",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 2.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ComplexConditions",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 1.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ComplexOperands",
+                                    "detail": [
+                                        {
+                                            "application_id": 37863,
+                                            "application_name": "GCP-Client",
+                                            "counter": 13544.0,
+                                            "effort": 13544.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

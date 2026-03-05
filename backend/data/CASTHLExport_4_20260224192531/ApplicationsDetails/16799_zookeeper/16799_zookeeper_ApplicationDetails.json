@@ -1,0 +1,1090 @@
+{
+    "id": 16799,
+    "name": "zookeeper",
+    "domains": [
+        {
+            "id": 12910,
+            "name": "Portfolio Company Beta"
+        },
+        {
+            "id": 2144,
+            "name": "GDPR Program"
+        }
+    ],
+    "metrics": [
+        {
+            "snapshotLabel": "GDPR Assessment_zookeeper",
+            "snapshotDate": 1522209600000,
+            "softwareAgility": 0.58969646692276,
+            "softwareElegance": 0.7696266770362854,
+            "softwareResiliency": 0.7010301947593689,
+            "softwareHealth": 0.6867844462394714,
+            "openSourceSafety": 1.0,
+            "openSourceLicense": 1.0,
+            "openSourceObsolescence": null,
+            "openSourceCVE": 1.0,
+            "businessImpact": 0.3350253807106599,
+            "roarIndex": 0.09929611988832489,
+            "backFiredFP": 1841.0,
+            "technicalDebt": 294985.4459377527,
+            "maintenanceRecordedFTE": 0.3499999999999999,
+            "maintenanceRecommendedFTE": 1.947199267209145,
+            "cloudReady": 0.49284711920131513,
+            "cloudReadyScan": 0.6693877551020408,
+            "boosters": 0.0,
+            "blockers": 0.16326530612244897,
+            "roadblocks": 876.0,
+            "cloudEffort": 12620,
+            "cloudReadySurvey": 0.3163064833005894,
+            "greenIndex": null,
+            "greenIndexScan": null,
+            "greenIndexSurvey": null,
+            "greenOccurrences": null,
+            "greenEffort": null,
+            "greenDetail": [
+                {
+                    "technology": "Java",
+                    "greenIndexScan": 0.0,
+                    "greenIndexDetails": null
+                },
+                {
+                    "technology": "C/C++",
+                    "greenIndexScan": 0.0,
+                    "greenIndexDetails": null
+                },
+                {
+                    "technology": "Python",
+                    "greenIndexScan": 0.0,
+                    "greenIndexDetails": null
+                },
+                {
+                    "technology": "JavaScript",
+                    "greenIndexScan": 0.0,
+                    "greenIndexDetails": null
+                }
+            ],
+            "totalLinesOfCode": 96178,
+            "totalFiles": 761,
+            "cloudReadyDetail": [
+                {
+                    "technology": "Java",
+                    "cloudReadyScan": 0.0,
+                    "cloudReadyDetails": [
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Access_Control",
+                                "display": "Access Control List : Using Access Control List",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Access_Control",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Critical",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 12.71860095389507,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Configuration_Except_WebConfig",
+                                "display": "Application Settings Configuration : Using other configuration files than Web configuration",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Configuration_Except_WebConfig",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 0.1589825119236884,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Application_Server_Dependencies",
+                                "display": "Execution Environment : Application server dependencies",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Application_Server_Dependencies",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Framework"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 2.384737678855326,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_File_System",
+                                "display": "Execution Environment : Using file system",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_File_System",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": -5.442176870748299,
+                            "roadblocks": 3.0,
+                            "cloudEffort": 45,
+                            "files": [
+                                "c:\\temp\\apache\\zookeeper\\src/java/main/org/apache/zookeeper\\Login.java",
+                                "c:\\temp\\apache\\zookeeper\\src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/gui\\IconResource.java"
+                            ],
+                            "triggered": true
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_InterApplication_MiddleWare",
+                                "display": "Inter Application Messaging : Using a middleware application",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_InterApplication_MiddleWare",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Medium",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 2.5437201907790143,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Directory_Manipulation_Practice",
+                                "display": "Persistent Files : Perform Directory Manipulation",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Directory_Manipulation_Practice",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 0.6359300476947536,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "File_Manipulation_Practice",
+                                "display": "Persistent Files : Perform File Manipulation",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#File_Manipulation_Practice",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": -5.442176870748299,
+                            "roadblocks": 769.0,
+                            "cloudEffort": 11535,
+                            "files": [
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/common\\AtomicFileWritingIdiomTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/gui\\ZooInspectorNodeViewersDialog.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/server/quorum\\QuorumPeerTestBase.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\SaslAuthFailDesignatedClientTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/main/org/apache/zookeeper/server/quorum\\QuorumPeerConfig.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/systest/org/apache/zookeeper/test/system\\BaseSysTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\SaslAuthTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/main/org/apache/zookeeper/server/quorum/flexible\\QuorumHierarchical.java",
+                                "c:\\temp\\apache\\zookeeper\\src/contrib/loggraph/src/java/org/apache/zookeeper/graph\\RandomAccessFileReader.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper\\ServerConfigTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/contrib/loggraph/src/java/org/apache/zookeeper/graph\\TxnLogSource.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/main/org/apache/zookeeper/common\\AtomicFileOutputStream.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/server/quorum\\WatchLeakTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/main/org/apache/zookeeper/common\\AtomicFileWritingIdiom.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/systest/org/apache/zookeeper/test/system\\QuorumPeerInstance.java",
+                                "c:\\temp\\apache\\zookeeper\\src/contrib/loggraph/src/java/org/apache/zookeeper/graph/servlets\\Fs.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/main/org/apache/zookeeper/common\\ZKConfig.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/main/org/apache/zookeeper/server\\PurgeTxnLog.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/main/org/apache/zookeeper/server/persistence\\FileSnap.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/server\\CRCTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\SaslAuthMissingClientConfigTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/main/org/apache/zookeeper/server/quorum\\QuorumPeer.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/client\\ZKClientConfigTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/contrib/rest/src/java/org/apache/zookeeper/server/jersey\\RestMain.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/server/quorum\\ReconfigLegacyTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/main/org/apache/jute/compiler\\CGenerator.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/server/util\\VerifyingFileFactoryTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/main/org/apache/zookeeper/server/persistence\\Util.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/main/org/apache/zookeeper/server/util\\VerifyingFileFactory.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\QuorumZxidSyncTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\InvalidSnapshotTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\ClientBase.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\TruncateTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/server/quorum\\LearnerTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/server\\ZooKeeperServerTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/server/quorum\\Zab1_0Test.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\SaslAuthDesignatedClientTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\AtomicFileOutputStreamTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/main/org/apache/jute/compiler\\JRecord.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\SaslAuthFailTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\LoadFromLogTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\SaslAuthFailNotifyTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/main/org/apache/zookeeper/server\\ServerConfig.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/main/org/apache/zookeeper/server/persistence\\FileTxnSnapLog.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\CnxManagerTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/server\\InvalidSnapCountTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/main/org/apache/zookeeper/common\\X509Util.java",
+                                "c:\\temp\\apache\\zookeeper\\src/contrib/loggraph/src/java/org/apache/zookeeper/graph\\Log4JSource.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\BufferSizeTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/main/org/apache/zookeeper/server/persistence\\FileTxnLog.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/server\\ZooKeeperServerMainTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\ZkDatabaseCorruptionTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/gui\\IconResource.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/server/quorum\\QuorumPeerConfigTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/contrib/zooinspector/src/java/org/apache/zookeeper/inspector/manager\\ZooInspectorManagerImpl.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/server\\PurgeTxnTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/server/quorum\\ReconfigDuringLeaderSyncTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/main/org/apache/jute/compiler\\CppGenerator.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/main/org/apache/zookeeper/version/util\\VerGen.java"
+                            ],
+                            "triggered": true
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Access_To_Environment_Variable",
+                                "display": "Execution Environment : Access to environment variable",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Access_To_Environment_Variable",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 1.2718600953895072,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Impersonate_Identity",
+                                "display": "Security & User Authentication : Using impersonate Identity",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Impersonate_Identity",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Critical",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 12.71860095389507,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_SecuredProtocols",
+                                "display": "Security & User Authentication : Use of unsecured network protocols or URI libraries",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_SecuredProtocols",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": -2.7210884353741496,
+                            "roadblocks": 3.0,
+                            "cloudEffort": 30,
+                            "files": [
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/server/admin\\CommandResponseTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/contrib/rest/src/test/org/apache/zookeeper/server/jersey\\Base.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/server/admin\\JettyAdminServerTest.java"
+                            ],
+                            "triggered": true,
+                            "cloudRequirementsDetail": [
+                                {
+                                    "cloudRequirement": {
+                                        "id": "Use_SecuredProtocolsHTTP",
+                                        "display": "Security & User Authentication : Use of unsecured network protocols (HTTP)",
+                                        "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_SecuredProtocols",
+                                        "ruleType": "BLOCKER",
+                                        "rulePlatform": null,
+                                        "rulePlatformLabel": null,
+                                        "criticality": "Low",
+                                        "impacts": [
+                                            "Coding"
+                                        ],
+                                        "parent": null
+                                    },
+                                    "roadblocks": 0.0,
+                                    "cloudEffort": null,
+                                    "files": null
+                                },
+                                {
+                                    "cloudRequirement": {
+                                        "id": "Use_SecuredProtocolsFTP",
+                                        "display": "Security & User Authentication : Use of unsecured network protocols (FTP)",
+                                        "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_SecuredProtocols",
+                                        "ruleType": "BLOCKER",
+                                        "rulePlatform": null,
+                                        "rulePlatformLabel": null,
+                                        "criticality": "Low",
+                                        "impacts": [
+                                            "Coding"
+                                        ],
+                                        "parent": null
+                                    },
+                                    "roadblocks": 0.0,
+                                    "cloudEffort": null,
+                                    "files": null
+                                }
+                            ]
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Hardcoded_IP_Address",
+                                "display": "Execution Environment : Using hardcoded network IP address",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Hardcoded_IP_Address",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": -2.7210884353741496,
+                            "roadblocks": 101.0,
+                            "cloudEffort": 1010,
+                            "files": [
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\GetProposalFromTxnTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/systest/org/apache/zookeeper/test/system\\BaseSysTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\FLERestartTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/server\\ZxidRolloverTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\RecoveryTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\ZooKeeperTestClient.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\FLEZeroWeightTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\ReconfigMisconfigTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\SessionTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\ReconfigTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\ObserverLETest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/server/quorum\\LocalPeerBeanTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\FollowerResyncConcurrencyTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/systest/org/apache/zookeeper/test/system\\QuorumPeerInstance.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/server\\CRCTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\LENonTerminateTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/main/org/apache/zookeeper/server/quorum\\QuorumPeer.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\FLETest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/server/quorum\\ReconfigBackupTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\QuorumBase.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/server/admin\\JettyAdminServerTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/main/org/apache/zookeeper/client\\ZooKeeperSaslClient.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/server/quorum\\ReconfigLegacyTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/server\\ZooKeeperServerStartupTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\ReconfigExceptionTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper\\VerGenTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\LETest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\QuorumZxidSyncTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\InvalidSnapshotTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\ClientBase.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\TruncateTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\RestoreCommittedLogTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/server/quorum\\StandaloneDisabledTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\EmptiedSnapshotRecoveryTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/server/quorum\\Zab1_0Test.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\HierarchicalQuorumTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/server/quorum\\QuorumPeerMainTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\WatchEventWhenAutoResetTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\SSLTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/main/org/apache/zookeeper/server/admin\\JettyAdminServer.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\ConnectStringParserTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/server/quorum\\ReconfigRecoveryTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\LoadFromLogTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\CnxManagerTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/server/quorum\\ReconfigFailureCasesTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/server/quorum\\QuorumServerTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/server\\InvalidSnapCountTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\ACLTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/server\\ZooKeeperServerBeanTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/server/quorum\\RaceConditionTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\StandaloneTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/server\\ZooKeeperServerMainTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\NIOConnectionFactoryFdLeakTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper\\ClientReconnectTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\FLEPredicateTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\RepeatStartupTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\QuorumTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper\\CustomHostProviderTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/server\\PrepRequestProcessorTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\ACLCountTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\ObserverTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/server\\PurgeTxnTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\ClientTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/server/quorum\\ReconfigDuringLeaderSyncTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\FLENewEpochTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\ReadOnlyModeTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\NonRecoverableErrorTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/main/org/apache/zookeeper/server\\ZooKeeperSaslServer.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\QuorumUtil.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\StaticHostProviderTest.java",
+                                "c:\\temp\\apache\\zookeeper\\src/java/test/org/apache/zookeeper/test\\OOMTest.java"
+                            ],
+                            "triggered": true
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Stateful_Session",
+                                "display": "Persistent Files : Using stateful session (Servlet)",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Stateful_Session",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "High",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 2.384737678855326,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Stateful_Session_Spring",
+                                "display": "Persistent Files : Using stateful session (Spring)",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Stateful_Session_Spring",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "High",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 2.384737678855326,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        }
+                    ]
+                }
+            ],
+            "customIndicators": [
+                {
+                    "metricId": 10023356,
+                    "value": "0.06060606060606061"
+                },
+                {
+                    "metricId": 10006001,
+                    "value": "0.5"
+                },
+                {
+                    "metricId": 10006305,
+                    "value": "0.07692307692307693"
+                },
+                {
+                    "metricId": 10013600,
+                    "value": "0.6"
+                },
+                {
+                    "metricId": 10006302,
+                    "value": "0.49382716049382713"
+                },
+                {
+                    "metricId": 10006301,
+                    "value": "0.07017543859649122"
+                },
+                {
+                    "metricId": 10016304,
+                    "value": "-1.0"
+                }
+            ],
+            "technologies": [
+                {
+                    "technology": "Java",
+                    "totalLinesOfCode": 72331,
+                    "totalFiles": 595,
+                    "softwareAgility": 0.5974713563919067,
+                    "softwareElegance": 0.7932283878326416,
+                    "softwareResiliency": 0.7534048557281494,
+                    "softwareHealth": 0.7147015333175659,
+                    "softwareAgilityDetail": {
+                        "highLinesOfCode": 14494,
+                        "mediumLinesOfCode": 33367,
+                        "lowLinesOfCode": 24470
+                    },
+                    "softwareEleganceDetail": {
+                        "highLinesOfCode": 44431,
+                        "mediumLinesOfCode": 16165,
+                        "lowLinesOfCode": 11735
+                    },
+                    "softwareResiliencyDetail": {
+                        "highLinesOfCode": 42333,
+                        "mediumLinesOfCode": 17964,
+                        "lowLinesOfCode": 12034
+                    },
+                    "softwareHealthDetail": {
+                        "highLinesOfCode": 33752,
+                        "mediumLinesOfCode": 22498,
+                        "lowLinesOfCode": 16079
+                    }
+                },
+                {
+                    "technology": "C/C++",
+                    "totalLinesOfCode": 14240,
+                    "totalFiles": 68,
+                    "softwareAgility": 0.6376338005065918,
+                    "softwareElegance": 0.7972680926322937,
+                    "softwareResiliency": 0.6897905468940735,
+                    "softwareHealth": 0.7082308133443197,
+                    "softwareAgilityDetail": {
+                        "highLinesOfCode": 1726,
+                        "mediumLinesOfCode": 9196,
+                        "lowLinesOfCode": 3318
+                    },
+                    "softwareEleganceDetail": {
+                        "highLinesOfCode": 9401,
+                        "mediumLinesOfCode": 2870,
+                        "lowLinesOfCode": 1969
+                    },
+                    "softwareResiliencyDetail": {
+                        "highLinesOfCode": 5673,
+                        "mediumLinesOfCode": 5411,
+                        "lowLinesOfCode": 3156
+                    },
+                    "softwareHealthDetail": {
+                        "highLinesOfCode": 5600,
+                        "mediumLinesOfCode": 5825,
+                        "lowLinesOfCode": 2814
+                    }
+                },
+                {
+                    "technology": "Python",
+                    "totalLinesOfCode": 2244,
+                    "totalFiles": 31,
+                    "softwareAgility": 0.5431603193283081,
+                    "softwareElegance": 0.3635373115539551,
+                    "softwareResiliency": 0.6304383277893066,
+                    "softwareHealth": 0.5123786528905233,
+                    "softwareAgilityDetail": {
+                        "highLinesOfCode": 23,
+                        "mediumLinesOfCode": 1291,
+                        "lowLinesOfCode": 930
+                    },
+                    "softwareEleganceDetail": {
+                        "highLinesOfCode": 220,
+                        "mediumLinesOfCode": 591,
+                        "lowLinesOfCode": 1433
+                    },
+                    "softwareResiliencyDetail": {
+                        "highLinesOfCode": 787,
+                        "mediumLinesOfCode": 821,
+                        "lowLinesOfCode": 636
+                    },
+                    "softwareHealthDetail": {
+                        "highLinesOfCode": 343,
+                        "mediumLinesOfCode": 901,
+                        "lowLinesOfCode": 999
+                    }
+                },
+                {
+                    "technology": "JavaScript",
+                    "totalLinesOfCode": 7363,
+                    "totalFiles": 67,
+                    "softwareAgility": 0.4347915053367615,
+                    "softwareElegance": 0.6080769300460815,
+                    "softwareResiliency": 0.22977423667907715,
+                    "softwareHealth": 0.4242142240206401,
+                    "softwareAgilityDetail": {
+                        "highLinesOfCode": 739,
+                        "mediumLinesOfCode": 771,
+                        "lowLinesOfCode": 5853
+                    },
+                    "softwareEleganceDetail": {
+                        "highLinesOfCode": 678,
+                        "mediumLinesOfCode": 1187,
+                        "lowLinesOfCode": 5498
+                    },
+                    "softwareResiliencyDetail": {
+                        "highLinesOfCode": 224,
+                        "mediumLinesOfCode": 548,
+                        "lowLinesOfCode": 6591
+                    },
+                    "softwareHealthDetail": {
+                        "highLinesOfCode": 547,
+                        "mediumLinesOfCode": 835,
+                        "lowLinesOfCode": 5980
+                    }
+                }
+            ],
+            "components": []
+        }
+    ],
+    "surveys": [
+        {
+            "id": 371,
+            "ref": "CAST_MAINT",
+            "name": "Software Maintenance Estimate",
+            "questions": [
+                {
+                    "label": "What is the percentage of change to the base code in the last 12 months?",
+                    "value": "40.0",
+                    "questionId": 1000121
+                },
+                {
+                    "label": "What is the average skill level of the development team on this type of application?",
+                    "value": "< 2 months",
+                    "questionId": 1000015,
+                    "choiceId": 1000066
+                },
+                {
+                    "label": "What percentage of the development effort has been spent on maintenance in the last 12 months?",
+                    "value": "35.0",
+                    "questionId": 1000012
+                },
+                {
+                    "label": "What is the annual staff turnover within the development team?",
+                    "value": "25%",
+                    "questionId": 1000016,
+                    "choiceId": 1000144
+                },
+                {
+                    "label": "What is the CMMI level of the organization?",
+                    "value": "Level 1 (lower half)",
+                    "questionId": 1000032,
+                    "choiceId": 1000254
+                }
+            ]
+        },
+        {
+            "id": 1700,
+            "name": "Business Alignment Assessment",
+            "questions": [
+                {
+                    "label": "[Portfolio Management] How many Business processes does the application support?",
+                    "shortLabel": "",
+                    "value": "Don't Know",
+                    "questionId": 10001304,
+                    "choiceId": 10007400
+                },
+                {
+                    "label": "[Portfolio Management] What is the primary capability that this application supports? (APQC short)",
+                    "shortLabel": "What is the primary capability that this application supports",
+                    "value": "10.0 - Acquire, Construct, and Manage Assets",
+                    "questionId": 10006306,
+                    "choiceId": 10012805
+                },
+                {
+                    "label": "[Portfolio Management] What is the application's life cycle stage?",
+                    "shortLabel": "Application LifeCycle",
+                    "value": "Decommissioned",
+                    "questionId": 10006307,
+                    "choiceId": 10012901
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "ref": "CAST_BI",
+            "name": "Business Impact",
+            "questions": [
+                {
+                    "label": "What is the average number of FTE (Full Time Equivalent) resources that have worked on the source code for this application over the last 12 months?",
+                    "shortLabel": "",
+                    "value": "1.0",
+                    "questionId": 1000011
+                },
+                {
+                    "label": "Is this application aligned with the company's future technology direction?",
+                    "shortLabel": "",
+                    "value": "Yes",
+                    "questionId": 1000009,
+                    "choiceId": 1000042
+                },
+                {
+                    "label": "The number of major releases delivered over the last 12 months for this application?",
+                    "shortLabel": "",
+                    "value": "7 to 12",
+                    "questionId": 1000006,
+                    "choiceId": 1000454
+                },
+                {
+                    "label": "Could failure of this application lead to loss of customer confidence? Please define the level of impact.",
+                    "value": "High",
+                    "questionId": 1000022,
+                    "choiceId": 1000222
+                },
+                {
+                    "label": "Could failure of this application lead to harm of the company's public image? Please define the level of impact.",
+                    "value": "Very High",
+                    "questionId": 1000021,
+                    "choiceId": 1000003
+                },
+                {
+                    "label": "Could failure of this application lead to loss of revenue or business opportunity? Please define the level of impact.",
+                    "value": "Low",
+                    "questionId": 1000020,
+                    "choiceId": 1000406
+                },
+                {
+                    "label": "Could failure of this application lead to disruption? Please define the level of impact.",
+                    "value": "Medium",
+                    "questionId": 1000019,
+                    "choiceId": 1000193
+                },
+                {
+                    "label": "What is the approximate number of end users for this application?",
+                    "shortLabel": "",
+                    "value": "100 to 500",
+                    "questionId": 1000018,
+                    "choiceId": 1000396
+                },
+                {
+                    "label": "Does the application serve internal or external users?",
+                    "value": "Internal users or business processes",
+                    "questionId": 1000017,
+                    "choiceId": 1000204
+                }
+            ]
+        },
+        {
+            "id": 373,
+            "ref": "CAST_APP",
+            "name": "Application Properties",
+            "questions": [
+                {
+                    "label": "What is the application type?",
+                    "shortLabel": "",
+                    "value": "Supply chain management system",
+                    "questionId": 1000004,
+                    "choiceId": 1000440
+                },
+                {
+                    "label": "Application Owner's name",
+                    "value": "JAS",
+                    "questionId": 1000002
+                },
+                {
+                    "label": "Is this application a custom application or a Commercial Off The Shelf product?",
+                    "shortLabel": "",
+                    "value": "Custom Application",
+                    "questionId": 1000427,
+                    "choiceId": 1000529
+                },
+                {
+                    "label": "In what year was this application first put into production?",
+                    "shortLabel": "",
+                    "value": "2014",
+                    "questionId": 1000033
+                }
+            ]
+        },
+        {
+            "id": 1701,
+            "name": "IaaS Assessment",
+            "questions": [
+                {
+                    "label": "[IaaS] Performance - Elasticity",
+                    "shortLabel": "",
+                    "value": "Med (Moderate spikes occasionally)",
+                    "questionId": 10003000,
+                    "choiceId": 10009402
+                },
+                {
+                    "label": "[IaaS] Performance - Scalability",
+                    "shortLabel": "",
+                    "value": " Forecasted Exponential Growth with Unknown Dates and Growth",
+                    "questionId": 10003001,
+                    "choiceId": 10009409
+                },
+                {
+                    "label": "[IaaS] Performance - Latency",
+                    "shortLabel": "",
+                    "value": " < 500ms",
+                    "questionId": 10003003,
+                    "choiceId": 10009416
+                },
+                {
+                    "label": "[IaaS] Performance - Throughput",
+                    "shortLabel": "",
+                    "value": "100 MBps (Multi-media and gaming)",
+                    "questionId": 10003004,
+                    "choiceId": 10009424
+                },
+                {
+                    "label": "[IaaS] Operations - Business Continuity",
+                    "shortLabel": "",
+                    "value": "Moderate Availability required (99% - \"two nines\") ",
+                    "questionId": 10003104,
+                    "choiceId": 10009534
+                },
+                {
+                    "label": "[IaaS] Security & Compliance - Jurisdiction",
+                    "shortLabel": "",
+                    "value": "Restricted to a nation",
+                    "questionId": 10003107,
+                    "choiceId": 10009549
+                },
+                {
+                    "label": "[IaaS] Architecture - Application - Complexity",
+                    "shortLabel": "",
+                    "value": "Med, (N tier,  low integration w/other apps (2-5))",
+                    "questionId": 10003008,
+                    "choiceId": 10009442
+                },
+                {
+                    "label": "[IaaS] Architecture - Infrastructure - Hardware Life Expectancy",
+                    "shortLabel": "",
+                    "value": "3-4 years",
+                    "questionId": 10003014,
+                    "choiceId": 10009471
+                },
+                {
+                    "label": "[IaaS] Financial - Operating Cost",
+                    "shortLabel": "",
+                    "value": "Med Low (No SLAs, Minimal staffing)",
+                    "questionId": 10003015,
+                    "choiceId": 10009476
+                }
+            ]
+        },
+        {
+            "id": 1702,
+            "name": "TCO Assessment",
+            "questions": [
+                {
+                    "label": "[TCO] What is the Total Cost of Ownership for this application?",
+                    "shortLabel": "",
+                    "value": "Medium",
+                    "questionId": 10006303,
+                    "choiceId": 10012609
+                },
+                {
+                    "label": "[TCO] What is the evolution of the TCO?",
+                    "shortLabel": "",
+                    "value": "Decreasing",
+                    "questionId": 10006304,
+                    "choiceId": 10012702
+                }
+            ]
+        },
+        {
+            "id": 938,
+            "ref": "CAST_CLOUD",
+            "name": "Cloud Readiness Assessment",
+            "questions": [
+                {
+                    "label": "[Business Drivers] Does this application correspond to a specific workload?",
+                    "shortLabel": "",
+                    "value": "Big Data",
+                    "questionId": 10000901,
+                    "choiceId": 10006805
+                },
+                {
+                    "label": "[Technical Enablers] Does this application depend on other services or applications?",
+                    "shortLabel": "",
+                    "value": "Internal services exposed through an API",
+                    "questionId": 10000808,
+                    "choiceId": 10006731
+                },
+                {
+                    "label": "[Technical Enablers] What is the database provider for this application?",
+                    "shortLabel": "",
+                    "value": "Standard but not supported as a service in the Cloud (IaaS)",
+                    "questionId": 10000809,
+                    "choiceId": 10006735
+                },
+                {
+                    "label": "[Process Maturity] What is the average skill on Cloud technologies and practices within the development team for this application?",
+                    "shortLabel": "",
+                    "value": "Basic knowledge",
+                    "questionId": 10000810,
+                    "choiceId": 10006739
+                },
+                {
+                    "label": "[Business Drivers] What is the current (or expected) Service Level Agreement for this application?",
+                    "shortLabel": "",
+                    "value": "SLA with maintenance timeframe",
+                    "questionId": 10000811,
+                    "choiceId": 10006743
+                },
+                {
+                    "label": "[Process Maturity] What is the evolution model and feedback loop approach for this application?",
+                    "shortLabel": "",
+                    "value": "Dev/Test Loop",
+                    "questionId": 10000800,
+                    "choiceId": 10006703
+                },
+                {
+                    "label": "[Technical Enablers] What is the current deployment platform for this application?",
+                    "shortLabel": "",
+                    "value": "Desktop application",
+                    "questionId": 10000801,
+                    "choiceId": 10006706
+                },
+                {
+                    "label": "[Technical Enablers] What is the current user authentication mechanism used by this application?",
+                    "shortLabel": "",
+                    "value": "Single Sign On",
+                    "questionId": 10000802,
+                    "choiceId": 10006710
+                },
+                {
+                    "label": "[Technical Enablers]  How is this application exposed to external services/applications?",
+                    "shortLabel": "",
+                    "value": "REST API exposed",
+                    "questionId": 10000803,
+                    "choiceId": 10006714
+                },
+                {
+                    "label": "[Business Drivers] How is data consumed from this application?",
+                    "shortLabel": "",
+                    "value": "Data Analytics",
+                    "questionId": 10000805,
+                    "choiceId": 10006721
+                },
+                {
+                    "label": "[Process Maturity] What is the level of deployment process automation for provisioning and configuration for this application?",
+                    "shortLabel": "",
+                    "value": "Semi-automated",
+                    "questionId": 10000806,
+                    "choiceId": 10006724
+                },
+                {
+                    "label": "[Technical Enablers] Is this application multi-tenant?",
+                    "shortLabel": "",
+                    "value": "Yes, muti-tenant front with a dedicated database",
+                    "questionId": 10000807,
+                    "choiceId": 10006727
+                }
+            ]
+        },
+        {
+            "id": 1261,
+            "name": "GDPR Assessment",
+            "questions": [
+                {
+                    "label": "[GDPR] Is the processing of Personally Identifiable Data for the application sub-contracted to a third-party?",
+                    "shortLabel": "",
+                    "value": "Not Applicable",
+                    "questionId": 10003832,
+                    "choiceId": 10010200
+                },
+                {
+                    "label": "[GDPR] Is the Data Retention Policy defined for the application data?",
+                    "value": "Yes",
+                    "questionId": 10003833,
+                    "choiceId": 10010202
+                },
+                {
+                    "label": "[GDPR] Is the Data Retention Policy of the application data effectively applied?",
+                    "value": "Don't Know",
+                    "questionId": 10003834,
+                    "choiceId": 10010208
+                },
+                {
+                    "label": "[GDPR] Does the application manipulate Personally Identifiable Information data?",
+                    "value": "Yes",
+                    "questionId": 10003835,
+                    "choiceId": 10010209
+                },
+                {
+                    "label": "[GDPR] Is the user consent collected from the application?",
+                    "value": "No, the user consent is not collected",
+                    "questionId": 10003836,
+                    "choiceId": 10010214
+                },
+                {
+                    "label": "[GDPR] Is Personally Identifiable Data of the application transmitted to third-party organizations?",
+                    "value": "No",
+                    "questionId": 10003837,
+                    "choiceId": 10010215
+                },
+                {
+                    "label": "[GDPR] Does the application allow users to access their own PII data?",
+                    "value": "Yes, in read-only mode",
+                    "questionId": 10003838,
+                    "choiceId": 10010218
+                },
+                {
+                    "label": "[GDPR] Who is the Data Processor for the application, in charge of processing personal data?",
+                    "value": "Michael MULLER",
+                    "questionId": 10003839
+                },
+                {
+                    "label": "[GDPR] Is the Data Processor for the application identified?",
+                    "value": "No",
+                    "questionId": 10003831,
+                    "choiceId": 10010198
+                }
+            ]
+        }
+    ],
+    "tags": [
+        {
+            "id": 1350,
+            "label": "GDPR"
+        },
+        {
+            "id": 2304,
+            "label": "CR+BI+CustomCode"
+        },
+        {
+            "id": 54,
+            "label": "Data Privacy / KeyWord"
+        }
+    ]
+}

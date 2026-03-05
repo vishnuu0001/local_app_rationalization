@@ -1,0 +1,2128 @@
+{
+    "id": 10026,
+    "name": "BitCoin",
+    "domains": [
+        {
+            "id": 254,
+            "name": "Sales and Marketing"
+        },
+        {
+            "id": 12912,
+            "name": "Portfolio Company Delta"
+        }
+    ],
+    "metrics": [
+        {
+            "snapshotLabel": "TrendCampaign_4_BitCoin",
+            "snapshotDate": 1488171600000,
+            "softwareAgility": 0.5970348119735718,
+            "softwareAgilityAdded": 0.5970348119735718,
+            "softwareElegance": 0.7008336782455444,
+            "softwareEleganceAdded": 0.7008336782455444,
+            "softwareResiliency": 0.7327622771263123,
+            "softwareResiliencyAdded": 0.7327622771263123,
+            "softwareHealth": 0.6768769224484762,
+            "openSourceSafety": 0.5979767382497988,
+            "openSourceLicense": 1.0,
+            "openSourceObsolescence": 0.2872635480827298,
+            "openSourceCVE": 0.5066666666666667,
+            "businessImpact": 0.7969543147208121,
+            "roarIndex": 0.2288822268527919,
+            "backFiredFP": 1024.0,
+            "backFiredFPAdded": 1024.0,
+            "technicalDebt": 63491.93082380295,
+            "maintenanceRecordedFTE": 1.05,
+            "maintenanceRecommendedFTE": 0.24780992978512295,
+            "greenIndex": null,
+            "greenIndexScan": null,
+            "greenIndexSurvey": null,
+            "greenOccurrences": null,
+            "greenEffort": null,
+            "greenDetail": [
+                {
+                    "technology": "C/C++",
+                    "greenIndexScan": 0.0,
+                    "greenIndexDetails": null
+                }
+            ],
+            "totalLinesOfCode": 77854,
+            "totalLinesOfCodeAdded": 77854,
+            "totalLinesOfCodeModified": 0,
+            "totalFiles": 439,
+            "totalFilesAdded": 439,
+            "totalFilesModified": 0,
+            "customIndicators": [
+                {
+                    "metricId": 10023356,
+                    "value": "0.0707070707070707"
+                },
+                {
+                    "metricId": 10006001,
+                    "value": "0.875"
+                },
+                {
+                    "metricId": 10006305,
+                    "value": "-1.0"
+                },
+                {
+                    "metricId": 10013600,
+                    "value": "-1.0"
+                },
+                {
+                    "metricId": 10006302,
+                    "value": "-1.0"
+                },
+                {
+                    "metricId": 10006301,
+                    "value": "-1.0"
+                },
+                {
+                    "metricId": 10016304,
+                    "value": "-1.0"
+                }
+            ],
+            "technologies": [
+                {
+                    "technology": "C/C++",
+                    "totalLinesOfCode": 77854,
+                    "totalFiles": 439,
+                    "softwareAgility": 0.5970348119735718,
+                    "softwareElegance": 0.7008336782455444,
+                    "softwareResiliency": 0.7327622771263123,
+                    "softwareHealth": 0.6768769224484762,
+                    "softwareAgilityDetail": {
+                        "highLinesOfCode": 14215,
+                        "mediumLinesOfCode": 33406,
+                        "lowLinesOfCode": 30233
+                    },
+                    "softwareEleganceDetail": {
+                        "highLinesOfCode": 37989,
+                        "mediumLinesOfCode": 19980,
+                        "lowLinesOfCode": 19885
+                    },
+                    "softwareResiliencyDetail": {
+                        "highLinesOfCode": 36333,
+                        "mediumLinesOfCode": 30192,
+                        "lowLinesOfCode": 11329
+                    },
+                    "softwareHealthDetail": {
+                        "highLinesOfCode": 29512,
+                        "mediumLinesOfCode": 27859,
+                        "lowLinesOfCode": 20482
+                    }
+                }
+            ],
+            "vulnerabilities": [
+                {
+                    "matchedCPE": "cpe:/a:jquery_file_upload_project:jquery_file_upload",
+                    "name": "CVE-2018-9206",
+                    "publishedDate": "2018-10-11T19:29:00.640Z",
+                    "lastUpdateDate": "2024-11-21T09:15:09.623Z",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2018-9206",
+                    "description": "Unauthenticated arbitrary file upload vulnerability in Blueimp jQuery-File-Upload <= v9.22.0",
+                    "references": [
+                        {
+                            "name": "Exploit",
+                            "url": "https://www.exploit-db.com/exploits/45790/",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "http://www.securityfocus.com/bid/105679",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://www.exploit-db.com/exploits/45790/",
+                            "source": "larry0@me.com"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://wpvulndb.com/vulnerabilities/9136",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "http://www.vapidlabs.com/advisory.php?v=204",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "http://www.securityfocus.com/bid/105679",
+                            "source": "larry0@me.com"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://www.exploit-db.com/exploits/46182/",
+                            "source": "larry0@me.com"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "http://www.securityfocus.com/bid/106629",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://wpvulndb.com/vulnerabilities/9136",
+                            "source": "larry0@me.com"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com/technetwork/security-advisory/cpujan2019-5072801.html",
+                            "source": "larry0@me.com"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://www.exploit-db.com/exploits/46182/",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "http://www.vapidlabs.com/advisory.php?v=204",
+                            "source": "larry0@me.com"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "http://www.securityfocus.com/bid/106629",
+                            "source": "larry0@me.com"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com/technetwork/security-advisory/cpujan2019-5072801.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "criticityLabel": "CRITICAL",
+                    "cvssScore": 9.8,
+                    "cvssAccessVector": "NETWORK",
+                    "cvssAccessComplexity": "LOW",
+                    "cvssAuthentication": "NONE",
+                    "cvssConfidentialityImpact": "HIGH",
+                    "cvssAvailabilityImpact": "HIGH",
+                    "source": "NVD",
+                    "criticityCategory": "CRITICAL",
+                    "advisory": false,
+                    "isKev": false
+                },
+                {
+                    "matchedCPE": "cpe:/a:formidable_project:formidable",
+                    "name": "CVE-2022-29622",
+                    "publishedDate": "2022-05-16T18:15:08.027Z",
+                    "lastUpdateDate": "2024-11-21T11:59:27.063Z",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2022-29622",
+                    "description": "An arbitrary file upload vulnerability in formidable v3.1.4 allows attackers to execute arbitrary code via a crafted filename. NOTE: some third parties dispute this issue because the product has common use cases in which uploading arbitrary files is the desired behavior. Also, there are configuration options in all versions that can change the default behavior of how files are handled. Strapi does not consider this to be a valid vulnerability.",
+                    "references": [
+                        {
+                            "name": "Exploit",
+                            "url": "https://github.com/node-formidable/formidable/issues/862",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://github.com/strapi/strapi/issues/20189",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://github.com/node-formidable/formidable/issues/862",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://github.com/strapi/strapi/issues/20189",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://www.youtube.com/watch?v=C6QPKooxhAo",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": "Issue Tracking",
+                            "url": "https://github.com/node-formidable/formidable/issues/856",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://medium.com/%40zsolt.imre/is-cybersecurity-the-next-supply-chain-vulnerability-9a00de745022",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://medium.com/%40zsolt.imre/is-cybersecurity-the-next-supply-chain-vulnerability-9a00de745022",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://www.youtube.com/watch?v=C6QPKooxhAo",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Issue Tracking",
+                            "url": "https://github.com/node-formidable/formidable/issues/856",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "criticityLabel": "CRITICAL",
+                    "cvssScore": 9.8,
+                    "cvssAccessVector": "NETWORK",
+                    "cvssAccessComplexity": "LOW",
+                    "cvssAuthentication": "NONE",
+                    "cvssConfidentialityImpact": "HIGH",
+                    "cvssAvailabilityImpact": "HIGH",
+                    "source": "NVD",
+                    "criticityCategory": "CRITICAL",
+                    "advisory": false,
+                    "isKev": false
+                },
+                {
+                    "matchedCPE": "cpe:/a:node-static_project:node-static",
+                    "name": "CVE-2023-26111",
+                    "publishedDate": "2023-03-06T10:15:12.920Z",
+                    "lastUpdateDate": "2025-03-06T02:15:18.010Z",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2023-26111",
+                    "description": "All versions of the package @nubosoftware/node-static; all versions of the package node-static are vulnerable to Directory Traversal due to improper file path sanitization in the startsWith() method in the servePath function.\r\r",
+                    "references": [
+                        {
+                            "name": "Exploit",
+                            "url": "https://security.snyk.io/vuln/SNYK-JS-NODESTATIC-3149928",
+                            "source": "report@snyk.io"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://security.snyk.io/vuln/SNYK-JS-NUBOSOFTWARENODESTATIC-3149927",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://gist.github.com/lirantal/c80b28e7bee148dc287339cb483e42bc",
+                            "source": "report@snyk.io"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://gist.github.com/lirantal/c80b28e7bee148dc287339cb483e42bc",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://security.snyk.io/vuln/SNYK-JS-NUBOSOFTWARENODESTATIC-3149927",
+                            "source": "report@snyk.io"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://security.snyk.io/vuln/SNYK-JS-NODESTATIC-3149928",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Broken Link",
+                            "url": "https://github.com/cloudhead/node-static/blob/master/lib/node-static.js%23L160-L163",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Broken Link",
+                            "url": "https://github.com/cloudhead/node-static/blob/master/lib/node-static.js%23L160-L163",
+                            "source": "report@snyk.io"
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "criticityLabel": "HIGH",
+                    "cvssScore": 7.5,
+                    "cvssAccessVector": "NETWORK",
+                    "cvssAccessComplexity": "LOW",
+                    "cvssAuthentication": "NONE",
+                    "cvssConfidentialityImpact": "HIGH",
+                    "cvssAvailabilityImpact": "NONE",
+                    "source": "NVD",
+                    "criticityCategory": "HIGH",
+                    "advisory": false,
+                    "isKev": false
+                },
+                {
+                    "name": "CVE-2025-11149",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2025-11149",
+                    "description": "This affects all versions of the package node-static; all versions of the package @nubosoftware/node-static. The package fails to catch an exception when user input includes null bytes. This allows attackers to access http://host/%00 and crash the server.",
+                    "references": [
+                        {
+                            "name": null,
+                            "url": "https://security.snyk.io/vuln/SNYK-JS-NUBOSOFTWARENODESTATIC-3330728",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "https://security.snyk.io/vuln/SNYK-JS-NODESTATIC-1297183",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "https://github.com/cloudhead/node-static/commit/78879dc665f0f7137063794b6e0b6203a81c7f67",
+                            "source": null
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "cwes": [
+                        {
+                            "id": "CWE-400",
+                            "dangerousWeakness": false
+                        },
+                        {
+                            "id": "CWE-400",
+                            "dangerousWeakness": false
+                        }
+                    ],
+                    "criticityLabel": "HIGH",
+                    "cvssScore": 7.5,
+                    "source": "GITLAB",
+                    "cweId": "CWE-400",
+                    "criticityCategory": "HIGH",
+                    "advisory": false,
+                    "isKev": false
+                },
+                {
+                    "matchedCPE": "cpe:/a:getbootstrap:bootstrap",
+                    "name": "CVE-2016-10735",
+                    "publishedDate": "2019-01-09T10:29:00.883Z",
+                    "lastUpdateDate": "2024-11-21T07:44:37.590Z",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2016-10735",
+                    "description": "In Bootstrap 3.x before 3.4.0 and 4.x-beta before 4.0.0-beta.2, XSS is possible in the data-target attribute, a different vulnerability than CVE-2018-14041.",
+                    "references": [
+                        {
+                            "name": "Exploit",
+                            "url": "https://github.com/twbs/bootstrap/issues/20184",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://access.redhat.com/errata/RHBA-2019:1570",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://access.redhat.com/errata/RHSA-2019:3023",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://github.com/twbs/bootstrap/pull/23687",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://github.com/twbs/bootstrap/issues/20184",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": "Release Notes",
+                            "url": "https://blog.getbootstrap.com/2018/12/13/bootstrap-3-4-0/",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://access.redhat.com/errata/RHBA-2019:1570",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Issue Tracking",
+                            "url": "https://github.com/twbs/bootstrap/issues/27915#issuecomment-452140906",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://github.com/twbs/bootstrap/pull/26460",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://access.redhat.com/errata/RHBA-2019:1076",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://access.redhat.com/errata/RHBA-2019:1076",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://github.com/twbs/bootstrap/pull/26460",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://access.redhat.com/errata/RHSA-2020:0133",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://github.com/twbs/bootstrap/pull/23679",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Release Notes",
+                            "url": "https://blog.getbootstrap.com/2018/12/13/bootstrap-3-4-0/",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Issue Tracking",
+                            "url": "https://github.com/twbs/bootstrap/issues/27915#issuecomment-452140906",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://www.tenable.com/security/tns-2021-14",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://access.redhat.com/errata/RHSA-2019:1456",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://access.redhat.com/errata/RHSA-2020:0132",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://access.redhat.com/errata/RHSA-2020:0133",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://github.com/twbs/bootstrap/pull/23679",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://github.com/twbs/bootstrap/pull/23687",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://access.redhat.com/errata/RHSA-2019:3023",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://www.tenable.com/security/tns-2021-14",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://access.redhat.com/errata/RHSA-2020:0132",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://access.redhat.com/errata/RHSA-2019:1456",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "criticityLabel": "MEDIUM",
+                    "cvssScore": 6.1,
+                    "cvssAccessVector": "NETWORK",
+                    "cvssAccessComplexity": "LOW",
+                    "cvssAuthentication": "REQUIRED",
+                    "cvssConfidentialityImpact": "LOW",
+                    "cvssAvailabilityImpact": "NONE",
+                    "source": "NVD",
+                    "criticityCategory": "MEDIUM",
+                    "advisory": false,
+                    "isKev": false
+                },
+                {
+                    "matchedCPE": "cpe:/a:getbootstrap:bootstrap",
+                    "name": "CVE-2018-14040",
+                    "publishedDate": "2018-07-13T18:29:00.213Z",
+                    "lastUpdateDate": "2024-11-21T08:48:29.280Z",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2018-14040",
+                    "description": "In Bootstrap before 4.1.2, XSS is possible in the collapse data-parent attribute.",
+                    "references": [
+                        {
+                            "name": null,
+                            "url": "https://www.oracle.com/security-alerts/cpuApr2021.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/b0656d359c7d40ec9f39c8cc61bca66802ef9a2a12ee199f5b0c1442%40%3Cdev.drill.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Vendor Advisory",
+                            "url": "https://blog.getbootstrap.com/2018/07/12/bootstrap-4-1-2/",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "http://packetstormsecurity.com/files/156743/OctoberCMS-Insecure-Dependencies.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://lists.debian.org/debian-lts-announce/2018/08/msg00027.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "http://packetstormsecurity.com/files/156743/OctoberCMS-Insecure-Dependencies.html",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rd0e44e8ef71eeaaa3cf3d1b8b41eb25894372e2995ec908ce7624d26%40%3Ccommits.pulsar.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://lists.debian.org/debian-lts-announce/2018/08/msg00027.html",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "http://seclists.org/fulldisclosure/2019/May/13",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://github.com/twbs/bootstrap/issues/26625",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/519eb0fd45642dcecd9ff74cb3e71c20a4753f7d82e2f07864b5108f%40%3Cdev.drill.apache.org%3E",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/519eb0fd45642dcecd9ff74cb3e71c20a4753f7d82e2f07864b5108f%40%3Cdev.drill.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "http://seclists.org/fulldisclosure/2019/May/11",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://github.com/twbs/bootstrap/issues/26625",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "http://seclists.org/fulldisclosure/2019/May/10",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/52e0e6b5df827ee7f1e68f7cc3babe61af3b2160f5d74a85469b7b0e%40%3Cdev.superset.apache.org%3E",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rd0e44e8ef71eeaaa3cf3d1b8b41eb25894372e2995ec908ce7624d26%40%3Ccommits.pulsar.apache.org%3E",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://seclists.org/bugtraq/2019/May/18",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": "Issue Tracking",
+                            "url": "https://github.com/twbs/bootstrap/pull/26630",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "http://seclists.org/fulldisclosure/2019/May/11",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/f9bc3e55f4e28d1dcd1a69aae6d53e609a758e34d2869b4d798e13cc%40%3Cissues.drill.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://www.tenable.com/security/tns-2021-14",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Issue Tracking",
+                            "url": "https://github.com/twbs/bootstrap/issues/26423",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "http://seclists.org/fulldisclosure/2019/May/10",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": "Issue Tracking",
+                            "url": "https://github.com/twbs/bootstrap/issues/26423",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/b0656d359c7d40ec9f39c8cc61bca66802ef9a2a12ee199f5b0c1442%40%3Cdev.drill.apache.org%3E",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "http://seclists.org/fulldisclosure/2019/May/13",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://www.oracle.com/security-alerts/cpuApr2021.html",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/52e0e6b5df827ee7f1e68f7cc3babe61af3b2160f5d74a85469b7b0e%40%3Cdev.superset.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://seclists.org/bugtraq/2019/May/18",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Issue Tracking",
+                            "url": "https://github.com/twbs/bootstrap/pull/26630",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "http://packetstormsecurity.com/files/152787/dotCMS-5.1.1-Vulnerable-Dependencies.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r3dc0cac8d856bca02bd6997355d7ff83027dcfc82f8646a29b89b714%40%3Cissues.hbase.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/f9bc3e55f4e28d1dcd1a69aae6d53e609a758e34d2869b4d798e13cc%40%3Cissues.drill.apache.org%3E",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://www.tenable.com/security/tns-2021-14",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r3dc0cac8d856bca02bd6997355d7ff83027dcfc82f8646a29b89b714%40%3Cissues.hbase.apache.org%3E",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": "Vendor Advisory",
+                            "url": "https://blog.getbootstrap.com/2018/07/12/bootstrap-4-1-2/",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "http://packetstormsecurity.com/files/152787/dotCMS-5.1.1-Vulnerable-Dependencies.html",
+                            "source": "cve@mitre.org"
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "criticityLabel": "MEDIUM",
+                    "cvssScore": 6.1,
+                    "cvssAccessVector": "NETWORK",
+                    "cvssAccessComplexity": "LOW",
+                    "cvssAuthentication": "REQUIRED",
+                    "cvssConfidentialityImpact": "LOW",
+                    "cvssAvailabilityImpact": "NONE",
+                    "source": "NVD",
+                    "criticityCategory": "MEDIUM",
+                    "advisory": false,
+                    "isKev": false
+                },
+                {
+                    "matchedCPE": "cpe:/a:getbootstrap:bootstrap",
+                    "name": "CVE-2018-14042",
+                    "publishedDate": "2018-07-13T18:29:00.323Z",
+                    "lastUpdateDate": "2024-11-21T08:48:29.730Z",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2018-14042",
+                    "description": "In Bootstrap before 4.1.2, XSS is possible in the data-container property of tooltip.",
+                    "references": [
+                        {
+                            "name": null,
+                            "url": "https://www.oracle.com/security-alerts/cpuApr2021.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/b0656d359c7d40ec9f39c8cc61bca66802ef9a2a12ee199f5b0c1442%40%3Cdev.drill.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Vendor Advisory",
+                            "url": "https://blog.getbootstrap.com/2018/07/12/bootstrap-4-1-2/",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "http://packetstormsecurity.com/files/156743/OctoberCMS-Insecure-Dependencies.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "http://packetstormsecurity.com/files/156743/OctoberCMS-Insecure-Dependencies.html",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://github.com/twbs/bootstrap/issues/26628",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rd0e44e8ef71eeaaa3cf3d1b8b41eb25894372e2995ec908ce7624d26%40%3Ccommits.pulsar.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "http://seclists.org/fulldisclosure/2019/May/13",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/519eb0fd45642dcecd9ff74cb3e71c20a4753f7d82e2f07864b5108f%40%3Cdev.drill.apache.org%3E",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/519eb0fd45642dcecd9ff74cb3e71c20a4753f7d82e2f07864b5108f%40%3Cdev.drill.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "http://seclists.org/fulldisclosure/2019/May/11",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "http://seclists.org/fulldisclosure/2019/May/10",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/52e0e6b5df827ee7f1e68f7cc3babe61af3b2160f5d74a85469b7b0e%40%3Cdev.superset.apache.org%3E",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rd0e44e8ef71eeaaa3cf3d1b8b41eb25894372e2995ec908ce7624d26%40%3Ccommits.pulsar.apache.org%3E",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://seclists.org/bugtraq/2019/May/18",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://github.com/twbs/bootstrap/issues/26628",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Issue Tracking",
+                            "url": "https://github.com/twbs/bootstrap/pull/26630",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "http://seclists.org/fulldisclosure/2019/May/11",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/f9bc3e55f4e28d1dcd1a69aae6d53e609a758e34d2869b4d798e13cc%40%3Cissues.drill.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://www.tenable.com/security/tns-2021-14",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Issue Tracking",
+                            "url": "https://github.com/twbs/bootstrap/issues/26423",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "http://seclists.org/fulldisclosure/2019/May/10",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": "Issue Tracking",
+                            "url": "https://github.com/twbs/bootstrap/issues/26423",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/b0656d359c7d40ec9f39c8cc61bca66802ef9a2a12ee199f5b0c1442%40%3Cdev.drill.apache.org%3E",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "http://seclists.org/fulldisclosure/2019/May/13",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://www.oracle.com/security-alerts/cpuApr2021.html",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/52e0e6b5df827ee7f1e68f7cc3babe61af3b2160f5d74a85469b7b0e%40%3Cdev.superset.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://seclists.org/bugtraq/2019/May/18",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Issue Tracking",
+                            "url": "https://github.com/twbs/bootstrap/pull/26630",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r3dc0cac8d856bca02bd6997355d7ff83027dcfc82f8646a29b89b714%40%3Cissues.hbase.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/f9bc3e55f4e28d1dcd1a69aae6d53e609a758e34d2869b4d798e13cc%40%3Cissues.drill.apache.org%3E",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://www.tenable.com/security/tns-2021-14",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r3dc0cac8d856bca02bd6997355d7ff83027dcfc82f8646a29b89b714%40%3Cissues.hbase.apache.org%3E",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": "Vendor Advisory",
+                            "url": "https://blog.getbootstrap.com/2018/07/12/bootstrap-4-1-2/",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "criticityLabel": "MEDIUM",
+                    "cvssScore": 6.1,
+                    "cvssAccessVector": "NETWORK",
+                    "cvssAccessComplexity": "LOW",
+                    "cvssAuthentication": "REQUIRED",
+                    "cvssConfidentialityImpact": "LOW",
+                    "cvssAvailabilityImpact": "NONE",
+                    "source": "NVD",
+                    "criticityCategory": "MEDIUM",
+                    "advisory": false,
+                    "isKev": false
+                },
+                {
+                    "matchedCPE": "cpe:/a:getbootstrap:bootstrap",
+                    "name": "CVE-2018-20676",
+                    "publishedDate": "2019-01-09T10:29:01.287Z",
+                    "lastUpdateDate": "2024-11-21T09:01:58.430Z",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2018-20676",
+                    "description": "In Bootstrap before 3.4.0, XSS is possible in the tooltip data-viewport attribute.",
+                    "references": [
+                        {
+                            "name": "Patch",
+                            "url": "https://github.com/twbs/bootstrap/pull/27047",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://access.redhat.com/errata/RHBA-2019:1570",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://access.redhat.com/errata/RHSA-2019:3023",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://github.com/twbs/bootstrap/issues/27915#issuecomment-452196628",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rd0e44e8ef71eeaaa3cf3d1b8b41eb25894372e2995ec908ce7624d26%40%3Ccommits.pulsar.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Release Notes",
+                            "url": "https://blog.getbootstrap.com/2018/12/13/bootstrap-3-4-0/",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://github.com/twbs/bootstrap/pull/27047",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://access.redhat.com/errata/RHBA-2019:1570",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Issue Tracking",
+                            "url": "https://github.com/twbs/bootstrap/issues/27915#issuecomment-452140906",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://access.redhat.com/errata/RHBA-2019:1076",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://access.redhat.com/errata/RHBA-2019:1076",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rd0e44e8ef71eeaaa3cf3d1b8b41eb25894372e2995ec908ce7624d26%40%3Ccommits.pulsar.apache.org%3E",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://access.redhat.com/errata/RHSA-2020:0133",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://github.com/twbs/bootstrap/issues/27915#issuecomment-452196628",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Release Notes",
+                            "url": "https://blog.getbootstrap.com/2018/12/13/bootstrap-3-4-0/",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Issue Tracking",
+                            "url": "https://github.com/twbs/bootstrap/issues/27915#issuecomment-452140906",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://www.tenable.com/security/tns-2021-14",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://access.redhat.com/errata/RHSA-2019:1456",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://access.redhat.com/errata/RHSA-2020:0132",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Issue Tracking",
+                            "url": "https://github.com/twbs/bootstrap/issues/27044",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://access.redhat.com/errata/RHSA-2020:0133",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://access.redhat.com/errata/RHSA-2019:3023",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Issue Tracking",
+                            "url": "https://github.com/twbs/bootstrap/issues/27044",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://www.tenable.com/security/tns-2021-14",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://access.redhat.com/errata/RHSA-2020:0132",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://access.redhat.com/errata/RHSA-2019:1456",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "criticityLabel": "MEDIUM",
+                    "cvssScore": 6.1,
+                    "cvssAccessVector": "NETWORK",
+                    "cvssAccessComplexity": "LOW",
+                    "cvssAuthentication": "REQUIRED",
+                    "cvssConfidentialityImpact": "LOW",
+                    "cvssAvailabilityImpact": "NONE",
+                    "source": "NVD",
+                    "criticityCategory": "MEDIUM",
+                    "advisory": false,
+                    "isKev": false
+                },
+                {
+                    "matchedCPE": "cpe:/a:getbootstrap:bootstrap",
+                    "name": "CVE-2018-20677",
+                    "publishedDate": "2019-01-09T10:29:01.397Z",
+                    "lastUpdateDate": "2024-11-21T09:01:58.590Z",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2018-20677",
+                    "description": "In Bootstrap before 3.4.0, XSS is possible in the affix configuration target property.",
+                    "references": [
+                        {
+                            "name": "Patch",
+                            "url": "https://github.com/twbs/bootstrap/pull/27047",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://access.redhat.com/errata/RHBA-2019:1570",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": "Issue Tracking",
+                            "url": "https://github.com/twbs/bootstrap/issues/27915#issuecomment-452196628",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://github.com/twbs/bootstrap/issues/27045",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://access.redhat.com/errata/RHSA-2019:3023",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rd0e44e8ef71eeaaa3cf3d1b8b41eb25894372e2995ec908ce7624d26%40%3Ccommits.pulsar.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Release Notes",
+                            "url": "https://blog.getbootstrap.com/2018/12/13/bootstrap-3-4-0/",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://github.com/twbs/bootstrap/pull/27047",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://access.redhat.com/errata/RHBA-2019:1570",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Issue Tracking",
+                            "url": "https://github.com/twbs/bootstrap/issues/27915#issuecomment-452140906",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://access.redhat.com/errata/RHBA-2019:1076",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://access.redhat.com/errata/RHBA-2019:1076",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/52e0e6b5df827ee7f1e68f7cc3babe61af3b2160f5d74a85469b7b0e%40%3Cdev.superset.apache.org%3E",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rd0e44e8ef71eeaaa3cf3d1b8b41eb25894372e2995ec908ce7624d26%40%3Ccommits.pulsar.apache.org%3E",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://access.redhat.com/errata/RHSA-2020:0133",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Release Notes",
+                            "url": "https://blog.getbootstrap.com/2018/12/13/bootstrap-3-4-0/",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Issue Tracking",
+                            "url": "https://github.com/twbs/bootstrap/issues/27915#issuecomment-452140906",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://www.tenable.com/security/tns-2021-14",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://access.redhat.com/errata/RHSA-2019:1456",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://access.redhat.com/errata/RHSA-2020:0132",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://access.redhat.com/errata/RHSA-2020:0133",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/52e0e6b5df827ee7f1e68f7cc3babe61af3b2160f5d74a85469b7b0e%40%3Cdev.superset.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Issue Tracking",
+                            "url": "https://github.com/twbs/bootstrap/issues/27915#issuecomment-452196628",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://access.redhat.com/errata/RHSA-2019:3023",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://www.tenable.com/security/tns-2021-14",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://github.com/twbs/bootstrap/issues/27045",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://access.redhat.com/errata/RHSA-2020:0132",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://access.redhat.com/errata/RHSA-2019:1456",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "criticityLabel": "MEDIUM",
+                    "cvssScore": 6.1,
+                    "cvssAccessVector": "NETWORK",
+                    "cvssAccessComplexity": "LOW",
+                    "cvssAuthentication": "REQUIRED",
+                    "cvssConfidentialityImpact": "LOW",
+                    "cvssAvailabilityImpact": "NONE",
+                    "source": "NVD",
+                    "criticityCategory": "MEDIUM",
+                    "advisory": false,
+                    "isKev": false
+                },
+                {
+                    "matchedCPE": "cpe:/a:getbootstrap:bootstrap",
+                    "name": "CVE-2019-8331",
+                    "publishedDate": "2019-02-20T21:29:00.837Z",
+                    "lastUpdateDate": "2024-11-21T09:49:42.020Z",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2019-8331",
+                    "description": "In Bootstrap before 3.4.1 and 4.3.x before 4.3.1, XSS is possible in the tooltip or popover data-template attribute.",
+                    "references": [
+                        {
+                            "name": "Mailing List",
+                            "url": "https://seclists.org/bugtraq/2019/May/18",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://www.tenable.com/security/tns-2021-14",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/17ff53f7999e74fbe3cc0ceb4e1c3b00b180b7c5afec8e978837bc49%40%3Cuser.flink.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/b0656d359c7d40ec9f39c8cc61bca66802ef9a2a12ee199f5b0c1442%40%3Cdev.drill.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/54df3aeb4239b64b50b356f0ca6f986e3c4ca5b84c515dce077c7854%40%3Cuser.flink.apache.org%3E",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": "Mailing List",
+                            "url": "http://seclists.org/fulldisclosure/2019/May/10",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Issue Tracking",
+                            "url": "https://github.com/twbs/bootstrap/pull/28236",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://access.redhat.com/errata/RHSA-2019:3023",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/10f0f3aefd51444d1198c65f44ffdf2d78ca3359423dbc1c168c9731%40%3Cdev.flink.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Mailing List",
+                            "url": "https://seclists.org/bugtraq/2019/May/18",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/52bafac05ad174000ea465fe275fd3cc7bd5c25535a7631c0bc9bfb2%40%3Cuser.flink.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Mailing List",
+                            "url": "http://seclists.org/fulldisclosure/2019/May/10",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": "Vendor Advisory",
+                            "url": "https://blog.getbootstrap.com/2019/02/13/bootstrap-4-3-1-and-3-4-1/",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/519eb0fd45642dcecd9ff74cb3e71c20a4753f7d82e2f07864b5108f%40%3Cdev.drill.apache.org%3E",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/519eb0fd45642dcecd9ff74cb3e71c20a4753f7d82e2f07864b5108f%40%3Cdev.drill.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://support.f5.com/csp/article/K24383845",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rd0e44e8ef71eeaaa3cf3d1b8b41eb25894372e2995ec908ce7624d26%40%3Ccommits.pulsar.apache.org%3E",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://access.redhat.com/errata/RHSA-2019:3023",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/b0656d359c7d40ec9f39c8cc61bca66802ef9a2a12ee199f5b0c1442%40%3Cdev.drill.apache.org%3E",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "http://packetstormsecurity.com/files/156743/OctoberCMS-Insecure-Dependencies.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/52e0e6b5df827ee7f1e68f7cc3babe61af3b2160f5d74a85469b7b0e%40%3Cdev.superset.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://www.oracle.com/security-alerts/cpuApr2021.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "http://www.securityfocus.com/bid/107375",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/17ff53f7999e74fbe3cc0ceb4e1c3b00b180b7c5afec8e978837bc49%40%3Cuser.flink.apache.org%3E",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/f9bc3e55f4e28d1dcd1a69aae6d53e609a758e34d2869b4d798e13cc%40%3Cissues.drill.apache.org%3E",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r3dc0cac8d856bca02bd6997355d7ff83027dcfc82f8646a29b89b714%40%3Cissues.hbase.apache.org%3E",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://access.redhat.com/errata/RHSA-2019:1456",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "http://packetstormsecurity.com/files/156743/OctoberCMS-Insecure-Dependencies.html",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": "Mailing List",
+                            "url": "http://seclists.org/fulldisclosure/2019/May/13",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": "Release Notes",
+                            "url": "https://github.com/twbs/bootstrap/releases/tag/v4.3.1",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://access.redhat.com/errata/RHSA-2019:1456",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://support.f5.com/csp/article/K24383845?utm_source=f5support&amp%3Butm_medium=RSS",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": "Product",
+                            "url": "https://github.com/twbs/bootstrap/releases/tag/v3.4.1",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rd0e44e8ef71eeaaa3cf3d1b8b41eb25894372e2995ec908ce7624d26%40%3Ccommits.pulsar.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://access.redhat.com/errata/RHSA-2019:3024",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": "Mailing List",
+                            "url": "http://seclists.org/fulldisclosure/2019/May/11",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://support.f5.com/csp/article/K24383845?utm_source=f5support&amp%3Butm_medium=RSS",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Product",
+                            "url": "https://github.com/twbs/bootstrap/releases/tag/v3.4.1",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": "Mailing List",
+                            "url": "http://seclists.org/fulldisclosure/2019/May/11",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": "Mailing List",
+                            "url": "http://seclists.org/fulldisclosure/2019/May/13",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/52bafac05ad174000ea465fe275fd3cc7bd5c25535a7631c0bc9bfb2%40%3Cuser.flink.apache.org%3E",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/52e0e6b5df827ee7f1e68f7cc3babe61af3b2160f5d74a85469b7b0e%40%3Cdev.superset.apache.org%3E",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/f9bc3e55f4e28d1dcd1a69aae6d53e609a758e34d2869b4d798e13cc%40%3Cissues.drill.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Issue Tracking",
+                            "url": "https://github.com/twbs/bootstrap/pull/28236",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": "Vendor Advisory",
+                            "url": "https://blog.getbootstrap.com/2019/02/13/bootstrap-4-3-1-and-3-4-1/",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://access.redhat.com/errata/RHSA-2019:3024",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/54df3aeb4239b64b50b356f0ca6f986e3c4ca5b84c515dce077c7854%40%3Cuser.flink.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://support.f5.com/csp/article/K24383845",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://www.tenable.com/security/tns-2021-14",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/10f0f3aefd51444d1198c65f44ffdf2d78ca3359423dbc1c168c9731%40%3Cdev.flink.apache.org%3E",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r3dc0cac8d856bca02bd6997355d7ff83027dcfc82f8646a29b89b714%40%3Cissues.hbase.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://www.oracle.com/security-alerts/cpuApr2021.html",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "http://www.securityfocus.com/bid/107375",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": "Release Notes",
+                            "url": "https://github.com/twbs/bootstrap/releases/tag/v4.3.1",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "criticityLabel": "MEDIUM",
+                    "cvssScore": 6.1,
+                    "cvssAccessVector": "NETWORK",
+                    "cvssAccessComplexity": "LOW",
+                    "cvssAuthentication": "REQUIRED",
+                    "cvssConfidentialityImpact": "LOW",
+                    "cvssAvailabilityImpact": "NONE",
+                    "source": "NVD",
+                    "criticityCategory": "MEDIUM",
+                    "advisory": false,
+                    "isKev": false
+                },
+                {
+                    "matchedCPE": "cpe:/a:getbootstrap:bootstrap",
+                    "name": "CVE-2024-6484",
+                    "publishedDate": "2024-07-11T21:15:17.007Z",
+                    "lastUpdateDate": "2025-02-08T01:22:49.117Z",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2024-6484",
+                    "description": "A vulnerability has been identified in Bootstrap that exposes users to Cross-Site Scripting (XSS) attacks. The issue is present in the carousel component, where the data-slide and data-slide-to attributes can be exploited through the href attribute of an <a> tag due to inadequate sanitization. This vulnerability could potentially enable attackers to execute arbitrary JavaScript within the victim's browser.",
+                    "references": [
+                        {
+                            "name": "Exploit",
+                            "url": "https://www.herodevs.com/vulnerability-directory/cve-2024-6484",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://www.herodevs.com/vulnerability-directory/cve-2024-6484",
+                            "source": "36c7be3b-2937-45df-85ea-ca7133ea542c"
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "criticityLabel": "MEDIUM",
+                    "cvssScore": 6.4,
+                    "cvssAccessVector": "NETWORK",
+                    "cvssAccessComplexity": "HIGH",
+                    "cvssAuthentication": "REQUIRED",
+                    "cvssConfidentialityImpact": "HIGH",
+                    "cvssAvailabilityImpact": "LOW",
+                    "source": "NVD",
+                    "criticityCategory": "MEDIUM",
+                    "advisory": false,
+                    "isKev": false
+                },
+                {
+                    "name": "CVE-2024-6485",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2024-6485",
+                    "description": "A security vulnerability has been discovered in bootstrap that could enable Cross-Site Scripting (XSS) attacks. The vulnerability is associated with the data-loading-text attribute within the button plugin. This vulnerability can be exploited by injecting malicious JavaScript code into the attribute, which would then be executed when the button's loading state is triggered.",
+                    "references": [
+                        {
+                            "name": null,
+                            "url": "https://www.herodevs.com/vulnerability-directory/cve-2024-6485",
+                            "source": null
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "cwes": [
+                        {
+                            "id": "CWE-79",
+                            "label": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
+                            "dangerousWeakness": false
+                        }
+                    ],
+                    "criticityLabel": "MEDIUM",
+                    "cvssScore": 6.4,
+                    "source": "GITLAB",
+                    "cweId": "CWE-79",
+                    "cweLabel": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
+                    "criticityCategory": "MEDIUM",
+                    "advisory": false,
+                    "isKev": false
+                },
+                {
+                    "matchedCPE": "cpe:/a:codemirror:codemirror",
+                    "name": "CVE-2020-7760",
+                    "publishedDate": "2020-10-30T15:15:12.633Z",
+                    "lastUpdateDate": "2024-11-21T10:37:45.027Z",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2020-7760",
+                    "description": "This affects the package codemirror before 5.58.2; the package org.apache.marmotta.webjars:codemirror before 5.58.2. The vulnerable regular expression is located in https://github.com/codemirror/CodeMirror/blob/cdb228ac736369c685865b122b736cd0d397836c/mode/javascript/javascript.jsL129. The ReDOS vulnerability of the regex is mainly due to the sub-pattern (s|/*.*?*/)*",
+                    "references": [
+                        {
+                            "name": "Exploit",
+                            "url": "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSBOWERGITHUBCOMPONENTS-1024446",
+                            "source": "report@snyk.io"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSBOWER-1024445",
+                            "source": "report@snyk.io"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com//security-alerts/cpujul2021.html",
+                            "source": "report@snyk.io"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSBOWERGITHUBCODEMIRROR-1024448",
+                            "source": "report@snyk.io"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://snyk.io/vuln/SNYK-JS-CODEMIRROR-1016937",
+                            "source": "report@snyk.io"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARS-1024449",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://github.com/codemirror/CodeMirror/commit/55d0333907117c9231ffdf555ae8824705993bbb",
+                            "source": "report@snyk.io"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-1024447",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://www.debian.org/security/2020/dsa-4789",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-1024447",
+                            "source": "report@snyk.io"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com/security-alerts/cpuapr2022.html",
+                            "source": "report@snyk.io"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://snyk.io/vuln/SNYK-JAVA-ORGAPACHEMARMOTTAWEBJARS-1024450",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSBOWER-1024445",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://github.com/codemirror/CodeMirror/commit/55d0333907117c9231ffdf555ae8824705993bbb",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://snyk.io/vuln/SNYK-JS-CODEMIRROR-1016937",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com//security-alerts/cpujul2021.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com/security-alerts/cpuApr2021.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARS-1024449",
+                            "source": "report@snyk.io"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSBOWERGITHUBCODEMIRROR-1024448",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://www.debian.org/security/2020/dsa-4789",
+                            "source": "report@snyk.io"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSBOWERGITHUBCOMPONENTS-1024446",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com/security-alerts/cpuApr2021.html",
+                            "source": "report@snyk.io"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://snyk.io/vuln/SNYK-JAVA-ORGAPACHEMARMOTTAWEBJARS-1024450",
+                            "source": "report@snyk.io"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com/security-alerts/cpuapr2022.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "criticityLabel": "MEDIUM",
+                    "cvssScore": 5.3,
+                    "cvssAccessVector": "NETWORK",
+                    "cvssAccessComplexity": "LOW",
+                    "cvssAuthentication": "NONE",
+                    "cvssConfidentialityImpact": "NONE",
+                    "cvssAvailabilityImpact": "LOW",
+                    "source": "NVD",
+                    "criticityCategory": "MEDIUM",
+                    "advisory": false,
+                    "isKev": false
+                },
+                {
+                    "name": "GHSA-8r4g-cg4m-x23c",
+                    "description": "All versions of node-static are vulnerable to a Denial of Service. The package fails to catch an exception when user input includes null bytes. This allows attackers to access `http://host/%00` and crash the server.",
+                    "references": [
+                        {
+                            "name": null,
+                            "url": "https://github.com/cloudhead/node-static/pull/213",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-11149",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "https://github.com/cloudhead/node-static/blob/643a528ec7bbd05a59c4030655d94810570afb3f/CHANGES.md#-unreleased",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "https://github.com/cloudhead/node-static",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "https://github.com/github/advisory-database/pull/6248",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "https://security.snyk.io/vuln/SNYK-JS-NODESTATIC-1297183",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "https://github.com/advisories/GHSA-8r4g-cg4m-x23c",
+                            "source": null
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "cwes": [
+                        {
+                            "id": "CWE-248",
+                            "label": "Uncaught Exception",
+                            "dangerousWeakness": false
+                        },
+                        {
+                            "id": "CWE-400",
+                            "dangerousWeakness": false
+                        },
+                        {
+                            "id": "CWE-937",
+                            "dangerousWeakness": false
+                        }
+                    ],
+                    "criticityLabel": "UNKNOWN",
+                    "cvssScore": 0.0,
+                    "source": "GITLAB",
+                    "cweId": "CWE-248",
+                    "cweLabel": "Uncaught Exception",
+                    "criticityCategory": "ADVISORY",
+                    "advisory": true,
+                    "isKev": false
+                },
+                {
+                    "name": "GMS-2021-39",
+                    "description": "All versions of node-static are vulnerable to a Denial of Service. The package fails to catch an exception when user input includes null bytes. This allows attackers to access `http://host/%00` and crash the server.",
+                    "references": [
+                        {
+                            "name": null,
+                            "url": "https://github.com/cloudhead/node-static/pull/213",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "https://github.com/cloudhead/node-static/blob/643a528ec7bbd05a59c4030655d94810570afb3f/CHANGES.md#-unreleased",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "https://www.npmjs.com/package/node-static",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "https://www.npmjs.com/advisories/1208",
+                            "source": null
+                        },
+                        {
+                            "name": null,
+                            "url": "https://github.com/advisories/GHSA-8r4g-cg4m-x23c",
+                            "source": null
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "cwes": [
+                        {
+                            "id": "CWE-937",
+                            "dangerousWeakness": false
+                        }
+                    ],
+                    "criticityLabel": "UNKNOWN",
+                    "cvssScore": 0.0,
+                    "source": "GITLAB",
+                    "cweId": "CWE-937",
+                    "criticityCategory": "ADVISORY",
+                    "advisory": true,
+                    "isKev": false
+                }
+            ],
+            "components": [
+                {
+                    "id": 23061,
+                    "name": "blueimp-file-upload-node.npm",
+                    "version": "2.1.0",
+                    "cves": [],
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 33142,
+                    "name": "bootstrap.npm",
+                    "version": "3.2.0",
+                    "cves": [
+                        {
+                            "name": "CVE-2016-10735"
+                        },
+                        {
+                            "name": "CVE-2018-14040"
+                        },
+                        {
+                            "name": "CVE-2018-14042"
+                        },
+                        {
+                            "name": "CVE-2018-20676"
+                        },
+                        {
+                            "name": "CVE-2018-20677"
+                        },
+                        {
+                            "name": "CVE-2019-8331"
+                        },
+                        {
+                            "name": "CVE-2024-6484"
+                        },
+                        {
+                            "name": "CVE-2024-6485"
+                        }
+                    ],
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 51398,
+                    "name": "node-static.npm",
+                    "version": "0.6.5",
+                    "cves": [
+                        {
+                            "name": "CVE-2023-26111"
+                        },
+                        {
+                            "name": "CVE-2025-11149"
+                        },
+                        {
+                            "name": "GHSA-8r4g-cg4m-x23c"
+                        },
+                        {
+                            "name": "GMS-2021-39"
+                        }
+                    ],
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 39863,
+                    "name": "blueimp-file-upload.npm",
+                    "version": "9.5.3",
+                    "cves": [
+                        {
+                            "name": "CVE-2018-9206"
+                        }
+                    ],
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 51399,
+                    "name": "codemirror.npm",
+                    "version": "3.20.0",
+                    "cves": [
+                        {
+                            "name": "CVE-2020-7760"
+                        }
+                    ],
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 51400,
+                    "name": "imagemagick.npm",
+                    "version": "0.1.3",
+                    "cves": [],
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 51401,
+                    "name": "formidable.npm",
+                    "version": "1.0.11",
+                    "cves": [
+                        {
+                            "name": "CVE-2022-29622"
+                        }
+                    ],
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 155771,
+                    "name": "gritter.npm",
+                    "version": "1.7.4",
+                    "cves": [],
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 51402,
+                    "name": "X-editable.npm",
+                    "version": "1.5.1",
+                    "cves": [],
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 50571,
+                    "name": "bootstrap-switch.npm",
+                    "version": "3.0.0",
+                    "cves": [],
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 155775,
+                    "name": "intro.js.npm",
+                    "version": "0.6.0",
+                    "cves": [],
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 39870,
+                    "name": "parsleyjs.npm",
+                    "version": "2.0.0",
+                    "cves": [],
+                    "lifeSpan": "N/A"
+                }
+            ]
+        }
+    ],
+    "surveys": [
+        {
+            "id": 371,
+            "ref": "CAST_MAINT",
+            "name": "Software Maintenance Estimate",
+            "questions": [
+                {
+                    "label": "What is the average skill level of the development team on this type of application?",
+                    "value": "3 years",
+                    "questionId": 1000015,
+                    "choiceId": 1000069
+                },
+                {
+                    "label": "What percentage of the development effort has been spent on maintenance in the last 12 months?",
+                    "value": "7",
+                    "questionId": 1000012
+                },
+                {
+                    "label": "What is the CMMI level of the organization?",
+                    "value": "Level 2",
+                    "questionId": 1000032,
+                    "choiceId": 1000256
+                },
+                {
+                    "label": "What is the percentage of change to the base code in the last 12 months?",
+                    "value": "30",
+                    "questionId": 1000121
+                },
+                {
+                    "label": "What is the annual staff turnover within the development team?",
+                    "value": "3%",
+                    "questionId": 1000016,
+                    "choiceId": 1000141
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "ref": "CAST_BI",
+            "name": "Business Impact",
+            "questions": [
+                {
+                    "label": "What is the average number of FTE (Full Time Equivalent) resources that have worked on the source code for this application over the last 12 months?",
+                    "shortLabel": "",
+                    "value": "15",
+                    "questionId": 1000011
+                },
+                {
+                    "label": "Is this application aligned with the company's future technology direction?",
+                    "shortLabel": "",
+                    "value": "Yes",
+                    "questionId": 1000009,
+                    "choiceId": 1000042
+                },
+                {
+                    "label": "The number of major releases delivered over the last 12 months for this application?",
+                    "shortLabel": "",
+                    "value": "7 to 12",
+                    "questionId": 1000006,
+                    "choiceId": 1000454
+                },
+                {
+                    "label": "Could failure of this application lead to loss of customer confidence? Please define the level of impact.",
+                    "value": "Very High",
+                    "questionId": 1000022,
+                    "choiceId": 1000223
+                },
+                {
+                    "label": "Could failure of this application lead to harm of the company's public image? Please define the level of impact.",
+                    "value": "Very High",
+                    "questionId": 1000021,
+                    "choiceId": 1000003
+                },
+                {
+                    "label": "Could failure of this application lead to loss of revenue or business opportunity? Please define the level of impact.",
+                    "value": "Very High",
+                    "questionId": 1000020,
+                    "choiceId": 1000409
+                },
+                {
+                    "label": "Could failure of this application lead to disruption? Please define the level of impact.",
+                    "value": "Very High",
+                    "questionId": 1000019,
+                    "choiceId": 1000195
+                },
+                {
+                    "label": "What is the approximate number of end users for this application?",
+                    "shortLabel": "",
+                    "value": "More than 2500",
+                    "questionId": 1000018,
+                    "choiceId": 1000398
+                },
+                {
+                    "label": "Does the application serve internal or external users?",
+                    "value": "External users",
+                    "questionId": 1000017,
+                    "choiceId": 1000203
+                }
+            ]
+        },
+        {
+            "id": 373,
+            "ref": "CAST_APP",
+            "name": "Application Properties",
+            "questions": [
+                {
+                    "label": "Is this application a custom application or a Commercial Off The Shelf product?",
+                    "shortLabel": "",
+                    "value": "Custom Application",
+                    "questionId": 1000427,
+                    "choiceId": 1000529
+                },
+                {
+                    "label": "What is the application type?",
+                    "shortLabel": "",
+                    "value": "Algorithmic Trading",
+                    "questionId": 1000004,
+                    "choiceId": 1000424
+                },
+                {
+                    "label": "Application Owner's name",
+                    "value": "Michael MULLER",
+                    "questionId": 1000002
+                },
+                {
+                    "label": "In what year was this application first put into production?",
+                    "shortLabel": "",
+                    "value": "2013",
+                    "questionId": 1000033
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,94 @@
+[
+    {
+        "id": "Use_Hardcoded_IP_Address-JAVA",
+        "display": "Execution Environment : Using hardcoded network IP address",
+        "criticality": "Low",
+        "impacts": [
+            "Code"
+        ],
+        "roadblocks": 2.0,
+        "cloudEffort": 20,
+        "files": [
+            "google-cloud-examples\\src\\main\\java\\com\\google\\cloud\\examples\\dns\\snippets\\ManipulateZonesAndRecordSets.java",
+            "google-cloud-examples\\src\\main\\java\\com\\google\\cloud\\examples\\dns\\snippets\\CreateOrUpdateRecordSets.java"
+        ]
+    },
+    {
+        "id": "Use_File_System-JAVA",
+        "display": "Execution Environment : Using file system",
+        "criticality": "Low",
+        "impacts": [
+            "Code",
+            "Container only"
+        ],
+        "roadblocks": 4.0,
+        "cloudEffort": 60,
+        "files": [
+            "google-cloud-clients\\grafeas\\src\\main\\java\\io\\grafeas\\v1\\Provenance.java",
+            "google-api-grpc\\proto-google-cloud-spanner-admin-database-v1\\src\\main\\java\\com\\google\\spanner\\admin\\database\\v1\\SpannerDatabaseAdminProto.java",
+            "google-api-grpc\\proto-google-cloud-spanner-v1\\src\\main\\java\\com\\google\\spanner\\v1\\SpannerProto.java",
+            "google-cloud-clients\\google-cloud-contrib\\google-cloud-nio\\src\\test\\java\\com\\google\\cloud\\storage\\contrib\\nio\\UnixPathTest.java"
+        ]
+    },
+    {
+        "id": "Use_SecuredProtocols-JAVA",
+        "display": "Security & User Authentication : Use of unsecured network protocols or URI libraries",
+        "criticality": "Low",
+        "impacts": [
+            "Code"
+        ],
+        "roadblocks": 21.0,
+        "cloudEffort": 210,
+        "files": [
+            "google-cloud-clients\\google-cloud-storage\\src\\test\\java\\com\\google\\cloud\\storage\\BlobWriteChannelTest.java",
+            "google-cloud-clients\\google-cloud-spanner\\src\\test\\java\\com\\google\\cloud\\spanner\\SpannerOptionsTest.java",
+            "google-cloud-clients\\google-cloud-storage\\src\\test\\java\\com\\google\\cloud\\storage\\BucketInfoTest.java",
+            "google-cloud-clients\\google-cloud-contrib\\google-cloud-notification\\src\\test\\java\\com\\google\\cloud\\notification\\NotificationInfoTest.java",
+            "google-cloud-testing\\storage-benchwrapper\\src\\main\\java\\com\\google\\cloud\\benchwrapper\\StorageBenchWrapperImpl.java",
+            "google-cloud-clients\\google-cloud-storage\\src\\test\\java\\com\\google\\cloud\\storage\\StorageImplTest.java",
+            "google-cloud-clients\\google-cloud-datastore\\src\\main\\java\\com\\google\\cloud\\datastore\\testing\\LocalDatastoreHelper.java",
+            "google-cloud-clients\\google-cloud-storage\\src\\test\\java\\com\\google\\cloud\\storage\\CorsTest.java",
+            "google-cloud-clients\\google-cloud-datastore\\src\\test\\java\\com\\google\\cloud\\datastore\\DatastoreOptionsTest.java",
+            "google-cloud-clients\\google-cloud-storage\\src\\test\\java\\com\\google\\cloud\\storage\\BlobTest.java",
+            "google-cloud-clients\\google-cloud-storage\\src\\test\\java\\com\\google\\cloud\\storage\\BlobInfoTest.java",
+            "google-cloud-clients\\google-cloud-storage\\src\\test\\java\\com\\google\\cloud\\storage\\BucketTest.java",
+            "google-cloud-clients\\google-cloud-datastore\\src\\main\\java\\com\\google\\cloud\\datastore\\spi\\v1\\HttpDatastoreRpc.java",
+            "google-cloud-clients\\google-cloud-contrib\\google-cloud-spanner-jdbc\\src\\main\\java\\com\\google\\cloud\\spanner\\jdbc\\ConnectionOptions.java",
+            "google-cloud-clients\\google-cloud-spanner\\src\\test\\java\\com\\google\\cloud\\spanner\\spi\\v1\\GapicSpannerRpcTest.java"
+        ]
+    },
+    {
+        "id": "Use_File_System-PYTHON",
+        "display": "Execution Environment : Using file system",
+        "criticality": "Low",
+        "impacts": [
+            "Code",
+            "Container only"
+        ],
+        "roadblocks": 6.0,
+        "cloudEffort": 90,
+        "files": [
+            "google-cloud-clients\\google-cloud-datastore\\synth.py",
+            "google-cloud-clients\\grafeas\\synth.py",
+            "google-cloud-clients\\google-cloud-spanner\\synth.py"
+        ]
+    },
+    {
+        "id": "File_Manipulation_Practice-JAVA",
+        "display": "Persistent Files : Perform File Manipulation",
+        "criticality": "Low",
+        "impacts": [
+            "Code",
+            "Container only"
+        ],
+        "roadblocks": 277.0,
+        "cloudEffort": 4155,
+        "files": [
+            "google-cloud-clients\\google-cloud-contrib\\google-cloud-spanner-jdbc\\src\\test\\java\\com\\google\\cloud\\spanner\\jdbc\\AbstractSqlScriptVerifier.java",
+            "google-cloud-clients\\google-cloud-storage\\src\\test\\java\\com\\google\\cloud\\storage\\BlobTest.java",
+            "google-cloud-clients\\google-cloud-contrib\\google-cloud-spanner-jdbc\\src\\test\\java\\com\\google\\cloud\\spanner\\jdbc\\StatementParserTest.java",
+            "google-cloud-clients\\google-cloud-contrib\\google-cloud-spanner-jdbc\\src\\test\\java\\com\\google\\cloud\\spanner\\jdbc\\it\\ITJdbcPreparedStatementTest.java",
+            "google-cloud-clients\\google-cloud-contrib\\google-cloud-spanner-jdbc\\src\\main\\java\\com\\google\\cloud\\spanner\\jdbc\\CredentialsService.java"
+        ]
+    }
+]

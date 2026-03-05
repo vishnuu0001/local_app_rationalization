@@ -1,0 +1,167 @@
+[
+    {
+        "platformId": "aws",
+        "platformName": "Amazon Web Services",
+        "platformUrl": "https://www.aws.com",
+        "recommendations": [
+            {
+                "id": "aws_ec2",
+                "name": "Amazon EC2",
+                "category": "Compute",
+                "description": "Secure and resizable compute capacity in the cloud. Launch applications when needed without upfront commitments",
+                "url": "https://aws.amazon.com/ec2/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Getting Started with Amazon EC2",
+                        "url": "https://aws.amazon.com/ec2/getting-started/"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "PL1",
+                        "details": {
+                            "loc": 813943.0,
+                            "label": "PL/I"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "platformId": "azure",
+        "platformName": "Microsoft Azure",
+        "platformUrl": "https://azure.microsoft.com",
+        "recommendations": [
+            {
+                "id": "azure_iaas",
+                "name": "Azure infrastructure as a service (IaaS)",
+                "category": "Compute",
+                "description": "Meet all your cloud infrastructure needs",
+                "url": "https://azure.microsoft.com/en-us/overview/what-is-azure/iaas/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Linux virtual machines in Azure",
+                        "url": "https://docs.microsoft.com/en-us/azure/virtual-machines/linux/"
+                    },
+                    {
+                        "type": "General",
+                        "title": "Windows virtual machines in Azure",
+                        "url": "https://docs.microsoft.com/en-us/azure/virtual-machines/windows/"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "PL1",
+                        "details": {
+                            "loc": 813943.0,
+                            "label": "PL/I"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "platformId": "gcp",
+        "platformName": "Google Cloud",
+        "platformUrl": "https://cloud.google.com",
+        "recommendations": [
+            {
+                "id": "gcp_iaas",
+                "name": "Compute Engine",
+                "category": "Compute",
+                "description": "Accelerate your digital transformation with high-performance VMs.",
+                "url": "https://cloud.google.com/compute",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Choosing the right virtual machine type",
+                        "url": "https://cloud.google.com/compute#section-1"
+                    },
+                    {
+                        "type": "General",
+                        "title": "Microsoft and Windows on Google Cloud",
+                        "url": "https://cloud.google.com/windows"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "PL1",
+                        "details": {
+                            "loc": 813943.0,
+                            "label": "PL/I"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "platformId": "ibm",
+        "platformName": "IBM Cloud",
+        "platformUrl": "https://www.ibm.com/cloud",
+        "recommendations": [
+            {
+                "id": "ibm_virtualserversvpc",
+                "name": "IBM Cloud Virtual Server for VPC",
+                "category": "Compute",
+                "description": "Some providers make VPC confusing. We don't. Intel processors help make IBM Cloud VPC simple, powerful and secure",
+                "url": "https://www.ibm.com/cloud/vpc",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Getting started with Virtual Private Cloud (VPC)",
+                        "url": "https://cloud.ibm.com/docs/vpc"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "PL1",
+                        "details": {
+                            "loc": 813943.0,
+                            "label": "PL/I"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "platformId": "oraclecloud",
+        "platformName": "Oracle Cloud",
+        "platformUrl": "https://www.oracle.com/cloud/",
+        "recommendations": [
+            {
+                "id": "oracle_compute",
+                "name": "Compute",
+                "category": "Compute",
+                "description": "Computing resources delivered as virtual machines or physical servers to deploy and run applications",
+                "url": "https://www.oracle.com/cloud/compute/virtual-machines/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Documentation",
+                        "url": "https://docs.oracle.com/en-us/iaas/Content/Compute/Concepts/computeoverview.htm"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "PL1",
+                        "details": {
+                            "loc": 813943.0,
+                            "label": "PL/I"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]

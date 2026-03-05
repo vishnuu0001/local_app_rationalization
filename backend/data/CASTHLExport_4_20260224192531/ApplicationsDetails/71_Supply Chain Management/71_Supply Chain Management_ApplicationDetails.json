@@ -1,0 +1,351 @@
+{
+    "id": 71,
+    "name": "Supply Chain Management",
+    "domains": [
+        {
+            "id": 393,
+            "name": "Bangalore Captive"
+        },
+        {
+            "id": 12908,
+            "name": "PE Firm"
+        },
+        {
+            "id": 255,
+            "name": "Supply Chain & Manufacturing"
+        },
+        {
+            "id": 12955,
+            "name": "Enterprise Apps"
+        }
+    ],
+    "metrics": [
+        {
+            "snapshotLabel": "CR Survey for Rearchitect Apps_Supply Chain Management",
+            "snapshotDate": 1634702400000,
+            "softwareAgility": 0.7867340445518494,
+            "softwareAgilityAdded": 0.7867340445518494,
+            "softwareElegance": 0.22527813911437988,
+            "softwareEleganceAdded": 0.22527813911437988,
+            "softwareResiliency": 0.3980346918106079,
+            "softwareResiliencyAdded": 0.3980346918106079,
+            "softwareHealth": 0.47001562515894574,
+            "openSourceLicense": null,
+            "openSourceObsolescence": null,
+            "openSourceCVE": null,
+            "businessImpact": 0.5456852791878173,
+            "roarIndex": 0.32612699434010156,
+            "backFiredFP": 590.0,
+            "backFiredFPAdded": 590.0,
+            "technicalDebt": 15147.649801492691,
+            "maintenanceRecordedFTE": 0.6,
+            "maintenanceRecommendedFTE": 0.40110157556437737,
+            "cloudReady": 0.7631027253668763,
+            "cloudReadySurvey": 0.7631027253668763,
+            "greenIndex": null,
+            "greenIndexScan": null,
+            "greenIndexSurvey": null,
+            "greenOccurrences": null,
+            "greenEffort": null,
+            "greenDetail": [
+                {
+                    "technology": "VB/VB.Net",
+                    "greenIndexScan": 0.0,
+                    "greenIndexDetails": null
+                }
+            ],
+            "totalLinesOfCode": 35414,
+            "totalLinesOfCodeAdded": 35414,
+            "totalLinesOfCodeModified": 0,
+            "totalFiles": 59,
+            "totalFilesAdded": 59,
+            "totalFilesModified": 0,
+            "customIndicators": [
+                {
+                    "metricId": 10023356,
+                    "value": "0.10101010101010101"
+                },
+                {
+                    "metricId": 10006001,
+                    "value": "0.6063829787234043"
+                },
+                {
+                    "metricId": 10006305,
+                    "value": null
+                },
+                {
+                    "metricId": 10013600,
+                    "value": "0.0"
+                },
+                {
+                    "metricId": 10006302,
+                    "value": null
+                },
+                {
+                    "metricId": 10006301,
+                    "value": null
+                },
+                {
+                    "metricId": 10016304,
+                    "value": null
+                }
+            ],
+            "technologies": [
+                {
+                    "technology": "VB/VB.Net",
+                    "totalLinesOfCode": 35414,
+                    "totalFiles": 59,
+                    "softwareAgility": 0.7867340445518494,
+                    "softwareElegance": 0.22527813911437988,
+                    "softwareResiliency": 0.3980346918106079,
+                    "softwareHealth": 0.47001562515894574,
+                    "softwareAgilityDetail": {
+                        "highLinesOfCode": 28861,
+                        "mediumLinesOfCode": 6128,
+                        "lowLinesOfCode": 425
+                    },
+                    "softwareEleganceDetail": {
+                        "highLinesOfCode": 6569,
+                        "mediumLinesOfCode": 1288,
+                        "lowLinesOfCode": 27557
+                    },
+                    "softwareResiliencyDetail": {
+                        "highLinesOfCode": 742,
+                        "mediumLinesOfCode": 1193,
+                        "lowLinesOfCode": 33479
+                    },
+                    "softwareHealthDetail": {
+                        "highLinesOfCode": 12057,
+                        "mediumLinesOfCode": 2869,
+                        "lowLinesOfCode": 20487
+                    }
+                }
+            ],
+            "components": []
+        }
+    ],
+    "surveys": [
+        {
+            "id": 371,
+            "ref": "CAST_MAINT",
+            "name": "Software Maintenance Estimate",
+            "questions": [
+                {
+                    "label": "What is the average skill level of the development team on this type of application?",
+                    "value": "1 year",
+                    "questionId": 1000015,
+                    "choiceId": 1000068
+                },
+                {
+                    "label": "What percentage of the development effort has been spent on maintenance in the last 12 months?",
+                    "value": "30",
+                    "questionId": 1000012
+                },
+                {
+                    "label": "What is the annual staff turnover within the development team?",
+                    "value": "10%",
+                    "questionId": 1000016,
+                    "choiceId": 1000143
+                },
+                {
+                    "label": "What is the CMMI level of the organization?",
+                    "value": "Level 2",
+                    "questionId": 1000032,
+                    "choiceId": 1000256
+                },
+                {
+                    "label": "What is the percentage of change to the base code in the last 12 months?",
+                    "value": "15",
+                    "questionId": 1000121
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "ref": "CAST_BI",
+            "name": "Business Impact",
+            "questions": [
+                {
+                    "label": "What is the average number of FTE (Full Time Equivalent) resources that have worked on the source code for this application over the last 12 months?",
+                    "shortLabel": "",
+                    "value": "2",
+                    "questionId": 1000011
+                },
+                {
+                    "label": "Is this application aligned with the company's future technology direction?",
+                    "shortLabel": "",
+                    "value": "No",
+                    "questionId": 1000009,
+                    "choiceId": 1000043
+                },
+                {
+                    "label": "The number of major releases delivered over the last 12 months for this application?",
+                    "shortLabel": "",
+                    "value": "More than 12",
+                    "questionId": 1000006,
+                    "choiceId": 1000455
+                },
+                {
+                    "label": "Could failure of this application lead to loss of customer confidence? Please define the level of impact.",
+                    "value": "Very High",
+                    "questionId": 1000022,
+                    "choiceId": 1000223
+                },
+                {
+                    "label": "Could failure of this application lead to harm of the company's public image? Please define the level of impact.",
+                    "value": "Very High",
+                    "questionId": 1000021,
+                    "choiceId": 1000003
+                },
+                {
+                    "label": "Could failure of this application lead to loss of revenue or business opportunity? Please define the level of impact.",
+                    "value": "Very High",
+                    "questionId": 1000020,
+                    "choiceId": 1000409
+                },
+                {
+                    "label": "Could failure of this application lead to disruption? Please define the level of impact.",
+                    "value": "Very High",
+                    "questionId": 1000019,
+                    "choiceId": 1000195
+                },
+                {
+                    "label": "What is the approximate number of end users for this application?",
+                    "shortLabel": "",
+                    "value": "501 to 2500",
+                    "questionId": 1000018,
+                    "choiceId": 1000397
+                },
+                {
+                    "label": "Does the application serve internal or external users?",
+                    "value": "External users",
+                    "questionId": 1000017,
+                    "choiceId": 1000203
+                }
+            ]
+        },
+        {
+            "id": 373,
+            "ref": "CAST_APP",
+            "name": "Application Properties",
+            "questions": [
+                {
+                    "label": "What is the application type?",
+                    "shortLabel": "",
+                    "value": "Supply chain management system",
+                    "questionId": 1000004,
+                    "choiceId": 1000440
+                },
+                {
+                    "label": "Application Owner's name",
+                    "value": "Alexandra Szynkarski",
+                    "questionId": 1000002
+                },
+                {
+                    "label": "Is this application a custom application or a Commercial Off The Shelf product?",
+                    "shortLabel": "",
+                    "value": "Custom Application",
+                    "questionId": 1000427,
+                    "choiceId": 1000529
+                },
+                {
+                    "label": "In what year was this application first put into production?",
+                    "shortLabel": "",
+                    "value": "2010",
+                    "questionId": 1000033
+                }
+            ]
+        },
+        {
+            "id": 938,
+            "ref": "CAST_CLOUD",
+            "name": "Cloud Readiness Assessment",
+            "questions": [
+                {
+                    "label": "[Business Drivers] Does this application correspond to a specific workload?",
+                    "shortLabel": "",
+                    "value": "IoT - Internet of Things",
+                    "questionId": 10000901,
+                    "choiceId": 10006804
+                },
+                {
+                    "label": "[Technical Enablers] Does this application depend on other services or applications?",
+                    "shortLabel": "",
+                    "value": "External services",
+                    "questionId": 10000808,
+                    "choiceId": 10006733
+                },
+                {
+                    "label": "[Technical Enablers] What is the database provider for this application?",
+                    "shortLabel": "",
+                    "value": "Standard and supported as a service in the Cloud (PaaS)",
+                    "questionId": 10000809,
+                    "choiceId": 10006734
+                },
+                {
+                    "label": "[Process Maturity] What is the average skill on Cloud technologies and practices within the development team for this application?",
+                    "shortLabel": "",
+                    "value": "Experts",
+                    "questionId": 10000810,
+                    "choiceId": 10006741
+                },
+                {
+                    "label": "[Business Drivers] What is the current (or expected) Service Level Agreement for this application?",
+                    "shortLabel": "",
+                    "value": "No specifically defined SLA",
+                    "questionId": 10000811,
+                    "choiceId": 10006742
+                },
+                {
+                    "label": "[Process Maturity] What is the evolution model and feedback loop approach for this application?",
+                    "shortLabel": "",
+                    "value": "Other / Not Applicable",
+                    "questionId": 10000800,
+                    "choiceId": 1000920
+                },
+                {
+                    "label": "[Technical Enablers] What is the current deployment platform for this application?",
+                    "shortLabel": "",
+                    "value": "Mobile or Tablet application",
+                    "questionId": 10000801,
+                    "choiceId": 10006705
+                },
+                {
+                    "label": "[Technical Enablers] What is the current user authentication mechanism used by this application?",
+                    "shortLabel": "",
+                    "value": "Anonymous (no authentication)",
+                    "questionId": 10000802,
+                    "choiceId": 10007801
+                },
+                {
+                    "label": "[Technical Enablers]  How is this application exposed to external services/applications?",
+                    "shortLabel": "",
+                    "value": "Standalone (no interaction)",
+                    "questionId": 10000803,
+                    "choiceId": 10006713
+                },
+                {
+                    "label": "[Business Drivers] How is data consumed from this application?",
+                    "shortLabel": "",
+                    "value": "Other / Not Applicable",
+                    "questionId": 10000805,
+                    "choiceId": 1000924
+                },
+                {
+                    "label": "[Process Maturity] What is the level of deployment process automation for provisioning and configuration for this application?",
+                    "shortLabel": "",
+                    "value": "Fully-automated",
+                    "questionId": 10000806,
+                    "choiceId": 10006725
+                },
+                {
+                    "label": "[Technical Enablers] Is this application multi-tenant?",
+                    "shortLabel": "",
+                    "value": "No (single-tenant)",
+                    "questionId": 10000807,
+                    "choiceId": 10006726
+                }
+            ]
+        }
+    ]
+}

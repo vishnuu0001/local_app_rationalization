@@ -1,0 +1,432 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 60,
+                                            "application_name": "ERP",
+                                            "counter": 49326.0,
+                                            "effort": 147978.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__SQL",
+                                    "detail": [
+                                        {
+                                            "application_id": 60,
+                                            "application_name": "ERP",
+                                            "counter": 82.0,
+                                            "effort": 820.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__SimpleCompute",
+                                    "detail": [
+                                        {
+                                            "application_id": 60,
+                                            "application_name": "ERP",
+                                            "counter": 890.0,
+                                            "effort": 890.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__ParaNameWithoutDot",
+                                    "detail": [
+                                        {
+                                            "application_id": 60,
+                                            "application_name": "ERP",
+                                            "counter": 3623.0,
+                                            "effort": 301.9167
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__NoCopyClause",
+                                    "detail": [
+                                        {
+                                            "application_id": 60,
+                                            "application_name": "ERP",
+                                            "counter": 433.0,
+                                            "effort": 433.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__BadZone",
+                                    "detail": [
+                                        {
+                                            "application_id": 60,
+                                            "application_name": "ERP",
+                                            "counter": 92.0,
+                                            "effort": 7.666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__CuriousFilePb",
+                                    "detail": [
+                                        {
+                                            "application_id": 60,
+                                            "application_name": "ERP",
+                                            "counter": 218.0,
+                                            "effort": 218.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__ProhibitedKeyword",
+                                    "detail": [
+                                        {
+                                            "application_id": 60,
+                                            "application_name": "ERP",
+                                            "counter": 23036.0,
+                                            "effort": 115180.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__SeriousFilePb",
+                                    "detail": [
+                                        {
+                                            "application_id": 60,
+                                            "application_name": "ERP",
+                                            "counter": 286.0,
+                                            "effort": 286.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__MissingDefault",
+                                    "detail": [
+                                        {
+                                            "application_id": 60,
+                                            "application_name": "ERP",
+                                            "counter": 831.0,
+                                            "effort": 831.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__MissingEnd",
+                                    "detail": [
+                                        {
+                                            "application_id": 60,
+                                            "application_name": "ERP",
+                                            "counter": 6000.0,
+                                            "effort": 6000.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__DuplicatedParaName",
+                                    "detail": [
+                                        {
+                                            "application_id": 60,
+                                            "application_name": "ERP",
+                                            "counter": 3068.0,
+                                            "effort": 511.33337
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 60,
+                                            "application_name": "ERP",
+                                            "counter": 1.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__BadInit",
+                                    "detail": [
+                                        {
+                                            "application_id": 60,
+                                            "application_name": "ERP",
+                                            "counter": 11616.0,
+                                            "effort": 11616.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__BackPerform",
+                                    "detail": [
+                                        {
+                                            "application_id": 60,
+                                            "application_name": "ERP",
+                                            "counter": 4562.0,
+                                            "effort": 68430.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 60,
+                                            "application_name": "ERP",
+                                            "counter": 4257.0,
+                                            "effort": 354.75003
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__MultAffect",
+                                    "detail": [
+                                        {
+                                            "application_id": 60,
+                                            "application_name": "ERP",
+                                            "counter": 40244.0,
+                                            "effort": 13414.667
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 60,
+                                            "application_name": "ERP",
+                                            "counter": 75805.8,
+                                            "effort": 75805.8
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__BadEndClauseAlign",
+                                    "detail": [
+                                        {
+                                            "application_id": 60,
+                                            "application_name": "ERP",
+                                            "counter": 2555.0,
+                                            "effort": 212.91667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 60,
+                                            "application_name": "ERP",
+                                            "counter": 96.0,
+                                            "effort": 960.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__NbFiles",
+                                    "detail": [
+                                        {
+                                            "application_id": 60,
+                                            "application_name": "ERP",
+                                            "counter": 79.25,
+                                            "effort": 396.25
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 60,
+                                            "application_name": "ERP",
+                                            "counter": 449.69568,
+                                            "effort": 2248.4785
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__DONNEES",
+                                    "detail": [
+                                        {
+                                            "application_id": 60,
+                                            "application_name": "ERP",
+                                            "counter": 15874.0,
+                                            "effort": 15874.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 60,
+                                            "application_name": "ERP",
+                                            "counter": 179.58336,
+                                            "effort": 897.9168
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "COBOL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "COBOL__ComplexConditions",
+                                    "detail": [
+                                        {
+                                            "application_id": 60,
+                                            "application_name": "ERP",
+                                            "counter": 865.0,
+                                            "effort": 8650.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

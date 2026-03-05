@@ -1,0 +1,594 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PHP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__VariableDefinitionCheck",
+                                    "detail": [
+                                        {
+                                            "application_id": 8626,
+                                            "application_name": "Benchmark Portal",
+                                            "counter": 7.0,
+                                            "effort": 1.1666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__String",
+                                    "detail": [
+                                        {
+                                            "application_id": 8626,
+                                            "application_name": "Benchmark Portal",
+                                            "counter": 23.0,
+                                            "effort": 1.9166667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 8626,
+                                            "application_name": "Benchmark Portal",
+                                            "counter": 28.0,
+                                            "effort": 84.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 8626,
+                                            "application_name": "Benchmark Portal",
+                                            "counter": 13.32,
+                                            "effort": 13.32
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__StrongDataAccess",
+                                    "detail": [
+                                        {
+                                            "application_id": 8626,
+                                            "application_name": "Benchmark Portal",
+                                            "counter": 508.0,
+                                            "effort": 169.33334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__Eval",
+                                    "detail": [
+                                        {
+                                            "application_id": 8626,
+                                            "application_name": "Benchmark Portal",
+                                            "counter": 3.0,
+                                            "effort": 30.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MissingBraces",
+                                    "detail": [
+                                        {
+                                            "application_id": 8626,
+                                            "application_name": "Benchmark Portal",
+                                            "counter": 2.0,
+                                            "effort": 0.33333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadLoop",
+                                    "detail": [
+                                        {
+                                            "application_id": 8626,
+                                            "application_name": "Benchmark Portal",
+                                            "counter": 25.0,
+                                            "effort": 125.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MissingBreakInCasePath",
+                                    "detail": [
+                                        {
+                                            "application_id": 8626,
+                                            "application_name": "Benchmark Portal",
+                                            "counter": 2.0,
+                                            "effort": 0.16666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PHP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__MissingIdentical",
+                                    "detail": [
+                                        {
+                                            "application_id": 8626,
+                                            "application_name": "Benchmark Portal",
+                                            "counter": 52.0,
+                                            "effort": 4.3333335
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__MissingBreakInCasePath",
+                                    "detail": [
+                                        {
+                                            "application_id": 8626,
+                                            "application_name": "Benchmark Portal",
+                                            "counter": 2.0,
+                                            "effort": 0.16666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__This",
+                                    "detail": [
+                                        {
+                                            "application_id": 8626,
+                                            "application_name": "Benchmark Portal",
+                                            "counter": 459.0,
+                                            "effort": 6885.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MissingIdentical",
+                                    "detail": [
+                                        {
+                                            "application_id": 8626,
+                                            "application_name": "Benchmark Portal",
+                                            "counter": 180.0,
+                                            "effort": 15.000001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__EndLoopTest",
+                                    "detail": [
+                                        {
+                                            "application_id": 8626,
+                                            "application_name": "Benchmark Portal",
+                                            "counter": 8.0,
+                                            "effort": 80.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__AssignmentsInConditionalExpr",
+                                    "detail": [
+                                        {
+                                            "application_id": 8626,
+                                            "application_name": "Benchmark Portal",
+                                            "counter": 1.0,
+                                            "effort": 0.5
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PHP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__EndComment",
+                                    "detail": [
+                                        {
+                                            "application_id": 8626,
+                                            "application_name": "Benchmark Portal",
+                                            "counter": 12.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__Elseif",
+                                    "detail": [
+                                        {
+                                            "application_id": 8626,
+                                            "application_name": "Benchmark Portal",
+                                            "counter": 3.0,
+                                            "effort": 0.25
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__FileNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 8626,
+                                            "application_name": "Benchmark Portal",
+                                            "counter": 6.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 8626,
+                                            "application_name": "Benchmark Portal",
+                                            "counter": 140.0,
+                                            "effort": 11.666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__Prototype",
+                                    "detail": [
+                                        {
+                                            "application_id": 8626,
+                                            "application_name": "Benchmark Portal",
+                                            "counter": 21.0,
+                                            "effort": 1.7500001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 8626,
+                                            "application_name": "Benchmark Portal",
+                                            "counter": 204.0,
+                                            "effort": 17.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 8626,
+                                            "application_name": "Benchmark Portal",
+                                            "counter": 37.0,
+                                            "effort": 3.0833335
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MultDecl",
+                                    "detail": [
+                                        {
+                                            "application_id": 8626,
+                                            "application_name": "Benchmark Portal",
+                                            "counter": 6.0,
+                                            "effort": 0.5
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PHP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__Undocumented",
+                                    "detail": [
+                                        {
+                                            "application_id": 8626,
+                                            "application_name": "Benchmark Portal",
+                                            "counter": 7.0,
+                                            "effort": 2.3333335
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 8626,
+                                            "application_name": "Benchmark Portal",
+                                            "counter": 1.82,
+                                            "effort": 1.82
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__VarDecl",
+                                    "detail": [
+                                        {
+                                            "application_id": 8626,
+                                            "application_name": "Benchmark Portal",
+                                            "counter": 104.0,
+                                            "effort": 17.333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__ApplicationGlobalVariables",
+                                    "detail": [
+                                        {
+                                            "application_id": 8626,
+                                            "application_name": "Benchmark Portal",
+                                            "counter": 25.0,
+                                            "effort": 4.166667
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PHP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 8626,
+                                            "application_name": "Benchmark Portal",
+                                            "counter": 0.06333333,
+                                            "effort": 0.31666666
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 8626,
+                                            "application_name": "Benchmark Portal",
+                                            "counter": 251.0,
+                                            "effort": 1255.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 8626,
+                                            "application_name": "Benchmark Portal",
+                                            "counter": 24.519999,
+                                            "effort": 24.519999
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PHP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__NestedLoop",
+                                    "detail": [
+                                        {
+                                            "application_id": 8626,
+                                            "application_name": "Benchmark Portal",
+                                            "counter": 2.0,
+                                            "effort": 20.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__NBMETH",
+                                    "detail": [
+                                        {
+                                            "application_id": 8626,
+                                            "application_name": "Benchmark Portal",
+                                            "counter": 246.0,
+                                            "effort": 1230.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PHP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__DepthCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 8626,
+                                            "application_name": "Benchmark Portal",
+                                            "counter": 1.0,
+                                            "effort": 5.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__ComplexConditions",
+                                    "detail": [
+                                        {
+                                            "application_id": 8626,
+                                            "application_name": "Benchmark Portal",
+                                            "counter": 1.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 8626,
+                                            "application_name": "Benchmark Portal",
+                                            "counter": 10.0,
+                                            "effort": 50.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

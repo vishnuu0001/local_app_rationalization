@@ -1,0 +1,298 @@
+{
+    "snapshotLabel": "AWS WAR Survey for Reliability_priam",
+    "snapshotDate": 1582088400000,
+    "applicationCodeLines": null,
+    "applicationFiles": 252.0,
+    "thirdPartyCodeLines": null,
+    "thirdPartyFiles": 161.0,
+    "thirdParties": [
+        {
+            "id": 14590,
+            "componentId": "commons-io:commons-io",
+            "name": "commons-io:commons-io",
+            "version": "2.6",
+            "release": 1508061652000,
+            "languages": "java",
+            "lifeSpan": "Active",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "2.21.0",
+            "lastRelease": 1762288020000,
+            "nbVersionPreviousYear": 4,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "commons-io",
+                "product": "commons-io",
+                "version": "2.6",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2021-29425",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-29425",
+                        "description": "In Apache Commons IO before 2.7, When invoking the method FileNameUtils.normalize with an improper input string, like \"//../foo\", or \"\\\\..\\foo\", the result would be the same value, thus possibly providing access to files in the parent directory, but not further above (thus \"limited\" path traversal), if the calling code would use the result to construct a path value.",
+                        "cweId": "CWE-22",
+                        "cweLabel": null,
+                        "cvssScore": 5.3,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2024-47554",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-47554",
+                        "description": "Uncontrolled Resource Consumption vulnerability in Apache Commons IO.\n\nThe org.apache.commons.io.input.XmlStreamReader class may excessively consume CPU resources when processing maliciously crafted input.\n\n\nThis issue affects Apache Commons IO: from 2.0 before 2.14.0.\n\nUsers are recommended to upgrade to version 2.14.0 or later, which fixes the issue.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 4.3,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:apache:commons_io",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "2.7",
+            "safestVersion": "2.14.0"
+        },
+        {
+            "id": 15781,
+            "componentId": "commons-cli:commons-cli",
+            "name": "commons-cli:commons-cli",
+            "version": "1.4",
+            "release": 1489064520000,
+            "languages": "java",
+            "lifeSpan": "Active",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "1.11.0",
+            "lastRelease": 1762641600000,
+            "nbVersionPreviousYear": 2,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 19646,
+            "componentId": "joda-time:joda-time",
+            "name": "joda-time:joda-time",
+            "version": "2.10.1",
+            "release": 1540666281000,
+            "languages": "java",
+            "lifeSpan": "Active",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "2.14.0",
+            "lastRelease": 1743250930000,
+            "nbVersionPreviousYear": 3,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 21115,
+            "componentId": "commons-httpclient:commons-httpclient",
+            "name": "commons-httpclient:commons-httpclient",
+            "version": "3.1",
+            "release": 1187703847000,
+            "languages": "java",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 26142,
+                    "name": "Apache Licenses Family",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "3.1",
+            "lastRelease": 1187703847000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "commons-httpclient",
+                "product": "commons-httpclient",
+                "version": "3.1",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2012-5783",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2012-5783",
+                        "description": "Apache Commons HttpClient 3.x, as used in Amazon Flexible Payments Service (FPS) merchant Java SDK and other products, does not verify that the server hostname matches a domain name in the subject's Common Name (CN) or subjectAltName field of the X.509 certificate, which allows man-in-the-middle attackers to spoof SSL servers via an arbitrary valid certificate.",
+                        "cweId": "CWE-295",
+                        "cweLabel": "Improper Certificate Validation",
+                        "cvssScore": 5.8,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": []
+        },
+        {
+            "id": 21777,
+            "componentId": "commons-logging:commons-logging",
+            "name": "commons-logging:commons-logging",
+            "version": "1.2",
+            "release": 1404583948000,
+            "languages": "java",
+            "lifeSpan": "Active",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "1.3.5",
+            "lastRelease": 1738337232000,
+            "nbVersionPreviousYear": 3,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51571,
+            "componentId": "com.netflix.priam:priam",
+            "name": "com.netflix.priam:priam",
+            "version": "3.1.70",
+            "release": 1548888300000,
+            "languages": "java",
+            "lifeSpan": "Active",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "4.1.32",
+            "lastRelease": 1770090360000,
+            "nbVersionPreviousYear": 2,
+            "numberOfCodeLines": 11222.0,
+            "numberOfFiles": 151.0,
+            "cve": {
+                "vendor": "com.netflix.priam",
+                "product": "priam",
+                "version": "3.1.70",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2021-28100",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-28100",
+                        "description": "Priam uses File.createTempFile, which gives the permissions on that file -rw-r--r--. An attacker with read access to the local filesystem can read anything written there by the Priam process.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.5,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:netflix:priam",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": []
+        },
+        {
+            "id": 51572,
+            "componentId": "com.netflix.priam:priam-cass-extensions",
+            "name": "com.netflix.priam:priam-cass-extensions",
+            "version": "3.1.65",
+            "release": 1539813240000,
+            "languages": "java",
+            "lifeSpan": "Active",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "4.1.32",
+            "lastRelease": 1770090360000,
+            "nbVersionPreviousYear": 2,
+            "numberOfCodeLines": 149.0,
+            "numberOfFiles": 3.0,
+            "cve": {
+                "vendor": "com.netflix.priam",
+                "product": "priam-cass-extensions",
+                "version": "3.1.65",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2021-28100",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-28100",
+                        "description": "Priam uses File.createTempFile, which gives the permissions on that file -rw-r--r--. An attacker with read access to the local filesystem can read anything written there by the Priam process.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.5,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:netflix:priam",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": []
+        },
+        {
+            "id": 558752,
+            "componentId": "Netflix/Priam",
+            "name": "Netflix/Priam",
+            "version": "3.11.59",
+            "release": 1588727814000,
+            "languages": "java",
+            "lifeSpan": "Active",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "v4.1.19",
+            "lastRelease": 1754521239000,
+            "nbVersionPreviousYear": 6,
+            "numberOfCodeLines": 33.0,
+            "numberOfFiles": 2.0,
+            "cve": {
+                "vendor": "Netflix",
+                "product": "Priam",
+                "version": "3.11.59",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2021-28100",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-28100",
+                        "description": "Priam uses File.createTempFile, which gives the permissions on that file -rw-r--r--. An attacker with read access to the local filesystem can read anything written there by the Priam process.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.5,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:netflix:priam",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": []
+        }
+    ],
+    "partialComponents": []
+}

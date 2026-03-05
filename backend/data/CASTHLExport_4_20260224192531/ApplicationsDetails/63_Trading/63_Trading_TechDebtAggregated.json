@@ -1,0 +1,444 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 63,
+                                            "application_name": "Trading",
+                                            "counter": 8874.0,
+                                            "effort": 26622.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 63,
+                                            "application_name": "Trading",
+                                            "counter": 66.700005,
+                                            "effort": 66.700005
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__IllegalThrows",
+                                    "detail": [
+                                        {
+                                            "application_id": 63,
+                                            "application_name": "Trading",
+                                            "counter": 2.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__MissingBraces2",
+                                    "detail": [
+                                        {
+                                            "application_id": 63,
+                                            "application_name": "Trading",
+                                            "counter": 29.0,
+                                            "effort": 4.8333335
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__Instanceof",
+                                    "detail": [
+                                        {
+                                            "application_id": 63,
+                                            "application_name": "Trading",
+                                            "counter": 4.0,
+                                            "effort": 40.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__PublicAttributes",
+                                    "detail": [
+                                        {
+                                            "application_id": 63,
+                                            "application_name": "Trading",
+                                            "counter": 1203.0,
+                                            "effort": 1203.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__EmptyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 63,
+                                            "application_name": "Trading",
+                                            "counter": 2.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__MissingDefault",
+                                    "detail": [
+                                        {
+                                            "application_id": 63,
+                                            "application_name": "Trading",
+                                            "counter": 7.0,
+                                            "effort": 7.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__AssignmentsInConditionalExpr",
+                                    "detail": [
+                                        {
+                                            "application_id": 63,
+                                            "application_name": "Trading",
+                                            "counter": 5.0,
+                                            "effort": 2.5000002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__BugPatterns",
+                                    "detail": [
+                                        {
+                                            "application_id": 63,
+                                            "application_name": "Trading",
+                                            "counter": 28.0,
+                                            "effort": 28.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 63,
+                                            "application_name": "Trading",
+                                            "counter": 18.0,
+                                            "effort": 18.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 63,
+                                            "application_name": "Trading",
+                                            "counter": 9634.0,
+                                            "effort": 802.8334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 63,
+                                            "application_name": "Trading",
+                                            "counter": 74.0,
+                                            "effort": 6.166667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__ClassDefinitions",
+                                    "detail": [
+                                        {
+                                            "application_id": 63,
+                                            "application_name": "Trading",
+                                            "counter": 19.0,
+                                            "effort": 95.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 63,
+                                            "application_name": "Trading",
+                                            "counter": 998.0,
+                                            "effort": 83.16667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 63,
+                                            "application_name": "Trading",
+                                            "counter": 2300.0,
+                                            "effort": 2300.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__MissingAutomatedDoc2",
+                                    "detail": [
+                                        {
+                                            "application_id": 63,
+                                            "application_name": "Trading",
+                                            "counter": 442.0,
+                                            "effort": 442.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__BadDeclarationOrder",
+                                    "detail": [
+                                        {
+                                            "application_id": 63,
+                                            "application_name": "Trading",
+                                            "counter": 1133.0,
+                                            "effort": 1133.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 63,
+                                            "application_name": "Trading",
+                                            "counter": 561.0,
+                                            "effort": 46.750004
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 63,
+                                            "application_name": "Trading",
+                                            "counter": 3465.6,
+                                            "effort": 3465.6
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 63,
+                                            "application_name": "Trading",
+                                            "counter": 228.0,
+                                            "effort": 19.000002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 63,
+                                            "application_name": "Trading",
+                                            "counter": 57.0,
+                                            "effort": 570.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 63,
+                                            "application_name": "Trading",
+                                            "counter": 61.44333,
+                                            "effort": 307.21664
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 63,
+                                            "application_name": "Trading",
+                                            "counter": 50.86001,
+                                            "effort": 50.86001
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 63,
+                                            "application_name": "Trading",
+                                            "counter": 8.62,
+                                            "effort": 43.1
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__ComplexConditions",
+                                    "detail": [
+                                        {
+                                            "application_id": 63,
+                                            "application_name": "Trading",
+                                            "counter": 2.0,
+                                            "effort": 20.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

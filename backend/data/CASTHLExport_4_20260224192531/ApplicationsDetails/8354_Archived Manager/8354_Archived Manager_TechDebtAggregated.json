@@ -1,0 +1,420 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PL1",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__String",
+                                    "detail": [
+                                        {
+                                            "application_id": 8354,
+                                            "application_name": "Archived Manager",
+                                            "counter": 2428.0,
+                                            "effort": 1214.0001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__BadStatement",
+                                    "detail": [
+                                        {
+                                            "application_id": 8354,
+                                            "application_name": "Archived Manager",
+                                            "counter": 8419.0,
+                                            "effort": 701.5834
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__ResourceManagement",
+                                    "detail": [
+                                        {
+                                            "application_id": 8354,
+                                            "application_name": "Archived Manager",
+                                            "counter": 2680.0,
+                                            "effort": 893.3334
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PL1",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__DataRecordSize",
+                                    "detail": [
+                                        {
+                                            "application_id": 8354,
+                                            "application_name": "Archived Manager",
+                                            "counter": 101.0,
+                                            "effort": 8.416667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__Select",
+                                    "detail": [
+                                        {
+                                            "application_id": 8354,
+                                            "application_name": "Archived Manager",
+                                            "counter": 6.0,
+                                            "effort": 30.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__RiskyDeclaration",
+                                    "detail": [
+                                        {
+                                            "application_id": 8354,
+                                            "application_name": "Archived Manager",
+                                            "counter": 1257.0,
+                                            "effort": 419.00003
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__WithoutTitleFetch",
+                                    "detail": [
+                                        {
+                                            "application_id": 8354,
+                                            "application_name": "Archived Manager",
+                                            "counter": 34.0,
+                                            "effort": 17.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PL1",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__NotTestedSQL",
+                                    "detail": [
+                                        {
+                                            "application_id": 8354,
+                                            "application_name": "Archived Manager",
+                                            "counter": 394.0,
+                                            "effort": 394.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__MissingOnError",
+                                    "detail": [
+                                        {
+                                            "application_id": 8354,
+                                            "application_name": "Archived Manager",
+                                            "counter": 846.0,
+                                            "effort": 423.00003
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__MissingDefault",
+                                    "detail": [
+                                        {
+                                            "application_id": 8354,
+                                            "application_name": "Archived Manager",
+                                            "counter": 79.0,
+                                            "effort": 79.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PL1",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__HeterogeneousLoop",
+                                    "detail": [
+                                        {
+                                            "application_id": 8354,
+                                            "application_name": "Archived Manager",
+                                            "counter": 24.0,
+                                            "effort": 2.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 8354,
+                                            "application_name": "Archived Manager",
+                                            "counter": 1833.0,
+                                            "effort": 152.75002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 8354,
+                                            "application_name": "Archived Manager",
+                                            "counter": 14275.0,
+                                            "effort": 14275.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PL1",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 8354,
+                                            "application_name": "Archived Manager",
+                                            "counter": 358.0,
+                                            "effort": 29.833334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 8354,
+                                            "application_name": "Archived Manager",
+                                            "counter": 52133.0,
+                                            "effort": 4344.417
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PL1",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 8354,
+                                            "application_name": "Archived Manager",
+                                            "counter": 99456.41,
+                                            "effort": 99456.41
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__UntagguedEnd",
+                                    "detail": [
+                                        {
+                                            "application_id": 8354,
+                                            "application_name": "Archived Manager",
+                                            "counter": 23495.0,
+                                            "effort": 1957.9167
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 8354,
+                                            "application_name": "Archived Manager",
+                                            "counter": 1410.0,
+                                            "effort": 14100.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PL1",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__NBMETH",
+                                    "detail": [
+                                        {
+                                            "application_id": 8354,
+                                            "application_name": "Archived Manager",
+                                            "counter": 93.35,
+                                            "effort": 466.75
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 8354,
+                                            "application_name": "Archived Manager",
+                                            "counter": 861.4745,
+                                            "effort": 4307.3726
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 8354,
+                                            "application_name": "Archived Manager",
+                                            "counter": 13476.098,
+                                            "effort": 13476.098
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PL1",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__Nested",
+                                    "detail": [
+                                        {
+                                            "application_id": 8354,
+                                            "application_name": "Archived Manager",
+                                            "counter": 28.0,
+                                            "effort": 280.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 8354,
+                                            "application_name": "Archived Manager",
+                                            "counter": 1048.6001,
+                                            "effort": 5243.0005
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PL1",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__ComplexWhen",
+                                    "detail": [
+                                        {
+                                            "application_id": 8354,
+                                            "application_name": "Archived Manager",
+                                            "counter": 400.0,
+                                            "effort": 200.00002
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

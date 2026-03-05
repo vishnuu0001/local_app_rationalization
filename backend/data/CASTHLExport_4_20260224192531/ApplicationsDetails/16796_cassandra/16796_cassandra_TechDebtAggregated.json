@@ -1,0 +1,1134 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 12870.0,
+                                            "effort": 38610.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ClassesComparisons",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 309.0,
+                                            "effort": 3090.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__RiskyFunctionCalls",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 20.0,
+                                            "effort": 20.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__IllegalThrows",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 442.0,
+                                            "effort": 2210.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 741.0,
+                                            "effort": 2223.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__IllegalException",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 1.0,
+                                            "effort": 0.16666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__RiskyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 29.0,
+                                            "effort": 145.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__UnusedImport",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 19.0,
+                                            "effort": 1.5833334
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__String",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 8.0,
+                                            "effort": 0.6666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingHashcode",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 16.0,
+                                            "effort": 160.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__RiskyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 614.0,
+                                            "effort": 3070.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__Instanceof",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 1149.0,
+                                            "effort": 11490.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__OverloadEquals",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 137.0,
+                                            "effort": 1370.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__OutOfFinallyJumps",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 124.0,
+                                            "effort": 620.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__MultipleReturn",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 128.0,
+                                            "effort": 64.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__EmptyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 6.0,
+                                            "effort": 30.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__UnnecessaryConcat",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 5.0,
+                                            "effort": 0.4166667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__MagicMethods",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 6.0,
+                                            "effort": 2.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__UnexpectedGetter",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 6.0,
+                                            "effort": 3.0000002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__Inheritance",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 4.0,
+                                            "effort": 0.6666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__ConcatInLoop",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 17.0,
+                                            "effort": 8.5
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__PublicAttributes",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 3424.0,
+                                            "effort": 3424.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingBraces2",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 12806.0,
+                                            "effort": 12806.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__EmptyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 159.0,
+                                            "effort": 795.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingDefault",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 501.0,
+                                            "effort": 501.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 263812.0,
+                                            "effort": 263812.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingBreakInSwitch",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 258.0,
+                                            "effort": 21.500002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__AssignmentsInConditionalExpr",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 9.0,
+                                            "effort": 4.5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BugPatterns",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 72.0,
+                                            "effort": 72.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__UnusedArg",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 90.0,
+                                            "effort": 7.5000005
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__SuspiciousLoop",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 1.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__UnusedVar",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 413.0,
+                                            "effort": 413.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__FileGlobalVariables",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 134.0,
+                                            "effort": 134.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__UnsignificantReturn",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 46.0,
+                                            "effort": 7.666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__StringFormat",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 257.0,
+                                            "effort": 21.416668
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__NamingConflict",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 5.0,
+                                            "effort": 0.8333334
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 5.0,
+                                            "effort": 5.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 10258.0,
+                                            "effort": 854.8334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ClassDefinitions",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 2301.0,
+                                            "effort": 11505.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__StarImport",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 1426.0,
+                                            "effort": 1426.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 1319.0,
+                                            "effort": 1319.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__String",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 8331.0,
+                                            "effort": 694.25006
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 990.0,
+                                            "effort": 82.50001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 18174.0,
+                                            "effort": 3029.0002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 575.0,
+                                            "effort": 47.916668
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__MultipleImports",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 1.0,
+                                            "effort": 0.16666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__ArtifactSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 91.0,
+                                            "effort": 7.5833335
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 12.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 22.0,
+                                            "effort": 1.8333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__Prototype",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 1.0,
+                                            "effort": 0.083333336
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 7409.0,
+                                            "effort": 617.4167
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingAutomatedDoc2",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 30770.0,
+                                            "effort": 30770.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 9263.0,
+                                            "effort": 771.9167
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 1660.0,
+                                            "effort": 138.33334
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__RangeBoundary",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 5.0,
+                                            "effort": 0.8333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__AutomaticNumbering",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 8.0,
+                                            "effort": 0.6666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 23.0,
+                                            "effort": 1.9166667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 3.0,
+                                            "effort": 30.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 14.0,
+                                            "effort": 1.1666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 57584.17,
+                                            "effort": 57584.17
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__Ternary",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 3286.0,
+                                            "effort": 3286.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadDeclarationOrder",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 549.0,
+                                            "effort": 549.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 1294.0,
+                                            "effort": 107.833336
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 170.0,
+                                            "effort": 1700.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 1814.3198,
+                                            "effort": 1814.3198
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__Instanceof",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 8.0,
+                                            "effort": 80.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__MultilineInstruction",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 54.0,
+                                            "effort": 4.5
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 1.19,
+                                            "effort": 1.19
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 976083.0,
+                                            "effort": 976083.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__LocalVar",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 227.0,
+                                            "effort": 37.833336
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 187.07501,
+                                            "effort": 935.37506
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 463.80655,
+                                            "effort": 2319.0327
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 495.89996,
+                                            "effort": 2479.4998
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__MethodsWithTooMuchParameters",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 63.0,
+                                            "effort": 315.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 1781.0,
+                                            "effort": 8905.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ComplexConditions",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 9.0,
+                                            "effort": 90.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__ComplexClasses",
+                                    "detail": [
+                                        {
+                                            "application_id": 16796,
+                                            "application_name": "cassandra",
+                                            "counter": 379.0,
+                                            "effort": 189.50002
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

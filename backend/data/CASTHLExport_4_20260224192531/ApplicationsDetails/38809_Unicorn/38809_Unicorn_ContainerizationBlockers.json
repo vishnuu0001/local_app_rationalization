@@ -1,0 +1,42 @@
+[
+    {
+        "id": "Use_SecuredProtocols-CSHARP",
+        "display": "Security & User Authentication : Use of unsecured network protocols or URI libraries",
+        "criticality": "Low",
+        "impacts": [
+            "Code"
+        ],
+        "roadblocks": 1.0,
+        "cloudEffort": 10,
+        "files": [
+            "UnicornStore\\Startup.cs"
+        ]
+    },
+    {
+        "id": "Use_COM_Components-CSHARP",
+        "display": "Code Execution : Using COM Components",
+        "criticality": "High",
+        "impacts": [
+            "Container only"
+        ],
+        "roadblocks": 2.0,
+        "cloudEffort": 240,
+        "files": [
+            "UnicornStore\\Startup.cs",
+            "UnicornStore\\Platform.cs"
+        ]
+    },
+    {
+        "id": "Use_OS_Dependency-CSHARP",
+        "display": "Execution Environment : Using system DLLs",
+        "criticality": "High",
+        "impacts": [
+            "Container only"
+        ],
+        "roadblocks": 2.0,
+        "cloudEffort": 20,
+        "files": [
+            "UnicornStore\\Platform.cs"
+        ]
+    }
+]

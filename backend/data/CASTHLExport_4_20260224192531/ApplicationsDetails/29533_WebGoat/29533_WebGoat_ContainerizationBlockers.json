@@ -1,0 +1,109 @@
+[
+    {
+        "id": "Use_File_System-JAVA",
+        "display": "Execution Environment : Using file system",
+        "criticality": "Low",
+        "impacts": [
+            "Code",
+            "Container only"
+        ],
+        "roadblocks": 4.0,
+        "cloudEffort": 60,
+        "files": [
+            "WEB-INF/classes/org/owasp/webgoat/util\\Exec.java",
+            "WEB-INF/classes/org/owasp/webgoat/session\\WebgoatProperties.java"
+        ]
+    },
+    {
+        "id": "Use_Stateful_Session-JAVA",
+        "display": "Persistent Files : Using stateful session (Servlet)",
+        "criticality": "High",
+        "impacts": [
+            "Code",
+            "Container Architecture"
+        ],
+        "roadblocks": 8.0,
+        "cloudEffort": 80,
+        "files": [
+            "WEB-INF/classes/org/owasp/webgoat/controller\\Welcome.java",
+            "WEB-INF/classes/org/owasp/webgoat/controller\\About.java",
+            "WEB-INF/classes/org/owasp/webgoat/lessons\\CsrfPromptByPass.java",
+            "WEB-INF/classes/org/owasp/webgoat/lessons\\CsrfTokenByPass.java",
+            "WEB-INF/classes/org/owasp/webgoat\\HammerHead.java"
+        ]
+    },
+    {
+        "id": "Use_SecuredProtocols-JAVA",
+        "display": "Security & User Authentication : Use of unsecured network protocols or URI libraries",
+        "criticality": "Low",
+        "impacts": [
+            "Code"
+        ],
+        "roadblocks": 43.0,
+        "cloudEffort": 430,
+        "files": [
+            "WEB-INF/classes/org/owasp/webgoat/lessons\\XMLInjection.java",
+            "WEB-INF/classes/org/owasp/webgoat/lessons\\WeakSessionID.java",
+            "WEB-INF/classes/org/owasp/webgoat/lessons\\BackDoors.java",
+            "WEB-INF/classes/org/owasp/webgoat/lessons\\MaliciousFileExecution.java",
+            "WEB-INF/classes/org/owasp/webgoat/lessons\\BypassHtmlFieldRestrictions.java",
+            "WEB-INF/classes/org/owasp/webgoat/lessons\\AccessControlMatrix.java",
+            "WEB-INF/classes/org/owasp/webgoat/lessons\\SilentTransactions.java",
+            "WEB-INF/classes/org/owasp/webgoat/lessons\\ForcedBrowsing.java",
+            "WEB-INF/classes/org/owasp/webgoat/lessons/ClientSideFiltering\\ClientSideFiltering.java",
+            "WEB-INF/classes/org/owasp/webgoat/lessons\\SqlAddData.java",
+            "WEB-INF/classes/org/owasp/webgoat/lessons/GoatHillsFinancial\\GoatHillsFinancial.java",
+            "WEB-INF/classes/org/owasp/webgoat/session\\Screen.java",
+            "WEB-INF/classes/org/owasp/webgoat/lessons\\ForgotPassword.java",
+            "WEB-INF/classes/org/owasp/webgoat/lessons\\HtmlClues.java",
+            "WEB-INF/classes/org/owasp/webgoat/lessons\\HttpSplitting.java",
+            "WEB-INF/classes/org/owasp/webgoat/lessons\\StoredXss.java",
+            "WEB-INF/classes/org/owasp/webgoat/lessons\\SqlModifyData.java",
+            "WEB-INF/classes/org/owasp/webgoat/lessons\\SameOriginPolicyProtection.java",
+            "WEB-INF/classes/org/owasp/webgoat/lessons\\FailOpenAuthentication.java",
+            "WEB-INF/classes/org/owasp/webgoat/lessons\\XPATHInjection.java",
+            "WEB-INF/classes/org/owasp/webgoat/lessons\\CSRF.java",
+            "WEB-INF/classes/org/owasp/webgoat/lessons\\DOMInjection.java",
+            "WEB-INF/classes/org/owasp/webgoat/lessons\\Phishing.java",
+            "WEB-INF/classes/org/owasp/webgoat/lessons\\ConcurrencyCart.java",
+            "WEB-INF/classes/org/owasp/webgoat/lessons\\ThreadSafetyProblem.java",
+            "WEB-INF/classes/org/owasp/webgoat/lessons\\LogSpoofing.java",
+            "WEB-INF/classes/org/owasp/webgoat/lessons\\CsrfTokenByPass.java",
+            "WEB-INF/classes/org/owasp/webgoat/lessons\\WeakAuthenticationCookie.java",
+            "WEB-INF/classes/org/owasp/webgoat/lessons\\ClientSideValidation.java",
+            "WEB-INF/classes/org/owasp/webgoat/lessons\\DangerousEval.java",
+            "WEB-INF/classes/org/owasp/webgoat/lessons\\WSDLScanning.java",
+            "WEB-INF/classes/org/owasp/webgoat/lessons\\JavaScriptValidation.java",
+            "WEB-INF/classes/org/owasp/webgoat/lessons\\HttpOnly.java",
+            "WEB-INF/classes/org/owasp/webgoat/lessons\\DOMXSS.java",
+            "WEB-INF/classes/org/owasp/webgoat/lessons\\HiddenFieldTampering.java",
+            "WEB-INF/classes/org/owasp/webgoat/lessons\\BlindNumericSqlInjection.java",
+            "WEB-INF/classes/org/owasp/webgoat/lessons\\Encoding.java",
+            "WEB-INF/classes/org/owasp/webgoat/lessons\\CsrfPromptByPass.java",
+            "WEB-INF/classes/org/owasp/webgoat/lessons\\BlindStringSqlInjection.java"
+        ]
+    },
+    {
+        "id": "File_Manipulation_Practice-JAVA",
+        "display": "Persistent Files : Perform File Manipulation",
+        "criticality": "Low",
+        "impacts": [
+            "Code",
+            "Container only"
+        ],
+        "roadblocks": 33.0,
+        "cloudEffort": 495,
+        "files": [
+            "WEB-INF/classes/org/owasp/webgoat/lessons\\PathBasedAccessControl.java",
+            "WEB-INF/classes/org/owasp/webgoat/lessons/ClientSideFiltering\\ClientSideFiltering.java",
+            "WEB-INF/classes/org/owasp/webgoat/lessons\\BlindScript.java",
+            "WEB-INF/classes/org/owasp/webgoat/lessons\\Challenge2Screen.java",
+            "WEB-INF/classes/org/owasp/webgoat/lessons\\CommandInjection.java",
+            "WEB-INF/classes/org/owasp/webgoat/session\\Course.java",
+            "WEB-INF/classes/org/owasp/webgoat/lessons\\DOMXSS.java",
+            "WEB-INF/classes/org/owasp/webgoat/lessons\\MaliciousFileExecution.java",
+            "WEB-INF/classes/org/owasp/webgoat/lessons\\XPATHInjection.java",
+            "WEB-INF/classes/org/owasp/webgoat/session\\WebgoatProperties.java"
+        ]
+    }
+]

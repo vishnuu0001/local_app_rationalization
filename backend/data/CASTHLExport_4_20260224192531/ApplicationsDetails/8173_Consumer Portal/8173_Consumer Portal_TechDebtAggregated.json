@@ -1,0 +1,228 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "VB",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__PublicAttributes",
+                                    "detail": [
+                                        {
+                                            "application_id": 8173,
+                                            "application_name": "Consumer Portal",
+                                            "counter": 31.0,
+                                            "effort": 31.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 8173,
+                                            "application_name": "Consumer Portal",
+                                            "counter": 5.6,
+                                            "effort": 5.6
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__RiskyFunctionCalls",
+                                    "detail": [
+                                        {
+                                            "application_id": 8173,
+                                            "application_name": "Consumer Portal",
+                                            "counter": 36.0,
+                                            "effort": 360.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "VB",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__MissingDefault",
+                                    "detail": [
+                                        {
+                                            "application_id": 8173,
+                                            "application_name": "Consumer Portal",
+                                            "counter": 5.0,
+                                            "effort": 5.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "VB",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 8173,
+                                            "application_name": "Consumer Portal",
+                                            "counter": 2.0,
+                                            "effort": 2.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 8173,
+                                            "application_name": "Consumer Portal",
+                                            "counter": 3.0,
+                                            "effort": 3.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "VB",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 8173,
+                                            "application_name": "Consumer Portal",
+                                            "counter": 45.0,
+                                            "effort": 3.7500002
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "VB",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__UnparametrizedNext",
+                                    "detail": [
+                                        {
+                                            "application_id": 8173,
+                                            "application_name": "Consumer Portal",
+                                            "counter": 20.0,
+                                            "effort": 3.3333335
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 8173,
+                                            "application_name": "Consumer Portal",
+                                            "counter": 85.0,
+                                            "effort": 85.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 8173,
+                                            "application_name": "Consumer Portal",
+                                            "counter": 10.0,
+                                            "effort": 0.8333334
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "VB",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "VB__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 8173,
+                                            "application_name": "Consumer Portal",
+                                            "counter": 23.0,
+                                            "effort": 23.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

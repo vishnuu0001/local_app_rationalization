@@ -1,0 +1,552 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PHP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__MissingSetter",
+                                    "detail": [
+                                        {
+                                            "application_id": 8353,
+                                            "application_name": "Application Support",
+                                            "counter": 2.0,
+                                            "effort": 0.6666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__String",
+                                    "detail": [
+                                        {
+                                            "application_id": 8353,
+                                            "application_name": "Application Support",
+                                            "counter": 396.0,
+                                            "effort": 66.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__SQL",
+                                    "detail": [
+                                        {
+                                            "application_id": 8353,
+                                            "application_name": "Application Support",
+                                            "counter": 5.0,
+                                            "effort": 50.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__VariableDefinitionCheck",
+                                    "detail": [
+                                        {
+                                            "application_id": 8353,
+                                            "application_name": "Application Support",
+                                            "counter": 901.0,
+                                            "effort": 150.16667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__Debug",
+                                    "detail": [
+                                        {
+                                            "application_id": 8353,
+                                            "application_name": "Application Support",
+                                            "counter": 3.0,
+                                            "effort": 0.5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__FinalModifier",
+                                    "detail": [
+                                        {
+                                            "application_id": 8353,
+                                            "application_name": "Application Support",
+                                            "counter": 1.0,
+                                            "effort": 0.083333336
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PHP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__Parameters",
+                                    "detail": [
+                                        {
+                                            "application_id": 8353,
+                                            "application_name": "Application Support",
+                                            "counter": 9.0,
+                                            "effort": 4.5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__EmptyStatement",
+                                    "detail": [
+                                        {
+                                            "application_id": 8353,
+                                            "application_name": "Application Support",
+                                            "counter": 45.0,
+                                            "effort": 7.5000005
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__Constructor",
+                                    "detail": [
+                                        {
+                                            "application_id": 8353,
+                                            "application_name": "Application Support",
+                                            "counter": 12.0,
+                                            "effort": 2.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__Unconditionnal",
+                                    "detail": [
+                                        {
+                                            "application_id": 8353,
+                                            "application_name": "Application Support",
+                                            "counter": 3.0,
+                                            "effort": 1.5000001
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PHP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__MissingIdentical",
+                                    "detail": [
+                                        {
+                                            "application_id": 8353,
+                                            "application_name": "Application Support",
+                                            "counter": 16639.0,
+                                            "effort": 1386.5834
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__Object",
+                                    "detail": [
+                                        {
+                                            "application_id": 8353,
+                                            "application_name": "Application Support",
+                                            "counter": 50.0,
+                                            "effort": 16.666668
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__BadLoop",
+                                    "detail": [
+                                        {
+                                            "application_id": 8353,
+                                            "application_name": "Application Support",
+                                            "counter": 55.0,
+                                            "effort": 27.500002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__MissingBreakInCasePath",
+                                    "detail": [
+                                        {
+                                            "application_id": 8353,
+                                            "application_name": "Application Support",
+                                            "counter": 398.0,
+                                            "effort": 33.166668
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PHP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__EndComment",
+                                    "detail": [
+                                        {
+                                            "application_id": 8353,
+                                            "application_name": "Application Support",
+                                            "counter": 4760.0,
+                                            "effort": 396.6667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 8353,
+                                            "application_name": "Application Support",
+                                            "counter": 345.0,
+                                            "effort": 345.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__ClassNameIsNotFileName",
+                                    "detail": [
+                                        {
+                                            "application_id": 8353,
+                                            "application_name": "Application Support",
+                                            "counter": 108.0,
+                                            "effort": 18.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__Elseif",
+                                    "detail": [
+                                        {
+                                            "application_id": 8353,
+                                            "application_name": "Application Support",
+                                            "counter": 1116.0,
+                                            "effort": 93.00001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__FileNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 8353,
+                                            "application_name": "Application Support",
+                                            "counter": 380.0,
+                                            "effort": 63.333336
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__ClassNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 8353,
+                                            "application_name": "Application Support",
+                                            "counter": 10.0,
+                                            "effort": 1.6666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PHP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 8353,
+                                            "application_name": "Application Support",
+                                            "counter": 1778.0,
+                                            "effort": 148.16667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__IncDec",
+                                    "detail": [
+                                        {
+                                            "application_id": 8353,
+                                            "application_name": "Application Support",
+                                            "counter": 23.0,
+                                            "effort": 1.9166667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__UpperCase",
+                                    "detail": [
+                                        {
+                                            "application_id": 8353,
+                                            "application_name": "Application Support",
+                                            "counter": 1.0,
+                                            "effort": 0.083333336
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__CommentedThrow",
+                                    "detail": [
+                                        {
+                                            "application_id": 8353,
+                                            "application_name": "Application Support",
+                                            "counter": 17.0,
+                                            "effort": 2.8333335
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__FunctionNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 8353,
+                                            "application_name": "Application Support",
+                                            "counter": 61.0,
+                                            "effort": 10.166667
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PHP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__ConstructorNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 8353,
+                                            "application_name": "Application Support",
+                                            "counter": 61.0,
+                                            "effort": 5.0833335
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__UnusedParameters",
+                                    "detail": [
+                                        {
+                                            "application_id": 8353,
+                                            "application_name": "Application Support",
+                                            "counter": 252.0,
+                                            "effort": 126.00001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__Overriding",
+                                    "detail": [
+                                        {
+                                            "application_id": 8353,
+                                            "application_name": "Application Support",
+                                            "counter": 4.0,
+                                            "effort": 0.33333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 8353,
+                                            "application_name": "Application Support",
+                                            "counter": 162.0,
+                                            "effort": 162.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__Undocumented",
+                                    "detail": [
+                                        {
+                                            "application_id": 8353,
+                                            "application_name": "Application Support",
+                                            "counter": 212.0,
+                                            "effort": 70.66667
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PHP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__NBMETH",
+                                    "detail": [
+                                        {
+                                            "application_id": 8353,
+                                            "application_name": "Application Support",
+                                            "counter": 297.29996,
+                                            "effort": 1486.4998
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 8353,
+                                            "application_name": "Application Support",
+                                            "counter": 170.2866,
+                                            "effort": 851.43304
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PHP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__NestedLoop",
+                                    "detail": [
+                                        {
+                                            "application_id": 8353,
+                                            "application_name": "Application Support",
+                                            "counter": 301.0,
+                                            "effort": 3010.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PHP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__DepthCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 8353,
+                                            "application_name": "Application Support",
+                                            "counter": 41.0,
+                                            "effort": 205.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__ComplexConditions",
+                                    "detail": [
+                                        {
+                                            "application_id": 8353,
+                                            "application_name": "Application Support",
+                                            "counter": 54.0,
+                                            "effort": 540.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

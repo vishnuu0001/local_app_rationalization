@@ -1,0 +1,149 @@
+[
+    {
+        "platformId": "aws",
+        "platformName": "Amazon Web Services",
+        "platformUrl": "https://www.aws.com",
+        "recommendations": [
+            {
+                "id": "aws_ec2",
+                "name": "Amazon EC2",
+                "category": "Compute",
+                "description": "Secure and resizable compute capacity in the cloud. Launch applications when needed without upfront commitments",
+                "url": "https://aws.amazon.com/ec2/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Getting Started with Amazon EC2",
+                        "url": "https://aws.amazon.com/ec2/getting-started/"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "VB",
+                        "details": {
+                            "loc": 768.0,
+                            "label": "VB/VB.Net"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "platformId": "azure",
+        "platformName": "Microsoft Azure",
+        "platformUrl": "https://azure.microsoft.com",
+        "recommendations": [
+            {
+                "id": "azure_appservice",
+                "name": "Azure App Service",
+                "category": "Compute",
+                "description": "Build, deploy, and scale web apps on a fully managed platform",
+                "url": "https://azure.microsoft.com/en-us/services/app-service/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "App Service Documentation",
+                        "url": "https://docs.microsoft.com/en-us/azure/app-service/"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "VB",
+                        "details": {
+                            "loc": 768.0,
+                            "label": "VB/VB.Net"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "azure_iaas",
+                "name": "Azure infrastructure as a service (IaaS)",
+                "category": "Compute",
+                "description": "Meet all your cloud infrastructure needs",
+                "url": "https://azure.microsoft.com/en-us/overview/what-is-azure/iaas/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Linux virtual machines in Azure",
+                        "url": "https://docs.microsoft.com/en-us/azure/virtual-machines/linux/"
+                    },
+                    {
+                        "type": "General",
+                        "title": "Windows virtual machines in Azure",
+                        "url": "https://docs.microsoft.com/en-us/azure/virtual-machines/windows/"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "VB",
+                        "details": {
+                            "loc": 768.0,
+                            "label": "VB/VB.Net"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "platformId": "gcp",
+        "platformName": "Google Cloud",
+        "platformUrl": "https://cloud.google.com",
+        "recommendations": [
+            {
+                "id": "gcp_cloudrun",
+                "name": "Cloud Run",
+                "category": "Compute",
+                "description": "Develop and deploy highly scalable containerized applications on a fully managed serverless platform.",
+                "url": "https://cloud.google.com/run",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Cloud Run Documentation",
+                        "url": "https://cloud.google.com/run#section-5"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "VB",
+                        "details": {
+                            "loc": 768.0,
+                            "label": "VB/VB.Net"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "gcp_containers",
+                "name": "Google Kubernetes Engine (GKE Autopilot)",
+                "category": "Container",
+                "description": "GKE Autopilot mode is a hands-off, fully managed solution that manages your entire cluster\u2019s infrastructure without worrying about configuring and monitoring nodes, while still delivering a complete Kubernetes experience.",
+                "url": "https://cloud.google.com/kubernetes-engine",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Google Kubernetes Engine documentation",
+                        "url": "https://cloud.google.com/kubernetes-engine/docs/concepts/autopilot-overview"
+                    }
+                ],
+                "considerations": "The applicability of this recommendation will depend on your organization's container strategy, and which target is recommended as part of this strategy: Virtual machines, Individual containers, Kubernetes clusters, etc. Your container strategy will also inform how processes and people impact the technology choices, if for example a DevOps strategy or a Microservices strategy exists.",
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "VB",
+                        "details": {
+                            "loc": 768.0,
+                            "label": "VB/VB.Net"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]

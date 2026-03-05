@@ -1,0 +1,528 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PHP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__MissingSetter",
+                                    "detail": [
+                                        {
+                                            "application_id": 10276,
+                                            "application_name": "PHP",
+                                            "counter": 1.0,
+                                            "effort": 0.33333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__String",
+                                    "detail": [
+                                        {
+                                            "application_id": 10276,
+                                            "application_name": "PHP",
+                                            "counter": 255.0,
+                                            "effort": 42.500004
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__SQL",
+                                    "detail": [
+                                        {
+                                            "application_id": 10276,
+                                            "application_name": "PHP",
+                                            "counter": 5.0,
+                                            "effort": 50.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__VariableDefinitionCheck",
+                                    "detail": [
+                                        {
+                                            "application_id": 10276,
+                                            "application_name": "PHP",
+                                            "counter": 199.0,
+                                            "effort": 33.166668
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__Debug",
+                                    "detail": [
+                                        {
+                                            "application_id": 10276,
+                                            "application_name": "PHP",
+                                            "counter": 3.0,
+                                            "effort": 0.5
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PHP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__Parameters",
+                                    "detail": [
+                                        {
+                                            "application_id": 10276,
+                                            "application_name": "PHP",
+                                            "counter": 1.0,
+                                            "effort": 0.5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__EmptyStatement",
+                                    "detail": [
+                                        {
+                                            "application_id": 10276,
+                                            "application_name": "PHP",
+                                            "counter": 5.0,
+                                            "effort": 0.8333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__Constructor",
+                                    "detail": [
+                                        {
+                                            "application_id": 10276,
+                                            "application_name": "PHP",
+                                            "counter": 1.0,
+                                            "effort": 0.16666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__Unconditionnal",
+                                    "detail": [
+                                        {
+                                            "application_id": 10276,
+                                            "application_name": "PHP",
+                                            "counter": 1.0,
+                                            "effort": 0.5
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PHP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__MissingIdentical",
+                                    "detail": [
+                                        {
+                                            "application_id": 10276,
+                                            "application_name": "PHP",
+                                            "counter": 2264.0,
+                                            "effort": 188.66667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__Object",
+                                    "detail": [
+                                        {
+                                            "application_id": 10276,
+                                            "application_name": "PHP",
+                                            "counter": 131.0,
+                                            "effort": 43.666668
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__BadLoop",
+                                    "detail": [
+                                        {
+                                            "application_id": 10276,
+                                            "application_name": "PHP",
+                                            "counter": 16.0,
+                                            "effort": 8.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__MissingBreakInCasePath",
+                                    "detail": [
+                                        {
+                                            "application_id": 10276,
+                                            "application_name": "PHP",
+                                            "counter": 45.0,
+                                            "effort": 3.7500002
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PHP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__EndComment",
+                                    "detail": [
+                                        {
+                                            "application_id": 10276,
+                                            "application_name": "PHP",
+                                            "counter": 1946.0,
+                                            "effort": 162.16667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 10276,
+                                            "application_name": "PHP",
+                                            "counter": 189.0,
+                                            "effort": 189.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__ClassNameIsNotFileName",
+                                    "detail": [
+                                        {
+                                            "application_id": 10276,
+                                            "application_name": "PHP",
+                                            "counter": 115.0,
+                                            "effort": 19.166668
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__Elseif",
+                                    "detail": [
+                                        {
+                                            "application_id": 10276,
+                                            "application_name": "PHP",
+                                            "counter": 64.0,
+                                            "effort": 5.3333335
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__FileNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 10276,
+                                            "application_name": "PHP",
+                                            "counter": 555.0,
+                                            "effort": 92.50001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__ClassNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 10276,
+                                            "application_name": "PHP",
+                                            "counter": 71.0,
+                                            "effort": 11.833334
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PHP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 10276,
+                                            "application_name": "PHP",
+                                            "counter": 113.0,
+                                            "effort": 9.416667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__IncDec",
+                                    "detail": [
+                                        {
+                                            "application_id": 10276,
+                                            "application_name": "PHP",
+                                            "counter": 14.0,
+                                            "effort": 1.1666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__CommentedThrow",
+                                    "detail": [
+                                        {
+                                            "application_id": 10276,
+                                            "application_name": "PHP",
+                                            "counter": 71.0,
+                                            "effort": 11.833334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__FunctionNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 10276,
+                                            "application_name": "PHP",
+                                            "counter": 14.0,
+                                            "effort": 2.3333335
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PHP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__ConstructorNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 10276,
+                                            "application_name": "PHP",
+                                            "counter": 7.0,
+                                            "effort": 0.5833334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__UnusedParameters",
+                                    "detail": [
+                                        {
+                                            "application_id": 10276,
+                                            "application_name": "PHP",
+                                            "counter": 43.0,
+                                            "effort": 21.500002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__Overriding",
+                                    "detail": [
+                                        {
+                                            "application_id": 10276,
+                                            "application_name": "PHP",
+                                            "counter": 6.0,
+                                            "effort": 0.5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 10276,
+                                            "application_name": "PHP",
+                                            "counter": 12.0,
+                                            "effort": 12.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__Undocumented",
+                                    "detail": [
+                                        {
+                                            "application_id": 10276,
+                                            "application_name": "PHP",
+                                            "counter": 263.0,
+                                            "effort": 87.66667
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PHP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__NBMETH",
+                                    "detail": [
+                                        {
+                                            "application_id": 10276,
+                                            "application_name": "PHP",
+                                            "counter": 68.100006,
+                                            "effort": 340.50003
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 10276,
+                                            "application_name": "PHP",
+                                            "counter": 20.976665,
+                                            "effort": 104.88333
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PHP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__NestedLoop",
+                                    "detail": [
+                                        {
+                                            "application_id": 10276,
+                                            "application_name": "PHP",
+                                            "counter": 115.0,
+                                            "effort": 1150.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PHP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__DepthCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 10276,
+                                            "application_name": "PHP",
+                                            "counter": 9.0,
+                                            "effort": 45.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PHP__ComplexConditions",
+                                    "detail": [
+                                        {
+                                            "application_id": 10276,
+                                            "application_name": "PHP",
+                                            "counter": 3.0,
+                                            "effort": 30.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

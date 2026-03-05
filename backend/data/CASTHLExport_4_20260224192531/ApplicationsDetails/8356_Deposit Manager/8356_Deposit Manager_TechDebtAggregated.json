@@ -1,0 +1,384 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PL1",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__String",
+                                    "detail": [
+                                        {
+                                            "application_id": 8356,
+                                            "application_name": "Deposit Manager",
+                                            "counter": 253.0,
+                                            "effort": 126.50001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__BadStatement",
+                                    "detail": [
+                                        {
+                                            "application_id": 8356,
+                                            "application_name": "Deposit Manager",
+                                            "counter": 6948.0,
+                                            "effort": 579.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__ResourceManagement",
+                                    "detail": [
+                                        {
+                                            "application_id": 8356,
+                                            "application_name": "Deposit Manager",
+                                            "counter": 345.0,
+                                            "effort": 115.00001
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PL1",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__Select",
+                                    "detail": [
+                                        {
+                                            "application_id": 8356,
+                                            "application_name": "Deposit Manager",
+                                            "counter": 2.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__RiskyDeclaration",
+                                    "detail": [
+                                        {
+                                            "application_id": 8356,
+                                            "application_name": "Deposit Manager",
+                                            "counter": 753.0,
+                                            "effort": 251.00002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__WithoutTitleFetch",
+                                    "detail": [
+                                        {
+                                            "application_id": 8356,
+                                            "application_name": "Deposit Manager",
+                                            "counter": 4.0,
+                                            "effort": 2.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PL1",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__NotTestedSQL",
+                                    "detail": [
+                                        {
+                                            "application_id": 8356,
+                                            "application_name": "Deposit Manager",
+                                            "counter": 3697.0,
+                                            "effort": 3697.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__MissingOnError",
+                                    "detail": [
+                                        {
+                                            "application_id": 8356,
+                                            "application_name": "Deposit Manager",
+                                            "counter": 1183.0,
+                                            "effort": 591.50006
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__MissingDefault",
+                                    "detail": [
+                                        {
+                                            "application_id": 8356,
+                                            "application_name": "Deposit Manager",
+                                            "counter": 1945.0,
+                                            "effort": 1945.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PL1",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__HeterogeneousLoop",
+                                    "detail": [
+                                        {
+                                            "application_id": 8356,
+                                            "application_name": "Deposit Manager",
+                                            "counter": 5.0,
+                                            "effort": 0.4166667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 8356,
+                                            "application_name": "Deposit Manager",
+                                            "counter": 13675.0,
+                                            "effort": 1139.5834
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 8356,
+                                            "application_name": "Deposit Manager",
+                                            "counter": 30003.0,
+                                            "effort": 30003.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PL1",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 8356,
+                                            "application_name": "Deposit Manager",
+                                            "counter": 9812.0,
+                                            "effort": 817.6667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 8356,
+                                            "application_name": "Deposit Manager",
+                                            "counter": 19722.0,
+                                            "effort": 1643.5001
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PL1",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 8356,
+                                            "application_name": "Deposit Manager",
+                                            "counter": 199144.61,
+                                            "effort": 199144.61
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__UntagguedEnd",
+                                    "detail": [
+                                        {
+                                            "application_id": 8356,
+                                            "application_name": "Deposit Manager",
+                                            "counter": 26964.0,
+                                            "effort": 2247.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 8356,
+                                            "application_name": "Deposit Manager",
+                                            "counter": 4636.0,
+                                            "effort": 46360.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PL1",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__NBMETH",
+                                    "detail": [
+                                        {
+                                            "application_id": 8356,
+                                            "application_name": "Deposit Manager",
+                                            "counter": 154.65007,
+                                            "effort": 773.25037
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 8356,
+                                            "application_name": "Deposit Manager",
+                                            "counter": 2821.322,
+                                            "effort": 14106.61
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 8356,
+                                            "application_name": "Deposit Manager",
+                                            "counter": 19843.672,
+                                            "effort": 19843.672
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PL1",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__Nested",
+                                    "detail": [
+                                        {
+                                            "application_id": 8356,
+                                            "application_name": "Deposit Manager",
+                                            "counter": 6.0,
+                                            "effort": 60.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 8356,
+                                            "application_name": "Deposit Manager",
+                                            "counter": 1669.8009,
+                                            "effort": 8349.005
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

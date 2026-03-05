@@ -1,0 +1,1806 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 354.0,
+                                            "effort": 1062.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__MissingBraces",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 159.0,
+                                            "effort": 159.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 342.4001,
+                                            "effort": 342.4001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__ResourceManagement",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 10.0,
+                                            "effort": 5.0000005
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 100.44001,
+                                            "effort": 502.20004
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__ResourceManagement2",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 4.0,
+                                            "effort": 2.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__TmpFileName",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 4.0,
+                                            "effort": 40.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__VarDecl",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 61.0,
+                                            "effort": 10.166667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__ModifiedIFS",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 1.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 16056.0,
+                                            "effort": 48168.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__IllegalException",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 1.0,
+                                            "effort": 0.16666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__RiskyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 2121.0,
+                                            "effort": 10605.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__UnecessaryMethod",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 17.0,
+                                            "effort": 8.5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__StarImport",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 4.0,
+                                            "effort": 4.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__UnusedImport",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 9810.0,
+                                            "effort": 817.50006
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 22.0,
+                                            "effort": 66.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 2.5,
+                                            "effort": 2.5
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__String",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 32.0,
+                                            "effort": 2.6666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MissingSemicolon",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 17.0,
+                                            "effort": 1.4166667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 4.0,
+                                            "effort": 12.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 1.61,
+                                            "effort": 1.61
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__Data",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 224.0,
+                                            "effort": 3360.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__MissingBreakInCasePath",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 3.0,
+                                            "effort": 0.25
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__RiskyFunctionCalls",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 7.0,
+                                            "effort": 70.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__Intrinsics",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 61.0,
+                                            "effort": 61.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 0.3,
+                                            "effort": 0.3
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__Pipes",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 33.0,
+                                            "effort": 5.5000005
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__MultipleReturn",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 3252.0,
+                                            "effort": 1626.0001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__EmptyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 258.0,
+                                            "effort": 1290.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__UnnecessaryConcat",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 273.0,
+                                            "effort": 22.750002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__MagicMethods",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 73.0,
+                                            "effort": 24.333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__ConstructorReturn",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 23.0,
+                                            "effort": 5.7500005
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__UnexpectedGetter",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 400.0,
+                                            "effort": 200.00002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__Inheritance",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 96.0,
+                                            "effort": 16.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__ConcatInLoop",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 618.0,
+                                            "effort": 309.00003
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__MissingBraces2",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 21.0,
+                                            "effort": 3.5000002
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__StrongDataAccess",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 16.0,
+                                            "effort": 5.3333335
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MissingBraces",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 5.0,
+                                            "effort": 0.8333334
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__MacroUnparenthesedParams",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 1.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__MissingDefault",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 14.0,
+                                            "effort": 14.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__UninitializedLocalVariables",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 4684.0,
+                                            "effort": 780.6667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__AssignmentsInConditionalExpr",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 18.0,
+                                            "effort": 9.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__BugPatterns",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 133.0,
+                                            "effort": 133.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__ExplicitExit",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 2.0,
+                                            "effort": 0.33333334
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__UnusedArg",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 2227.0,
+                                            "effort": 185.58334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__SuspiciousLoop",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 1.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__UnusedVar",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 30223.0,
+                                            "effort": 30223.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__ImportConflict",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 1947.0,
+                                            "effort": 324.50003
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__FileGlobalVariables",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 4098.0,
+                                            "effort": 4098.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__UnsignificantReturn",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 2848.0,
+                                            "effort": 474.6667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__StringFormat",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 11643.0,
+                                            "effort": 970.25006
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__NamingConflict",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 96.0,
+                                            "effort": 16.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__PublicAttributes",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 24.0,
+                                            "effort": 24.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__MissingDefault",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 1.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MissingIdentical",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 8.0,
+                                            "effort": 0.6666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 2.0,
+                                            "effort": 2.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 624.0,
+                                            "effort": 52.000004
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 3.0,
+                                            "effort": 0.25
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 112.0,
+                                            "effort": 9.333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 33.0,
+                                            "effort": 33.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 6.0,
+                                            "effort": 6.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__ShortVarName",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 2.0,
+                                            "effort": 0.33333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 26.0,
+                                            "effort": 26.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__String",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 794640.0,
+                                            "effort": 66220.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 64657.0,
+                                            "effort": 5388.0835
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 534057.0,
+                                            "effort": 89009.51
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 28976.0,
+                                            "effort": 2414.6667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__ArtifactSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 2102.0,
+                                            "effort": 175.16667
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 8.0,
+                                            "effort": 0.6666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 6.0,
+                                            "effort": 0.5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__ClassDefinitions",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 12.0,
+                                            "effort": 60.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 16.0,
+                                            "effort": 1.3333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 1.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 122.0,
+                                            "effort": 10.166667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__Prototype",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 31.0,
+                                            "effort": 2.5833335
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 105.0,
+                                            "effort": 8.75
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 302.0,
+                                            "effort": 25.166668
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 47.700005,
+                                            "effort": 47.700005
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__ExportNames",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 7.0,
+                                            "effort": 3.5000002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__LocalNames",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 47.0,
+                                            "effort": 7.833334
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__RangeBoundary",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 50.0,
+                                            "effort": 8.333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__AutomaticNumbering",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 215.0,
+                                            "effort": 17.916668
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 4402.0,
+                                            "effort": 366.83334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 641.0,
+                                            "effort": 6410.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__ConditionReadability",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 199.0,
+                                            "effort": 66.333336
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__MissingAutomatedDoc2",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 40.0,
+                                            "effort": 40.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__BadDeclarationOrder",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 8.0,
+                                            "effort": 8.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 2.0,
+                                            "effort": 0.16666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 42.0,
+                                            "effort": 3.5000002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 85.0,
+                                            "effort": 7.0833335
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MultDecl",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 6.0,
+                                            "effort": 0.5
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__Ternary",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 106.0,
+                                            "effort": 106.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 13779.799,
+                                            "effort": 13779.799
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__PreprocDirective",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 60.0,
+                                            "effort": 60.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 70.0,
+                                            "effort": 700.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 2.0,
+                                            "effort": 0.16666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__ContinuationChar",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 6.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 153206.73,
+                                            "effort": 153206.73
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__Instanceof",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 142.0,
+                                            "effort": 1420.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__SuspiciousIndentations",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 87.0,
+                                            "effort": 7.2500005
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__MultilineInstruction",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 2206.0,
+                                            "effort": 183.83334
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 103.8,
+                                            "effort": 103.8
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 5.0,
+                                            "effort": 0.4166667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 2.0,
+                                            "effort": 20.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 12.47,
+                                            "effort": 12.47
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__VarDecl",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 19.0,
+                                            "effort": 3.1666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__ApplicationGlobalVariables",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 9.0,
+                                            "effort": 1.5000001
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 80.05,
+                                            "effort": 400.25
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 701.55005,
+                                            "effort": 701.55005
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 100.44001,
+                                            "effort": 502.20004
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 1.0833334,
+                                            "effort": 5.416667
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__LocalVar",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 46394.0,
+                                            "effort": 7732.3335
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 10502.504,
+                                            "effort": 52512.52
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 1.0066667,
+                                            "effort": 5.0333333
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 8.55,
+                                            "effort": 8.55
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 14.888889,
+                                            "effort": 74.44444
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 3.12,
+                                            "effort": 3.12
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__MethodsWithTooMuchParameters",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 2436.0,
+                                            "effort": 12180.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 104801.0,
+                                            "effort": 524005.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 0.28,
+                                            "effort": 1.4
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__NBMETH",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 19.0,
+                                            "effort": 95.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__ComplexConditions",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 10.0,
+                                            "effort": 100.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__ComplexClasses",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 13785.0,
+                                            "effort": 6892.5005
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__ComplexConditions",
+                                    "detail": [
+                                        {
+                                            "application_id": 27568,
+                                            "application_name": "SCA",
+                                            "counter": 148.0,
+                                            "effort": 1480.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,261 @@
+{
+    "snapshotLabel": "Open Source #5 - July 2017_standard",
+    "snapshotDate": 1517374800000,
+    "applicationCodeLines": null,
+    "applicationFiles": 8.0,
+    "thirdPartyCodeLines": null,
+    "thirdPartyFiles": 10.0,
+    "thirdParties": [
+        {
+            "id": 37512,
+            "componentId": "eslint.npm",
+            "name": "eslint.npm",
+            "version": "3.19.0",
+            "release": 1490990730000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "10.0.0",
+            "lastRelease": 1770417047000,
+            "nbVersionPreviousYear": 31,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "eslint",
+                "product": "eslint",
+                "version": "3.19.0",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2025-50537",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-50537",
+                        "description": "Stack overflow vulnerability in eslint before 9.26.0 when serializing objects with circular references in eslint/lib/shared/serialization.js. The exploit is triggered via the RuleTester.run() method, which validates test cases and checks for duplicates. During validation, the internal function checkDuplicateTestCase() is called, which in turn uses the isSerializable() function for serialization checks. When a circular reference object is passed in, isSerializable() enters infinite recursion, ultimately causing a stack overflow.",
+                        "cweId": "CWE-674",
+                        "cweLabel": null,
+                        "cvssScore": 5.5,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "9.26.0",
+            "safestVersion": "9.26.0"
+        },
+        {
+            "id": 52113,
+            "componentId": "eslint-plugin-node.npm",
+            "name": "eslint-plugin-node.npm",
+            "version": "4.2.2",
+            "release": 1490698796000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "11.1.0",
+            "lastRelease": 1585396006000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 52114,
+            "componentId": "eslint-plugin-promise.npm",
+            "name": "eslint-plugin-promise.npm",
+            "version": "3.5.0",
+            "release": 1488325487000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 9,
+                    "name": "ISC License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "7.2.1",
+            "lastRelease": 1732668562000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 52115,
+            "componentId": "standard.npm",
+            "name": "standard.npm",
+            "version": "10.0.2",
+            "release": 1492189793000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "17.1.2",
+            "lastRelease": 1726231724000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 52116,
+            "componentId": "eslint-plugin-standard.npm",
+            "name": "eslint-plugin-standard.npm",
+            "version": "3.0.1",
+            "release": 1491529907000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "5.0.0",
+            "lastRelease": 1606111382000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 52118,
+            "componentId": "eslint-plugin-react.npm",
+            "name": "eslint-plugin-react.npm",
+            "version": "6.10.0",
+            "release": 1487202994000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "7.37.5",
+            "lastRelease": 1743710475000,
+            "nbVersionPreviousYear": 2,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 52120,
+            "componentId": "standard-engine.npm",
+            "name": "standard-engine.npm",
+            "version": "7.0.0",
+            "release": 1491326211000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "15.1.0",
+            "lastRelease": 1685467053000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 52121,
+            "componentId": "eslint-config-standard-jsx.npm",
+            "name": "eslint-config-standard-jsx.npm",
+            "version": "4.0.1",
+            "release": 1491529825000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "11.0.0",
+            "lastRelease": 1650478516000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 52122,
+            "componentId": "eslint-config-standard.npm",
+            "name": "eslint-config-standard.npm",
+            "version": "10.2.1",
+            "release": 1492189334000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "17.1.0",
+            "lastRelease": 1685376445000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 52123,
+            "componentId": "eslint-plugin-import.npm",
+            "name": "eslint-plugin-import.npm",
+            "version": "2.2.0",
+            "release": 1478516752000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "2.32.0",
+            "lastRelease": 1750456749000,
+            "nbVersionPreviousYear": 1,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        }
+    ],
+    "partialComponents": []
+}

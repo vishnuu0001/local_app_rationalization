@@ -1,0 +1,1575 @@
+{
+    "id": 13411,
+    "name": "roslyn",
+    "domains": [
+        {
+            "id": 1622,
+            "name": "Core Business Applications"
+        },
+        {
+            "id": 9366,
+            "name": "Demo Company"
+        },
+        {
+            "id": 12908,
+            "name": "PE Firm"
+        },
+        {
+            "id": 12955,
+            "name": "Enterprise Apps"
+        }
+    ],
+    "metrics": [
+        {
+            "snapshotLabel": "Open Source #5 - July 2017_roslyn",
+            "snapshotDate": 1517374800000,
+            "softwareAgility": 0.5528789162635803,
+            "softwareAgilityAdded": 0.5528789162635803,
+            "softwareElegance": 0.4854906499385834,
+            "softwareEleganceAdded": 0.4854906499385834,
+            "softwareResiliency": 0.6967763304710388,
+            "softwareResiliencyAdded": 0.6967763304710388,
+            "softwareHealth": 0.5783819655577341,
+            "openSourceSafety": 1.0,
+            "openSourceLicense": 1.0,
+            "openSourceObsolescence": null,
+            "openSourceCVE": 1.0,
+            "businessImpact": 0.631979695431472,
+            "roarIndex": 0.22743087995177658,
+            "backFiredFP": 37849.0,
+            "backFiredFPAdded": 37849.0,
+            "technicalDebt": 1131903.7792092487,
+            "maintenanceRecordedFTE": 32.5,
+            "maintenanceRecommendedFTE": 38.35679922209626,
+            "cloudReady": 0.4465519846998067,
+            "cloudReadyScan": 0.5984084880636605,
+            "boosters": 0.0,
+            "blockers": 0.2519893899204244,
+            "roadblocks": 1172.0,
+            "cloudEffort": 163170,
+            "cloudReadySurvey": 0.29469548133595286,
+            "greenIndex": null,
+            "greenIndexScan": null,
+            "greenIndexSurvey": null,
+            "greenOccurrences": null,
+            "greenEffort": null,
+            "greenDetail": [
+                {
+                    "technology": "C/C++",
+                    "greenIndexScan": 0.0,
+                    "greenIndexDetails": null
+                },
+                {
+                    "technology": "Ksh",
+                    "greenIndexScan": 0.0,
+                    "greenIndexDetails": null
+                },
+                {
+                    "technology": "VB/VB.Net",
+                    "greenIndexScan": 0.0,
+                    "greenIndexDetails": null
+                },
+                {
+                    "technology": "C#",
+                    "greenIndexScan": 0.0,
+                    "greenIndexDetails": null
+                }
+            ],
+            "totalLinesOfCode": 2248559,
+            "totalLinesOfCodeAdded": 2248559,
+            "totalLinesOfCodeModified": 0,
+            "totalFiles": 10691,
+            "totalFilesAdded": 10691,
+            "totalFilesModified": 0,
+            "cloudReadyDetail": [
+                {
+                    "technology": "VB/VB.Net",
+                    "cloudReadyScan": 0.0,
+                    "cloudReadyDetails": [
+                        {
+                            "cloudRequirement": {
+                                "id": "Detect_Use_Log4net",
+                                "display": "Application Logs : Using Log4Net for application logs",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Detect_Use_Log4net",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 1.4678899082568808,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Access_Control",
+                                "display": "Access Control List : Using Access Control List",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Access_Control",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Critical",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 14.678899082568808,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Configuration_Except_WebConfig",
+                                "display": "Application Settings Configuration : Using other configuration files than Web configuration",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Configuration_Except_WebConfig",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": -0.2652519893899204,
+                            "roadblocks": 1.0,
+                            "cloudEffort": 15,
+                            "files": [
+                                "C://Users/mmu/Downloads/Agile Mojo Projects/roslyn/roslyn-version-2.2.0/src/Compilers/CSharp/csc/App.config"
+                            ],
+                            "triggered": true
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_COM_Components",
+                                "display": "Code Execution : Using COM Components",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_COM_Components",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "High",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": -3.978779840848806,
+                            "roadblocks": 801.0,
+                            "cloudEffort": 96120,
+                            "files": [
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Compilation/DocumentationComments\\DocumentationCommentCompiler.Field.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\Binder_Delegates.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/VisualBasic/Impl/Options\\AutomationObject.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Analysis/FlowAnalysis\\AbstractFlowPass.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Compilation/DocumentationComments\\DocumentationCommentCompiler.Includes.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Test/Syntax/Parser\\ParseMethods.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/ExpressionEvaluator/VisualBasic/Source/ExpressionCompiler\\EvaluationContext.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/Core/Test/CodeModel/VisualBasic\\CodeImportTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Workspaces/VisualBasic/Portable/CodeGeneration\\VisualBasicCodeGenerationService.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Test/Symbol/SymbolsTests/Metadata/PE\\NoPia.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/CommandLine\\VisualBasicCommandLineArguments.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Emit\\NamedTypeSymbolAdapter.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols/Source\\SourceWithEventsBackingFieldSymbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Test/Emit/Attributes\\AttributeTests_Tuples.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Semantics/TypeInference\\TypeInferenceCollection.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\IgnoreBaseClassesBinder.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Analysis/FlowAnalysis\\RegionReachableWalker.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/CodeGen\\CodeGenerator.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols/Source\\SourceNamedTypeSymbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols\\TypeSymbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/ExpressionEvaluator/VisualBasic/Source/ExpressionCompiler/Symbols\\EEMethodSymbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/VisualBasic/Impl/CodeModel/Extenders\\PartialMethodExtender.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding/Binders\\XmlNamespaceAndImportsClause.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\ProjectImportsBinder.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/TestUtilities2/ProjectSystemShim/VisualBasicHelpers\\MockCompilerHost.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\DocumentationCommentParamBinder.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols/Source\\LambdaSymbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/LocalRewriter\\LocalRewriter_FieldAccess.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering\\UseTwiceRewriter.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols\\MethodSymbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/Test/Resources/Core/SymbolsTests/NoPia\\A.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols/Source\\CustomModifierUtils.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Test/Symbol/SymbolsTests/Retargeting\\RetargetingTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols/Source\\SourceNamedTypeSymbol_GroupClass.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Parser\\ParseInterpolatedString.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Setup/DevDivInsertionFiles/My Project\\AssemblyInfo.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/LocalRewriter\\LocalRewriter_ForTo.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Test/Emit/Attributes\\AttributeTests_WellKnownAttributes.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/VisualBasic/Impl/ProjectSystemShim/Interop\\VBCompilerOptions.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Compilation\\VisualBasicDiagnosticFilter.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/ExpressionEvaluator/VisualBasic/Source/ExpressionCompiler\\EEAssemblyBuilder.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/ExpressionEvaluator/VisualBasic/Source/ExpressionCompiler/Symbols\\PlaceholderMethodSymbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/Instrumentation\\CompoundInstrumenter.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering\\WithExpressionRewriter.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\TypesOfImportedNamespacesMembersBinder.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/VisualBasic/Impl/CodeModel/Extenders\\GenericExtender.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\DocumentationCommentTypeParamBinder.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/Diagnostics\\DiagnosticsPass.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/LocalRewriter\\LocalRewriter_Redim.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Compilation\\VisualBasicCompilation.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols/AnonymousTypes/SynthesizedSymbols\\AnonymousTypeOrDelegateTemplateSymbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Workspaces/CoreTestUtilities/TestFiles\\VisualBasicProject_AssemblyInfo.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/LocalRewriter\\LocalRewriter_Conversion.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/AsyncRewriter\\AsyncRewriter.AsyncMethodToClassRewriter.Spilling.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/VisualBasic/Impl/CodeModel/Interop\\IVBGenericExtender.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Test/Semantic/FlowAnalysis\\RegionAnalysisTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Test/Symbol/SymbolsTests/Source\\MethodTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Compilation/DocumentationComments\\DocumentationCommentCompiler.Namespace.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/LocalRewriter\\LocalRewriter_DimStatement.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable\\GlobalImport.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Test/Emit/Emit\\OptionalArgumentsTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/LocalRewriter\\LocalRewriter_ExpressionStatement.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/LocalRewriter\\LocalRewriter_With.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Samples/VisualBasic/Analyzers/BasicAnalyzers/BasicAnalyzers.Test/My Project\\AssemblyInfo.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/ExpressionLambdaRewriter\\ExpressionLambdaRewriter_BinaryOperator.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/LocalRewriter\\LocalRewriter_AsNewLocalDeclarations.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/ExpressionEvaluator/VisualBasic/Test/ExpressionCompiler\\ExpressionCompilerTestBase.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/Test/Utilities/VisualBasic\\MockVbi.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/LocalRewriter\\LocalRewriter_ConditionalAccess.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Parser\\ParseExpression.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\Binder_Conversions.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\NamedTypeBinder.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Workspaces/VisualBasic/Portable/CodeCleanup/Providers\\ReduceTokensCodeCleanupProvider.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/LocalRewriter\\LocalRewriter_Lambda.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\LocationSpecificBinder.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/LocalRewriter\\LocalRewriter_ConditionalExpressions.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering\\Rewriter.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/VisualBasic/Impl/ProjectSystemShim\\TempPECompiler.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols/Source\\SourceSimpleParameterSymbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Test/Emit/CodeGen\\WinRTCollectionTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/Test/Resources/Core/SymbolsTests/NoPia\\GeneralPia.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\DocumentationCommentCrefBinder_TypeParameters.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols\\MethodSignatureComparer.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Compilation\\SyntaxTreeSemanticModel.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/StateMachineRewriter\\StateMachineRewriter.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Semantics\\Conversions.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\Binder_Statements.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable\\VisualBasicExtensions.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\MethodBodySemanticModel.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/Core/Test/CodeModel/VisualBasic\\CodeStructTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/LocalRewriter\\LocalRewriter_DoLoop.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols/Source\\SourcePropertySymbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols/Source\\SourceNamedTypeSymbol_ComClass.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/LocalRewriter\\LocalRewriter_Call.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Test/Emit/Emit\\ResourceTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/LocalRewriter\\LocalRewriter_Return.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/CodeGen/Optimizer\\StackScheduler.Rewriter.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/Test/Utilities/VisualBasic\\Extensions.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/Core/Test/Snippets\\TestExpansionClient.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/ExpressionEvaluator/VisualBasic/Source/ExpressionCompiler/Symbols\\EEConstructorSymbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols\\WellKnownMembers.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Test/Semantic/Semantics\\AccessCheck.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Analysis/IteratorAndAsyncAnalysis\\IteratorAndAsyncCaptureWalker.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/LocalRewriter\\LocalRewriter_AnonymousTypeCreationExpression.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols\\TypedConstant.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Workspaces/VisualBasic/Portable/LanguageServices\\VisualBasicCommandLineParserService.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols/AnonymousTypes\\AnonymousTypeDescriptor.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Syntax\\LambdaUtilities.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/CodeGen/Optimizer\\StackScheduler.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\Binder_Latebound.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/LocalRewriter\\LocalRewriter_LateInvocation.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Setup/Templates/VisualBasic/CodeRefactoring/Vsix/My Project\\AssemblyInfo.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/CommandLine\\VisualBasicCommandLineParser.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/LocalRewriter\\LocalRewriter_Try.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols/Source\\IAttributeTargetSymbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/Test/Resources/Core/SymbolsTests/NoPia\\C.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols/Metadata/PE\\PEFieldSymbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Test/Semantic/Compilation\\ReferenceManagerTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Workspaces/VisualBasic/Portable/Extensions\\ExpressionSyntaxExtensions.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Setup/Templates/VisualBasic/Diagnostic/Analyzer\\AssemblyInfo.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/ExpressionLambdaRewriter\\ExpressionLambdaRewriter_ConditionalExpresion.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Setup/Templates/VisualBasic/Diagnostic/Test/My Project\\AssemblyInfo.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/VisualBasic/Impl/ProjectSystemShim/Interop\\IVbBuildStatusCallback.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/CommandLine\\CommandLineDiagnosticFormatter.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/Test/Resources/Core/SymbolsTests/NoPia\\D.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/TestUtilities2/CodeModel\\CodeModelTestHelpers.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Workspaces/VisualBasic/Portable/Extensions\\SyntaxTreeExtensions.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Emit/EditAndContinue\\VisualBasicSymbolMatcher.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/VisualBasic/Impl/CodeModel/Interop\\IVBCodeTypeLocation.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\Binder_ConditionalAccess.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\MethodTypeParametersBinder.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\BlockBaseBinder.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\DocumentationCommentBinder.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols\\ConstantValueUtils.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols/Metadata/PE\\PENamedTypeSymbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Workspaces/VisualBasic/Portable/Extensions\\DirectiveSyntaxExtensions.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Test/CommandLine\\TouchedFileLoggingTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Test/Emit/PDB\\PDBNamespaceScopes.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Declarations\\DeclarationTreeBuilder.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\Binder_Query.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\ImplicitVariableBinder.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols/Source\\SourceAssemblySymbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Emit/EditAndContinue\\PEDeltaAssemblyBuilder.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Setup/Templates/VisualBasic/Diagnostic/Vsix/My Project\\AssemblyInfo.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Compilation/DocumentationComments\\DocumentationCommentCompiler.Event.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols\\Symbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/Test/Resources/Core/SymbolsTests/NoPia\\B.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Semantics\\OverloadResolution.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Setup/BuildTasks/My Project\\AssemblyInfo.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols/Source\\SourceComplexParameterSymbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Test/Semantic/Semantics\\NameLengthTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Setup/Templates/VisualBasic/ConsoleApplication\\AssemblyInfo.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Compilation\\SemanticModel.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols/SynthesizedSymbols\\GeneratedNames.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/LocalRewriter\\LocalRewriter_FieldOrPropertyInitializer.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/AsyncRewriter\\AsyncRewriter.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols\\TypeParameterSymbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols/Source\\SynthesizedMainTypeEntryPoint.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/LocalRewriter\\LocalRewriter_LateBindingHelpers.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Features/VisualBasic/Portable/EditAndContinue\\VisualBasicEditAndContinueAnalyzer.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/LocalRewriter\\LocalRewriter_RedimClause.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/VisualBasic/Impl/Options\\IntelliSenseOptionPage.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\Binder_Expressions.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\Binder_DocumentationComments.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/LocalRewriter\\LocalRewriter_NullableHelpers.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/LocalRewriter\\LocalRewriter_Throw.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\GetTypeBinder.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/LocalRewriter\\LocalRewriter_Label.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Test/Syntax/Parser\\ParseAttributes.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Test/Symbol/SymbolsTests\\MockSymbolTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/LocalRewriter\\LocalRewriter_Using.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/ExpressionEvaluator/VisualBasic/Source/ExpressionCompiler/Binders\\ParametersAndLocalsBinder.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Workspaces/VisualBasic/Portable/CaseCorrection\\VisualBasicCaseCorrectionService.Rewriter.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols/SynthesizedSymbols\\GeneratedNameKind.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols/Metadata/PE\\PEMethodSymbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/IteratorRewriter\\IteratorRewriter.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Features/VisualBasic/Portable/EditAndContinue\\BreakpointSpans.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\Binder_XmlLiterals.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols/Metadata/PE\\PEParameterSymbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols/Source\\SynthesizedMyGroupCollectionPropertyAccessorSymbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols/Metadata/PE\\PENamespaceSymbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/LocalRewriter\\LocalRewriter_While.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols/Retargeting\\RetargetingNamedTypeSymbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/ExpressionEvaluator/VisualBasic/Source/ExpressionCompiler/Symbols\\EENamedTypeSymbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\Binder_Lambda.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/LocalRewriter\\LocalRewriter_InterpolatedString.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/LocalRewriter\\LocalRewriter_UnaryOperators.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\ImportedTypesAndNamespacesMembersBinder.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/VisualBasic/Impl/LanguageService\\VisualBasicEditorFactory.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Features/VisualBasic/Portable/EditAndContinue\\SyntaxComparer.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/Test/Resources/Core/SymbolsTests/NoPia\\Pia2.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\Binder_InterpolatedString.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/AsyncRewriter\\AsyncRewriter.SpillBuilder.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols\\MissingModuleSymbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/AsyncRewriter\\AsyncRewriter.AsyncMethodToClassRewriter.Expressions.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Workspaces/VisualBasic/Portable/LanguageServices\\VisualBasicSemanticFactsService.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Test/Emit/CodeGen\\CodeGenLateBound.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/Core/Test/CodeModel/VisualBasic\\CodeClassTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\Binder_Lookup.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Parser\\Parser.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\SourceFileBinder.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/VisualBasic/Impl/Options\\AdvancedOptionPage.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding/Binders\\AliasAndImportsClause.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/LocalRewriter\\LocalRewriter_SyncLock.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/CodeGen/Optimizer\\StackScheduler.Analyzer.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\Binder_AnonymousTypes.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols\\SubstitutedMethodSymbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Test/Symbol/SymbolsTests\\SymbolErrorTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Semantics/TypeInference\\TypeArgumentInference.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Utilities\\VarianceAmbiguity.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols\\Symbol_Attributes.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols/Source\\SourceEventSymbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/LocalRewriter\\LocalRewriter_OmittedArgument.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/LocalRewriter\\LocalRewriter_UnstructuredExceptionHandling.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/LocalRewriter\\LocalRewriter_Goto.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\SubOrFunctionBodyBinder.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols\\ErrorTypeSymbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols/Source\\SourceDelegateMethodSymbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/LambdaRewriter\\LambdaRewriter.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/Test/Utilities/VisualBasic\\CompilationTestUtils.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/TestUtilities2/ProjectSystemShim/Framework\\TestEnvironment.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/ExpressionLambdaRewriter\\ExpressionLambdaRewriter.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\ImportAliasesBinder.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\Binder_Operators.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/VisualBasic/Impl/Options\\StyleOptionPage.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\DocumentationCommentCrefBinder_Compat.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Parser\\ParseScan.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols/AnonymousTypes/PublicSymbols\\AnonymousTypeOrDelegatePublicSymbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/VisualBasic/Impl/ProjectSystemShim/Interop\\IVbCompilerHost.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Workspaces/VisualBasic/Portable/Extensions\\CastAnalyzer.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols/Source\\SourceMemberContainerTypeSymbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\MemberSemanticModel.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols/Source\\SourceMemberMethodSymbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/VisualBasic/Impl/ProjectSystemShim/Interop\\IVbEntryPointProvider.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols\\ParameterSymbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/ExpressionEvaluator/VisualBasic/Source/ExpressionCompiler\\SymbolExtensions.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/LocalRewriter\\LocalRewriter_Continue.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/VisualBasic/Impl/ProjectSystemShim/Interop\\WarningItemLevel.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/Test/Resources/Core/SymbolsTests/NoPia\\Pia3.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/TestUtilities2/ProjectSystemShim/Framework\\MockHierarchy.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\Binder_Invocation.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/VisualBasic/Impl/CodeModel/Extenders\\AutoPropertyExtender.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\Binder_SelectCase.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\OptionStrictOffBinder.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/LocalRewriter\\LocalRewriter_BinaryOperators.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Compilation/DocumentationComments\\DocumentationCommentWalker.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols\\ReferenceManager.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Parser\\ParseXml.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/VisualBasic/Impl/LanguageService\\VisualBasicPackage.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/LocalRewriter\\LocalRewriter_StringConcat.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Scanner\\Directives.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/LocalRewriter\\LocalRewriter.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/ExpressionLambdaRewriter\\ExpressionLambdaRewriter_UnaryOperator.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols/Tuples\\TupleTypeSymbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Compilation/DocumentationComments\\DocumentationCommentCompiler.Method.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/ExpressionEvaluator/VisualBasic/Source/ExpressionCompiler/Binders\\PlaceholderLocalBinder.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\Binder.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Compilation/DocumentationComments\\DocumentationCommentCompiler.NamedType.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/LocalRewriter\\LocalRewriter_AddRemoveHandler.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols\\SubstitutedNamedType.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/VisualBasic/Impl/CodeModel/Interop\\IVBAutoPropertyExtender.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/LocalRewriter\\LocalRewriter_Constant.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/Test/Resources/Core/SymbolsTests/NoPia\\Pia1.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Semantics\\Operators.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols/Source\\SourceMemberFieldSymbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/ExpressionLambdaRewriter\\ExpressionLambdaRewriter_Conversion.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols/Metadata/PE\\MetadataDecoder.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Setup/DevDivInsertionFiles\\NugetUtilities.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/Test/Utilities/VisualBasic\\MockVisualBasicCompiler.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/ExpressionEvaluator/VisualBasic/Source/ExpressionCompiler/Binders\\EENamedTypeBinder.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/VisualBasic/Impl/LanguageService\\VisualBasicPackage.IVbEntryPointProvider.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/LambdaRewriter\\LambdaCapturedVariable.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\EarlyWellKnownAttributeBinder.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding/Binders\\NamespaceOrTypeAndImportsClause.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols/Source\\SourceMethodSymbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Analysis\\InitializerRewriter.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\Binder_Attributes.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Compilation/DocumentationComments\\UnprocessedDocumentationCommentFinder.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\Binder_Symbols.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\Binder_Utils.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols/Metadata/PE\\PEModuleSymbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Test/Symbol/SymbolsTests/Source\\ComClassTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols\\FieldSymbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\AttributeSemanticModel.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/EditorFeatures/VisualBasicTest/Completion/CompletionProviders\\ImplementsClauseCompletionProviderTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/LocalRewriter\\LocalRewriter_Block.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Tools/Source/CompilerGeneratorTools/Source/VisualBasicSyntaxGenerator\\Program.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Test/Emit/Attributes\\AttributeTests_MarshalAs.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/LocalRewriter\\LocalRewriter_Query.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Compilation/DocumentationComments\\DocumentationCommentCompiler.Property.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\Binder_WithBlock.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols\\ModuleSymbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Setup/Templates/VisualBasic/CodeRefactoring/Ref\\AssemblyInfo.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/Core/Test/CodeModel/CSharp\\CodeImportTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/ExpressionEvaluator/VisualBasic/Source/ResultProvider\\VisualBasicFormatter.TypeNames.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\SpeculativeMemberSemanticModel.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/LocalRewriter\\LocalRewriter_XmlLiterals.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Test/Emit/Attributes\\AssemblyAttributes.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols/Source\\SourceFieldSymbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols/SynthesizedSymbols\\SynthesizedMethodBase.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\DocumentationCommentTypeParamRefBinder.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\NamespaceBinder.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/VisualBasic/Impl/CodeModel/Extenders\\CodeTypeLocationExtender.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols/Source\\SourceModuleSymbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols/Wrapped\\WrappedNamedTypeSymbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/Test/Resources/Core/SymbolsTests/NoPia\\Pia5.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols/Attributes\\AttributeData.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/CodeGen/Optimizer\\Optimizer.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Scanner\\Scanner.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Test/Semantic/Semantics\\AsyncAwait.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols\\TypeSymbolExtensions.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/Core/Test/CodeModel/VisualBasic\\CodeInterfaceTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/ExpressionEvaluator/VisualBasic/Source/ExpressionCompiler\\CompilationContext.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Features/VisualBasic/Portable/EditAndContinue\\SyntaxUtilities.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/VisualBasic/Impl/Options\\NamingStylesOptionPage.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/LocalRewriter\\LocalRewriter_LateAddressOf.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/MethodToClassRewriter\\MethodToClassRewriter.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Emit/EditAndContinue\\VisualBasicDefinitionMap.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\BackstopBinder.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\InitializerSemanticModel.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/LocalRewriter\\LocalRewriter_ForEach.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/SymbolDisplay\\SymbolDisplayVisitor.Members.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/LocalRewriter\\LocalRewriter_AssignmentOperator.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/VisualBasic/Impl/ProjectSystemShim/Interop\\OutputLevel.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols/Retargeting\\RetargetingModuleSymbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/VisualBasic/Impl/CodeModel/Interop\\IVBPartialMethodExtender.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols/Metadata/PE\\PEAssemblySymbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols\\EventSymbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\ExecutableCodeBinder.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Samples/VisualBasic/Analyzers/BasicAnalyzers/BasicAnalyzers/My Project\\AssemblyInfo.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/LocalRewriter\\LocalRewriter_LateMemberAccess.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/LocalRewriter\\LocalRewriter_Exit.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/VisualBasic/Repl\\VisualBasicVsInteractiveWindowPackage.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Semantics\\AccessCheck.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\Binder_Initializers.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/ExpressionEvaluator/VisualBasic/Source/ExpressionCompiler\\SyntaxHelpers.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/BoundTree\\BoundMethodGroup.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\SourceModuleBinder.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols/Source\\SourceFile.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/VisualBasic/Impl/LanguageService\\VisualBasicCodePageEditorFactory.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\SpeculativeStatementBinder.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Test/Symbol/SymbolsTests/Metadata/PE\\LoadingAttributes.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Emit\\PEModuleBuilder.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/Instrumentation\\DebugInfoInjector.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/CodeGen\\EmitStatement.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Test/Emit/Emit\\NoPiaEmbedTypes.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols/Wrapped\\WrappedParameterSymbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/VisualBasic/Impl/ProjectSystemShim/Interop\\IVbCompiler.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Test/Semantic/Semantics\\IteratorTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Compilation/DocumentationComments\\DocumentationCommentCompiler.TextUtils.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/Test/Utilities/VisualBasic\\MockSymbols.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols/Source\\ImplicitNamedTypeSymbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols/Source\\SourceParameterSymbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Test/Semantic/Semantics\\NewOnInterfaceTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable\\OptionsValidator.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\IgnoreAccessibilityBinder.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/LocalRewriter\\LocalRewriter_SelectCase.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/VisualBasic/Impl/ProjectSystemShim\\VisualBasicProject.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/VisualBasic/Impl/ProjectSystemShim/Interop\\VBError.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/Instrumentation\\Instrumenter.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols/SynthesizedSymbols\\SynthesizedEventDelegateSymbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Features/VisualBasic/Portable/EditAndContinue\\StatementSyntaxComparer.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/VisualBasic/Impl/ProjectSystemShim\\VisualBasicProjectOptionsHelper.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/VisualBasic/Impl/LanguageService\\IVbCompilerService.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols/Source\\OverrideHidingHelper.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Compilation/DocumentationComments\\DocWriter.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Test/Emit/Attributes\\AttributeTests_StructLayout.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/Test/Resources/Core/SymbolsTests/NoPia\\Library2.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\BasesBeingResolvedBinder.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols\\ConstraintsHelper.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols\\TypeSubstitution.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/Test/Resources/Core/SymbolsTests/NoPia\\Pia4.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/Core/Test/CodeModel\\AbstractCodeElementTests`1.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/Core/Test/ObjectBrowser/VisualBasic\\ObjectBrowerTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/VisualBasic/Impl/Options/Formatting\\CodeStylePage.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Tools/Source/CompilerGeneratorTools/Source/VisualBasicSyntaxGenerator/XML\\ReadTree.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/StateMachineRewriter\\StateMachineRewriter.StateMachineMethodToClassRewriter.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Analysis/FlowAnalysis\\DataFlowPass.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Lowering/LambdaRewriter\\LambdaFrameCopyConstructor.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols/EmbeddedSymbols\\EmbeddedSymbolManager.SymbolsCollection.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/VisualBasic/Impl/ProjectSystemShim/Interop\\IVbCompilerProject.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\MethodBodyBinder.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols\\NamedTypeSymbol.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/VisualBasic/Impl/ProjectSystemShim/Interop\\IVbTempPECompilerFactory.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols\\UnboundGenericType.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Syntax\\SyntaxNodeExtensions.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/VisualBasic/Impl/LanguageService\\VisualBasicLanguageService.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Binding\\DocumentationCommentCrefBinder.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/Symbols/AnonymousTypes\\CRC32.vb"
+                            ],
+                            "triggered": true
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Crypto_API",
+                                "display": "Data Encryption Key : Using Crypto API",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Crypto_API",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": -2.122015915119363,
+                            "roadblocks": 1.0,
+                            "cloudEffort": 15,
+                            "files": [
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Tools/Source/CompilerGeneratorTools/Source/VisualBasicSyntaxGenerator\\Program.vb"
+                            ],
+                            "triggered": true
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_File_System",
+                                "display": "Execution Environment : Using file system",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_File_System",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": -4.244031830238726,
+                            "roadblocks": 279.0,
+                            "cloudEffort": 4185,
+                            "files": [
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/Core/Test/Progression\\ContainsGraphQueryTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/Core/Test/Progression\\CallsGraphQueryTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Test/Emit/PDB\\ChecksumTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/Core/Test/ProjectSystemShim\\VisualStudioAnalyzerTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/Core/Test/SolutionExplorer\\AnalyzersFolderItemTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/Core/Test/ProjectSystemShim\\VisualBasicSpecialReferencesTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/Core/Test/Progression\\OverridesGraphQueryTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/Core/Test/Progression\\ImplementedByGraphQueryTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/Core/Test/Progression\\InheritedByGraphQueryTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/EditorFeatures/Test2/Diagnostics\\DiagnosticServiceTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/Core/Test/Progression\\GraphNodeCreationTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/Core/Test/Progression\\SearchGraphQueryTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/EditorFeatures/Test2/Simplification\\TypeNameSimplifierTest.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/Core/Test/Progression\\InheritsFromGraphQueryTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/Core/Test/Progression\\CSharpSymbolLabelTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/Core/Test/Progression\\GraphNodeIdTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/Core/Test/Progression\\ImplementsGraphQueryTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/Core/Test/VsNavInfo\\VsNavInfoTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/Core/Test/Progression\\IsUsedByGraphQueryTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/Core/Test/ProjectSystemShim\\ConvertedVisualBasicProjectOptionsTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/Core/Test/SolutionExplorer\\AnalyzerItemsSourceTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/Core/Test/SolutionExplorer\\AnalyzerItemTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Test/Emit/PDB\\PDBExternalSourceDirectiveTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/TestUtilities2/ProjectSystemShim/VisualBasicHelpers\\VisualBasicHelpers.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/Core/Test/Progression\\VisualBasicSymbolLabelTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/Core/Test/Progression\\ContainsChildrenGraphQueryTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/Core/Test/Progression\\OverriddenByGraphQueryTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Test/Semantic/Compilation\\ReferenceManagerTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/Core/Test/Progression\\IsCalledByGraphQueryTests.vb"
+                            ],
+                            "triggered": true
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_OS_Dependency",
+                                "display": "Execution Environment : Using system DLLs",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_OS_Dependency",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "High",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": -3.978779840848806,
+                            "roadblocks": 67.0,
+                            "cloudEffort": 670,
+                            "files": [
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/Core/Test/ObjectBrowser/CSharp\\ObjectBrowerTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Test/Semantic/Semantics\\AsyncAwait.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Test/Emit/Emit\\ResourceTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Test/Emit/Attributes\\AttributeTests_WellKnownAttributes.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Test/Symbol/SymbolsTests\\SymbolErrorTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Test/Semantic/Semantics\\NameLengthTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Test/Semantic/Semantics\\IteratorTests.vb"
+                            ],
+                            "triggered": true
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_InterApplication_MiddleWare",
+                                "display": "Inter Application Messaging : Using a middleware application",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_InterApplication_MiddleWare",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Medium",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 2.9357798165137616,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Directory_Manipulation_Practice",
+                                "display": "Persistent Files : Perform Directory Manipulation",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Directory_Manipulation_Practice",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": -4.244031830238726,
+                            "roadblocks": 7.0,
+                            "cloudEffort": 105,
+                            "files": [
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Setup/BuildTasks\\UpdateNuGetTemplateVersions.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Setup/BuildTasks\\TaskHelpers.vb"
+                            ],
+                            "triggered": true
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "File_Manipulation_Practice",
+                                "display": "Persistent Files : Perform File Manipulation",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#File_Manipulation_Practice",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": -4.244031830238726,
+                            "roadblocks": 10.0,
+                            "cloudEffort": 150,
+                            "files": [
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Setup/BuildTasks\\TaskHelpers.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Tools/Source/CompilerGeneratorTools/Source/VisualBasicSyntaxGenerator\\Program.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Test/Emit/Emit\\CompilationEmitTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/Core/Test/ProjectSystemShim\\VisualStudioAnalyzerTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Portable/CommandLine\\VisualBasicCommandLineParser.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/VisualBasic/Impl/ProjectSystemShim\\VisualBasicProjectOptionsHelper.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/EditorFeatures/VisualBasicTest/SymbolId\\SymbolKeyMetadataVsSourceTests.vb"
+                            ],
+                            "triggered": true
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Registry_Class",
+                                "display": "Registry Settings : Using Windows registry to store Application Settings",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Registry_Class",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Medium",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 1.1009174311926606,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Direct_RDBMS_Access",
+                                "display": "Sensitive Data Storage Protection : Using direct Database Access through Connection Strings",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Direct_RDBMS_Access",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 1.4678899082568808,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Access_To_Environment_Variable",
+                                "display": "Execution Environment : Access to environment variable",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Access_To_Environment_Variable",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 1.4678899082568808,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_GetTempPath",
+                                "display": "Temporary Files : Using a temporary local file or directory",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_GetTempPath",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": -2.122015915119363,
+                            "roadblocks": 6.0,
+                            "cloudEffort": 90,
+                            "files": [
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/VisualBasic/Test/CommandLine\\TouchedFileLoggingTests.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/Test/Utilities/VisualBasic\\MockVbi.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Interactive/VbiCore\\Vbi.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/VisualStudio/TestUtilities2/ProjectSystemShim/VisualBasicHelpers\\VisualBasicHelpers.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Compilers/Test/Utilities/VisualBasic\\MockVisualBasicCompiler.vb",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\roslyn\\roslyn-version-2.2.0\\src/Workspaces/VisualBasicTest\\VisualBasicCommandLineArgumentsFactoryServiceTests.vb"
+                            ],
+                            "triggered": true
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Impersonate_Identity",
+                                "display": "Security & User Authentication : Using impersonate Identity",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Impersonate_Identity",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Critical",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 14.678899082568808,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_WebForm_Authentication",
+                                "display": "Security & User Authentication : Using Webform Authentication",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_WebForm_Authentication",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 1.4678899082568808,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Windows_Authentication",
+                                "display": "Security & User Authentication : Use of Windows Authentication",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Windows_Authentication",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Medium",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 2.9357798165137616,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_SecuredProtocols",
+                                "display": "Security & User Authentication : Use of unsecured network protocols or URI libraries",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_SecuredProtocols",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 1.4678899082568808,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false,
+                            "cloudRequirementsDetail": [
+                                {
+                                    "cloudRequirement": {
+                                        "id": "Use_SecuredProtocolsHTTP",
+                                        "display": "Security & User Authentication : Use of unsecured network protocols (HTTP)",
+                                        "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_SecuredProtocols",
+                                        "ruleType": "BLOCKER",
+                                        "rulePlatform": null,
+                                        "rulePlatformLabel": null,
+                                        "criticality": "Low",
+                                        "impacts": [
+                                            "Coding"
+                                        ],
+                                        "parent": null
+                                    },
+                                    "roadblocks": 0.0,
+                                    "cloudEffort": null,
+                                    "files": null
+                                },
+                                {
+                                    "cloudRequirement": {
+                                        "id": "Use_SecuredProtocolsFTP",
+                                        "display": "Security & User Authentication : Use of unsecured network protocols (FTP)",
+                                        "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_SecuredProtocols",
+                                        "ruleType": "BLOCKER",
+                                        "rulePlatform": null,
+                                        "rulePlatformLabel": null,
+                                        "criticality": "Low",
+                                        "impacts": [
+                                            "Coding"
+                                        ],
+                                        "parent": null
+                                    },
+                                    "roadblocks": 0.0,
+                                    "cloudEffort": null,
+                                    "files": null
+                                }
+                            ]
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Hardcoded_IP_Address",
+                                "display": "Execution Environment : Using hardcoded network IP address",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Hardcoded_IP_Address",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 1.4678899082568808,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Stateful_Session",
+                                "display": "Persistent Files : Using stateful session (Servlet)",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Stateful_Session",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "High",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 2.7522935779816518,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Auto_Generated_Machine_Key",
+                                "display": "Data Encryption Key : Using auto generated Machine Key",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Auto_Generated_Machine_Key",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "High",
+                                "impacts": [
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 2.7522935779816518,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_SQL_Database_Unsecure_Authentication",
+                                "display": "Sensitive Data Storage Protection : Avoid using unsecured database connection strings",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_SQL_Database_Unsecure_Authentication",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Medium",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 1.1009174311926606,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_EventLog",
+                                "display": "Application Logs : Using log to file system",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_EventLog",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 1.4678899082568808,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        }
+                    ]
+                }
+            ],
+            "customIndicators": [
+                {
+                    "metricId": 10023356,
+                    "value": "0.09090909090909091"
+                },
+                {
+                    "metricId": 10006001,
+                    "value": "0.26595744680851063"
+                },
+                {
+                    "metricId": 10006305,
+                    "value": "1.0"
+                },
+                {
+                    "metricId": 10013600,
+                    "value": "0.3333333333333333"
+                },
+                {
+                    "metricId": 10006302,
+                    "value": "0.14814814814814814"
+                },
+                {
+                    "metricId": 10006301,
+                    "value": "0.2807017543859649"
+                },
+                {
+                    "metricId": 10016304,
+                    "value": null
+                }
+            ],
+            "technologies": [
+                {
+                    "technology": "C/C++",
+                    "totalLinesOfCode": 133,
+                    "totalFiles": 5,
+                    "softwareAgility": 0.6325187683105469,
+                    "softwareElegance": 1.0,
+                    "softwareResiliency": 0.9751879572868347,
+                    "softwareHealth": 0.8692355751991272,
+                    "softwareAgilityDetail": {
+                        "highLinesOfCode": 54,
+                        "mediumLinesOfCode": 79,
+                        "lowLinesOfCode": 0
+                    },
+                    "softwareEleganceDetail": {
+                        "highLinesOfCode": 133,
+                        "mediumLinesOfCode": 0,
+                        "lowLinesOfCode": 0
+                    },
+                    "softwareResiliencyDetail": {
+                        "highLinesOfCode": 133,
+                        "mediumLinesOfCode": 0,
+                        "lowLinesOfCode": 0
+                    },
+                    "softwareHealthDetail": {
+                        "highLinesOfCode": 106,
+                        "mediumLinesOfCode": 26,
+                        "lowLinesOfCode": 0
+                    }
+                },
+                {
+                    "technology": "Ksh",
+                    "totalLinesOfCode": 207,
+                    "totalFiles": 14,
+                    "softwareAgility": 0.5769323706626892,
+                    "softwareElegance": 1.0,
+                    "softwareResiliency": 0.7020531296730042,
+                    "softwareHealth": 0.7596618334452311,
+                    "softwareAgilityDetail": {
+                        "highLinesOfCode": 40,
+                        "mediumLinesOfCode": 69,
+                        "lowLinesOfCode": 98
+                    },
+                    "softwareEleganceDetail": {
+                        "highLinesOfCode": 207,
+                        "mediumLinesOfCode": 0,
+                        "lowLinesOfCode": 0
+                    },
+                    "softwareResiliencyDetail": {
+                        "highLinesOfCode": 0,
+                        "mediumLinesOfCode": 207,
+                        "lowLinesOfCode": 0
+                    },
+                    "softwareHealthDetail": {
+                        "highLinesOfCode": 82,
+                        "mediumLinesOfCode": 92,
+                        "lowLinesOfCode": 32
+                    }
+                },
+                {
+                    "technology": "VB/VB.Net",
+                    "totalLinesOfCode": 913378,
+                    "totalFiles": 3153,
+                    "softwareAgility": 0.5950852632522583,
+                    "softwareElegance": 0.40181463956832886,
+                    "softwareResiliency": 0.5077935457229614,
+                    "softwareHealth": 0.5015644828478495,
+                    "softwareAgilityDetail": {
+                        "highLinesOfCode": 138177,
+                        "mediumLinesOfCode": 535416,
+                        "lowLinesOfCode": 239785
+                    },
+                    "softwareEleganceDetail": {
+                        "highLinesOfCode": 238246,
+                        "mediumLinesOfCode": 109560,
+                        "lowLinesOfCode": 565572
+                    },
+                    "softwareResiliencyDetail": {
+                        "highLinesOfCode": 184161,
+                        "mediumLinesOfCode": 219718,
+                        "lowLinesOfCode": 509499
+                    },
+                    "softwareHealthDetail": {
+                        "highLinesOfCode": 186861,
+                        "mediumLinesOfCode": 288231,
+                        "lowLinesOfCode": 438285
+                    }
+                },
+                {
+                    "technology": "C#",
+                    "totalLinesOfCode": 1334841,
+                    "totalFiles": 7519,
+                    "softwareAgility": 0.5239871740341187,
+                    "softwareElegance": 0.5426157712936401,
+                    "softwareResiliency": 0.8260610103607178,
+                    "softwareHealth": 0.6308879852294922,
+                    "softwareAgilityDetail": {
+                        "highLinesOfCode": 56121,
+                        "mediumLinesOfCode": 695797,
+                        "lowLinesOfCode": 582923
+                    },
+                    "softwareEleganceDetail": {
+                        "highLinesOfCode": 476110,
+                        "mediumLinesOfCode": 238014,
+                        "lowLinesOfCode": 620717
+                    },
+                    "softwareResiliencyDetail": {
+                        "highLinesOfCode": 928787,
+                        "mediumLinesOfCode": 227472,
+                        "lowLinesOfCode": 178582
+                    },
+                    "softwareHealthDetail": {
+                        "highLinesOfCode": 487006,
+                        "mediumLinesOfCode": 387094,
+                        "lowLinesOfCode": 460740
+                    }
+                }
+            ],
+            "components": []
+        }
+    ],
+    "surveys": [
+        {
+            "id": 371,
+            "ref": "CAST_MAINT",
+            "name": "Software Maintenance Estimate",
+            "questions": [
+                {
+                    "label": "What is the percentage of change to the base code in the last 12 months?",
+                    "value": "15.0",
+                    "questionId": 1000121
+                },
+                {
+                    "label": "What is the average skill level of the development team on this type of application?",
+                    "value": "1 year",
+                    "questionId": 1000015,
+                    "choiceId": 1000068
+                },
+                {
+                    "label": "What percentage of the development effort has been spent on maintenance in the last 12 months?",
+                    "value": "50.0",
+                    "questionId": 1000012
+                },
+                {
+                    "label": "What is the annual staff turnover within the development team?",
+                    "value": "3%",
+                    "questionId": 1000016,
+                    "choiceId": 1000141
+                },
+                {
+                    "label": "What is the CMMI level of the organization?",
+                    "value": "Level 3",
+                    "questionId": 1000032,
+                    "choiceId": 1000257
+                }
+            ]
+        },
+        {
+            "id": 1700,
+            "name": "Business Alignment Assessment",
+            "questions": [
+                {
+                    "label": "[Portfolio Management] How many Business processes does the application support?",
+                    "shortLabel": "",
+                    "value": "2 to 4 processes",
+                    "questionId": 10001304,
+                    "choiceId": 10007402
+                },
+                {
+                    "label": "[Portfolio Management] What is the primary capability that this application supports? (APQC short)",
+                    "shortLabel": "What is the primary capability that this application supports",
+                    "value": " 4.0 - Deliver Physical Products",
+                    "questionId": 10006306,
+                    "choiceId": 10012709
+                },
+                {
+                    "label": "[Portfolio Management] What is the application's life cycle stage?",
+                    "shortLabel": "Application LifeCycle",
+                    "value": "Production - Maturity",
+                    "questionId": 10006307,
+                    "choiceId": 10012905
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "ref": "CAST_BI",
+            "name": "Business Impact",
+            "questions": [
+                {
+                    "label": "What is the average number of FTE (Full Time Equivalent) resources that have worked on the source code for this application over the last 12 months?",
+                    "shortLabel": "",
+                    "value": "65.0",
+                    "questionId": 1000011
+                },
+                {
+                    "label": "Is this application aligned with the company's future technology direction?",
+                    "shortLabel": "",
+                    "value": "No",
+                    "questionId": 1000009,
+                    "choiceId": 1000043
+                },
+                {
+                    "label": "The number of major releases delivered over the last 12 months for this application?",
+                    "shortLabel": "",
+                    "value": "7 to 12",
+                    "questionId": 1000006,
+                    "choiceId": 1000454
+                },
+                {
+                    "label": "Could failure of this application lead to loss of customer confidence? Please define the level of impact.",
+                    "value": "Low",
+                    "questionId": 1000022,
+                    "choiceId": 1000220
+                },
+                {
+                    "label": "Could failure of this application lead to harm of the company's public image? Please define the level of impact.",
+                    "value": "Medium",
+                    "questionId": 1000021,
+                    "choiceId": 1000001
+                },
+                {
+                    "label": "Could failure of this application lead to loss of revenue or business opportunity? Please define the level of impact.",
+                    "value": "Medium",
+                    "questionId": 1000020,
+                    "choiceId": 1000407
+                },
+                {
+                    "label": "Could failure of this application lead to disruption? Please define the level of impact.",
+                    "value": "Low",
+                    "questionId": 1000019,
+                    "choiceId": 1000192
+                },
+                {
+                    "label": "What is the approximate number of end users for this application?",
+                    "shortLabel": "",
+                    "value": "501 to 2500",
+                    "questionId": 1000018,
+                    "choiceId": 1000397
+                },
+                {
+                    "label": "Does the application serve internal or external users?",
+                    "value": "Internal users or business processes",
+                    "questionId": 1000017,
+                    "choiceId": 1000204
+                }
+            ]
+        },
+        {
+            "id": 373,
+            "ref": "CAST_APP",
+            "name": "Application Properties",
+            "questions": [
+                {
+                    "label": "What is the application type?",
+                    "shortLabel": "",
+                    "value": "Testing and Clinical Trials",
+                    "questionId": 1000004,
+                    "choiceId": 1000441
+                },
+                {
+                    "label": "Application Owner's name",
+                    "value": "MMU",
+                    "questionId": 1000002
+                },
+                {
+                    "label": "Is this application a custom application or a Commercial Off The Shelf product?",
+                    "shortLabel": "",
+                    "value": "Customized COTS",
+                    "questionId": 1000427,
+                    "choiceId": 1000531
+                },
+                {
+                    "label": "In what year was this application first put into production?",
+                    "shortLabel": "",
+                    "value": "2011",
+                    "questionId": 1000033
+                }
+            ]
+        },
+        {
+            "id": 1701,
+            "name": "IaaS Assessment",
+            "questions": [
+                {
+                    "label": "[IaaS] Performance - Elasticity",
+                    "shortLabel": "",
+                    "value": "Med Low (Moderate spikes regularly)",
+                    "questionId": 10003000,
+                    "choiceId": 10009401
+                },
+                {
+                    "label": "[IaaS] Performance - Scalability",
+                    "shortLabel": "",
+                    "value": "Consistent Load",
+                    "questionId": 10003001,
+                    "choiceId": 10009405
+                },
+                {
+                    "label": "[IaaS] Performance - Latency",
+                    "shortLabel": "",
+                    "value": " < 500ms",
+                    "questionId": 10003003,
+                    "choiceId": 10009416
+                },
+                {
+                    "label": "[IaaS] Performance - Throughput",
+                    "shortLabel": "",
+                    "value": "1-5 Mbps",
+                    "questionId": 10003004,
+                    "choiceId": 10009421
+                },
+                {
+                    "label": "[IaaS] Operations - Business Continuity",
+                    "shortLabel": "",
+                    "value": "Availability not critical ",
+                    "questionId": 10003104,
+                    "choiceId": 10009532
+                },
+                {
+                    "label": "[IaaS] Security & Compliance - Jurisdiction",
+                    "shortLabel": "",
+                    "value": "Restricted to a region",
+                    "questionId": 10003107,
+                    "choiceId": 10009548
+                },
+                {
+                    "label": "[IaaS] Architecture - Application - Complexity",
+                    "shortLabel": "",
+                    "value": "Med High, (N tier, med integration w/other apps (5-10))",
+                    "questionId": 10003008,
+                    "choiceId": 10009441
+                },
+                {
+                    "label": "[IaaS] Architecture - Infrastructure - Hardware Life Expectancy",
+                    "shortLabel": "",
+                    "value": " > 5 years",
+                    "questionId": 10003014,
+                    "choiceId": 10009470
+                },
+                {
+                    "label": "[IaaS] Financial - Operating Cost",
+                    "shortLabel": "",
+                    "value": "Med Low (No SLAs, Minimal staffing)",
+                    "questionId": 10003015,
+                    "choiceId": 10009476
+                }
+            ]
+        },
+        {
+            "id": 1702,
+            "name": "TCO Assessment",
+            "questions": [
+                {
+                    "label": "[TCO] What is the Total Cost of Ownership for this application?",
+                    "shortLabel": "",
+                    "value": "Very High",
+                    "questionId": 10006303,
+                    "choiceId": 10012701
+                },
+                {
+                    "label": "[TCO] What is the evolution of the TCO?",
+                    "shortLabel": "",
+                    "value": "Exponential",
+                    "questionId": 10006304,
+                    "choiceId": 10012705
+                }
+            ]
+        },
+        {
+            "id": 938,
+            "ref": "CAST_CLOUD",
+            "name": "Cloud Readiness Assessment",
+            "questions": [
+                {
+                    "label": "[Business Drivers] Does this application correspond to a specific workload?",
+                    "shortLabel": "",
+                    "value": "MicroServices & Containers",
+                    "questionId": 10000901,
+                    "choiceId": 10006807
+                },
+                {
+                    "label": "[Technical Enablers] Does this application depend on other services or applications?",
+                    "shortLabel": "",
+                    "value": "No dependency",
+                    "questionId": 10000808,
+                    "choiceId": 10006730
+                },
+                {
+                    "label": "[Technical Enablers] What is the database provider for this application?",
+                    "shortLabel": "",
+                    "value": "Not compatible in the Cloud",
+                    "questionId": 10000809,
+                    "choiceId": 10006737
+                },
+                {
+                    "label": "[Process Maturity] What is the average skill on Cloud technologies and practices within the development team for this application?",
+                    "shortLabel": "",
+                    "value": "Basic knowledge",
+                    "questionId": 10000810,
+                    "choiceId": 10006739
+                },
+                {
+                    "label": "[Business Drivers] What is the current (or expected) Service Level Agreement for this application?",
+                    "shortLabel": "",
+                    "value": "No specifically defined SLA",
+                    "questionId": 10000811,
+                    "choiceId": 10006742
+                },
+                {
+                    "label": "[Process Maturity] What is the evolution model and feedback loop approach for this application?",
+                    "shortLabel": "",
+                    "value": "Dev/Test Loop",
+                    "questionId": 10000800,
+                    "choiceId": 10006703
+                },
+                {
+                    "label": "[Technical Enablers] What is the current deployment platform for this application?",
+                    "shortLabel": "",
+                    "value": "Web application",
+                    "questionId": 10000801,
+                    "choiceId": 10006707
+                },
+                {
+                    "label": "[Technical Enablers] What is the current user authentication mechanism used by this application?",
+                    "shortLabel": "",
+                    "value": "Multifactor Authenticator",
+                    "questionId": 10000802,
+                    "choiceId": 10006712
+                },
+                {
+                    "label": "[Technical Enablers]  How is this application exposed to external services/applications?",
+                    "shortLabel": "",
+                    "value": "REST API exposed",
+                    "questionId": 10000803,
+                    "choiceId": 10006714
+                },
+                {
+                    "label": "[Business Drivers] How is data consumed from this application?",
+                    "shortLabel": "",
+                    "value": "Data Analytics",
+                    "questionId": 10000805,
+                    "choiceId": 10006721
+                },
+                {
+                    "label": "[Process Maturity] What is the level of deployment process automation for provisioning and configuration for this application?",
+                    "shortLabel": "",
+                    "value": "No automation",
+                    "questionId": 10000806,
+                    "choiceId": 10006723
+                },
+                {
+                    "label": "[Technical Enablers] Is this application multi-tenant?",
+                    "shortLabel": "",
+                    "value": "Yes, muti-tenant front with a dedicated database",
+                    "questionId": 10000807,
+                    "choiceId": 10006727
+                }
+            ]
+        }
+    ],
+    "tags": [
+        {
+            "id": 166,
+            "label": "_Rs-Replace/Repurchase {Med BI, High Risk, High Cost, Low IaaS/PaaS}"
+        },
+        {
+            "id": 256,
+            "label": "Cloud Blockers"
+        },
+        {
+            "id": 2304,
+            "label": "CR+BI+CustomCode"
+        },
+        {
+            "id": 57,
+            "label": "Cloud Boosters"
+        }
+    ]
+}

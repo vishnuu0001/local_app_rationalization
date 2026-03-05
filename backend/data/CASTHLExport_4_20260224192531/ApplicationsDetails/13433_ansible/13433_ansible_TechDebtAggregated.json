@@ -1,0 +1,1572 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PLSQL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PLSQL__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 1.0,
+                                            "effort": 3.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__TmpFileName",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 4.0,
+                                            "effort": 40.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__VarDecl",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 60.0,
+                                            "effort": 10.000001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__ModifiedIFS",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 1.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 20140.0,
+                                            "effort": 60420.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__RiskyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 2419.0,
+                                            "effort": 12095.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__UnecessaryMethod",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 22.0,
+                                            "effort": 11.000001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__StarImport",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 4.0,
+                                            "effort": 4.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__UnusedImport",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 10718.0,
+                                            "effort": 893.1667
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__Finalize",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 1.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 29.0,
+                                            "effort": 87.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 14.5,
+                                            "effort": 14.5
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "TSQL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "TSQL__FinalReturn",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 2.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__String",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 32.0,
+                                            "effort": 2.6666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MissingSemicolon",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 17.0,
+                                            "effort": 1.4166667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 4.0,
+                                            "effort": 12.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 1.61,
+                                            "effort": 1.61
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__Intrinsics",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 65.0,
+                                            "effort": 65.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 0.3,
+                                            "effort": 0.3
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__Pipes",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 35.0,
+                                            "effort": 5.8333335
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__MultipleReturn",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 3725.0,
+                                            "effort": 1862.5001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__EmptyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 302.0,
+                                            "effort": 1510.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__UnnecessaryConcat",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 287.0,
+                                            "effort": 23.916668
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__MagicMethods",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 73.0,
+                                            "effort": 24.333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__ConstructorReturn",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 24.0,
+                                            "effort": 6.0000005
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__UnexpectedGetter",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 414.0,
+                                            "effort": 207.00002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__Inheritance",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 96.0,
+                                            "effort": 16.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__ConcatInLoop",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 670.0,
+                                            "effort": 335.00003
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__MissingBraces2",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 162.0,
+                                            "effort": 27.000002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__Instanceof",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 8.0,
+                                            "effort": 80.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__StrongDataAccess",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 16.0,
+                                            "effort": 5.3333335
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MissingBraces",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 5.0,
+                                            "effort": 0.8333334
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__ExplicitExit",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 2.0,
+                                            "effort": 0.33333334
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__UnusedArg",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 2419.0,
+                                            "effort": 201.58334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__SuspiciousLoop",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 1.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__UnusedVar",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 33782.0,
+                                            "effort": 33782.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__ImportConflict",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 2808.0,
+                                            "effort": 468.00003
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__FileGlobalVariables",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 4734.0,
+                                            "effort": 4734.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__UnsignificantReturn",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 3292.0,
+                                            "effort": 548.6667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__StringFormat",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 12309.0,
+                                            "effort": 1025.75
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__NamingConflict",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 124.0,
+                                            "effort": 20.666668
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__PublicAttributes",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 52.0,
+                                            "effort": 52.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__EmptyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 2.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MissingIdentical",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 8.0,
+                                            "effort": 0.6666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 7.0,
+                                            "effort": 7.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__ShortVarName",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 2.0,
+                                            "effort": 0.33333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 28.0,
+                                            "effort": 28.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__String",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 888936.0,
+                                            "effort": 74078.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 74946.0,
+                                            "effort": 6245.5005
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 603869.0,
+                                            "effort": 100644.836
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 32519.0,
+                                            "effort": 2709.9167
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__ArtifactSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 2519.0,
+                                            "effort": 209.91667
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 50.0,
+                                            "effort": 4.166667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 17.0,
+                                            "effort": 1.4166667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__ClassDefinitions",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 19.0,
+                                            "effort": 95.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 37.0,
+                                            "effort": 3.0833335
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 1.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "TSQL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "TSQL__UnCommentedParam",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 2.0,
+                                            "effort": 0.6666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 122.0,
+                                            "effort": 10.166667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__Prototype",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 31.0,
+                                            "effort": 2.5833335
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 105.0,
+                                            "effort": 8.75
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PLSQL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PLSQL__MultipleInstructions",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 2.0,
+                                            "effort": 0.16666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 56.600006,
+                                            "effort": 56.600006
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__ExportNames",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 7.0,
+                                            "effort": 3.5000002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__LocalNames",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 46.0,
+                                            "effort": 7.666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__RangeBoundary",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 47.0,
+                                            "effort": 7.833334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__AutomaticNumbering",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 214.0,
+                                            "effort": 17.833334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 4910.0,
+                                            "effort": 409.1667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 652.0,
+                                            "effort": 6520.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__ConditionReadability",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 183.0,
+                                            "effort": 61.000004
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__MissingAutomatedDoc2",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 194.0,
+                                            "effort": 194.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__BadDeclarationOrder",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 67.0,
+                                            "effort": 67.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 20.0,
+                                            "effort": 1.6666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "TSQL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "TSQL__UnCommentedArtifact",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 2.0,
+                                            "effort": 0.6666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 42.0,
+                                            "effort": 3.5000002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 85.0,
+                                            "effort": 7.0833335
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MultDecl",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 6.0,
+                                            "effort": 0.5
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PLSQL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PLSQL__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 1.6,
+                                            "effort": 1.6
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 3.0,
+                                            "effort": 0.25
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__ContinuationChar",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 6.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 174371.84,
+                                            "effort": 174371.84
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__Instanceof",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 167.0,
+                                            "effort": 1670.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__MultilineInstruction",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 2282.0,
+                                            "effort": 190.16667
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 406.0,
+                                            "effort": 406.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 5.0,
+                                            "effort": 0.4166667
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "TSQL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "TSQL__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 3.0,
+                                            "effort": 3.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 12.47,
+                                            "effort": 12.47
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__VarDecl",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 19.0,
+                                            "effort": 3.1666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__ApplicationGlobalVariables",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 9.0,
+                                            "effort": 1.5000001
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 1.0833334,
+                                            "effort": 5.416667
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__LocalVar",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 51290.0,
+                                            "effort": 8548.334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 11909.436,
+                                            "effort": 59547.18
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 4.1766667,
+                                            "effort": 20.883333
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 21.320004,
+                                            "effort": 21.320004
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 14.888889,
+                                            "effort": 74.44444
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 3.12,
+                                            "effort": 3.12
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__MethodsWithTooMuchParameters",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 2586.0,
+                                            "effort": 12930.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 116705.0,
+                                            "effort": 583525.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 3.74,
+                                            "effort": 18.7
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__NBMETH",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 19.0,
+                                            "effort": 95.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__ComplexClasses",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 15408.0,
+                                            "effort": 7704.0005
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__ComplexConditions",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 160.0,
+                                            "effort": 1600.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__ComplexConditions",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 1.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "TSQL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "TSQL__ComplexArtifact",
+                                    "detail": [
+                                        {
+                                            "application_id": 13433,
+                                            "application_name": "ansible",
+                                            "counter": 2.0,
+                                            "effort": 2.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

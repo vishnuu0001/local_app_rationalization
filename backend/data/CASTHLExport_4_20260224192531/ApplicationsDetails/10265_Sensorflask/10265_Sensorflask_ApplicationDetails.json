@@ -1,0 +1,2955 @@
+{
+    "id": 10265,
+    "name": "Sensorflask",
+    "domains": [
+        {
+            "id": 1622,
+            "name": "Core Business Applications"
+        },
+        {
+            "id": 12909,
+            "name": "Portfolio Company Alpha"
+        }
+    ],
+    "metrics": [
+        {
+            "snapshotLabel": "Cloud Wave 2_Tensorflow",
+            "snapshotDate": 1492228800000,
+            "softwareAgility": 0.6398877501487732,
+            "softwareAgilityAdded": 0.6398877501487732,
+            "softwareElegance": 0.7980048656463623,
+            "softwareEleganceAdded": 0.7980048656463623,
+            "softwareResiliency": 0.8527175784111023,
+            "softwareResiliencyAdded": 0.8527175784111023,
+            "softwareHealth": 0.7635367314020792,
+            "openSourceSafety": 0.3028824872206785,
+            "openSourceLicense": 0.625,
+            "openSourceObsolescence": 0.12364746166203555,
+            "openSourceCVE": 0.16000000000000003,
+            "businessImpact": 0.10152284263959391,
+            "roarIndex": 0.018224155431472086,
+            "backFiredFP": 15247.0,
+            "backFiredFPAdded": 15247.0,
+            "technicalDebt": 1556842.4636080414,
+            "maintenanceRecordedFTE": 0.125,
+            "maintenanceRecommendedFTE": 0.6223551418561304,
+            "cloudReady": 0.6915908210042367,
+            "cloudReadyScan": 0.7564625850340136,
+            "boosters": 0.0,
+            "blockers": 0.05442176870748299,
+            "roadblocks": 32.0,
+            "cloudEffort": 690,
+            "cloudReadySurvey": 0.6267190569744597,
+            "greenIndex": null,
+            "greenIndexScan": null,
+            "greenIndexSurvey": null,
+            "greenOccurrences": null,
+            "greenEffort": null,
+            "greenDetail": [
+                {
+                    "technology": "Java",
+                    "greenIndexScan": 0.0,
+                    "greenIndexDetails": null
+                },
+                {
+                    "technology": "JSP",
+                    "greenIndexScan": 0.0,
+                    "greenIndexDetails": null
+                },
+                {
+                    "technology": "JavaScript",
+                    "greenIndexScan": 0.0,
+                    "greenIndexDetails": null
+                }
+            ],
+            "totalLinesOfCode": 736561,
+            "totalLinesOfCodeAdded": 736561,
+            "totalLinesOfCodeModified": 0,
+            "totalFiles": 17050,
+            "totalFilesAdded": 17050,
+            "totalFilesModified": 0,
+            "cloudReadyDetail": [
+                {
+                    "technology": "Java",
+                    "cloudReadyScan": 0.0,
+                    "cloudReadyDetails": [
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Access_Control",
+                                "display": "Access Control List : Using Access Control List",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Access_Control",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Critical",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 12.71860095389507,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Configuration_Except_WebConfig",
+                                "display": "Application Settings Configuration : Using other configuration files than Web configuration",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Configuration_Except_WebConfig",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 0.1589825119236884,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Application_Server_Dependencies",
+                                "display": "Execution Environment : Application server dependencies",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Application_Server_Dependencies",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Framework"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 2.384737678855326,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_File_System",
+                                "display": "Execution Environment : Using file system",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_File_System",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 0.6359300476947536,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_InterApplication_MiddleWare",
+                                "display": "Inter Application Messaging : Using a middleware application",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_InterApplication_MiddleWare",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Medium",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 2.5437201907790143,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Directory_Manipulation_Practice",
+                                "display": "Persistent Files : Perform Directory Manipulation",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Directory_Manipulation_Practice",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 0.6359300476947536,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "File_Manipulation_Practice",
+                                "display": "Persistent Files : Perform File Manipulation",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#File_Manipulation_Practice",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": -16.3265306122449,
+                            "roadblocks": 46.0,
+                            "cloudEffort": 690,
+                            "files": [
+                                "project\\hibernate-entitymanager\\src\\main\\java\\org\\hibernate\\jpa\\internal\\schemagen\\ScriptTargetOutputToFile.java",
+                                "project\\hibernate-core\\src\\main\\java\\org\\hibernate\\bytecode\\internal\\javassist\\FieldTransformer.java",
+                                "project\\tooling\\hibernate-enhance-maven-plugin\\src\\main\\java\\org\\hibernate\\bytecode\\enhance\\plugins\\MavenEnhancePlugin.java",
+                                "project\\hibernate-core\\src\\test\\java\\org\\hibernate\\test\\mappingexception\\MappingExceptionTest.java",
+                                "project\\hibernate-core\\src\\main\\java\\org\\hibernate\\bytecode\\buildtime\\spi\\AbstractInstrumenter.java",
+                                "project\\hibernate-core\\src\\main\\java\\org\\hibernate\\bytecode\\spi\\ByteCodeHelper.java",
+                                "project\\hibernate-core\\src\\main\\java\\org\\hibernate\\tool\\hbm2ddl\\SchemaExport.java",
+                                "project\\hibernate-core\\src\\main\\java\\org\\hibernate\\tool\\enhance\\EnhancementTask.java"
+                            ],
+                            "triggered": true
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Access_To_Environment_Variable",
+                                "display": "Execution Environment : Access to environment variable",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Access_To_Environment_Variable",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 1.2718600953895072,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Impersonate_Identity",
+                                "display": "Security & User Authentication : Using impersonate Identity",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Impersonate_Identity",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Critical",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 12.71860095389507,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_SecuredProtocols",
+                                "display": "Security & User Authentication : Use of unsecured network protocols or URI libraries",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_SecuredProtocols",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 1.2718600953895072,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false,
+                            "cloudRequirementsDetail": [
+                                {
+                                    "cloudRequirement": {
+                                        "id": "Use_SecuredProtocolsHTTP",
+                                        "display": "Security & User Authentication : Use of unsecured network protocols (HTTP)",
+                                        "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_SecuredProtocols",
+                                        "ruleType": "BLOCKER",
+                                        "rulePlatform": null,
+                                        "rulePlatformLabel": null,
+                                        "criticality": "Low",
+                                        "impacts": [
+                                            "Coding"
+                                        ],
+                                        "parent": null
+                                    },
+                                    "roadblocks": 0.0,
+                                    "cloudEffort": null,
+                                    "files": null
+                                },
+                                {
+                                    "cloudRequirement": {
+                                        "id": "Use_SecuredProtocolsFTP",
+                                        "display": "Security & User Authentication : Use of unsecured network protocols (FTP)",
+                                        "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_SecuredProtocols",
+                                        "ruleType": "BLOCKER",
+                                        "rulePlatform": null,
+                                        "rulePlatformLabel": null,
+                                        "criticality": "Low",
+                                        "impacts": [
+                                            "Coding"
+                                        ],
+                                        "parent": null
+                                    },
+                                    "roadblocks": 0.0,
+                                    "cloudEffort": null,
+                                    "files": null
+                                }
+                            ]
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Hardcoded_IP_Address",
+                                "display": "Execution Environment : Using hardcoded network IP address",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Hardcoded_IP_Address",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 1.2718600953895072,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Stateful_Session",
+                                "display": "Persistent Files : Using stateful session (Servlet)",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Stateful_Session",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "High",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 2.384737678855326,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Stateful_Session_Spring",
+                                "display": "Persistent Files : Using stateful session (Spring)",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Stateful_Session_Spring",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "High",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 2.384737678855326,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        }
+                    ]
+                }
+            ],
+            "customIndicators": [
+                {
+                    "metricId": 10023356,
+                    "value": "0.10101010101010101"
+                },
+                {
+                    "metricId": 10006001,
+                    "value": "0.2127659574468085"
+                },
+                {
+                    "metricId": 10006305,
+                    "value": "-1.0"
+                },
+                {
+                    "metricId": 10013600,
+                    "value": "0.6"
+                },
+                {
+                    "metricId": 10006302,
+                    "value": "-1.0"
+                },
+                {
+                    "metricId": 10006301,
+                    "value": "-1.0"
+                },
+                {
+                    "metricId": 10016304,
+                    "value": "-1.0"
+                }
+            ],
+            "technologies": [
+                {
+                    "technology": "Java",
+                    "totalLinesOfCode": 512723,
+                    "totalFiles": 7632,
+                    "softwareAgility": 0.598698616027832,
+                    "softwareElegance": 0.805779218673706,
+                    "softwareResiliency": 0.8889281749725342,
+                    "softwareHealth": 0.7644686698913574,
+                    "softwareAgilityDetail": {
+                        "highLinesOfCode": 106153,
+                        "mediumLinesOfCode": 254256,
+                        "lowLinesOfCode": 152314
+                    },
+                    "softwareEleganceDetail": {
+                        "highLinesOfCode": 352641,
+                        "mediumLinesOfCode": 80286,
+                        "lowLinesOfCode": 79796
+                    },
+                    "softwareResiliencyDetail": {
+                        "highLinesOfCode": 426918,
+                        "mediumLinesOfCode": 68191,
+                        "lowLinesOfCode": 17614
+                    },
+                    "softwareHealthDetail": {
+                        "highLinesOfCode": 295237,
+                        "mediumLinesOfCode": 134244,
+                        "lowLinesOfCode": 83241
+                    }
+                },
+                {
+                    "technology": "JSP",
+                    "totalLinesOfCode": 45719,
+                    "totalFiles": 807,
+                    "softwareAgility": 0.4801526665687561,
+                    "softwareElegance": 0.535131573677063,
+                    "softwareResiliency": 0.6065014600753784,
+                    "softwareHealth": 0.5405952334403992,
+                    "softwareAgilityDetail": {
+                        "highLinesOfCode": 381,
+                        "mediumLinesOfCode": 19101,
+                        "lowLinesOfCode": 26237
+                    },
+                    "softwareEleganceDetail": {
+                        "highLinesOfCode": 6874,
+                        "mediumLinesOfCode": 9836,
+                        "lowLinesOfCode": 29009
+                    },
+                    "softwareResiliencyDetail": {
+                        "highLinesOfCode": 11220,
+                        "mediumLinesOfCode": 19612,
+                        "lowLinesOfCode": 14887
+                    },
+                    "softwareHealthDetail": {
+                        "highLinesOfCode": 6158,
+                        "mediumLinesOfCode": 16183,
+                        "lowLinesOfCode": 23377
+                    }
+                },
+                {
+                    "technology": "JavaScript",
+                    "totalLinesOfCode": 178119,
+                    "totalFiles": 8611,
+                    "softwareAgility": 0.7994527220726013,
+                    "softwareElegance": 0.8430992960929871,
+                    "softwareResiliency": 0.8116819858551025,
+                    "softwareHealth": 0.8180780013402303,
+                    "softwareAgilityDetail": {
+                        "highLinesOfCode": 161782,
+                        "mediumLinesOfCode": 6641,
+                        "lowLinesOfCode": 9696
+                    },
+                    "softwareEleganceDetail": {
+                        "highLinesOfCode": 171451,
+                        "mediumLinesOfCode": 6308,
+                        "lowLinesOfCode": 360
+                    },
+                    "softwareResiliencyDetail": {
+                        "highLinesOfCode": 166524,
+                        "mediumLinesOfCode": 6225,
+                        "lowLinesOfCode": 5370
+                    },
+                    "softwareHealthDetail": {
+                        "highLinesOfCode": 166585,
+                        "mediumLinesOfCode": 6391,
+                        "lowLinesOfCode": 5142
+                    }
+                }
+            ],
+            "vulnerabilities": [
+                {
+                    "matchedCPE": "cpe:/a:apache:log4j",
+                    "name": "CVE-2019-17571",
+                    "publishedDate": "2019-12-20T22:15:11.893Z",
+                    "lastUpdateDate": "2024-11-21T09:32:33.393Z",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2019-17571",
+                    "description": "Included in Log4j 1.2 is a SocketServer class that is vulnerable to deserialization of untrusted data which can be exploited to remotely execute arbitrary code when combined with a deserialization gadget when listening to untrusted network traffic for log data. This affects Log4j versions up to 1.2 up to 1.2.17.",
+                    "references": [
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rb3c94619728c8f8c176d8e175e0a1086ca737ecdfcd5a2214bb768bc%40%3Ccommits.bookkeeper.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/ra9611a8431cb62369bce8909d7645597e1dd45c24b448836b1e54940%40%3Cissues.bookkeeper.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r3784834e80df2f284577a5596340fb84346c91a2dea6a073e65e3397%40%3Cissues.activemq.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rf77f79699c8d7e430c14cf480f12ed1297e6e8cf2ed379a425941e80%40%3Cpluto-dev.portals.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r4b25538be50126194cc646836c718b1a4d8f71bd9c912af5b59134ad%40%3Cdev.tika.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/6114ce566200d76e3cc45c521a62c2c5a4eac15738248f58a99f622c%40%3Cissues.activemq.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r13d4b5c60ff63f3c4fab51d6ff266655be503b8a1884e2f2fab67c3a%40%3Ccommon-issues.hadoop.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r8890b8f18f1de821595792b58b968a89692a255bc20d86d395270740%40%3Ccommits.druid.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/44491fb9cc19acc901f7cff34acb7376619f15638439416e3e14761c%40%3Cdev.tika.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/564f03b4e9511fcba29c68fc0299372dadbdb002718fa8edcc4325e4%40%3Cjira.kafka.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rf1b434e11834a4449cd7addb69ed0aef0923112b5938182b363a968c%40%3Cnotifications.zookeeper.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Mailing List",
+                            "url": "http://lists.opensuse.org/opensuse-security-announce/2020-01/msg00022.html",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r8d78a0fbb56d505461e29868d1026e98c402e6a568c13a6da67896a2%40%3Cdev.jena.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://www.oracle.com/security-alerts/cpujul2020.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r7f462c69d5ded4c0223e014d95a3496690423c5f6f05c09e2f2a407a%40%3Cjira.kafka.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rd5dbeee4808c0f2b9b51479b50de3cc6adb1072c332a200d9107f13e%40%3Cissues.activemq.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r90c23eb8c82835fa82df85ae5e88c81fd9241e20a22971b0fb8f2c34%40%3Cissues.bookkeeper.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r681b4432d0605f327b68b9f8a42662993e699d04614de4851c35ffd1%40%3Cdev.tika.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r8418a0dff1729f19cf1024937e23a2db4c0f94f2794a423f5c10e8e7%40%3Cissues.bookkeeper.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r61db8e7dcb56dc000a5387a88f7a473bacec5ee01b9ff3f55308aacc%40%3Cdev.kafka.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rb1b29aee737e1c37fe1d48528cb0febac4f5deed51f5412e6fdfe2bf%40%3Cissues.activemq.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://usn.ubuntu.com/4495-1/",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rdf2a0d94c3b5b523aeff7741ae71347415276062811b687f30ea6573%40%3Ccommits.zookeeper.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rd0e44e8ef71eeaaa3cf3d1b8b41eb25894372e2995ec908ce7624d26%40%3Ccommits.pulsar.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r1b103833cb5bc8466e24ff0ecc5e75b45a705334ab6a444e64e840a0%40%3Cissues.bookkeeper.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r4ac89cbecd9e298ae9fafb5afda6fa77ac75c78d1ac957837e066c4e%40%3Cuser.zookeeper.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r61db8e7dcb56dc000a5387a88f7a473bacec5ee01b9ff3f55308aacc%40%3Cdev.kafka.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Mailing List",
+                            "url": "http://lists.opensuse.org/opensuse-security-announce/2020-01/msg00022.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r2ff63f210842a3c5e42f03a35d8f3a345134d073c80a04077341c211%40%3Cissues.activemq.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rd3a9511eebab60e23f224841390a3f8cd5358cff605c5f7042171e47%40%3Cdev.tinkerpop.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rdb7ddf28807e27c7801f6e56a0dfb31092d34c61bdd4fa2de9182119%40%3Cissues.bookkeeper.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rd0e44e8ef71eeaaa3cf3d1b8b41eb25894372e2995ec908ce7624d26%40%3Ccommits.pulsar.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r8890b8f18f1de821595792b58b968a89692a255bc20d86d395270740%40%3Ccommits.druid.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r48d5019bd42e0770f7e5351e420a63a41ff1f16924942442c6aff6a8%40%3Ccommits.zookeeper.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rd882ab6b642fe59cbbe94dc02bd197342058208f482e57b537940a4b%40%3Cpluto-dev.portals.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r7a1acc95373105169bd44df710c2f462cad31fb805364d2958a5ee03%40%3Cjira.kafka.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r2ce8d26154bea939536e6cf27ed02d3192bf5c5d04df885a80fe89b3%40%3Cissues.activemq.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rd5dbeee4808c0f2b9b51479b50de3cc6adb1072c332a200d9107f13e%40%3Cissues.activemq.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r8d78a0fbb56d505461e29868d1026e98c402e6a568c13a6da67896a2%40%3Cdev.jena.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com/security-alerts/cpuapr2022.html",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r7bcdc710857725c311b856c0b82cee6207178af5dcde1bd43d289826%40%3Cissues.activemq.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/44491fb9cc19acc901f7cff34acb7376619f15638439416e3e14761c%40%3Cdev.tika.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rda4849c6823dd3e83c7a356eb883180811d5c28359fe46865fd151c3%40%3Cusers.kafka.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rdec0d8ac1f03e6905b0de2df1d5fcdb98b94556e4f6cccf7519fdb26%40%3Cdev.tika.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r48d5019bd42e0770f7e5351e420a63a41ff1f16924942442c6aff6a8%40%3Ccommits.zookeeper.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rb3c94619728c8f8c176d8e175e0a1086ca737ecdfcd5a2214bb768bc%40%3Ccommits.bookkeeper.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r6b45a2fcc8e98ac93a179183dbb7f340027bdb8e3ab393418076b153%40%3Ccommon-issues.hadoop.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rd882ab6b642fe59cbbe94dc02bd197342058208f482e57b537940a4b%40%3Cpluto-dev.portals.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r9a9e3b42cd5d1c4536a14ef04f75048dec8e2740ac6a138ea912177f%40%3Cpluto-dev.portals.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772%40%3Cdev.mina.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r6aec6b8f70167fa325fb98b3b5c9ce0ffaed026e697b69b85ac24628%40%3Cissues.zookeeper.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rb1b29aee737e1c37fe1d48528cb0febac4f5deed51f5412e6fdfe2bf%40%3Cissues.activemq.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r9fb3238cfc3222f2392ca6517353aadae18f76866157318ac562e706%40%3Ccommon-issues.hadoop.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/ra9611a8431cb62369bce8909d7645597e1dd45c24b448836b1e54940%40%3Cissues.bookkeeper.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/ra54fa49be3e773d99ccc9c2a422311cf77e3ecd3b8594ee93043a6b1%40%3Cdev.zookeeper.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rd6254837403e8cbfc7018baa9be29705f3f06bd007c83708f9a97679%40%3Cissues.zookeeper.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r61db8e7dcb56dc000a5387a88f7a473bacec5ee01b9ff3f55308aacc%40%3Cusers.kafka.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r71e26f9c2d5826c6f95ad60f7d052d75e1e70b0d2dd853db6fc26d5f%40%3Cjira.kafka.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r944183c871594fe9a555b8519a7c945bbcf6714d72461aa6c929028f%40%3Cissues.zookeeper.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r9d2e28e71f91ba0b6f4114c8ecd96e2b1f7e0d06bdf8eb768c183aa9%40%3Ccommon-issues.hadoop.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rda4849c6823dd3e83c7a356eb883180811d5c28359fe46865fd151c3%40%3Cusers.kafka.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://www.oracle.com/security-alerts/cpujul2020.html",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rf1b434e11834a4449cd7addb69ed0aef0923112b5938182b363a968c%40%3Cnotifications.zookeeper.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rd7805c1bf9388968508c6c8f84588773216e560055ddcc813d19f347%40%3Ccommon-issues.hadoop.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/ra38785cfc0e7f17f8e24bebf775dd032c033fadcaea29e5bc9fffc60%40%3Cdev.tika.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rdec0d8ac1f03e6905b0de2df1d5fcdb98b94556e4f6cccf7519fdb26%40%3Cdev.tika.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r1b103833cb5bc8466e24ff0ecc5e75b45a705334ab6a444e64e840a0%40%3Cissues.bookkeeper.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r90c23eb8c82835fa82df85ae5e88c81fd9241e20a22971b0fb8f2c34%40%3Cissues.bookkeeper.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Mailing List",
+                            "url": "https://lists.apache.org/thread.html/eea03d504b36e8f870e8321d908e1def1addda16adda04327fe7c125%40%3Cdev.logging.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r4b25538be50126194cc646836c718b1a4d8f71bd9c912af5b59134ad%40%3Cdev.tika.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/6114ce566200d76e3cc45c521a62c2c5a4eac15738248f58a99f622c%40%3Cissues.activemq.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rdb7ddf28807e27c7801f6e56a0dfb31092d34c61bdd4fa2de9182119%40%3Cissues.bookkeeper.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r3cf50d05ce8cec8c09392624b7bae750e7643dae60ef2438641ee015%40%3Cissues.zookeeper.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r8a1cfd4705258c106e488091fcec85f194c82f2bbde6bd151e201870%40%3Cjira.kafka.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rc628307962ae1b8cc2d21b8e4b7dd6d7755b2dd52fa56a151a27e4fd%40%3Cissues.zookeeper.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r2ff63f210842a3c5e42f03a35d8f3a345134d073c80a04077341c211%40%3Cissues.activemq.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r6d34da5a0ca17ab08179a30c971446c7421af0e96f6d60867eabfc52%40%3Cissues.bookkeeper.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/479471e6debd608c837b9815b76eab24676657d4444fcfd5ef96d6e6%40%3Cdev.tika.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r6236b5f8646d48af8b66d5050f288304016840788e508c883356fe0e%40%3Clog4j-user.logging.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/564f03b4e9511fcba29c68fc0299372dadbdb002718fa8edcc4325e4%40%3Cjira.kafka.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rf77f79699c8d7e430c14cf480f12ed1297e6e8cf2ed379a425941e80%40%3Cpluto-dev.portals.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r3784834e80df2f284577a5596340fb84346c91a2dea6a073e65e3397%40%3Cissues.activemq.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r3d666e4e8905157f3c046d31398b04f2bfd4519e31f266de108c6919%40%3Cissues.activemq.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r3543ead2317dcd3306f69ee37b07dd383dbba6e2f47ff11eb55879ad%40%3Cusers.activemq.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r8244fd0831db894d5e89911ded9c72196d395a90ae655414d23ed0dd%40%3Cusers.activemq.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com/security-alerts/cpuapr2022.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rec34b1cccf907898e7cb36051ffac3ccf1ea89d0b261a2a3b3fb267f%40%3Ccommits.zookeeper.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r107c8737db39ec9ec4f4e7147b249e29be79170b9ef4b80528105a2d%40%3Cdev.zookeeper.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://www.debian.org/security/2020/dsa-4686",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rbd19de368abf0764e4383ec44d527bc9870176f488a494f09a40500d%40%3Ccommon-dev.hadoop.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rf53eeefb7e7e524deaacb9f8671cbf01b8a253e865fb94e7656722c0%40%3Cissues.bookkeeper.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r26244f9f7d9a8a27a092eb0b2a0ca9395e88fcde8b5edaeca7ce569c%40%3Ccommon-issues.hadoop.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rc628307962ae1b8cc2d21b8e4b7dd6d7755b2dd52fa56a151a27e4fd%40%3Cissues.zookeeper.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rf53eeefb7e7e524deaacb9f8671cbf01b8a253e865fb94e7656722c0%40%3Cissues.bookkeeper.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r696507338dd5f44efc23d98cafe30f217cf3ba78e77ed1324c7a5179%40%3Cjira.kafka.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rd3a9511eebab60e23f224841390a3f8cd5358cff605c5f7042171e47%40%3Cdev.tinkerpop.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/8ab32b4c9f1826f20add7c40be08909de9f58a89dc1de9c09953f5ac%40%3Cissues.activemq.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/479471e6debd608c837b9815b76eab24676657d4444fcfd5ef96d6e6%40%3Cdev.tika.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://www.debian.org/security/2020/dsa-4686",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rbf4ce74b0d1fa9810dec50ba3ace0caeea677af7c27a97111c06ccb7%40%3Cusers.kafka.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rd7805c1bf9388968508c6c8f84588773216e560055ddcc813d19f347%40%3Ccommon-issues.hadoop.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/8ab32b4c9f1826f20add7c40be08909de9f58a89dc1de9c09953f5ac%40%3Cissues.activemq.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rbd19de368abf0764e4383ec44d527bc9870176f488a494f09a40500d%40%3Ccommon-dev.hadoop.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r9d2e28e71f91ba0b6f4114c8ecd96e2b1f7e0d06bdf8eb768c183aa9%40%3Ccommon-issues.hadoop.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r107c8737db39ec9ec4f4e7147b249e29be79170b9ef4b80528105a2d%40%3Cdev.zookeeper.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r8e3f7da12bf5750b0a02e69a78a61073a2ac950eed7451ce70a65177%40%3Ccommits.zookeeper.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r944183c871594fe9a555b8519a7c945bbcf6714d72461aa6c929028f%40%3Cissues.zookeeper.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r909b8e3a36913944d3b7bafe9635d4ca84f8f0e2cd146a1784f667c2%40%3Cissues.zookeeper.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r3d666e4e8905157f3c046d31398b04f2bfd4519e31f266de108c6919%40%3Cissues.activemq.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/ra18a903f785aed9403aea38bc6f36844a056283c00dcfc6936b6318c%40%3Cissues.bookkeeper.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rbf4ce74b0d1fa9810dec50ba3ace0caeea677af7c27a97111c06ccb7%40%3Cusers.kafka.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r6d34da5a0ca17ab08179a30c971446c7421af0e96f6d60867eabfc52%40%3Cissues.bookkeeper.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r8c392ca48bb7e50754e4bc05865e9731b23d568d18a520fe3d8c1f75%40%3Ccommon-issues.hadoop.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rfdf65fa675c64a64459817344e0e6c44d51ee264beea6e5851fb60dc%40%3Cissues.bookkeeper.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r3bf7b982dfa0779f8a71f843d2aa6b4184a53e6be7f149ee079387fd%40%3Cdev.kafka.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/raedd12dc24412b3780432bf202a2618a21a727788543e5337a458ead%40%3Cissues.activemq.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Mailing List",
+                            "url": "https://lists.apache.org/thread.html/eea03d504b36e8f870e8321d908e1def1addda16adda04327fe7c125%40%3Cdev.logging.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/ra38785cfc0e7f17f8e24bebf775dd032c033fadcaea29e5bc9fffc60%40%3Cdev.tika.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rbdf18e39428b5c80fc35113470198b1fe53b287a76a46b0f8780b5fd%40%3Cdev.zookeeper.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/re8c21ed9dd218c217d242ffa90778428e446b082b5e1c29f567e8374%40%3Cissues.activemq.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r909b8e3a36913944d3b7bafe9635d4ca84f8f0e2cd146a1784f667c2%40%3Cissues.zookeeper.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/re36da78e4f3955ba6c1c373a2ab85a4deb215ca74b85fcd66142fea1%40%3Cissues.bookkeeper.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rd6254837403e8cbfc7018baa9be29705f3f06bd007c83708f9a97679%40%3Cissues.zookeeper.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://www.oracle.com/security-alerts/cpuapr2020.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r48efc7cb5aeb4e1f67aaa06fb4b5479a5635d12f07d0b93fc2d08809%40%3Ccommits.zookeeper.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r594411f4bddebaf48a4c70266d0b7849e0d82bb72826f61b3a35bba7%40%3Cissues.bookkeeper.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r6aec6b8f70167fa325fb98b3b5c9ce0ffaed026e697b69b85ac24628%40%3Cissues.zookeeper.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rec34b1cccf907898e7cb36051ffac3ccf1ea89d0b261a2a3b3fb267f%40%3Ccommits.zookeeper.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r52a5129df402352adc34d052bab9234c8ef63596306506a89fdc7328%40%3Cusers.activemq.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r61db8e7dcb56dc000a5387a88f7a473bacec5ee01b9ff3f55308aacc%40%3Cusers.kafka.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r356d57d6225f91fdc30f8b0a2bed229d1ece55e16e552878c5fa809a%40%3Cissues.zookeeper.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r746fbc3fc13aee292ae6851f7a5080f592fa3a67b983c6887cdb1fc5%40%3Cdev.tika.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://security.netapp.com/advisory/ntap-20200110-0001/",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r61590890edcc64140e0c606954b29a063c3d08a2b41d447256d51a78%40%3Cissues.activemq.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r8a1cfd4705258c106e488091fcec85f194c82f2bbde6bd151e201870%40%3Cjira.kafka.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Mailing List",
+                            "url": "https://lists.debian.org/debian-lts-announce/2020/01/msg00008.html",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r71e26f9c2d5826c6f95ad60f7d052d75e1e70b0d2dd853db6fc26d5f%40%3Cjira.kafka.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rcd71280585425dad7e232f239c5709e425efdd0d3de4a92f808a4767%40%3Cissues.bookkeeper.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r3cf50d05ce8cec8c09392624b7bae750e7643dae60ef2438641ee015%40%3Cissues.zookeeper.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/ra18a903f785aed9403aea38bc6f36844a056283c00dcfc6936b6318c%40%3Cissues.bookkeeper.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r26244f9f7d9a8a27a092eb0b2a0ca9395e88fcde8b5edaeca7ce569c%40%3Ccommon-issues.hadoop.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rc1eaed7f7d774d5d02f66e49baced31e04827a1293d61a70bd003ca7%40%3Cdev.tika.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r1b7734dfdfd938640f2f5fb6f4231a267145c71ed60cc7faa1cbac07%40%3Ccommon-issues.hadoop.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rf9c19bcc2f7a98a880fa3e3456c003d331812b55836b34ef648063c9%40%3Cjira.kafka.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/752ec92cd1e334a639e79bfbd689a4ec2c6579ec5bb41b53ffdf358d%40%3Cdev.kafka.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r7bcdc710857725c311b856c0b82cee6207178af5dcde1bd43d289826%40%3Cissues.activemq.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com/security-alerts/cpujul2022.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/reaf6b996f74f12b4557bc221abe88f58270ac583942fa41293c61f94%40%3Cpluto-scm.portals.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r8e3f7da12bf5750b0a02e69a78a61073a2ac950eed7451ce70a65177%40%3Ccommits.zookeeper.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r594411f4bddebaf48a4c70266d0b7849e0d82bb72826f61b3a35bba7%40%3Cissues.bookkeeper.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r9a9e3b42cd5d1c4536a14ef04f75048dec8e2740ac6a138ea912177f%40%3Cpluto-dev.portals.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r48efc7cb5aeb4e1f67aaa06fb4b5479a5635d12f07d0b93fc2d08809%40%3Ccommits.zookeeper.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r9fb3238cfc3222f2392ca6517353aadae18f76866157318ac562e706%40%3Ccommon-issues.hadoop.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r7a1acc95373105169bd44df710c2f462cad31fb805364d2958a5ee03%40%3Cjira.kafka.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772%40%3Cdev.mina.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r6b45a2fcc8e98ac93a179183dbb7f340027bdb8e3ab393418076b153%40%3Ccommon-issues.hadoop.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Mailing List",
+                            "url": "https://lists.debian.org/debian-lts-announce/2020/01/msg00008.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r696507338dd5f44efc23d98cafe30f217cf3ba78e77ed1324c7a5179%40%3Cjira.kafka.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://www.oracle.com/security-alerts/cpuapr2020.html",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r2756fd570b6709d55a61831ca028405bcb3e312175a60bc5d911c81f%40%3Cjira.kafka.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r8244fd0831db894d5e89911ded9c72196d395a90ae655414d23ed0dd%40%3Cusers.activemq.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r9d0d03f2e7d9e13c68b530f81d02b0fec33133edcf27330d8089fcfb%40%3Cissues.zookeeper.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r746fbc3fc13aee292ae6851f7a5080f592fa3a67b983c6887cdb1fc5%40%3Cdev.tika.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r3543ead2317dcd3306f69ee37b07dd383dbba6e2f47ff11eb55879ad%40%3Cusers.activemq.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/752ec92cd1e334a639e79bfbd689a4ec2c6579ec5bb41b53ffdf358d%40%3Cdev.kafka.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rbdf18e39428b5c80fc35113470198b1fe53b287a76a46b0f8780b5fd%40%3Cdev.zookeeper.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r4ac89cbecd9e298ae9fafb5afda6fa77ac75c78d1ac957837e066c4e%40%3Cuser.zookeeper.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r18f1c010b554a3a2d761e8ffffd8674fd4747bcbcf16c643d708318c%40%3Cissues.activemq.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com/security-alerts/cpujul2022.html",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r6236b5f8646d48af8b66d5050f288304016840788e508c883356fe0e%40%3Clog4j-user.logging.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://security.netapp.com/advisory/ntap-20200110-0001/",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rcd71280585425dad7e232f239c5709e425efdd0d3de4a92f808a4767%40%3Cissues.bookkeeper.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r356d57d6225f91fdc30f8b0a2bed229d1ece55e16e552878c5fa809a%40%3Cissues.zookeeper.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r3c575cabc7386e646fb12cb82b0b38ae5a6ade8a800f827107824495%40%3Cjira.kafka.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r2756fd570b6709d55a61831ca028405bcb3e312175a60bc5d911c81f%40%3Cjira.kafka.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r13d4b5c60ff63f3c4fab51d6ff266655be503b8a1884e2f2fab67c3a%40%3Ccommon-issues.hadoop.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rc17d8491beee51607693019857e41e769795366b85be00aa2f4b3159%40%3Cnotifications.zookeeper.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rdf2a0d94c3b5b523aeff7741ae71347415276062811b687f30ea6573%40%3Ccommits.zookeeper.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/re36da78e4f3955ba6c1c373a2ab85a4deb215ca74b85fcd66142fea1%40%3Cissues.bookkeeper.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r61590890edcc64140e0c606954b29a063c3d08a2b41d447256d51a78%40%3Cissues.activemq.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r9dc2505651788ac668299774d9e7af4dc616be2f56fdc684d1170882%40%3Cusers.activemq.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r7f462c69d5ded4c0223e014d95a3496690423c5f6f05c09e2f2a407a%40%3Cjira.kafka.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r5c084578b3e3b40bd903c9d9e525097421bcd88178e672f612102eb2%40%3Cjira.kafka.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r3bf7b982dfa0779f8a71f843d2aa6b4184a53e6be7f149ee079387fd%40%3Cdev.kafka.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/277b4b5c2b0e06a825ccec565fa65bd671f35a4d58e3e2ec5d0618e1%40%3Cdev.tika.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/re8c21ed9dd218c217d242ffa90778428e446b082b5e1c29f567e8374%40%3Cissues.activemq.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rca24a281000fb681d7e26e5c031a21eb4b0593a7735f781b53dae4e2%40%3Cdev.tika.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rbf4ce74b0d1fa9810dec50ba3ace0caeea677af7c27a97111c06ccb7%40%3Cdev.kafka.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r2ce8d26154bea939536e6cf27ed02d3192bf5c5d04df885a80fe89b3%40%3Cissues.activemq.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r2721aba31a8562639c4b937150897e24f78f747cdbda8641c0f659fe%40%3Cusers.kafka.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r18f1c010b554a3a2d761e8ffffd8674fd4747bcbcf16c643d708318c%40%3Cissues.activemq.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/ra54fa49be3e773d99ccc9c2a422311cf77e3ecd3b8594ee93043a6b1%40%3Cdev.zookeeper.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r8c6300245c0bcef095e9f07b48157e2c6471df0816db3408fcf1d748%40%3Ccommon-issues.hadoop.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rf2567488cfc9212b42e34c6393cfa1c14e30e4838b98dda84d71041f%40%3Cdev.tika.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r189aaeaad897f7d6b96f7c43a8ef2dfb9f6e9f8c1cc9ad182ce9b9ae%40%3Cjira.kafka.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r9d0d03f2e7d9e13c68b530f81d02b0fec33133edcf27330d8089fcfb%40%3Cissues.zookeeper.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rbc45eb0f53fd6242af3e666c2189464f848a851d408289840cecc6e3%40%3Ccommits.zookeeper.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/277b4b5c2b0e06a825ccec565fa65bd671f35a4d58e3e2ec5d0618e1%40%3Cdev.tika.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com/security-alerts/cpuApr2021.html",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r1b7734dfdfd938640f2f5fb6f4231a267145c71ed60cc7faa1cbac07%40%3Ccommon-issues.hadoop.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r3a85514a518f3080ab1fc2652cfe122c2ccf67cfb32356acb1b08fe8%40%3Cdev.tika.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r8c6300245c0bcef095e9f07b48157e2c6471df0816db3408fcf1d748%40%3Ccommon-issues.hadoop.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r05755112a8c164abc1004bb44f198b1e3d8ca3d546a8f13ebd3aa05f%40%3Cissues.zookeeper.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r9dc2505651788ac668299774d9e7af4dc616be2f56fdc684d1170882%40%3Cusers.activemq.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rc17d8491beee51607693019857e41e769795366b85be00aa2f4b3159%40%3Cnotifications.zookeeper.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r681b4432d0605f327b68b9f8a42662993e699d04614de4851c35ffd1%40%3Cdev.tika.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rbc45eb0f53fd6242af3e666c2189464f848a851d408289840cecc6e3%40%3Ccommits.zookeeper.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com/security-alerts/cpuApr2021.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r3c575cabc7386e646fb12cb82b0b38ae5a6ade8a800f827107824495%40%3Cjira.kafka.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r3a85514a518f3080ab1fc2652cfe122c2ccf67cfb32356acb1b08fe8%40%3Cdev.tika.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/raedd12dc24412b3780432bf202a2618a21a727788543e5337a458ead%40%3Cissues.activemq.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rfdf65fa675c64a64459817344e0e6c44d51ee264beea6e5851fb60dc%40%3Cissues.bookkeeper.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r8c392ca48bb7e50754e4bc05865e9731b23d568d18a520fe3d8c1f75%40%3Ccommon-issues.hadoop.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r05755112a8c164abc1004bb44f198b1e3d8ca3d546a8f13ebd3aa05f%40%3Cissues.zookeeper.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/reaf6b996f74f12b4557bc221abe88f58270ac583942fa41293c61f94%40%3Cpluto-scm.portals.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rf2567488cfc9212b42e34c6393cfa1c14e30e4838b98dda84d71041f%40%3Cdev.tika.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r189aaeaad897f7d6b96f7c43a8ef2dfb9f6e9f8c1cc9ad182ce9b9ae%40%3Cjira.kafka.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rc1eaed7f7d774d5d02f66e49baced31e04827a1293d61a70bd003ca7%40%3Cdev.tika.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r8418a0dff1729f19cf1024937e23a2db4c0f94f2794a423f5c10e8e7%40%3Cissues.bookkeeper.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rf9c19bcc2f7a98a880fa3e3456c003d331812b55836b34ef648063c9%40%3Cjira.kafka.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rbf4ce74b0d1fa9810dec50ba3ace0caeea677af7c27a97111c06ccb7%40%3Cdev.kafka.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r52a5129df402352adc34d052bab9234c8ef63596306506a89fdc7328%40%3Cusers.activemq.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rca24a281000fb681d7e26e5c031a21eb4b0593a7735f781b53dae4e2%40%3Cdev.tika.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r2721aba31a8562639c4b937150897e24f78f747cdbda8641c0f659fe%40%3Cusers.kafka.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://usn.ubuntu.com/4495-1/",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r5c084578b3e3b40bd903c9d9e525097421bcd88178e672f612102eb2%40%3Cjira.kafka.apache.org%3E",
+                            "source": "security@apache.org"
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "criticityLabel": "CRITICAL",
+                    "cvssScore": 9.8,
+                    "cvssAccessVector": "NETWORK",
+                    "cvssAccessComplexity": "LOW",
+                    "cvssAuthentication": "NONE",
+                    "cvssConfidentialityImpact": "HIGH",
+                    "cvssAvailabilityImpact": "HIGH",
+                    "source": "NVD",
+                    "criticityCategory": "CRITICAL",
+                    "advisory": false,
+                    "isKev": false
+                },
+                {
+                    "matchedCPE": "cpe:/a:apache:log4j",
+                    "name": "CVE-2020-9493",
+                    "publishedDate": "2021-06-16T12:15:06.577Z",
+                    "lastUpdateDate": "2024-11-21T10:40:46.017Z",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2020-9493",
+                    "description": "A deserialization flaw was found in Apache Chainsaw versions prior to 2.1.0 which could lead to malicious code execution.",
+                    "references": [
+                        {
+                            "name": "Mailing List",
+                            "url": "https://www.openwall.com/lists/oss-security/2021/06/16/1",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r50d389c613ba6062a26aa57e163c09bfee4ff2d95d67331d75265b83%40%3Cannounce.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Mailing List",
+                            "url": "https://www.openwall.com/lists/oss-security/2021/06/16/1",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Mailing List",
+                            "url": "http://www.openwall.com/lists/oss-security/2022/01/18/5",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Mailing List",
+                            "url": "http://www.openwall.com/lists/oss-security/2021/06/16/1",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r50d389c613ba6062a26aa57e163c09bfee4ff2d95d67331d75265b83%40%3Cannounce.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Mailing List",
+                            "url": "http://www.openwall.com/lists/oss-security/2021/06/16/1",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Mailing List",
+                            "url": "http://www.openwall.com/lists/oss-security/2022/01/18/5",
+                            "source": "security@apache.org"
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "criticityLabel": "CRITICAL",
+                    "cvssScore": 9.8,
+                    "cvssAccessVector": "NETWORK",
+                    "cvssAccessComplexity": "LOW",
+                    "cvssAuthentication": "NONE",
+                    "cvssConfidentialityImpact": "HIGH",
+                    "cvssAvailabilityImpact": "HIGH",
+                    "source": "NVD",
+                    "criticityCategory": "CRITICAL",
+                    "advisory": false,
+                    "isKev": false
+                },
+                {
+                    "matchedCPE": "cpe:/a:apache:log4j",
+                    "name": "CVE-2022-23305",
+                    "publishedDate": "2022-01-18T21:15:08.350Z",
+                    "lastUpdateDate": "2024-11-21T11:48:22.517Z",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2022-23305",
+                    "description": "By design, the JDBCAppender in Log4j 1.2.x accepts an SQL statement as a configuration parameter where the values to be inserted are converters from PatternLayout. The message converter, %m, is likely to always be included. This allows attackers to manipulate the SQL by entering crafted strings into input fields or headers of an application that are logged allowing unintended SQL queries to be executed. Note this issue only affects Log4j 1.x when specifically configured to use the JDBCAppender, which is not the default. Beginning in version 2.0-beta8, the JDBCAppender was re-introduced with proper support for parameterized SQL queries and further customization over the columns written to in logs. Apache Log4j 1.2 reached end of life in August 2015. Users should upgrade to Log4j 2 as it addresses numerous other issues from the previous versions.",
+                    "references": [
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com/security-alerts/cpujul2022.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com/security-alerts/cpuapr2022.html",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Mailing List",
+                            "url": "http://www.openwall.com/lists/oss-security/2022/01/18/4",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://security.netapp.com/advisory/ntap-20220217-0007/",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Mailing List",
+                            "url": "http://www.openwall.com/lists/oss-security/2022/01/18/4",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Vendor Advisory",
+                            "url": "https://logging.apache.org/log4j/1.2/index.html",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Issue Tracking",
+                            "url": "https://lists.apache.org/thread/pt6lh3pbsvxqlwlp4c5l798dv2hkc85y",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Issue Tracking",
+                            "url": "https://lists.apache.org/thread/pt6lh3pbsvxqlwlp4c5l798dv2hkc85y",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://security.netapp.com/advisory/ntap-20220217-0007/",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com/security-alerts/cpujul2022.html",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com/security-alerts/cpuapr2022.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Vendor Advisory",
+                            "url": "https://logging.apache.org/log4j/1.2/index.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "criticityLabel": "CRITICAL",
+                    "cvssScore": 9.8,
+                    "cvssAccessVector": "NETWORK",
+                    "cvssAccessComplexity": "LOW",
+                    "cvssAuthentication": "NONE",
+                    "cvssConfidentialityImpact": "HIGH",
+                    "cvssAvailabilityImpact": "HIGH",
+                    "source": "NVD",
+                    "criticityCategory": "CRITICAL",
+                    "advisory": false,
+                    "isKev": false
+                },
+                {
+                    "matchedCPE": "cpe:/a:apache:log4j",
+                    "name": "CVE-2021-4104",
+                    "publishedDate": "2021-12-14T17:15:12.200Z",
+                    "lastUpdateDate": "2024-11-21T11:36:54.560Z",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2021-4104",
+                    "description": "JMSAppender in Log4j 1.2 is vulnerable to deserialization of untrusted data when the attacker has write access to the Log4j configuration. The attacker can provide TopicBindingName and TopicConnectionFactoryBindingName configurations causing JMSAppender to perform JNDI requests that result in remote code execution in a similar fashion to CVE-2021-44228. Note this issue only affects Log4j 1.2 when specifically configured to use JMSAppender, which is not the default. Apache Log4j 1.2 reached end of life in August 2015. Users should upgrade to Log4j 2 as it addresses numerous other issues from the previous versions.",
+                    "references": [
+                        {
+                            "name": null,
+                            "url": "https://www.cve.org/CVERecord?id=CVE-2021-44228",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://access.redhat.com/security/cve/CVE-2021-4104",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://security.gentoo.org/glsa/202209-02",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://www.oracle.com/security-alerts/cpujul2022.html",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://www.oracle.com/security-alerts/cpujan2022.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://github.com/apache/logging-log4j2/pull/608#issuecomment-990494126",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "http://www.openwall.com/lists/oss-security/2022/01/18/3",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://security.netapp.com/advisory/ntap-20211223-0007/",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://www.kb.cert.org/vuls/id/930724",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://www.kb.cert.org/vuls/id/930724",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://security.netapp.com/advisory/ntap-20211223-0007/",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://www.oracle.com/security-alerts/cpujan2022.html",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "http://www.openwall.com/lists/oss-security/2022/01/18/3",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://www.oracle.com/security-alerts/cpujul2022.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://www.oracle.com/security-alerts/cpuapr2022.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://access.redhat.com/security/cve/CVE-2021-4104",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://www.cve.org/CVERecord?id=CVE-2021-44228",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://security.gentoo.org/glsa/202312-04",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2021-0033",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://security.gentoo.org/glsa/202312-02",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://security.gentoo.org/glsa/202310-16",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://security.gentoo.org/glsa/202312-04",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://security.gentoo.org/glsa/202310-16",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://security.gentoo.org/glsa/202312-02",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://www.oracle.com/security-alerts/cpuapr2022.html",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://github.com/apache/logging-log4j2/pull/608#issuecomment-990494126",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2021-0033",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://security.gentoo.org/glsa/202209-02",
+                            "source": "security@apache.org"
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "criticityLabel": "HIGH",
+                    "cvssScore": 7.5,
+                    "cvssAccessVector": "NETWORK",
+                    "cvssAccessComplexity": "HIGH",
+                    "cvssAuthentication": "NONE",
+                    "cvssConfidentialityImpact": "HIGH",
+                    "cvssAvailabilityImpact": "HIGH",
+                    "source": "NVD",
+                    "criticityCategory": "HIGH",
+                    "advisory": false,
+                    "isKev": false
+                },
+                {
+                    "matchedCPE": "cpe:/a:qos:reload4j",
+                    "name": "CVE-2022-23302",
+                    "publishedDate": "2022-01-18T16:15:08.300Z",
+                    "lastUpdateDate": "2025-07-07T18:15:24.713Z",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2022-23302",
+                    "description": "JMSSink in all versions of Log4j 1.x is vulnerable to deserialization of untrusted data when the attacker has write access to the Log4j configuration or if the configuration references an LDAP service the attacker has access to. The attacker can provide a TopicConnectionFactoryBindingName configuration causing JMSSink to perform JNDI requests that result in remote code execution in a similar fashion to CVE-2021-4104. Note this issue only affects Log4j 1.x when specifically configured to use JMSSink, which is not the default. Apache Log4j 1.2 reached end of life in August 2015. Users should upgrade to Log4j 2 as it addresses numerous other issues from the previous versions.",
+                    "references": [
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com/security-alerts/cpujul2022.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://security.netapp.com/advisory/ntap-20220217-0006/",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com/security-alerts/cpuapr2022.html",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Mailing List",
+                            "url": "http://www.openwall.com/lists/oss-security/2022/01/18/3",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Mailing List",
+                            "url": "https://lists.apache.org/thread/bsr3l5qz4g0myrjhy9h67bcxodpkwj4w",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Mailing List",
+                            "url": "http://www.openwall.com/lists/oss-security/2022/01/18/3",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://security.netapp.com/advisory/ntap-20220217-0006/",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://www.vicarius.io/vsociety/posts/cve-2022-23302-mitigate-log4j-1217-vulnerability",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://www.vicarius.io/vsociety/posts/cve-2022-23302-detect-log4j-1217-vulnerability",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Vendor Advisory",
+                            "url": "https://logging.apache.org/log4j/1.2/index.html",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Mailing List",
+                            "url": "https://lists.apache.org/thread/bsr3l5qz4g0myrjhy9h67bcxodpkwj4w",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com/security-alerts/cpujul2022.html",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com/security-alerts/cpuapr2022.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Vendor Advisory",
+                            "url": "https://logging.apache.org/log4j/1.2/index.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "criticityLabel": "HIGH",
+                    "cvssScore": 8.8,
+                    "cvssAccessVector": "NETWORK",
+                    "cvssAccessComplexity": "LOW",
+                    "cvssAuthentication": "NONE",
+                    "cvssConfidentialityImpact": "HIGH",
+                    "cvssAvailabilityImpact": "HIGH",
+                    "source": "NVD",
+                    "criticityCategory": "HIGH",
+                    "advisory": false,
+                    "isKev": false
+                },
+                {
+                    "matchedCPE": "cpe:/a:apache:log4j",
+                    "name": "CVE-2022-23307",
+                    "publishedDate": "2022-01-18T21:15:08.403Z",
+                    "lastUpdateDate": "2024-11-21T11:48:22.733Z",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2022-23307",
+                    "description": "CVE-2020-9493 identified a deserialization issue that was present in Apache Chainsaw. Prior to Chainsaw V2.0 Chainsaw was a component of Apache Log4j 1.2.x where the same issue exists.",
+                    "references": [
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com/security-alerts/cpujul2022.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Mailing List",
+                            "url": "https://lists.apache.org/thread/rg4yyc89vs3dw6kpy3r92xop9loywyhh",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com/security-alerts/cpuapr2022.html",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Mailing List",
+                            "url": "https://lists.apache.org/thread/rg4yyc89vs3dw6kpy3r92xop9loywyhh",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Vendor Advisory",
+                            "url": "https://logging.apache.org/log4j/1.2/index.html",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com/security-alerts/cpujul2022.html",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com/security-alerts/cpuapr2022.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Vendor Advisory",
+                            "url": "https://logging.apache.org/log4j/1.2/index.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "criticityLabel": "HIGH",
+                    "cvssScore": 8.8,
+                    "cvssAccessVector": "NETWORK",
+                    "cvssAccessComplexity": "LOW",
+                    "cvssAuthentication": "NONE",
+                    "cvssConfidentialityImpact": "HIGH",
+                    "cvssAvailabilityImpact": "HIGH",
+                    "source": "NVD",
+                    "criticityCategory": "HIGH",
+                    "advisory": false,
+                    "isKev": false
+                },
+                {
+                    "matchedCPE": "cpe:/a:apache:log4j",
+                    "name": "CVE-2023-26464",
+                    "publishedDate": "2023-03-10T19:15:10.453Z",
+                    "lastUpdateDate": "2025-02-13T22:16:12.243Z",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2023-26464",
+                    "description": "** UNSUPPORTED WHEN ASSIGNED **\n\nWhen using the Chainsaw or SocketAppender components with Log4j 1.x on JRE less than 1.7, an attacker that manages to cause a logging entry involving a specially-crafted (ie, deeply nested) \nhashmap or hashtable (depending on which logging component is in use) to be processed could exhaust the available memory in the virtual machine and achieve Denial of Service when the object is deserialized.\n\nThis issue affects Apache Log4j before 2. Affected users are recommended to update to Log4j 2.x.\n\nNOTE: This vulnerability only affects products that are no longer supported by the maintainer.",
+                    "references": [
+                        {
+                            "name": "Mailing List",
+                            "url": "https://lists.apache.org/thread/wkx6grrcjkh86crr49p4blc1v1nflj3t",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://security.netapp.com/advisory/ntap-20230505-0008/",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://security.netapp.com/advisory/ntap-20230505-0008/",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Mailing List",
+                            "url": "https://lists.apache.org/thread/wkx6grrcjkh86crr49p4blc1v1nflj3t",
+                            "source": "security@apache.org"
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "criticityLabel": "HIGH",
+                    "cvssScore": 7.5,
+                    "cvssAccessVector": "NETWORK",
+                    "cvssAccessComplexity": "LOW",
+                    "cvssAuthentication": "NONE",
+                    "cvssConfidentialityImpact": "NONE",
+                    "cvssAvailabilityImpact": "HIGH",
+                    "source": "NVD",
+                    "criticityCategory": "HIGH",
+                    "advisory": false,
+                    "isKev": false
+                },
+                {
+                    "matchedCPE": "cpe:/a:apache:log4j",
+                    "name": "CVE-2020-9488",
+                    "publishedDate": "2020-04-27T20:15:12.897Z",
+                    "lastUpdateDate": "2024-11-21T10:40:45.037Z",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2020-9488",
+                    "description": "Improper validation of certificate with host mismatch in Apache Log4j SMTP appender. This could allow an SMTPS connection to be intercepted by a man-in-the-middle attack which could leak any log messages sent through that appender. Fixed in Apache Log4j 2.12.3 and 2.13.1",
+                    "references": [
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com/security-alerts/cpuoct2021.html",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://www.debian.org/security/2021/dsa-5020",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r3d1d00441c55144a4013adda74b051ae7864128ebcfb6ee9721a2eb3%40%3Cissues.hive.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r48bcd06049c1779ef709564544c3d8a32ae6ee5c3b7281a606ac4463%40%3Cjira.kafka.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r1fc73f0e16ec2fa249d3ad39a5194afb9cc5afb4c023dc0bab5a5881%40%3Cissues.hive.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r7e5c10534ed06bf805473ac85e8412fe3908a8fa4cabf5027bf11220%40%3Cdev.kafka.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rbc7642b9800249553f13457e46b813bea1aec99d2bc9106510e00ff3%40%3Ctorque-dev.db.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r4db540cafc5d7232c62e076051ef661d37d345015b2e59b3f81a932f%40%3Cdev.hive.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r4285398e5585a0456d3d9db021a4fce6e6fcf3ec027dfa13a450ec98%40%3Cissues.zookeeper.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/ra632b329b2ae2324fabbad5da204c4ec2e171ff60348ec4ba698fd40%40%3Cissues.hive.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rd8e87c4d69df335d0ba7d815b63be8bd8a6352f429765c52eb07ddac%40%3Cissues.zookeeper.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rc6b81c013618d1de1b5d6b8c1088aaf87b4bacc10c2371f15a566701%40%3Cnotifications.zookeeper.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r48efc7cb5aeb4e1f67aaa06fb4b5479a5635d12f07d0b93fc2d08809%40%3Ccommits.zookeeper.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Mailing List",
+                            "url": "https://lists.debian.org/debian-lts-announce/2021/12/msg00017.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r4ed1f49616a8603832d378cb9d13e7a8b9b27972bb46d946ccd8491f%40%3Cissues.hive.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rec34b1cccf907898e7cb36051ffac3ccf1ea89d0b261a2a3b3fb267f%40%3Ccommits.zookeeper.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://www.oracle.com/security-alerts/cpujul2020.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r9a79175c393d14d760a0ae3731b4a873230a16ef321aa9ca48a810cd%40%3Cissues.zookeeper.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/re024d86dffa72ad800f2848d0c77ed93f0b78ee808350b477a6ed987%40%3Cgitbox.hive.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r5a68258e5ab12532dc179edae3d6e87037fa3b50ab9d63a90c432507%40%3Cissues.hive.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rd55f65c6822ff235eda435d31488cfbb9aa7055cdf47481ebee777cc%40%3Cissues.zookeeper.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Issue Tracking",
+                            "url": "https://issues.apache.org/jira/browse/LOG4J2-2819",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rd0e44e8ef71eeaaa3cf3d1b8b41eb25894372e2995ec908ce7624d26%40%3Ccommits.pulsar.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rc2dbc4633a6eea1fcbce6831876cfa17b73759a98c65326d1896cb1a%40%3Ctorque-dev.db.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r7e739f2961753af95e2a3a637828fb88bfca68e5d6b0221d483a9ee5%40%3Cnotifications.zookeeper.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rf1c2a81a08034c688b8f15cf58a4cfab322d00002ca46d20133bee20%40%3Cdev.kafka.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r393943de452406f0f6f4b3def9f8d3c071f96323c1f6ed1a098f7fe4%40%3Ctorque-dev.db.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Mailing List",
+                            "url": "https://lists.debian.org/debian-lts-announce/2021/12/msg00017.html",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r0a2699f724156a558afd1abb6c044fb9132caa66dce861b82699722a%40%3Cjira.kafka.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r0df3d7a5acb98c57e64ab9266aa21eeee1d9b399addb96f9cf1cbe05%40%3Cdev.zookeeper.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r7e739f2961753af95e2a3a637828fb88bfca68e5d6b0221d483a9ee5%40%3Cnotifications.zookeeper.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r48efc7cb5aeb4e1f67aaa06fb4b5479a5635d12f07d0b93fc2d08809%40%3Ccommits.zookeeper.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r22a56beb76dd8cf18e24fda9072f1e05990f49d6439662d3782a392f%40%3Cissues.hive.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rd0e44e8ef71eeaaa3cf3d1b8b41eb25894372e2995ec908ce7624d26%40%3Ccommits.pulsar.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772%40%3Cdev.mina.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r45916179811a32cbaa500f972de9098e6ee80ee81c7f134fce83e03a%40%3Cissues.flink.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com/security-alerts/cpuapr2022.html",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/ra051e07a0eea4943fa104247e69596f094951f51512d42c924e86c75%40%3Cissues.hive.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r4d5dc9f3520071338d9ebc26f9f158a43ae28a91923d176b550a807b%40%3Cdev.hive.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://www.oracle.com/security-alerts/cpujan2021.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772%40%3Cdev.mina.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rd5d58088812cf8e677d99b07f73c654014c524c94e7fedbdee047604%40%3Ctorque-dev.db.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r7641ee788e1eb1be4bb206a7d15f8a64ec6ef23e5ec6132d5a567695%40%3Cnotifications.zookeeper.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r8c001b9a95c0bbec06f4457721edd94935a55932e64b82cc5582b846%40%3Cissues.zookeeper.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r9776e71e3c67c5d13a91c1eba0dc025b48b802eb7561cc6956d6961c%40%3Cissues.hive.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/re024d86dffa72ad800f2848d0c77ed93f0b78ee808350b477a6ed987%40%3Cgitbox.hive.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r5a68258e5ab12532dc179edae3d6e87037fa3b50ab9d63a90c432507%40%3Cissues.hive.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://www.oracle.com/security-alerts/cpujul2020.html",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r4ed1f49616a8603832d378cb9d13e7a8b9b27972bb46d946ccd8491f%40%3Cissues.hive.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://security.netapp.com/advisory/ntap-20200504-0003/",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rc2dbc4633a6eea1fcbce6831876cfa17b73759a98c65326d1896cb1a%40%3Ctorque-dev.db.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/ra632b329b2ae2324fabbad5da204c4ec2e171ff60348ec4ba698fd40%40%3Cissues.hive.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r9776e71e3c67c5d13a91c1eba0dc025b48b802eb7561cc6956d6961c%40%3Cissues.hive.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r48bcd06049c1779ef709564544c3d8a32ae6ee5c3b7281a606ac4463%40%3Cjira.kafka.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r65578f3761a89bc164e8964acd5d913b9f8fd997967b195a89a97ca3%40%3Cissues.hive.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/ra051e07a0eea4943fa104247e69596f094951f51512d42c924e86c75%40%3Cissues.hive.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r9a79175c393d14d760a0ae3731b4a873230a16ef321aa9ca48a810cd%40%3Cissues.zookeeper.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com/security-alerts/cpuoct2021.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rc6b81c013618d1de1b5d6b8c1088aaf87b4bacc10c2371f15a566701%40%3Cnotifications.zookeeper.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r45916179811a32cbaa500f972de9098e6ee80ee81c7f134fce83e03a%40%3Cissues.flink.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r0a2699f724156a558afd1abb6c044fb9132caa66dce861b82699722a%40%3Cjira.kafka.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r8c001b9a95c0bbec06f4457721edd94935a55932e64b82cc5582b846%40%3Cissues.zookeeper.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://www.oracle.com/security-alerts/cpuoct2020.html",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r2721aba31a8562639c4b937150897e24f78f747cdbda8641c0f659fe%40%3Cusers.kafka.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://www.oracle.com/security-alerts/cpujan2021.html",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rbc7642b9800249553f13457e46b813bea1aec99d2bc9106510e00ff3%40%3Ctorque-dev.db.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rbc45eb0f53fd6242af3e666c2189464f848a851d408289840cecc6e3%40%3Ccommits.zookeeper.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r7e5c10534ed06bf805473ac85e8412fe3908a8fa4cabf5027bf11220%40%3Cdev.kafka.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r7641ee788e1eb1be4bb206a7d15f8a64ec6ef23e5ec6132d5a567695%40%3Cnotifications.zookeeper.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rd5d58088812cf8e677d99b07f73c654014c524c94e7fedbdee047604%40%3Ctorque-dev.db.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r8e96c340004b7898cad3204ea51280ef6e4b553a684e1452bf1b18b1%40%3Cjira.kafka.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com/security-alerts/cpuapr2022.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://www.debian.org/security/2021/dsa-5020",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rec34b1cccf907898e7cb36051ffac3ccf1ea89d0b261a2a3b3fb267f%40%3Ccommits.zookeeper.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r8e96c340004b7898cad3204ea51280ef6e4b553a684e1452bf1b18b1%40%3Cjira.kafka.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r4d5dc9f3520071338d9ebc26f9f158a43ae28a91923d176b550a807b%40%3Cdev.hive.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com/security-alerts/cpuApr2021.html",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://www.oracle.com/security-alerts/cpuoct2020.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r2f209d271349bafd91537a558a279c08ebcff8fa3e547357d58833e6%40%3Cdev.zookeeper.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r33864a0fc171c1c4bf680645ebb6d4f8057899ab294a43e1e4fe9d04%40%3Cissues.hive.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rd55f65c6822ff235eda435d31488cfbb9aa7055cdf47481ebee777cc%40%3Cissues.zookeeper.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r393943de452406f0f6f4b3def9f8d3c071f96323c1f6ed1a098f7fe4%40%3Ctorque-dev.db.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r0df3d7a5acb98c57e64ab9266aa21eeee1d9b399addb96f9cf1cbe05%40%3Cdev.zookeeper.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r4db540cafc5d7232c62e076051ef661d37d345015b2e59b3f81a932f%40%3Cdev.hive.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r4285398e5585a0456d3d9db021a4fce6e6fcf3ec027dfa13a450ec98%40%3Cissues.zookeeper.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rbc45eb0f53fd6242af3e666c2189464f848a851d408289840cecc6e3%40%3Ccommits.zookeeper.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rd8e87c4d69df335d0ba7d815b63be8bd8a6352f429765c52eb07ddac%40%3Cissues.zookeeper.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com/security-alerts/cpuApr2021.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r65578f3761a89bc164e8964acd5d913b9f8fd997967b195a89a97ca3%40%3Cissues.hive.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r22a56beb76dd8cf18e24fda9072f1e05990f49d6439662d3782a392f%40%3Cissues.hive.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r1fc73f0e16ec2fa249d3ad39a5194afb9cc5afb4c023dc0bab5a5881%40%3Cissues.hive.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/rf1c2a81a08034c688b8f15cf58a4cfab322d00002ca46d20133bee20%40%3Cdev.kafka.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Issue Tracking",
+                            "url": "https://issues.apache.org/jira/browse/LOG4J2-2819",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r33864a0fc171c1c4bf680645ebb6d4f8057899ab294a43e1e4fe9d04%40%3Cissues.hive.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://security.netapp.com/advisory/ntap-20200504-0003/",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r2f209d271349bafd91537a558a279c08ebcff8fa3e547357d58833e6%40%3Cdev.zookeeper.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r3d1d00441c55144a4013adda74b051ae7864128ebcfb6ee9721a2eb3%40%3Cissues.hive.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r2721aba31a8562639c4b937150897e24f78f747cdbda8641c0f659fe%40%3Cusers.kafka.apache.org%3E",
+                            "source": "security@apache.org"
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "criticityLabel": "LOW",
+                    "cvssScore": 3.7,
+                    "cvssAccessVector": "NETWORK",
+                    "cvssAccessComplexity": "HIGH",
+                    "cvssAuthentication": "NONE",
+                    "cvssConfidentialityImpact": "LOW",
+                    "cvssAvailabilityImpact": "NONE",
+                    "source": "NVD",
+                    "criticityCategory": "LOW",
+                    "advisory": false,
+                    "isKev": false
+                }
+            ],
+            "components": [
+                {
+                    "id": 43874,
+                    "name": "log4j:log4j",
+                    "version": "1.2.17",
+                    "cves": [
+                        {
+                            "name": "CVE-2019-17571"
+                        },
+                        {
+                            "name": "CVE-2020-9488"
+                        },
+                        {
+                            "name": "CVE-2020-9493"
+                        },
+                        {
+                            "name": "CVE-2021-4104"
+                        },
+                        {
+                            "name": "CVE-2022-23302"
+                        },
+                        {
+                            "name": "CVE-2022-23305"
+                        },
+                        {
+                            "name": "CVE-2022-23307"
+                        },
+                        {
+                            "name": "CVE-2023-26464"
+                        }
+                    ],
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 41492,
+                    "name": "org.javassist:javassist",
+                    "version": "3.18.1-GA",
+                    "cves": [],
+                    "lifeSpan": "N/A"
+                }
+            ]
+        }
+    ],
+    "surveys": [
+        {
+            "id": 371,
+            "ref": "CAST_MAINT",
+            "name": "Software Maintenance Estimate",
+            "questions": [
+                {
+                    "label": "What is the average skill level of the development team on this type of application?",
+                    "value": "1 year",
+                    "questionId": 1000015,
+                    "choiceId": 1000068
+                },
+                {
+                    "label": "What percentage of the development effort has been spent on maintenance in the last 12 months?",
+                    "value": "5",
+                    "questionId": 1000012
+                },
+                {
+                    "label": "What is the annual staff turnover within the development team?",
+                    "value": "10%",
+                    "questionId": 1000016,
+                    "choiceId": 1000143
+                },
+                {
+                    "label": "What is the CMMI level of the organization?",
+                    "value": "Level 3",
+                    "questionId": 1000032,
+                    "choiceId": 1000257
+                },
+                {
+                    "label": "What is the percentage of change to the base code in the last 12 months?",
+                    "value": "10",
+                    "questionId": 1000121
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "ref": "CAST_BI",
+            "name": "Business Impact",
+            "questions": [
+                {
+                    "label": "What is the average number of FTE (Full Time Equivalent) resources that have worked on the source code for this application over the last 12 months?",
+                    "shortLabel": "",
+                    "value": "2.5",
+                    "questionId": 1000011
+                },
+                {
+                    "label": "Is this application aligned with the company's future technology direction?",
+                    "shortLabel": "",
+                    "value": "No",
+                    "questionId": 1000009,
+                    "choiceId": 1000043
+                },
+                {
+                    "label": "The number of major releases delivered over the last 12 months for this application?",
+                    "shortLabel": "",
+                    "value": "Less than 4",
+                    "questionId": 1000006,
+                    "choiceId": 1000452
+                },
+                {
+                    "label": "Could failure of this application lead to loss of customer confidence? Please define the level of impact.",
+                    "value": "Low",
+                    "questionId": 1000022,
+                    "choiceId": 1000220
+                },
+                {
+                    "label": "Could failure of this application lead to harm of the company's public image? Please define the level of impact.",
+                    "value": "Low",
+                    "questionId": 1000021,
+                    "choiceId": 1000000
+                },
+                {
+                    "label": "Could failure of this application lead to loss of revenue or business opportunity? Please define the level of impact.",
+                    "value": "Low",
+                    "questionId": 1000020,
+                    "choiceId": 1000406
+                },
+                {
+                    "label": "Could failure of this application lead to disruption? Please define the level of impact.",
+                    "value": "Low",
+                    "questionId": 1000019,
+                    "choiceId": 1000192
+                },
+                {
+                    "label": "What is the approximate number of end users for this application?",
+                    "shortLabel": "",
+                    "value": "100 to 500",
+                    "questionId": 1000018,
+                    "choiceId": 1000396
+                },
+                {
+                    "label": "Does the application serve internal or external users?",
+                    "value": "Internal users or business processes",
+                    "questionId": 1000017,
+                    "choiceId": 1000204
+                }
+            ]
+        },
+        {
+            "id": 373,
+            "ref": "CAST_APP",
+            "name": "Application Properties",
+            "questions": [
+                {
+                    "label": "What is the application type?",
+                    "shortLabel": "",
+                    "value": "Data Mining and Business Intelligence",
+                    "questionId": 1000004,
+                    "choiceId": 1000431
+                },
+                {
+                    "label": "Application Owner's name",
+                    "value": "Michael MULLER",
+                    "questionId": 1000002
+                },
+                {
+                    "label": "Is this application a custom application or a Commercial Off The Shelf product?",
+                    "shortLabel": "",
+                    "value": "Custom Application",
+                    "questionId": 1000427,
+                    "choiceId": 1000529
+                },
+                {
+                    "label": "In what year was this application first put into production?",
+                    "shortLabel": "",
+                    "value": "2010",
+                    "questionId": 1000033
+                }
+            ]
+        },
+        {
+            "id": 938,
+            "ref": "CAST_CLOUD",
+            "name": "Cloud Readiness Assessment",
+            "questions": [
+                {
+                    "label": "[Technical Enablers] Does this application depend on other services or applications?",
+                    "shortLabel": "",
+                    "value": "Internal services not exposed",
+                    "questionId": 10000808,
+                    "choiceId": 10006732
+                },
+                {
+                    "label": "[Technical Enablers] What is the database provider for this application?",
+                    "shortLabel": "",
+                    "value": "Standard and supported as a service in the Cloud (PaaS)",
+                    "questionId": 10000809,
+                    "choiceId": 10006734
+                },
+                {
+                    "label": "[Process Maturity] What is the average skill on Cloud technologies and practices within the development team for this application?",
+                    "shortLabel": "",
+                    "value": "Advanced skills & experience",
+                    "questionId": 10000810,
+                    "choiceId": 10006740
+                },
+                {
+                    "label": "[Business Drivers] What is the current (or expected) Service Level Agreement for this application?",
+                    "shortLabel": "",
+                    "value": "SLA with maintenance timeframe",
+                    "questionId": 10000811,
+                    "choiceId": 10006743
+                },
+                {
+                    "label": "[Process Maturity] What is the evolution model and feedback loop approach for this application?",
+                    "shortLabel": "",
+                    "value": "Continuous Delivery",
+                    "questionId": 10000800,
+                    "choiceId": 10006701
+                },
+                {
+                    "label": "[Technical Enablers] What is the current deployment platform for this application?",
+                    "shortLabel": "",
+                    "value": "Web application",
+                    "questionId": 10000801,
+                    "choiceId": 10006707
+                },
+                {
+                    "label": "[Technical Enablers] What is the current user authentication mechanism used by this application?",
+                    "shortLabel": "",
+                    "value": "Single Sign On",
+                    "questionId": 10000802,
+                    "choiceId": 10006710
+                },
+                {
+                    "label": "[Technical Enablers]  How is this application exposed to external services/applications?",
+                    "shortLabel": "",
+                    "value": "REST API exposed",
+                    "questionId": 10000803,
+                    "choiceId": 10006714
+                },
+                {
+                    "label": "[Business Drivers] How is data consumed from this application?",
+                    "shortLabel": "",
+                    "value": "Data Analytics",
+                    "questionId": 10000805,
+                    "choiceId": 10006721
+                },
+                {
+                    "label": "[Process Maturity] What is the level of deployment process automation for provisioning and configuration for this application?",
+                    "shortLabel": "",
+                    "value": "Semi-automated",
+                    "questionId": 10000806,
+                    "choiceId": 10006724
+                },
+                {
+                    "label": "[Technical Enablers] Is this application multi-tenant?",
+                    "shortLabel": "",
+                    "value": "Yes, multi-tenant front with a dedicated schema (with common database)",
+                    "questionId": 10000807,
+                    "choiceId": 10006728
+                }
+            ]
+        }
+    ],
+    "tags": [
+        {
+            "id": 256,
+            "label": "Cloud Blockers"
+        },
+        {
+            "id": 2304,
+            "label": "CR+BI+CustomCode"
+        }
+    ]
+}

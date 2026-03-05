@@ -1,0 +1,384 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PL1",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__String",
+                                    "detail": [
+                                        {
+                                            "application_id": 8355,
+                                            "application_name": "Capital Markets",
+                                            "counter": 3439.0,
+                                            "effort": 1719.5001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__BadStatement",
+                                    "detail": [
+                                        {
+                                            "application_id": 8355,
+                                            "application_name": "Capital Markets",
+                                            "counter": 6572.0,
+                                            "effort": 547.6667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__ResourceManagement",
+                                    "detail": [
+                                        {
+                                            "application_id": 8355,
+                                            "application_name": "Capital Markets",
+                                            "counter": 108.0,
+                                            "effort": 36.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PL1",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__DataRecordSize",
+                                    "detail": [
+                                        {
+                                            "application_id": 8355,
+                                            "application_name": "Capital Markets",
+                                            "counter": 437.0,
+                                            "effort": 36.416668
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__RiskyDeclaration",
+                                    "detail": [
+                                        {
+                                            "application_id": 8355,
+                                            "application_name": "Capital Markets",
+                                            "counter": 1849.0,
+                                            "effort": 616.3334
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PL1",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__MissingOnError",
+                                    "detail": [
+                                        {
+                                            "application_id": 8355,
+                                            "application_name": "Capital Markets",
+                                            "counter": 743.0,
+                                            "effort": 371.50003
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__MissingDefault",
+                                    "detail": [
+                                        {
+                                            "application_id": 8355,
+                                            "application_name": "Capital Markets",
+                                            "counter": 318.0,
+                                            "effort": 318.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PL1",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__HeterogeneousLoop",
+                                    "detail": [
+                                        {
+                                            "application_id": 8355,
+                                            "application_name": "Capital Markets",
+                                            "counter": 558.0,
+                                            "effort": 46.500004
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 8355,
+                                            "application_name": "Capital Markets",
+                                            "counter": 168.0,
+                                            "effort": 14.000001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 8355,
+                                            "application_name": "Capital Markets",
+                                            "counter": 28908.0,
+                                            "effort": 28908.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PL1",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 8355,
+                                            "application_name": "Capital Markets",
+                                            "counter": 53735.0,
+                                            "effort": 4477.917
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PL1",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 8355,
+                                            "application_name": "Capital Markets",
+                                            "counter": 101937.58,
+                                            "effort": 101937.58
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__UntagguedEnd",
+                                    "detail": [
+                                        {
+                                            "application_id": 8355,
+                                            "application_name": "Capital Markets",
+                                            "counter": 31022.0,
+                                            "effort": 2585.1667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 8355,
+                                            "application_name": "Capital Markets",
+                                            "counter": 164.0,
+                                            "effort": 1640.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PL1",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__NBMETH",
+                                    "detail": [
+                                        {
+                                            "application_id": 8355,
+                                            "application_name": "Capital Markets",
+                                            "counter": 279.99988,
+                                            "effort": 1399.9994
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 8355,
+                                            "application_name": "Capital Markets",
+                                            "counter": 816.50256,
+                                            "effort": 4082.5127
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 8355,
+                                            "application_name": "Capital Markets",
+                                            "counter": 10791.894,
+                                            "effort": 10791.894
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PL1",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__Nested",
+                                    "detail": [
+                                        {
+                                            "application_id": 8355,
+                                            "application_name": "Capital Markets",
+                                            "counter": 1.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 8355,
+                                            "application_name": "Capital Markets",
+                                            "counter": 1668.5997,
+                                            "effort": 8342.999
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PL1",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__ComplexWhen",
+                                    "detail": [
+                                        {
+                                            "application_id": 8355,
+                                            "application_name": "Capital Markets",
+                                            "counter": 1698.0,
+                                            "effort": 849.00006
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PL1__ComplexConditions",
+                                    "detail": [
+                                        {
+                                            "application_id": 8355,
+                                            "application_name": "Capital Markets",
+                                            "counter": 9.0,
+                                            "effort": 90.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

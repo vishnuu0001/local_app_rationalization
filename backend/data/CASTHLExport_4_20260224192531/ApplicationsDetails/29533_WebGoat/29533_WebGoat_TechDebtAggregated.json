@@ -1,0 +1,1734 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PLSQL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PLSQL__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 15.0,
+                                            "effort": 45.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PLSQL__NotEfficiencyType",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 6.0,
+                                            "effort": 2.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 407.0,
+                                            "effort": 1221.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ClassesComparisons",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 83.0,
+                                            "effort": 830.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__IllegalThrows",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 2.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "TSQL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "TSQL__FinalReturn",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 3.0,
+                                            "effort": 1.5000001
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JSP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 5.0,
+                                            "effort": 15.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__StarImport",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 44.0,
+                                            "effort": 44.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__UselessDependencies",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 1.0,
+                                            "effort": 0.083333336
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__FileNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 56.0,
+                                            "effort": 28.000002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__FileLocation",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 51.0,
+                                            "effort": 25.500002
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__Array",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 13.0,
+                                            "effort": 2.1666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__String",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 1490.0,
+                                            "effort": 124.16667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MissingSemicolon",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 25.0,
+                                            "effort": 2.0833335
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 64.0,
+                                            "effort": 192.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 55.369995,
+                                            "effort": 55.369995
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__Scope",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 2.0,
+                                            "effort": 0.33333334
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PLSQL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PLSQL__WithReturnOutsideExceptionHandler",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 2.0,
+                                            "effort": 20.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PLSQL__DangerousTypes",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 17.0,
+                                            "effort": 2.8333335
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingHashcode",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 2.0,
+                                            "effort": 20.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__RiskyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 256.0,
+                                            "effort": 1280.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__Instanceof",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 15.0,
+                                            "effort": 150.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JSP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__MissingErrorPage",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 15.0,
+                                            "effort": 15.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__Instanceof",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 3.0,
+                                            "effort": 30.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__TooManyJavaCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 206.0,
+                                            "effort": 206.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__StrongDataAccess",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 1279.0,
+                                            "effort": 426.33334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__Eval",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 10.0,
+                                            "effort": 100.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MissingBraces",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 33.0,
+                                            "effort": 5.5000005
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__Object",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 1.0,
+                                            "effort": 5.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__DeprecatedFeature",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 2.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadLoop",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 20.0,
+                                            "effort": 100.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__PublicAttributes",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 39.0,
+                                            "effort": 39.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingBraces2",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 99.0,
+                                            "effort": 99.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__EmptyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 49.0,
+                                            "effort": 245.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingDefault",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 1.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 10706.0,
+                                            "effort": 10706.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BugPatterns",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 1.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__PublicAttributes",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 1.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "TSQL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "TSQL__Unsecure",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 2.0,
+                                            "effort": 2.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "TSQL__Unmanaged",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 2.0,
+                                            "effort": 2.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JSP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__Unsecure",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 66.0,
+                                            "effort": 660.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__DeprecatedFeature",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 206.0,
+                                            "effort": 2060.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__MissingCatch",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 32.0,
+                                            "effort": 32.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__UntrustedData",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 6.0,
+                                            "effort": 6.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__This",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 1199.0,
+                                            "effort": 17985.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MissingIdentical",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 611.0,
+                                            "effort": 50.916668
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__DepthCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 1.0,
+                                            "effort": 5.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__EndLoopTest",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 11.0,
+                                            "effort": 110.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__AssignmentsInConditionalExpr",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 39.0,
+                                            "effort": 19.500002
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PLSQL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PLSQL__ShortIdentifiers",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 4.0,
+                                            "effort": 0.33333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PLSQL__LongLines100",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 4.0,
+                                            "effort": 0.33333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PLSQL__WithMissingParametersModes_Routines",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 2.0,
+                                            "effort": 0.33333334
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 31.0,
+                                            "effort": 31.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 246.0,
+                                            "effort": 20.500002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ClassDefinitions",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 4.0,
+                                            "effort": 20.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__StarImport",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 15.0,
+                                            "effort": 15.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 438.0,
+                                            "effort": 438.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "TSQL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "TSQL__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 1.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "TSQL__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 2.0,
+                                            "effort": 0.16666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "TSQL__UnCommentedParam",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 5.0,
+                                            "effort": 1.6666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JSP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 22.0,
+                                            "effort": 22.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__String",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 1.0,
+                                            "effort": 0.083333336
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 680.0,
+                                            "effort": 56.666668
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__SuspiciousIndentations",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 1141.0,
+                                            "effort": 95.083336
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 28.0,
+                                            "effort": 28.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 974.0,
+                                            "effort": 81.16667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__Prototype",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 784.0,
+                                            "effort": 65.333336
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 1145.0,
+                                            "effort": 95.41667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__ImmediateFuncCall",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 4.0,
+                                            "effort": 0.33333334
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PLSQL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PLSQL__MultipleInstructions",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 2.0,
+                                            "effort": 0.16666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 149.0,
+                                            "effort": 12.416667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingAutomatedDoc2",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 1001.0,
+                                            "effort": 1001.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 297.0,
+                                            "effort": 24.750002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 538.0,
+                                            "effort": 44.833336
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__MissingAutomatedDoc2",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 2.0,
+                                            "effort": 2.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "TSQL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "TSQL__UnCommentedArtifact",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 5.0,
+                                            "effort": 1.6666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JSP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 3.0,
+                                            "effort": 0.25
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__JSPComment",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 5.0,
+                                            "effort": 0.8333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__HtmlComment",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 85.0,
+                                            "effort": 14.166667
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 240.0,
+                                            "effort": 20.000002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 693.0,
+                                            "effort": 57.750004
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__MultDecl",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 201.0,
+                                            "effort": 16.75
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PLSQL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PLSQL__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 24.4,
+                                            "effort": 24.4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PLSQL__WithoutLabel_End",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 4.0,
+                                            "effort": 0.33333334
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 3029.6006,
+                                            "effort": 3029.6006
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__Ternary",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 10.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadDeclarationOrder",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 75.0,
+                                            "effort": 75.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 78.0,
+                                            "effort": 6.5000005
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 60.0,
+                                            "effort": 600.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 3.0,
+                                            "effort": 3.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "TSQL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "TSQL__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 21.2,
+                                            "effort": 21.2
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JSP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__TagFormat",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 648.0,
+                                            "effort": 54.000004
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 6.07,
+                                            "effort": 6.07
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__Ternary",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 2.0,
+                                            "effort": 2.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__WeakCommentRate2",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 6.18,
+                                            "effort": 6.18
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__BadDeclarationOrder",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 4.0,
+                                            "effort": 4.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 21.0,
+                                            "effort": 1.7500001
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 126.34003,
+                                            "effort": 126.34003
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__BadDeclarationOrder",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 65.0,
+                                            "effort": 65.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__VarDecl",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 283.0,
+                                            "effort": 47.166668
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__ApplicationGlobalVariables",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 114.0,
+                                            "effort": 19.000002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 32.0,
+                                            "effort": 320.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 35463.0,
+                                            "effort": 35463.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JSP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 109.875,
+                                            "effort": 549.375
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 19.80001,
+                                            "effort": 19.80001
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 878.11096,
+                                            "effort": 4390.5547
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 76.3,
+                                            "effort": 76.3
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 7.8300004,
+                                            "effort": 39.15
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 2.58,
+                                            "effort": 12.9
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "TSQL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "TSQL__NumberOfParameters",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 2.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JSP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__SectionNumber",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 154.0,
+                                            "effort": 770.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__NBMETH",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 898.0,
+                                            "effort": 4490.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ComplexConditions",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 2.0,
+                                            "effort": 20.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "TSQL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "TSQL__ComplexArtifact",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 5.0,
+                                            "effort": 5.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JSP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JSP__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 70.0,
+                                            "effort": 350.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "JS",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__ComplexConditions",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 1.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JS__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 29533,
+                                            "application_name": "WebGoat",
+                                            "counter": 24.0,
+                                            "effort": 120.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

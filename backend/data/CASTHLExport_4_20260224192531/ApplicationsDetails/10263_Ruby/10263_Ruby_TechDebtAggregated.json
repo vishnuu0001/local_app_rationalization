@@ -1,0 +1,516 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 10263,
+                                            "application_name": "Ruby",
+                                            "counter": 46535.0,
+                                            "effort": 139605.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__MissingBraces",
+                                    "detail": [
+                                        {
+                                            "application_id": 10263,
+                                            "application_name": "Ruby",
+                                            "counter": 8769.0,
+                                            "effort": 8769.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 10263,
+                                            "application_name": "Ruby",
+                                            "counter": 1180.1996,
+                                            "effort": 1180.1996
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__ResourceManagement",
+                                    "detail": [
+                                        {
+                                            "application_id": 10263,
+                                            "application_name": "Ruby",
+                                            "counter": 187.0,
+                                            "effort": 93.50001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 10263,
+                                            "application_name": "Ruby",
+                                            "counter": 648.01996,
+                                            "effort": 3240.0999
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__ResourceManagement2",
+                                    "detail": [
+                                        {
+                                            "application_id": 10263,
+                                            "application_name": "Ruby",
+                                            "counter": 97.0,
+                                            "effort": 48.500004
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__MacroDefinitions",
+                                    "detail": [
+                                        {
+                                            "application_id": 10263,
+                                            "application_name": "Ruby",
+                                            "counter": 162.0,
+                                            "effort": 324.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__MissingBraces2",
+                                    "detail": [
+                                        {
+                                            "application_id": 10263,
+                                            "application_name": "Ruby",
+                                            "counter": 249.0,
+                                            "effort": 41.500004
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__Data",
+                                    "detail": [
+                                        {
+                                            "application_id": 10263,
+                                            "application_name": "Ruby",
+                                            "counter": 3717.0,
+                                            "effort": 55755.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__MissingBreakInCasePath",
+                                    "detail": [
+                                        {
+                                            "application_id": 10263,
+                                            "application_name": "Ruby",
+                                            "counter": 250.0,
+                                            "effort": 20.833334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__RiskyFunctionCalls",
+                                    "detail": [
+                                        {
+                                            "application_id": 10263,
+                                            "application_name": "Ruby",
+                                            "counter": 54.0,
+                                            "effort": 540.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__MacroUnparenthesedParams",
+                                    "detail": [
+                                        {
+                                            "application_id": 10263,
+                                            "application_name": "Ruby",
+                                            "counter": 409.0,
+                                            "effort": 409.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__MissingDefault",
+                                    "detail": [
+                                        {
+                                            "application_id": 10263,
+                                            "application_name": "Ruby",
+                                            "counter": 353.0,
+                                            "effort": 353.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__UninitializedLocalVariables",
+                                    "detail": [
+                                        {
+                                            "application_id": 10263,
+                                            "application_name": "Ruby",
+                                            "counter": 7939.0,
+                                            "effort": 1323.1667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__AssignmentsInConditionalExpr",
+                                    "detail": [
+                                        {
+                                            "application_id": 10263,
+                                            "application_name": "Ruby",
+                                            "counter": 427.0,
+                                            "effort": 213.50002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__BugPatterns",
+                                    "detail": [
+                                        {
+                                            "application_id": 10263,
+                                            "application_name": "Ruby",
+                                            "counter": 129.0,
+                                            "effort": 129.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 10263,
+                                            "application_name": "Ruby",
+                                            "counter": 208.0,
+                                            "effort": 208.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 10263,
+                                            "application_name": "Ruby",
+                                            "counter": 1102.0,
+                                            "effort": 91.833336
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 10263,
+                                            "application_name": "Ruby",
+                                            "counter": 325.0,
+                                            "effort": 27.083334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 10263,
+                                            "application_name": "Ruby",
+                                            "counter": 5285.0,
+                                            "effort": 440.4167
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 10263,
+                                            "application_name": "Ruby",
+                                            "counter": 987.0,
+                                            "effort": 987.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 10263,
+                                            "application_name": "Ruby",
+                                            "counter": 27.0,
+                                            "effort": 2.25
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 10263,
+                                            "application_name": "Ruby",
+                                            "counter": 2996.0,
+                                            "effort": 249.66669
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__Ternary",
+                                    "detail": [
+                                        {
+                                            "application_id": 10263,
+                                            "application_name": "Ruby",
+                                            "counter": 1120.0,
+                                            "effort": 1120.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 10263,
+                                            "application_name": "Ruby",
+                                            "counter": 31482.781,
+                                            "effort": 31482.781
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__PreprocDirective",
+                                    "detail": [
+                                        {
+                                            "application_id": 10263,
+                                            "application_name": "Ruby",
+                                            "counter": 4580.0,
+                                            "effort": 4580.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 10263,
+                                            "application_name": "Ruby",
+                                            "counter": 106.0,
+                                            "effort": 1060.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__OtherLanguage",
+                                    "detail": [
+                                        {
+                                            "application_id": 10263,
+                                            "application_name": "Ruby",
+                                            "counter": 13.0,
+                                            "effort": 195.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 10263,
+                                            "application_name": "Ruby",
+                                            "counter": 271.828,
+                                            "effort": 1359.14
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 10263,
+                                            "application_name": "Ruby",
+                                            "counter": 3048.4893,
+                                            "effort": 3048.4893
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 10263,
+                                            "application_name": "Ruby",
+                                            "counter": 648.01996,
+                                            "effort": 3240.0999
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__ComplexConditions",
+                                    "detail": [
+                                        {
+                                            "application_id": 10263,
+                                            "application_name": "Ruby",
+                                            "counter": 36.0,
+                                            "effort": 360.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CCPP__ComplexOperands",
+                                    "detail": [
+                                        {
+                                            "application_id": 10263,
+                                            "application_name": "Ruby",
+                                            "counter": 35.0,
+                                            "effort": 35.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

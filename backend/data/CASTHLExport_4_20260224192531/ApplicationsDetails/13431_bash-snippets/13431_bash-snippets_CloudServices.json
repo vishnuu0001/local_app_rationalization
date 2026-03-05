@@ -1,0 +1,96 @@
+[
+    {
+        "platformId": "aws",
+        "platformName": "Amazon Web Services",
+        "platformUrl": "https://www.aws.com",
+        "recommendations": [
+            {
+                "id": "aws_batch",
+                "name": "AWS Batch",
+                "category": "Compute",
+                "description": "Fully managed batch processing at any scale",
+                "url": "https://aws.amazon.com/batch/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Getting Started with AWS Batch",
+                        "url": "https://aws.amazon.com/batch/getting-started/?nc=sn&loc=4"
+                    }
+                ],
+                "considerations": "For your ETL use cases, you might consider using AWS Glue. For other batch-oriented use cases, including some ETL use cases, AWS Batch might be a better fit",
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "KSH",
+                        "details": {
+                            "loc": 2851.0,
+                            "label": "Ksh"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "platformId": "azure",
+        "platformName": "Microsoft Azure",
+        "platformUrl": "https://azure.microsoft.com",
+        "recommendations": [
+            {
+                "id": "azure_batch",
+                "name": "Azure Batch",
+                "category": "Compute",
+                "description": "Cloud-scale job scheduling and compute management",
+                "url": "https://azure.microsoft.com/en-us/services/batch/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Azure Batch documentation",
+                        "url": "https://docs.microsoft.com/en-us/azure/batch/"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "KSH",
+                        "details": {
+                            "loc": 2851.0,
+                            "label": "Ksh"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "platformId": "ibm",
+        "platformName": "IBM Cloud",
+        "platformUrl": "https://www.ibm.com/cloud",
+        "recommendations": [
+            {
+                "id": "ibm_workloadautomation",
+                "name": "IBM App Connect",
+                "category": "Integration",
+                "description": "Optimize and automate complex workloads for greater IT efficiency",
+                "url": "https://www.ibm.com/cloud/app-connect",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "IBM Workload Automation: Resources",
+                        "url": "https://www.ibm.com/products/workload-automation/resources"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "KSH",
+                        "details": {
+                            "loc": 2851.0,
+                            "label": "Ksh"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]

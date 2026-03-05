@@ -1,0 +1,1932 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 728.0,
+                                            "effort": 2184.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ClassesComparisons",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 5.0,
+                                            "effort": 50.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__IllegalThrows",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 71.0,
+                                            "effort": 355.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__TmpFileName",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 24.0,
+                                            "effort": 240.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__VarDecl",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 937.0,
+                                            "effort": 156.16667
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 89247.0,
+                                            "effort": 267741.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__IllegalException",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 13.0,
+                                            "effort": 2.1666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__RiskyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 91.0,
+                                            "effort": 455.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__UnecessaryMethod",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 43.0,
+                                            "effort": 21.500002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__DeprecatedFeature",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 3.0,
+                                            "effort": 0.5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__StarImport",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 486.0,
+                                            "effort": 486.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__UnusedImport",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 11563.0,
+                                            "effort": 963.5834
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__Finalize",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 1.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 1.0,
+                                            "effort": 3.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 0.7,
+                                            "effort": 0.7
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "OBJCCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 48.0,
+                                            "effort": 144.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 9.0,
+                                            "effort": 9.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__RiskyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 18.0,
+                                            "effort": 90.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__Instanceof",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 10.0,
+                                            "effort": 100.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__OverloadEquals",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 2.0,
+                                            "effort": 20.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__Intrinsics",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 233.0,
+                                            "effort": 233.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 3.7999995,
+                                            "effort": 3.7999995
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__SuspLastCase",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 2.0,
+                                            "effort": 0.33333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__Background",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 3.0,
+                                            "effort": 0.5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__Pipes",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 251.0,
+                                            "effort": 41.833336
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__MultipleReturn",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 2207.0,
+                                            "effort": 1103.5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__EmptyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 51.0,
+                                            "effort": 255.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__UnnecessaryConcat",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 1189.0,
+                                            "effort": 99.083336
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__MagicMethods",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 64.0,
+                                            "effort": 21.333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__ConstructorReturn",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 49.0,
+                                            "effort": 12.250001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__UnexpectedGetter",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 95.0,
+                                            "effort": 47.500004
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__Inheritance",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 258.0,
+                                            "effort": 43.000004
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__ConcatInLoop",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 444.0,
+                                            "effort": 222.00002
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__MissingBraces2",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 5.0,
+                                            "effort": 0.8333334
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "OBJCCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__MissingBraces2",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 19.0,
+                                            "effort": 19.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__Data",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 8.0,
+                                            "effort": 120.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__BadInstanciation",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 7.0,
+                                            "effort": 3.5000002
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__PublicAttributes",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 98.0,
+                                            "effort": 98.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingBraces2",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 2.0,
+                                            "effort": 2.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__EmptyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 47.0,
+                                            "effort": 235.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingDefault",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 4.0,
+                                            "effort": 4.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 9138.0,
+                                            "effort": 9138.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingBreakInSwitch",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 2.0,
+                                            "effort": 0.16666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__ExitNoValue",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 1.0,
+                                            "effort": 0.16666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__MissingDefault",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 13.0,
+                                            "effort": 13.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__ExplicitExit",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 3.0,
+                                            "effort": 0.5
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__UnusedArg",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 2025.0,
+                                            "effort": 168.75002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__SuspiciousLoop",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 4.0,
+                                            "effort": 4.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__UnusedVar",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 15757.0,
+                                            "effort": 15757.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__ImportConflict",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 295.0,
+                                            "effort": 49.166668
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__FileGlobalVariables",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 2459.0,
+                                            "effort": 2459.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__UnsignificantReturn",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 2357.0,
+                                            "effort": 392.83334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__StringFormat",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 4667.0,
+                                            "effort": 388.9167
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__NamingConflict",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 524.0,
+                                            "effort": 87.333336
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__PublicAttributes",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 3.0,
+                                            "effort": 3.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "OBJCCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__MacroDefinitions",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 3.0,
+                                            "effort": 6.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__UninitializedLocalVariables",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 17.0,
+                                            "effort": 2.8333335
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__NSLog",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 12.0,
+                                            "effort": 2.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 584.0,
+                                            "effort": 48.666668
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ClassDefinitions",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 41.0,
+                                            "effort": 205.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 305.0,
+                                            "effort": 305.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 24.0,
+                                            "effort": 24.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__ShortVarName",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 11.0,
+                                            "effort": 1.8333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 165.0,
+                                            "effort": 165.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__String",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 4005.0,
+                                            "effort": 333.75003
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 2694.0,
+                                            "effort": 224.50002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 1226048.0,
+                                            "effort": 204341.34
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 39804.0,
+                                            "effort": 3317.0002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__ArtifactSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 4411.0,
+                                            "effort": 367.58334
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 3.0,
+                                            "effort": 0.25
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 5.0,
+                                            "effort": 0.4166667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 2.0,
+                                            "effort": 2.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "OBJCCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 11.0,
+                                            "effort": 11.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 31.0,
+                                            "effort": 2.5833335
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__ClassDefinitions",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 6.0,
+                                            "effort": 30.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 25.0,
+                                            "effort": 2.0833335
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 32.0,
+                                            "effort": 32.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 3.0,
+                                            "effort": 0.25
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MissingAutomatedDoc2",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 1342.0,
+                                            "effort": 1342.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 241.0,
+                                            "effort": 20.083334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 94.0,
+                                            "effort": 7.833334
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 1443.2996,
+                                            "effort": 1443.2996
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__ExportNames",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 14.0,
+                                            "effort": 7.0000005
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__LocalNames",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 896.0,
+                                            "effort": 149.33334
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__RangeBoundary",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 170.0,
+                                            "effort": 28.333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__AutomaticNumbering",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 1197.0,
+                                            "effort": 99.75001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 2446.0,
+                                            "effort": 203.83334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__Import_Alias",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 5.0,
+                                            "effort": 0.8333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 2589.0,
+                                            "effort": 25890.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__ConditionReadability",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 127.0,
+                                            "effort": 42.333336
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__MissingAutomatedDoc2",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 8.0,
+                                            "effort": 8.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__BadDeclarationOrder",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 24.0,
+                                            "effort": 24.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 1.0,
+                                            "effort": 0.083333336
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "OBJCCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 53.0,
+                                            "effort": 4.416667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__BadDeclarationOrder",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 2.0,
+                                            "effort": 2.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 4.0,
+                                            "effort": 0.33333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__BoxedOrLiteral",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 10.0,
+                                            "effort": 1.6666667
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__Ternary",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 74.0,
+                                            "effort": 74.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 1902.4,
+                                            "effort": 1902.4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadDeclarationOrder",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 66.0,
+                                            "effort": 66.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 14.0,
+                                            "effort": 1.1666667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 22.0,
+                                            "effort": 220.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 25.0,
+                                            "effort": 2.0833335
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__ContinuationChar",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 67.0,
+                                            "effort": 11.166667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 25.0,
+                                            "effort": 250.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 123137.664,
+                                            "effort": 123137.664
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__Instanceof",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 247.0,
+                                            "effort": 2470.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__ComparisonToSingleton",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 3.0,
+                                            "effort": 0.5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__SuspiciousIndentations",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 14856.0,
+                                            "effort": 1238.0001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__MultilineInstruction",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 4122.0,
+                                            "effort": 343.50003
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 27.8,
+                                            "effort": 27.8
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "OBJCCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 336.80014,
+                                            "effort": 336.80014
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__PreprocDirective",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 9.0,
+                                            "effort": 9.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__NegativeComparison",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 37.0,
+                                            "effort": 12.333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__Block",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 2.0,
+                                            "effort": 0.33333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 4.0,
+                                            "effort": 40.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 32540.0,
+                                            "effort": 32540.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 22.8,
+                                            "effort": 114.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__LocalVar",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 58177.0,
+                                            "effort": 9696.167
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 13785.715,
+                                            "effort": 68928.58
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 1.6500001,
+                                            "effort": 1.6500001
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "OBJCCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 2.312,
+                                            "effort": 11.56
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 48.15,
+                                            "effort": 48.15
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "JAVA",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 5.6800003,
+                                            "effort": 28.400002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "JAVA__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 2.4999998,
+                                            "effort": 12.499999
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__MethodsWithTooMuchParameters",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 4734.0,
+                                            "effort": 23670.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 90489.0,
+                                            "effort": 452445.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "OBJCCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 0.76,
+                                            "effort": 3.8
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__Include",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 4.0,
+                                            "effort": 4.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "KSH",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "KSH__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 2.525,
+                                            "effort": 12.625
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "PYTHON",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__ComplexClasses",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 22383.0,
+                                            "effort": 11191.501
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PYTHON__ComplexConditions",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 42.0,
+                                            "effort": 420.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "OBJCCPP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__NBATTRIB",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 28.0,
+                                            "effort": 140.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "OBJCCPP__NBMETH",
+                                    "detail": [
+                                        {
+                                            "application_id": 13432,
+                                            "application_name": "tensorflow",
+                                            "counter": 97.0,
+                                            "effort": 485.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

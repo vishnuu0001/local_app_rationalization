@@ -1,0 +1,1662 @@
+{
+    "snapshotLabel": "2019-01-24-Custom_Indicators on Cust Facing Apps_genie",
+    "snapshotDate": 1548910800000,
+    "applicationCodeLines": null,
+    "applicationFiles": 945.0,
+    "thirdPartyCodeLines": null,
+    "thirdPartyFiles": 547.0,
+    "thirdParties": [
+        {
+            "id": 24194,
+            "componentId": "moment.npm",
+            "name": "moment.npm",
+            "version": "2.13.0",
+            "release": 1460965290000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "2.30.1",
+            "lastRelease": 1703673523000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "moment",
+                "product": "moment",
+                "version": "2.13.0",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2017-18214",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-18214",
+                        "description": "The moment module before 2.19.3 for Node.js is prone to a regular expression denial of service via a crafted date string, a different vulnerability than CVE-2016-4055.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:momentjs:moment",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2022-24785",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-24785",
+                        "description": "Moment.js is a JavaScript date library for parsing, validating, manipulating, and formatting dates. A path traversal vulnerability impacts npm (server) users of Moment.js between versions 1.0.1 and 2.29.1, especially if a user-provided locale string is directly used to switch moment locale. This problem is patched in 2.29.2, and the patch can be applied to all affected versions. As a workaround, sanitize the user-provided locale name before passing it to Moment.js.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:momentjs:moment",
+                        "isKev": false
+                    },
+                    {
+                        "name": "GMS-2017-332",
+                        "link": null,
+                        "description": "Moment is vulnerable to a low severity regular expression denial of service vulnerability.",
+                        "cweId": "CWE-937",
+                        "cweLabel": null,
+                        "cvssScore": 0.0,
+                        "criticity": "UNKNOWN",
+                        "cpe": null,
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "2.19.3",
+            "safestVersion": "2.29.4"
+        },
+        {
+            "id": 47567,
+            "componentId": "jquery.npm",
+            "name": "jquery.npm",
+            "version": "3.3.1",
+            "release": 1516469231000,
+            "languages": "javascript",
+            "status": "whitelist",
+            "lifeSpan": "Active",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "4.0.0",
+            "lastRelease": 1768696093000,
+            "nbVersionPreviousYear": 3,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "jquery",
+                "product": "jquery",
+                "version": "3.3.1",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2007-2379",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2007-2379",
+                        "description": "The jQuery framework exchanges data using JavaScript Object Notation (JSON) without an associated protection scheme, which allows remote attackers to obtain the data via a web page that retrieves the data through a URL in the SRC attribute of a SCRIPT element and captures the data using other JavaScript code, aka \"JavaScript Hijacking.\"",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.0,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:jquery:jquery",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2019-11358",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+                        "description": "jQuery before 3.4.0, as used in Drupal, Backdrop CMS, and other products, mishandles jQuery.extend(true, {}, ...) because of Object.prototype pollution. If an unsanitized source object contained an enumerable __proto__ property, it could extend the native Object.prototype.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.1,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:jquery:jquery",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2020-11022",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-11022",
+                        "description": "In jQuery versions greater than or equal to 1.2 and before 3.5.0, passing HTML from untrusted sources - even after sanitizing it - to one of jQuery's DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted code. This problem is patched in jQuery 3.5.0.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.9,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:jquery:jquery",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2020-11023",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-11023",
+                        "description": "In jQuery versions greater than or equal to 1.0.3 and before 3.5.0, passing HTML containing <option> elements from untrusted sources - even after sanitizing it - to one of jQuery's DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted code. This problem is patched in jQuery 3.5.0.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.9,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:jquery:jquery",
+                        "isKev": true
+                    },
+                    {
+                        "name": "CVE-2020-23064",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-23064",
+                        "description": "Cross Site Scripting vulnerability in jQuery 2.2.0 through 3.x before 3.5.0 allows a remote attacker to execute arbitrary code via the <options> element.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.1,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:jquery:jquery",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "3.4.0",
+            "safestVersion": "3.5.0"
+        },
+        {
+            "id": 51576,
+            "componentId": "react-router.npm",
+            "name": "react-router.npm",
+            "version": "2.3.0",
+            "release": 1461016064000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "0.0.0-nightly-3f168fb75-20260206",
+            "lastRelease": 1770362639000,
+            "nbVersionPreviousYear": 431,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "react-router",
+                "product": "react-router",
+                "version": "2.3.0",
+                "vulnerabilities": [
+                    {
+                        "name": "GHSA-f46r-rw29-r322",
+                        "link": null,
+                        "description": "This advisory is a duplicate of CVE-2025-43864 and has been removed.",
+                        "cweId": "CWE-755",
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": null,
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "6.30.2",
+            "safestVersion": "6.30.2"
+        },
+        {
+            "id": 51577,
+            "componentId": "prop-types.npm",
+            "name": "prop-types.npm",
+            "version": "15.5.10",
+            "release": 1494600603000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 3,
+                    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "15.8.1",
+            "lastRelease": 1641341313000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51578,
+            "componentId": "rc-calendar.npm",
+            "name": "rc-calendar.npm",
+            "version": "7.5.2",
+            "release": 1481912202000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "9.15.11",
+            "lastRelease": 1591435779000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51579,
+            "componentId": "react-select.npm",
+            "name": "react-select.npm",
+            "version": "1.0.0",
+            "release": 1511429092000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "5.10.2",
+            "lastRelease": 1752238166000,
+            "nbVersionPreviousYear": 3,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51580,
+            "componentId": "react-dom.npm",
+            "name": "react-dom.npm",
+            "version": "15.0.1",
+            "release": 1460139843000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 3,
+                    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "0.0.0-experimental-4842fbea-20260217",
+            "lastRelease": 1771432488000,
+            "nbVersionPreviousYear": 522,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51581,
+            "componentId": "react-copy-to-clipboard.npm",
+            "name": "react-copy-to-clipboard.npm",
+            "version": "4.1.0",
+            "release": 1460473042000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "5.1.0",
+            "lastRelease": 1649854933000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51582,
+            "componentId": "rc-time-picker.npm",
+            "name": "rc-time-picker.npm",
+            "version": "2.2.1",
+            "release": 1478846602000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "3.7.3",
+            "lastRelease": 1576466391000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51584,
+            "componentId": "react-cookie.npm",
+            "name": "react-cookie.npm",
+            "version": "0.4.5",
+            "release": 1455618092000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "8.0.1",
+            "lastRelease": 1742326981000,
+            "nbVersionPreviousYear": 2,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51585,
+            "componentId": "filesize.npm",
+            "name": "filesize.npm",
+            "version": "3.3.0",
+            "release": 1461411829000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 3,
+                    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "11.0.13",
+            "lastRelease": 1758482810000,
+            "nbVersionPreviousYear": 14,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51586,
+            "componentId": "react-modal.npm",
+            "name": "react-modal.npm",
+            "version": "1.4.0",
+            "release": 1467313934000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "3.16.3",
+            "lastRelease": 1734442817000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51587,
+            "componentId": "install.npm",
+            "name": "install.npm",
+            "version": "0.6.2",
+            "release": 1462207507000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "0.13.0",
+            "lastRelease": 1562169080000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51588,
+            "componentId": "react.npm",
+            "name": "react.npm",
+            "version": "15.1.0",
+            "release": 1463785586000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 3,
+                    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "0.0.0-experimental-4842fbea-20260217",
+            "lastRelease": 1771432480000,
+            "nbVersionPreviousYear": 522,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51589,
+            "componentId": "create-react-class.npm",
+            "name": "create-react-class.npm",
+            "version": "15.5.3",
+            "release": 1494388759000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 3,
+                    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "15.7.0",
+            "lastRelease": 1602815256000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 71959,
+            "componentId": "com.netflix.genie:genie-security",
+            "name": "com.netflix.genie:genie-security",
+            "version": "4.0.0-rc.3",
+            "release": 1553105700000,
+            "languages": "java",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "4.0.0-rc.31",
+            "lastRelease": 1568237040000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 1165.0,
+            "numberOfFiles": 24.0,
+            "cwes": []
+        },
+        {
+            "id": 71961,
+            "componentId": "com.netflix.genie:genie-client",
+            "name": "com.netflix.genie:genie-client",
+            "version": "4.0.0-rc.3",
+            "release": 1553105640000,
+            "languages": "java",
+            "lifeSpan": "Active",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "5.1.1",
+            "lastRelease": 1754500800000,
+            "nbVersionPreviousYear": 16,
+            "numberOfCodeLines": 1610.0,
+            "numberOfFiles": 26.0,
+            "cwes": []
+        },
+        {
+            "id": 558768,
+            "componentId": "com.netflix.genie:genie-web",
+            "name": "com.netflix.genie:genie-web",
+            "version": "4.0.0-rc.3",
+            "release": 1553105940000,
+            "languages": "java",
+            "lifeSpan": "Active",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "5.1.1",
+            "lastRelease": 1754500800000,
+            "nbVersionPreviousYear": 16,
+            "numberOfCodeLines": 15693.0,
+            "numberOfFiles": 262.0,
+            "cve": {
+                "vendor": "com.netflix.genie",
+                "product": "genie-web",
+                "version": "4.0.0-rc.3",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2024-4701",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-4701",
+                        "description": "A path traversal issue potentially leading to remote code execution in Genie for all versions prior to 4.3.18",
+                        "cweId": "CWE-22",
+                        "cweLabel": null,
+                        "cvssScore": 9.9,
+                        "criticity": "CRITICAL",
+                        "cpe": null,
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": []
+        },
+        {
+            "id": 558770,
+            "componentId": "com.netflix.genie:genie-common-internal",
+            "name": "com.netflix.genie:genie-common-internal",
+            "version": "4.0.0-rc.1",
+            "release": 1540524829000,
+            "languages": "java",
+            "lifeSpan": "Active",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "4.3.3",
+            "lastRelease": 1676591221000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 2047.0,
+            "numberOfFiles": 51.0,
+            "cwes": []
+        },
+        {
+            "id": 558772,
+            "componentId": "Netflix/genie",
+            "name": "Netflix/genie",
+            "version": "v4.0.0-rc.3",
+            "release": 1552590675000,
+            "languages": "java",
+            "lifeSpan": "Active",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "v5.1.1",
+            "lastRelease": 1754437591000,
+            "nbVersionPreviousYear": 9,
+            "numberOfCodeLines": 2492.0,
+            "numberOfFiles": 15.0,
+            "cve": {
+                "vendor": "Netflix",
+                "product": "genie",
+                "version": "v4.0.0-rc.3",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2024-4701",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-4701",
+                        "description": "A path traversal issue potentially leading to remote code execution in Genie for all versions prior to 4.3.18",
+                        "cweId": "CWE-22",
+                        "cweLabel": null,
+                        "cvssScore": 9.9,
+                        "criticity": "CRITICAL",
+                        "cpe": null,
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "v4.3.18",
+            "safestVersion": "v4.3.18"
+        },
+        {
+            "id": 558773,
+            "componentId": "com.netflix.genie:genie-test-web",
+            "name": "com.netflix.genie:genie-test-web",
+            "version": "4.0.0-rc.1",
+            "release": 1540510380000,
+            "languages": "java",
+            "lifeSpan": "Active",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "5.1.1",
+            "lastRelease": 1754500800000,
+            "nbVersionPreviousYear": 16,
+            "numberOfCodeLines": 13.0,
+            "numberOfFiles": 2.0,
+            "cwes": []
+        },
+        {
+            "id": 558780,
+            "componentId": "com.netflix.genie:genie-app",
+            "name": "com.netflix.genie:genie-app",
+            "version": "4.0.0-rc.1",
+            "release": 1540510380000,
+            "languages": "java",
+            "lifeSpan": "Active",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "5.1.1",
+            "lastRelease": 1754500800000,
+            "nbVersionPreviousYear": 16,
+            "numberOfCodeLines": 13.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 558788,
+            "componentId": "com.netflix.genie:genie-common",
+            "name": "com.netflix.genie:genie-common",
+            "version": "4.0.0-rc.1",
+            "release": 1540524793000,
+            "languages": "java",
+            "lifeSpan": "Active",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "4.3.3",
+            "lastRelease": 1676591198000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 1272.0,
+            "numberOfFiles": 34.0,
+            "cwes": []
+        },
+        {
+            "id": 558789,
+            "componentId": "com.netflix.genie:genie-agent",
+            "name": "com.netflix.genie:genie-agent",
+            "version": "4.0.0-rc.3",
+            "release": 1553105460000,
+            "languages": "java",
+            "lifeSpan": "Active",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "5.1.1",
+            "lastRelease": 1754500800000,
+            "nbVersionPreviousYear": 16,
+            "numberOfCodeLines": 5274.0,
+            "numberOfFiles": 111.0,
+            "cwes": []
+        },
+        {
+            "id": 558796,
+            "componentId": "com.netflix.genie:genie-war",
+            "name": "com.netflix.genie:genie-war",
+            "version": "4.0.0-rc.1",
+            "release": 1540510380000,
+            "languages": "java",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "3.3.22",
+            "lastRelease": 1612207620000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 16.0,
+            "numberOfFiles": 2.0,
+            "cwes": []
+        },
+        {
+            "id": 558802,
+            "componentId": "com.netflix.genie:genie-ui",
+            "name": "com.netflix.genie:genie-ui",
+            "version": "4.0.0-rc.1",
+            "release": 1540510380000,
+            "languages": "java",
+            "lifeSpan": "Active",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "5.1.1",
+            "lastRelease": 1754500800000,
+            "nbVersionPreviousYear": 16,
+            "numberOfCodeLines": 42.0,
+            "numberOfFiles": 3.0,
+            "cwes": []
+        },
+        {
+            "id": 558831,
+            "componentId": "com.netflix.genie:genie-agent-app",
+            "name": "com.netflix.genie:genie-agent-app",
+            "version": "4.0.0-rc.2",
+            "release": 1544467380000,
+            "languages": "java",
+            "lifeSpan": "Active",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "5.1.1",
+            "lastRelease": 1754500800000,
+            "nbVersionPreviousYear": 16,
+            "numberOfCodeLines": 21.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        }
+    ],
+    "partialComponents": [
+        {
+            "name": "Jquery",
+            "technology": "JavaScript",
+            "type": "Web & Mobile applications",
+            "versions": [
+                "3.3.1"
+            ],
+            "license": "MIT",
+            "editor": "http://www.jquery.com",
+            "description": "jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.",
+            "dependencyLevel": null
+        },
+        {
+            "name": "commons-codec",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "Apache",
+            "editor": "https://mvnrepository.com/artifact/commons-codec/commons-codec",
+            "description": "The Apache Commons Codec package contains simple encoder and decoders for",
+            "dependencyLevel": null
+        },
+        {
+            "name": "spring-boot-starter-tomcat",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "spring-boot-starter-hateoas",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "json-patch",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "jackson-databind",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "spring-boot-starter-actuator",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "genie-proto",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "converter-jackson",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "protobuf-java",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "spring-security-oauth2-autoconfigure",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "spring-retry",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "javax.el",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "spring-boot-starter-web",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "genie-security",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "spring-boot-starter-security",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "genie-agent",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "spring-integration-zookeeper",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "grpc-netty",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "spring-cloud-starter-zookeeper",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "hibernate-validator",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "spring-context",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "spring-session-core",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "spring-boot-starter-thymeleaf",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "spring-boot-starter",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "spring-boot-starter-mail",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "genie-web",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "jcommander",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "grpc-stub",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "jackson-datatype-jdk8",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "spring-security-saml2-core",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "springfox-swagger2",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "spring-boot-starter-data-redis",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "spring-boot-starter-test",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "jose4j",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "javax.el-api",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "spring-statemachine-core",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "spring-security-jwt",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "aws-java-sdk-sts",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "genie-common-internal",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "spring-boot-starter-data-jpa",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "spring-cloud-starter-aws",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "genie-test",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "guava",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "commons-configuration2",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "slf4j-api",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "okhttp",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "commons-exec",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "retrofit",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "commons-beanutils",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "Apache",
+            "editor": "https://mvnrepository.com/artifact/commons-beanutils/commons-beanutils",
+            "description": "Apache Commons BeanUtils provides an easy-to-use but flexible wrapper around reflection and introspection.",
+            "dependencyLevel": null
+        },
+        {
+            "name": "commons-validator",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "httpclient",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "commons-lang3",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "grpc-server-spring-boot-autoconfigure",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "grpc-protobuf",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "JPA",
+            "technology": "Java",
+            "type": "Java Specification Requests",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "genie-common",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "spring-boot-starter-aop",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "genie-common-external",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "grpc-server-spring-boot-starter",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "spring-security-oauth2",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "javax.persistence-api",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "springfox-bean-validators",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "jackson-datatype-jsr310",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "genie-ui",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "spring-boot-starter-integration",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "commons-io",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "Apache",
+            "editor": "https://mvnrepository.com/artifact/commons-io/commons-io",
+            "description": "The Apache Commons IO library contains utility classes, stream implementations, file filters,",
+            "dependencyLevel": null
+        },
+        {
+            "name": "commons-httpclient",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "Apache",
+            "editor": "https://mvnrepository.com/artifact/commons-httpclient/commons-httpclient",
+            "description": "The HttpClient component supports the client-side of RFC 1945 (HTTP/1.0) and RFC 2616 (HTTP/1.1) , several related specifications (RFC 2109 (Cookies) , RFC 2617 (HTTP Authentication) , etc.), and provides a framework by which new request types (methods) or HTTP extensions can be created easily.",
+            "dependencyLevel": null
+        },
+        {
+            "name": "flyway-core",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "springfox-swagger-ui",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "Hibernate",
+            "technology": "Java",
+            "type": "Library",
+            "versions": [
+                "1.x"
+            ],
+            "license": "LGPL 2.1",
+            "editor": "http://hibernate.org/",
+            "description": "Hibernate\u00ef\u00bf\u00bdan open source Java persistence framework project",
+            "dependencyLevel": null
+        },
+        {
+            "name": "janino",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        }
+    ]
+}

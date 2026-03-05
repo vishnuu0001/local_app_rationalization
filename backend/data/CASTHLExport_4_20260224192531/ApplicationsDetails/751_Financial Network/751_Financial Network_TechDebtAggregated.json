@@ -1,0 +1,372 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "ABAP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "ABAP__Query",
+                                    "detail": [
+                                        {
+                                            "application_id": 751,
+                                            "application_name": "Financial Network",
+                                            "counter": 72.0,
+                                            "effort": 720.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "ABAP__NumberOfColumns",
+                                    "detail": [
+                                        {
+                                            "application_id": 751,
+                                            "application_name": "Financial Network",
+                                            "counter": 4.0,
+                                            "effort": 40.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "ABAP__NativeSql",
+                                    "detail": [
+                                        {
+                                            "application_id": 751,
+                                            "application_name": "Financial Network",
+                                            "counter": 47.0,
+                                            "effort": 141.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "ABAP__EmptyProgram",
+                                    "detail": [
+                                        {
+                                            "application_id": 751,
+                                            "application_name": "Financial Network",
+                                            "counter": 1.0,
+                                            "effort": 1.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "ABAP__EmptyArtifact",
+                                    "detail": [
+                                        {
+                                            "application_id": 751,
+                                            "application_name": "Financial Network",
+                                            "counter": 114.0,
+                                            "effort": 57.000004
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "ABAP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "ABAP__BadSelect",
+                                    "detail": [
+                                        {
+                                            "application_id": 751,
+                                            "application_name": "Financial Network",
+                                            "counter": 65.0,
+                                            "effort": 975.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "ABAP__System",
+                                    "detail": [
+                                        {
+                                            "application_id": 751,
+                                            "application_name": "Financial Network",
+                                            "counter": 33.0,
+                                            "effort": 165.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "ABAP__BadLoop",
+                                    "detail": [
+                                        {
+                                            "application_id": 751,
+                                            "application_name": "Financial Network",
+                                            "counter": 20.0,
+                                            "effort": 100.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "ABAP__ValuePassingParameter",
+                                    "detail": [
+                                        {
+                                            "application_id": 751,
+                                            "application_name": "Financial Network",
+                                            "counter": 8.0,
+                                            "effort": 16.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "ABAP__SubQuery",
+                                    "detail": [
+                                        {
+                                            "application_id": 751,
+                                            "application_name": "Financial Network",
+                                            "counter": 41.0,
+                                            "effort": 410.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "ABAP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "ABAP__StandardTableModification",
+                                    "detail": [
+                                        {
+                                            "application_id": 751,
+                                            "application_name": "Financial Network",
+                                            "counter": 34.0,
+                                            "effort": 34.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "ABAP__Nested",
+                                    "detail": [
+                                        {
+                                            "application_id": 751,
+                                            "application_name": "Financial Network",
+                                            "counter": 68.0,
+                                            "effort": 680.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "ABAP__RefToMe",
+                                    "detail": [
+                                        {
+                                            "application_id": 751,
+                                            "application_name": "Financial Network",
+                                            "counter": 3.0,
+                                            "effort": 9.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "ABAP__SelectControlStruct",
+                                    "detail": [
+                                        {
+                                            "application_id": 751,
+                                            "application_name": "Financial Network",
+                                            "counter": 42.0,
+                                            "effort": 630.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "ABAP__UncheckedReturn",
+                                    "detail": [
+                                        {
+                                            "application_id": 751,
+                                            "application_name": "Financial Network",
+                                            "counter": 114.0,
+                                            "effort": 114.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "ABAP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "ABAP__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 751,
+                                            "application_name": "Financial Network",
+                                            "counter": 67.0,
+                                            "effort": 67.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "ABAP__DynamicQueries",
+                                    "detail": [
+                                        {
+                                            "application_id": 751,
+                                            "application_name": "Financial Network",
+                                            "counter": 11.0,
+                                            "effort": 55.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "ABAP__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 751,
+                                            "application_name": "Financial Network",
+                                            "counter": 105.0,
+                                            "effort": 1050.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "ABAP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "ABAP__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 751,
+                                            "application_name": "Financial Network",
+                                            "counter": 10.0,
+                                            "effort": 0.8333334
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "ABAP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "ABAP__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 751,
+                                            "application_name": "Financial Network",
+                                            "counter": 2537.4995,
+                                            "effort": 2537.4995
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "ABAP__SubQueries",
+                                    "detail": [
+                                        {
+                                            "application_id": 751,
+                                            "application_name": "Financial Network",
+                                            "counter": 41.0,
+                                            "effort": 205.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "ABAP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "ABAP__ComplexQuery",
+                                    "detail": [
+                                        {
+                                            "application_id": 751,
+                                            "application_name": "Financial Network",
+                                            "counter": 4.0,
+                                            "effort": 20.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,3332 @@
+{
+    "snapshotLabel": "Analyzer Launcher_Analyzer Launcher 2",
+    "snapshotDate": 1543813200000,
+    "applicationCodeLines": null,
+    "applicationFiles": 1353.0,
+    "thirdPartyCodeLines": null,
+    "thirdPartyFiles": 312.0,
+    "thirdParties": [
+        {
+            "id": 2617,
+            "componentId": "makeusabrew/bootbox",
+            "name": "makeusabrew/bootbox",
+            "version": "v4.1.0",
+            "release": 1381485707000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "v5.5.3",
+            "lastRelease": 1651108337000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 480.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "makeusabrew",
+                "product": "bootbox",
+                "version": "v4.1.0",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2023-46998",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-46998",
+                        "description": "Cross Site Scripting vulnerability in BootBox Bootbox.js v.3.2 through 6.0 allows a remote attacker to execute arbitrary code via a crafted payload to alert(), confirm(), prompt() functions.",
+                        "cweId": "CWE-79",
+                        "cweLabel": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
+                        "cvssScore": 6.1,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "GMS-2019-12",
+                        "link": null,
+                        "description": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') in bootbox.",
+                        "cweId": "CWE-78",
+                        "cweLabel": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')",
+                        "cvssScore": 0.0,
+                        "criticity": "UNKNOWN",
+                        "cpe": null,
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "v5.5.3",
+            "safestVersion": "v5.5.3"
+        },
+        {
+            "id": 2640,
+            "componentId": "lodash/lodash",
+            "name": "lodash/lodash",
+            "version": "3.0.0",
+            "release": 1423113200000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "4.17.23-npm",
+            "lastRelease": 1769016361000,
+            "nbVersionPreviousYear": 7,
+            "numberOfCodeLines": 348.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "lodash",
+                "product": "lodash",
+                "version": "3.0.0",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2018-16487",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-16487",
+                        "description": "A prototype pollution vulnerability was found in lodash <4.17.11 where the functions merge, mergeWith, and defaultsDeep can be tricked into adding or modifying properties of Object.prototype.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.6,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:lodash:lodash",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2018-3721",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-3721",
+                        "description": "lodash node module before 4.17.5 suffers from a Modification of Assumed-Immutable Data (MAID) vulnerability via defaultsDeep, merge, and mergeWith functions, which allows a malicious user to modify the prototype of \"Object\" via __proto__, causing the addition or modification of an existing property that will exist on all objects.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.5,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:lodash:lodash",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2019-1010266",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-1010266",
+                        "description": "lodash prior to 4.17.11 is affected by: CWE-400: Uncontrolled Resource Consumption. The impact is: Denial of service. The component is: Date handler. The attack vector is: Attacker provides very long strings, which the library attempts to match using a regular expression. The fixed version is: 4.17.11.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.5,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:lodash:lodash",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2019-10744",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-10744",
+                        "description": "Versions of lodash lower than 4.17.12 are vulnerable to Prototype Pollution. The function defaultsDeep could be tricked into adding or modifying properties of Object.prototype using a constructor payload.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 9.1,
+                        "criticity": "CRITICAL",
+                        "cpe": "cpe:/a:lodash:lodash",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2020-28500",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-28500",
+                        "description": "Lodash versions prior to 4.17.21 are vulnerable to Regular Expression Denial of Service (ReDoS) via the toNumber, trim and trimEnd functions.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.3,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:lodash:lodash",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2020-8203",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-8203",
+                        "description": "Prototype pollution attack when using _.zipObjectDeep in lodash before 4.17.20.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.4,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:lodash:lodash",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2021-23337",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-23337",
+                        "description": "Lodash versions prior to 4.17.21 are vulnerable to Command Injection via the template function.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.2,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:lodash:lodash",
+                        "isKev": false
+                    },
+                    {
+                        "name": "GMS-2018-10",
+                        "link": null,
+                        "description": "Functions in Lodash ( merge, mergeWith, defaultsDeep) can modify the prototype of \"Object\" if given malicious data. This can lead to denial of service or remote code execution.",
+                        "cweId": "CWE-937",
+                        "cweLabel": null,
+                        "cvssScore": 0.0,
+                        "criticity": "UNKNOWN",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "GMS-2020-350",
+                        "link": null,
+                        "description": "Versions of `lodash.defaultsdeep` are vulnerable to Prototype Pollution. The function 'defaultsDeep' may allow a malicious user to modify the prototype of `Object` via `__proto__` causing the addition or modification of an existing property that will exist on all objects. \n\nUpdate to or later.",
+                        "cweId": "CWE-937",
+                        "cweLabel": null,
+                        "cvssScore": 0.0,
+                        "criticity": "UNKNOWN",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "GMS-2020-351",
+                        "link": null,
+                        "description": "Versions of `lodash.defaultsdeep` are vulnerable to prototype pollution. The function `mergeWith` may allow a malicious user to modify the prototype of `Object` via `{constructor: {prototype: {...}}}` causing the addition or modification of an existing property that will exist on all objects. \n\nUpdate to or later.",
+                        "cweId": "CWE-937",
+                        "cweLabel": null,
+                        "cvssScore": 0.0,
+                        "criticity": "UNKNOWN",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "GMS-2020-352",
+                        "link": null,
+                        "description": "Versions of `lodash.merge` are vulnerable to Prototype Pollution. The function 'merge' may allow a malicious user to modify the prototype of `Object` via `__proto__` causing the addition or modification of an existing property that will exist on all objects. \n\nUpdate to or later.",
+                        "cweId": "CWE-937",
+                        "cweLabel": null,
+                        "cvssScore": 0.0,
+                        "criticity": "UNKNOWN",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "GMS-2020-353",
+                        "link": null,
+                        "description": "Versions of `lodash.merge` are vulnerable to prototype pollution. The function `merge` may allow a malicious user to modify the prototype of `Object` via `{constructor: {prototype: {...}}}` causing the addition or modification of an existing property that will exist on all objects. \n\nUpdate to or later.",
+                        "cweId": "CWE-937",
+                        "cweLabel": null,
+                        "cvssScore": 0.0,
+                        "criticity": "UNKNOWN",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "GMS-2020-354",
+                        "link": null,
+                        "description": "Versions of `lodash.mergewith` are vulnerable to Prototype Pollution. The function 'mergeWith' may allow a malicious user to modify the prototype of `Object` via `__proto__` causing the addition or modification of an existing property that will exist on all objects. \n\nUpdate to or later.",
+                        "cweId": "CWE-937",
+                        "cweLabel": null,
+                        "cvssScore": 0.0,
+                        "criticity": "UNKNOWN",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "GMS-2020-355",
+                        "link": null,
+                        "description": "Versions of `lodash.mergewith` are vulnerable to prototype pollution. The function `mergeWith` may allow a malicious user to modify the prototype of `Object` via `{constructor: {prototype: {...}}}` causing the addition or modification of an existing property that will exist on all objects. \n\nUpdate to or later.",
+                        "cweId": "CWE-937",
+                        "cweLabel": null,
+                        "cvssScore": 0.0,
+                        "criticity": "UNKNOWN",
+                        "cpe": null,
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "4.6.1",
+            "safestVersion": "4.17.22-es"
+        },
+        {
+            "id": 2643,
+            "componentId": "MLstate/opalang",
+            "name": "MLstate/opalang",
+            "version": "v2988",
+            "release": 1343843268000,
+            "languages": "ocaml",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "peps",
+            "lastRelease": 1416915988000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 77.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 6273,
+            "componentId": "adamvr-debug.npm",
+            "name": "adamvr-debug.npm",
+            "version": "0.7.2",
+            "release": 1376563692000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Scan",
+            "licenses": [],
+            "lastVersion": "0.7.2",
+            "lastRelease": 1376563692000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 16.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "adamvr-debug",
+                "product": "adamvr-debug",
+                "version": "0.7.2",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2017-20165",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-20165",
+                        "description": "A vulnerability classified as problematic has been found in debug-js debug up to 3.0.x. This affects the function useColors of the file src/node.js. The manipulation of the argument str leads to inefficient regular expression complexity. Upgrading to version 3.1.0 is able to address this issue. The identifier of the patch is c38a0166c266a679c8de012d4eaccec3f944e685. It is recommended to upgrade the affected component. The identifier VDB-217665 was assigned to this vulnerability.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 3.5,
+                        "criticity": "LOW",
+                        "cpe": "cpe:/a:debug_project:debug",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": []
+        },
+        {
+            "id": 7563,
+            "componentId": "regexp-clone.npm",
+            "name": "regexp-clone.npm",
+            "version": "0.0.1",
+            "release": 1366233765000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "1.2.0",
+            "lastRelease": 1755120469000,
+            "nbVersionPreviousYear": 3,
+            "numberOfCodeLines": 4.0,
+            "numberOfFiles": 2.0,
+            "cwes": []
+        },
+        {
+            "id": 9198,
+            "componentId": "ms.npm",
+            "name": "ms.npm",
+            "version": "0.1.0",
+            "release": 1324496306000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [],
+            "lastVersion": "4.0.0-nightly.202508271359",
+            "lastRelease": 1756303201000,
+            "nbVersionPreviousYear": 8,
+            "numberOfCodeLines": 15.0,
+            "numberOfFiles": 2.0,
+            "cve": {
+                "vendor": "ms",
+                "product": "ms",
+                "version": "0.1.0",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2015-8315",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2015-8315",
+                        "description": "The ms package before 0.7.1 for Node.js allows attackers to cause a denial of service (CPU consumption) via a long version string, aka a \"regular expression denial of service (ReDoS).\"",
+                        "cweId": "CWE-399",
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2017-20162",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-20162",
+                        "description": "A vulnerability, which was classified as problematic, has been found in vercel ms up to 1.x. This issue affects the function parse of the file index.js. The manipulation of the argument str leads to inefficient regular expression complexity. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. Upgrading to version 2.0.0 is able to address this issue. The name of the patch is caae2988ba2a37765d055c4eee63d383320ee662. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-217451.",
+                        "cweId": "CWE-1333",
+                        "cweLabel": null,
+                        "cvssScore": 5.3,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "0.7.1",
+            "safestVersion": "2.0.0"
+        },
+        {
+            "id": 9201,
+            "componentId": "mailcomposer.npm",
+            "name": "mailcomposer.npm",
+            "version": "0.2.6",
+            "release": 1386010601000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "4.0.2",
+            "lastRelease": 1491568481000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 52.0,
+            "numberOfFiles": 3.0,
+            "cwes": []
+        },
+        {
+            "id": 12996,
+            "componentId": "cookie.npm",
+            "name": "cookie.npm",
+            "version": "0.1.0",
+            "release": 1367435902000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [],
+            "lastVersion": "1.1.1",
+            "lastRelease": 1764179420000,
+            "nbVersionPreviousYear": 2,
+            "numberOfCodeLines": 41.0,
+            "numberOfFiles": 2.0,
+            "cve": {
+                "vendor": "cookie",
+                "product": "cookie",
+                "version": "0.1.0",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2024-47764",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-47764",
+                        "description": "cookie is a basic HTTP cookie parser and serializer for HTTP servers. The cookie name could be used to set other fields of the cookie, resulting in an unexpected cookie value. A similar escape can be used for path and domain, which could be abused to alter other fields of the cookie. Upgrade to 0.7.0, which updates the validation for name, path, and domain.",
+                        "cweId": "CWE-74",
+                        "cweLabel": null,
+                        "cvssScore": 0.0,
+                        "criticity": "UNKNOWN",
+                        "cpe": null,
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "0.7.0",
+            "safestVersion": "0.7.0"
+        },
+        {
+            "id": 13116,
+            "componentId": "cookie-signature.npm",
+            "name": "cookie-signature.npm",
+            "version": "1.0.1",
+            "release": 1366054157000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [],
+            "lastVersion": "1.2.2",
+            "lastRelease": 1730230787000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 16.0,
+            "numberOfFiles": 2.0,
+            "cve": {
+                "vendor": "cookie-signature",
+                "product": "cookie-signature",
+                "version": "1.0.1",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2016-1000236",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2016-1000236",
+                        "description": "Node-cookie-signature before 1.0.6 is affected by a timing attack due to the type of comparison used.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 4.4,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:cookie-signature_project:cookie-signature",
+                        "isKev": false
+                    },
+                    {
+                        "name": "GMS-2016-64",
+                        "link": null,
+                        "description": "Cookie-signature is vulnerable to timing attacks.",
+                        "cweId": "CWE-937",
+                        "cweLabel": null,
+                        "cvssScore": 0.0,
+                        "criticity": "UNKNOWN",
+                        "cpe": null,
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "1.0.4",
+            "safestVersion": "1.0.6"
+        },
+        {
+            "id": 14004,
+            "componentId": "core-util-is.npm",
+            "name": "core-util-is.npm",
+            "version": "1.0.0",
+            "release": 1377557519000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "1.0.3",
+            "lastRelease": 1630420536000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 3.0,
+            "numberOfFiles": 2.0,
+            "cwes": []
+        },
+        {
+            "id": 18246,
+            "componentId": "sliced.npm",
+            "name": "sliced.npm",
+            "version": "0.0.5",
+            "release": 1360072422000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "1.0.1",
+            "lastRelease": 1436918304000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 96.0,
+            "numberOfFiles": 4.0,
+            "cwes": []
+        },
+        {
+            "id": 18268,
+            "componentId": "mime.npm",
+            "name": "mime.npm",
+            "version": "1.2.11",
+            "release": 1376588811000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [],
+            "lastVersion": "4.1.0",
+            "lastRelease": 1757699581000,
+            "nbVersionPreviousYear": 2,
+            "numberOfCodeLines": 16.0,
+            "numberOfFiles": 5.0,
+            "cve": {
+                "vendor": "mime",
+                "product": "mime",
+                "version": "1.2.11",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2017-16138",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-16138",
+                        "description": "The mime module < 1.4.1, 2.0.1, 2.0.2 is vulnerable to regular expression denial of service when a mime lookup is performed on untrusted user input.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:mime_project:mime",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "1.4.1",
+            "safestVersion": "1.4.1"
+        },
+        {
+            "id": 19104,
+            "componentId": "qs.npm",
+            "name": "qs.npm",
+            "version": "0.6.6",
+            "release": 1386089189000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [],
+            "lastVersion": "6.14.1",
+            "lastRelease": 1767045945000,
+            "nbVersionPreviousYear": 1,
+            "numberOfCodeLines": 12.0,
+            "numberOfFiles": 3.0,
+            "cve": {
+                "vendor": "qs",
+                "product": "qs",
+                "version": "0.6.6",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2014-10064",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2014-10064",
+                        "description": "The qs module before 1.0.0 does not have an option or default for specifying object depth and when parsing a string representing a deeply nested object will block the event loop for long periods of time. An attacker could leverage this to cause a temporary denial-of-service condition, for example, in a web application, other requests would not be processed while this blocking is occurring.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:qs_project:qs",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2014-7191",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2014-7191",
+                        "description": "The qs module before 1.0.0 in Node.js does not call the compact function for array data, which allows remote attackers to cause a denial of service (memory consumption) by using a large index value to create a sparse array.",
+                        "cweId": "CWE-399",
+                        "cweLabel": null,
+                        "cvssScore": 5.0,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2017-1000048",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-1000048",
+                        "description": "the web framework using ljharb's qs module older than v6.3.2, v6.2.3, v6.1.2, and v6.0.4 is vulnerable to a DoS. A malicious user can send a evil request to cause the web framework crash.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:qs_project:qs",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2022-24999",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-24999",
+                        "description": "qs before 6.10.3, as used in Express before 4.17.3 and other products, allows attackers to cause a Node process hang for an Express application because an __ proto__ key can be used. In many typical Express use cases, an unauthenticated remote attacker can place the attack payload in the query string of the URL that is used to visit the application, such as a[__proto__]=b&a[__proto__]&a[length]=100000000. The fix was backported to qs 6.9.7, 6.8.3, 6.7.3, 6.6.1, 6.5.3, 6.4.1, 6.3.3, and 6.2.4 (and therefore Express 4.17.3, which has \"deps: qs@6.9.7\" in its release description, is not vulnerable).",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:qs_project:qs",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2025-15284",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-15284",
+                        "description": "Improper Input Validation vulnerability in qs (parse modules) allows HTTP DoS.This issue affects qs: < 6.14.1.\n\n\nSummaryThe arrayLimit\u00a0option in qs does not enforce limits for bracket notation (a[]=1&a[]=2), allowing attackers to cause denial-of-service via memory exhaustion. Applications using arrayLimit\u00a0for DoS protection are vulnerable.\n\nDetailsThe arrayLimit\u00a0option only checks limits for indexed notation (a[0]=1&a[1]=2) but completely bypasses it for bracket notation (a[]=1&a[]=2).\n\nVulnerable code\u00a0(lib/parse.js:159-162):\n\nif (root === '[]' && options.parseArrays) {\n    obj = utils.combine([], leaf);  // No arrayLimit check\n}\n\n\n\n\n\nWorking code\u00a0(lib/parse.js:175):\n\nelse if (index <= options.arrayLimit) {  // Limit checked here\n    obj = [];\n    obj[index] = leaf;\n}\n\n\n\n\n\nThe bracket notation handler at line 159 uses utils.combine([], leaf)\u00a0without validating against options.arrayLimit, while indexed notation at line 175 checks index <= options.arrayLimit\u00a0before creating arrays.\n\nPoCTest 1 - Basic bypass:\n\nnpm install qs\n\n\n\n\n\nconst qs = require('qs');\nconst result = qs.parse('a[]=1&a[]=2&a[]=3&a[]=4&a[]=5&a[]=6', { arrayLimit: 5 });\nconsole.log(result.a.length);  // Output: 6 (should be max 5)\n\n\n\n\n\nTest 2 - DoS demonstration:\n\nconst qs = require('qs');\nconst attack = 'a[]=' + Array(10000).fill('x').join('&a[]=');\nconst result = qs.parse(attack, { arrayLimit: 100 });\nconsole.log(result.a.length);  // Output: 10000 (should be max 100)\n\n\n\n\n\nConfiguration:\n\n  *  arrayLimit: 5\u00a0(test 1) or arrayLimit: 100\u00a0(test 2)\n  *  Use bracket notation: a[]=value\u00a0(not indexed a[0]=value)\n\n\nImpactDenial of Service via memory exhaustion. Affects applications using qs.parse()\u00a0with user-controlled input and arrayLimit\u00a0for protection.\n\nAttack scenario:\n\n  *  Attacker sends HTTP request: GET /api/search?filters[]=x&filters[]=x&...&filters[]=x\u00a0(100,000+ times)\n  *  Application parses with qs.parse(query, { arrayLimit: 100 })\n  *  qs ignores limit, parses all 100,000 elements into array\n  *  Server memory exhausted \u2192 application crashes or becomes unresponsive\n  *  Service unavailable for all users\nReal-world impact:\n\n  *  Single malicious request can crash server\n  *  No authentication required\n  *  Easy to automate and scale\n  *  Affects any endpoint parsing query strings with bracket notation",
+                        "cweId": "CWE-20",
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "GMS-2014-21",
+                        "link": null,
+                        "description": "qs is affected by a denial of service vulnerability that results from excessive recursion in parsing a deeply nested JSON string.",
+                        "cweId": "CWE-937",
+                        "cweLabel": null,
+                        "cvssScore": 0.0,
+                        "criticity": "UNKNOWN",
+                        "cpe": null,
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "1.0.0",
+            "safestVersion": "6.14.1"
+        },
+        {
+            "id": 19149,
+            "componentId": "debug.npm",
+            "name": "debug.npm",
+            "version": "0.7.3",
+            "release": 1383180686000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "Scan",
+            "licenses": [],
+            "lastVersion": "4.4.3",
+            "lastRelease": 1757784319000,
+            "nbVersionPreviousYear": 2,
+            "numberOfCodeLines": 3.0,
+            "numberOfFiles": 2.0,
+            "cve": {
+                "vendor": "debug",
+                "product": "debug",
+                "version": "0.7.3",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2017-16137",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-16137",
+                        "description": "The debug module is vulnerable to regular expression denial of service when untrusted user input is passed into the o formatter. It takes around 50k characters to block for 2 seconds making this a low severity issue.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.3,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:debug_project:debug",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2017-20165",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-20165",
+                        "description": "A vulnerability classified as problematic has been found in debug-js debug up to 3.0.x. This affects the function useColors of the file src/node.js. The manipulation of the argument str leads to inefficient regular expression complexity. Upgrading to version 3.1.0 is able to address this issue. The identifier of the patch is c38a0166c266a679c8de012d4eaccec3f944e685. It is recommended to upgrade the affected component. The identifier VDB-217665 was assigned to this vulnerability.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 3.5,
+                        "criticity": "LOW",
+                        "cpe": "cpe:/a:debug_project:debug",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "2.6.9",
+            "safestVersion": "2.6.9"
+        },
+        {
+            "id": 19268,
+            "componentId": "engine.io-client.npm",
+            "name": "engine.io-client.npm",
+            "version": "0.4.0",
+            "release": 1355159085000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "Scan",
+            "licenses": [],
+            "lastVersion": "6.6.4",
+            "lastRelease": 1766488003000,
+            "nbVersionPreviousYear": 3,
+            "numberOfCodeLines": 5.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "engine.io-client",
+                "product": "engine.io-client",
+                "version": "0.4.0",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2016-10536",
+                        "link": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-10536",
+                        "description": "engine.io-client is the client for engine.io, the implementation of a transport-based cross-browser/cross-device bi-directional communication layer for Socket.IO. The vulnerability is related to the way that node.js handles the `rejectUnauthorized` setting. If the value is something that evaluates to false, certificate verification will be disabled. This is problematic as engine.io-client 1.6.8 and earlier passes in an object for settings that includes the rejectUnauthorized property, whether it has been set or not. If the value has not been explicitly changed, it will be passed in as `null`, resulting in certificate verification being turned off.",
+                        "cweId": "CWE-295",
+                        "cweLabel": "Improper Certificate Validation",
+                        "cvssScore": 5.9,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:socket:engine.io-client:::~~~node.js~~",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "1.6.9",
+            "safestVersion": "1.6.9"
+        },
+        {
+            "id": 19296,
+            "componentId": "multiparty.npm",
+            "name": "multiparty.npm",
+            "version": "2.2.0",
+            "release": 1381869942000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "4.2.3",
+            "lastRelease": 1642731664000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 30.0,
+            "numberOfFiles": 2.0,
+            "cwes": []
+        },
+        {
+            "id": 19297,
+            "componentId": "tmp.npm",
+            "name": "tmp.npm",
+            "version": "0.0.23",
+            "release": 1386109708000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "0.2.5",
+            "lastRelease": 1754688128000,
+            "nbVersionPreviousYear": 2,
+            "numberOfCodeLines": 27.0,
+            "numberOfFiles": 5.0,
+            "cve": {
+                "vendor": "tmp",
+                "product": "tmp",
+                "version": "0.0.23",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2025-54798",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-54798",
+                        "description": "tmp is a temporary file and directory creator for node.js. In versions 0.2.3 and below, tmp is vulnerable to an arbitrary temporary file / directory write via symbolic link dir parameter. This is fixed in version 0.2.4.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 2.5,
+                        "criticity": "LOW",
+                        "cpe": "cpe:/a:raszi:tmp",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "0.2.4",
+            "safestVersion": "0.2.4"
+        },
+        {
+            "id": 19298,
+            "componentId": "keypress.npm",
+            "name": "keypress.npm",
+            "version": "0.1.0",
+            "release": 1344461524000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "0.2.1",
+            "lastRelease": 1373086685000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 43.0,
+            "numberOfFiles": 3.0,
+            "cwes": []
+        },
+        {
+            "id": 19299,
+            "componentId": "batch.npm",
+            "name": "batch.npm",
+            "version": "0.5.0",
+            "release": 1375131396000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [],
+            "lastVersion": "0.6.1",
+            "lastRelease": 1494969109000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 2.0,
+            "cwes": []
+        },
+        {
+            "id": 19300,
+            "componentId": "iconv-lite.npm",
+            "name": "iconv-lite.npm",
+            "version": "0.2.11",
+            "release": 1373851397000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "1.0.0-alpha.1",
+            "lastRelease": 1767891651000,
+            "nbVersionPreviousYear": 4,
+            "numberOfCodeLines": 64.0,
+            "numberOfFiles": 6.0,
+            "cwes": []
+        },
+        {
+            "id": 19301,
+            "componentId": "bytes.npm",
+            "name": "bytes.npm",
+            "version": "0.2.0",
+            "release": 1351410018000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "Scan",
+            "licenses": [],
+            "lastVersion": "3.1.2",
+            "lastRelease": 1643346157000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 7.0,
+            "numberOfFiles": 2.0,
+            "cwes": []
+        },
+        {
+            "id": 19304,
+            "componentId": "pogo.npm",
+            "name": "pogo.npm",
+            "version": "0.0.2",
+            "release": 1350595444000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Scan",
+            "licenses": [],
+            "lastVersion": "0.10.0",
+            "lastRelease": 1439295364000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 5.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 19305,
+            "componentId": "stream-counter.npm",
+            "name": "stream-counter.npm",
+            "version": "0.1.0",
+            "release": 1365205549000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 26140,
+                    "name": "BSD Licenses Family",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "1.0.0",
+            "lastRelease": 1399606275000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 4.0,
+            "numberOfFiles": 2.0,
+            "cwes": []
+        },
+        {
+            "id": 19308,
+            "componentId": "uid2.npm",
+            "name": "uid2.npm",
+            "version": "0.0.3",
+            "release": 1373129581000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [],
+            "lastVersion": "1.0.0",
+            "lastRelease": 1629853313000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 8.0,
+            "numberOfFiles": 2.0,
+            "cwes": []
+        },
+        {
+            "id": 19309,
+            "componentId": "methods.npm",
+            "name": "methods.npm",
+            "version": "0.1.0",
+            "release": 1382986922000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "1.1.2",
+            "lastRelease": 1453085636000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 33.0,
+            "numberOfFiles": 2.0,
+            "cwes": []
+        },
+        {
+            "id": 19310,
+            "componentId": "xoauth2.npm",
+            "name": "xoauth2.npm",
+            "version": "0.1.8",
+            "release": 1367482447000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "1.2.0",
+            "lastRelease": 1469779651000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 8.0,
+            "numberOfFiles": 2.0,
+            "cwes": []
+        },
+        {
+            "id": 24122,
+            "componentId": "debuglog.npm",
+            "name": "debuglog.npm",
+            "version": "0.0.1",
+            "release": 1372983455000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "1.0.1",
+            "lastRelease": 1394043299000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 15.0,
+            "numberOfFiles": 2.0,
+            "cwes": []
+        },
+        {
+            "id": 32448,
+            "componentId": "range-parser.npm",
+            "name": "range-parser.npm",
+            "version": "1.0.2",
+            "release": 1410230720000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "1.2.1",
+            "lastRelease": 1557534457000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 27.0,
+            "numberOfFiles": 2.0,
+            "cwes": []
+        },
+        {
+            "id": 33076,
+            "componentId": "medea-clusterify.npm",
+            "name": "medea-clusterify.npm",
+            "version": "0.0.3",
+            "release": 1364588376000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "0.0.3",
+            "lastRelease": 1364588376000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 5.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 36167,
+            "componentId": "bumm.npm",
+            "name": "bumm.npm",
+            "version": "0.2.0",
+            "release": 1386786616000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 26140,
+                    "name": "BSD Licenses Family",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "0.2.0",
+            "lastRelease": 1386786616000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 1191.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 37532,
+            "componentId": "mongoose-keywordize.npm",
+            "name": "mongoose-keywordize.npm",
+            "version": "0.0.1",
+            "release": 1328743186000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Scan",
+            "licenses": [],
+            "lastVersion": "0.2.0",
+            "lastRelease": 1353981655000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 38885,
+            "componentId": "mkdirp.npm",
+            "name": "mkdirp.npm",
+            "version": "0.3.4",
+            "release": 1345465644000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "3.0.1",
+            "lastRelease": 1682357258000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 30.0,
+            "numberOfFiles": 2.0,
+            "cwes": []
+        },
+        {
+            "id": 42188,
+            "componentId": "connect.npm",
+            "name": "connect.npm",
+            "version": "2.12.0",
+            "release": 1386748198000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "3.7.0",
+            "lastRelease": 1558141125000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 950.0,
+            "numberOfFiles": 30.0,
+            "cve": {
+                "vendor": "connect",
+                "product": "connect",
+                "version": "2.12.0",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2018-3717",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-3717",
+                        "description": "connect node module before 2.14.0 suffers from a Cross-Site Scripting (XSS) vulnerability due to a lack of validation of file in directory.js middleware.",
+                        "cweId": "CWE-79",
+                        "cweLabel": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
+                        "cvssScore": 5.4,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "2.14.0",
+            "safestVersion": "2.14.0"
+        },
+        {
+            "id": 45563,
+            "componentId": "send.npm",
+            "name": "send.npm",
+            "version": "0.4.0",
+            "release": 1401245446000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "1.2.1",
+            "lastRelease": 1765827371000,
+            "nbVersionPreviousYear": 3,
+            "numberOfCodeLines": 4.0,
+            "numberOfFiles": 3.0,
+            "cve": {
+                "vendor": "send",
+                "product": "send",
+                "version": "0.4.0",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2014-6394",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2014-6394",
+                        "description": "visionmedia send before 0.8.4 for Node.js uses a partial comparison for verifying whether a directory is within the document root, which allows remote attackers to access restricted directories, as demonstrated using \"public-restricted\" under a \"public\" directory.",
+                        "cweId": "CWE-22",
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2015-8859",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2015-8859",
+                        "description": "The send package before 0.11.1 for Node.js allows attackers to obtain the root path via unspecified vectors.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.3,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:send_project:send",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2024-43799",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-43799",
+                        "description": "Send is a library for streaming files from the file system as a http response. Send passes untrusted user input to SendStream.redirect() which executes untrusted code. This issue is patched in send 0.19.0.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.0,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:send_project:send",
+                        "isKev": false
+                    },
+                    {
+                        "name": "GMS-2014-22",
+                        "link": null,
+                        "description": "When relying on the root option to restrict file access it may be possible for an application consumer to escape out of the restricted directory and access files in a similarly named directory. For example, `static(_dirname + '/public')` would allow access to `_dirname + '/public-restricted'`.",
+                        "cweId": "CWE-937",
+                        "cweLabel": null,
+                        "cvssScore": 0.0,
+                        "criticity": "UNKNOWN",
+                        "cpe": null,
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "0.8.5",
+            "safestVersion": "0.19.0"
+        },
+        {
+            "id": 51223,
+            "componentId": "specking.npm",
+            "name": "specking.npm",
+            "version": "0.1.0",
+            "release": 1316954294000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "0.1.0",
+            "lastRelease": 1316954294000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 23.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51224,
+            "componentId": "dkim-signer.npm",
+            "name": "dkim-signer.npm",
+            "version": "0.1.0",
+            "release": 1385990410000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "0.2.2",
+            "lastRelease": 1456935443000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 22.0,
+            "numberOfFiles": 2.0,
+            "cwes": []
+        },
+        {
+            "id": 51225,
+            "componentId": "negotiator.npm",
+            "name": "negotiator.npm",
+            "version": "0.3.0",
+            "release": 1382127134000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "0.6.4",
+            "lastRelease": 1729308043000,
+            "nbVersionPreviousYear": 2,
+            "numberOfCodeLines": 46.0,
+            "numberOfFiles": 6.0,
+            "cve": {
+                "vendor": "negotiator",
+                "product": "negotiator",
+                "version": "0.3.0",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2016-10539",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2016-10539",
+                        "description": "negotiator is an HTTP content negotiator for Node.js and is used by many modules and frameworks including Express and Koa. The header for \"Accept-Language\", when parsed by negotiator 0.6.0 and earlier is vulnerable to Regular Expression Denial of Service via a specially crafted string.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:negotiator_project:negotiator",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "0.6.1",
+            "safestVersion": "0.6.1"
+        },
+        {
+            "id": 51226,
+            "componentId": "nodemailer.npm",
+            "name": "nodemailer.npm",
+            "version": "0.5.15",
+            "release": 1386930254000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "7.0.13",
+            "lastRelease": 1769523817000,
+            "nbVersionPreviousYear": 14,
+            "numberOfCodeLines": 288.0,
+            "numberOfFiles": 11.0,
+            "cve": {
+                "vendor": "nodemailer",
+                "product": "nodemailer",
+                "version": "0.5.15",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2020-7769",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-7769",
+                        "description": "This affects the package nodemailer before 6.4.16. Use of crafted recipient email addresses may result in arbitrary command flag injection in sendmail transport for sending mails.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 8.6,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:nodemailer:nodemailer",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2021-23400",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-23400",
+                        "description": "The package nodemailer before 6.6.1 are vulnerable to HTTP Header Injection if unsanitized user input that may contain newlines and carriage returns is passed into an address object.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.3,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:nodemailer:nodemailer",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2025-13033",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-13033",
+                        "description": "A vulnerability was identified in the email parsing library due to improper handling of specially formatted recipient email addresses. An attacker can exploit this flaw by crafting a recipient address that embeds an external address within quotes. This causes the application to misdirect the email to the attacker's external address instead of the intended internal recipient. This could lead to a significant data leak of sensitive information and allow an attacker to bypass security filters and access controls.",
+                        "cweId": "CWE-436",
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2025-14874",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-14874",
+                        "description": "A flaw was found in Nodemailer. This vulnerability allows a denial of service (DoS) via a crafted email address header that triggers infinite recursion in the address parser.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:nodemailer:nodemailer",
+                        "isKev": false
+                    },
+                    {
+                        "name": "GHSA-9h6g-pr28-7cqp",
+                        "link": null,
+                        "description": "A ReDoS vulnerability occurs when nodemailer tries to parse img files with the parameter `attachDataUrls` set, causing the stuck of event loop.\nAnother flaw was found when nodemailer tries to parse an attachments with a embedded file, causing the stuck of event loop.",
+                        "cweId": "CWE-1333",
+                        "cweLabel": null,
+                        "cvssScore": 5.3,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "GHSA-jj37-3377-m6vv",
+                        "link": null,
+                        "description": "## Duplicate Advisory\nThis advisory has been withdrawn because it is a duplicate of GHSA-mm7p-fcc7-pg87. This link is maintained to preserve external references.\n\n## Original Description\nA vulnerability was identified in the email parsing library due to improper handling of specially formatted recipient email addresses. An attacker can exploit this flaw by crafting a recipient address that embeds an external address within quotes. This causes the application to misdirect the email to the attacker's external address instead of the intended internal recipient. This could lead to a significant data leak of sensitive information and allow an attacker to bypass security filters and access controls.",
+                        "cweId": "CWE-436",
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "GHSA-mm7p-fcc7-pg87",
+                        "link": null,
+                        "description": "The email parsing library incorrectly handles quoted local-parts containing @. This leads to misrouting of email recipients, where the parser extracts and routes to an unintended domain instead of the RFC-compliant target.\n\nPayload: `\"xclow3n@gmail.com x\"@internal.domain`\nUsing the following code to send mail\n```\nconst nodemailer = require(\"nodemailer\");\n\nlet transporter = nodemailer.createTransport({\nservice: \"gmail\",\nauth: {\nuser: \"\",\npass: \"\",\n},\n});\n\nlet mailOptions = {\nfrom: '\"Test Sender\" <your_email@gmail.com>',\nto: \"\\\"xclow3n@gmail.com x\\\"@internal.domain\",\nsubject: \"Hello from Nodemailer\",\ntext: \"This is a test email sent using Gmail SMTP and Nodemailer!\",\n};\n\ntransporter.sendMail(mailOptions, (error, info) => {\nif (error) {\nreturn console.log(\"Error: \", error);\n}\nconsole.log(\"Message sent: %s\", info.messageId);\n\n});\n\n\n(async () => {\nconst parser = await import(\"@sparser/email-address-parser\");\nconst { EmailAddress, ParsingOptions } = parser.default;\nconst parsed = EmailAddress.parse(mailOptions.to /*, new ParsingOptions(true) */);\n\nif (!parsed) {\nconsole.error(\"Invalid email address:\", mailOptions.to);\nreturn;\n}\n\nconsole.log(\"Parsed email:\", {\naddress: `${parsed.localPart}@${parsed.domain}`,\nlocal: parsed.localPart,\ndomain: parsed.domain,\n});\n})();\n```\n\nRunning the script and seeing how this mail is parsed according to RFC\n\n```\nParsed email: {\naddress: '\"xclow3n@gmail.com x\"@internal.domain',\nlocal: '\"xclow3n@gmail.com x\"',\ndomain: 'internal.domain'\n}\n```\n\nBut the email is sent to `xclow3n@gmail.com`\n\n<img width=\"2128\" height=\"439\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/20eb459c-9803-45a2-b30e-5d1177d60a8d\" />",
+                        "cweId": "CWE-20",
+                        "cweLabel": null,
+                        "cvssScore": 5.3,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "GHSA-rcmh-qjqh-p98v",
+                        "link": null,
+                        "description": "A DoS can occur that immediately halts the system due to the use of an unsafe function.",
+                        "cweId": "CWE-703",
+                        "cweLabel": null,
+                        "cvssScore": 5.3,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "GMS-2024-59",
+                        "link": null,
+                        "description": "### Summary\nA ReDoS vulnerability occurs when nodemailer tries to parse img files with the parameter `attachDataUrls` set, causing the stuck of event loop. \nAnother flaw was found when nodemailer tries to parse an attachments with a embedded file, causing the stuck of event loop. \n\n### Details\n\nRegex: /^data:((?:[^;]*;)*(?:[^,]*)),(.*)$/\n\nPath: compile -> getAttachments -> _processDataUrl\n\nRegex: /(<img\\b[^>]* src\\s*=[\\s\"']*)(data:([^;]+);[^\"'>\\s]+)/\n\nPath: _convertDataImages\n\n### PoC\n\nhttps://gist.github.com/francoatmega/890dd5053375333e40c6fdbcc8c58df6\nhttps://gist.github.com/francoatmega/9aab042b0b24968d7b7039818e8b2698\n\n### Impact\n\nReDoS causes the event loop to stuck a specially crafted evil email can cause this problem.\n",
+                        "cweId": "CWE-937",
+                        "cweLabel": null,
+                        "cvssScore": 0.0,
+                        "criticity": "UNKNOWN",
+                        "cpe": null,
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "6.4.16",
+            "safestVersion": "7.0.11"
+        },
+        {
+            "id": 51227,
+            "componentId": "propeller.npm",
+            "name": "propeller.npm",
+            "version": "0.3.7",
+            "release": 1386434764000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "0.5.8",
+            "lastRelease": 1403925666000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 1190.0,
+            "numberOfFiles": 12.0,
+            "cwes": []
+        },
+        {
+            "id": 51228,
+            "componentId": "wrench.npm",
+            "name": "wrench.npm",
+            "version": "1.5.4",
+            "release": 1381877309000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "1.5.9",
+            "lastRelease": 1459356181000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 35.0,
+            "numberOfFiles": 2.0,
+            "cwes": []
+        },
+        {
+            "id": 51229,
+            "componentId": "mimelib.npm",
+            "name": "mimelib.npm",
+            "version": "0.2.14",
+            "release": 1383122463000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "0.3.1",
+            "lastRelease": 1496682887000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 9.0,
+            "numberOfFiles": 2.0,
+            "cwes": []
+        },
+        {
+            "id": 51230,
+            "componentId": "nosqlited.npm",
+            "name": "nosqlited.npm",
+            "version": "0.0.6",
+            "release": 1388123517000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Scan",
+            "licenses": [],
+            "lastVersion": "0.0.11",
+            "lastRelease": 1390270392000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 658.0,
+            "numberOfFiles": 3.0,
+            "cwes": []
+        },
+        {
+            "id": 51232,
+            "componentId": "Automattic/mongoose",
+            "name": "Automattic/mongoose",
+            "version": "3.7.3",
+            "release": 1377274281000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 1,
+                    "name": "NOASSERTION",
+                    "compliance": "undefined"
+                }
+            ],
+            "lastVersion": "8.22.0",
+            "lastRelease": 1769545080000,
+            "nbVersionPreviousYear": 55,
+            "numberOfCodeLines": 6.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "Automattic",
+                "product": "mongoose",
+                "version": "3.7.3",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2019-17426",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-17426",
+                        "description": "Automattic Mongoose through 5.7.4 allows attackers to bypass access control (in some applications) because any query object with a _bsontype attribute is ignored. For example, adding \"_bsontype\":\"a\" can sometimes interfere with a query filter. NOTE: this CVE is about Mongoose's failure to work around this _bsontype special case that exists in older versions of the bson parser (aka the mongodb/js-bson project).",
+                        "cweId": "CWE-20",
+                        "cweLabel": null,
+                        "cvssScore": 9.1,
+                        "criticity": "CRITICAL",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2022-2564",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-2564",
+                        "description": "Prototype Pollution in GitHub repository automattic/mongoose prior to 6.4.6.",
+                        "cweId": "CWE-1321",
+                        "cweLabel": null,
+                        "cvssScore": 9.8,
+                        "criticity": "CRITICAL",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2023-3696",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-3696",
+                        "description": "Prototype Pollution in GitHub repository automattic/mongoose prior to 7.3.4.",
+                        "cweId": "CWE-1321",
+                        "cweLabel": null,
+                        "cvssScore": 9.8,
+                        "criticity": "CRITICAL",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2024-53900",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-53900",
+                        "description": "Mongoose before 8.8.3 can improperly use $where in match, leading to search injection.",
+                        "cweId": "CWE-89",
+                        "cweLabel": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')",
+                        "cvssScore": 9.1,
+                        "criticity": "CRITICAL",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2025-23061",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-23061",
+                        "description": "Mongoose before 8.9.5 can improperly use a nested $where filter with a populate() match, leading to search injection. NOTE: this issue exists because of an incomplete fix for CVE-2024-53900.",
+                        "cweId": "CWE-94",
+                        "cweLabel": "Improper Control of Generation of Code ('Code Injection')",
+                        "cvssScore": 9.0,
+                        "criticity": "CRITICAL",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "GMS-2020-748",
+                        "link": null,
+                        "description": "Versions of `mongoose` before 4.3.6, 3.8.39 are vulnerable to remote memory exposure.\n\nTrying to save a number to a field of type Buffer on the affected mongoose versions allocates a chunk of uninitialized memory and stores it in the database.\n\n\n## Recommendation\n\nUpdate to version 4.3.6, 3.8.39 or later.",
+                        "cweId": "CWE-937",
+                        "cweLabel": null,
+                        "cvssScore": 0.0,
+                        "criticity": "UNKNOWN",
+                        "cpe": null,
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "3.8.39",
+            "safestVersion": "6.13.6"
+        },
+        {
+            "id": 51233,
+            "componentId": "commander.npm",
+            "name": "commander.npm",
+            "version": "1.3.2",
+            "release": 1374164810000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [],
+            "lastVersion": "14.0.3",
+            "lastRelease": 1769824037000,
+            "nbVersionPreviousYear": 4,
+            "numberOfCodeLines": 10.0,
+            "numberOfFiles": 2.0,
+            "cwes": []
+        },
+        {
+            "id": 51234,
+            "componentId": "public-address.npm",
+            "name": "public-address.npm",
+            "version": "0.1.0",
+            "release": 1386883739000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "0.1.2",
+            "lastRelease": 1479974206000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 43.0,
+            "numberOfFiles": 2.0,
+            "cve": {
+                "vendor": "public-address",
+                "product": "public-address",
+                "version": "0.1.0",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2018-16480",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-16480",
+                        "description": "A XSS vulnerability was found in module public <0.1.4 that allows malicious Javascript code to run in the browser, due to the absence of sanitization of the file/folder names before rendering.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.1,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:public_project:public",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": []
+        },
+        {
+            "id": 51235,
+            "componentId": "muri.npm",
+            "name": "muri.npm",
+            "version": "0.3.1",
+            "release": 1361123572000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "1.3.0",
+            "lastRelease": 1507677713000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 20.0,
+            "numberOfFiles": 2.0,
+            "cwes": []
+        },
+        {
+            "id": 51238,
+            "componentId": "mpath.npm",
+            "name": "mpath.npm",
+            "version": "0.1.1",
+            "release": 1356130260000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "0.9.0",
+            "lastRelease": 1650209350000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 3.0,
+            "numberOfFiles": 2.0,
+            "cve": {
+                "vendor": "mpath",
+                "product": "mpath",
+                "version": "0.1.1",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2018-16490",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-16490",
+                        "description": "A prototype pollution vulnerability was found in module mpath <0.5.1 that allows an attacker to inject arbitrary properties onto Object.prototype.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:mpath_project:mpath",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2021-23438",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-23438",
+                        "description": "This affects the package mpath before 0.8.4. A type confusion vulnerability can lead to a bypass of CVE-2018-16490. In particular, the condition ignoreProperties.indexOf(parts[i]) !== -1 returns -1 if parts[i] is ['__proto__']. This is because the method that has been called if the input is an array is Array.prototype.indexOf() and not String.prototype.indexOf(). They behave differently depending on the type of the input.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.6,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:mpath_project:mpath",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "0.5.1",
+            "safestVersion": "0.8.4"
+        },
+        {
+            "id": 51239,
+            "componentId": "punycode.npm",
+            "name": "punycode.npm",
+            "version": "1.2.3",
+            "release": 1371724385000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 26148,
+                    "name": "GNU General Public Licenses Family",
+                    "compliance": "notCompliant"
+                },
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "2.3.1",
+            "lastRelease": 1698690512000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 282.0,
+            "numberOfFiles": 2.0,
+            "cwes": []
+        },
+        {
+            "id": 51240,
+            "componentId": "express.npm",
+            "name": "express.npm",
+            "version": "3.4.7",
+            "release": 1386748673000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "Scan",
+            "licenses": [],
+            "lastVersion": "4.22.1",
+            "lastRelease": 1764622241000,
+            "nbVersionPreviousYear": 5,
+            "numberOfCodeLines": 742.0,
+            "numberOfFiles": 9.0,
+            "cve": {
+                "vendor": "express",
+                "product": "express",
+                "version": "3.4.7",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2014-6393",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2014-6393",
+                        "description": "The Express web framework before 3.11 and 4.x before 4.5 for Node.js does not provide a charset field in HTTP Content-Type headers in 400 level responses, which might allow remote attackers to conduct cross-site scripting (XSS) attacks via characters in a non-standard encoding.",
+                        "cweId": "CWE-79",
+                        "cweLabel": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
+                        "cvssScore": 6.1,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2022-24999",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-24999",
+                        "description": "qs before 6.10.3, as used in Express before 4.17.3 and other products, allows attackers to cause a Node process hang for an Express application because an __ proto__ key can be used. In many typical Express use cases, an unauthenticated remote attacker can place the attack payload in the query string of the URL that is used to visit the application, such as a[__proto__]=b&a[__proto__]&a[length]=100000000. The fix was backported to qs 6.9.7, 6.8.3, 6.7.3, 6.6.1, 6.5.3, 6.4.1, 6.3.3, and 6.2.4 (and therefore Express 4.17.3, which has \"deps: qs@6.9.7\" in its release description, is not vulnerable).",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:qs_project:qs",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2024-10491",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-10491",
+                        "description": "A vulnerability has been identified in the Express response.links\u00a0function, allowing for arbitrary resource injection in the Link\u00a0header when unsanitized data is used.\n\nThe issue arises from improper sanitization in `Link` header values, which can allow a combination of characters like `,`, `;`, and `<>` to preload malicious resources.\n\nThis vulnerability is especially relevant for dynamic parameters.",
+                        "cweId": "CWE-74",
+                        "cweLabel": null,
+                        "cvssScore": 4.0,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2024-29041",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-29041",
+                        "description": "Express.js minimalist web framework for node. Versions of Express.js prior to 4.19.0 and all pre-release alpha and beta versions of 5.0 are affected by an open redirect vulnerability using malformed URLs. When a user of Express performs a redirect using a user-provided URL Express performs an encode [using `encodeurl`](https://github.com/pillarjs/encodeurl) on the contents before passing it to the `location` header. This can cause malformed URLs to be evaluated in unexpected ways by common redirect allow list implementations in Express applications, leading to an Open Redirect via bypass of a properly implemented allow list. The main method impacted is `res.location()` but this is also called from within `res.redirect()`. The vulnerability is fixed in 4.19.2 and 5.0.0-beta.3.",
+                        "cweId": "CWE-1286",
+                        "cweLabel": null,
+                        "cvssScore": 6.1,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2024-43796",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-43796",
+                        "description": "Express.js minimalist web framework for node. In express < 4.20.0, passing untrusted user input - even after sanitizing it - to response.redirect() may execute untrusted code. This issue is patched in express 4.20.0.",
+                        "cweId": "CWE-79",
+                        "cweLabel": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
+                        "cvssScore": 5.0,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2024-9266",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-9266",
+                        "description": "URL Redirection to Untrusted Site ('Open Redirect') vulnerability in Express. This vulnerability affects the use of the Express Response object. This issue impacts Express: from 3.4.5 before 4.0.0.",
+                        "cweId": "CWE-601",
+                        "cweLabel": "URL Redirection to Untrusted Site ('Open Redirect')",
+                        "cvssScore": 4.7,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "3.11.0",
+            "safestVersion": "4.22.0"
+        },
+        {
+            "id": 51241,
+            "componentId": "mongoose.npm",
+            "name": "mongoose.npm",
+            "version": "3.8.3",
+            "release": 1387349000000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [],
+            "lastVersion": "9.2.0",
+            "lastRelease": 1770674375000,
+            "nbVersionPreviousYear": 61,
+            "numberOfCodeLines": 637.0,
+            "numberOfFiles": 52.0,
+            "cve": {
+                "vendor": "mongoose",
+                "product": "mongoose",
+                "version": "3.8.3",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2019-17426",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-17426",
+                        "description": "Automattic Mongoose through 5.7.4 allows attackers to bypass access control (in some applications) because any query object with a _bsontype attribute is ignored. For example, adding \"_bsontype\":\"a\" can sometimes interfere with a query filter. NOTE: this CVE is about Mongoose's failure to work around this _bsontype special case that exists in older versions of the bson parser (aka the mongodb/js-bson project).",
+                        "cweId": "CWE-20",
+                        "cweLabel": null,
+                        "cvssScore": 9.1,
+                        "criticity": "CRITICAL",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2022-24304",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-24304",
+                        "description": "Schema in lib/schema.js in Mongoose before 6.4.6 is vulnerable to prototype pollution.",
+                        "cweId": "CWE-1321",
+                        "cweLabel": null,
+                        "cvssScore": 9.8,
+                        "criticity": "CRITICAL",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2022-2564",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-2564",
+                        "description": "Prototype Pollution in GitHub repository automattic/mongoose prior to 6.4.6.",
+                        "cweId": "CWE-1321",
+                        "cweLabel": null,
+                        "cvssScore": 9.8,
+                        "criticity": "CRITICAL",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2023-3696",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-3696",
+                        "description": "Prototype Pollution in GitHub repository automattic/mongoose prior to 7.3.4.",
+                        "cweId": "CWE-1321",
+                        "cweLabel": null,
+                        "cvssScore": 9.8,
+                        "criticity": "CRITICAL",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2024-53900",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-53900",
+                        "description": "Mongoose before 8.8.3 can improperly use $where in match, leading to search injection.",
+                        "cweId": "CWE-89",
+                        "cweLabel": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')",
+                        "cvssScore": 9.1,
+                        "criticity": "CRITICAL",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2025-23061",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-23061",
+                        "description": "Mongoose before 8.9.5 can improperly use a nested $where filter with a populate() match, leading to search injection. NOTE: this issue exists because of an incomplete fix for CVE-2024-53900.",
+                        "cweId": "CWE-94",
+                        "cweLabel": "Improper Control of Generation of Code ('Code Injection')",
+                        "cvssScore": 9.0,
+                        "criticity": "CRITICAL",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "GMS-2020-748",
+                        "link": null,
+                        "description": "Versions of `mongoose` before 4.3.6, 3.8.39 are vulnerable to remote memory exposure.\n\nTrying to save a number to a field of type Buffer on the affected mongoose versions allocates a chunk of uninitialized memory and stores it in the database.\n\n\n## Recommendation\n\nUpdate to version 4.3.6, 3.8.39 or later.",
+                        "cweId": "CWE-937",
+                        "cweLabel": null,
+                        "cvssScore": 0.0,
+                        "criticity": "UNKNOWN",
+                        "cpe": null,
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "3.8.39",
+            "safestVersion": "6.13.6"
+        },
+        {
+            "id": 51242,
+            "componentId": "mongodb.npm",
+            "name": "mongodb.npm",
+            "version": "1.3.19",
+            "release": 1377099308000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "7.1.0-dev.20260207.sha.cfb0bbdd",
+            "lastRelease": 1770423807000,
+            "nbVersionPreviousYear": 170,
+            "numberOfCodeLines": 3066.0,
+            "numberOfFiles": 24.0,
+            "cve": {
+                "vendor": "mongodb",
+                "product": "mongodb",
+                "version": "1.3.19",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2012-6619",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2012-6619",
+                        "description": "The default configuration for MongoDB before 2.3.2 does not validate objects, which allows remote authenticated users to cause a denial of service (crash) or read system memory via a crafted BSON object in the column name in an insert command, which triggers a buffer over-read.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.4,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:mongodb:mongodb",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2013-1892",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2013-1892",
+                        "description": "MongoDB before 2.0.9 and 2.2.x before 2.2.4 does not properly validate requests to the nativeHelper function in SpiderMonkey, which allows remote authenticated users to cause a denial of service (invalid memory access and server crash) or execute arbitrary code via a crafted memory address in the first argument.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.0,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:mongodb:mongodb",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2013-2132",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2013-2132",
+                        "description": "bson/_cbsonmodule.c in the mongo-python-driver (aka. pymongo) before 2.5.2, as used in MongoDB, allows context-dependent attackers to cause a denial of service (NULL pointer dereference and crash) via vectors related to decoding of an \"invalid DBRef.\"",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 4.3,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:mongodb:mongodb",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2014-8180",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2014-8180",
+                        "description": "MongoDB on Red Hat Satellite 6 allows local users to bypass authentication by logging in with an empty password and delete information which can cause a Denial of Service.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.5,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:mongodb:mongodb",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2015-1609",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2015-1609",
+                        "description": "MongoDB before 2.4.13 and 2.6.x before 2.6.8 allows remote attackers to cause a denial of service via a crafted UTF-8 string in a BSON request.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.0,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:mongodb:mongodb",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2016-6494",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2016-6494",
+                        "description": "The client in MongoDB uses world-readable permissions on .dbshell history files, which might allow local users to obtain sensitive information by reading these files.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.5,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:mongodb:mongodb",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2017-2665",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-2665",
+                        "description": "The skyring-setup command creates random password for mongodb skyring database but it writes password in plain text to /etc/skyring/skyring.conf file which is owned by root but read by local user. Any local user who has access to system running skyring service will be able to get password in plain text.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 4.8,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:mongodb:mongodb",
+                        "isKev": false
+                    },
+                    {
+                        "name": "GMS-2020-389",
+                        "link": null,
+                        "description": "Versions of `mongodb` are vulnerable to Denial of Service. The package fails to properly catch an exception when a collection name is invalid and the DB does not exist, crashing the application. Upgrade to or later.",
+                        "cweId": "CWE-937",
+                        "cweLabel": null,
+                        "cvssScore": 0.0,
+                        "criticity": "UNKNOWN",
+                        "cpe": null,
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "3.0.7",
+            "safestVersion": "4.17.0"
+        },
+        {
+            "id": 51243,
+            "componentId": "bson.npm",
+            "name": "bson.npm",
+            "version": "0.2.2",
+            "release": 1375261864000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "7.2.0",
+            "lastRelease": 1770146547000,
+            "nbVersionPreviousYear": 15,
+            "numberOfCodeLines": 2856.0,
+            "numberOfFiles": 8.0,
+            "cve": {
+                "vendor": "bson",
+                "product": "bson",
+                "version": "0.2.2",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2019-2391",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-2391",
+                        "description": "Incorrect parsing of certain JSON input may result in js-bson not correctly serializing BSON. This may cause unexpected application behaviour including data disclosure. This issue affects: MongoDB Inc. js-bson library version 1.1.3 and prior to.",
+                        "cweId": "CWE-502",
+                        "cweLabel": "Deserialization of Untrusted Data",
+                        "cvssScore": 5.4,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2020-7610",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-7610",
+                        "description": "All versions of bson before 1.1.4 are vulnerable to Deserialization of Untrusted Data. The package will ignore an unknown value for an object's _bsotype, leading to cases where an object is serialized as a document rather than the intended BSON type.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 9.8,
+                        "criticity": "CRITICAL",
+                        "cpe": "cpe:/a:mongodb:bson",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "1.1.4",
+            "safestVersion": "1.1.4"
+        },
+        {
+            "id": 51244,
+            "componentId": "zip-dir.npm",
+            "name": "zip-dir.npm",
+            "version": "0.1.3",
+            "release": 1386194724000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "2.0.0",
+            "lastRelease": 1606247840000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 210.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51245,
+            "componentId": "mpromise.npm",
+            "name": "mpromise.npm",
+            "version": "0.3.0",
+            "release": 1374790708000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "0.5.5",
+            "lastRelease": 1411134599000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 7.0,
+            "numberOfFiles": 3.0,
+            "cwes": []
+        },
+        {
+            "id": 51246,
+            "componentId": "tingodb.npm",
+            "name": "tingodb.npm",
+            "version": "0.1.5",
+            "release": 1371485216000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Scan",
+            "licenses": [],
+            "lastVersion": "0.6.1",
+            "lastRelease": 1523281394000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 6.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51247,
+            "componentId": "kerberos.npm",
+            "name": "kerberos.npm",
+            "version": "0.0.2",
+            "release": 1365168437000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "7.0.0",
+            "lastRelease": 1762365959000,
+            "nbVersionPreviousYear": 3,
+            "numberOfCodeLines": 68.0,
+            "numberOfFiles": 2.0,
+            "cve": {
+                "vendor": "kerberos",
+                "product": "kerberos",
+                "version": "0.0.2",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2020-13110",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-13110",
+                        "description": "The kerberos package before 1.0.0 for Node.js allows arbitrary code execution and privilege escalation via injection of malicious DLLs through use of the kerberos_sspi LoadLibrary() method, because of a DLL path search.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.8,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:kerberos_project:kerberos",
+                        "isKev": false
+                    },
+                    {
+                        "name": "GMS-2020-743",
+                        "link": null,
+                        "description": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') in kerberos.",
+                        "cweId": "CWE-78",
+                        "cweLabel": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')",
+                        "cvssScore": 0.0,
+                        "criticity": "UNKNOWN",
+                        "cpe": null,
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "2.0.3",
+            "safestVersion": "2.0.3"
+        },
+        {
+            "id": 51248,
+            "componentId": "joe.npm",
+            "name": "joe.npm",
+            "version": "0.3.2",
+            "release": 1339209018000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Scan",
+            "licenses": [],
+            "lastVersion": "1.6.1",
+            "lastRelease": 1490718098000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 3.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51249,
+            "componentId": "async.npm",
+            "name": "async.npm",
+            "version": "0.2.9",
+            "release": 1369727448000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "3.2.6",
+            "lastRelease": 1724109863000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 866.0,
+            "numberOfFiles": 2.0,
+            "cve": {
+                "vendor": "async",
+                "product": "async",
+                "version": "0.2.9",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2021-43138",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-43138",
+                        "description": "In Async before 2.6.4 and 3.x before 3.2.2, a malicious user can obtain privileges via the mapValues() method, aka lib/internal/iterator.js createObjectIterator prototype pollution.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.8,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:async_project:async",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "2.6.4",
+            "safestVersion": "2.6.4"
+        },
+        {
+            "id": 51250,
+            "componentId": "formidable.npm",
+            "name": "formidable.npm",
+            "version": "1.0.3",
+            "release": 1315693930000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "Scan",
+            "licenses": [],
+            "lastVersion": "4.0.0-rc.6",
+            "lastRelease": 1747073601000,
+            "nbVersionPreviousYear": 11,
+            "numberOfCodeLines": 40.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "formidable",
+                "product": "formidable",
+                "version": "1.0.3",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2022-29622",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-29622",
+                        "description": "An arbitrary file upload vulnerability in formidable v3.1.4 allows attackers to execute arbitrary code via a crafted filename. NOTE: some third parties dispute this issue because the product has common use cases in which uploading arbitrary files is the desired behavior. Also, there are configuration options in all versions that can change the default behavior of how files are handled. Strapi does not consider this to be a valid vulnerability.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 9.8,
+                        "criticity": "CRITICAL",
+                        "cpe": "cpe:/a:formidable_project:formidable",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "3.2.5",
+            "safestVersion": "3.5.3"
+        },
+        {
+            "id": 51251,
+            "componentId": "readable-stream.npm",
+            "name": "readable-stream.npm",
+            "version": "1.1.9",
+            "release": 1379084447000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "4.7.0",
+            "lastRelease": 1736241338000,
+            "nbVersionPreviousYear": 1,
+            "numberOfCodeLines": 118.0,
+            "numberOfFiles": 13.0,
+            "cwes": []
+        },
+        {
+            "id": 51254,
+            "componentId": "simplesmtp.npm",
+            "name": "simplesmtp.npm",
+            "version": "0.3.16",
+            "release": 1385935208000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "0.3.35",
+            "lastRelease": 1424122886000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 82.0,
+            "numberOfFiles": 5.0,
+            "cwes": []
+        },
+        {
+            "id": 51255,
+            "componentId": "hooks.npm",
+            "name": "hooks.npm",
+            "version": "0.2.1",
+            "release": 1334655111000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [],
+            "lastVersion": "0.3.2",
+            "lastRelease": 1382055516000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 739.0,
+            "numberOfFiles": 4.0,
+            "cwes": []
+        },
+        {
+            "id": 51256,
+            "componentId": "directmail.npm",
+            "name": "directmail.npm",
+            "version": "0.1.6",
+            "release": 1386246313000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "0.1.8",
+            "lastRelease": 1400138213000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 12.0,
+            "numberOfFiles": 3.0,
+            "cwes": []
+        },
+        {
+            "id": 51257,
+            "componentId": "npmd-bootstrap.npm",
+            "name": "npmd-bootstrap.npm",
+            "version": "3.0.1",
+            "release": 1383523590000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Scan",
+            "licenses": [],
+            "lastVersion": "3.0.1",
+            "lastRelease": 1383523590000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 2.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51258,
+            "componentId": "mquery.npm",
+            "name": "mquery.npm",
+            "version": "0.3.2",
+            "release": 1378495583000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "6.0.0",
+            "lastRelease": 1763480834000,
+            "nbVersionPreviousYear": 1,
+            "numberOfCodeLines": 140.0,
+            "numberOfFiles": 9.0,
+            "cve": {
+                "vendor": "mquery",
+                "product": "mquery",
+                "version": "0.3.2",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2020-35149",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-35149",
+                        "description": "lib/utils.js in mquery before 3.2.3 allows a pollution attack because a special property (e.g., __proto__) can be copied during a merge or clone operation.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.3,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:mquery_project:mquery",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "3.2.3",
+            "safestVersion": "3.2.3"
+        },
+        {
+            "id": 51259,
+            "componentId": "rai.npm",
+            "name": "rai.npm",
+            "version": "0.1.9",
+            "release": 1387872134000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "0.1.12",
+            "lastRelease": 1423562150000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 72.0,
+            "numberOfFiles": 2.0,
+            "cwes": []
+        },
+        {
+            "id": 51260,
+            "componentId": "raw-body.npm",
+            "name": "raw-body.npm",
+            "version": "1.1.2",
+            "release": 1385929020000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "2.5.3",
+            "lastRelease": 1764084228000,
+            "nbVersionPreviousYear": 3,
+            "numberOfCodeLines": 11.0,
+            "numberOfFiles": 2.0,
+            "cwes": []
+        },
+        {
+            "id": 51262,
+            "componentId": "bytes.npm",
+            "name": "bytes.npm",
+            "version": "0.2.1",
+            "release": 1364842089000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "Dependency",
+            "licenses": [],
+            "lastVersion": "3.1.2",
+            "lastRelease": 1643346157000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51263,
+            "componentId": "encoding.npm",
+            "name": "encoding.npm",
+            "version": "0.1.7",
+            "release": 1378205122000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "0.1.13",
+            "lastRelease": 1594364531000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51264,
+            "componentId": "send.npm",
+            "name": "send.npm",
+            "version": "0.1.4",
+            "release": 1376171211000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "Dependency",
+            "licenses": [],
+            "lastVersion": "1.2.1",
+            "lastRelease": 1765827371000,
+            "nbVersionPreviousYear": 3,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "send",
+                "product": "send",
+                "version": "0.1.4",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2014-6394",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2014-6394",
+                        "description": "visionmedia send before 0.8.4 for Node.js uses a partial comparison for verifying whether a directory is within the document root, which allows remote attackers to access restricted directories, as demonstrated using \"public-restricted\" under a \"public\" directory.",
+                        "cweId": "CWE-22",
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2015-8859",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2015-8859",
+                        "description": "The send package before 0.11.1 for Node.js allows attackers to obtain the root path via unspecified vectors.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.3,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:send_project:send",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2024-43799",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-43799",
+                        "description": "Send is a library for streaming files from the file system as a http response. Send passes untrusted user input to SendStream.redirect() which executes untrusted code. This issue is patched in send 0.19.0.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.0,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:send_project:send",
+                        "isKev": false
+                    },
+                    {
+                        "name": "GMS-2014-22",
+                        "link": null,
+                        "description": "When relying on the root option to restrict file access it may be possible for an application consumer to escape out of the restricted directory and access files in a similarly named directory. For example, `static(_dirname + '/public')` would allow access to `_dirname + '/public-restricted'`.",
+                        "cweId": "CWE-937",
+                        "cweLabel": null,
+                        "cvssScore": 0.0,
+                        "criticity": "UNKNOWN",
+                        "cpe": null,
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "0.8.5",
+            "safestVersion": "0.19.0"
+        },
+        {
+            "id": 51265,
+            "componentId": "merge-descriptors.npm",
+            "name": "merge-descriptors.npm",
+            "version": "0.0.1",
+            "release": 1383078546000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "2.0.0",
+            "lastRelease": 1700160560000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51266,
+            "componentId": "debug.npm",
+            "name": "debug.npm",
+            "version": "0.7.4",
+            "release": 1384373317000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "Dependency",
+            "licenses": [],
+            "lastVersion": "4.4.3",
+            "lastRelease": 1757784319000,
+            "nbVersionPreviousYear": 2,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "debug",
+                "product": "debug",
+                "version": "0.7.4",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2017-16137",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-16137",
+                        "description": "The debug module is vulnerable to regular expression denial of service when untrusted user input is passed into the o formatter. It takes around 50k characters to block for 2 seconds making this a low severity issue.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.3,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:debug_project:debug",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2017-20165",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-20165",
+                        "description": "A vulnerability classified as problematic has been found in debug-js debug up to 3.0.x. This affects the function useColors of the file src/node.js. The manipulation of the argument str leads to inefficient regular expression complexity. Upgrading to version 3.1.0 is able to address this issue. The identifier of the patch is c38a0166c266a679c8de012d4eaccec3f944e685. It is recommended to upgrade the affected component. The identifier VDB-217665 was assigned to this vulnerability.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 3.5,
+                        "criticity": "LOW",
+                        "cpe": "cpe:/a:debug_project:debug",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "2.6.9",
+            "safestVersion": "2.6.9"
+        },
+        {
+            "id": 51267,
+            "componentId": "mkdirp.npm",
+            "name": "mkdirp.npm",
+            "version": "0.3.5",
+            "release": 1361533465000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "3.0.1",
+            "lastRelease": 1682357258000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51268,
+            "componentId": "range-parser.npm",
+            "name": "range-parser.npm",
+            "version": "0.0.4",
+            "release": 1339980994000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Dependency",
+            "licenses": [],
+            "lastVersion": "1.2.1",
+            "lastRelease": 1557534457000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51269,
+            "componentId": "simplesmtp.npm",
+            "name": "simplesmtp.npm",
+            "version": "0.3.15",
+            "release": 1384522831000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "0.3.35",
+            "lastRelease": 1424122886000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51270,
+            "componentId": "stream-counter.npm",
+            "name": "stream-counter.npm",
+            "version": "0.2.0",
+            "release": 1378660366000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 26140,
+                    "name": "BSD Licenses Family",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "1.0.0",
+            "lastRelease": 1399606275000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51271,
+            "componentId": "debuglog.npm",
+            "name": "debuglog.npm",
+            "version": "0.0.2",
+            "release": 1383061291000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "1.0.1",
+            "lastRelease": 1394043299000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51272,
+            "componentId": "he.npm",
+            "name": "he.npm",
+            "version": "0.3.6",
+            "release": 1375872440000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "1.2.0",
+            "lastRelease": 1537723102000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51273,
+            "componentId": "kerberos.npm",
+            "name": "kerberos.npm",
+            "version": "0.0.3",
+            "release": 1376408684000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "7.0.0",
+            "lastRelease": 1762365959000,
+            "nbVersionPreviousYear": 3,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "kerberos",
+                "product": "kerberos",
+                "version": "0.0.3",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2020-13110",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-13110",
+                        "description": "The kerberos package before 1.0.0 for Node.js allows arbitrary code execution and privilege escalation via injection of malicious DLLs through use of the kerberos_sspi LoadLibrary() method, because of a DLL path search.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.8,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:kerberos_project:kerberos",
+                        "isKev": false
+                    },
+                    {
+                        "name": "GMS-2020-743",
+                        "link": null,
+                        "description": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') in kerberos.",
+                        "cweId": "CWE-78",
+                        "cweLabel": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')",
+                        "cvssScore": 0.0,
+                        "criticity": "UNKNOWN",
+                        "cpe": null,
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "2.0.3",
+            "safestVersion": "2.0.3"
+        },
+        {
+            "id": 51274,
+            "componentId": "fresh.npm",
+            "name": "fresh.npm",
+            "version": "0.2.0",
+            "release": 1376171095000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [],
+            "lastVersion": "2.0.0",
+            "lastRelease": 1725492288000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "fresh",
+                "product": "fresh",
+                "version": "0.2.0",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2017-16119",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-16119",
+                        "description": "Fresh is a module used by the Express.js framework for HTTP response freshness testing. It is vulnerable to a regular expression denial of service when it is passed specially crafted input to parse. This causes the event loop to be blocked causing a denial of service condition.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:fresh_project:fresh",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "0.5.2",
+            "safestVersion": "0.5.2"
+        },
+        {
+            "id": 51275,
+            "componentId": "pause.npm",
+            "name": "pause.npm",
+            "version": "0.0.1",
+            "release": 1342720832000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [],
+            "lastVersion": "0.1.0",
+            "lastRelease": 1435796184000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51276,
+            "componentId": "addressparser.npm",
+            "name": "addressparser.npm",
+            "version": "0.2.0",
+            "release": 1383122226000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "1.0.1",
+            "lastRelease": 1454787527000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 155778,
+            "componentId": "jquery.npm",
+            "name": "jquery.npm",
+            "version": "1.7.2",
+            "release": 1335870849000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "4.0.0",
+            "lastRelease": 1768696093000,
+            "nbVersionPreviousYear": 3,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "jquery",
+                "product": "jquery",
+                "version": "1.7.2",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2007-2379",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2007-2379",
+                        "description": "The jQuery framework exchanges data using JavaScript Object Notation (JSON) without an associated protection scheme, which allows remote attackers to obtain the data via a web page that retrieves the data through a URL in the SRC attribute of a SCRIPT element and captures the data using other JavaScript code, aka \"JavaScript Hijacking.\"",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.0,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:jquery:jquery",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2012-6708",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2012-6708",
+                        "description": "jQuery before 1.9.0 is vulnerable to Cross-site Scripting (XSS) attacks. The jQuery(strInput) function does not differentiate selectors from HTML in a reliable fashion. In vulnerable versions, jQuery determined whether the input was HTML by looking for the '<' character anywhere in the string, giving attackers more flexibility when attempting to construct a malicious payload. In fixed versions, jQuery only deems the input to be HTML if it explicitly starts with the '<' character, limiting exploitability only to attackers who can control the beginning of a string, which is far less common.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.1,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:jquery:jquery",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2015-9251",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+                        "description": "jQuery before 3.0.0 is vulnerable to Cross-site Scripting (XSS) attacks when a cross-domain Ajax request is performed without the dataType option, causing text/javascript responses to be executed.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.1,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:jquery:jquery",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2019-11358",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+                        "description": "jQuery before 3.4.0, as used in Drupal, Backdrop CMS, and other products, mishandles jQuery.extend(true, {}, ...) because of Object.prototype pollution. If an unsanitized source object contained an enumerable __proto__ property, it could extend the native Object.prototype.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.1,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:jquery:jquery",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2020-11022",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-11022",
+                        "description": "In jQuery versions greater than or equal to 1.2 and before 3.5.0, passing HTML from untrusted sources - even after sanitizing it - to one of jQuery's DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted code. This problem is patched in jQuery 3.5.0.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.9,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:jquery:jquery",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2020-11023",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-11023",
+                        "description": "In jQuery versions greater than or equal to 1.0.3 and before 3.5.0, passing HTML containing <option> elements from untrusted sources - even after sanitizing it - to one of jQuery's DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted code. This problem is patched in jQuery 3.5.0.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.9,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:jquery:jquery",
+                        "isKev": true
+                    },
+                    {
+                        "name": "CVE-2020-23064",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-23064",
+                        "description": "Cross Site Scripting vulnerability in jQuery 2.2.0 through 3.x before 3.5.0 allows a remote attacker to execute arbitrary code via the <options> element.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.1,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:jquery:jquery",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2020-7656",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-7656",
+                        "description": "jquery prior to 1.9.0 allows Cross-site Scripting attacks via the load method. The load method fails to recognize and remove \"<script>\" HTML tags that contain a whitespace character, i.e: \"</script >\", which results in the enclosed script logic to be executed.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.1,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:jquery:jquery",
+                        "isKev": false
+                    },
+                    {
+                        "name": "GMS-2016-33",
+                        "link": null,
+                        "description": "A lowercasing logic is used on the attribute names. Because of this, boolean attributes whose names are not all lowercase cause infinite recursion, and will exceed the stack call limit.",
+                        "cweId": "CWE-937",
+                        "cweLabel": null,
+                        "cvssScore": 0.0,
+                        "criticity": "UNKNOWN",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "GMS-2017-121",
+                        "link": null,
+                        "description": "jQuery's main method in affected versions contains an unreliable way of detecting whether the input to the `jQuery(strInput)` function is intended to be a selector or HTML.",
+                        "cweId": "CWE-937",
+                        "cweLabel": null,
+                        "cvssScore": 0.0,
+                        "criticity": "UNKNOWN",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "GMS-2017-122",
+                        "link": null,
+                        "description": "When text/javascript responses are received from cross-origin ajax requests not containing the option `dataType`, the result is executed in `jQuery.globalEval` potentially allowing an attacker to execute arbitrary code on the origin.",
+                        "cweId": "CWE-937",
+                        "cweLabel": null,
+                        "cvssScore": 0.0,
+                        "criticity": "UNKNOWN",
+                        "cpe": null,
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "1.9.1",
+            "safestVersion": "3.5.0"
+        }
+    ],
+    "partialComponents": [
+        {
+            "name": "Jquery",
+            "technology": "JavaScript",
+            "type": "Web & Mobile applications",
+            "versions": [
+                "1.7.2"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "STL",
+            "technology": "C/C++",
+            "type": "API framework",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "The STL provides a ready-made set of common classes for C++, such as containers and associative arrays, that can be used with any built-in type and with any user-defined type that supports some elementary operations (such as copying and assignment). STL algorithms are independent of containers, which significantly reduces the complexity of the library.",
+            "dependencyLevel": null
+        },
+        {
+            "name": "underscore",
+            "technology": "JavaScript",
+            "type": "Web applications",
+            "versions": [
+                ""
+            ],
+            "license": "MIT",
+            "editor": "http://underscorejs.org/",
+            "description": "JavaScript library that provides a whole mess of useful functional programming helpers without extending any built-in objects. It\u00ef\u00bf\u00bds the answer to the question: \u00ef\u00bf\u00bdIf I sit down in front of a blank HTML page, and want to start being productive immediately, what do I need?\u00ef\u00bf\u00bd",
+            "dependencyLevel": null
+        },
+        {
+            "name": "discovered",
+            "technology": "JavaScript",
+            "type": "",
+            "versions": [
+                "http://www.jquery.com"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "map-reduce-example",
+            "technology": "JavaScript",
+            "type": "",
+            "versions": [
+                "0.0.0"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "aggregate-example",
+            "technology": "JavaScript",
+            "type": "",
+            "versions": [
+                "0.0.0"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "geospatial-example",
+            "technology": "JavaScript",
+            "type": "",
+            "versions": [
+                "0.0.0"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "lean-example",
+            "technology": "JavaScript",
+            "type": "",
+            "versions": [
+                "0.0.0"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "replica-set-example",
+            "technology": "JavaScript",
+            "type": "",
+            "versions": [
+                "0.0.0"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "connection-sharing",
+            "technology": "JavaScript",
+            "type": "",
+            "versions": [
+                "0.0.0"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "query-builder-example",
+            "technology": "JavaScript",
+            "type": "",
+            "versions": [
+                "0.0.0"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "promise-example",
+            "technology": "JavaScript",
+            "type": "",
+            "versions": [
+                "0.0.0"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        }
+    ]
+}

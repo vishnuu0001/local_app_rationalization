@@ -1,0 +1,648 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PLSQL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PLSQL__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 68,
+                                            "application_name": "Production Planning",
+                                            "counter": 815.0,
+                                            "effort": 2445.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PLSQL__Decode",
+                                    "detail": [
+                                        {
+                                            "application_id": 68,
+                                            "application_name": "Production Planning",
+                                            "counter": 18.0,
+                                            "effort": 18.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PLSQL__NotEfficiencyType",
+                                    "detail": [
+                                        {
+                                            "application_id": 68,
+                                            "application_name": "Production Planning",
+                                            "counter": 167.0,
+                                            "effort": 55.666668
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PLSQL__WithoutSemiColumn_End",
+                                    "detail": [
+                                        {
+                                            "application_id": 68,
+                                            "application_name": "Production Planning",
+                                            "counter": 36.0,
+                                            "effort": 3.0000002
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__Finalize",
+                                    "detail": [
+                                        {
+                                            "application_id": 68,
+                                            "application_name": "Production Planning",
+                                            "counter": 4.0,
+                                            "effort": 40.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__MagicNumbers",
+                                    "detail": [
+                                        {
+                                            "application_id": 68,
+                                            "application_name": "Production Planning",
+                                            "counter": 19808.0,
+                                            "effort": 59424.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__SpaghettiCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 68,
+                                            "application_name": "Production Planning",
+                                            "counter": 3102.906,
+                                            "effort": 3102.906
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PLSQL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PLSQL__WithReturnOutsideExceptionHandler",
+                                    "detail": [
+                                        {
+                                            "application_id": 68,
+                                            "application_name": "Production Planning",
+                                            "counter": 132.0,
+                                            "effort": 1320.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__MissingBraces2",
+                                    "detail": [
+                                        {
+                                            "application_id": 68,
+                                            "application_name": "Production Planning",
+                                            "counter": 15921.0,
+                                            "effort": 2653.5002
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__Instanceof",
+                                    "detail": [
+                                        {
+                                            "application_id": 68,
+                                            "application_name": "Production Planning",
+                                            "counter": 159.0,
+                                            "effort": 1590.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PLSQL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PLSQL__RiskyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 68,
+                                            "application_name": "Production Planning",
+                                            "counter": 72.0,
+                                            "effort": 72.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__PublicAttributes",
+                                    "detail": [
+                                        {
+                                            "application_id": 68,
+                                            "application_name": "Production Planning",
+                                            "counter": 7554.0,
+                                            "effort": 7554.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__EmptyCatches",
+                                    "detail": [
+                                        {
+                                            "application_id": 68,
+                                            "application_name": "Production Planning",
+                                            "counter": 163.0,
+                                            "effort": 815.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__MissingDefault",
+                                    "detail": [
+                                        {
+                                            "application_id": 68,
+                                            "application_name": "Production Planning",
+                                            "counter": 243.0,
+                                            "effort": 243.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__AssignmentsInConditionalExpr",
+                                    "detail": [
+                                        {
+                                            "application_id": 68,
+                                            "application_name": "Production Planning",
+                                            "counter": 26.0,
+                                            "effort": 13.000001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__BugPatterns",
+                                    "detail": [
+                                        {
+                                            "application_id": 68,
+                                            "application_name": "Production Planning",
+                                            "counter": 105.0,
+                                            "effort": 105.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PLSQL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PLSQL__ShortIdentifiers",
+                                    "detail": [
+                                        {
+                                            "application_id": 68,
+                                            "application_name": "Production Planning",
+                                            "counter": 4.0,
+                                            "effort": 0.33333334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PLSQL__LongLines100",
+                                    "detail": [
+                                        {
+                                            "application_id": 68,
+                                            "application_name": "Production Planning",
+                                            "counter": 3999.0,
+                                            "effort": 333.25003
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "PLSQL__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 68,
+                                            "application_name": "Production Planning",
+                                            "counter": 815.0,
+                                            "effort": 815.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 68,
+                                            "application_name": "Production Planning",
+                                            "counter": 1216.0,
+                                            "effort": 1216.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 68,
+                                            "application_name": "Production Planning",
+                                            "counter": 17905.0,
+                                            "effort": 1492.0834
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__BadNameLength",
+                                    "detail": [
+                                        {
+                                            "application_id": 68,
+                                            "application_name": "Production Planning",
+                                            "counter": 7163.0,
+                                            "effort": 596.9167
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__ClassDefinitions",
+                                    "detail": [
+                                        {
+                                            "application_id": 68,
+                                            "application_name": "Production Planning",
+                                            "counter": 2246.0,
+                                            "effort": 11230.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__MultInst",
+                                    "detail": [
+                                        {
+                                            "application_id": 68,
+                                            "application_name": "Production Planning",
+                                            "counter": 24356.0,
+                                            "effort": 2029.6667
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__CommentedOutCode",
+                                    "detail": [
+                                        {
+                                            "application_id": 68,
+                                            "application_name": "Production Planning",
+                                            "counter": 12332.0,
+                                            "effort": 12332.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__MissingAutomatedDoc2",
+                                    "detail": [
+                                        {
+                                            "application_id": 68,
+                                            "application_name": "Production Planning",
+                                            "counter": 51129.0,
+                                            "effort": 51129.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__BadDeclarationOrder",
+                                    "detail": [
+                                        {
+                                            "application_id": 68,
+                                            "application_name": "Production Planning",
+                                            "counter": 55860.0,
+                                            "effort": 55860.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__BadSpacing",
+                                    "detail": [
+                                        {
+                                            "application_id": 68,
+                                            "application_name": "Production Planning",
+                                            "counter": 11126.0,
+                                            "effort": 927.1667
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PLSQL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PLSQL__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 68,
+                                            "application_name": "Production Planning",
+                                            "counter": 1135.2002,
+                                            "effort": 1135.2002
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 68,
+                                            "application_name": "Production Planning",
+                                            "counter": 120997.77,
+                                            "effort": 120997.77
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__BadNaming",
+                                    "detail": [
+                                        {
+                                            "application_id": 68,
+                                            "application_name": "Production Planning",
+                                            "counter": 6474.0,
+                                            "effort": 539.5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 68,
+                                            "application_name": "Production Planning",
+                                            "counter": 384.0,
+                                            "effort": 3840.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PLSQL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PLSQL__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 68,
+                                            "application_name": "Production Planning",
+                                            "counter": 265.48,
+                                            "effort": 1327.4
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 68,
+                                            "application_name": "Production Planning",
+                                            "counter": 1020.72705,
+                                            "effort": 5103.6353
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__ComplexBinaryDecisions",
+                                    "detail": [
+                                        {
+                                            "application_id": 68,
+                                            "application_name": "Production Planning",
+                                            "counter": 6772.092,
+                                            "effort": 6772.092
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PLSQL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PLSQL__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 68,
+                                            "application_name": "Production Planning",
+                                            "counter": 235.44998,
+                                            "effort": 1177.2499
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__VG",
+                                    "detail": [
+                                        {
+                                            "application_id": 68,
+                                            "application_name": "Production Planning",
+                                            "counter": 733.66,
+                                            "effort": 3668.2998
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "PLSQL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "PLSQL__ComplexConditions",
+                                    "detail": [
+                                        {
+                                            "application_id": 68,
+                                            "application_name": "Production Planning",
+                                            "counter": 18.0,
+                                            "effort": 180.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "levelType": "technology",
+                            "id": "CSHARP",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "CSHARP__ComplexConditions",
+                                    "detail": [
+                                        {
+                                            "application_id": 68,
+                                            "application_name": "Production Planning",
+                                            "counter": 27.0,
+                                            "effort": 270.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,789 @@
+{
+    "id": 10029,
+    "name": "gitPHP",
+    "domains": [
+        {
+            "id": 12908,
+            "name": "PE Firm"
+        },
+        {
+            "id": 255,
+            "name": "Supply Chain & Manufacturing"
+        }
+    ],
+    "metrics": [
+        {
+            "snapshotLabel": "TrendCampaign_4_gitPHP",
+            "snapshotDate": 1488171600000,
+            "softwareAgility": 0.664767861366272,
+            "softwareAgilityAdded": 0.664767861366272,
+            "softwareElegance": 0.9212095141410828,
+            "softwareEleganceAdded": 0.9212095141410828,
+            "softwareResiliency": 0.9263405799865723,
+            "softwareResiliencyAdded": 0.9263405799865723,
+            "softwareHealth": 0.8374393184979757,
+            "openSourceSafety": 0.5828824872206785,
+            "openSourceLicense": 0.625,
+            "openSourceObsolescence": 0.12364746166203555,
+            "openSourceCVE": 1.0,
+            "businessImpact": 0.3680203045685279,
+            "roarIndex": 0.037112232563451794,
+            "backFiredFP": 110.0,
+            "backFiredFPAdded": 110.0,
+            "technicalDebt": 242.8666676878929,
+            "maintenanceRecordedFTE": 0.5,
+            "maintenanceRecommendedFTE": 0.0,
+            "greenIndex": null,
+            "greenIndexScan": null,
+            "greenIndexSurvey": null,
+            "greenOccurrences": null,
+            "greenEffort": null,
+            "greenDetail": [
+                {
+                    "technology": "PHP",
+                    "greenIndexScan": 0.0,
+                    "greenIndexDetails": null
+                }
+            ],
+            "totalLinesOfCode": 5837,
+            "totalLinesOfCodeAdded": 5837,
+            "totalLinesOfCodeModified": 0,
+            "totalFiles": 138,
+            "totalFilesAdded": 138,
+            "totalFilesModified": 0,
+            "customIndicators": [
+                {
+                    "metricId": 10023356,
+                    "value": "0.10101010101010101"
+                },
+                {
+                    "metricId": 10006001,
+                    "value": "0.2777777777777778"
+                },
+                {
+                    "metricId": 10006305,
+                    "value": "-1.0"
+                },
+                {
+                    "metricId": 10013600,
+                    "value": "-1.0"
+                },
+                {
+                    "metricId": 10006302,
+                    "value": "-1.0"
+                },
+                {
+                    "metricId": 10006301,
+                    "value": "-1.0"
+                },
+                {
+                    "metricId": 10016304,
+                    "value": "-1.0"
+                }
+            ],
+            "technologies": [
+                {
+                    "technology": "PHP",
+                    "totalLinesOfCode": 5837,
+                    "totalFiles": 138,
+                    "softwareAgility": 0.664767861366272,
+                    "softwareElegance": 0.9212095141410828,
+                    "softwareResiliency": 0.9263405799865723,
+                    "softwareHealth": 0.8374393184979757,
+                    "softwareAgilityDetail": {
+                        "highLinesOfCode": 777,
+                        "mediumLinesOfCode": 5060,
+                        "lowLinesOfCode": 0
+                    },
+                    "softwareEleganceDetail": {
+                        "highLinesOfCode": 5219,
+                        "mediumLinesOfCode": 618,
+                        "lowLinesOfCode": 0
+                    },
+                    "softwareResiliencyDetail": {
+                        "highLinesOfCode": 5497,
+                        "mediumLinesOfCode": 340,
+                        "lowLinesOfCode": 0
+                    },
+                    "softwareHealthDetail": {
+                        "highLinesOfCode": 3831,
+                        "mediumLinesOfCode": 2006,
+                        "lowLinesOfCode": 0
+                    }
+                }
+            ],
+            "vulnerabilities": [
+                {
+                    "matchedCPE": "cpe:/a:apache:log4j",
+                    "name": "CVE-2020-9493",
+                    "publishedDate": "2021-06-16T12:15:06.577Z",
+                    "lastUpdateDate": "2024-11-21T10:40:46.017Z",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2020-9493",
+                    "description": "A deserialization flaw was found in Apache Chainsaw versions prior to 2.1.0 which could lead to malicious code execution.",
+                    "references": [
+                        {
+                            "name": "Mailing List",
+                            "url": "https://www.openwall.com/lists/oss-security/2021/06/16/1",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r50d389c613ba6062a26aa57e163c09bfee4ff2d95d67331d75265b83%40%3Cannounce.apache.org%3E",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Mailing List",
+                            "url": "https://www.openwall.com/lists/oss-security/2021/06/16/1",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Mailing List",
+                            "url": "http://www.openwall.com/lists/oss-security/2022/01/18/5",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Mailing List",
+                            "url": "http://www.openwall.com/lists/oss-security/2021/06/16/1",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://lists.apache.org/thread.html/r50d389c613ba6062a26aa57e163c09bfee4ff2d95d67331d75265b83%40%3Cannounce.apache.org%3E",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Mailing List",
+                            "url": "http://www.openwall.com/lists/oss-security/2021/06/16/1",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Mailing List",
+                            "url": "http://www.openwall.com/lists/oss-security/2022/01/18/5",
+                            "source": "security@apache.org"
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "criticityLabel": "CRITICAL",
+                    "cvssScore": 9.8,
+                    "cvssAccessVector": "NETWORK",
+                    "cvssAccessComplexity": "LOW",
+                    "cvssAuthentication": "NONE",
+                    "cvssConfidentialityImpact": "HIGH",
+                    "cvssAvailabilityImpact": "HIGH",
+                    "source": "NVD",
+                    "criticityCategory": "CRITICAL",
+                    "advisory": false,
+                    "isKev": false
+                },
+                {
+                    "matchedCPE": "cpe:/a:apache:log4j",
+                    "name": "CVE-2022-23305",
+                    "publishedDate": "2022-01-18T21:15:08.350Z",
+                    "lastUpdateDate": "2024-11-21T11:48:22.517Z",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2022-23305",
+                    "description": "By design, the JDBCAppender in Log4j 1.2.x accepts an SQL statement as a configuration parameter where the values to be inserted are converters from PatternLayout. The message converter, %m, is likely to always be included. This allows attackers to manipulate the SQL by entering crafted strings into input fields or headers of an application that are logged allowing unintended SQL queries to be executed. Note this issue only affects Log4j 1.x when specifically configured to use the JDBCAppender, which is not the default. Beginning in version 2.0-beta8, the JDBCAppender was re-introduced with proper support for parameterized SQL queries and further customization over the columns written to in logs. Apache Log4j 1.2 reached end of life in August 2015. Users should upgrade to Log4j 2 as it addresses numerous other issues from the previous versions.",
+                    "references": [
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com/security-alerts/cpujul2022.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com/security-alerts/cpuapr2022.html",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Mailing List",
+                            "url": "http://www.openwall.com/lists/oss-security/2022/01/18/4",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://security.netapp.com/advisory/ntap-20220217-0007/",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Mailing List",
+                            "url": "http://www.openwall.com/lists/oss-security/2022/01/18/4",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Vendor Advisory",
+                            "url": "https://logging.apache.org/log4j/1.2/index.html",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Issue Tracking",
+                            "url": "https://lists.apache.org/thread/pt6lh3pbsvxqlwlp4c5l798dv2hkc85y",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Issue Tracking",
+                            "url": "https://lists.apache.org/thread/pt6lh3pbsvxqlwlp4c5l798dv2hkc85y",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://security.netapp.com/advisory/ntap-20220217-0007/",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com/security-alerts/cpujul2022.html",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com/security-alerts/cpuapr2022.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Vendor Advisory",
+                            "url": "https://logging.apache.org/log4j/1.2/index.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "criticityLabel": "CRITICAL",
+                    "cvssScore": 9.8,
+                    "cvssAccessVector": "NETWORK",
+                    "cvssAccessComplexity": "LOW",
+                    "cvssAuthentication": "NONE",
+                    "cvssConfidentialityImpact": "HIGH",
+                    "cvssAvailabilityImpact": "HIGH",
+                    "source": "NVD",
+                    "criticityCategory": "CRITICAL",
+                    "advisory": false,
+                    "isKev": false
+                },
+                {
+                    "matchedCPE": "cpe:/a:apache:log4j",
+                    "name": "CVE-2021-4104",
+                    "publishedDate": "2021-12-14T17:15:12.200Z",
+                    "lastUpdateDate": "2024-11-21T11:36:54.560Z",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2021-4104",
+                    "description": "JMSAppender in Log4j 1.2 is vulnerable to deserialization of untrusted data when the attacker has write access to the Log4j configuration. The attacker can provide TopicBindingName and TopicConnectionFactoryBindingName configurations causing JMSAppender to perform JNDI requests that result in remote code execution in a similar fashion to CVE-2021-44228. Note this issue only affects Log4j 1.2 when specifically configured to use JMSAppender, which is not the default. Apache Log4j 1.2 reached end of life in August 2015. Users should upgrade to Log4j 2 as it addresses numerous other issues from the previous versions.",
+                    "references": [
+                        {
+                            "name": null,
+                            "url": "https://www.cve.org/CVERecord?id=CVE-2021-44228",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://access.redhat.com/security/cve/CVE-2021-4104",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://security.gentoo.org/glsa/202209-02",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://www.oracle.com/security-alerts/cpujul2022.html",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://www.oracle.com/security-alerts/cpujan2022.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://github.com/apache/logging-log4j2/pull/608#issuecomment-990494126",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "http://www.openwall.com/lists/oss-security/2022/01/18/3",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://security.netapp.com/advisory/ntap-20211223-0007/",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://www.kb.cert.org/vuls/id/930724",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://www.kb.cert.org/vuls/id/930724",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://security.netapp.com/advisory/ntap-20211223-0007/",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://www.oracle.com/security-alerts/cpujan2022.html",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "http://www.openwall.com/lists/oss-security/2022/01/18/3",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://www.oracle.com/security-alerts/cpujul2022.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://www.oracle.com/security-alerts/cpuapr2022.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://access.redhat.com/security/cve/CVE-2021-4104",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://www.cve.org/CVERecord?id=CVE-2021-44228",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://security.gentoo.org/glsa/202312-04",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2021-0033",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://security.gentoo.org/glsa/202312-02",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://security.gentoo.org/glsa/202310-16",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://security.gentoo.org/glsa/202312-04",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://security.gentoo.org/glsa/202310-16",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://security.gentoo.org/glsa/202312-02",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://www.oracle.com/security-alerts/cpuapr2022.html",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://github.com/apache/logging-log4j2/pull/608#issuecomment-990494126",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2021-0033",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://security.gentoo.org/glsa/202209-02",
+                            "source": "security@apache.org"
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "criticityLabel": "HIGH",
+                    "cvssScore": 7.5,
+                    "cvssAccessVector": "NETWORK",
+                    "cvssAccessComplexity": "HIGH",
+                    "cvssAuthentication": "NONE",
+                    "cvssConfidentialityImpact": "HIGH",
+                    "cvssAvailabilityImpact": "HIGH",
+                    "source": "NVD",
+                    "criticityCategory": "HIGH",
+                    "advisory": false,
+                    "isKev": false
+                },
+                {
+                    "matchedCPE": "cpe:/a:qos:reload4j",
+                    "name": "CVE-2022-23302",
+                    "publishedDate": "2022-01-18T16:15:08.300Z",
+                    "lastUpdateDate": "2025-07-07T18:15:24.713Z",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2022-23302",
+                    "description": "JMSSink in all versions of Log4j 1.x is vulnerable to deserialization of untrusted data when the attacker has write access to the Log4j configuration or if the configuration references an LDAP service the attacker has access to. The attacker can provide a TopicConnectionFactoryBindingName configuration causing JMSSink to perform JNDI requests that result in remote code execution in a similar fashion to CVE-2021-4104. Note this issue only affects Log4j 1.x when specifically configured to use JMSSink, which is not the default. Apache Log4j 1.2 reached end of life in August 2015. Users should upgrade to Log4j 2 as it addresses numerous other issues from the previous versions.",
+                    "references": [
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com/security-alerts/cpujul2022.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://security.netapp.com/advisory/ntap-20220217-0006/",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com/security-alerts/cpuapr2022.html",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Mailing List",
+                            "url": "http://www.openwall.com/lists/oss-security/2022/01/18/3",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Mailing List",
+                            "url": "https://lists.apache.org/thread/bsr3l5qz4g0myrjhy9h67bcxodpkwj4w",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Mailing List",
+                            "url": "http://www.openwall.com/lists/oss-security/2022/01/18/3",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://security.netapp.com/advisory/ntap-20220217-0006/",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://www.vicarius.io/vsociety/posts/cve-2022-23302-mitigate-log4j-1217-vulnerability",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://www.vicarius.io/vsociety/posts/cve-2022-23302-detect-log4j-1217-vulnerability",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Vendor Advisory",
+                            "url": "https://logging.apache.org/log4j/1.2/index.html",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Mailing List",
+                            "url": "https://lists.apache.org/thread/bsr3l5qz4g0myrjhy9h67bcxodpkwj4w",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com/security-alerts/cpujul2022.html",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com/security-alerts/cpuapr2022.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Vendor Advisory",
+                            "url": "https://logging.apache.org/log4j/1.2/index.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "criticityLabel": "HIGH",
+                    "cvssScore": 8.8,
+                    "cvssAccessVector": "NETWORK",
+                    "cvssAccessComplexity": "LOW",
+                    "cvssAuthentication": "NONE",
+                    "cvssConfidentialityImpact": "HIGH",
+                    "cvssAvailabilityImpact": "HIGH",
+                    "source": "NVD",
+                    "criticityCategory": "HIGH",
+                    "advisory": false,
+                    "isKev": false
+                },
+                {
+                    "matchedCPE": "cpe:/a:apache:log4j",
+                    "name": "CVE-2022-23307",
+                    "publishedDate": "2022-01-18T21:15:08.403Z",
+                    "lastUpdateDate": "2024-11-21T11:48:22.733Z",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2022-23307",
+                    "description": "CVE-2020-9493 identified a deserialization issue that was present in Apache Chainsaw. Prior to Chainsaw V2.0 Chainsaw was a component of Apache Log4j 1.2.x where the same issue exists.",
+                    "references": [
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com/security-alerts/cpujul2022.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Mailing List",
+                            "url": "https://lists.apache.org/thread/rg4yyc89vs3dw6kpy3r92xop9loywyhh",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com/security-alerts/cpuapr2022.html",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Mailing List",
+                            "url": "https://lists.apache.org/thread/rg4yyc89vs3dw6kpy3r92xop9loywyhh",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Vendor Advisory",
+                            "url": "https://logging.apache.org/log4j/1.2/index.html",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com/security-alerts/cpujul2022.html",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com/security-alerts/cpuapr2022.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Vendor Advisory",
+                            "url": "https://logging.apache.org/log4j/1.2/index.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "criticityLabel": "HIGH",
+                    "cvssScore": 8.8,
+                    "cvssAccessVector": "NETWORK",
+                    "cvssAccessComplexity": "LOW",
+                    "cvssAuthentication": "NONE",
+                    "cvssConfidentialityImpact": "HIGH",
+                    "cvssAvailabilityImpact": "HIGH",
+                    "source": "NVD",
+                    "criticityCategory": "HIGH",
+                    "advisory": false,
+                    "isKev": false
+                },
+                {
+                    "matchedCPE": "cpe:/a:apache:log4j",
+                    "name": "CVE-2023-26464",
+                    "publishedDate": "2023-03-10T19:15:10.453Z",
+                    "lastUpdateDate": "2025-02-13T22:16:12.243Z",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2023-26464",
+                    "description": "** UNSUPPORTED WHEN ASSIGNED **\n\nWhen using the Chainsaw or SocketAppender components with Log4j 1.x on JRE less than 1.7, an attacker that manages to cause a logging entry involving a specially-crafted (ie, deeply nested) \nhashmap or hashtable (depending on which logging component is in use) to be processed could exhaust the available memory in the virtual machine and achieve Denial of Service when the object is deserialized.\n\nThis issue affects Apache Log4j before 2. Affected users are recommended to update to Log4j 2.x.\n\nNOTE: This vulnerability only affects products that are no longer supported by the maintainer.",
+                    "references": [
+                        {
+                            "name": "Mailing List",
+                            "url": "https://lists.apache.org/thread/wkx6grrcjkh86crr49p4blc1v1nflj3t",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://security.netapp.com/advisory/ntap-20230505-0008/",
+                            "source": "security@apache.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://security.netapp.com/advisory/ntap-20230505-0008/",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Mailing List",
+                            "url": "https://lists.apache.org/thread/wkx6grrcjkh86crr49p4blc1v1nflj3t",
+                            "source": "security@apache.org"
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "criticityLabel": "HIGH",
+                    "cvssScore": 7.5,
+                    "cvssAccessVector": "NETWORK",
+                    "cvssAccessComplexity": "LOW",
+                    "cvssAuthentication": "NONE",
+                    "cvssConfidentialityImpact": "NONE",
+                    "cvssAvailabilityImpact": "HIGH",
+                    "source": "NVD",
+                    "criticityCategory": "HIGH",
+                    "advisory": false,
+                    "isKev": false
+                }
+            ],
+            "components": [
+                {
+                    "id": 43874,
+                    "name": "log4j:log4j",
+                    "version": "1.2.17",
+                    "cves": [
+                        {
+                            "name": "CVE-2020-9493"
+                        },
+                        {
+                            "name": "CVE-2021-4104"
+                        },
+                        {
+                            "name": "CVE-2022-23302"
+                        },
+                        {
+                            "name": "CVE-2022-23305"
+                        },
+                        {
+                            "name": "CVE-2022-23307"
+                        },
+                        {
+                            "name": "CVE-2023-26464"
+                        }
+                    ],
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 41492,
+                    "name": "org.javassist:javassist",
+                    "version": "3.18.1-GA",
+                    "cves": [],
+                    "lifeSpan": "N/A"
+                }
+            ]
+        }
+    ],
+    "surveys": [
+        {
+            "id": 371,
+            "ref": "CAST_MAINT",
+            "name": "Software Maintenance Estimate",
+            "questions": [
+                {
+                    "label": "What is the average skill level of the development team on this type of application?",
+                    "value": "3 years",
+                    "questionId": 1000015,
+                    "choiceId": 1000069
+                },
+                {
+                    "label": "What percentage of the development effort has been spent on maintenance in the last 12 months?",
+                    "value": "10",
+                    "questionId": 1000012
+                },
+                {
+                    "label": "What is the CMMI level of the organization?",
+                    "value": "Level 2",
+                    "questionId": 1000032,
+                    "choiceId": 1000256
+                },
+                {
+                    "label": "What is the percentage of change to the base code in the last 12 months?",
+                    "value": "5",
+                    "questionId": 1000121
+                },
+                {
+                    "label": "What is the annual staff turnover within the development team?",
+                    "value": "5%",
+                    "questionId": 1000016,
+                    "choiceId": 1000142
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "ref": "CAST_BI",
+            "name": "Business Impact",
+            "questions": [
+                {
+                    "label": "What is the average number of FTE (Full Time Equivalent) resources that have worked on the source code for this application over the last 12 months?",
+                    "shortLabel": "",
+                    "value": "5",
+                    "questionId": 1000011
+                },
+                {
+                    "label": "Is this application aligned with the company's future technology direction?",
+                    "shortLabel": "",
+                    "value": "Yes",
+                    "questionId": 1000009,
+                    "choiceId": 1000042
+                },
+                {
+                    "label": "The number of major releases delivered over the last 12 months for this application?",
+                    "shortLabel": "",
+                    "value": "More than 12",
+                    "questionId": 1000006,
+                    "choiceId": 1000455
+                },
+                {
+                    "label": "Could failure of this application lead to loss of customer confidence? Please define the level of impact.",
+                    "value": "Low",
+                    "questionId": 1000022,
+                    "choiceId": 1000220
+                },
+                {
+                    "label": "Could failure of this application lead to harm of the company's public image? Please define the level of impact.",
+                    "value": "Low",
+                    "questionId": 1000021,
+                    "choiceId": 1000000
+                },
+                {
+                    "label": "Could failure of this application lead to loss of revenue or business opportunity? Please define the level of impact.",
+                    "value": "Low",
+                    "questionId": 1000020,
+                    "choiceId": 1000406
+                },
+                {
+                    "label": "Could failure of this application lead to disruption? Please define the level of impact.",
+                    "value": "High",
+                    "questionId": 1000019,
+                    "choiceId": 1000194
+                },
+                {
+                    "label": "What is the approximate number of end users for this application?",
+                    "shortLabel": "",
+                    "value": "Less than 100",
+                    "questionId": 1000018,
+                    "choiceId": 1000395
+                },
+                {
+                    "label": "Does the application serve internal or external users?",
+                    "value": "Internal users or business processes",
+                    "questionId": 1000017,
+                    "choiceId": 1000204
+                }
+            ]
+        },
+        {
+            "id": 373,
+            "ref": "CAST_APP",
+            "name": "Application Properties",
+            "questions": [
+                {
+                    "label": "Is this application a custom application or a Commercial Off The Shelf product?",
+                    "shortLabel": "",
+                    "value": "Custom Application",
+                    "questionId": 1000427,
+                    "choiceId": 1000529
+                },
+                {
+                    "label": "What is the application type?",
+                    "shortLabel": "",
+                    "value": "Asset Management Operations / Technology",
+                    "questionId": 1000004,
+                    "choiceId": 1000425
+                },
+                {
+                    "label": "Application Owner's name",
+                    "value": "Michael MULLER",
+                    "questionId": 1000002
+                },
+                {
+                    "label": "In what year was this application first put into production?",
+                    "shortLabel": "",
+                    "value": "2010",
+                    "questionId": 1000033
+                }
+            ]
+        }
+    ]
+}

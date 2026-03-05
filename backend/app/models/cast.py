@@ -190,6 +190,7 @@ class CASTData(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     app_id = db.Column(db.String(255), nullable=False, unique=True)
     app_name = db.Column(db.String(500), nullable=False)
+    repo_name = db.Column(db.String(500))
     application_architecture = db.Column(db.String(255))
     source_code_availability = db.Column(db.String(255))
     programming_language = db.Column(db.String(255))
@@ -209,6 +210,7 @@ class CASTData(db.Model):
             'id': self.id,
             'app_id': self.app_id,
             'app_name': self.app_name,
+            'repo_name': self.repo_name,
             'application_architecture': self.application_architecture,
             'source_code_availability': self.source_code_availability,
             'programming_language': self.programming_language,

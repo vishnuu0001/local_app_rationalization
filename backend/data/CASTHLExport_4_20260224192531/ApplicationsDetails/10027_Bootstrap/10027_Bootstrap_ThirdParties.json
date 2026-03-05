@@ -1,0 +1,185 @@
+{
+    "snapshotLabel": "TrendCampaign_4_Bootstrap",
+    "snapshotDate": 1488171600000,
+    "applicationCodeLines": null,
+    "applicationFiles": 131.0,
+    "thirdPartyCodeLines": null,
+    "thirdPartyFiles": 5.0,
+    "thirdParties": [
+        {
+            "id": 23061,
+            "componentId": "blueimp-file-upload-node.npm",
+            "name": "blueimp-file-upload-node.npm",
+            "version": "2.1.0",
+            "release": 1373436224000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "2.1.0",
+            "lastRelease": 1373436224000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 39870,
+            "componentId": "parsleyjs.npm",
+            "name": "parsleyjs.npm",
+            "version": "2.0.0",
+            "release": 1397933497000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "2.9.2",
+            "lastRelease": 1576021600000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51399,
+            "componentId": "codemirror.npm",
+            "name": "codemirror.npm",
+            "version": "3.20.0",
+            "release": 1385037313000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "5.65.21",
+            "lastRelease": 1770450337000,
+            "nbVersionPreviousYear": 4,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "codemirror",
+                "product": "codemirror",
+                "version": "3.20.0",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2020-7760",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-7760",
+                        "description": "This affects the package codemirror before 5.58.2; the package org.apache.marmotta.webjars:codemirror before 5.58.2. The vulnerable regular expression is located in https://github.com/codemirror/CodeMirror/blob/cdb228ac736369c685865b122b736cd0d397836c/mode/javascript/javascript.jsL129. The ReDOS vulnerability of the regex is mainly due to the sub-pattern (s|/*.*?*/)*",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.3,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:codemirror:codemirror",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "5.58.2",
+            "safestVersion": "5.58.2"
+        },
+        {
+            "id": 51401,
+            "componentId": "formidable.npm",
+            "name": "formidable.npm",
+            "version": "1.0.11",
+            "release": 1338804986000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [],
+            "lastVersion": "4.0.0-rc.6",
+            "lastRelease": 1747073601000,
+            "nbVersionPreviousYear": 11,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "formidable",
+                "product": "formidable",
+                "version": "1.0.11",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2022-29622",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-29622",
+                        "description": "An arbitrary file upload vulnerability in formidable v3.1.4 allows attackers to execute arbitrary code via a crafted filename. NOTE: some third parties dispute this issue because the product has common use cases in which uploading arbitrary files is the desired behavior. Also, there are configuration options in all versions that can change the default behavior of how files are handled. Strapi does not consider this to be a valid vulnerability.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 9.8,
+                        "criticity": "CRITICAL",
+                        "cpe": "cpe:/a:formidable_project:formidable",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "3.2.5",
+            "safestVersion": "3.5.3"
+        },
+        {
+            "id": 51402,
+            "componentId": "X-editable.npm",
+            "name": "X-editable.npm",
+            "version": "1.5.1",
+            "release": 1472658798000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "1.5.1",
+            "lastRelease": 1472658798000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        }
+    ],
+    "partialComponents": [
+        {
+            "name": "AngularJS",
+            "technology": "JavaScript",
+            "type": "Web & Mobile applications",
+            "versions": [
+                ""
+            ],
+            "license": "MIT",
+            "editor": "http://angularjs.org/",
+            "description": "AngularJS lets you extend HTML vocabulary for your application. The resulting environment is extraordinarily expressive, readable, and quick to develop.",
+            "dependencyLevel": null
+        },
+        {
+            "name": "Jquery",
+            "technology": "JavaScript",
+            "type": "Web & Mobile applications",
+            "versions": [
+                ""
+            ],
+            "license": "MIT",
+            "editor": "http://www.jquery.com",
+            "description": "jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.",
+            "dependencyLevel": null
+        }
+    ]
+}

@@ -1,0 +1,967 @@
+{
+    "id": 13397,
+    "name": "groovy",
+    "domains": [
+        {
+            "id": 1622,
+            "name": "Core Business Applications"
+        },
+        {
+            "id": 12912,
+            "name": "Portfolio Company Delta"
+        }
+    ],
+    "metrics": [
+        {
+            "snapshotLabel": "Open Source #5 - July 2017_groovy",
+            "snapshotDate": 1517374800000,
+            "softwareAgility": 0.5015150308609009,
+            "softwareAgilityAdded": 0.5015150308609009,
+            "softwareElegance": 0.6303356289863586,
+            "softwareEleganceAdded": 0.6303356289863586,
+            "softwareResiliency": 0.7260125875473022,
+            "softwareResiliencyAdded": 0.7260125875473022,
+            "softwareHealth": 0.6192877491315206,
+            "openSourceSafety": 1.0,
+            "openSourceLicense": 1.0,
+            "openSourceObsolescence": null,
+            "openSourceCVE": 1.0,
+            "businessImpact": 0.19289340101522842,
+            "roarIndex": 0.060871863786802025,
+            "backFiredFP": 2934.0,
+            "backFiredFPAdded": 2934.0,
+            "technicalDebt": 816573.4668838754,
+            "maintenanceRecordedFTE": 1.5,
+            "maintenanceRecommendedFTE": 0.3213969199169432,
+            "cloudReady": 0.44908957595014054,
+            "cloudReadyScan": 0.7564625850340136,
+            "boosters": 0.0,
+            "blockers": 0.05442176870748299,
+            "roadblocks": 420.0,
+            "cloudEffort": 6300,
+            "cloudReadySurvey": 0.14171656686626746,
+            "greenIndex": null,
+            "greenIndexScan": null,
+            "greenIndexSurvey": null,
+            "greenOccurrences": null,
+            "greenEffort": null,
+            "greenDetail": [
+                {
+                    "technology": "Java",
+                    "greenIndexScan": 0.0,
+                    "greenIndexDetails": null
+                },
+                {
+                    "technology": "Ksh",
+                    "greenIndexScan": 0.0,
+                    "greenIndexDetails": null
+                },
+                {
+                    "technology": "PL/I",
+                    "greenIndexScan": 0.0,
+                    "greenIndexDetails": null
+                },
+                {
+                    "technology": "JavaScript",
+                    "greenIndexScan": 0.0,
+                    "greenIndexDetails": null
+                }
+            ],
+            "totalLinesOfCode": 156528,
+            "totalLinesOfCodeAdded": 156528,
+            "totalLinesOfCodeModified": 0,
+            "totalFiles": 1433,
+            "totalFilesAdded": 1433,
+            "totalFilesModified": 0,
+            "cloudReadyDetail": [
+                {
+                    "technology": "Java",
+                    "cloudReadyScan": 0.0,
+                    "cloudReadyDetails": [
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Access_Control",
+                                "display": "Access Control List : Using Access Control List",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Access_Control",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Critical",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 12.71860095389507,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Configuration_Except_WebConfig",
+                                "display": "Application Settings Configuration : Using other configuration files than Web configuration",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Configuration_Except_WebConfig",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 0.1589825119236884,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Application_Server_Dependencies",
+                                "display": "Execution Environment : Application server dependencies",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Application_Server_Dependencies",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Framework"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 2.384737678855326,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_File_System",
+                                "display": "Execution Environment : Using file system",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_File_System",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 0.6359300476947536,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_InterApplication_MiddleWare",
+                                "display": "Inter Application Messaging : Using a middleware application",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_InterApplication_MiddleWare",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Medium",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 2.5437201907790143,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Directory_Manipulation_Practice",
+                                "display": "Persistent Files : Perform Directory Manipulation",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Directory_Manipulation_Practice",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 0.6359300476947536,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "File_Manipulation_Practice",
+                                "display": "Persistent Files : Perform File Manipulation",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#File_Manipulation_Practice",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": -5.442176870748299,
+                            "roadblocks": 420.0,
+                            "cloudEffort": 6300,
+                            "files": [
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\src/test/groovy/lang\\GroovyShellTest.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\src/main/org/codehaus/groovy/tools/javac\\JavaStubGenerator.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\src/test/org/codehaus/groovy/benchmarks/vm5/b2394\\Main.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\src/main/groovy/ui\\GroovyMain.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\subprojects/groovy-ant/src/main/java/org/codehaus/groovy/ant\\FileIterator.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\subprojects/groovy-ant/src/main/java/org/codehaus/groovy/ant\\Groovyc.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\subprojects/groovy-xml/src/main/java/groovy/util\\XmlParser.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\src/test/org/codehaus/groovy/control\\CompilerConfigurationTest.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\subprojects/groovy-groovydoc/src/main/java/org/codehaus/groovy/tools/groovydoc\\FileOutputTool.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\src/main/org/codehaus/groovy/runtime\\ProcessGroovyMethods.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\src/main/org/codehaus/groovy/transform\\SourceURIASTTransformation.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\src/test/org/codehaus/groovy/tools\\CompilerTest.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\subprojects/groovy-nio/src/main/java/org/codehaus/groovy/runtime\\WritablePath.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\src/main/org/codehaus/groovy/runtime\\DefaultGroovyMethods.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\src/test/groovy/security\\SecurityTest.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\subprojects/groovy-ant/src/main/java/org/codehaus/groovy/ant\\VerifyClass.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\src/main/org/codehaus/groovy/antlr\\Main.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\subprojects/groovy-groovydoc/src/main/java/org/codehaus/groovy/tools/groovydoc\\FileSystemResourceManager.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\src/main/groovy/lang\\GroovyClassLoader.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\subprojects/groovy-ant/src/main/java/org/codehaus/groovy/ant\\Groovy.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\subprojects/groovy-ant/src/test/groovy/org/codehaus/groovy/ant\\GroovycTest.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\subprojects/groovy-groovydoc/src/test/groovy/org/codehaus/groovy/tools/groovydoc\\GroovyDocTest.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\src/examples/groovy/swing\\Demo.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\subprojects/groovy-xml/src/main/java/org/codehaus/groovy/tools/xml\\DomToGroovy.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\src/test/org/codehaus/groovy/classgen\\TestSupport.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\subprojects/groovy-xml/src/main/java/groovy/util\\XmlSlurper.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\benchmark/bench\\echo.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\src/main/org/codehaus/groovy/runtime\\ResourceGroovyMethods.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\src/main/org/codehaus/groovy/antlr/java\\Java2GroovyProcessor.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\src/main/org/codehaus/groovy/runtime\\StringGroovyMethods.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\src/test/org/codehaus/groovy/tools\\TestDgmConverter.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\subprojects/groovy-bsf/src/test/java/org/codehaus/groovy/bsf\\BSFTest.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\src/main/org/codehaus/groovy/control\\ClassNodeResolver.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\subprojects/groovy-ant/src/test-resources/org/codehaus/groovy/ant\\GroovycTest2.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\subprojects/groovy-servlet/src/main/java/groovy/servlet\\TemplateServlet.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\src/main/org/codehaus/groovy/tools\\FileSystemCompiler.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\src/test/org/codehaus/groovy/classgen\\GroovyClassLoaderTest.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\src/main/org/codehaus/groovy/runtime\\WritableFile.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\subprojects/groovy-ant/src/main/java/org/codehaus/groovy/ant\\GenerateStubsTask.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\src/main/org/codehaus/groovy/control/io\\FileReaderSource.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\src/test/groovy/annotations\\MyIntegerAnnoTraceASTTransformation.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\src/test/groovy/bugs\\Groovy2365Bug.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\src/main/org/codehaus/groovy/tools\\RootLoader.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\src/main/groovy/util\\CharsetToolkit.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\src/main/org/codehaus/groovy/control\\CompilationUnit.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\subprojects/groovy-servlet/src/main/java/groovy/servlet\\ServletBinding.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\subprojects/groovy-test/src/main/java/groovy/util\\AllTestSuite.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\src/main/org/codehaus/groovy/antlr\\LexerFrame.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\src/main/groovy/lang\\GroovyCodeSource.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\subprojects/groovy-test/src/main/java/groovy/util\\GroovyTestSuite.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\src/main/org/codehaus/groovy/control\\XStreamUtils.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\subprojects/groovy-ant/src/main/java/org/codehaus/groovy/ant\\Groovydoc.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\subprojects/groovy-servlet/src/main/java/groovy/servlet\\AbstractHttpServlet.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\subprojects/groovy-groovydoc/src/main/java/org/codehaus/groovy/tools/groovydoc\\GroovyDocTool.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\src/test/groovy/bugs\\Groovy1567_Bug.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\src/main/groovy/util\\GroovyScriptEngine.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\subprojects/groovy-groovydoc/src/main/java/org/codehaus/groovy/tools/groovydoc\\GroovyRootDocBuilder.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\src/main/org/codehaus/groovy/tools/javac\\JavaAwareCompilationUnit.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\src/main/org/codehaus/groovy/tools/javac\\JavacJavaCompiler.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\src/test/groovy/security\\SecurityTestSupport.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\subprojects/groovy-groovydoc/src/main/java/org/codehaus/groovy/tools/groovydoc\\GroovyDocWriter.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\subprojects/groovy-ant/src/main/java/org/codehaus/groovy/ant\\CompileTaskSupport.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\src/test/org/codehaus/groovy/classgen\\MainTest.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\benchmark/bench\\revcomp.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\src/main/groovy/grape\\GrabAnnotationTransformation.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\subprojects/groovy-ant/src/main/java/org/codehaus/groovy/ant\\GroovycTask.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\subprojects/groovy-ant/src/test/groovy/org/codehaus/groovy/ant\\GroovyTest.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\src/main/org/codehaus/groovy/control\\CompilerConfiguration.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\src/test/org/codehaus/groovy/tools\\FileSystemCompilerTest.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\src/main/org/codehaus/groovy/tools\\LoaderConfiguration.java",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\groovy\\groovy-GROOVY_2_4_12\\src/test/org/codehaus/groovy/tools\\DocGeneratorMain.java"
+                            ],
+                            "triggered": true
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Access_To_Environment_Variable",
+                                "display": "Execution Environment : Access to environment variable",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Access_To_Environment_Variable",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 1.2718600953895072,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Impersonate_Identity",
+                                "display": "Security & User Authentication : Using impersonate Identity",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Impersonate_Identity",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Critical",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 12.71860095389507,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_SecuredProtocols",
+                                "display": "Security & User Authentication : Use of unsecured network protocols or URI libraries",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_SecuredProtocols",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 1.2718600953895072,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false,
+                            "cloudRequirementsDetail": [
+                                {
+                                    "cloudRequirement": {
+                                        "id": "Use_SecuredProtocolsHTTP",
+                                        "display": "Security & User Authentication : Use of unsecured network protocols (HTTP)",
+                                        "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_SecuredProtocols",
+                                        "ruleType": "BLOCKER",
+                                        "rulePlatform": null,
+                                        "rulePlatformLabel": null,
+                                        "criticality": "Low",
+                                        "impacts": [
+                                            "Coding"
+                                        ],
+                                        "parent": null
+                                    },
+                                    "roadblocks": 0.0,
+                                    "cloudEffort": null,
+                                    "files": null
+                                },
+                                {
+                                    "cloudRequirement": {
+                                        "id": "Use_SecuredProtocolsFTP",
+                                        "display": "Security & User Authentication : Use of unsecured network protocols (FTP)",
+                                        "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_SecuredProtocols",
+                                        "ruleType": "BLOCKER",
+                                        "rulePlatform": null,
+                                        "rulePlatformLabel": null,
+                                        "criticality": "Low",
+                                        "impacts": [
+                                            "Coding"
+                                        ],
+                                        "parent": null
+                                    },
+                                    "roadblocks": 0.0,
+                                    "cloudEffort": null,
+                                    "files": null
+                                }
+                            ]
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Hardcoded_IP_Address",
+                                "display": "Execution Environment : Using hardcoded network IP address",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Hardcoded_IP_Address",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 1.2718600953895072,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Stateful_Session",
+                                "display": "Persistent Files : Using stateful session (Servlet)",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Stateful_Session",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "High",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 2.384737678855326,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Stateful_Session_Spring",
+                                "display": "Persistent Files : Using stateful session (Spring)",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Stateful_Session_Spring",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "High",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 2.384737678855326,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        }
+                    ]
+                }
+            ],
+            "customIndicators": [
+                {
+                    "metricId": 10023356,
+                    "value": "0.1111111111111111"
+                },
+                {
+                    "metricId": 10006001,
+                    "value": "0.19148936170212766"
+                },
+                {
+                    "metricId": 10006305,
+                    "value": "0.1794871794871795"
+                },
+                {
+                    "metricId": 10013600,
+                    "value": "0.6"
+                },
+                {
+                    "metricId": 10006302,
+                    "value": "0.14814814814814814"
+                },
+                {
+                    "metricId": 10006301,
+                    "value": "0.6491228070175439"
+                },
+                {
+                    "metricId": 10016304,
+                    "value": null
+                }
+            ],
+            "technologies": [
+                {
+                    "technology": "Java",
+                    "totalLinesOfCode": 154141,
+                    "totalFiles": 1379,
+                    "softwareAgility": 0.49787822365760803,
+                    "softwareElegance": 0.6252123713493347,
+                    "softwareResiliency": 0.7238788604736328,
+                    "softwareHealth": 0.6156564851601919,
+                    "softwareAgilityDetail": {
+                        "highLinesOfCode": 22894,
+                        "mediumLinesOfCode": 51416,
+                        "lowLinesOfCode": 79831
+                    },
+                    "softwareEleganceDetail": {
+                        "highLinesOfCode": 70705,
+                        "mediumLinesOfCode": 28534,
+                        "lowLinesOfCode": 54902
+                    },
+                    "softwareResiliencyDetail": {
+                        "highLinesOfCode": 81013,
+                        "mediumLinesOfCode": 45417,
+                        "lowLinesOfCode": 27711
+                    },
+                    "softwareHealthDetail": {
+                        "highLinesOfCode": 58204,
+                        "mediumLinesOfCode": 41789,
+                        "lowLinesOfCode": 54148
+                    }
+                },
+                {
+                    "technology": "Ksh",
+                    "totalLinesOfCode": 425,
+                    "totalFiles": 9,
+                    "softwareAgility": 0.7388823628425598,
+                    "softwareElegance": 0.8748235106468201,
+                    "softwareResiliency": 0.5288234949111938,
+                    "softwareHealth": 0.7141764561335245,
+                    "softwareAgilityDetail": {
+                        "highLinesOfCode": 192,
+                        "mediumLinesOfCode": 233,
+                        "lowLinesOfCode": 0
+                    },
+                    "softwareEleganceDetail": {
+                        "highLinesOfCode": 425,
+                        "mediumLinesOfCode": 0,
+                        "lowLinesOfCode": 0
+                    },
+                    "softwareResiliencyDetail": {
+                        "highLinesOfCode": 0,
+                        "mediumLinesOfCode": 98,
+                        "lowLinesOfCode": 327
+                    },
+                    "softwareHealthDetail": {
+                        "highLinesOfCode": 205,
+                        "mediumLinesOfCode": 110,
+                        "lowLinesOfCode": 109
+                    }
+                },
+                {
+                    "technology": "PL/I",
+                    "totalLinesOfCode": 1821,
+                    "totalFiles": 21,
+                    "softwareAgility": 0.7478857636451721,
+                    "softwareElegance": 1.0,
+                    "softwareResiliency": 0.936779260635376,
+                    "softwareHealth": 0.8948883414268494,
+                    "softwareAgilityDetail": {
+                        "highLinesOfCode": 718,
+                        "mediumLinesOfCode": 1103,
+                        "lowLinesOfCode": 0
+                    },
+                    "softwareEleganceDetail": {
+                        "highLinesOfCode": 1821,
+                        "mediumLinesOfCode": 0,
+                        "lowLinesOfCode": 0
+                    },
+                    "softwareResiliencyDetail": {
+                        "highLinesOfCode": 1821,
+                        "mediumLinesOfCode": 0,
+                        "lowLinesOfCode": 0
+                    },
+                    "softwareHealthDetail": {
+                        "highLinesOfCode": 1453,
+                        "mediumLinesOfCode": 367,
+                        "lowLinesOfCode": 0
+                    }
+                },
+                {
+                    "technology": "JavaScript",
+                    "totalLinesOfCode": 141,
+                    "totalFiles": 24,
+                    "softwareAgility": 0.5799842476844788,
+                    "softwareElegance": 0.7199894785881042,
+                    "softwareResiliency": 0.9309167265892029,
+                    "softwareHealth": 0.7436301509539286,
+                    "softwareAgilityDetail": {
+                        "highLinesOfCode": 21,
+                        "mediumLinesOfCode": 107,
+                        "lowLinesOfCode": 13
+                    },
+                    "softwareEleganceDetail": {
+                        "highLinesOfCode": 73,
+                        "mediumLinesOfCode": 0,
+                        "lowLinesOfCode": 68
+                    },
+                    "softwareResiliencyDetail": {
+                        "highLinesOfCode": 119,
+                        "mediumLinesOfCode": 22,
+                        "lowLinesOfCode": 0
+                    },
+                    "softwareHealthDetail": {
+                        "highLinesOfCode": 71,
+                        "mediumLinesOfCode": 43,
+                        "lowLinesOfCode": 27
+                    }
+                }
+            ],
+            "components": []
+        }
+    ],
+    "surveys": [
+        {
+            "id": 371,
+            "ref": "CAST_MAINT",
+            "name": "Software Maintenance Estimate",
+            "questions": [
+                {
+                    "label": "What is the percentage of change to the base code in the last 12 months?",
+                    "value": "20.0",
+                    "questionId": 1000121
+                },
+                {
+                    "label": "What is the average skill level of the development team on this type of application?",
+                    "value": "6 years",
+                    "questionId": 1000015,
+                    "choiceId": 1000070
+                },
+                {
+                    "label": "What percentage of the development effort has been spent on maintenance in the last 12 months?",
+                    "value": "10.0",
+                    "questionId": 1000012
+                },
+                {
+                    "label": "What is the annual staff turnover within the development team?",
+                    "value": "10%",
+                    "questionId": 1000016,
+                    "choiceId": 1000143
+                },
+                {
+                    "label": "What is the CMMI level of the organization?",
+                    "value": "Level 4",
+                    "questionId": 1000032,
+                    "choiceId": 1000258
+                }
+            ]
+        },
+        {
+            "id": 1700,
+            "name": "Business Alignment Assessment",
+            "questions": [
+                {
+                    "label": "[Portfolio Management] How many Business processes does the application support?",
+                    "shortLabel": "",
+                    "value": "5 to 9 processes",
+                    "questionId": 10001304,
+                    "choiceId": 10007403
+                },
+                {
+                    "label": "[Portfolio Management] What is the primary capability that this application supports? (APQC short)",
+                    "shortLabel": "What is the primary capability that this application supports",
+                    "value": " 2 .0 - Develop and Manage Products and Services",
+                    "questionId": 10006306,
+                    "choiceId": 10012707
+                },
+                {
+                    "label": "[Portfolio Management] What is the application's life cycle stage?",
+                    "shortLabel": "Application LifeCycle",
+                    "value": "Production - Maturity",
+                    "questionId": 10006307,
+                    "choiceId": 10012905
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "ref": "CAST_BI",
+            "name": "Business Impact",
+            "questions": [
+                {
+                    "label": "What is the average number of FTE (Full Time Equivalent) resources that have worked on the source code for this application over the last 12 months?",
+                    "shortLabel": "",
+                    "value": "15.0",
+                    "questionId": 1000011
+                },
+                {
+                    "label": "Is this application aligned with the company's future technology direction?",
+                    "shortLabel": "",
+                    "value": "Yes",
+                    "questionId": 1000009,
+                    "choiceId": 1000042
+                },
+                {
+                    "label": "The number of major releases delivered over the last 12 months for this application?",
+                    "shortLabel": "",
+                    "value": "Less than 4",
+                    "questionId": 1000006,
+                    "choiceId": 1000452
+                },
+                {
+                    "label": "Could failure of this application lead to loss of customer confidence? Please define the level of impact.",
+                    "value": "Low",
+                    "questionId": 1000022,
+                    "choiceId": 1000220
+                },
+                {
+                    "label": "Could failure of this application lead to harm of the company's public image? Please define the level of impact.",
+                    "value": "Low",
+                    "questionId": 1000021,
+                    "choiceId": 1000000
+                },
+                {
+                    "label": "Could failure of this application lead to loss of revenue or business opportunity? Please define the level of impact.",
+                    "value": "Low",
+                    "questionId": 1000020,
+                    "choiceId": 1000406
+                },
+                {
+                    "label": "Could failure of this application lead to disruption? Please define the level of impact.",
+                    "value": "Medium",
+                    "questionId": 1000019,
+                    "choiceId": 1000193
+                },
+                {
+                    "label": "What is the approximate number of end users for this application?",
+                    "shortLabel": "",
+                    "value": "Less than 100",
+                    "questionId": 1000018,
+                    "choiceId": 1000395
+                },
+                {
+                    "label": "Does the application serve internal or external users?",
+                    "value": "Internal users or business processes",
+                    "questionId": 1000017,
+                    "choiceId": 1000204
+                }
+            ]
+        },
+        {
+            "id": 373,
+            "ref": "CAST_APP",
+            "name": "Application Properties",
+            "questions": [
+                {
+                    "label": "What is the application type?",
+                    "shortLabel": "",
+                    "value": "Supply chain management system",
+                    "questionId": 1000004,
+                    "choiceId": 1000440
+                },
+                {
+                    "label": "Application Owner's name",
+                    "value": "MMU",
+                    "questionId": 1000002
+                },
+                {
+                    "label": "Is this application a custom application or a Commercial Off The Shelf product?",
+                    "shortLabel": "",
+                    "value": "Custom Application",
+                    "questionId": 1000427,
+                    "choiceId": 1000529
+                },
+                {
+                    "label": "In what year was this application first put into production?",
+                    "shortLabel": "",
+                    "value": "2009",
+                    "questionId": 1000033
+                }
+            ]
+        },
+        {
+            "id": 1701,
+            "name": "IaaS Assessment",
+            "questions": [
+                {
+                    "label": "[IaaS] Performance - Elasticity",
+                    "shortLabel": "",
+                    "value": "Med Low (Moderate spikes regularly)",
+                    "questionId": 10003000,
+                    "choiceId": 10009401
+                },
+                {
+                    "label": "[IaaS] Performance - Scalability",
+                    "shortLabel": "",
+                    "value": "Slow, Linear Growth",
+                    "questionId": 10003001,
+                    "choiceId": 10009406
+                },
+                {
+                    "label": "[IaaS] Performance - Latency",
+                    "shortLabel": "",
+                    "value": " < 500ms",
+                    "questionId": 10003003,
+                    "choiceId": 10009416
+                },
+                {
+                    "label": "[IaaS] Performance - Throughput",
+                    "shortLabel": "",
+                    "value": "1-5 Mbps",
+                    "questionId": 10003004,
+                    "choiceId": 10009421
+                },
+                {
+                    "label": "[IaaS] Operations - Business Continuity",
+                    "shortLabel": "",
+                    "value": "Low Availability required (90%)",
+                    "questionId": 10003104,
+                    "choiceId": 10009533
+                },
+                {
+                    "label": "[IaaS] Security & Compliance - Jurisdiction",
+                    "shortLabel": "",
+                    "value": "Restricted to a region",
+                    "questionId": 10003107,
+                    "choiceId": 10009548
+                },
+                {
+                    "label": "[IaaS] Architecture - Application - Complexity",
+                    "shortLabel": "",
+                    "value": "High (N tier simple application, high integration w apps (10+))",
+                    "questionId": 10003008,
+                    "choiceId": 10009440
+                },
+                {
+                    "label": "[IaaS] Architecture - Infrastructure - Hardware Life Expectancy",
+                    "shortLabel": "",
+                    "value": " > 5 years",
+                    "questionId": 10003014,
+                    "choiceId": 10009470
+                },
+                {
+                    "label": "[IaaS] Financial - Operating Cost",
+                    "shortLabel": "",
+                    "value": "Low, (Virtually no op costs)",
+                    "questionId": 10003015,
+                    "choiceId": 10009475
+                }
+            ]
+        },
+        {
+            "id": 1702,
+            "name": "TCO Assessment",
+            "questions": [
+                {
+                    "label": "[TCO] What is the Total Cost of Ownership for this application?",
+                    "shortLabel": "",
+                    "value": "Medium",
+                    "questionId": 10006303,
+                    "choiceId": 10012609
+                },
+                {
+                    "label": "[TCO] What is the evolution of the TCO?",
+                    "shortLabel": "",
+                    "value": "Steady",
+                    "questionId": 10006304,
+                    "choiceId": 10012703
+                }
+            ]
+        },
+        {
+            "id": 938,
+            "ref": "CAST_CLOUD",
+            "name": "Cloud Readiness Assessment",
+            "questions": [
+                {
+                    "label": "[Business Drivers] Does this application correspond to a specific workload?",
+                    "shortLabel": "",
+                    "value": "MicroServices & Containers",
+                    "questionId": 10000901,
+                    "choiceId": 10006807
+                },
+                {
+                    "label": "[Technical Enablers] Does this application depend on other services or applications?",
+                    "shortLabel": "",
+                    "value": "External services",
+                    "questionId": 10000808,
+                    "choiceId": 10006733
+                },
+                {
+                    "label": "[Technical Enablers] What is the database provider for this application?",
+                    "shortLabel": "",
+                    "value": "Not compatible in the Cloud",
+                    "questionId": 10000809,
+                    "choiceId": 10006737
+                },
+                {
+                    "label": "[Process Maturity] What is the average skill on Cloud technologies and practices within the development team for this application?",
+                    "shortLabel": "",
+                    "value": "Basic knowledge",
+                    "questionId": 10000810,
+                    "choiceId": 10006739
+                },
+                {
+                    "label": "[Business Drivers] What is the current (or expected) Service Level Agreement for this application?",
+                    "shortLabel": "",
+                    "value": "SLA with maintenance timeframe",
+                    "questionId": 10000811,
+                    "choiceId": 10006743
+                },
+                {
+                    "label": "[Process Maturity] What is the evolution model and feedback loop approach for this application?",
+                    "shortLabel": "",
+                    "value": "Waterfall",
+                    "questionId": 10000800,
+                    "choiceId": 10006700
+                },
+                {
+                    "label": "[Technical Enablers] What is the current deployment platform for this application?",
+                    "shortLabel": "",
+                    "value": "Mobile or Tablet application",
+                    "questionId": 10000801,
+                    "choiceId": 10006705
+                },
+                {
+                    "label": "[Technical Enablers] What is the current user authentication mechanism used by this application?",
+                    "shortLabel": "",
+                    "value": "Single Sign On",
+                    "questionId": 10000802,
+                    "choiceId": 10006710
+                },
+                {
+                    "label": "[Technical Enablers]  How is this application exposed to external services/applications?",
+                    "shortLabel": "",
+                    "value": "REST API exposed",
+                    "questionId": 10000803,
+                    "choiceId": 10006714
+                },
+                {
+                    "label": "[Business Drivers] How is data consumed from this application?",
+                    "shortLabel": "",
+                    "value": "Information Management",
+                    "questionId": 10000805,
+                    "choiceId": 10006810
+                },
+                {
+                    "label": "[Process Maturity] What is the level of deployment process automation for provisioning and configuration for this application?",
+                    "shortLabel": "",
+                    "value": "No automation",
+                    "questionId": 10000806,
+                    "choiceId": 10006723
+                },
+                {
+                    "label": "[Technical Enablers] Is this application multi-tenant?",
+                    "shortLabel": "",
+                    "value": "No (single-tenant)",
+                    "questionId": 10000807,
+                    "choiceId": 10006726
+                }
+            ]
+        }
+    ],
+    "tags": [
+        {
+            "id": 60,
+            "label": "_Rs-Retain {Med BI, Low Risk, Low Cost, Low IaaS/PaaS}"
+        },
+        {
+            "id": 2304,
+            "label": "CR+BI+CustomCode"
+        }
+    ]
+}

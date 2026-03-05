@@ -56,6 +56,8 @@ class CorentDataService:
                         
                         # Safely populate fields from server data
                         corent_record.app_name = getattr(server, 'server_name', '')
+                        corent_record.server_name = getattr(server, 'server_name', '') or ''
+                        corent_record.server_ip = getattr(server, 'ip_address', '') or ''
                         corent_record.server_type = getattr(server, 'server_type', '')
                         corent_record.operating_system = getattr(server, 'environment', '')
                         corent_record.platform_host = getattr(server, 'deployment_footprint', '')
@@ -161,11 +163,48 @@ class CorentDataService:
                 'BusinessOwner': 'business_owner',
                 'PlatformHost': 'platform_host',
                 'Server Type': 'server_type',
+                'Server IP': 'server_ip',
+                'SERVER_IP': 'server_ip',
+                'IP Address': 'server_ip',
+                'Server Name': 'server_name',
+                'SERVER_NAME': 'server_name',
                 'Operating System': 'operating_system',
+                'CPU Core': 'cpu_core',
+                'Memory': 'memory',
+                'Internal Storage': 'internal_storage',
+                'External Storage': 'external_storage',
+                'Storage Type': 'storage_type',
+                'DB Storage': 'db_storage',
+                'DB Engine': 'db_engine',
                 'Environment': 'environment',
                 'INSTALL TYPE': 'install_type',
+                'Virtualization Attributes': 'virtualization_attributes',
+                'Compute / Server Hardware Architecture': 'compute_server_hardware_architecture',
+                'Application Stability': 'application_stability',
+                'Virtualization State': 'virtualization_state',
+                'Storage Decomposition': 'storage_decomposition',
+                'FLASH Storage Used': 'flash_storage_used',
+                'CPU Requirement': 'cpu_requirement',
+                'Memory (RAM) Requirement': 'memory_ram_requirement',
+                'Mainframe Dependency': 'mainframe_dependency',
+                'Desktop Dependency': 'desktop_dependency',
+                'App OS / Platform Cloud Suitability': 'app_os_platform_cloud_suitability',
+                'Database Cloud Readiness': 'database_cloud_readiness',
+                'Integration Middleware Cloud Readiness': 'integration_middleware_cloud_readiness',
+                'Application Hardware dependency': 'application_hardware_dependency',
+                'App COTS vs. Non-COTS Only': 'app_cots_vs_non_cots',
                 'Cloud Suitability': 'cloud_suitability',
                 'Volume of External Dependencies': 'volume_external_dependencies',
+                'App Load Predictability / Elasticity': 'app_load_predictability_elasticity',
+                'Financially Optimizable Hardware Usage': 'financially_optimizable_hardware_usage',
+                'Distributed Architecture Design or not': 'distributed_architecture_design',
+                'Latency Requirements': 'latency_requirements',
+                'Ubiquitous Access Requirements': 'ubiquitous_access_requirements',
+                'No. of Production Environments': 'no_production_environments',
+                'No. of Non-Production Environments': 'no_non_production_environments',
+                'HA/DR Requirements': 'ha_dr_requirements',
+                'RTO Requirements': 'rto_requirements',
+                'RPO Requirements': 'rpo_requirements',
                 'Deployment Geography': 'deployment_geography',
             }
 

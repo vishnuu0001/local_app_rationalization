@@ -1,0 +1,123 @@
+[
+    {
+        "id": "Use_Hardcoded_IP_Address-JAVA",
+        "display": "Execution Environment : Using hardcoded network IP address",
+        "criticality": "Low",
+        "impacts": [
+            "Code"
+        ],
+        "roadblocks": 11.0,
+        "cloudEffort": 110,
+        "files": [
+            "core\\src\\main\\java\\lucee\\runtime\\functions\\decision\\IsLocalHost.java",
+            "core\\src\\main\\java\\lucee\\runtime\\functions\\system\\GetLocalHostIP.java",
+            "core\\src\\main\\java\\lucee\\runtime\\net\\ipsettings\\IPSettings.java",
+            "core\\src\\main\\java\\lucee\\runtime\\functions\\decision\\IsIPv6.java",
+            "core\\src\\main\\java\\lucee\\commons\\net\\IPUtil.java"
+        ]
+    },
+    {
+        "id": "Use_Stateful_Session-JAVA",
+        "display": "Persistent Files : Using stateful session (Servlet)",
+        "criticality": "High",
+        "impacts": [
+            "Code",
+            "Container Architecture"
+        ],
+        "roadblocks": 3.0,
+        "cloudEffort": 30,
+        "files": [
+            "core\\src\\main\\java\\lucee\\runtime\\type\\scope\\ScopeContext.java",
+            "core\\src\\main\\java\\lucee\\runtime\\PageContextImpl.java"
+        ]
+    },
+    {
+        "id": "Use_SecuredProtocols-JAVA",
+        "display": "Security & User Authentication : Use of unsecured network protocols or URI libraries",
+        "criticality": "Low",
+        "impacts": [
+            "Code"
+        ],
+        "roadblocks": 49.0,
+        "cloudEffort": 490,
+        "files": [
+            "core\\src\\main\\java\\lucee\\runtime\\config\\XMLConfigWebFactory.java",
+            "loader\\src\\main\\java\\lucee\\runtime\\util\\XMLValidator.java",
+            "core\\src\\main\\java\\lucee\\runtime\\op\\Decision.java",
+            "core\\src\\main\\java\\lucee\\commons\\io\\res\\type\\smb\\SMBResource.java",
+            "loader\\src\\main\\java\\lucee\\runtime\\util\\XMLUtilImpl.java",
+            "core\\src\\main\\java\\lucee\\runtime\\text\\xml\\XMLValidator.java",
+            "core\\src\\main\\java\\lucee\\runtime\\net\\http\\ReqRspUtil.java",
+            "core\\src\\main\\java\\lucee\\runtime\\tag\\VideoPlayerJW.java",
+            "core\\src\\main\\java\\lucee\\commons\\net\\HTTPUtil.java",
+            "core\\src\\main\\java\\lucee\\commons\\lang\\HTMLUtil.java",
+            "loader\\src\\main\\java\\lucee\\loader\\engine\\CFMLEngineFactory.java",
+            "core\\src\\main\\java\\lucee\\runtime\\util\\URLResolver.java",
+            "core\\src\\main\\java\\lucee\\runtime\\type\\scope\\CGIImplReadOnly.java",
+            "core\\src\\main\\java\\lucee\\runtime\\engine\\CFMLEngineImpl.java",
+            "core\\src\\main\\java\\lucee\\runtime\\text\\xml\\XMLConstants.java",
+            "core\\src\\main\\java\\lucee\\runtime\\config\\Constants.java",
+            "core\\src\\main\\java\\lucee\\runtime\\query\\caster\\_OracleOpaqueCast.java",
+            "core\\src\\main\\java\\lucee\\runtime\\net\\rpc\\TypeMappingUtil.java"
+        ]
+    },
+    {
+        "id": "File_Manipulation_Practice-JAVA",
+        "display": "Persistent Files : Perform File Manipulation",
+        "criticality": "Low",
+        "impacts": [
+            "Code",
+            "Container only"
+        ],
+        "roadblocks": 390.0,
+        "cloudEffort": 5850,
+        "files": [
+            "loader\\src\\main\\java\\lucee\\runtime\\script\\BaseScriptEngineFactory.java",
+            "core\\src\\main\\java\\lucee\\runtime\\tag\\FileTag.java",
+            "loader\\src\\main\\java\\lucee\\loader\\osgi\\BundleUtil.java",
+            "loader\\src\\main\\java\\lucee\\cli\\MainEntryPoint.java",
+            "core\\src\\main\\java\\lucee\\commons\\io\\TemporaryStream.java",
+            "core\\src\\main\\java\\lucee\\commons\\io\\compress\\CompressUtil.java",
+            "loader\\src\\main\\java\\lucee\\loader\\engine\\CFMLEngineFactorySupport.java",
+            "core\\src\\main\\java\\lucee\\runtime\\functions\\system\\IsZipFile.java",
+            "core\\src\\main\\java\\lucee\\runtime\\config\\XMLConfigWebFactory.java",
+            "core\\src\\main\\java\\lucee\\runtime\\config\\ConfigServerImpl.java",
+            "core\\src\\main\\java\\lucee\\commons\\io\\res\\type\\file\\FileResource.java",
+            "loader\\src\\main\\java\\lucee\\loader\\util\\Util.java",
+            "core\\src\\main\\java\\lucee\\commons\\img\\TestCaptcha.java",
+            "core\\src\\main\\java\\lucee\\runtime\\config\\ConfigImpl.java",
+            "core\\src\\main\\java\\lucee\\runtime\\osgi\\BundleFile.java",
+            "core\\src\\main\\java\\lucee\\runtime\\jsr223\\ScriptEngineImpl.java",
+            "core\\src\\main\\java\\lucee\\runtime\\text\\xml\\XMLUtil.java",
+            "loader\\src\\main\\java\\lucee\\loader\\osgi\\LoggerImpl.java",
+            "core\\src\\main\\java\\lucee\\runtime\\engine\\CFMLEngineImpl.java",
+            "loader\\src\\main\\java\\lucee\\loader\\util\\ZipUtil.java",
+            "core\\src\\main\\java\\lucee\\runtime\\osgi\\OSGiUtil.java",
+            "core\\src\\main\\java\\lucee\\commons\\io\\FileUtil.java",
+            "loader\\src\\main\\java\\lucee\\cli\\CLIInvokerImpl.java",
+            "loader\\src\\main\\java\\coldfusion\\cfc\\CFCProxy.java",
+            "core\\src\\main\\java\\lucee\\commons\\io\\res\\util\\FileWrapper.java",
+            "core\\src\\main\\java\\lucee\\runtime\\tag\\Http.java",
+            "core\\src\\main\\java\\lucee\\runtime\\op\\CreationImpl.java",
+            "core\\src\\main\\java\\lucee\\runtime\\op\\Caster.java",
+            "core\\src\\main\\java\\lucee\\runtime\\img\\Image.java",
+            "core\\src\\main\\java\\lucee\\commons\\io\\BufferedFileInputStream.java",
+            "core\\src\\main\\java\\lucee\\runtime\\PageSourceImpl.java",
+            "core\\src\\main\\java\\lucee\\runtime\\functions\\file\\FileStreamWrapperReadWrite.java",
+            "loader\\src\\main\\java\\lucee\\cli\\CLI.java",
+            "core\\src\\main\\java\\lucee\\runtime\\util\\PageContextUtil.java",
+            "core\\src\\main\\java\\lucee\\commons\\io\\SystemUtil.java",
+            "core\\src\\main\\java\\lucee\\commons\\io\\res\\util\\ResourceUtil.java",
+            "loader\\src\\main\\java\\lucee\\loader\\engine\\CFMLEngineFactory.java",
+            "core\\src\\main\\java\\lucee\\runtime\\functions\\file\\FileStreamWrapperWrite.java",
+            "core\\src\\main\\java\\lucee\\runtime\\converter\\JSONConverter.java",
+            "core\\src\\main\\java\\lucee\\commons\\io\\compress\\Pack200Util.java",
+            "loader\\src\\main\\java\\lucee\\runtime\\util\\Pack200Util.java",
+            "core\\src\\main\\java\\lucee\\runtime\\engine\\LogST.java",
+            "core\\src\\main\\java\\lucee\\commons\\io\\res\\type\\cfml\\CFMLResourceProvider.java",
+            "core\\src\\main\\java\\lucee\\runtime\\config\\XMLConfigAdmin.java",
+            "loader\\src\\main\\java\\lucee\\cli\\servlet\\ServletContextImpl.java",
+            "core\\src\\main\\java\\lucee\\commons\\io\\IOUtil.java"
+        ]
+    }
+]

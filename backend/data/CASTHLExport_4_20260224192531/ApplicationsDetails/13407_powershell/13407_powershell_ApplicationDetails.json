@@ -1,0 +1,1530 @@
+{
+    "id": 13407,
+    "name": "powershell",
+    "domains": [
+        {
+            "id": 1622,
+            "name": "Core Business Applications"
+        },
+        {
+            "id": 12908,
+            "name": "PE Firm"
+        },
+        {
+            "id": 1455,
+            "name": "Open Source"
+        }
+    ],
+    "metrics": [
+        {
+            "snapshotLabel": "App2App Links_powershell",
+            "snapshotDate": 1568606400000,
+            "softwareAgility": 0.5554284453392029,
+            "softwareAgilityAdded": 0.5554284453392029,
+            "softwareElegance": 0.4345075190067291,
+            "softwareEleganceAdded": 0.4345075190067291,
+            "softwareResiliency": 0.7018526792526245,
+            "softwareResiliencyAdded": 0.7018526792526245,
+            "softwareHealth": 0.5639295478661855,
+            "openSourceLicense": null,
+            "openSourceObsolescence": null,
+            "openSourceCVE": null,
+            "businessImpact": 0.6954314720812182,
+            "roarIndex": 0.2547078693248731,
+            "backFiredFP": 9172.0,
+            "backFiredFPAdded": 9172.0,
+            "technicalDebt": 179574.99512133747,
+            "maintenanceRecordedFTE": 16.5,
+            "maintenanceRecommendedFTE": 41.79980055307201,
+            "cloudReady": 0.20838905014773862,
+            "cloudReadyScan": 0.4010610079575598,
+            "boosters": 0.0,
+            "blockers": 0.4986737400530504,
+            "roadblocks": 980.0,
+            "cloudEffort": 29205,
+            "cloudReadySurvey": 0.015717092337917484,
+            "greenIndex": null,
+            "greenIndexScan": null,
+            "greenIndexSurvey": null,
+            "greenOccurrences": null,
+            "greenEffort": null,
+            "greenDetail": [
+                {
+                    "technology": "C/C++",
+                    "greenIndexScan": 0.0,
+                    "greenIndexDetails": null
+                },
+                {
+                    "technology": "Ksh",
+                    "greenIndexScan": 0.0,
+                    "greenIndexDetails": null
+                },
+                {
+                    "technology": "Python",
+                    "greenIndexScan": 0.0,
+                    "greenIndexDetails": null
+                },
+                {
+                    "technology": "C#",
+                    "greenIndexScan": 0.0,
+                    "greenIndexDetails": null
+                },
+                {
+                    "technology": "JavaScript",
+                    "greenIndexScan": 0.0,
+                    "greenIndexDetails": null
+                }
+            ],
+            "totalLinesOfCode": 542480,
+            "totalLinesOfCodeAdded": 542480,
+            "totalLinesOfCodeModified": 0,
+            "totalFiles": 1636,
+            "totalFilesAdded": 1636,
+            "totalFilesModified": 0,
+            "cloudReadyDetail": [
+                {
+                    "technology": "C#",
+                    "cloudReadyScan": 0.0,
+                    "cloudReadyDetails": [
+                        {
+                            "cloudRequirement": {
+                                "id": "Detect_Use_Log4net",
+                                "display": "Application Logs : Using Log4Net for application logs",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Detect_Use_Log4net",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 1.3605442176870748,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Access_Control",
+                                "display": "Access Control List : Using Access Control List",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Access_Control",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Critical",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": -21.220159151193634,
+                            "roadblocks": 1.0,
+                            "cloudEffort": 90,
+                            "files": [
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.ScheduledJob\\ScheduledJobStore.cs"
+                            ],
+                            "triggered": true
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Configuration_Except_WebConfig",
+                                "display": "Application Settings Configuration : Using other configuration files than Web configuration",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Configuration_Except_WebConfig",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 0.17006802721088435,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_COM_Components",
+                                "display": "Code Execution : Using COM Components",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_COM_Components",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "High",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": -3.978779840848806,
+                            "roadblocks": 159.0,
+                            "cloudEffort": 19080,
+                            "files": [
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/namespaces\\SafeRegistryHandle.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.PSReadLine\\ReadLine.vi.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/ComInterop\\UnknownArgBuilder.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/remoting/fanin\\WSManTransportManager.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Security/security\\CatalogCommands.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.WSMan.Management\\WSManInstance.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.CoreCLR.Eventing/DotNetCode/Eventing\\EventDescriptor.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine\\Utils.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/ComInterop\\VarEnumSelector.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/CommandCompletion\\CompletionCompleters.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/remoting/fanin\\WSManPlugin.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/ComInterop\\VariantArray.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/ComInterop\\Variant.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/namespaces\\TransactedRegistry.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.PSReadLine\\Cmdlets.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/ComInterop\\StringArgBuilder.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/CoreCLR\\CorePsStub.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/ComInterop\\DispatchArgBuilder.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/parser\\FusionAssemblyIdentity.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/security\\SecuritySupport.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.PSReadLine\\ScreenCapture.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/remoting/common\\RunspaceConnectionInfo.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/utils\\PsUtils.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/namespaces\\TransactedRegistrySecurity.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/ComInterop\\ComInvokeBinder.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Commands.Management/commands/management\\SetWMIInstanceCommand.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/namespaces\\FileSystemContentStream.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/ComInterop\\IDispatchComObject.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.PSReadLine\\AssemblyInfo.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.WSMan.Management\\WsManHelper.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/namespaces\\Win32Native.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/remoting/common\\RemoteSessionNamedPipe.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/security\\nativeMethods.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/utils\\CryptoUtils.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.ConsoleHost/host/msh\\ConsoleControl.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/ComInterop\\ComEventSinkProxy.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/COM\\ComMethod.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.WSMan.Management\\Set-QuickConfig.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.WSMan.Management\\InvokeWSManAction.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine\\NativeCommandProcessor.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.PSReadLine\\ReadLine.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/ComInterop\\VariantBuilder.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Workflow.ServiceCore/ServiceCore/WorkflowCore\\WorkflowManager.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/remoting/fanin\\WSManPluginFacade.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/namespaces\\FileSystemProvider.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.CoreCLR.Eventing/DotNetCode/Eventing/Reader\\NativeWrapper.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/utils\\ObjectWriter.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.CoreCLR.Eventing/DotNetCode/Eventing/Reader\\EventLogHandle.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Commands.Management/commands/management\\TimeZoneCommands.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Commands.Diagnostics\\PdhSafeHandle.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.ConsoleHost/host/msh\\ConsoleHostRawUserInterface.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Commands.Diagnostics\\CommonUtils.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.ScheduledJob\\ScheduledJobWTS.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/COM\\ComTypeInfo.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/utils\\PlatformInvokes.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.CoreCLR.AssemblyLoadContext/CoreCLR\\CorePsAssemblyLoadContext.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.PSReadLine\\ConsoleKeyChordConverter.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/ComInterop\\ComEventSinksContainer.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Commands.Management/commands/management\\GetClipboardCommand.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Security/security\\SignatureCommands.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/hostifaces\\NativeCultureResolver.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.PSReadLine\\Replace.vi.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.WSMan.Management\\PingWSMan.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/ComInterop\\ComRuntimeHelpers.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/security\\Authenticode.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.CoreCLR.Eventing/DotNetCode/Eventing\\UnsafeNativeMethods.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.WSMan.Management\\WSManConnections.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Commands.Management/commands/management\\GetComputerInfoCommand.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/COM\\ComInvoker.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.LocalAccounts/LocalAccounts\\Extensions.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine\\ExtraAdapter.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/CoreCLR\\CorePsPlatform.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/help\\CabinetNativeApi.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.WSMan.Management\\WsManSnapin.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Security/security\\CertificateProvider.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/ComInterop\\VariantArgBuilder.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/remoting/fanin\\WSManNativeAPI.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/PSMI\\PSNegotiationData.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/ComInterop\\ComTypeLibDesc.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/security\\wldpNativeMethods.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/namespaces\\TransactedRegistryKey.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Commands.Utility/commands/utility\\new-object.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Commands.Diagnostics\\PdhHelper.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Commands.Management/commands/management\\Service.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Workflow.ServiceCore/ServiceCore/WorkflowCore\\WorkflowUtils.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Commands.Management/commands/management\\Process.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.ConsoleHost/host/msh\\Telemetry.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.CoreCLR.Eventing/DotNetCode/Eventing/Reader\\CoTaskMemSafeHandle.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.WSMan.Management\\Interop.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Commands.Management/commands/management\\WebServiceProxy.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/ComInterop\\ComObject.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/PSMI\\PSPowerShellPipeline.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.LocalAccounts/LocalAccounts\\Native.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.WSMan.Runtime\\WSManSessionOption.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/ComInterop\\ComInterop.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Commands.Utility/commands/utility\\SetDateCommand.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.WSMan.Management\\CredSSP.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/ComInterop\\CurrencyArgBuilder.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/utils/tracing\\EtwActivity.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/help\\HelpCommands.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.WSMan.Management\\ConfigProvider.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Security/security\\SecureStringCommands.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/utils\\ObjectReader.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Commands.Management/commands/management\\WMIHelper.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Commands.Management/cimSupport/cmdletization/cim\\cimConverter.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/ComInterop\\ExcepInfo.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/parser\\GlobalAssemblyCache.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Commands.Management/commands/management\\InvokeWMIMethodCommand.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.Management.Infrastructure.CimCmdlets\\CimSessionProxy.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/COM\\ComDispatch.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Workflow.ServiceCore/ServiceCore/WorkflowCore\\WorkflowRuntimeCompilation.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/ComInterop\\ComTypeEnumDesc.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/utils\\ClrFacade.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/hostifaces\\HostUtilities.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine\\ProcessCodeMethods.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\test/PSReadLine\\AssemblyInfo.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/namespaces\\SafeTransactionHandle.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.CoreCLR.Eventing/DotNetCode/Eventing\\EventProvider.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.PSReadLine\\ConsoleLib.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/DscSupport\\CimDSCParser.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/ComInterop\\ComEventSink.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/WinRT\\IInspectable.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/ComInterop\\ComBinderHelpers.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/COM\\ComProperty.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/security\\CatalogHelper.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/security\\SecureStringHelper.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/COM\\ComUtil.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Commands.Management/commands/management\\ClearRecycleBinCommand.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.LocalAccounts/LocalAccounts\\Sam.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.ConsoleHost/host/msh\\ConsoleHost.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.LocalAccounts/LocalAccounts\\SamApi.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/remoting/fanin\\WSManPluginShellSession.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Security/security\\AclCommands.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.CoreCLR.Eventing/DotNetCode/Eventing/Reader\\CoTaskMemUnicodeSafeHandle.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.ConsoleHost/host/msh\\ManagedEntrance.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.WSMan.Management\\NewWSManSession.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/ComInterop\\ErrorArgBuilder.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Commands.Utility/commands/utility/ShowCommand\\ShowCommand.cs"
+                            ],
+                            "triggered": true
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Crypto_API",
+                                "display": "Data Encryption Key : Using Crypto API",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Crypto_API",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": -2.122015915119363,
+                            "roadblocks": 34.0,
+                            "cloudEffort": 510,
+                            "files": [
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Security/security\\CmsCommands.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Security/security\\CertificateProvider.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Commands.Utility/commands/utility/WebCmdlet\\WebRequestSession.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/security\\MshSignature.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Commands.Utility/commands/utility\\GetRandomCommand.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Workflow.ServiceCore/ServiceCore/WorkflowCore/FileInstanceStore\\InstanceStoreCryptography.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/runtime\\CompiledScriptBlock.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/security\\SecurityManager.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Commands.Utility/commands/utility\\GetHash.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Commands.Utility/commands/utility/WebCmdlet/CoreCLR\\WebRequestPSCmdlet.CoreClr.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/TypeCatalogGen\\TypeCatalogGen.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.ConsoleHost/host/msh\\Telemetry.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/security\\SecuritySupport.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/parser\\TypeResolver.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Security/security\\CertificateCommands.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Workflow.ServiceCore/ServiceCore/WorkflowCore/FileInstanceStore\\InstanceStorePermission.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Security/security\\SignatureCommands.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/security\\CatalogHelper.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/security\\SecureStringHelper.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine\\Credential.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Commands.Utility/commands/utility/WebCmdlet/FullClr\\WebRequestPSCmdlet.FullClr.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.CoreCLR.AssemblyLoadContext/CoreCLR\\AssemblyMetadataHelper.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/security\\Authenticode.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/security\\nativeMethods.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Commands.Utility/commands/utility/WebCmdlet/Common\\WebRequestPSCmdlet.Common.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Commands.Utility/commands/utility\\ImplicitRemotingCommands.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Security/security\\SecureStringCommands.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Commands.Management/cimSupport/cmdletization/cim\\cimConverter.cs"
+                            ],
+                            "triggered": true
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_File_System",
+                                "display": "Execution Environment : Using file system",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_File_System",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": -4.244031830238726,
+                            "roadblocks": 6.0,
+                            "cloudEffort": 90,
+                            "files": [
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/DscSupport\\CimDSCParser.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\test/csharp\\test_CorePsPlatform.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/CoreCLR\\CorePsPlatform.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Commands.Management/commands/management\\ClearRecycleBinCommand.cs"
+                            ],
+                            "triggered": true
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_OS_Dependency",
+                                "display": "Execution Environment : Using system DLLs",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_OS_Dependency",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "High",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": -3.978779840848806,
+                            "roadblocks": 453.0,
+                            "cloudEffort": 4530,
+                            "files": [
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/namespaces\\SafeRegistryHandle.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/parser\\GlobalAssemblyCache.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/remoting/fanin\\WSManNativeAPI.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine\\NativeCommandProcessor.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Workflow.ServiceCore/ServiceCore/WorkflowCore\\WorkflowManager.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/security\\wldpNativeMethods.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Commands.Utility/commands/utility\\new-object.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine\\Utils.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/CommandCompletion\\CompletionCompleters.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Commands.Diagnostics\\PdhHelper.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Workflow.ServiceCore/ServiceCore/WorkflowCore\\WorkflowRuntimeCompilation.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/namespaces\\FileSystemProvider.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/utils\\ClrFacade.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Commands.Management/commands/management\\TimeZoneCommands.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/parser\\FusionAssemblyIdentity.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Commands.Management/commands/management\\Service.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Commands.Diagnostics\\CommonUtils.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Commands.Management/commands/management\\Process.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/hostifaces\\HostUtilities.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine\\ProcessCodeMethods.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/remoting/common\\RunspaceConnectionInfo.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/utils\\PsUtils.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.PSReadLine\\ConsoleLib.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.WSMan.Management\\Interop.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/utils\\PlatformInvokes.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/namespaces\\FileSystemContentStream.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.LocalAccounts/LocalAccounts\\Native.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/hostifaces\\NativeCultureResolver.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/security\\SecureStringHelper.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Commands.Management/commands/management\\ClearRecycleBinCommand.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Commands.Utility/commands/utility\\SetDateCommand.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.LocalAccounts/LocalAccounts\\Sam.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/namespaces\\Win32Native.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.LocalAccounts/LocalAccounts\\SamApi.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/ComInterop\\ComRuntimeHelpers.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/utils/tracing\\EtwActivity.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/remoting/common\\RemoteSessionNamedPipe.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.CoreCLR.Eventing/DotNetCode/Eventing\\UnsafeNativeMethods.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/security\\nativeMethods.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/help\\HelpCommands.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Commands.Management/commands/management\\GetComputerInfoCommand.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/COM\\ComInvoker.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.ConsoleHost/host/msh\\ConsoleControl.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/CoreCLR\\CorePsPlatform.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Commands.Utility/commands/utility/ShowCommand\\ShowCommand.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/help\\CabinetNativeApi.cs"
+                            ],
+                            "triggered": true
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_InterApplication_MiddleWare",
+                                "display": "Inter Application Messaging : Using a middleware application",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_InterApplication_MiddleWare",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Medium",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 2.7210884353741496,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Directory_Manipulation_Practice",
+                                "display": "Persistent Files : Perform Directory Manipulation",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Directory_Manipulation_Practice",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": -4.244031830238726,
+                            "roadblocks": 148.0,
+                            "cloudEffort": 2220,
+                            "files": [
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/remoting/commands\\CustomShellCommands.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/ResGen\\Program.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/help\\SaveHelpCommand.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/namespaces\\FileSystemSecurity.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/Modules\\ModuleIntrinsics.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Security/security\\CatalogCommands.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Workflow.ServiceCore/ServiceCore/WorkflowCore/FileInstanceStore\\WorkflowAdditionalStores.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine\\CommandPathSearch.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/CommandCompletion\\CompletionCompleters.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/minishell/api\\FormatAndTypeDataHelper.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Workflow.ServiceCore/ServiceCore/WorkflowCore\\WorkflowRuntimeCompilation.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/namespaces\\FileSystemProvider.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/Modules\\AnalysisCache.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/TypeCatalogGen\\TypeCatalogGen.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Commands.Management/commands/management\\Process.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/hostifaces\\MshHostUserInterface.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/help\\UpdateHelpCommand.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/help\\MUIFileSearcher.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/security\\SecuritySupport.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/utils\\PsUtils.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.PSReadLine\\VisualEditing.vi.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/DscSupport\\CimDSCParser.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.ScheduledJob\\ScheduledJobStore.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.CoreCLR.AssemblyLoadContext/CoreCLR\\CorePsAssemblyLoadContext.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/remoting/fanin\\InitialSessionStateProvider.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/help\\HelpFileHelpProvider.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine\\PropertyAccessor.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Security/security\\SignatureCommands.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/security\\CatalogHelper.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.PSReadLine\\History.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine\\InitialSessionState.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/Modules\\ModuleUtils.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.ConsoleHost/host/msh\\ConsoleHost.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/utils\\PathUtils.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/Modules\\ImportModuleCommand.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/Modules\\TestModuleManifestCommand.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Commands.Utility/commands/utility/WebCmdlet/Common\\WebRequestPSCmdlet.Common.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.WSMan.Management\\ConfigProvider.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Commands.Utility/commands/utility\\ImplicitRemotingCommands.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/help\\UpdatableHelpCommandBase.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/CoreCLR\\CorePsPlatform.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/Modules\\ModuleCmdletBase.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/help\\UpdatableHelpSystem.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/help\\CabinetNativeApi.cs"
+                            ],
+                            "triggered": true
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "File_Manipulation_Practice",
+                                "display": "Persistent Files : Perform File Manipulation",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#File_Manipulation_Practice",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": -4.244031830238726,
+                            "roadblocks": 161.0,
+                            "cloudEffort": 2415,
+                            "files": [
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Workflow.ServiceCore/ServiceCore/WorkflowCore/FileInstanceStore\\WorkflowAdditionalStores.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine\\Utils.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/minishell/api\\FormatAndTypeDataHelper.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Commands.Utility/commands/utility\\AddType.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/TypeCatalogGen\\TypeCatalogGen.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Commands.Utility/commands/utility/WebCmdlet\\StreamHelper.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.Management.Infrastructure.CimCmdlets\\Utils.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Commands.Management/commands/management\\Process.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Commands.Utility/commands/utility\\Import-LocalizedData.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/security\\SecuritySupport.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/remoting/common\\RunspaceConnectionInfo.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.PSReadLine\\VisualEditing.vi.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/singleshell/config\\MshSnapinInfo.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/remoting/fanin\\InitialSessionStateProvider.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/namespaces\\FileSystemContentStream.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine\\PropertyAccessor.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Commands.Utility/commands/utility/trace\\TraceListenerCommandBase.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\test/csharp\\test_FileSystemProvider.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.WSMan.Management\\WsManHelper.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/singleshell/Commands\\ConsoleCommands.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Workflow.ServiceCore/ServiceCore/WorkflowCore\\ImportWorkflowCommand.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/Modules\\ImportModuleCommand.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/hostifaces\\PowerShellProcessInstance.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.WSMan.Management\\ConfigProvider.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Commands.Utility/commands/utility\\Set-PSBreakpoint.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/help\\UpdatableHelpSystem.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/remoting/commands\\CustomShellCommands.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.ConsoleHost/host/msh\\StartTranscriptCmdlet.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/debugger\\debugger.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/help\\SaveHelpCommand.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/hostifaces\\LocalConnection.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/namespaces\\FileSystemSecurity.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Commands.Utility/commands/utility/FormatAndOutput/format-hex\\Format-Hex.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/Modules\\ModuleIntrinsics.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/singleshell/config\\RegistryStringResourceIndirect.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Workflow.ServiceCore/ServiceCore/WorkflowCore\\WorkflowRuntimeCompilation.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/namespaces\\FileSystemProvider.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/Modules\\AnalysisCache.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/help\\PSClassHelpProvider.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/help\\DscResourceHelpProvider.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\test/csharp\\test_CorePsPlatform.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.ConsoleHost/host/msh\\CommandLineParameterParser.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/hostifaces\\MshHostUserInterface.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine\\CommandSearcher.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/DscSupport\\CimDSCParser.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.ScheduledJob\\ScheduledJobStore.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/parser\\Compiler.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.CoreCLR.AssemblyLoadContext/CoreCLR\\CorePsAssemblyLoadContext.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Commands.Utility/commands/utility\\CSVCommands.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/security\\CatalogHelper.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.PSReadLine\\History.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine\\InitialSessionState.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/Modules\\ModuleUtils.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.ConsoleHost/host/msh\\ConsoleHost.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/utils\\PathUtils.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/Modules\\TestModuleManifestCommand.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/help\\CommandHelpProvider.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/help\\UpdatableHelpCommandBase.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/parser\\Parser.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/Modules\\ModuleCmdletBase.cs"
+                            ],
+                            "triggered": true
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Registry_Class",
+                                "display": "Registry Settings : Using Windows registry to store Application Settings",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Registry_Class",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Medium",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": -1.5915119363395225,
+                            "roadblocks": 1.0,
+                            "cloudEffort": 15,
+                            "files": [
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Commands.Utility/commands/utility/WebCmdlet/Common\\WebRequestPSCmdlet.Common.cs"
+                            ],
+                            "triggered": true
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Direct_RDBMS_Access",
+                                "display": "Sensitive Data Storage Protection : Using direct Database Access through Connection Strings",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Direct_RDBMS_Access",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 1.3605442176870748,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Access_To_Environment_Variable",
+                                "display": "Execution Environment : Access to environment variable",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Access_To_Environment_Variable",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": -2.122015915119363,
+                            "roadblocks": 1.0,
+                            "cloudEffort": 15,
+                            "files": null,
+                            "triggered": true
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_GetTempPath",
+                                "display": "Temporary Files : Using a temporary local file or directory",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_GetTempPath",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": -2.122015915119363,
+                            "roadblocks": 16.0,
+                            "cloudEffort": 240,
+                            "files": [
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/utils\\PsUtils.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.PSReadLine\\VisualEditing.vi.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/remoting/commands\\CustomShellCommands.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/utils\\PathUtils.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/Microsoft.PowerShell.Workflow.ServiceCore/ServiceCore/WorkflowCore\\WorkflowRuntimeCompilation.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/help\\SaveHelpCommand.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/engine/Modules\\RemoteDiscoveryHelper.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/security\\CatalogHelper.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/help\\UpdatableHelpSystem.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\test/csharp\\test_FileSystemProvider.cs",
+                                "C:\\Users\\mmu\\Downloads\\Agile Mojo Projects\\powershell\\PowerShell-6.0.0-beta.3\\src/System.Management.Automation/help\\UpdateHelpCommand.cs"
+                            ],
+                            "triggered": true
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Impersonate_Identity",
+                                "display": "Security & User Authentication : Using impersonate Identity",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Impersonate_Identity",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Critical",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 13.60544217687075,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_WebForm_Authentication",
+                                "display": "Security & User Authentication : Using Webform Authentication",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_WebForm_Authentication",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 1.3605442176870748,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Windows_Authentication",
+                                "display": "Security & User Authentication : Use of Windows Authentication",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Windows_Authentication",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Medium",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 2.7210884353741496,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_SecuredProtocols",
+                                "display": "Security & User Authentication : Use of unsecured network protocols or URI libraries",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_SecuredProtocols",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 1.3605442176870748,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false,
+                            "cloudRequirementsDetail": [
+                                {
+                                    "cloudRequirement": {
+                                        "id": "Use_SecuredProtocolsHTTP",
+                                        "display": "Security & User Authentication : Use of unsecured network protocols (HTTP)",
+                                        "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_SecuredProtocols",
+                                        "ruleType": "BLOCKER",
+                                        "rulePlatform": null,
+                                        "rulePlatformLabel": null,
+                                        "criticality": "Low",
+                                        "impacts": [
+                                            "Coding"
+                                        ],
+                                        "parent": null
+                                    },
+                                    "roadblocks": 0.0,
+                                    "cloudEffort": null,
+                                    "files": null
+                                },
+                                {
+                                    "cloudRequirement": {
+                                        "id": "Use_SecuredProtocolsFTP",
+                                        "display": "Security & User Authentication : Use of unsecured network protocols (FTP)",
+                                        "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_SecuredProtocols",
+                                        "ruleType": "BLOCKER",
+                                        "rulePlatform": null,
+                                        "rulePlatformLabel": null,
+                                        "criticality": "Low",
+                                        "impacts": [
+                                            "Coding"
+                                        ],
+                                        "parent": null
+                                    },
+                                    "roadblocks": 0.0,
+                                    "cloudEffort": null,
+                                    "files": null
+                                }
+                            ]
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Hardcoded_IP_Address",
+                                "display": "Execution Environment : Using hardcoded network IP address",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Hardcoded_IP_Address",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 1.3605442176870748,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Stateful_Session",
+                                "display": "Persistent Files : Using stateful session (Servlet)",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Stateful_Session",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "High",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 2.5510204081632653,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_Auto_Generated_Machine_Key",
+                                "display": "Data Encryption Key : Using auto generated Machine Key",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_Auto_Generated_Machine_Key",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "High",
+                                "impacts": [
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 2.5510204081632653,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_SQL_Database_Unsecure_Authentication",
+                                "display": "Sensitive Data Storage Protection : Avoid using unsecured database connection strings",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_SQL_Database_Unsecure_Authentication",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Medium",
+                                "impacts": [
+                                    "Coding"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 1.0204081632653061,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        },
+                        {
+                            "cloudRequirement": {
+                                "id": "Use_EventLog",
+                                "display": "Application Logs : Using log to file system",
+                                "hrefDoc": "https://doc.casthighlight.com/cloudmaturity/#Use_EventLog",
+                                "ruleType": "BLOCKER",
+                                "rulePlatform": null,
+                                "rulePlatformLabel": null,
+                                "criticality": "Low",
+                                "impacts": [
+                                    "Coding",
+                                    "Framework",
+                                    "Architecture"
+                                ],
+                                "parent": null
+                            },
+                            "contributionScore": 1.3605442176870748,
+                            "roadblocks": 0.0,
+                            "cloudEffort": 0,
+                            "files": null,
+                            "triggered": false
+                        }
+                    ]
+                }
+            ],
+            "customIndicators": [
+                {
+                    "metricId": 10023356,
+                    "value": "0.0707070707070707"
+                },
+                {
+                    "metricId": 10006001,
+                    "value": "0.3829787234042553"
+                },
+                {
+                    "metricId": 10006305,
+                    "value": "0.1794871794871795"
+                },
+                {
+                    "metricId": 10013600,
+                    "value": "0.6"
+                },
+                {
+                    "metricId": 10006302,
+                    "value": "0.2222222222222222"
+                },
+                {
+                    "metricId": 10006301,
+                    "value": "0.05263157894736842"
+                },
+                {
+                    "metricId": 10016304,
+                    "value": null
+                }
+            ],
+            "technologies": [
+                {
+                    "technology": "C/C++",
+                    "totalLinesOfCode": 5896,
+                    "totalFiles": 55,
+                    "softwareAgility": 0.6406677961349487,
+                    "softwareElegance": 0.6847618818283081,
+                    "softwareResiliency": 0.7357060313224792,
+                    "softwareHealth": 0.6870452364285787,
+                    "softwareAgilityDetail": {
+                        "highLinesOfCode": 1464,
+                        "mediumLinesOfCode": 1870,
+                        "lowLinesOfCode": 2562
+                    },
+                    "softwareEleganceDetail": {
+                        "highLinesOfCode": 2320,
+                        "mediumLinesOfCode": 1326,
+                        "lowLinesOfCode": 2250
+                    },
+                    "softwareResiliencyDetail": {
+                        "highLinesOfCode": 2895,
+                        "mediumLinesOfCode": 2846,
+                        "lowLinesOfCode": 155
+                    },
+                    "softwareHealthDetail": {
+                        "highLinesOfCode": 2226,
+                        "mediumLinesOfCode": 2014,
+                        "lowLinesOfCode": 1655
+                    }
+                },
+                {
+                    "technology": "Ksh",
+                    "totalLinesOfCode": 124,
+                    "totalFiles": 4,
+                    "softwareAgility": 0.8475806713104248,
+                    "softwareElegance": 0.8064516186714172,
+                    "softwareResiliency": 0.35564517974853516,
+                    "softwareHealth": 0.6698924899101257,
+                    "softwareAgilityDetail": {
+                        "highLinesOfCode": 116,
+                        "mediumLinesOfCode": 0,
+                        "lowLinesOfCode": 8
+                    },
+                    "softwareEleganceDetail": {
+                        "highLinesOfCode": 124,
+                        "mediumLinesOfCode": 0,
+                        "lowLinesOfCode": 0
+                    },
+                    "softwareResiliencyDetail": {
+                        "highLinesOfCode": 8,
+                        "mediumLinesOfCode": 0,
+                        "lowLinesOfCode": 116
+                    },
+                    "softwareHealthDetail": {
+                        "highLinesOfCode": 82,
+                        "mediumLinesOfCode": 0,
+                        "lowLinesOfCode": 41
+                    }
+                },
+                {
+                    "technology": "Python",
+                    "totalLinesOfCode": 12,
+                    "totalFiles": 1,
+                    "softwareAgility": 0.6851851940155029,
+                    "softwareElegance": 1.0,
+                    "softwareResiliency": 0.6666666269302368,
+                    "softwareHealth": 0.7839506069819132,
+                    "softwareAgilityDetail": {
+                        "highLinesOfCode": 0,
+                        "mediumLinesOfCode": 12,
+                        "lowLinesOfCode": 0
+                    },
+                    "softwareEleganceDetail": {
+                        "highLinesOfCode": 12,
+                        "mediumLinesOfCode": 0,
+                        "lowLinesOfCode": 0
+                    },
+                    "softwareResiliencyDetail": {
+                        "highLinesOfCode": 0,
+                        "mediumLinesOfCode": 12,
+                        "lowLinesOfCode": 0
+                    },
+                    "softwareHealthDetail": {
+                        "highLinesOfCode": 4,
+                        "mediumLinesOfCode": 8,
+                        "lowLinesOfCode": 0
+                    }
+                },
+                {
+                    "technology": "C#",
+                    "totalLinesOfCode": 536401,
+                    "totalFiles": 1575,
+                    "softwareAgility": 0.5544129610061646,
+                    "softwareElegance": 0.43163132667541504,
+                    "softwareResiliency": 0.7015644311904907,
+                    "softwareHealth": 0.5625362396240234,
+                    "softwareAgilityDetail": {
+                        "highLinesOfCode": 88937,
+                        "mediumLinesOfCode": 222078,
+                        "lowLinesOfCode": 225386
+                    },
+                    "softwareEleganceDetail": {
+                        "highLinesOfCode": 124272,
+                        "mediumLinesOfCode": 108009,
+                        "lowLinesOfCode": 304120
+                    },
+                    "softwareResiliencyDetail": {
+                        "highLinesOfCode": 251109,
+                        "mediumLinesOfCode": 163604,
+                        "lowLinesOfCode": 121688
+                    },
+                    "softwareHealthDetail": {
+                        "highLinesOfCode": 154772,
+                        "mediumLinesOfCode": 164563,
+                        "lowLinesOfCode": 217064
+                    }
+                },
+                {
+                    "technology": "JavaScript",
+                    "totalLinesOfCode": 47,
+                    "totalFiles": 1,
+                    "softwareAgility": 0.6481481790542603,
+                    "softwareElegance": 0.7407407760620117,
+                    "softwareResiliency": 0.6666666269302368,
+                    "softwareHealth": 0.6851851940155029,
+                    "softwareAgilityDetail": {
+                        "highLinesOfCode": 0,
+                        "mediumLinesOfCode": 47,
+                        "lowLinesOfCode": 0
+                    },
+                    "softwareEleganceDetail": {
+                        "highLinesOfCode": 0,
+                        "mediumLinesOfCode": 47,
+                        "lowLinesOfCode": 0
+                    },
+                    "softwareResiliencyDetail": {
+                        "highLinesOfCode": 0,
+                        "mediumLinesOfCode": 47,
+                        "lowLinesOfCode": 0
+                    },
+                    "softwareHealthDetail": {
+                        "highLinesOfCode": 0,
+                        "mediumLinesOfCode": 47,
+                        "lowLinesOfCode": 0
+                    }
+                }
+            ],
+            "components": [
+                {
+                    "id": 51408,
+                    "name": "gulp.npm",
+                    "version": "3.9.1",
+                    "cves": [],
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 51409,
+                    "name": "markdownlint.npm",
+                    "version": "0.2.0",
+                    "cves": [],
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 51407,
+                    "name": "through2.npm",
+                    "version": "2.0.1",
+                    "cves": [],
+                    "lifeSpan": "N/A"
+                }
+            ]
+        }
+    ],
+    "surveys": [
+        {
+            "id": 371,
+            "ref": "CAST_MAINT",
+            "name": "Software Maintenance Estimate",
+            "questions": [
+                {
+                    "label": "What is the percentage of change to the base code in the last 12 months?",
+                    "value": "45.0",
+                    "questionId": 1000121
+                },
+                {
+                    "label": "What is the average skill level of the development team on this type of application?",
+                    "value": "6 months",
+                    "questionId": 1000015,
+                    "choiceId": 1000067
+                },
+                {
+                    "label": "What percentage of the development effort has been spent on maintenance in the last 12 months?",
+                    "value": "75.0",
+                    "questionId": 1000012
+                },
+                {
+                    "label": "What is the annual staff turnover within the development team?",
+                    "value": "50%",
+                    "questionId": 1000016,
+                    "choiceId": 1000145
+                },
+                {
+                    "label": "What is the CMMI level of the organization?",
+                    "value": "Level 3",
+                    "questionId": 1000032,
+                    "choiceId": 1000257
+                }
+            ]
+        },
+        {
+            "id": 1700,
+            "name": "Business Alignment Assessment",
+            "questions": [
+                {
+                    "label": "[Portfolio Management] How many Business processes does the application support?",
+                    "shortLabel": "",
+                    "value": "1 process",
+                    "questionId": 10001304,
+                    "choiceId": 10007401
+                },
+                {
+                    "label": "[Portfolio Management] What is the primary capability that this application supports? (APQC short)",
+                    "shortLabel": "What is the primary capability that this application supports",
+                    "value": "14.0 - Don't Know",
+                    "questionId": 10006306,
+                    "choiceId": 10012809
+                },
+                {
+                    "label": "[Portfolio Management] What is the application's life cycle stage?",
+                    "shortLabel": "Application LifeCycle",
+                    "value": "Production - Decommissionning",
+                    "questionId": 10006307,
+                    "choiceId": 10012902
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "ref": "CAST_BI",
+            "name": "Business Impact",
+            "questions": [
+                {
+                    "label": "What is the average number of FTE (Full Time Equivalent) resources that have worked on the source code for this application over the last 12 months?",
+                    "shortLabel": "",
+                    "value": "22.0",
+                    "questionId": 1000011
+                },
+                {
+                    "label": "Is this application aligned with the company's future technology direction?",
+                    "shortLabel": "",
+                    "value": "Yes",
+                    "questionId": 1000009,
+                    "choiceId": 1000042
+                },
+                {
+                    "label": "The number of major releases delivered over the last 12 months for this application?",
+                    "shortLabel": "",
+                    "value": "7 to 12",
+                    "questionId": 1000006,
+                    "choiceId": 1000454
+                },
+                {
+                    "label": "Could failure of this application lead to loss of customer confidence? Please define the level of impact.",
+                    "value": "Low",
+                    "questionId": 1000022,
+                    "choiceId": 1000220
+                },
+                {
+                    "label": "Could failure of this application lead to harm of the company's public image? Please define the level of impact.",
+                    "value": "Low",
+                    "questionId": 1000021,
+                    "choiceId": 1000000
+                },
+                {
+                    "label": "Could failure of this application lead to loss of revenue or business opportunity? Please define the level of impact.",
+                    "value": "Low",
+                    "questionId": 1000020,
+                    "choiceId": 1000406
+                },
+                {
+                    "label": "Could failure of this application lead to disruption? Please define the level of impact.",
+                    "value": "Low",
+                    "questionId": 1000019,
+                    "choiceId": 1000192
+                },
+                {
+                    "label": "What is the approximate number of end users for this application?",
+                    "shortLabel": "",
+                    "value": "More than 2500",
+                    "questionId": 1000018,
+                    "choiceId": 1000398
+                },
+                {
+                    "label": "Does the application serve internal or external users?",
+                    "value": "External users",
+                    "questionId": 1000017,
+                    "choiceId": 1000203
+                }
+            ]
+        },
+        {
+            "id": 373,
+            "ref": "CAST_APP",
+            "name": "Application Properties",
+            "questions": [
+                {
+                    "label": "What is the application type?",
+                    "shortLabel": "",
+                    "value": "Content Management and Publishing",
+                    "questionId": 1000004,
+                    "choiceId": 1000429
+                },
+                {
+                    "label": "Application Owner's name",
+                    "value": "JAS",
+                    "questionId": 1000002
+                },
+                {
+                    "label": "Is this application a custom application or a Commercial Off The Shelf product?",
+                    "shortLabel": "",
+                    "value": "Custom Application",
+                    "questionId": 1000427,
+                    "choiceId": 1000529
+                },
+                {
+                    "label": "In what year was this application first put into production?",
+                    "shortLabel": "",
+                    "value": "2013",
+                    "questionId": 1000033
+                }
+            ]
+        },
+        {
+            "id": 1701,
+            "name": "IaaS Assessment",
+            "questions": [
+                {
+                    "label": "[IaaS] Performance - Elasticity",
+                    "shortLabel": "",
+                    "value": "Med Low (Moderate spikes regularly)",
+                    "questionId": 10003000,
+                    "choiceId": 10009401
+                },
+                {
+                    "label": "[IaaS] Performance - Scalability",
+                    "shortLabel": "",
+                    "value": "Slow, Linear Growth",
+                    "questionId": 10003001,
+                    "choiceId": 10009406
+                },
+                {
+                    "label": "[IaaS] Performance - Latency",
+                    "shortLabel": "",
+                    "value": " < 500ms",
+                    "questionId": 10003003,
+                    "choiceId": 10009416
+                },
+                {
+                    "label": "[IaaS] Performance - Throughput",
+                    "shortLabel": "",
+                    "value": "1-5 Mbps",
+                    "questionId": 10003004,
+                    "choiceId": 10009421
+                },
+                {
+                    "label": "[IaaS] Operations - Business Continuity",
+                    "shortLabel": "",
+                    "value": "Low Availability required (90%)",
+                    "questionId": 10003104,
+                    "choiceId": 10009533
+                },
+                {
+                    "label": "[IaaS] Security & Compliance - Jurisdiction",
+                    "shortLabel": "",
+                    "value": "Restricted to a region",
+                    "questionId": 10003107,
+                    "choiceId": 10009548
+                },
+                {
+                    "label": "[IaaS] Architecture - Application - Complexity",
+                    "shortLabel": "",
+                    "value": "Med High, (N tier, med integration w/other apps (5-10))",
+                    "questionId": 10003008,
+                    "choiceId": 10009441
+                },
+                {
+                    "label": "[IaaS] Architecture - Infrastructure - Hardware Life Expectancy",
+                    "shortLabel": "",
+                    "value": "3-4 years",
+                    "questionId": 10003014,
+                    "choiceId": 10009471
+                },
+                {
+                    "label": "[IaaS] Financial - Operating Cost",
+                    "shortLabel": "",
+                    "value": "Med Low (No SLAs, Minimal staffing)",
+                    "questionId": 10003015,
+                    "choiceId": 10009476
+                }
+            ]
+        },
+        {
+            "id": 1702,
+            "name": "TCO Assessment",
+            "questions": [
+                {
+                    "label": "[TCO] What is the Total Cost of Ownership for this application?",
+                    "shortLabel": "",
+                    "value": "Medium",
+                    "questionId": 10006303,
+                    "choiceId": 10012609
+                },
+                {
+                    "label": "[TCO] What is the evolution of the TCO?",
+                    "shortLabel": "",
+                    "value": "Steady",
+                    "questionId": 10006304,
+                    "choiceId": 10012703
+                }
+            ]
+        },
+        {
+            "id": 2393,
+            "name": "Application Links",
+            "questions": [
+                {
+                    "label": "FTP Connection",
+                    "shortLabel": "FTP links",
+                    "value": "2,1568028158373,3",
+                    "questionId": 10012400
+                },
+                {
+                    "label": "SOAP Connection",
+                    "shortLabel": "SOAP links",
+                    "value": "3,1568028158373,2",
+                    "questionId": 10012401
+                },
+                {
+                    "label": "API Connection",
+                    "shortLabel": "API links",
+                    "value": "2,3,1568028158373",
+                    "questionId": 10012402
+                }
+            ]
+        },
+        {
+            "id": 938,
+            "ref": "CAST_CLOUD",
+            "name": "Cloud Readiness Assessment",
+            "questions": [
+                {
+                    "label": "[Business Drivers] Does this application correspond to a specific workload?",
+                    "shortLabel": "",
+                    "value": "Big Data",
+                    "questionId": 10000901,
+                    "choiceId": 10006805
+                },
+                {
+                    "label": "[Technical Enablers] Does this application depend on other services or applications?",
+                    "shortLabel": "",
+                    "value": "Internal services not exposed",
+                    "questionId": 10000808,
+                    "choiceId": 10006732
+                },
+                {
+                    "label": "[Technical Enablers] What is the database provider for this application?",
+                    "shortLabel": "",
+                    "value": "Not compatible in the Cloud",
+                    "questionId": 10000809,
+                    "choiceId": 10006737
+                },
+                {
+                    "label": "[Process Maturity] What is the average skill on Cloud technologies and practices within the development team for this application?",
+                    "shortLabel": "",
+                    "value": "None",
+                    "questionId": 10000810,
+                    "choiceId": 10006738
+                },
+                {
+                    "label": "[Business Drivers] What is the current (or expected) Service Level Agreement for this application?",
+                    "shortLabel": "",
+                    "value": "No specifically defined SLA",
+                    "questionId": 10000811,
+                    "choiceId": 10006742
+                },
+                {
+                    "label": "[Process Maturity] What is the evolution model and feedback loop approach for this application?",
+                    "shortLabel": "",
+                    "value": "Waterfall",
+                    "questionId": 10000800,
+                    "choiceId": 10006700
+                },
+                {
+                    "label": "[Technical Enablers] What is the current deployment platform for this application?",
+                    "shortLabel": "",
+                    "value": "Back-End application",
+                    "questionId": 10000801,
+                    "choiceId": 10006708
+                },
+                {
+                    "label": "[Technical Enablers] What is the current user authentication mechanism used by this application?",
+                    "shortLabel": "",
+                    "value": "Multifactor Authenticator",
+                    "questionId": 10000802,
+                    "choiceId": 10006712
+                },
+                {
+                    "label": "[Technical Enablers]  How is this application exposed to external services/applications?",
+                    "shortLabel": "",
+                    "value": "API exposed on other network protocol",
+                    "questionId": 10000803,
+                    "choiceId": 10006715
+                },
+                {
+                    "label": "[Business Drivers] How is data consumed from this application?",
+                    "shortLabel": "",
+                    "value": "Classic Storage",
+                    "questionId": 10000805,
+                    "choiceId": 10006722
+                },
+                {
+                    "label": "[Process Maturity] What is the level of deployment process automation for provisioning and configuration for this application?",
+                    "shortLabel": "",
+                    "value": "No automation",
+                    "questionId": 10000806,
+                    "choiceId": 10006723
+                },
+                {
+                    "label": "[Technical Enablers] Is this application multi-tenant?",
+                    "shortLabel": "",
+                    "value": "No (single-tenant)",
+                    "questionId": 10000807,
+                    "choiceId": 10006726
+                }
+            ]
+        }
+    ],
+    "tags": [
+        {
+            "id": 2304,
+            "label": "CR+BI+CustomCode"
+        }
+    ]
+}

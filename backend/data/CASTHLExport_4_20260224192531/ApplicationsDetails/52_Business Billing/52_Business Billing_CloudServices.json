@@ -1,0 +1,126 @@
+[
+    {
+        "platformId": "aws",
+        "platformName": "Amazon Web Services",
+        "platformUrl": "https://www.aws.com",
+        "recommendations": [
+            {
+                "id": "aws_sqldb",
+                "name": "Amazon RDS for SQL Server",
+                "category": "Databases",
+                "description": "Set up, operate, and scale a relational database in the cloud with just a few clicks",
+                "url": "https://aws.amazon.com/rds/?nc1=h_ls",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Amazon RDS resources",
+                        "url": "https://aws.amazon.com/rds/resources/"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "TSQL",
+                        "details": {
+                            "loc": 11201.0,
+                            "label": "T/Sql"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "platformId": "azure",
+        "platformName": "Microsoft Azure",
+        "platformUrl": "https://azure.microsoft.com",
+        "recommendations": [
+            {
+                "id": "azure_sqldb",
+                "name": "Azure SQL Database",
+                "category": "Databases",
+                "description": "Managed, intelligent SQL in the cloud",
+                "url": "https://azure.microsoft.com/en-us/services/sql-database/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Azure SQL Database documentation",
+                        "url": "https://docs.microsoft.com/en-us/azure/sql-database/"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "TSQL",
+                        "details": {
+                            "loc": 11201.0,
+                            "label": "T/Sql"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "platformId": "gcp",
+        "platformName": "Google Cloud",
+        "platformUrl": "https://cloud.google.com",
+        "recommendations": [
+            {
+                "id": "gcp_cloudsql_sqlserver",
+                "name": "Cloud SQL for SQL Server",
+                "category": "Databases",
+                "description": "Cloud SQL for SQL Server is a managed database service that helps you set up, maintain, manage, and administer your SQL Server databases on Google Cloud.",
+                "url": "https://cloud.google.com/sql",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Cloud SQL for SQL Server documentation",
+                        "url": "https://cloud.google.com/sql/docs/sqlserver"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "TSQL",
+                        "details": {
+                            "loc": 11201.0,
+                            "label": "T/Sql"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "platformId": "oraclecloud",
+        "platformName": "Oracle Cloud",
+        "platformUrl": "https://www.oracle.com/cloud/",
+        "recommendations": [
+            {
+                "id": "oracle_autonomous",
+                "name": "Autonomous Database",
+                "category": "Databases",
+                "description": "Oracle Autonomous Database is a fully automated service that makes it easy for all organizations to develop and deploy application workloads, regardless of complexity, scale, or criticality",
+                "url": "https://www.oracle.com/autonomous-database/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Get started",
+                        "url": "https://www.oracle.com/database/autonomous-database/adb-demos/"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "TSQL",
+                        "details": {
+                            "loc": 11201.0,
+                            "label": "T/Sql"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]

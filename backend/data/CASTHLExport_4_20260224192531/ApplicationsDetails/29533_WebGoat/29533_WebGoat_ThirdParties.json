@@ -1,0 +1,2682 @@
+{
+    "snapshotLabel": "WebGoat_WebGoat",
+    "snapshotDate": 1551934800000,
+    "applicationCodeLines": null,
+    "applicationFiles": 365.0,
+    "thirdPartyCodeLines": null,
+    "thirdPartyFiles": 80.0,
+    "thirdParties": [
+        {
+            "id": 5279,
+            "componentId": "com.fasterxml.jackson.core:jackson-annotations",
+            "name": "com.fasterxml.jackson.core:jackson-annotations",
+            "version": "2.0.4",
+            "release": 1340773560000,
+            "languages": "java",
+            "lifeSpan": "Active",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "2.21",
+            "lastRelease": 1768776420000,
+            "nbVersionPreviousYear": 18,
+            "numberOfCodeLines": -1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 5598,
+            "componentId": "org.apache.tiles:tiles-core",
+            "name": "org.apache.tiles:tiles-core",
+            "version": "2.2.2",
+            "release": 1276631341000,
+            "languages": "java",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "3.0.8",
+            "lastRelease": 1506769593000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": -1.0,
+            "numberOfFiles": 2.0,
+            "cve": {
+                "vendor": "org.apache.tiles",
+                "product": "tiles-core",
+                "version": "2.2.2",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2023-49735",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-49735",
+                        "description": "** UNSUPPORTED WHEN ASSIGNED **\n\nThe value set as the DefaultLocaleResolver.LOCALE_KEY attribute on the session was not validated while resolving XML definition files, leading to possible path traversal and eventually SSRF/XXE when passing user-controlled data to this key. Passing user-controlled data to this key may be relatively common, as it was also used like that to set the language in the 'tiles-test' application shipped with Tiles.\n\nThis issue affects Apache Tiles from version 2 onwards.\n\nNOTE: This vulnerability only affects products that are no longer supported by the maintainer.\n\n",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:apache:tiles",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": []
+        },
+        {
+            "id": 5599,
+            "componentId": "org.slf4j:slf4j-log4j12",
+            "name": "org.slf4j:slf4j-log4j12",
+            "version": "1.7.7",
+            "release": 1396610006000,
+            "languages": "java",
+            "lifeSpan": "Active",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "2.0.17",
+            "lastRelease": 1740501873000,
+            "nbVersionPreviousYear": 4,
+            "numberOfCodeLines": -1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 5600,
+            "componentId": "org.slf4j:jcl-over-slf4j",
+            "name": "org.slf4j:jcl-over-slf4j",
+            "version": "1.7.7",
+            "release": 1396610051000,
+            "languages": "java",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "2.0.17",
+            "lastRelease": 1740501923000,
+            "nbVersionPreviousYear": 4,
+            "numberOfCodeLines": -1.0,
+            "numberOfFiles": 2.0,
+            "cwes": []
+        },
+        {
+            "id": 5601,
+            "componentId": "org.slf4j:slf4j-api",
+            "name": "org.slf4j:slf4j-api",
+            "version": "1.7.7",
+            "release": 1396609968000,
+            "languages": "java",
+            "lifeSpan": "Active",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "2.0.17",
+            "lastRelease": 1740501780000,
+            "nbVersionPreviousYear": 1,
+            "numberOfCodeLines": -1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 6040,
+            "componentId": "commons-logging:commons-logging",
+            "name": "commons-logging:commons-logging",
+            "version": "1.1.3",
+            "release": 1368734723000,
+            "languages": "java",
+            "lifeSpan": "Active",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "1.3.5",
+            "lastRelease": 1738337232000,
+            "nbVersionPreviousYear": 3,
+            "numberOfCodeLines": -1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 7484,
+            "componentId": "commons-fileupload:commons-fileupload",
+            "name": "commons-fileupload:commons-fileupload",
+            "version": "1.2.1",
+            "release": 1202713672000,
+            "languages": "java",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "1.6.0",
+            "lastRelease": 1749136746000,
+            "nbVersionPreviousYear": 1,
+            "numberOfCodeLines": -1.0,
+            "numberOfFiles": 2.0,
+            "cve": {
+                "vendor": "commons-fileupload",
+                "product": "commons-fileupload",
+                "version": "1.2.1",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2013-0248",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2013-0248",
+                        "description": "The default configuration of javax.servlet.context.tempdir in Apache Commons FileUpload 1.0 through 1.2.2 uses the /tmp directory for uploaded files, which allows local users to overwrite arbitrary files via an unspecified symlink attack.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 3.3,
+                        "criticity": "LOW",
+                        "cpe": "cpe:/a:apache:commons_fileupload",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2013-2186",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2013-2186",
+                        "description": "The DiskFileItem class in Apache Commons FileUpload, as used in Red Hat JBoss BRMS 5.3.1; JBoss Portal 4.3 CP07, 5.2.2, and 6.0.0; and Red Hat JBoss Web Server 1.0.2 allows remote attackers to write to arbitrary files via a NULL byte in a file name in a serialized instance.",
+                        "cweId": "CWE-20",
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2014-0050",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2014-0050",
+                        "description": "MultipartStream.java in Apache Commons FileUpload before 1.3.1, as used in Apache Tomcat, JBoss Web, and other products, allows remote attackers to cause a denial of service (infinite loop and CPU consumption) via a crafted Content-Type header that bypasses a loop's intended exit conditions.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2016-1000031",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2016-1000031",
+                        "description": "Apache Commons FileUpload before 1.3.3 DiskFileItem File Manipulation Remote Code Execution",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 9.8,
+                        "criticity": "CRITICAL",
+                        "cpe": "cpe:/a:apache:commons_fileupload",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2016-3092",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2016-3092",
+                        "description": "The MultipartStream class in Apache Commons Fileupload before 1.3.2, as used in Apache Tomcat 7.x before 7.0.70, 8.x before 8.0.36, 8.5.x before 8.5.3, and 9.x before 9.0.0.M7 and other products, allows remote attackers to cause a denial of service (CPU consumption) via a long boundary string.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2023-24998",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-24998",
+                        "description": "Apache Commons FileUpload before 1.5 does not limit the number of request parts to be processed resulting in the possibility of an attacker triggering a DoS with a malicious upload or series of uploads.\n\n\n\n\nNote that, like all of the file upload limits, the\n          new configuration option (FileUploadBase#setFileCountMax) is not\n          enabled by default and must be explicitly configured.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:apache:commons_fileupload",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2025-48976",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-48976",
+                        "description": "Allocation of resources for multipart headers with insufficient limits enabled a DoS vulnerability in Apache Commons FileUpload.\n\nThis issue affects Apache Commons FileUpload: from 1.0 before 1.6; from 2.0.0-M1 before 2.0.0-M4.\n\nUsers are recommended to upgrade to versions 1.6 or 2.0.0-M4, which fix the issue.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:apache:commons_fileupload",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [
+                {
+                    "cwe": "CWE-391",
+                    "label": "Unchecked Error Condition",
+                    "rules": [
+                        {
+                            "aipRuleId": 1060020,
+                            "label": "Avoid empty catch blocks for methods with high fan-in",
+                            "occurrences": 1
+                        },
+                        {
+                            "aipRuleId": 7788,
+                            "label": "Avoid empty catch blocks",
+                            "occurrences": 7
+                        }
+                    ],
+                    "id": 391,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-576",
+                    "label": "EJB Bad Practices: Use of Java I/O",
+                    "rules": [
+                        {
+                            "aipRuleId": 4594,
+                            "label": "Avoid using 'java.io.File'",
+                            "occurrences": 27
+                        }
+                    ],
+                    "id": 576,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1048",
+                    "label": "Invokable Control Element with Large Number of Outward Calls",
+                    "rules": [
+                        {
+                            "aipRuleId": 7778,
+                            "label": "Avoid Artifacts with High Fan-Out",
+                            "occurrences": 114
+                        }
+                    ],
+                    "id": 1048,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1050",
+                    "label": "Excessive Platform Resource Consumption within a Loop",
+                    "rules": [
+                        {
+                            "aipRuleId": 7210,
+                            "label": "Avoid instantiations inside loops",
+                            "occurrences": 2
+                        },
+                        {
+                            "aipRuleId": 7204,
+                            "label": "Avoid method invocation in a loop termination expression",
+                            "occurrences": 4
+                        }
+                    ],
+                    "id": 1050,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1121",
+                    "label": "Excessive McCabe Cyclomatic Complexity",
+                    "rules": [
+                        {
+                            "aipRuleId": 7776,
+                            "label": "Avoid Artifacts with High Fan-In",
+                            "occurrences": 25
+                        }
+                    ],
+                    "id": 1121,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1053",
+                    "label": "Missing Documentation for Design",
+                    "rules": [
+                        {
+                            "aipRuleId": 7838,
+                            "label": "Avoid undocumented Methods",
+                            "occurrences": 33
+                        }
+                    ],
+                    "id": 1053,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-73",
+                    "label": "External Control of File Name or Path",
+                    "rules": [
+                        {
+                            "aipRuleId": 4594,
+                            "label": "Avoid using 'java.io.File'",
+                            "occurrences": 27
+                        }
+                    ],
+                    "id": 73,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-778",
+                    "label": "Insufficient Logging",
+                    "rules": [
+                        {
+                            "aipRuleId": 7652,
+                            "label": "Avoid throwing an exception in a catch block without chaining it",
+                            "occurrences": 2
+                        }
+                    ],
+                    "id": 778,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1124",
+                    "label": "Excessively Deep Nesting",
+                    "rules": [
+                        {
+                            "aipRuleId": 7768,
+                            "label": "Avoid Artifacts with High Depth of Code",
+                            "occurrences": 1
+                        }
+                    ],
+                    "id": 1124,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-681",
+                    "label": "Incorrect Conversion between Numeric Types",
+                    "rules": [
+                        {
+                            "aipRuleId": 8216,
+                            "label": "Avoid using incompatible mutation",
+                            "occurrences": 14
+                        }
+                    ],
+                    "id": 681,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-390",
+                    "label": "Detection of Error Condition Without Action",
+                    "rules": [
+                        {
+                            "aipRuleId": 1060020,
+                            "label": "Avoid empty catch blocks for methods with high fan-in",
+                            "occurrences": 1
+                        }
+                    ],
+                    "id": 390,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1090",
+                    "label": "Method Containing Access of a Member Element from Another Class",
+                    "rules": [
+                        {
+                            "aipRuleId": 4602,
+                            "label": "Avoid using Fields (non static final) from other Classes",
+                            "occurrences": 6
+                        }
+                    ],
+                    "id": 1090,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1061",
+                    "label": "Insufficient Encapsulation",
+                    "rules": [
+                        {
+                            "aipRuleId": 7908,
+                            "label": "Avoid unreferenced Methods",
+                            "occurrences": 113
+                        },
+                        {
+                            "aipRuleId": 7912,
+                            "label": "Avoid unreferenced Data Members",
+                            "occurrences": 3
+                        },
+                        {
+                            "aipRuleId": 7832,
+                            "label": "Avoid unreferenced Classes",
+                            "occurrences": 13
+                        }
+                    ],
+                    "id": 1061,
+                    "isDangerousWeakness": false
+                }
+            ],
+            "saferClosestVersion": "1.3",
+            "safestVersion": "1.5"
+        },
+        {
+            "id": 21133,
+            "componentId": "javax.activation:activation",
+            "name": "javax.activation:activation",
+            "version": "1.1",
+            "release": 1146613709000,
+            "languages": "java",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 26141,
+                    "name": "Common Development and Distribution License 1.0",
+                    "compliance": "partial"
+                }
+            ],
+            "lastVersion": "1.1.1",
+            "lastRelease": 1256322363000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": -1.0,
+            "numberOfFiles": 2.0,
+            "cwes": []
+        },
+        {
+            "id": 21134,
+            "componentId": "commons-discovery:commons-discovery",
+            "name": "commons-discovery:commons-discovery",
+            "version": "0.2",
+            "release": 1173718896000,
+            "languages": "java",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [],
+            "lastVersion": "0.5",
+            "lastRelease": 1304258304000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": -1.0,
+            "numberOfFiles": 2.0,
+            "cwes": []
+        },
+        {
+            "id": 26244,
+            "componentId": "org.apache.commons:commons-lang3",
+            "name": "org.apache.commons:commons-lang3",
+            "version": "3.3.2",
+            "release": 1396786889000,
+            "languages": "java",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "3.20.0",
+            "lastRelease": 1762978080000,
+            "nbVersionPreviousYear": 3,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "org.apache.commons",
+                "product": "commons-lang3",
+                "version": "3.3.2",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2025-48924",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-48924",
+                        "description": "Uncontrolled Recursion vulnerability in Apache Commons Lang.\n\nThis issue affects Apache Commons Lang: Starting with\u00a0commons-lang:commons-lang\u00a02.0 to 2.6, and, from org.apache.commons:commons-lang3 3.0 before\u00a03.18.0.\n\nThe methods ClassUtils.getClass(...) can throw\u00a0StackOverflowError on very long inputs. Because an Error is usually not handled by applications and libraries, a \nStackOverflowError could\u00a0cause an application to stop.\n\nUsers are recommended to upgrade to version 3.18.0, which fixes the issue.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.3,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:apache:commons_lang",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "3.18.0",
+            "safestVersion": "3.18.0"
+        },
+        {
+            "id": 30102,
+            "componentId": "WebGoat/WebGoat",
+            "name": "WebGoat/WebGoat",
+            "version": "7.0.1",
+            "release": 1454368188000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "Scan",
+            "licenses": [],
+            "lastVersion": "v2025.3",
+            "lastRelease": 1741720570000,
+            "nbVersionPreviousYear": 4,
+            "numberOfCodeLines": 3046.0,
+            "numberOfFiles": 45.0,
+            "cwes": []
+        },
+        {
+            "id": 43867,
+            "componentId": "aopalliance:aopalliance",
+            "name": "aopalliance:aopalliance",
+            "version": "1.0",
+            "release": 1451280333000,
+            "languages": "java",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 26139,
+                    "name": "Creative Commons Zero v1.0 Universal",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "1.0",
+            "lastRelease": 1451280333000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": -1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 43874,
+            "componentId": "log4j:log4j",
+            "name": "log4j:log4j",
+            "version": "1.2.17",
+            "release": 1338025419000,
+            "languages": "java",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "1.2.17",
+            "lastRelease": 1338025419000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "log4j",
+                "product": "log4j",
+                "version": "1.2.17",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2019-17571",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-17571",
+                        "description": "Included in Log4j 1.2 is a SocketServer class that is vulnerable to deserialization of untrusted data which can be exploited to remotely execute arbitrary code when combined with a deserialization gadget when listening to untrusted network traffic for log data. This affects Log4j versions up to 1.2 up to 1.2.17.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 9.8,
+                        "criticity": "CRITICAL",
+                        "cpe": "cpe:/a:apache:log4j",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2020-9488",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-9488",
+                        "description": "Improper validation of certificate with host mismatch in Apache Log4j SMTP appender. This could allow an SMTPS connection to be intercepted by a man-in-the-middle attack which could leak any log messages sent through that appender. Fixed in Apache Log4j 2.12.3 and 2.13.1",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 3.7,
+                        "criticity": "LOW",
+                        "cpe": "cpe:/a:apache:log4j",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2020-9493",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-9493",
+                        "description": "A deserialization flaw was found in Apache Chainsaw versions prior to 2.1.0 which could lead to malicious code execution.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 9.8,
+                        "criticity": "CRITICAL",
+                        "cpe": "cpe:/a:apache:log4j",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2021-4104",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-4104",
+                        "description": "JMSAppender in Log4j 1.2 is vulnerable to deserialization of untrusted data when the attacker has write access to the Log4j configuration. The attacker can provide TopicBindingName and TopicConnectionFactoryBindingName configurations causing JMSAppender to perform JNDI requests that result in remote code execution in a similar fashion to CVE-2021-44228. Note this issue only affects Log4j 1.2 when specifically configured to use JMSAppender, which is not the default. Apache Log4j 1.2 reached end of life in August 2015. Users should upgrade to Log4j 2 as it addresses numerous other issues from the previous versions.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:apache:log4j",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2022-23302",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-23302",
+                        "description": "JMSSink in all versions of Log4j 1.x is vulnerable to deserialization of untrusted data when the attacker has write access to the Log4j configuration or if the configuration references an LDAP service the attacker has access to. The attacker can provide a TopicConnectionFactoryBindingName configuration causing JMSSink to perform JNDI requests that result in remote code execution in a similar fashion to CVE-2021-4104. Note this issue only affects Log4j 1.x when specifically configured to use JMSSink, which is not the default. Apache Log4j 1.2 reached end of life in August 2015. Users should upgrade to Log4j 2 as it addresses numerous other issues from the previous versions.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 8.8,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:qos:reload4j",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2022-23305",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-23305",
+                        "description": "By design, the JDBCAppender in Log4j 1.2.x accepts an SQL statement as a configuration parameter where the values to be inserted are converters from PatternLayout. The message converter, %m, is likely to always be included. This allows attackers to manipulate the SQL by entering crafted strings into input fields or headers of an application that are logged allowing unintended SQL queries to be executed. Note this issue only affects Log4j 1.x when specifically configured to use the JDBCAppender, which is not the default. Beginning in version 2.0-beta8, the JDBCAppender was re-introduced with proper support for parameterized SQL queries and further customization over the columns written to in logs. Apache Log4j 1.2 reached end of life in August 2015. Users should upgrade to Log4j 2 as it addresses numerous other issues from the previous versions.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 9.8,
+                        "criticity": "CRITICAL",
+                        "cpe": "cpe:/a:apache:log4j",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2022-23307",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-23307",
+                        "description": "CVE-2020-9493 identified a deserialization issue that was present in Apache Chainsaw. Prior to Chainsaw V2.0 Chainsaw was a component of Apache Log4j 1.2.x where the same issue exists.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 8.8,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:apache:log4j",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2023-26464",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-26464",
+                        "description": "** UNSUPPORTED WHEN ASSIGNED **\n\nWhen using the Chainsaw or SocketAppender components with Log4j 1.x on JRE less than 1.7, an attacker that manages to cause a logging entry involving a specially-crafted (ie, deeply nested) \nhashmap or hashtable (depending on which logging component is in use) to be processed could exhaust the available memory in the virtual machine and achieve Denial of Service when the object is deserialized.\n\nThis issue affects Apache Log4j before 2. Affected users are recommended to update to Log4j 2.x.\n\nNOTE: This vulnerability only affects products that are no longer supported by the maintainer.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:apache:log4j",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [
+                {
+                    "cwe": "CWE-390",
+                    "label": "Detection of Error Condition Without Action",
+                    "rules": [
+                        {
+                            "aipRuleId": 1060020,
+                            "label": "Avoid empty catch blocks for methods with high fan-in",
+                            "occurrences": 2
+                        }
+                    ],
+                    "id": 390,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-79",
+                    "label": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
+                    "rules": [
+                        {
+                            "aipRuleId": 8408,
+                            "label": "Avoid reflected cross-site scripting (non persistent)",
+                            "occurrences": 6
+                        }
+                    ],
+                    "id": 79,
+                    "isDangerousWeakness": true
+                },
+                {
+                    "cwe": "CWE-477",
+                    "label": "Use of Obsolete Function",
+                    "rules": [
+                        {
+                            "aipRuleId": 8220,
+                            "label": "Avoid using deprecated method, constructor, field, type or package",
+                            "occurrences": 11
+                        }
+                    ],
+                    "id": 477,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1073",
+                    "label": "Non-SQL Invokable Control Element with Excessive Number of Data Resource Accesses",
+                    "rules": [
+                        {
+                            "aipRuleId": 8110,
+                            "label": "Avoid not using dedicated stored procedures when processing multiple data accesses",
+                            "occurrences": 8
+                        }
+                    ],
+                    "id": 1073,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1091",
+                    "label": "Use of Object without Invoking Destructor Method",
+                    "rules": [
+                        {
+                            "aipRuleId": 7562,
+                            "label": "Avoid static Field of type collection",
+                            "occurrences": 9
+                        }
+                    ],
+                    "id": 1091,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-478",
+                    "label": "Missing Default Case in Switch Statement",
+                    "rules": [
+                        {
+                            "aipRuleId": 8028,
+                            "label": "Avoid missing default in switch statements",
+                            "occurrences": 5
+                        }
+                    ],
+                    "id": 478,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1043",
+                    "label": "Data Element Aggregating an Excessively Large Number of Non-Primitive Elements",
+                    "rules": [
+                        {
+                            "aipRuleId": 7424,
+                            "label": "Avoid using SQL queries inside a loop",
+                            "occurrences": 4
+                        }
+                    ],
+                    "id": 1043,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1080",
+                    "label": "Source Code File with Excessive Number of Lines of Code",
+                    "rules": [
+                        {
+                            "aipRuleId": 7842,
+                            "label": "Avoid large Artifacts - too many Lines of Code",
+                            "occurrences": 4
+                        }
+                    ],
+                    "id": 1080,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1061",
+                    "label": "Insufficient Encapsulation",
+                    "rules": [
+                        {
+                            "aipRuleId": 7830,
+                            "label": "Avoid unreferenced Interfaces",
+                            "occurrences": 1
+                        },
+                        {
+                            "aipRuleId": 7908,
+                            "label": "Avoid unreferenced Methods",
+                            "occurrences": 1061
+                        },
+                        {
+                            "aipRuleId": 7832,
+                            "label": "Avoid unreferenced Classes",
+                            "occurrences": 54
+                        },
+                        {
+                            "aipRuleId": 7912,
+                            "label": "Avoid unreferenced Data Members",
+                            "occurrences": 60
+                        }
+                    ],
+                    "id": 1061,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1048",
+                    "label": "Invokable Control Element with Large Number of Outward Calls",
+                    "rules": [
+                        {
+                            "aipRuleId": 7778,
+                            "label": "Avoid Artifacts with High Fan-Out",
+                            "occurrences": 1714
+                        }
+                    ],
+                    "id": 1048,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-23",
+                    "label": "Relative Path Traversal",
+                    "rules": [
+                        {
+                            "aipRuleId": 7752,
+                            "label": "Avoid file path manipulation vulnerabilities",
+                            "occurrences": 2
+                        }
+                    ],
+                    "id": 23,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1084",
+                    "label": "Invokable Control Element with Excessive File or Data Access Operations",
+                    "rules": [
+                        {
+                            "aipRuleId": 7424,
+                            "label": "Avoid using SQL queries inside a loop",
+                            "occurrences": 4
+                        }
+                    ],
+                    "id": 1084,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-22",
+                    "label": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')",
+                    "rules": [
+                        {
+                            "aipRuleId": 7752,
+                            "label": "Avoid file path manipulation vulnerabilities",
+                            "occurrences": 2
+                        }
+                    ],
+                    "id": 22,
+                    "isDangerousWeakness": true
+                },
+                {
+                    "cwe": "CWE-1075",
+                    "label": "Unconditional Control Flow Transfer outside of Switch Block",
+                    "rules": [
+                        {
+                            "aipRuleId": 8028,
+                            "label": "Avoid missing default in switch statements",
+                            "occurrences": 5
+                        }
+                    ],
+                    "id": 1075,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-111",
+                    "label": "Direct Use of Unsafe JNI",
+                    "rules": [
+                        {
+                            "aipRuleId": 4612,
+                            "label": "Avoid using native Methods (JNI)",
+                            "occurrences": 4
+                        }
+                    ],
+                    "id": 111,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-391",
+                    "label": "Unchecked Error Condition",
+                    "rules": [
+                        {
+                            "aipRuleId": 1060020,
+                            "label": "Avoid empty catch blocks for methods with high fan-in",
+                            "occurrences": 2
+                        },
+                        {
+                            "aipRuleId": 7788,
+                            "label": "Avoid empty catch blocks",
+                            "occurrences": 56
+                        }
+                    ],
+                    "id": 391,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1121",
+                    "label": "Excessive McCabe Cyclomatic Complexity",
+                    "rules": [
+                        {
+                            "aipRuleId": 7776,
+                            "label": "Avoid Artifacts with High Fan-In",
+                            "occurrences": 303
+                        },
+                        {
+                            "aipRuleId": 7766,
+                            "label": "Avoid Artifacts with High Cyclomatic Complexity",
+                            "occurrences": 13
+                        }
+                    ],
+                    "id": 1121,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-681",
+                    "label": "Incorrect Conversion between Numeric Types",
+                    "rules": [
+                        {
+                            "aipRuleId": 8216,
+                            "label": "Avoid using incompatible mutation",
+                            "occurrences": 19
+                        }
+                    ],
+                    "id": 681,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-674",
+                    "label": "Uncontrolled Recursion",
+                    "rules": [
+                        {
+                            "aipRuleId": 7388,
+                            "label": "Avoid artifacts having recursive calls",
+                            "occurrences": 12
+                        }
+                    ],
+                    "id": 674,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-73",
+                    "label": "External Control of File Name or Path",
+                    "rules": [
+                        {
+                            "aipRuleId": 4594,
+                            "label": "Avoid using 'java.io.File'",
+                            "occurrences": 138
+                        },
+                        {
+                            "aipRuleId": 7752,
+                            "label": "Avoid file path manipulation vulnerabilities",
+                            "occurrences": 2
+                        }
+                    ],
+                    "id": 73,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-36",
+                    "label": "Absolute Path Traversal",
+                    "rules": [
+                        {
+                            "aipRuleId": 7752,
+                            "label": "Avoid file path manipulation vulnerabilities",
+                            "occurrences": 2
+                        }
+                    ],
+                    "id": 36,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1050",
+                    "label": "Excessive Platform Resource Consumption within a Loop",
+                    "rules": [
+                        {
+                            "aipRuleId": 1060018,
+                            "label": "Avoid String concatenation in loops for artifacts with high fan in",
+                            "occurrences": 11
+                        },
+                        {
+                            "aipRuleId": 7424,
+                            "label": "Avoid using SQL queries inside a loop",
+                            "occurrences": 4
+                        },
+                        {
+                            "aipRuleId": 7204,
+                            "label": "Avoid method invocation in a loop termination expression",
+                            "occurrences": 45
+                        },
+                        {
+                            "aipRuleId": 7210,
+                            "label": "Avoid instantiations inside loops",
+                            "occurrences": 80
+                        }
+                    ],
+                    "id": 1050,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1064",
+                    "label": "Invokable Control Element with Signature Containing an Excessive Number of Parameters",
+                    "rules": [
+                        {
+                            "aipRuleId": 7770,
+                            "label": "Avoid Artifacts with too many parameters",
+                            "occurrences": 3
+                        }
+                    ],
+                    "id": 1064,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1124",
+                    "label": "Excessively Deep Nesting",
+                    "rules": [
+                        {
+                            "aipRuleId": 7768,
+                            "label": "Avoid Artifacts with High Depth of Code",
+                            "occurrences": 22
+                        }
+                    ],
+                    "id": 1124,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-778",
+                    "label": "Insufficient Logging",
+                    "rules": [
+                        {
+                            "aipRuleId": 7652,
+                            "label": "Avoid throwing an exception in a catch block without chaining it",
+                            "occurrences": 10
+                        }
+                    ],
+                    "id": 778,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-134",
+                    "label": "Use of Externally-Controlled Format String",
+                    "rules": [
+                        {
+                            "aipRuleId": 8098,
+                            "label": "Avoid uncontrolled format string",
+                            "occurrences": 2
+                        }
+                    ],
+                    "id": 134,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-576",
+                    "label": "EJB Bad Practices: Use of Java I/O",
+                    "rules": [
+                        {
+                            "aipRuleId": 4594,
+                            "label": "Avoid using 'java.io.File'",
+                            "occurrences": 138
+                        }
+                    ],
+                    "id": 576,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1053",
+                    "label": "Missing Documentation for Design",
+                    "rules": [
+                        {
+                            "aipRuleId": 7838,
+                            "label": "Avoid undocumented Methods",
+                            "occurrences": 991
+                        }
+                    ],
+                    "id": 1053,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-489",
+                    "label": "Leftover Debug Code",
+                    "rules": [
+                        {
+                            "aipRuleId": 4702,
+                            "label": "Avoid using 'Throwable.printStackTrace()' with no argument",
+                            "occurrences": 38
+                        }
+                    ],
+                    "id": 489,
+                    "isDangerousWeakness": false
+                }
+            ]
+        },
+        {
+            "id": 44007,
+            "componentId": "taglibs:standard",
+            "name": "taglibs:standard",
+            "version": "1.1.2",
+            "release": 1131487032000,
+            "languages": "java",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [],
+            "lastVersion": "1.1.1",
+            "lastRelease": 1131487034000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "taglibs",
+                "product": "standard",
+                "version": "1.1.2",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2015-0254",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2015-0254",
+                        "description": "Apache Standard Taglibs before 1.2.3 allows remote attackers to execute arbitrary code or conduct external XML entity (XXE) attacks via a crafted XSLT extension in a (1) <x:parse> or (2) <x:transform> JSTL XML tag.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:apache:standard_taglibs",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": []
+        },
+        {
+            "id": 44020,
+            "componentId": "java2html:j2h",
+            "name": "java2html:j2h",
+            "version": "1.3.1",
+            "release": 1138671347000,
+            "languages": "java",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [],
+            "lastVersion": "1.3.1",
+            "lastRelease": 1138671347000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 44105,
+            "componentId": "javax.servlet:jstl",
+            "name": "javax.servlet:jstl",
+            "version": "1.2",
+            "release": 1308849602000,
+            "languages": "java",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [],
+            "lastVersion": "1.2",
+            "lastRelease": 1308849602000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 44341,
+            "componentId": "axis:axis-jaxrpc",
+            "name": "axis:axis-jaxrpc",
+            "version": "1.2",
+            "release": 1131487406000,
+            "languages": "java",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Scan",
+            "licenses": [],
+            "lastVersion": "1.4",
+            "lastRelease": 1224013475000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": -1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 44342,
+            "componentId": "axis:axis-saaj",
+            "name": "axis:axis-saaj",
+            "version": "1.2",
+            "release": 1131487399000,
+            "languages": "java",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Scan",
+            "licenses": [],
+            "lastVersion": "1.4",
+            "lastRelease": 1224012359000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": -1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 44343,
+            "componentId": "axis:axis-ant",
+            "name": "axis:axis-ant",
+            "version": "1.2",
+            "release": 1131505405000,
+            "languages": "java",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Scan",
+            "licenses": [],
+            "lastVersion": "1.4",
+            "lastRelease": 1224027898000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": -1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 45281,
+            "componentId": "junit:junit",
+            "name": "junit:junit",
+            "version": "4.8.1",
+            "release": 1267100518000,
+            "languages": "java",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 26159,
+                    "name": "Common Public License 1.0",
+                    "compliance": "partial"
+                }
+            ],
+            "lastVersion": "4.13.2",
+            "lastRelease": 1613233914000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "junit",
+                "product": "junit",
+                "version": "4.8.1",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2020-15250",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-15250",
+                        "description": "In JUnit4 from version 4.7 and before 4.13.1, the test rule TemporaryFolder contains a local information disclosure vulnerability. On Unix like systems, the system's temporary directory is shared between all users on that system. Because of this, when files and directories are written into this directory they are, by default, readable by other users on that same system. This vulnerability does not allow other users to overwrite the contents of these directories or files. This is purely an information disclosure vulnerability. This vulnerability impacts you if the JUnit tests write sensitive information, like API keys or passwords, into the temporary folder, and the JUnit tests execute in an environment where the OS has other untrusted users. Because certain JDK file system APIs were only added in JDK 1.7, this this fix is dependent upon the version of the JDK you are using. For Java 1.7 and higher users: this vulnerability is fixed in 4.13.1. For Java 1.6 and lower users: no patch is available, you must use the workaround below. If you are unable to patch, or are stuck running on Java 1.6, specifying the `java.io.tmpdir` system environment variable to a directory that is exclusively owned by the executing user will fix this vulnerability. For more information, including an example of vulnerable code, see the referenced GitHub Security Advisory.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 4.4,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:apache:pluto",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "4.13.1",
+            "safestVersion": "4.13.1"
+        },
+        {
+            "id": 47964,
+            "componentId": "axis:axis",
+            "name": "axis:axis",
+            "version": "1.2",
+            "release": 1131487403000,
+            "languages": "java",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [],
+            "lastVersion": "1.4",
+            "lastRelease": 1149105152000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "axis",
+                "product": "axis",
+                "version": "1.2",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2012-5784",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2012-5784",
+                        "description": "Apache Axis 1.4 and earlier, as used in PayPal Payments Pro, PayPal Mass Pay, PayPal Transactional Information SOAP, the Java Message Service implementation in Apache ActiveMQ, and other products, does not verify that the server hostname matches a domain name in the subject's Common Name (CN) or subjectAltName field of the X.509 certificate, which allows man-in-the-middle attackers to spoof SSL servers via an arbitrary valid certificate.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.8,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:apache:activemq",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2014-3596",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2014-3596",
+                        "description": "The getCN function in Apache Axis 1.4 and earlier does not properly verify that the server hostname matches a domain name in the subject's Common Name (CN) or subjectAltName field of the X.509 certificate, which allows man-in-the-middle attackers to spoof SSL servers via a certificate with a subject that specifies a common name in a field that is not the CN field. NOTE: this issue exists because of an incomplete fix for CVE-2012-5784.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.8,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:apache:axis",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2018-8032",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-8032",
+                        "description": "Apache Axis 1.x up to and including 1.4 is vulnerable to a cross-site scripting (XSS) attack in the default servlet/services.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.1,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:apache:axis",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2019-0227",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-0227",
+                        "description": "A Server Side Request Forgery (SSRF) vulnerability affected the Apache Axis 1.4 distribution that was last released in 2006. Security and bug commits commits continue in the projects Axis 1.x Subversion repository, legacy users are encouraged to build from source. The successor to Axis 1.x is Axis2, the latest version is 1.7.9 and is not vulnerable to this issue.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:apache:axis",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2023-40743",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-40743",
+                        "description": "** UNSUPPORTED WHEN ASSIGNED ** When integrating Apache Axis 1.x in an application, it may not have been obvious that looking up a service through \"ServiceFactory.getService\" allows potentially dangerous lookup mechanisms such as LDAP. When passing untrusted input to this API method, this could expose the application to DoS, SSRF and even attacks leading to RCE.\n\nAs Axis 1 has been EOL we recommend you migrate to a different SOAP engine, such as Apache Axis 2/Java. As a workaround, you may review your code to verify no untrusted or unsanitized input is passed to \"ServiceFactory.getService\", or by applying the patch from  https://github.com/apache/axis-axis1-java/commit/7e66753427466590d6def0125e448d2791723210 . The Apache Axis project does not expect to create an Axis 1.x release fixing this problem, though contributors that would like to work towards this are welcome.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 9.8,
+                        "criticity": "CRITICAL",
+                        "cpe": "cpe:/a:apache:axis",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2023-51441",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-51441",
+                        "description": "** UNSUPPORTED WHEN ASSIGNED ** Improper Input Validation vulnerability in Apache Axis allowed users with access to the admin service to perform possible SSRF\nThis issue affects Apache Axis: through 1.3.\n\nAs Axis 1 has been EOL we recommend you migrate to a different SOAP engine, such as Apache Axis 2/Java. Alternatively you could use a build of Axis with the patch from  https://github.com/apache/axis-axis1-java/commit/685c309febc64aa393b2d64a05f90e7eb9f73e06  applied. The Apache Axis project does not expect to create an Axis 1.x release \nfixing this problem, though contributors that would like to work towards\n this are welcome.\n\n",
+                        "cweId": "CWE-918",
+                        "cweLabel": null,
+                        "cvssScore": 7.2,
+                        "criticity": "HIGH",
+                        "cpe": null,
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": []
+        },
+        {
+            "id": 48948,
+            "componentId": "javax:javaee-api",
+            "name": "javax:javaee-api",
+            "version": "6.0",
+            "release": 1264687857000,
+            "languages": "java",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 26145,
+                    "name": "GNU General Public License v2.0 w/Classpath exception",
+                    "compliance": "partial"
+                },
+                {
+                    "id": 26144,
+                    "name": "Common Development and Distribution License 1.1",
+                    "compliance": "partial"
+                }
+            ],
+            "lastVersion": "8.0.1",
+            "lastRelease": 1554766687000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51598,
+            "componentId": "wsdl4j:wsdl4j",
+            "name": "wsdl4j:wsdl4j",
+            "version": "1.5.1",
+            "release": 1135095638000,
+            "languages": "java",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [],
+            "lastVersion": "1.6.3",
+            "lastRelease": 1361989457000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51599,
+            "componentId": "javax.mail:mail",
+            "name": "javax.mail:mail",
+            "version": "1.4.2",
+            "release": 1312299511000,
+            "languages": "java",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 26144,
+                    "name": "Common Development and Distribution License 1.1",
+                    "compliance": "partial"
+                },
+                {
+                    "id": 26145,
+                    "name": "GNU General Public License v2.0 w/Classpath exception",
+                    "compliance": "partial"
+                }
+            ],
+            "lastVersion": "1.4.7",
+            "lastRelease": 1362793098000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": [
+                {
+                    "cwe": "CWE-1088",
+                    "label": "Synchronous Access of Remote Resource without Timeout",
+                    "rules": [
+                        {
+                            "aipRuleId": 8100,
+                            "label": "Blocking synchronous calls should have associated timeouts",
+                            "occurrences": 1
+                        }
+                    ],
+                    "id": 1088,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1061",
+                    "label": "Insufficient Encapsulation",
+                    "rules": [
+                        {
+                            "aipRuleId": 7912,
+                            "label": "Avoid unreferenced Data Members",
+                            "occurrences": 15
+                        },
+                        {
+                            "aipRuleId": 7832,
+                            "label": "Avoid unreferenced Classes",
+                            "occurrences": 21
+                        },
+                        {
+                            "aipRuleId": 7908,
+                            "label": "Avoid unreferenced Methods",
+                            "occurrences": 176
+                        }
+                    ],
+                    "id": 1061,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-73",
+                    "label": "External Control of File Name or Path",
+                    "rules": [
+                        {
+                            "aipRuleId": 4594,
+                            "label": "Avoid using 'java.io.File'",
+                            "occurrences": 11
+                        }
+                    ],
+                    "id": 73,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1091",
+                    "label": "Use of Object without Invoking Destructor Method",
+                    "rules": [
+                        {
+                            "aipRuleId": 7562,
+                            "label": "Avoid static Field of type collection",
+                            "occurrences": 2
+                        }
+                    ],
+                    "id": 1091,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-681",
+                    "label": "Incorrect Conversion between Numeric Types",
+                    "rules": [
+                        {
+                            "aipRuleId": 8216,
+                            "label": "Avoid using incompatible mutation",
+                            "occurrences": 106
+                        }
+                    ],
+                    "id": 681,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-336",
+                    "label": "Same Seed in Pseudo-Random Number Generator (PRNG)",
+                    "rules": [
+                        {
+                            "aipRuleId": 1039006,
+                            "label": "Avoid using predictable SecureRandom Seeds",
+                            "occurrences": 1
+                        }
+                    ],
+                    "id": 336,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-337",
+                    "label": "Predictable Seed in Pseudo-Random Number Generator (PRNG)",
+                    "rules": [
+                        {
+                            "aipRuleId": 1039006,
+                            "label": "Avoid using predictable SecureRandom Seeds",
+                            "occurrences": 1
+                        }
+                    ],
+                    "id": 337,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-477",
+                    "label": "Use of Obsolete Function",
+                    "rules": [
+                        {
+                            "aipRuleId": 8220,
+                            "label": "Avoid using deprecated method, constructor, field, type or package",
+                            "occurrences": 2
+                        }
+                    ],
+                    "id": 477,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-327",
+                    "label": "Use of a Broken or Risky Cryptographic Algorithm",
+                    "rules": [
+                        {
+                            "aipRuleId": 1039010,
+                            "label": "Avoid using risky cryptographic hash (JEE)",
+                            "occurrences": 2
+                        }
+                    ],
+                    "id": 327,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-391",
+                    "label": "Unchecked Error Condition",
+                    "rules": [
+                        {
+                            "aipRuleId": 7788,
+                            "label": "Avoid empty catch blocks",
+                            "occurrences": 134
+                        },
+                        {
+                            "aipRuleId": 1060020,
+                            "label": "Avoid empty catch blocks for methods with high fan-in",
+                            "occurrences": 17
+                        }
+                    ],
+                    "id": 391,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1124",
+                    "label": "Excessively Deep Nesting",
+                    "rules": [
+                        {
+                            "aipRuleId": 7768,
+                            "label": "Avoid Artifacts with High Depth of Code",
+                            "occurrences": 36
+                        }
+                    ],
+                    "id": 1124,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1121",
+                    "label": "Excessive McCabe Cyclomatic Complexity",
+                    "rules": [
+                        {
+                            "aipRuleId": 7776,
+                            "label": "Avoid Artifacts with High Fan-In",
+                            "occurrences": 313
+                        },
+                        {
+                            "aipRuleId": 7766,
+                            "label": "Avoid Artifacts with High Cyclomatic Complexity",
+                            "occurrences": 43
+                        }
+                    ],
+                    "id": 1121,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-674",
+                    "label": "Uncontrolled Recursion",
+                    "rules": [
+                        {
+                            "aipRuleId": 7388,
+                            "label": "Avoid artifacts having recursive calls",
+                            "occurrences": 16
+                        }
+                    ],
+                    "id": 674,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1053",
+                    "label": "Missing Documentation for Design",
+                    "rules": [
+                        {
+                            "aipRuleId": 7838,
+                            "label": "Avoid undocumented Methods",
+                            "occurrences": 298
+                        }
+                    ],
+                    "id": 1053,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-328",
+                    "label": "Reversible One-Way Hash",
+                    "rules": [
+                        {
+                            "aipRuleId": 1039010,
+                            "label": "Avoid using risky cryptographic hash (JEE)",
+                            "occurrences": 2
+                        }
+                    ],
+                    "id": 328,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1050",
+                    "label": "Excessive Platform Resource Consumption within a Loop",
+                    "rules": [
+                        {
+                            "aipRuleId": 7210,
+                            "label": "Avoid instantiations inside loops",
+                            "occurrences": 88
+                        },
+                        {
+                            "aipRuleId": 7204,
+                            "label": "Avoid method invocation in a loop termination expression",
+                            "occurrences": 78
+                        }
+                    ],
+                    "id": 1050,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1048",
+                    "label": "Invokable Control Element with Large Number of Outward Calls",
+                    "rules": [
+                        {
+                            "aipRuleId": 7778,
+                            "label": "Avoid Artifacts with High Fan-Out",
+                            "occurrences": 827
+                        }
+                    ],
+                    "id": 1048,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-478",
+                    "label": "Missing Default Case in Switch Statement",
+                    "rules": [
+                        {
+                            "aipRuleId": 8028,
+                            "label": "Avoid missing default in switch statements",
+                            "occurrences": 3
+                        }
+                    ],
+                    "id": 478,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-489",
+                    "label": "Leftover Debug Code",
+                    "rules": [
+                        {
+                            "aipRuleId": 4702,
+                            "label": "Avoid using 'Throwable.printStackTrace()' with no argument",
+                            "occurrences": 5
+                        }
+                    ],
+                    "id": 489,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-778",
+                    "label": "Insufficient Logging",
+                    "rules": [
+                        {
+                            "aipRuleId": 7652,
+                            "label": "Avoid throwing an exception in a catch block without chaining it",
+                            "occurrences": 77
+                        }
+                    ],
+                    "id": 778,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-821",
+                    "label": "Incorrect Synchronization",
+                    "rules": [
+                        {
+                            "aipRuleId": 8100,
+                            "label": "Blocking synchronous calls should have associated timeouts",
+                            "occurrences": 1
+                        }
+                    ],
+                    "id": 821,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-390",
+                    "label": "Detection of Error Condition Without Action",
+                    "rules": [
+                        {
+                            "aipRuleId": 1060020,
+                            "label": "Avoid empty catch blocks for methods with high fan-in",
+                            "occurrences": 17
+                        }
+                    ],
+                    "id": 390,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1075",
+                    "label": "Unconditional Control Flow Transfer outside of Switch Block",
+                    "rules": [
+                        {
+                            "aipRuleId": 8028,
+                            "label": "Avoid missing default in switch statements",
+                            "occurrences": 3
+                        }
+                    ],
+                    "id": 1075,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-1080",
+                    "label": "Source Code File with Excessive Number of Lines of Code",
+                    "rules": [
+                        {
+                            "aipRuleId": 7842,
+                            "label": "Avoid large Artifacts - too many Lines of Code",
+                            "occurrences": 18
+                        }
+                    ],
+                    "id": 1080,
+                    "isDangerousWeakness": false
+                },
+                {
+                    "cwe": "CWE-576",
+                    "label": "EJB Bad Practices: Use of Java I/O",
+                    "rules": [
+                        {
+                            "aipRuleId": 4594,
+                            "label": "Avoid using 'java.io.File'",
+                            "occurrences": 11
+                        }
+                    ],
+                    "id": 576,
+                    "isDangerousWeakness": false
+                }
+            ]
+        },
+        {
+            "id": 51600,
+            "componentId": "javax.transaction:jta",
+            "name": "javax.transaction:jta",
+            "version": "1.0.1B",
+            "release": 1131487126000,
+            "languages": "java",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [],
+            "lastVersion": "1.1",
+            "lastRelease": 1225157241000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51601,
+            "componentId": "net.sourceforge.jtds:jtds",
+            "name": "net.sourceforge.jtds:jtds",
+            "version": "1.2.2",
+            "release": 1192459135000,
+            "languages": "java",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 26146,
+                    "name": "GNU Lesser General Public Licenses Family",
+                    "compliance": "partial"
+                }
+            ],
+            "lastVersion": "1.3.1",
+            "lastRelease": 1370708596000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51602,
+            "componentId": "com.fasterxml.jackson.core:jackson-core",
+            "name": "com.fasterxml.jackson.core:jackson-core",
+            "version": "2.0.4",
+            "release": 1340773320000,
+            "languages": "java",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "2.20.2",
+            "lastRelease": 1768855380000,
+            "nbVersionPreviousYear": 16,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "com.fasterxml.jackson.core",
+                "product": "jackson-core",
+                "version": "2.0.4",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2025-49128",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-49128",
+                        "description": "Jackson-core contains core low-level incremental (\"streaming\") parser and generator abstractions used by Jackson Data Processor. Starting in version 2.0.0 and prior to version 2.13.0, a flaw in jackson-core's `JsonLocation._appendSourceDesc` method allows up to 500 bytes of unintended memory content to be included in exception messages. When parsing JSON from a byte array with an offset and length, the exception message incorrectly reads from the beginning of the array instead of the logical payload start. This results in possible information disclosure in systems using pooled or reused buffers, like Netty or Vert.x. This issue was silently fixed in jackson-core version 2.13.0, released on September 30, 2021, via PR #652. All users should upgrade to version 2.13.0 or later. If upgrading is not immediately possible, applications can mitigate the issue by disabling exception message exposure to clients to avoid returning parsing exception messages in HTTP responses and/or disabling source inclusion in exceptions to prevent Jackson from embedding any source content in exception messages, avoiding leakage.",
+                        "cweId": "CWE-209",
+                        "cweLabel": "Generation of Error Message Containing Sensitive Information",
+                        "cvssScore": 4.0,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2025-52999",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-52999",
+                        "description": "jackson-core contains core low-level incremental (\"streaming\") parser and generator abstractions used by Jackson Data Processor. In versions prior to 2.15.0, if a user parses an input file and it has deeply nested data, Jackson could end up throwing a StackoverflowError if the depth is particularly large. jackson-core 2.15.0 contains a configurable limit for how deep Jackson will traverse in an input document, defaulting to an allowable depth of 1000. jackson-core will throw a StreamConstraintsException if the limit is reached. jackson-databind also benefits from this change because it uses jackson-core to parse JSON inputs. As a workaround, users should avoid parsing input files from untrusted sources.",
+                        "cweId": "CWE-121",
+                        "cweLabel": null,
+                        "cvssScore": 0.0,
+                        "criticity": "UNKNOWN",
+                        "cpe": null,
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "2.9.0.pr1",
+            "safestVersion": "2.9.0.pr1"
+        },
+        {
+            "id": 51603,
+            "componentId": "commons-digester:commons-digester",
+            "name": "commons-digester:commons-digester",
+            "version": "1.4.1",
+            "release": 1132809458000,
+            "languages": "java",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [],
+            "lastVersion": "2.1",
+            "lastRelease": 1285326138000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51604,
+            "componentId": "ecs:ecs",
+            "name": "ecs:ecs",
+            "version": "1.4.2",
+            "release": 1131488450000,
+            "languages": "java",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [],
+            "lastVersion": "1.4.2",
+            "lastRelease": 1131488450000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51605,
+            "componentId": "org.apache.tomcat:tomcat-catalina",
+            "name": "org.apache.tomcat:tomcat-catalina",
+            "version": "7.0.27",
+            "release": 1333213107000,
+            "languages": "java",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [],
+            "lastVersion": "10.1.52",
+            "lastRelease": 1769196900000,
+            "nbVersionPreviousYear": 40,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "org.apache.tomcat",
+                "product": "tomcat-catalina",
+                "version": "7.0.27",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2012-5568",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2012-5568",
+                        "description": "Apache Tomcat through 7.0.x allows remote attackers to cause a denial of service (daemon outage) via partial HTTP requests, as demonstrated by Slowloris.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.0,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2012-5886",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2012-5886",
+                        "description": "The HTTP Digest Access Authentication implementation in Apache Tomcat 5.5.x before 5.5.36, 6.x before 6.0.36, and 7.x before 7.0.30 caches information about the authenticated user within the session state, which makes it easier for remote attackers to bypass authentication via vectors related to the session ID.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.0,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2012-5887",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2012-5887",
+                        "description": "The HTTP Digest Access Authentication implementation in Apache Tomcat 5.5.x before 5.5.36, 6.x before 6.0.36, and 7.x before 7.0.30 does not properly check for stale nonce values in conjunction with enforcement of proper credentials, which makes it easier for remote attackers to bypass intended access restrictions by sniffing the network for valid requests.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.0,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2013-0346",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2013-0346",
+                        "description": "Apache Tomcat 7.x uses world-readable permissions for the log directory and its files, which might allow local users to obtain sensitive information by reading a file. NOTE: One Tomcat distributor has stated \"The tomcat log directory does not contain any sensitive information.\"",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 2.1,
+                        "criticity": "LOW",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2013-2185",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2013-2185",
+                        "description": "The readObject method in the DiskFileItem class in Apache Tomcat and JBoss Web, as used in Red Hat JBoss Enterprise Application Platform 6.1.0 and Red Hat JBoss Portal 6.0.0, allows remote attackers to write to arbitrary files via a NULL byte in a file name in a serialized instance, a similar issue to CVE-2013-2186.  NOTE: this issue is reportedly disputed by the Apache Tomcat team, although Red Hat considers it a vulnerability. The dispute appears to regard whether it is the responsibility of applications to avoid providing untrusted data to be deserialized, or whether this class should inherently protect against this issue",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2013-4286",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2013-4286",
+                        "description": "Apache Tomcat before 6.0.39, 7.x before 7.0.47, and 8.x before 8.0.0-RC3, when an HTTP connector or AJP connector is used, does not properly handle certain inconsistent HTTP request headers, which allows remote attackers to trigger incorrect identification of a request's length and conduct request-smuggling attacks via (1) multiple Content-Length headers or (2) a Content-Length header and a \"Transfer-Encoding: chunked\" header.  NOTE: this vulnerability exists because of an incomplete fix for CVE-2005-2090.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.8,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2013-4322",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2013-4322",
+                        "description": "Apache Tomcat before 6.0.39, 7.x before 7.0.50, and 8.x before 8.0.0-RC10 processes chunked transfer coding without properly handling (1) a large total amount of chunked data or (2) whitespace characters in an HTTP header value within a trailer field, which allows remote attackers to cause a denial of service by streaming data.  NOTE: this vulnerability exists because of an incomplete fix for CVE-2012-3544.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 4.3,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2013-4444",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2013-4444",
+                        "description": "Unrestricted file upload vulnerability in Apache Tomcat 7.x before 7.0.40, in certain situations involving outdated java.io.File code and a custom JMX configuration, allows remote attackers to execute arbitrary code by uploading and accessing a JSP file.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.8,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2013-4590",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2013-4590",
+                        "description": "Apache Tomcat before 6.0.39, 7.x before 7.0.50, and 8.x before 8.0.0-RC10 allows attackers to obtain \"Tomcat internals\" information by leveraging the presence of an untrusted web application with a context.xml, web.xml, *.jspx, *.tagx, or *.tld XML document containing an external entity declaration in conjunction with an entity reference, related to an XML External Entity (XXE) issue.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 4.3,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2014-0050",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2014-0050",
+                        "description": "MultipartStream.java in Apache Commons FileUpload before 1.3.1, as used in Apache Tomcat, JBoss Web, and other products, allows remote attackers to cause a denial of service (infinite loop and CPU consumption) via a crafted Content-Type header that bypasses a loop's intended exit conditions.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2014-0075",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2014-0075",
+                        "description": "Integer overflow in the parseChunkHeader function in java/org/apache/coyote/http11/filters/ChunkedInputFilter.java in Apache Tomcat before 6.0.40, 7.x before 7.0.53, and 8.x before 8.0.4 allows remote attackers to cause a denial of service (resource consumption) via a malformed chunk size in chunked transfer coding of a request during the streaming of data.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.0,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2014-0096",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2014-0096",
+                        "description": "java/org/apache/catalina/servlets/DefaultServlet.java in the default servlet in Apache Tomcat before 6.0.40, 7.x before 7.0.53, and 8.x before 8.0.4 does not properly restrict XSLT stylesheets, which allows remote attackers to bypass security-manager restrictions and read arbitrary files via a crafted web application that provides an XML external entity declaration in conjunction with an entity reference, related to an XML External Entity (XXE) issue.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 4.3,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2014-0099",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2014-0099",
+                        "description": "Integer overflow in java/org/apache/tomcat/util/buf/Ascii.java in Apache Tomcat before 6.0.40, 7.x before 7.0.53, and 8.x before 8.0.4, when operated behind a reverse proxy, allows remote attackers to conduct HTTP request smuggling attacks via a crafted Content-Length HTTP header.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 4.3,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2014-0119",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2014-0119",
+                        "description": "Apache Tomcat before 6.0.40, 7.x before 7.0.54, and 8.x before 8.0.6 does not properly constrain the class loader that accesses the XML parser used with an XSLT stylesheet, which allows remote attackers to (1) read arbitrary files via a crafted web application that provides an XML external entity declaration in conjunction with an entity reference, related to an XML External Entity (XXE) issue, or (2) read files associated with different web applications on a single Tomcat instance via a crafted web application.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 4.3,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2014-0227",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2014-0227",
+                        "description": "java/org/apache/coyote/http11/filters/ChunkedInputFilter.java in Apache Tomcat 6.x before 6.0.42, 7.x before 7.0.55, and 8.x before 8.0.9 does not properly handle attempts to continue reading data after an error has occurred, which allows remote attackers to conduct HTTP request smuggling attacks or cause a denial of service (resource consumption) by streaming data with malformed chunked transfer coding.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.4,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2014-0230",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2014-0230",
+                        "description": "Apache Tomcat 6.x before 6.0.44, 7.x before 7.0.55, and 8.x before 8.0.9 does not properly handle cases where an HTTP response occurs before finishing the reading of an entire request body, which allows remote attackers to cause a denial of service (thread consumption) via a series of aborted upload attempts.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.8,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2014-7810",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2014-7810",
+                        "description": "The Expression Language (EL) implementation in Apache Tomcat 6.x before 6.0.44, 7.x before 7.0.58, and 8.x before 8.0.16 does not properly consider the possibility of an accessible interface implemented by an inaccessible class, which allows attackers to bypass a SecurityManager protection mechanism via a web application that leverages use of incorrect privileges during EL evaluation.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.0,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2015-5174",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2015-5174",
+                        "description": "Directory traversal vulnerability in RequestUtil.java in Apache Tomcat 6.x before 6.0.45, 7.x before 7.0.65, and 8.x before 8.0.27 allows remote authenticated users to bypass intended SecurityManager restrictions and list a parent directory via a /.. (slash dot dot) in a pathname used by a web application in a getResource, getResourceAsStream, or getResourcePaths call, as demonstrated by the $CATALINA_BASE/webapps directory.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 4.3,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2015-5345",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2015-5345",
+                        "description": "The Mapper component in Apache Tomcat 6.x before 6.0.45, 7.x before 7.0.68, 8.x before 8.0.30, and 9.x before 9.0.0.M2 processes redirects before considering security constraints and Filters, which allows remote attackers to determine the existence of a directory via a URL that lacks a trailing / (slash) character.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.3,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2015-5346",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2015-5346",
+                        "description": "Session fixation vulnerability in Apache Tomcat 7.x before 7.0.66, 8.x before 8.0.30, and 9.x before 9.0.0.M2, when different session settings are used for deployments of multiple versions of the same web application, might allow remote attackers to hijack web sessions by leveraging use of a requestedSessionSSL field for an unintended request, related to CoyoteAdapter.java and Request.java.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 8.1,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2015-5351",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2015-5351",
+                        "description": "The (1) Manager and (2) Host Manager applications in Apache Tomcat 7.x before 7.0.68, 8.x before 8.0.31, and 9.x before 9.0.0.M2 establish sessions and send CSRF tokens for arbitrary new requests, which allows remote attackers to bypass a CSRF protection mechanism by using a token.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 8.8,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2016-0706",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2016-0706",
+                        "description": "Apache Tomcat 6.x before 6.0.45, 7.x before 7.0.68, 8.x before 8.0.31, and 9.x before 9.0.0.M2 does not place org.apache.catalina.manager.StatusManagerServlet on the org/apache/catalina/core/RestrictedServlets.properties list, which allows remote authenticated users to bypass intended SecurityManager restrictions and read arbitrary HTTP requests, and consequently discover session ID values, via a crafted web application.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 4.3,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2016-0714",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2016-0714",
+                        "description": "The session-persistence implementation in Apache Tomcat 6.x before 6.0.45, 7.x before 7.0.68, 8.x before 8.0.31, and 9.x before 9.0.0.M2 mishandles session attributes, which allows remote authenticated users to bypass intended SecurityManager restrictions and execute arbitrary code in a privileged context via a web application that places a crafted object in a session.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 8.8,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2016-0762",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2016-0762",
+                        "description": "The Realm implementations in Apache Tomcat versions 9.0.0.M1 to 9.0.0.M9, 8.5.0 to 8.5.4, 8.0.0.RC1 to 8.0.36, 7.0.0 to 7.0.70 and 6.0.0 to 6.0.45 did not process the supplied password if the supplied user name did not exist. This made a timing attack possible to determine valid user names. Note that the default configuration includes the LockOutRealm which makes exploitation of this vulnerability harder.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.9,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2016-0763",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2016-0763",
+                        "description": "The setGlobalContext method in org/apache/naming/factory/ResourceLinkFactory.java in Apache Tomcat 7.x before 7.0.68, 8.x before 8.0.31, and 9.x before 9.0.0.M3 does not consider whether ResourceLinkFactory.setGlobalContext callers are authorized, which allows remote authenticated users to bypass intended SecurityManager restrictions and read or write to arbitrary application data, or cause a denial of service (application disruption), via a web application that sets a crafted global context.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.3,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2016-3092",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2016-3092",
+                        "description": "The MultipartStream class in Apache Commons Fileupload before 1.3.2, as used in Apache Tomcat 7.x before 7.0.70, 8.x before 8.0.36, 8.5.x before 8.5.3, and 9.x before 9.0.0.M7 and other products, allows remote attackers to cause a denial of service (CPU consumption) via a long boundary string.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2016-5018",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2016-5018",
+                        "description": "In Apache Tomcat 9.0.0.M1 to 9.0.0.M9, 8.5.0 to 8.5.4, 8.0.0.RC1 to 8.0.36, 7.0.0 to 7.0.70 and 6.0.0 to 6.0.45 a malicious web application was able to bypass a configured SecurityManager via a Tomcat utility method that was accessible to web applications.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 9.1,
+                        "criticity": "CRITICAL",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2016-5388",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2016-5388",
+                        "description": "Apache Tomcat 7.x through 7.0.70 and 8.x through 8.5.4, when the CGI Servlet is enabled, follows RFC 3875 section 4.1.18 and therefore does not protect applications from the presence of untrusted client data in the HTTP_PROXY environment variable, which might allow remote attackers to redirect an application's outbound HTTP traffic to an arbitrary proxy server via a crafted Proxy header in an HTTP request, aka an \"httpoxy\" issue. NOTE: the vendor states \"A mitigation is planned for future releases of Tomcat, tracked as CVE-2016-5388\"; in other words, this is not a CVE ID for a vulnerability.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 8.1,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2016-5425",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2016-5425",
+                        "description": "The Tomcat package on Red Hat Enterprise Linux (RHEL) 7, Fedora, CentOS, Oracle Linux, and possibly other Linux distributions uses weak permissions for /usr/lib/tmpfiles.d/tomcat.conf, which allows local users to gain root privileges by leveraging membership in the tomcat group.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.8,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2016-6325",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2016-6325",
+                        "description": "The Tomcat package on Red Hat Enterprise Linux (RHEL) 5 through 7, JBoss Web Server 3.0, and JBoss EWS 2 uses weak permissions for (1) /etc/sysconfig/tomcat and (2) /etc/tomcat/tomcat.conf, which allows local users to gain privileges by leveraging membership in the tomcat group.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.8,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2016-6794",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2016-6794",
+                        "description": "When a SecurityManager is configured, a web application's ability to read system properties should be controlled by the SecurityManager. In Apache Tomcat 9.0.0.M1 to 9.0.0.M9, 8.5.0 to 8.5.4, 8.0.0.RC1 to 8.0.36, 7.0.0 to 7.0.70, 6.0.0 to 6.0.45 the system property replacement feature for configuration files could be used by a malicious web application to bypass the SecurityManager and read system properties that should not be visible.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.3,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2016-6796",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2016-6796",
+                        "description": "A malicious web application running on Apache Tomcat 9.0.0.M1 to 9.0.0.M9, 8.5.0 to 8.5.4, 8.0.0.RC1 to 8.0.36, 7.0.0 to 7.0.70 and 6.0.0 to 6.0.45 was able to bypass a configured SecurityManager via manipulation of the configuration parameters for the JSP Servlet.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2016-6797",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2016-6797",
+                        "description": "The ResourceLinkFactory implementation in Apache Tomcat 9.0.0.M1 to 9.0.0.M9, 8.5.0 to 8.5.4, 8.0.0.RC1 to 8.0.36, 7.0.0 to 7.0.70 and 6.0.0 to 6.0.45 did not limit web application access to global JNDI resources to those resources explicitly linked to the web application. Therefore, it was possible for a web application to access any global JNDI resource whether an explicit ResourceLink had been configured or not.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2016-6816",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2016-6816",
+                        "description": "The code in Apache Tomcat 9.0.0.M1 to 9.0.0.M11, 8.5.0 to 8.5.6, 8.0.0.RC1 to 8.0.38, 7.0.0 to 7.0.72, and 6.0.0 to 6.0.47 that parsed the HTTP request line permitted invalid characters. This could be exploited, in conjunction with a proxy that also permitted the invalid characters but with a different interpretation, to inject data into the HTTP response. By manipulating the HTTP response the attacker could poison a web-cache, perform an XSS attack and/or obtain sensitive information from requests other then their own.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.1,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2016-8735",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2016-8735",
+                        "description": "Remote code execution is possible with Apache Tomcat before 6.0.48, 7.x before 7.0.73, 8.x before 8.0.39, 8.5.x before 8.5.7, and 9.x before 9.0.0.M12 if JmxRemoteLifecycleListener is used and an attacker can reach JMX ports. The issue exists because this listener wasn't updated for consistency with the CVE-2016-3427 Oracle patch that affected credential types.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 9.8,
+                        "criticity": "CRITICAL",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": true
+                    },
+                    {
+                        "name": "CVE-2016-8745",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2016-8745",
+                        "description": "A bug in the error handling of the send file code for the NIO HTTP connector in Apache Tomcat 9.0.0.M1 to 9.0.0.M13, 8.5.0 to 8.5.8, 8.0.0.RC1 to 8.0.39, 7.0.0 to 7.0.73 and 6.0.16 to 6.0.48 resulted in the current Processor object being added to the Processor cache multiple times. This in turn meant that the same Processor could be used for concurrent requests. Sharing a Processor can result in information leakage between requests including, not not limited to, session ID and the response body. The bug was first noticed in 8.5.x onwards where it appears the refactoring of the Connector code for 8.5.x onwards made it more likely that the bug was observed. Initially it was thought that the 8.5.x refactoring introduced the bug but further investigation has shown that the bug is present in all currently supported Tomcat versions.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2017-12615",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-12615",
+                        "description": "When running Apache Tomcat 7.0.0 to 7.0.79 on Windows with HTTP PUTs enabled (e.g. via setting the readonly initialisation parameter of the Default to false) it was possible to upload a JSP file to the server via a specially crafted request. This JSP could then be requested and any code it contained would be executed by the server.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 8.1,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": true
+                    },
+                    {
+                        "name": "CVE-2017-12616",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-12616",
+                        "description": "When using a VirtualDirContext with Apache Tomcat 7.0.0 to 7.0.80 it was possible to bypass security constraints and/or view the source code of JSPs for resources served by the VirtualDirContext using a specially crafted request.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2017-12617",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-12617",
+                        "description": "When running Apache Tomcat versions 9.0.0.M1 to 9.0.0, 8.5.0 to 8.5.22, 8.0.0.RC1 to 8.0.46 and 7.0.0 to 7.0.81 with HTTP PUTs enabled (e.g. via setting the readonly initialisation parameter of the Default servlet to false) it was possible to upload a JSP file to the server via a specially crafted request. This JSP could then be requested and any code it contained would be executed by the server.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 8.1,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": true
+                    },
+                    {
+                        "name": "CVE-2017-5647",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-5647",
+                        "description": "A bug in the handling of the pipelined requests in Apache Tomcat 9.0.0.M1 to 9.0.0.M18, 8.5.0 to 8.5.12, 8.0.0.RC1 to 8.0.42, 7.0.0 to 7.0.76, and 6.0.0 to 6.0.52, when send file was used, results in the pipelined request being lost when send file processing of the previous request completed. This could result in responses appearing to be sent for the wrong request. For example, a user agent that sent requests A, B and C could see the correct response for request A, the response for request C for request B and no response for request C.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2017-5648",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-5648",
+                        "description": "While investigating bug 60718, it was noticed that some calls to application listeners in Apache Tomcat 9.0.0.M1 to 9.0.0.M17, 8.5.0 to 8.5.11, 8.0.0.RC1 to 8.0.41, and 7.0.0 to 7.0.75 did not use the appropriate facade object. When running an untrusted application under a SecurityManager, it was therefore possible for that untrusted application to retain a reference to the request or response object and thereby access and/or modify information associated with another web application.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 9.1,
+                        "criticity": "CRITICAL",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2017-5664",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2017-5664",
+                        "description": "The error page mechanism of the Java Servlet Specification requires that, when an error occurs and an error page is configured for the error that occurred, the original request and response are forwarded to the error page. This means that the request is presented to the error page with the original HTTP method. If the error page is a static file, expected behaviour is to serve content of the file as if processing a GET request, regardless of the actual HTTP method. The Default Servlet in Apache Tomcat 9.0.0.M1 to 9.0.0.M20, 8.5.0 to 8.5.14, 8.0.0.RC1 to 8.0.43 and 7.0.0 to 7.0.77 did not do this. Depending on the original request this could lead to unexpected and undesirable results for static error pages including, if the DefaultServlet is configured to permit writes, the replacement or removal of the custom error page. Notes for other user provided error pages: (1) Unless explicitly coded otherwise, JSPs ignore the HTTP method. JSPs used as error pages must must ensure that they handle any error dispatch as a GET request, regardless of the actual method. (2) By default, the response generated by a Servlet does depend on the HTTP method. Custom Servlets used as error pages must ensure that they handle any error dispatch as a GET request, regardless of the actual method.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2018-11784",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-11784",
+                        "description": "When the default servlet in Apache Tomcat versions 9.0.0.M1 to 9.0.11, 8.5.0 to 8.5.33 and 7.0.23 to 7.0.90 returned a redirect to a directory (e.g. redirecting to '/foo/' when the user requested '/foo') a specially crafted URL could be used to cause the redirect to be generated to any URI of the attackers choice.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 4.3,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2018-1304",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-1304",
+                        "description": "The URL pattern of \"\" (the empty string) which exactly maps to the context root was not correctly handled in Apache Tomcat 9.0.0.M1 to 9.0.4, 8.5.0 to 8.5.27, 8.0.0.RC1 to 8.0.49 and 7.0.0 to 7.0.84 when used as part of a security constraint definition. This caused the constraint to be ignored. It was, therefore, possible for unauthorised users to gain access to web application resources that should have been protected. Only security constraints with a URL pattern of the empty string were affected.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.9,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2018-1305",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-1305",
+                        "description": "Security constraints defined by annotations of Servlets in Apache Tomcat 9.0.0.M1 to 9.0.4, 8.5.0 to 8.5.27, 8.0.0.RC1 to 8.0.49 and 7.0.0 to 7.0.84 were only applied once a Servlet had been loaded. Because security constraints defined in this way apply to the URL pattern and any URLs below that point, it was possible - depending on the order Servlets were loaded - for some security constraints not to be applied. This could have exposed resources to users who were not authorised to access them.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.5,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2019-0221",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-0221",
+                        "description": "The SSI printenv command in Apache Tomcat 9.0.0.M1 to 9.0.0.17, 8.5.0 to 8.5.39 and 7.0.0 to 7.0.93 echoes user provided data without escaping and is, therefore, vulnerable to XSS. SSI is disabled by default. The printenv command is intended for debugging and is unlikely to be present in a production website.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.1,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2019-0232",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-0232",
+                        "description": "When running on Windows with enableCmdLineArguments enabled, the CGI Servlet in Apache Tomcat 9.0.0.M1 to 9.0.17, 8.5.0 to 8.5.39 and 7.0.0 to 7.0.93 is vulnerable to Remote Code Execution due to a bug in the way the JRE passes command line arguments to Windows. The CGI Servlet is disabled by default. The CGI option enableCmdLineArguments is disable by default in Tomcat 9.0.x (and will be disabled by default in all versions in response to this vulnerability). For a detailed explanation of the JRE behaviour, see Markus Wulftange's blog (https://codewhitesec.blogspot.com/2016/02/java-and-command-line-injections-in-windows.html) and this archived MSDN blog (https://web.archive.org/web/20161228144344/https://blogs.msdn.microsoft.com/twistylittlepassagesallalike/2011/04/23/everyone-quotes-command-line-arguments-the-wrong-way/).",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 8.1,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2019-12418",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-12418",
+                        "description": "When Apache Tomcat 9.0.0.M1 to 9.0.28, 8.5.0 to 8.5.47, 7.0.0 and 7.0.97 is configured with the JMX Remote Lifecycle Listener, a local attacker without access to the Tomcat process or configuration files is able to manipulate the RMI registry to perform a man-in-the-middle attack to capture user names and passwords used to access the JMX interface. The attacker can then use these credentials to access the JMX interface and gain complete control over the Tomcat instance.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.0,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2019-17563",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-17563",
+                        "description": "When using FORM authentication with Apache Tomcat 9.0.0.M1 to 9.0.29, 8.5.0 to 8.5.49 and 7.0.0 to 7.0.98 there was a narrow window where an attacker could perform a session fixation attack. The window was considered too narrow for an exploit to be practical but, erring on the side of caution, this issue has been treated as a security vulnerability.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2019-2684",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-2684",
+                        "description": "Vulnerability in the Java SE, Java SE Embedded component of Oracle Java SE (subcomponent: RMI). Supported versions that are affected are Java SE: 7u211, 8u202, 11.0.2 and 12; Java SE Embedded: 8u201. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Java SE, Java SE Embedded. Successful attacks of this vulnerability can result in unauthorized creation, deletion or modification access to critical data or all Java SE, Java SE Embedded accessible data. Note: This vulnerability applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets (in Java SE 8), that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. This vulnerability can also be exploited by using APIs in the specified Component, e.g., through a web service which supplies data to the APIs. CVSS 3.0 Base Score 5.9 (Integrity impacts). CVSS Vector: (CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N).",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.9,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:apache:cassandra",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2020-13935",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-13935",
+                        "description": "The payload length in a WebSocket frame was not correctly validated in Apache Tomcat 10.0.0-M1 to 10.0.0-M6, 9.0.0.M1 to 9.0.36, 8.5.0 to 8.5.56 and 7.0.27 to 7.0.104. Invalid payload lengths could trigger an infinite loop. Multiple requests with invalid payload lengths could lead to a denial of service.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2020-1935",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-1935",
+                        "description": "In Apache Tomcat 9.0.0.M1 to 9.0.30, 8.5.0 to 8.5.50 and 7.0.0 to 7.0.99 the HTTP header parsing code used an approach to end-of-line parsing that allowed some invalid HTTP headers to be parsed as valid. This led to a possibility of HTTP Request Smuggling if Tomcat was located behind a reverse proxy that incorrectly handled the invalid Transfer-Encoding header in a particular manner. Such a reverse proxy is considered unlikely.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 4.8,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2020-1938",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-1938",
+                        "description": "When using the Apache JServ Protocol (AJP), care must be taken when trusting incoming connections to Apache Tomcat. Tomcat treats AJP connections as having higher trust than, for example, a similar HTTP connection. If such connections are available to an attacker, they can be exploited in ways that may be surprising. In Apache Tomcat 9.0.0.M1 to 9.0.0.30, 8.5.0 to 8.5.50 and 7.0.0 to 7.0.99, Tomcat shipped with an AJP Connector enabled by default that listened on all configured IP addresses. It was expected (and recommended in the security guide) that this Connector would be disabled if not required. This vulnerability report identified a mechanism that allowed: - returning arbitrary files from anywhere in the web application - processing any file in the web application as a JSP Further, if the web application allowed file upload and stored those files within the web application (or the attacker was able to control the content of the web application by some other means) then this, along with the ability to process a file as a JSP, made remote code execution possible. It is important to note that mitigation is only required if an AJP port is accessible to untrusted users. Users wishing to take a defence-in-depth approach and block the vector that permits returning arbitrary files and execution as JSP may upgrade to Apache Tomcat 9.0.31, 8.5.51 or 7.0.100 or later. A number of changes were made to the default AJP Connector configuration in 9.0.31 to harden the default configuration. It is likely that users upgrading to 9.0.31, 8.5.51 or 7.0.100 or later will need to make small changes to their configurations.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 9.8,
+                        "criticity": "CRITICAL",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": true
+                    },
+                    {
+                        "name": "CVE-2020-9484",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-9484",
+                        "description": "When using Apache Tomcat versions 10.0.0-M1 to 10.0.0-M4, 9.0.0.M1 to 9.0.34, 8.5.0 to 8.5.54 and 7.0.0 to 7.0.103 if a) an attacker is able to control the contents and name of a file on the server; and b) the server is configured to use the PersistenceManager with a FileStore; and c) the PersistenceManager is configured with sessionAttributeValueClassNameFilter=\"null\" (the default unless a SecurityManager is used) or a sufficiently lax filter to allow the attacker provided object to be deserialized; and d) the attacker knows the relative file path from the storage location used by FileStore to the file the attacker has control over; then, using a specifically crafted request, the attacker will be able to trigger remote code execution via deserialization of the file under their control. Note that all of conditions a) to d) must be true for the attack to succeed.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.0,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:oracle:database",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2021-24122",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-24122",
+                        "description": "When serving resources from a network location using the NTFS file system, Apache Tomcat versions 10.0.0-M1 to 10.0.0-M9, 9.0.0.M1 to 9.0.39, 8.5.0 to 8.5.59 and 7.0.0 to 7.0.106 were susceptible to JSP source code disclosure in some configurations. The root cause was the unexpected behaviour of the JRE API File.getCanonicalPath() which in turn was caused by the inconsistent behaviour of the Windows API (FindFirstFileW) in some circumstances.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.9,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2021-25329",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-25329",
+                        "description": "The fix for CVE-2020-9484 was incomplete. When using Apache Tomcat 10.0.0-M1 to 10.0.0, 9.0.0.M1 to 9.0.41, 8.5.0 to 8.5.61 or 7.0.0. to 7.0.107 with a configuration edge case that was highly unlikely to be used, the Tomcat instance was still vulnerable to CVE-2020-9494. Note that both the previously published prerequisites for CVE-2020-9484 and the previously published mitigations for CVE-2020-9484 also apply to this issue.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.0,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:oracle:database",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2021-30640",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-30640",
+                        "description": "A vulnerability in the JNDI Realm of Apache Tomcat allows an attacker to authenticate using variations of a valid user name and/or to bypass some of the protection provided by the LockOut Realm. This issue affects Apache Tomcat 10.0.0-M1 to 10.0.5; 9.0.0.M1 to 9.0.45; 8.5.0 to 8.5.65.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.5,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2024-52316",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-52316",
+                        "description": "Unchecked Error Condition vulnerability in Apache Tomcat. If Tomcat is configured to use a custom Jakarta Authentication (formerly JASPIC)\u00a0ServerAuthContext component which may throw an exception during the authentication process without explicitly setting an HTTP status to indicate failure, the authentication may not fail, allowing the user to bypass the authentication process. There are no known Jakarta\u00a0Authentication components that behave in this way.\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.0-M26, from 10.1.0-M1 through 10.1.30, from 9.0.0-M1 through 9.0.95.\n\nThe following versions were EOL at the time the CVE was created but are \nknown to be affected: 8.5.0 though 8.5.100.\u00a0Other EOL versions may also be affected.\n\n\nUsers are recommended to upgrade to version 11.0.0, 10.1.31 or 9.0.96, which fix the issue.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 9.8,
+                        "criticity": "CRITICAL",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2025-24813",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-24813",
+                        "description": "Path Equivalence: 'file.Name' (Internal Dot) leading to\u00a0Remote Code Execution and/or Information disclosure\u00a0and/or malicious content added to uploaded files via write enabled\u00a0Default Servlet\u00a0in Apache Tomcat.\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.2, from 10.1.0-M1 through 10.1.34, from 9.0.0.M1 through 9.0.98.\nThe following versions were EOL at the time the CVE was created but are \nknown to be affected: 8.5.0 though 8.5.100. Other, older, EOL versions \nmay also be affected.\n\n\nIf all of the following were true, a malicious user was able to view       security sensitive files and/or inject content into those files:\n-\u00a0writes enabled for the default servlet (disabled by default)\n- support for partial PUT (enabled by default)\n- a target URL for security sensitive uploads that was a sub-directory of\u00a0a target URL for public uploads\n-\u00a0attacker knowledge of the names of security sensitive files being\u00a0uploaded\n-\u00a0the security sensitive files also being uploaded via partial PUT\n\nIf all of the following were true, a malicious user was able to       perform remote code execution:\n- writes enabled for the default servlet (disabled by default)\n-\u00a0support for partial PUT (enabled by default)\n-\u00a0application was using Tomcat's file based session persistence with the\u00a0default storage location\n-\u00a0application included a library that may be leveraged in a\u00a0deserialization attack\n\nUsers are recommended to upgrade to version 11.0.3, 10.1.35 or 9.0.99, which fixes the issue.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 9.8,
+                        "criticity": "CRITICAL",
+                        "cpe": "cpe:/a:apache:tomcat",
+                        "isKev": true
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "7.0.72",
+            "safestVersion": "9.0.110"
+        },
+        {
+            "id": 77985,
+            "componentId": "hsqldb:hsqldb",
+            "name": "hsqldb:hsqldb",
+            "version": "1.8.0.7",
+            "release": 1159817694000,
+            "languages": "java",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 1,
+                    "name": "NOASSERTION",
+                    "compliance": "undefined"
+                }
+            ],
+            "lastVersion": "1.8.0.10",
+            "lastRelease": 1242768027000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        }
+    ],
+    "partialComponents": [
+        {
+            "name": "AngularJS",
+            "technology": "JavaScript",
+            "type": "Web & Mobile applications",
+            "versions": [
+                ""
+            ],
+            "license": "MIT",
+            "editor": "http://angularjs.org/",
+            "description": "AngularJS lets you extend HTML vocabulary for your application. The resulting environment is extraordinarily expressive, readable, and quick to develop.",
+            "dependencyLevel": null
+        },
+        {
+            "name": "commons-logging",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "Apache",
+            "editor": "https://mvnrepository.com/artifact/commons-logging/commons-logging",
+            "description": "Apache Commons Logging is a thin adapter allowing configurable bridging to other,",
+            "dependencyLevel": null
+        },
+        {
+            "name": "Jquery",
+            "technology": "JavaScript",
+            "type": "Web & Mobile applications",
+            "versions": [
+                ""
+            ],
+            "license": "MIT",
+            "editor": "http://www.jquery.com",
+            "description": "jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.",
+            "dependencyLevel": null
+        },
+        {
+            "name": "RMI",
+            "technology": "Java",
+            "type": "Application development",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "http://docs.oracle.com/javase/1.5.0/docs/guide/rmi/index.html",
+            "description": "",
+            "dependencyLevel": null
+        }
+    ]
+}

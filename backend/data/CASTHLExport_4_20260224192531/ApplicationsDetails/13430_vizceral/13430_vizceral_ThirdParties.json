@@ -1,0 +1,307 @@
+{
+    "snapshotLabel": "Open Source #5 - July 2017_vizceral",
+    "snapshotDate": 1517374800000,
+    "applicationCodeLines": null,
+    "applicationFiles": 89.0,
+    "thirdPartyCodeLines": null,
+    "thirdPartyFiles": 7.0,
+    "thirdParties": [
+        {
+            "id": 26521,
+            "componentId": "lodash.npm",
+            "name": "lodash.npm",
+            "version": "4.12.0",
+            "release": 1462735543000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "4.17.23",
+            "lastRelease": 1769016592000,
+            "nbVersionPreviousYear": 1,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "lodash",
+                "product": "lodash",
+                "version": "4.12.0",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2018-16487",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-16487",
+                        "description": "A prototype pollution vulnerability was found in lodash <4.17.11 where the functions merge, mergeWith, and defaultsDeep can be tricked into adding or modifying properties of Object.prototype.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.6,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:lodash:lodash",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2018-3721",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-3721",
+                        "description": "lodash node module before 4.17.5 suffers from a Modification of Assumed-Immutable Data (MAID) vulnerability via defaultsDeep, merge, and mergeWith functions, which allows a malicious user to modify the prototype of \"Object\" via __proto__, causing the addition or modification of an existing property that will exist on all objects.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.5,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:lodash:lodash",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2019-1010266",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-1010266",
+                        "description": "lodash prior to 4.17.11 is affected by: CWE-400: Uncontrolled Resource Consumption. The impact is: Denial of service. The component is: Date handler. The attack vector is: Attacker provides very long strings, which the library attempts to match using a regular expression. The fixed version is: 4.17.11.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.5,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:lodash:lodash",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2019-10744",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-10744",
+                        "description": "Versions of lodash lower than 4.17.12 are vulnerable to Prototype Pollution. The function defaultsDeep could be tricked into adding or modifying properties of Object.prototype using a constructor payload.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 9.1,
+                        "criticity": "CRITICAL",
+                        "cpe": "cpe:/a:lodash:lodash",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2020-28500",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-28500",
+                        "description": "Lodash versions prior to 4.17.21 are vulnerable to Regular Expression Denial of Service (ReDoS) via the toNumber, trim and trimEnd functions.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.3,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:lodash:lodash",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2020-8203",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-8203",
+                        "description": "Prototype pollution attack when using _.zipObjectDeep in lodash before 4.17.20.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.4,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:lodash:lodash",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2021-23337",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-23337",
+                        "description": "Lodash versions prior to 4.17.21 are vulnerable to Command Injection via the template function.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.2,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:lodash:lodash",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2025-13465",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-13465",
+                        "description": "Lodash versions 4.0.0 through 4.17.22 are vulnerable to prototype pollution in the _.unset\u00a0and _.omit\u00a0functions. An attacker can pass crafted paths which cause Lodash to delete methods from global prototypes.\n\nThe issue permits deletion of properties but does not allow overwriting their original behavior.\n\nThis issue is patched on 4.17.23",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.3,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:lodash:lodash",
+                        "isKev": false
+                    },
+                    {
+                        "name": "GMS-2018-10",
+                        "link": null,
+                        "description": "Functions in Lodash ( merge, mergeWith, defaultsDeep) can modify the prototype of \"Object\" if given malicious data. This can lead to denial of service or remote code execution.",
+                        "cweId": "CWE-937",
+                        "cweLabel": null,
+                        "cvssScore": 0.0,
+                        "criticity": "UNKNOWN",
+                        "cpe": null,
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "4.17.5",
+            "safestVersion": "4.17.23"
+        },
+        {
+            "id": 30888,
+            "componentId": "hammerjs.npm",
+            "name": "hammerjs.npm",
+            "version": "2.0.8",
+            "release": 1461341697000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "2.0.8",
+            "lastRelease": 1461341697000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 46556,
+            "componentId": "numeral.npm",
+            "name": "numeral.npm",
+            "version": "1.5.3",
+            "release": 1388008167000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "2.0.6",
+            "lastRelease": 1490598307000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51155,
+            "componentId": "chroma-js.npm",
+            "name": "chroma-js.npm",
+            "version": "1.1.1",
+            "release": 1437542278000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "Dependency",
+            "licenses": [],
+            "lastVersion": "3.2.0",
+            "lastRelease": 1764326977000,
+            "nbVersionPreviousYear": 2,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51158,
+            "componentId": "tween.js.npm",
+            "name": "tween.js.npm",
+            "version": "16.3.4",
+            "release": 1452635152000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "16.6.0",
+            "lastRelease": 1485470057000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51421,
+            "componentId": "three.npm",
+            "name": "three.npm",
+            "version": "0.82.1",
+            "release": 1477517847000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "0.182.0",
+            "lastRelease": 1765384223000,
+            "nbVersionPreviousYear": 13,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "three",
+                "product": "three",
+                "version": "0.82.1",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2020-28496",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-28496",
+                        "description": "This affects the package three before 0.125.0. This can happen when handling rgb or hsl colors. PoC: var three = require('three') function build_blank (n) { var ret = \"rgb(\" for (var i = 0; i < n; i++) { ret += \" \" } return ret + \"\"; } var Color = three.Color var time = Date.now(); new Color(build_blank(50000)) var time_cost = Date.now() - time; console.log(time_cost+\" ms\")",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:three_project:three",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "0.125.2",
+            "safestVersion": "0.137.5"
+        },
+        {
+            "id": 52124,
+            "componentId": "vizceral.npm",
+            "name": "vizceral.npm",
+            "version": "4.5.0",
+            "release": 1496670261000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Dependency",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "4.9.0",
+            "lastRelease": 1563593206000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        }
+    ],
+    "partialComponents": [
+        {
+            "name": "underscore",
+            "technology": "JavaScript",
+            "type": "Web applications",
+            "versions": [
+                ""
+            ],
+            "license": "MIT",
+            "editor": "http://underscorejs.org/",
+            "description": "JavaScript library that provides a whole mess of useful functional programming helpers without extending any built-in objects. It\u2019s the answer to the question: \u201cIf I sit down in front of a blank HTML page, and want to start being productive immediately, what do I need?\u201d",
+            "dependencyLevel": null
+        }
+    ]
+}

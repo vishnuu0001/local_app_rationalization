@@ -1,0 +1,384 @@
+{
+    "levelType": "root",
+    "id": "root",
+    "subLevel": [
+        {
+            "levelType": "healthFactor",
+            "id": "softwareResiliency",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "TSQL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "TSQL__FinalReturn",
+                                    "detail": [
+                                        {
+                                            "application_id": 52,
+                                            "application_name": "Business Billing",
+                                            "counter": 137.0,
+                                            "effort": 68.5
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "TSQL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "TSQL__NumberOfTables",
+                                    "detail": [
+                                        {
+                                            "application_id": 52,
+                                            "application_name": "Business Billing",
+                                            "counter": 1.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "TSQL__NotANSI_Joins",
+                                    "detail": [
+                                        {
+                                            "application_id": 52,
+                                            "application_name": "Business Billing",
+                                            "counter": 5.0,
+                                            "effort": 5.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "TSQL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "TSQL__FetchInLoop",
+                                    "detail": [
+                                        {
+                                            "application_id": 52,
+                                            "application_name": "Business Billing",
+                                            "counter": 1.0,
+                                            "effort": 10.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "TSQL__Unsecure",
+                                    "detail": [
+                                        {
+                                            "application_id": 52,
+                                            "application_name": "Business Billing",
+                                            "counter": 41.0,
+                                            "effort": 41.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "TSQL__Unmanaged",
+                                    "detail": [
+                                        {
+                                            "application_id": 52,
+                                            "application_name": "Business Billing",
+                                            "counter": 22.0,
+                                            "effort": 22.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "TSQL__SubQuery",
+                                    "detail": [
+                                        {
+                                            "application_id": 52,
+                                            "application_name": "Business Billing",
+                                            "counter": 38.0,
+                                            "effort": 380.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareAgility",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "TSQL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "TSQL__HeterogeneousEncoding",
+                                    "detail": [
+                                        {
+                                            "application_id": 52,
+                                            "application_name": "Business Billing",
+                                            "counter": 9.0,
+                                            "effort": 9.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "TSQL__LongLines",
+                                    "detail": [
+                                        {
+                                            "application_id": 52,
+                                            "application_name": "Business Billing",
+                                            "counter": 127.0,
+                                            "effort": 10.583334
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "TSQL__UnCommentedParam",
+                                    "detail": [
+                                        {
+                                            "application_id": 52,
+                                            "application_name": "Business Billing",
+                                            "counter": 137.0,
+                                            "effort": 45.666668
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "TSQL__DBObjectQualification",
+                                    "detail": [
+                                        {
+                                            "application_id": 52,
+                                            "application_name": "Business Billing",
+                                            "counter": 371.0,
+                                            "effort": 61.833336
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "TSQL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "TSQL__WhereExprAlignment",
+                                    "detail": [
+                                        {
+                                            "application_id": 52,
+                                            "application_name": "Business Billing",
+                                            "counter": 45.0,
+                                            "effort": 7.5000005
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "TSQL__UnCommentedArtifact",
+                                    "detail": [
+                                        {
+                                            "application_id": 52,
+                                            "application_name": "Business Billing",
+                                            "counter": 137.0,
+                                            "effort": 45.666668
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "TSQL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "TSQL__WeakCommentRate",
+                                    "detail": [
+                                        {
+                                            "application_id": 52,
+                                            "application_name": "Business Billing",
+                                            "counter": 1473.1998,
+                                            "effort": 1473.1998
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "TSQL__ColumnsList",
+                                    "detail": [
+                                        {
+                                            "application_id": 52,
+                                            "application_name": "Business Billing",
+                                            "counter": 9.0,
+                                            "effort": 1.5000001
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "TSQL__SuspiciousComments",
+                                    "detail": [
+                                        {
+                                            "application_id": 52,
+                                            "application_name": "Business Billing",
+                                            "counter": 9.0,
+                                            "effort": 90.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "levelType": "healthFactor",
+            "id": "softwareElegance",
+            "subLevel": [
+                {
+                    "levelType": "priority",
+                    "id": "Low",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "TSQL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "TSQL__NBLOC",
+                                    "detail": [
+                                        {
+                                            "application_id": 52,
+                                            "application_name": "Business Billing",
+                                            "counter": 120.98,
+                                            "effort": 604.9
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "TSQL__SqlInterleaving",
+                                    "detail": [
+                                        {
+                                            "application_id": 52,
+                                            "application_name": "Business Billing",
+                                            "counter": 18.0,
+                                            "effort": 18.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "Medium",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "TSQL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "TSQL__NumberOfParameters",
+                                    "detail": [
+                                        {
+                                            "application_id": 52,
+                                            "application_name": "Business Billing",
+                                            "counter": 99.0,
+                                            "effort": 495.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "levelType": "priority",
+                    "id": "High",
+                    "subLevel": [
+                        {
+                            "levelType": "technology",
+                            "id": "TSQL",
+                            "subLevel": [
+                                {
+                                    "levelType": "alert",
+                                    "id": "TSQL__ComplexArtifact",
+                                    "detail": [
+                                        {
+                                            "application_id": 52,
+                                            "application_name": "Business Billing",
+                                            "counter": 1007.0,
+                                            "effort": 1007.0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "levelType": "alert",
+                                    "id": "TSQL__ComplexQuery",
+                                    "detail": [
+                                        {
+                                            "application_id": 52,
+                                            "application_name": "Business Billing",
+                                            "counter": 34.0,
+                                            "effort": 170.0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

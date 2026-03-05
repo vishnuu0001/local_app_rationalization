@@ -1,0 +1,511 @@
+{
+    "id": 10027,
+    "name": "Bootstrap",
+    "domains": [
+        {
+            "id": 12911,
+            "name": "Portfolio Company Gamma"
+        },
+        {
+            "id": 254,
+            "name": "Sales and Marketing"
+        }
+    ],
+    "metrics": [
+        {
+            "snapshotLabel": "TrendCampaign_4_Bootstrap",
+            "snapshotDate": 1488171600000,
+            "softwareAgility": 0.6133261919021606,
+            "softwareAgilityAdded": 0.6133261919021606,
+            "softwareElegance": 0.5554839372634888,
+            "softwareEleganceAdded": 0.5554839372634888,
+            "softwareResiliency": 0.674238920211792,
+            "softwareResiliencyAdded": 0.674238920211792,
+            "softwareHealth": 0.6143496831258138,
+            "openSourceSafety": 0.693651310827773,
+            "openSourceLicense": 1.0,
+            "openSourceObsolescence": 0.2209539324833193,
+            "openSourceCVE": 0.86,
+            "businessImpact": 0.5380710659898477,
+            "roarIndex": 0.19133988006091368,
+            "backFiredFP": 371.0,
+            "backFiredFPAdded": 371.0,
+            "technicalDebt": 71845.01345783472,
+            "maintenanceRecordedFTE": 0.075,
+            "maintenanceRecommendedFTE": 0.04592767044673201,
+            "greenIndex": null,
+            "greenIndexScan": null,
+            "greenIndexSurvey": null,
+            "greenOccurrences": null,
+            "greenEffort": null,
+            "greenDetail": [
+                {
+                    "technology": "JavaScript",
+                    "greenIndexScan": 0.0,
+                    "greenIndexDetails": null
+                }
+            ],
+            "totalLinesOfCode": 19655,
+            "totalLinesOfCodeAdded": 19655,
+            "totalLinesOfCodeModified": 0,
+            "totalFiles": 131,
+            "totalFilesAdded": 131,
+            "totalFilesModified": 0,
+            "customIndicators": [
+                {
+                    "metricId": 10023356,
+                    "value": "0.08080808080808081"
+                },
+                {
+                    "metricId": 10006001,
+                    "value": "0.7083333333333334"
+                },
+                {
+                    "metricId": 10006305,
+                    "value": "-1.0"
+                },
+                {
+                    "metricId": 10013600,
+                    "value": "-1.0"
+                },
+                {
+                    "metricId": 10006302,
+                    "value": "-1.0"
+                },
+                {
+                    "metricId": 10006301,
+                    "value": "-1.0"
+                },
+                {
+                    "metricId": 10016304,
+                    "value": "-1.0"
+                }
+            ],
+            "technologies": [
+                {
+                    "technology": "JavaScript",
+                    "totalLinesOfCode": 19655,
+                    "totalFiles": 131,
+                    "softwareAgility": 0.6133261919021606,
+                    "softwareElegance": 0.5554839372634888,
+                    "softwareResiliency": 0.674238920211792,
+                    "softwareHealth": 0.6143496831258138,
+                    "softwareAgilityDetail": {
+                        "highLinesOfCode": 3891,
+                        "mediumLinesOfCode": 10163,
+                        "lowLinesOfCode": 5601
+                    },
+                    "softwareEleganceDetail": {
+                        "highLinesOfCode": 329,
+                        "mediumLinesOfCode": 11116,
+                        "lowLinesOfCode": 8210
+                    },
+                    "softwareResiliencyDetail": {
+                        "highLinesOfCode": 6834,
+                        "mediumLinesOfCode": 9327,
+                        "lowLinesOfCode": 3494
+                    },
+                    "softwareHealthDetail": {
+                        "highLinesOfCode": 3684,
+                        "mediumLinesOfCode": 10202,
+                        "lowLinesOfCode": 5768
+                    }
+                }
+            ],
+            "vulnerabilities": [
+                {
+                    "matchedCPE": "cpe:/a:formidable_project:formidable",
+                    "name": "CVE-2022-29622",
+                    "publishedDate": "2022-05-16T18:15:08.027Z",
+                    "lastUpdateDate": "2024-11-21T11:59:27.063Z",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2022-29622",
+                    "description": "An arbitrary file upload vulnerability in formidable v3.1.4 allows attackers to execute arbitrary code via a crafted filename. NOTE: some third parties dispute this issue because the product has common use cases in which uploading arbitrary files is the desired behavior. Also, there are configuration options in all versions that can change the default behavior of how files are handled. Strapi does not consider this to be a valid vulnerability.",
+                    "references": [
+                        {
+                            "name": "Exploit",
+                            "url": "https://github.com/node-formidable/formidable/issues/862",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://github.com/strapi/strapi/issues/20189",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://github.com/node-formidable/formidable/issues/862",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://github.com/strapi/strapi/issues/20189",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://www.youtube.com/watch?v=C6QPKooxhAo",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": "Issue Tracking",
+                            "url": "https://github.com/node-formidable/formidable/issues/856",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://medium.com/%40zsolt.imre/is-cybersecurity-the-next-supply-chain-vulnerability-9a00de745022",
+                            "source": "cve@mitre.org"
+                        },
+                        {
+                            "name": null,
+                            "url": "https://medium.com/%40zsolt.imre/is-cybersecurity-the-next-supply-chain-vulnerability-9a00de745022",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://www.youtube.com/watch?v=C6QPKooxhAo",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Issue Tracking",
+                            "url": "https://github.com/node-formidable/formidable/issues/856",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "criticityLabel": "CRITICAL",
+                    "cvssScore": 9.8,
+                    "cvssAccessVector": "NETWORK",
+                    "cvssAccessComplexity": "LOW",
+                    "cvssAuthentication": "NONE",
+                    "cvssConfidentialityImpact": "HIGH",
+                    "cvssAvailabilityImpact": "HIGH",
+                    "source": "NVD",
+                    "criticityCategory": "CRITICAL",
+                    "advisory": false,
+                    "isKev": false
+                },
+                {
+                    "matchedCPE": "cpe:/a:codemirror:codemirror",
+                    "name": "CVE-2020-7760",
+                    "publishedDate": "2020-10-30T15:15:12.633Z",
+                    "lastUpdateDate": "2024-11-21T10:37:45.027Z",
+                    "vulnerabilityLink": "https://nvd.nist.gov/vuln/detail/CVE-2020-7760",
+                    "description": "This affects the package codemirror before 5.58.2; the package org.apache.marmotta.webjars:codemirror before 5.58.2. The vulnerable regular expression is located in https://github.com/codemirror/CodeMirror/blob/cdb228ac736369c685865b122b736cd0d397836c/mode/javascript/javascript.jsL129. The ReDOS vulnerability of the regex is mainly due to the sub-pattern (s|/*.*?*/)*",
+                    "references": [
+                        {
+                            "name": "Exploit",
+                            "url": "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSBOWERGITHUBCOMPONENTS-1024446",
+                            "source": "report@snyk.io"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSBOWER-1024445",
+                            "source": "report@snyk.io"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com//security-alerts/cpujul2021.html",
+                            "source": "report@snyk.io"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSBOWERGITHUBCODEMIRROR-1024448",
+                            "source": "report@snyk.io"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://snyk.io/vuln/SNYK-JS-CODEMIRROR-1016937",
+                            "source": "report@snyk.io"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARS-1024449",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://github.com/codemirror/CodeMirror/commit/55d0333907117c9231ffdf555ae8824705993bbb",
+                            "source": "report@snyk.io"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-1024447",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://www.debian.org/security/2020/dsa-4789",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-1024447",
+                            "source": "report@snyk.io"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com/security-alerts/cpuapr2022.html",
+                            "source": "report@snyk.io"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://snyk.io/vuln/SNYK-JAVA-ORGAPACHEMARMOTTAWEBJARS-1024450",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSBOWER-1024445",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://github.com/codemirror/CodeMirror/commit/55d0333907117c9231ffdf555ae8824705993bbb",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://snyk.io/vuln/SNYK-JS-CODEMIRROR-1016937",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com//security-alerts/cpujul2021.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com/security-alerts/cpuApr2021.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARS-1024449",
+                            "source": "report@snyk.io"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSBOWERGITHUBCODEMIRROR-1024448",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Third Party Advisory",
+                            "url": "https://www.debian.org/security/2020/dsa-4789",
+                            "source": "report@snyk.io"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSBOWERGITHUBCOMPONENTS-1024446",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com/security-alerts/cpuApr2021.html",
+                            "source": "report@snyk.io"
+                        },
+                        {
+                            "name": "Exploit",
+                            "url": "https://snyk.io/vuln/SNYK-JAVA-ORGAPACHEMARMOTTAWEBJARS-1024450",
+                            "source": "report@snyk.io"
+                        },
+                        {
+                            "name": "Patch",
+                            "url": "https://www.oracle.com/security-alerts/cpuapr2022.html",
+                            "source": "af854a3a-2127-422b-91ae-364da2661108"
+                        }
+                    ],
+                    "vulnerableSoftware": [],
+                    "criticityLabel": "MEDIUM",
+                    "cvssScore": 5.3,
+                    "cvssAccessVector": "NETWORK",
+                    "cvssAccessComplexity": "LOW",
+                    "cvssAuthentication": "NONE",
+                    "cvssConfidentialityImpact": "NONE",
+                    "cvssAvailabilityImpact": "LOW",
+                    "source": "NVD",
+                    "criticityCategory": "MEDIUM",
+                    "advisory": false,
+                    "isKev": false
+                }
+            ],
+            "components": [
+                {
+                    "id": 23061,
+                    "name": "blueimp-file-upload-node.npm",
+                    "version": "2.1.0",
+                    "cves": [],
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 51399,
+                    "name": "codemirror.npm",
+                    "version": "3.20.0",
+                    "cves": [
+                        {
+                            "name": "CVE-2020-7760"
+                        }
+                    ],
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 51401,
+                    "name": "formidable.npm",
+                    "version": "1.0.11",
+                    "cves": [
+                        {
+                            "name": "CVE-2022-29622"
+                        }
+                    ],
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 51402,
+                    "name": "X-editable.npm",
+                    "version": "1.5.1",
+                    "cves": [],
+                    "lifeSpan": "N/A"
+                },
+                {
+                    "id": 39870,
+                    "name": "parsleyjs.npm",
+                    "version": "2.0.0",
+                    "cves": [],
+                    "lifeSpan": "N/A"
+                }
+            ]
+        }
+    ],
+    "surveys": [
+        {
+            "id": 371,
+            "ref": "CAST_MAINT",
+            "name": "Software Maintenance Estimate",
+            "questions": [
+                {
+                    "label": "What is the average skill level of the development team on this type of application?",
+                    "value": "6 months",
+                    "questionId": 1000015,
+                    "choiceId": 1000067
+                },
+                {
+                    "label": "What percentage of the development effort has been spent on maintenance in the last 12 months?",
+                    "value": "5",
+                    "questionId": 1000012
+                },
+                {
+                    "label": "What is the CMMI level of the organization?",
+                    "value": "Level 2",
+                    "questionId": 1000032,
+                    "choiceId": 1000256
+                },
+                {
+                    "label": "What is the percentage of change to the base code in the last 12 months?",
+                    "value": "25",
+                    "questionId": 1000121
+                },
+                {
+                    "label": "What is the annual staff turnover within the development team?",
+                    "value": "10%",
+                    "questionId": 1000016,
+                    "choiceId": 1000143
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "ref": "CAST_BI",
+            "name": "Business Impact",
+            "questions": [
+                {
+                    "label": "What is the average number of FTE (Full Time Equivalent) resources that have worked on the source code for this application over the last 12 months?",
+                    "shortLabel": "",
+                    "value": "1.5",
+                    "questionId": 1000011
+                },
+                {
+                    "label": "Is this application aligned with the company's future technology direction?",
+                    "shortLabel": "",
+                    "value": "Yes",
+                    "questionId": 1000009,
+                    "choiceId": 1000042
+                },
+                {
+                    "label": "The number of major releases delivered over the last 12 months for this application?",
+                    "shortLabel": "",
+                    "value": "4 to 6",
+                    "questionId": 1000006,
+                    "choiceId": 1000453
+                },
+                {
+                    "label": "Could failure of this application lead to loss of customer confidence? Please define the level of impact.",
+                    "value": "High",
+                    "questionId": 1000022,
+                    "choiceId": 1000222
+                },
+                {
+                    "label": "Could failure of this application lead to harm of the company's public image? Please define the level of impact.",
+                    "value": "Very High",
+                    "questionId": 1000021,
+                    "choiceId": 1000003
+                },
+                {
+                    "label": "Could failure of this application lead to loss of revenue or business opportunity? Please define the level of impact.",
+                    "value": "Medium",
+                    "questionId": 1000020,
+                    "choiceId": 1000407
+                },
+                {
+                    "label": "Could failure of this application lead to disruption? Please define the level of impact.",
+                    "value": "Very High",
+                    "questionId": 1000019,
+                    "choiceId": 1000195
+                },
+                {
+                    "label": "What is the approximate number of end users for this application?",
+                    "shortLabel": "",
+                    "value": "More than 2500",
+                    "questionId": 1000018,
+                    "choiceId": 1000398
+                },
+                {
+                    "label": "Does the application serve internal or external users?",
+                    "value": "External users",
+                    "questionId": 1000017,
+                    "choiceId": 1000203
+                }
+            ]
+        },
+        {
+            "id": 373,
+            "ref": "CAST_APP",
+            "name": "Application Properties",
+            "questions": [
+                {
+                    "label": "Is this application a custom application or a Commercial Off The Shelf product?",
+                    "shortLabel": "",
+                    "value": "Custom Application",
+                    "questionId": 1000427,
+                    "choiceId": 1000529
+                },
+                {
+                    "label": "What is the application type?",
+                    "shortLabel": "",
+                    "value": "Content Management and Publishing",
+                    "questionId": 1000004,
+                    "choiceId": 1000429
+                },
+                {
+                    "label": "Application Owner's name",
+                    "value": "Michael MULLER",
+                    "questionId": 1000002
+                },
+                {
+                    "label": "In what year was this application first put into production?",
+                    "shortLabel": "",
+                    "value": "2012",
+                    "questionId": 1000033
+                }
+            ]
+        }
+    ]
+}

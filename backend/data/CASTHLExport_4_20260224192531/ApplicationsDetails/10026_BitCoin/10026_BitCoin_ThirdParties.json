@@ -1,0 +1,526 @@
+{
+    "snapshotLabel": "TrendCampaign_4_BitCoin",
+    "snapshotDate": 1488171600000,
+    "applicationCodeLines": null,
+    "applicationFiles": 439.0,
+    "thirdPartyCodeLines": null,
+    "thirdPartyFiles": 12.0,
+    "thirdParties": [
+        {
+            "id": 23061,
+            "componentId": "blueimp-file-upload-node.npm",
+            "name": "blueimp-file-upload-node.npm",
+            "version": "2.1.0",
+            "release": 1373436224000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "2.1.0",
+            "lastRelease": 1373436224000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 33142,
+            "componentId": "bootstrap.npm",
+            "name": "bootstrap.npm",
+            "version": "3.2.0",
+            "release": 1403801041000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "5.3.8",
+            "lastRelease": 1756219140000,
+            "nbVersionPreviousYear": 5,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "bootstrap",
+                "product": "bootstrap",
+                "version": "3.2.0",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2016-10735",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2016-10735",
+                        "description": "In Bootstrap 3.x before 3.4.0 and 4.x-beta before 4.0.0-beta.2, XSS is possible in the data-target attribute, a different vulnerability than CVE-2018-14041.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.1,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:getbootstrap:bootstrap",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2018-14040",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-14040",
+                        "description": "In Bootstrap before 4.1.2, XSS is possible in the collapse data-parent attribute.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.1,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:getbootstrap:bootstrap",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2018-14042",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-14042",
+                        "description": "In Bootstrap before 4.1.2, XSS is possible in the data-container property of tooltip.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.1,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:getbootstrap:bootstrap",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2018-20676",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-20676",
+                        "description": "In Bootstrap before 3.4.0, XSS is possible in the tooltip data-viewport attribute.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.1,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:getbootstrap:bootstrap",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2018-20677",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-20677",
+                        "description": "In Bootstrap before 3.4.0, XSS is possible in the affix configuration target property.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.1,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:getbootstrap:bootstrap",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2019-8331",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-8331",
+                        "description": "In Bootstrap before 3.4.1 and 4.3.x before 4.3.1, XSS is possible in the tooltip or popover data-template attribute.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.1,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:getbootstrap:bootstrap",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2024-6484",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-6484",
+                        "description": "A vulnerability has been identified in Bootstrap that exposes users to Cross-Site Scripting (XSS) attacks. The issue is present in the carousel component, where the data-slide and data-slide-to attributes can be exploited through the href attribute of an <a> tag due to inadequate sanitization. This vulnerability could potentially enable attackers to execute arbitrary JavaScript within the victim's browser.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.4,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:getbootstrap:bootstrap",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2024-6485",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-6485",
+                        "description": "A security vulnerability has been discovered in bootstrap that could enable Cross-Site Scripting (XSS) attacks. The vulnerability is associated with the data-loading-text attribute within the button plugin. This vulnerability can be exploited by injecting malicious JavaScript code into the attribute, which would then be executed when the button's loading state is triggered.",
+                        "cweId": "CWE-79",
+                        "cweLabel": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
+                        "cvssScore": 6.4,
+                        "criticity": "MEDIUM",
+                        "cpe": null,
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "3.4.0",
+            "safestVersion": "5.0.0"
+        },
+        {
+            "id": 39863,
+            "componentId": "blueimp-file-upload.npm",
+            "name": "blueimp-file-upload.npm",
+            "version": "9.5.3",
+            "release": 1390412513000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "10.32.0",
+            "lastRelease": 1632543346000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "blueimp-file-upload",
+                "product": "blueimp-file-upload",
+                "version": "9.5.3",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2018-9206",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2018-9206",
+                        "description": "Unauthenticated arbitrary file upload vulnerability in Blueimp jQuery-File-Upload <= v9.22.0",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 9.8,
+                        "criticity": "CRITICAL",
+                        "cpe": "cpe:/a:jquery_file_upload_project:jquery_file_upload",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "9.22.1",
+            "safestVersion": "9.22.1"
+        },
+        {
+            "id": 39870,
+            "componentId": "parsleyjs.npm",
+            "name": "parsleyjs.npm",
+            "version": "2.0.0",
+            "release": 1397933497000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "2.9.2",
+            "lastRelease": 1576021600000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 50571,
+            "componentId": "bootstrap-switch.npm",
+            "name": "bootstrap-switch.npm",
+            "version": "3.0.0",
+            "release": 1396696857000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "3.4.0",
+            "lastRelease": 1555148278000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51398,
+            "componentId": "node-static.npm",
+            "name": "node-static.npm",
+            "version": "0.6.5",
+            "release": 1353117048000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "0.7.11",
+            "lastRelease": 1537701598000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "node-static",
+                "product": "node-static",
+                "version": "0.6.5",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2023-26111",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-26111",
+                        "description": "All versions of the package @nubosoftware/node-static; all versions of the package node-static are vulnerable to Directory Traversal due to improper file path sanitization in the startsWith() method in the servePath function.\r\r",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:node-static_project:node-static",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2025-11149",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-11149",
+                        "description": "This affects all versions of the package node-static; all versions of the package @nubosoftware/node-static. The package fails to catch an exception when user input includes null bytes. This allows attackers to access http://host/%00 and crash the server.",
+                        "cweId": "CWE-400",
+                        "cweLabel": null,
+                        "cvssScore": 7.5,
+                        "criticity": "HIGH",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "GHSA-8r4g-cg4m-x23c",
+                        "link": null,
+                        "description": "All versions of node-static are vulnerable to a Denial of Service. The package fails to catch an exception when user input includes null bytes. This allows attackers to access `http://host/%00` and crash the server.",
+                        "cweId": "CWE-248",
+                        "cweLabel": "Uncaught Exception",
+                        "cvssScore": 0.0,
+                        "criticity": "UNKNOWN",
+                        "cpe": null,
+                        "isKev": false
+                    },
+                    {
+                        "name": "GMS-2021-39",
+                        "link": null,
+                        "description": "All versions of node-static are vulnerable to a Denial of Service. The package fails to catch an exception when user input includes null bytes. This allows attackers to access `http://host/%00` and crash the server.",
+                        "cweId": "CWE-937",
+                        "cweLabel": null,
+                        "cvssScore": 0.0,
+                        "criticity": "UNKNOWN",
+                        "cpe": null,
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": []
+        },
+        {
+            "id": 51399,
+            "componentId": "codemirror.npm",
+            "name": "codemirror.npm",
+            "version": "3.20.0",
+            "release": 1385037313000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "5.65.21",
+            "lastRelease": 1770450337000,
+            "nbVersionPreviousYear": 4,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "codemirror",
+                "product": "codemirror",
+                "version": "3.20.0",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2020-7760",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-7760",
+                        "description": "This affects the package codemirror before 5.58.2; the package org.apache.marmotta.webjars:codemirror before 5.58.2. The vulnerable regular expression is located in https://github.com/codemirror/CodeMirror/blob/cdb228ac736369c685865b122b736cd0d397836c/mode/javascript/javascript.jsL129. The ReDOS vulnerability of the regex is mainly due to the sub-pattern (s|/*.*?*/)*",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.3,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:codemirror:codemirror",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "5.58.2",
+            "safestVersion": "5.58.2"
+        },
+        {
+            "id": 51400,
+            "componentId": "imagemagick.npm",
+            "name": "imagemagick.npm",
+            "version": "0.1.3",
+            "release": 1354795099000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [],
+            "lastVersion": "0.1.3",
+            "lastRelease": 1354795099000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 51401,
+            "componentId": "formidable.npm",
+            "name": "formidable.npm",
+            "version": "1.0.11",
+            "release": 1338804986000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [],
+            "lastVersion": "4.0.0-rc.6",
+            "lastRelease": 1747073601000,
+            "nbVersionPreviousYear": 11,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "formidable",
+                "product": "formidable",
+                "version": "1.0.11",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2022-29622",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-29622",
+                        "description": "An arbitrary file upload vulnerability in formidable v3.1.4 allows attackers to execute arbitrary code via a crafted filename. NOTE: some third parties dispute this issue because the product has common use cases in which uploading arbitrary files is the desired behavior. Also, there are configuration options in all versions that can change the default behavior of how files are handled. Strapi does not consider this to be a valid vulnerability.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 9.8,
+                        "criticity": "CRITICAL",
+                        "cpe": "cpe:/a:formidable_project:formidable",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "3.2.5",
+            "safestVersion": "3.5.3"
+        },
+        {
+            "id": 51402,
+            "componentId": "X-editable.npm",
+            "name": "X-editable.npm",
+            "version": "1.5.1",
+            "release": 1472658798000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "1.5.1",
+            "lastRelease": 1472658798000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 155771,
+            "componentId": "gritter.npm",
+            "name": "gritter.npm",
+            "version": "1.7.4",
+            "release": 1420745330000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "ScanAndDependency",
+            "licenses": [
+                {
+                    "id": 2,
+                    "name": "MIT License",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "1.7.4",
+            "lastRelease": 1420745330000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 155775,
+            "componentId": "intro.js.npm",
+            "name": "intro.js.npm",
+            "version": "0.6.0",
+            "release": 1389990312000,
+            "languages": "javascript",
+            "lifeSpan": "Active",
+            "origin": "ScanAndDependency",
+            "licenses": [],
+            "lastVersion": "8.3.2",
+            "lastRelease": 1752401433000,
+            "nbVersionPreviousYear": 4,
+            "numberOfCodeLines": 0.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        }
+    ],
+    "partialComponents": [
+        {
+            "name": "AngularJS",
+            "technology": "JavaScript",
+            "type": "Web & Mobile applications",
+            "versions": [
+                ""
+            ],
+            "license": "MIT",
+            "editor": "http://angularjs.org/",
+            "description": "AngularJS lets you extend HTML vocabulary for your application. The resulting environment is extraordinarily expressive, readable, and quick to develop.",
+            "dependencyLevel": null
+        },
+        {
+            "name": "Jquery",
+            "technology": "JavaScript",
+            "type": "Web & Mobile applications",
+            "versions": [
+                ""
+            ],
+            "license": "MIT",
+            "editor": "http://www.jquery.com",
+            "description": "jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.",
+            "dependencyLevel": null
+        },
+        {
+            "name": "STL",
+            "technology": "C/C++",
+            "type": "API framework",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "The STL provides a ready-made set of common classes for C++, such as containers and associative arrays, that can be used with any built-in type and with any user-defined type that supports some elementary operations (such as copying and assignment). STL algorithms are independent of containers, which significantly reduces the complexity of the library.",
+            "dependencyLevel": null
+        },
+        {
+            "name": "mjolnic-bootstrap-colorpicker",
+            "technology": "JavaScript",
+            "type": "",
+            "versions": [
+                "2.0.0"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        }
+    ]
+}

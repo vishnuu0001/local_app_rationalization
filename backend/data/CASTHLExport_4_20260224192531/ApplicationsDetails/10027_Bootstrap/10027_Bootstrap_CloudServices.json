@@ -1,0 +1,163 @@
+[
+    {
+        "platformId": "azure",
+        "platformName": "Microsoft Azure",
+        "platformUrl": "https://azure.microsoft.com",
+        "recommendations": [
+            {
+                "id": "azure_appservice",
+                "name": "Azure App Service",
+                "category": "Compute",
+                "description": "Build, deploy, and scale web apps on a fully managed platform",
+                "url": "https://azure.microsoft.com/en-us/services/app-service/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "App Service Documentation",
+                        "url": "https://docs.microsoft.com/en-us/azure/app-service/"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "JS",
+                        "details": {
+                            "loc": 19655.0,
+                            "label": "JavaScript"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "azure_containerapps",
+                "name": "Azure Container Apps",
+                "category": "Container",
+                "description": "Build and deploy fully managed, cloud- native apps and microservices using serverless containers",
+                "url": "https://azure.microsoft.com/en-us/products/container-apps",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Quickstart: Deploy your first container app with containerapp up",
+                        "url": "https://learn.microsoft.com/en-us/azure/container-apps/get-started?ocid=AID3042118&tabs=bash"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "JS",
+                        "details": {
+                            "loc": 19655.0,
+                            "label": "JavaScript"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "azure_containers",
+                "name": "Azure Kubernetes Service (AKS)",
+                "category": "Container",
+                "description": "Highly available, secure, and fully managed Kubernetes service",
+                "url": "https://azure.microsoft.com/en-us/services/kubernetes-service/",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Azure Kubernetes Service (AKS) documentation",
+                        "url": "https://docs.microsoft.com/en-us/azure/aks/"
+                    }
+                ],
+                "considerations": "The applicability of this recommendation will depend on your organization's container strategy, and which target is recommended as part of this strategy: Virtual machines, Individual containers, Kubernetes clusters, etc. Your container strategy will also inform how processes and people impact the technology choices, if for example a DevOps strategy or a Microservices strategy exists.",
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "JS",
+                        "details": {
+                            "loc": 19655.0,
+                            "label": "JavaScript"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "azure_openshift",
+                "name": "Azure Red Hat OpenShift",
+                "category": "Container",
+                "description": "Build, deploy, and scale apps on OpenShift with confidence. Azure Red Hat OpenShift provides highly available, fully managed OpenShift clusters on demand, monitored and operated jointly by Microsoft and Red Hat. Kubernetes is at the core of Red Hat OpenShift. OpenShift brings added-value features to complement Kubernetes, making it a turnkey container platform as a service (PaaS) with a significantly improved developer and operator experience.",
+                "url": "https://azure.microsoft.com/en-us/products/openshift",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Intro to Azure Red Hat OpenShift",
+                        "url": "https://learn.microsoft.com/en-us/azure/openshift/intro-openshift"
+                    }
+                ],
+                "considerations": "The applicability of this recommendation will depend on your organization's container strategy, and which target is recommended as part of this strategy: Virtual machines, Individual containers, Kubernetes clusters, etc. Your container strategy will also inform how processes and people impact the technology choices, if for example a DevOps strategy or a Microservices strategy exists.",
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "JS",
+                        "details": {
+                            "loc": 19655.0,
+                            "label": "JavaScript"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "platformId": "gcp",
+        "platformName": "Google Cloud",
+        "platformUrl": "https://cloud.google.com",
+        "recommendations": [
+            {
+                "id": "gcp_cloudrun",
+                "name": "Cloud Run",
+                "category": "Compute",
+                "description": "Develop and deploy highly scalable containerized applications on a fully managed serverless platform.",
+                "url": "https://cloud.google.com/run",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Cloud Run Documentation",
+                        "url": "https://cloud.google.com/run#section-5"
+                    }
+                ],
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "JS",
+                        "details": {
+                            "loc": 19655.0,
+                            "label": "JavaScript"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "gcp_containers",
+                "name": "Google Kubernetes Engine (GKE Autopilot)",
+                "category": "Container",
+                "description": "GKE Autopilot mode is a hands-off, fully managed solution that manages your entire cluster\u2019s infrastructure without worrying about configuring and monitoring nodes, while still delivering a complete Kubernetes experience.",
+                "url": "https://cloud.google.com/kubernetes-engine",
+                "documentation": [
+                    {
+                        "type": "General",
+                        "title": "Google Kubernetes Engine documentation",
+                        "url": "https://cloud.google.com/kubernetes-engine/docs/concepts/autopilot-overview"
+                    }
+                ],
+                "considerations": "The applicability of this recommendation will depend on your organization's container strategy, and which target is recommended as part of this strategy: Virtual machines, Individual containers, Kubernetes clusters, etc. Your container strategy will also inform how processes and people impact the technology choices, if for example a DevOps strategy or a Microservices strategy exists.",
+                "triggers": [
+                    {
+                        "type": "technology",
+                        "ruleId": "JS",
+                        "details": {
+                            "loc": 19655.0,
+                            "label": "JavaScript"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]

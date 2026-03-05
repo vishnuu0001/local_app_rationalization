@@ -1,0 +1,669 @@
+{
+    "snapshotLabel": "Swift Apps for Health Scores_JetBrains",
+    "snapshotDate": 1585540800000,
+    "applicationCodeLines": null,
+    "applicationFiles": 157.0,
+    "thirdPartyCodeLines": null,
+    "thirdPartyFiles": 93.0,
+    "thirdParties": [
+        {
+            "id": 23920,
+            "componentId": "gradle/gradle",
+            "name": "gradle/gradle",
+            "version": "REL_3.3-rc-1",
+            "release": 1481999725000,
+            "languages": "groovy",
+            "lifeSpan": "Active",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "v9.0.0",
+            "lastRelease": 1753952977000,
+            "nbVersionPreviousYear": 54,
+            "numberOfCodeLines": 8.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 28696,
+            "componentId": "grails/grails-core",
+            "name": "grails/grails-core",
+            "version": "v2.4.0.M1",
+            "release": 1393866017000,
+            "languages": "html",
+            "lifeSpan": "Active",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "v5.3.3",
+            "lastRelease": 1689069903000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": -1.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "grails",
+                "product": "grails-core",
+                "version": "v2.4.0.M1",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2019-12728",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-12728",
+                        "description": "Grails before 3.3.10 used cleartext HTTP to resolve the SDKMan notification service. NOTE: users' apps were not resolving dependencies over cleartext HTTP.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 8.1,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:grails:grails",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2023-46131",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-46131",
+                        "description": "Grails is a framework used to build web applications with the Groovy programming language. A specially crafted web request can lead to a JVM crash or denial of service. Any Grails framework application using Grails data binding is vulnerable. This issue has been patched in version 3.3.17, 4.1.3, 5.3.4, 6.1.0.\n",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 6.5,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:grails:grails",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "v6.0.0-M1",
+            "safestVersion": "v6.0.0-M1"
+        },
+        {
+            "id": 121615,
+            "componentId": "com.github.peterzeller:java-smallcheck",
+            "name": "com.github.peterzeller:java-smallcheck",
+            "version": "0.0.1",
+            "release": 1495362240000,
+            "languages": "java",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "0.0.4",
+            "lastRelease": 1527669780000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 5.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 121618,
+            "componentId": "frankiesardo/auto-parcel",
+            "name": "frankiesardo/auto-parcel",
+            "version": "v0.2",
+            "release": 1401923235000,
+            "languages": "clojure",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "v1.0.3",
+            "lastRelease": 1464716516000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 20.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 121619,
+            "componentId": "JetBrains/kotlin-examples",
+            "name": "JetBrains/kotlin-examples",
+            "languages": "kotlin",
+            "origin": "Scan",
+            "licenses": [],
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 1440.0,
+            "numberOfFiles": 85.0,
+            "cwes": []
+        },
+        {
+            "id": 125359,
+            "componentId": "NodeLessTest.NET",
+            "name": "NodeLessTest.NET",
+            "version": "1.0.0",
+            "release": 1408468037000,
+            "languages": "javascript",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Scan",
+            "licenses": [
+                {
+                    "id": 7,
+                    "name": "Apache License 2.0",
+                    "compliance": "compliant"
+                }
+            ],
+            "lastVersion": "1.0.0",
+            "lastRelease": 1408468037000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": 118.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 132865,
+            "componentId": "XFVidyo.AndroidLib.NET",
+            "name": "XFVidyo.AndroidLib.NET",
+            "version": "1.0.1",
+            "release": 1569060693000,
+            "languages": "dll",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Scan",
+            "licenses": [],
+            "lastVersion": "1.0.2",
+            "lastRelease": 1569066023000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": -1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 163610,
+            "componentId": "firefox.deb",
+            "name": "firefox.deb",
+            "version": "45.0-1",
+            "release": 1435915685000,
+            "languages": "cpp",
+            "lifeSpan": "PossiblyDeprecated",
+            "origin": "Scan",
+            "licenses": [],
+            "lastVersion": "72.0.2-1",
+            "lastRelease": 1579684561000,
+            "nbVersionPreviousYear": 0,
+            "numberOfCodeLines": -1.0,
+            "numberOfFiles": 1.0,
+            "cwes": []
+        },
+        {
+            "id": 163626,
+            "componentId": "JetBrains/kotlin",
+            "name": "JetBrains/kotlin",
+            "version": "build-1.1.5-dev-108",
+            "release": 1500457506000,
+            "languages": "kotlin",
+            "lifeSpan": "Active",
+            "origin": "Scan",
+            "licenses": [],
+            "lastVersion": "build-2.3.0-dev-3524",
+            "lastRelease": 1755081273000,
+            "nbVersionPreviousYear": 4675,
+            "numberOfCodeLines": 1.0,
+            "numberOfFiles": 1.0,
+            "cve": {
+                "vendor": "JetBrains",
+                "product": "kotlin",
+                "version": "build-1.1.5-dev-108",
+                "vulnerabilities": [
+                    {
+                        "name": "CVE-2019-10101",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-10101",
+                        "description": "JetBrains Kotlin versions before 1.3.30 were resolving artifacts using an http connection during the build process, potentially allowing an MITM attack.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 8.1,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:jetbrains:kotlin",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2019-10102",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-10102",
+                        "description": "JetBrains Ktor framework (created using the Kotlin IDE template) versions before 1.1.0 were resolving artifacts using an http connection during the build process, potentially allowing an MITM attack. This issue was fixed in Kotlin plugin version 1.3.30.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 8.1,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:jetbrains:kotlin",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2019-10103",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2019-10103",
+                        "description": "JetBrains IntelliJ IDEA projects created using the Kotlin (JS Client/JVM Server) IDE Template were resolving Gradle artifacts using an http connection, potentially allowing an MITM attack. This issue, which was fixed in Kotlin plugin version 1.3.30, is similar to CVE-2019-10101.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 8.1,
+                        "criticity": "HIGH",
+                        "cpe": "cpe:/a:jetbrains:kotlin",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2020-29582",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2020-29582",
+                        "description": "In JetBrains Kotlin before 1.4.21, a vulnerable Java API was used for temporary file and folder creation. An attacker was able to read data from such files and list directories due to insecure permissions.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.3,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:jetbrains:kotlin",
+                        "isKev": false
+                    },
+                    {
+                        "name": "CVE-2022-24329",
+                        "link": "https://nvd.nist.gov/vuln/detail/CVE-2022-24329",
+                        "description": "In JetBrains Kotlin before 1.6.0, it was not possible to lock dependencies for Multiplatform Gradle Projects.",
+                        "cweId": null,
+                        "cweLabel": null,
+                        "cvssScore": 5.3,
+                        "criticity": "MEDIUM",
+                        "cpe": "cpe:/a:jetbrains:kotlin",
+                        "isKev": false
+                    }
+                ]
+            },
+            "cwes": [],
+            "saferClosestVersion": "build-1.1.51-release-37",
+            "safestVersion": "build-1.1.51-release-37"
+        }
+    ],
+    "partialComponents": [
+        {
+            "name": "frankiesardo:auto-parcel",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "frankiesardo:icepick",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "frankiesardo:icepick-processor",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": ":annotation-processor",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "com.android.databinding:compiler",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "com.github.Raizlabs.DBFlow:dbflow",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "com.github.Raizlabs.DBFlow:dbflow-core",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "com.google.dagger:dagger",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "com.jakewharton:butterknife-compiler",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "org.jetbrains.anko:anko-appcompat-v7-commons",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "org.jetbrains.anko:anko-common",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "org.jetbrains.anko:anko-sdk25",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "org.jetbrains.kotlin:kotlin-reflect",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "org.jetbrains.kotlin:kotlin-stdlib",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "org.jetbrains.kotlin:kotlin-stdlib-jre7",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "org.jetbrains.kotlin:kotlin-stdlib-jre8",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "org.jetbrains.kotlin:kotlin-stdlib-js",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "org.jetbrains.kotlin:kotlin-test-js",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "org.springframework.boot:spring-boot-starter-web",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": ":SharedCode",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": ":lib",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": ":library",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "com.github.Raizlabs.DBFlow:dbflow-kotlinextensions",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "com.github.Raizlabs.DBFlow:dbflow-processor",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "com.google.dagger:dagger-compiler",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "com.jakewharton:butterknife",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                ""
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "com.android.support:recyclerview-v7",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                "26.1.0"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "com.github.yanex:takenoko",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                "0.1"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "com.android.support:cardview-v7",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                "25.3.1"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "com.android.support.constraint:constraint-layout",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                "1.0.2"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "com.android.support:appcompat-v7",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                "26.1.0"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        },
+        {
+            "name": "com.android.support:support-v4",
+            "technology": "Java",
+            "type": "",
+            "versions": [
+                "23.4.0"
+            ],
+            "license": "",
+            "editor": "",
+            "description": "",
+            "dependencyLevel": null
+        }
+    ]
+}

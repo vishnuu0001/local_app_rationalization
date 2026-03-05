@@ -1,0 +1,259 @@
+{
+    "id": 49,
+    "name": "Algorithmic Trading",
+    "domains": [
+        {
+            "id": 257,
+            "name": "System Integrator Beta"
+        },
+        {
+            "id": 256,
+            "name": "Corporate Systems & Finance"
+        },
+        {
+            "id": 12955,
+            "name": "Enterprise Apps"
+        },
+        {
+            "id": 12909,
+            "name": "Portfolio Company Alpha"
+        }
+    ],
+    "metrics": [
+        {
+            "snapshotLabel": "APM Campaign_Algorithmic Trading",
+            "snapshotDate": 1489464000000,
+            "softwareAgility": 0.7036458253860474,
+            "softwareAgilityAdded": 0.7036458253860474,
+            "softwareElegance": 0.6365094184875488,
+            "softwareEleganceAdded": 0.6365094184875488,
+            "softwareResiliency": 0.7561113834381104,
+            "softwareResiliencyAdded": 0.7561113834381104,
+            "softwareHealth": 0.6987555424372355,
+            "openSourceSafety": 1.0,
+            "openSourceLicense": 1.0,
+            "openSourceObsolescence": null,
+            "openSourceCVE": 1.0,
+            "businessImpact": 0.2563451776649746,
+            "roarIndex": 0.06999647605062205,
+            "backFiredFP": 11265.0,
+            "backFiredFPAdded": 11260.0,
+            "technicalDebt": 357066.1377515793,
+            "maintenanceRecordedFTE": 3.5,
+            "maintenanceRecommendedFTE": 7.077980869694849,
+            "greenIndex": null,
+            "greenIndexScan": null,
+            "greenIndexSurvey": null,
+            "greenOccurrences": null,
+            "greenEffort": null,
+            "greenDetail": [
+                {
+                    "technology": "Cobol",
+                    "greenIndexScan": 0.0,
+                    "greenIndexDetails": null
+                }
+            ],
+            "totalLinesOfCode": 619325,
+            "totalLinesOfCodeAdded": 619325,
+            "totalLinesOfCodeModified": 0,
+            "totalFiles": 1117,
+            "totalFilesAdded": 1117,
+            "totalFilesModified": 0,
+            "customIndicators": [
+                {
+                    "metricId": 10023356,
+                    "value": "0.06060606060606061"
+                },
+                {
+                    "metricId": 10006001,
+                    "value": "0.4166666666666667"
+                },
+                {
+                    "metricId": 10006305,
+                    "value": null
+                },
+                {
+                    "metricId": 10013600,
+                    "value": null
+                },
+                {
+                    "metricId": 10006302,
+                    "value": null
+                },
+                {
+                    "metricId": 10006301,
+                    "value": null
+                },
+                {
+                    "metricId": 10016304,
+                    "value": null
+                }
+            ],
+            "technologies": [
+                {
+                    "technology": "Cobol",
+                    "totalLinesOfCode": 619325,
+                    "totalFiles": 1117,
+                    "softwareAgility": 0.7036458253860474,
+                    "softwareElegance": 0.6365094184875488,
+                    "softwareResiliency": 0.7561113834381104,
+                    "softwareHealth": 0.6987555424372355,
+                    "softwareAgilityDetail": {
+                        "highLinesOfCode": 172105,
+                        "mediumLinesOfCode": 430712,
+                        "lowLinesOfCode": 16508
+                    },
+                    "softwareEleganceDetail": {
+                        "highLinesOfCode": 292798,
+                        "mediumLinesOfCode": 119197,
+                        "lowLinesOfCode": 207330
+                    },
+                    "softwareResiliencyDetail": {
+                        "highLinesOfCode": 317561,
+                        "mediumLinesOfCode": 267380,
+                        "lowLinesOfCode": 34384
+                    },
+                    "softwareHealthDetail": {
+                        "highLinesOfCode": 260821,
+                        "mediumLinesOfCode": 272429,
+                        "lowLinesOfCode": 86074
+                    }
+                }
+            ],
+            "components": []
+        }
+    ],
+    "surveys": [
+        {
+            "id": 371,
+            "ref": "CAST_MAINT",
+            "name": "Software Maintenance Estimate",
+            "questions": [
+                {
+                    "label": "What is the average skill level of the development team on this type of application?",
+                    "value": "< 2 months",
+                    "questionId": 1000015,
+                    "choiceId": 1000066
+                },
+                {
+                    "label": "What percentage of the development effort has been spent on maintenance in the last 12 months?",
+                    "value": "50",
+                    "questionId": 1000012
+                },
+                {
+                    "label": "What is the CMMI level of the organization?",
+                    "value": "Level 2",
+                    "questionId": 1000032,
+                    "choiceId": 1000256
+                },
+                {
+                    "label": "What is the percentage of change to the base code in the last 12 months?",
+                    "value": "15",
+                    "questionId": 1000121
+                },
+                {
+                    "label": "What is the annual staff turnover within the development team?",
+                    "value": "10%",
+                    "questionId": 1000016,
+                    "choiceId": 1000143
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "ref": "CAST_BI",
+            "name": "Business Impact",
+            "questions": [
+                {
+                    "label": "What is the average number of FTE (Full Time Equivalent) resources that have worked on the source code for this application over the last 12 months?",
+                    "shortLabel": "",
+                    "value": "7",
+                    "questionId": 1000011
+                },
+                {
+                    "label": "Is this application aligned with the company's future technology direction?",
+                    "shortLabel": "",
+                    "value": "Yes",
+                    "questionId": 1000009,
+                    "choiceId": 1000042
+                },
+                {
+                    "label": "The number of major releases delivered over the last 12 months for this application?",
+                    "shortLabel": "",
+                    "value": "4 to 6",
+                    "questionId": 1000006,
+                    "choiceId": 1000453
+                },
+                {
+                    "label": "Could failure of this application lead to loss of customer confidence? Please define the level of impact.",
+                    "value": "Medium",
+                    "questionId": 1000022,
+                    "choiceId": 1000221
+                },
+                {
+                    "label": "Could failure of this application lead to harm of the company's public image? Please define the level of impact.",
+                    "value": "Medium",
+                    "questionId": 1000021,
+                    "choiceId": 1000001
+                },
+                {
+                    "label": "Could failure of this application lead to loss of revenue or business opportunity? Please define the level of impact.",
+                    "value": "High",
+                    "questionId": 1000020,
+                    "choiceId": 1000408
+                },
+                {
+                    "label": "Could failure of this application lead to disruption? Please define the level of impact.",
+                    "value": "Medium",
+                    "questionId": 1000019,
+                    "choiceId": 1000193
+                },
+                {
+                    "label": "What is the approximate number of end users for this application?",
+                    "shortLabel": "",
+                    "value": "Less than 100",
+                    "questionId": 1000018,
+                    "choiceId": 1000395
+                },
+                {
+                    "label": "Does the application serve internal or external users?",
+                    "value": "Internal users or business processes",
+                    "questionId": 1000017,
+                    "choiceId": 1000204
+                }
+            ]
+        },
+        {
+            "id": 373,
+            "ref": "CAST_APP",
+            "name": "Application Properties",
+            "questions": [
+                {
+                    "label": "Is this application a custom application or a Commercial Off The Shelf product?",
+                    "shortLabel": "",
+                    "value": "Custom Application",
+                    "questionId": 1000427,
+                    "choiceId": 1000529
+                },
+                {
+                    "label": "What is the application type?",
+                    "shortLabel": "",
+                    "value": "Algorithmic Trading",
+                    "questionId": 1000004,
+                    "choiceId": 1000424
+                },
+                {
+                    "label": "Application Owner's name",
+                    "value": "Alexandra Szynkarski",
+                    "questionId": 1000002
+                },
+                {
+                    "label": "In what year was this application first put into production?",
+                    "shortLabel": "",
+                    "value": "2014",
+                    "questionId": 1000033
+                }
+            ]
+        }
+    ]
+}
