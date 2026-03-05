@@ -38,10 +38,29 @@ class BusinessCapabilityService:
             total_count = query.count()
             paginated_apps = query.paginate(page=page, per_page=per_page, error_out=False)
 
+            # Build a lookup of IndustryData by app_id for application_type and capabilities
+            industry_map = {}
+            industry_rows = db.session.query(
+                IndustryData.app_id,
+                IndustryData.application_type,
+                IndustryData.capabilities
+            ).all()
+            for row in industry_rows:
+                industry_map[row.app_id] = row
+
             for corent_app in paginated_apps.items:
-                classification = db.session.query(ApplicationClassification).filter(
-                    ApplicationClassification.app_id == corent_app.app_id
-                ).first()
+                industry = industry_map.get(corent_app.app_id)
+
+                # Fall back to ApplicationClassification if IndustryData not available
+                if not industry:
+                    classification = db.session.query(ApplicationClassification).filter(
+                        ApplicationClassification.app_id == corent_app.app_id
+                    ).first()
+                    app_type = classification.application_type if classification else 'N/A'
+                    capability = classification.capabilities if classification else 'Unclassified'
+                else:
+                    app_type = industry.application_type or 'N/A'
+                    capability = industry.capabilities or 'Unclassified'
 
                 applications.append({
                     'app_id': corent_app.app_id,
@@ -49,9 +68,9 @@ class BusinessCapabilityService:
                     'business_owner': corent_app.business_owner or 'Unknown',
                     'architecture_type': corent_app.architecture_type or 'N/A',
                     'platform_host': corent_app.platform_host or 'N/A',
-                    'application_type': classification.application_type if classification else 'N/A',
+                    'application_type': app_type,
                     'install_type': corent_app.install_type or 'N/A',
-                    'capability': classification.capabilities if classification else 'Unclassified'
+                    'capability': capability
                 })
         else:
             industry_query = db.session.query(IndustryData).order_by(IndustryData.app_name)
@@ -270,21 +289,21 @@ class BusinessCapabilityService:
         """
         from app import db
         
-        # Get complete mapping
+        # Get complete mapping — join CorentData with IndustryData for app_type & capabilities
         query = db.session.query(
             CorentData.app_id,
             CorentData.app_name,
             CorentData.business_owner,
             CorentData.architecture_type,
             CorentData.platform_host,
-            ApplicationClassification.application_type,
+            IndustryData.application_type,
             CorentData.install_type,
-            ApplicationClassification.capabilities
+            IndustryData.capabilities
         ).outerjoin(
-            ApplicationClassification,
-            CorentData.app_id == ApplicationClassification.app_id
+            IndustryData,
+            CorentData.app_id == IndustryData.app_id
         ).order_by(
-            ApplicationClassification.capabilities,
+            IndustryData.capabilities,
             CorentData.app_name
         ).all()
         
