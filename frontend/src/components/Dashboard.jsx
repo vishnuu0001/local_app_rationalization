@@ -100,14 +100,6 @@ const Dashboard = () => {
                 onClick={() => setSelectedCard('riskApps')}
                 isSelected={selectedCard === 'riskApps'}
               />
-              <SummaryCard
-                title="Maintenance"
-                value={`€${(summary.estimated_annual_maintenance / 1000).toFixed(0)}K`}
-                icon="💰"
-                color="purple"
-                onClick={() => setSelectedCard('maintenance')}
-                isSelected={selectedCard === 'maintenance'}
-              />
             </div>
 
             {/* Detailed Card View */}
@@ -119,7 +111,6 @@ const Dashboard = () => {
                     {selectedCard === 'servers' && '🖥️ Servers Details'}
                     {selectedCard === 'cloudready' && '☁️ Cloud Readiness Details'}
                     {selectedCard === 'riskApps' && '⚠️ High-Risk Applications'}
-                    {selectedCard === 'maintenance' && '💰 Maintenance Cost Breakdown'}
                   </h3>
                   <button
                     onClick={() => setSelectedCard(null)}
@@ -238,47 +229,6 @@ const Dashboard = () => {
                   </div>
                 )}
 
-                {selectedCard === 'maintenance' && (
-                  <div>
-                    <h4 className="font-bold text-gray-900 mb-4">💰 Maintenance Cost Breakdown</h4>
-                    <div className="grid grid-cols-2 gap-4 mb-6">
-                      <div className="bg-white p-6 rounded border border-gray-200">
-                        <p className="text-sm text-gray-600">Total Annual Maintenance</p>
-                        <p className="text-4xl font-bold text-blue-600">€{(summary.estimated_annual_maintenance / 1000).toFixed(0)}K</p>
-                      </div>
-                      <div className="bg-white p-6 rounded border border-gray-200">
-                        <p className="text-sm text-gray-600">Per Application (Average)</p>
-                        <p className="text-4xl font-bold text-indigo-600">€{Math.round(summary.estimated_annual_maintenance / summary.total_applications).toLocaleString()}</p>
-                      </div>
-                    </div>
-                    <div className="bg-white p-4 rounded border border-gray-200">
-                      <p className="text-sm text-gray-600 mb-4"><strong>Cost Distribution by Risk Level:</strong></p>
-                      <div className="space-y-3">
-                        <div className="flex items-center justify-between">
-                          <span className="text-sm font-semibold text-gray-700">High-Risk Apps ({summary.high_risk_applications})</span>
-                          <div className="flex-1 mx-4 bg-gray-300 rounded-full h-2">
-                            <div className="bg-red-500 h-2 rounded-full" style={{width: '45%'}}></div>
-                          </div>
-                          <span className="text-sm font-bold text-red-600">45%</span>
-                        </div>
-                        <div className="flex items-center justify-between">
-                          <span className="text-sm font-semibold text-gray-700">Medium-Risk Apps</span>
-                          <div className="flex-1 mx-4 bg-gray-300 rounded-full h-2">
-                            <div className="bg-amber-500 h-2 rounded-full" style={{width: '35%'}}></div>
-                          </div>
-                          <span className="text-sm font-bold text-amber-600">35%</span>
-                        </div>
-                        <div className="flex items-center justify-between">
-                          <span className="text-sm font-semibold text-gray-700">Low-Risk Apps</span>
-                          <div className="flex-1 mx-4 bg-gray-300 rounded-full h-2">
-                            <div className="bg-emerald-500 h-2 rounded-full" style={{width: '20%'}}></div>
-                          </div>
-                          <span className="text-sm font-bold text-emerald-600">20%</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                )}
               </div>
             )}
 
