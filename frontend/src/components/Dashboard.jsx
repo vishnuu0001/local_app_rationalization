@@ -63,7 +63,8 @@ const Dashboard = () => {
       {/* Header Section */}
       <div className="border-b border-gray-200 bg-gradient-to-r from-slate-50 to-gray-50 px-12 py-10 relative">
         <h1 className="text-3xl font-bold text-gray-900">Assessment Dashboard</h1>
-        <p className="text-gray-600 mt-3">Comprehensive infrastructure and application analysis</p>
+        <p className="text-gray-600 mt-1 text-base font-semibold">Assessment Dashboard</p>
+        <p className="text-gray-500 mt-1 text-sm">Comprehensive Infrastructure &amp; Application Analysis</p>
         <button
           onClick={handleReset}
           disabled={resetting}
