@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import EmptyState from './EmptyState';
 import { getDashboardData } from '../services/api';
+import apiClient from '../services/api';
 
 const Dashboard = () => {
   const [activeTab, setActiveTab] = useState('overview');
@@ -8,10 +9,25 @@ const Dashboard = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [selectedCard, setSelectedCard] = useState(null);
+  const [resetting, setResetting] = useState(false);
 
   useEffect(() => {
     fetchDashboardData();
   }, []);
+
+  const handleReset = async () => {
+    if (!window.confirm('Reset all data? This will clear the entire dashboard back to zero.')) return;
+    try {
+      setResetting(true);
+      await apiClient.post('/reset');
+      sessionStorage.removeItem('app_reset_done');
+      await fetchDashboardData();
+    } catch (err) {
+      console.error('Reset failed:', err);
+    } finally {
+      setResetting(false);
+    }
+  };
 
   const fetchDashboardData = async () => {
     try {
@@ -45,9 +61,33 @@ const Dashboard = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Header Section */}
-      <div className="border-b border-gray-200 bg-gradient-to-r from-slate-50 to-gray-50 px-12 py-10">
+      <div className="border-b border-gray-200 bg-gradient-to-r from-slate-50 to-gray-50 px-12 py-10 relative">
         <h1 className="text-3xl font-bold text-gray-900">Assessment Dashboard</h1>
         <p className="text-gray-600 mt-3">Comprehensive infrastructure and application analysis</p>
+        <button
+          onClick={handleReset}
+          disabled={resetting}
+          title="Reset all data to zero"
+          className="absolute top-4 right-6 inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-red-600 bg-white border border-red-300 rounded-md hover:bg-red-50 hover:border-red-400 disabled:opacity-50 disabled:cursor-not-allowed transition-all shadow-sm"
+        >
+          {resetting ? (
+            <>
+              <svg className="animate-spin h-3 w-3" viewBox="0 0 24 24" fill="none">
+                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/>
+                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"/>
+              </svg>
+              Resetting...
+            </>
+          ) : (
+            <>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <polyline points="1 4 1 10 7 10"/>
+                <path d="M3.51 15a9 9 0 1 0 .49-4.95"/>
+              </svg>
+              Reset
+            </>
+          )}
+        </button>
       </div>
 
       {/* Content Section */}
