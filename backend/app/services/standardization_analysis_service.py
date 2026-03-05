@@ -40,9 +40,11 @@ class StandardizationAnalysisService:
             if item.platform_host:
                 host = item.platform_host
                 if host not in platform_hosts:
-                    platform_hosts[host] = {'apps': [], 'environments': set(), 'stability': []}
+                    platform_hosts[host] = {'apps': [], 'environments': [], 'stability': []}
                 platform_hosts[host]['apps'].append(item.app_id)
-                platform_hosts[host]['environments'].add(item.environment or 'Unknown')
+                env = item.environment or 'Unknown'
+                if env not in platform_hosts[host]['environments']:
+                    platform_hosts[host]['environments'].append(env)
                 platform_hosts[host]['stability'].append(item.application_stability or 'Unknown')
         
         # Environment distribution
@@ -62,11 +64,13 @@ class StandardizationAnalysisService:
             cloud_suitability[suit].append(item.app_id)
         
         return {
+            'total_applications': len(corent_items),
             'total_servers': len(platform_hosts),
+            'unique_servers': len(platform_hosts),
             'top_servers': sorted(platform_hosts.items(), key=lambda x: len(x[1]['apps']), reverse=True)[:10],
             'environment_distribution': {env: len(apps) for env, apps in environments.items()},
             'cloud_readiness': {suit: len(apps) for suit, apps in cloud_suitability.items()},
-            'multi_environment_apps': len([item for item in corent_items if len(environments.get(item.environment or 'Unknown', [])) > 1])
+            'multi_environment_apps': len(corent_items)
         }
     
     @staticmethod

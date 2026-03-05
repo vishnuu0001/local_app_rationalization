@@ -284,16 +284,23 @@ def load_excel_data():
 
 @bp.route('/standardization-analysis/clear', methods=['DELETE'])
 def clear_standardization_data():
-    """Clear CorentData (resets Standardization page and Dashboard infrastructure stats)"""
+    """Clear CorentData and CASTData used by the Standardization page."""
     try:
         from app.models.corent_data import CorentData
-        rows = CorentData.query.delete()
+        from app.models.cast import CASTData
+
+        corent_rows = CorentData.query.delete()
+        cast_rows = CASTData.query.delete()
         db.session.execute(db.text('DELETE FROM server_application'))
         db.session.commit()
         return jsonify({
             'status': 'success',
             'message': 'Standardization data cleared',
-            'deleted': {'corent_data': rows}
+            'deleted': {
+                'corent_data': corent_rows,
+                'cast_data': cast_rows,
+                'server_application': 'cleared'
+            }
         }), 200
     except Exception as e:
         db.session.rollback()
