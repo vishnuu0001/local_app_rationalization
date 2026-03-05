@@ -13,18 +13,27 @@ load_dotenv(dotenv_path=_env_path, override=False)
 
 db = SQLAlchemy()
 
-# Allowed CORS origins — read once at module load so the after_request hook
-# doesn't need to re-parse the env var on every request.
-_CORS_ALLOWED_ORIGINS = {
-    o.strip()
-    for o in os.getenv(
-        'CORS_ORIGINS',
-        'https://stratapp.org,https://www.stratapp.org,'
-        'http://localhost:3000,http://127.0.0.1:3000,'
-        'http://localhost:3001,http://127.0.0.1:3001',
-    ).split(',')
-    if o.strip()
+# Allowed CORS origins — production domains are ALWAYS included.
+# Any extra origins in the CORS_ORIGINS env var are merged on top.
+_CORS_PRODUCTION_ORIGINS = {
+    'https://stratapp.org',
+    'https://www.stratapp.org',
 }
+_CORS_LOCALHOST_ORIGINS = {
+    'http://localhost:3000',
+    'http://127.0.0.1:3000',
+    'http://localhost:3001',
+    'http://127.0.0.1:3001',
+}
+_CORS_ALLOWED_ORIGINS = (
+    _CORS_PRODUCTION_ORIGINS
+    | _CORS_LOCALHOST_ORIGINS
+    | {
+        o.strip()
+        for o in os.getenv('CORS_ORIGINS', '').split(',')
+        if o.strip() and o.strip() != '*'
+    }
+)
 
 _CORS_ALLOW_HEADERS = (
     'Content-Type, Authorization, Accept, X-Requested-With, Origin, Cache-Control'
@@ -93,11 +102,7 @@ def create_app(config_name=None):
     #  even if one layer fails under IIS / wfastcgi.                      #
     # ------------------------------------------------------------------ #
 
-    # Layer 1: Flask-CORS (handles most cases automatically)
-    cors_origins = os.getenv('CORS_ORIGINS', '')
-    include_localhost_origins = os.getenv('INCLUDE_LOCALHOST_CORS_ORIGINS', 'true').lower() in {
-        '1', 'true', 'yes', 'on'
-    }
+    # Layer 1: Flask-CORS — uses the same authoritative set as layers 2 & 3
     _cors_kwargs = {
         'supports_credentials': False,
         'allow_headers': [
@@ -109,12 +114,9 @@ def create_app(config_name=None):
         'max_age': 600,
         'send_wildcard': False,
     }
+    # Layer 1: Flask-CORS — uses the same authoritative set as layers 2 & 3
     try:
-        resolved_origins = _resolve_cors_origins(cors_origins, include_localhost_origins)
-        if resolved_origins == '*':
-            CORS(app, resources={r"/*": {"origins": "*"}}, **_cors_kwargs)
-        else:
-            CORS(app, resources={r"/*": {"origins": resolved_origins}}, **_cors_kwargs)
+        CORS(app, resources={r"/*": {"origins": list(_CORS_ALLOWED_ORIGINS)}}, **_cors_kwargs)
     except Exception as e:
         app.logger.warning(f"CORS init error ({e}). Falling back to '*'.")
         CORS(app, resources={r"/*": {"origins": "*"}}, **_cors_kwargs)
