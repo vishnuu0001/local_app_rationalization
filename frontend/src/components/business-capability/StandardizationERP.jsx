@@ -1,17 +1,18 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useCallback } from 'react';
 import { TrendingDown, ArrowRight } from 'lucide-react';
 import api from '../../services/api';
 
 const StandardizationERP = () => {
   const [analysisData, setAnalysisData] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [generating, setGenerating] = useState(false);
   const [clearing, setClearing] = useState(false);
 
   const fetchAnalysis = useCallback(async () => {
     try {
       setGenerating(true);
-      const response = await api.get('/api/standardization-analysis');
+      setLoading(true);
+      const response = await api.get('/standardization-analysis');
       if (response.data && response.data.analysis) {
         setAnalysisData(response.data.analysis);
       }
@@ -23,15 +24,13 @@ const StandardizationERP = () => {
     }
   }, []);
 
-  useEffect(() => { fetchAnalysis(); }, [fetchAnalysis]);
-
   const handleGenerate = () => fetchAnalysis();
 
   const handleClear = async () => {
     if (!window.confirm('Clear all standardization (CorentData) data? This will also reset Dashboard infrastructure stats.')) return;
     try {
       setClearing(true);
-      await api.delete('/api/standardization-analysis/clear');
+      await api.delete('/standardization-analysis/clear');
       setAnalysisData(null);
     } catch (err) {
       console.error('Clear failed:', err);
@@ -41,7 +40,7 @@ const StandardizationERP = () => {
   };
 
   if (loading) {
-    return <div className="min-h-screen flex items-center justify-center">Loading analysis...</div>;
+    return <div className="min-h-screen flex items-center justify-center"><svg className="animate-spin h-8 w-8 text-purple-600" viewBox="0 0 24 24" fill="none"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"/></svg></div>;
   }
 
   const infra = analysisData?.infrastructure_analysis || {};

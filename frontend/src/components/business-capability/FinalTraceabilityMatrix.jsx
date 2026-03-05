@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useCallback } from 'react';
 import { GitBranch, CheckCircle, AlertCircle, XCircle, ChevronDown, ChevronUp, Loader } from 'lucide-react';
 import { getTraceabilityMatrix } from '../../services/api';
 import apiClient from '../../services/api';
@@ -6,7 +6,7 @@ import apiClient from '../../services/api';
 const FinalTraceabilityMatrix = () => {
   const [traceabilityData, setTraceabilityData] = useState([]);
   const [summary, setSummary] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [expandedRows, setExpandedRows] = useState(new Set());
   const [filterAction, setFilterAction] = useState('All');
@@ -33,8 +33,6 @@ const FinalTraceabilityMatrix = () => {
       setLoading(false);
     }
   }, []);
-
-  useEffect(() => { fetchTraceabilityMatrix(); }, [fetchTraceabilityMatrix]);
 
   const handleGenerate = () => fetchTraceabilityMatrix();
 

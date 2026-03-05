@@ -1,10 +1,10 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { AlertCircle } from 'lucide-react';
 import apiClient from '../../services/api';
 
 const BusinessCapabilityMapping = () => {
   const [applications, setApplications] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
   const [totalApplications, setTotalApplications] = useState(0);
@@ -14,6 +14,7 @@ const BusinessCapabilityMapping = () => {
   const [viewMode, setViewMode] = useState('mapping'); // 'mapping' or 'analysis'
   const [generating, setGenerating] = useState(false);
   const [clearing, setClearing] = useState(false);
+  const hasFetched = useRef(false);
 
   // Fetch capability mapping data
   const fetchCapabilityMapping = useCallback(async (page) => {
@@ -35,13 +36,16 @@ const BusinessCapabilityMapping = () => {
     }
   }, [perPage]);
 
+  // Only re-fetch when page changes AFTER the user has clicked Generate at least once
   useEffect(() => {
+    if (!hasFetched.current) return;
     if (viewMode === 'mapping') {
       fetchCapabilityMapping(currentPage);
     }
   }, [currentPage, viewMode, fetchCapabilityMapping]);
 
   const handleGenerate = async () => {
+    hasFetched.current = true;
     setGenerating(true);
     if (viewMode === 'mapping') await fetchCapabilityMapping(currentPage);
     setGenerating(false);
