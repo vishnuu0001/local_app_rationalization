@@ -12,6 +12,8 @@ const BusinessCapabilityMapping = () => {
   const [selectedCapability, setSelectedCapability] = useState(null);
   const [capabilityDetails, setCapabilityDetails] = useState(null);
   const [viewMode, setViewMode] = useState('mapping'); // 'mapping' or 'analysis'
+  const [generating, setGenerating] = useState(false);
+  const [clearing, setClearing] = useState(false);
 
   // Fetch capability mapping data
   const fetchCapabilityMapping = useCallback(async (page) => {
@@ -38,6 +40,27 @@ const BusinessCapabilityMapping = () => {
       fetchCapabilityMapping(currentPage);
     }
   }, [currentPage, viewMode, fetchCapabilityMapping]);
+
+  const handleGenerate = async () => {
+    setGenerating(true);
+    if (viewMode === 'mapping') await fetchCapabilityMapping(currentPage);
+    setGenerating(false);
+  };
+
+  const handleClear = async () => {
+    if (!window.confirm('Clear all capability/industry template data? This will reset the capability mapping.')) return;
+    try {
+      setClearing(true);
+      await apiClient.delete('/capability/clear');
+      setApplications([]);
+      setTotalApplications(0);
+      setTotalPages(1);
+    } catch (err) {
+      console.error('Clear failed:', err);
+    } finally {
+      setClearing(false);
+    }
+  };
 
   const handleCapabilityClick = async (capabilityName) => {
     try {
@@ -336,27 +359,53 @@ const BusinessCapabilityMapping = () => {
     <div className="min-h-screen bg-gray-50 p-8">
       <div className="max-w-7xl mx-auto">
         {/* Tab Navigation */}
-        <div className="mb-8 flex gap-4 border-b border-gray-200">
-          <button
-            onClick={() => setViewMode('mapping')}
-            className={`px-6 py-3 font-semibold border-b-2 transition ${
-              viewMode === 'mapping'
-                ? 'border-purple-600 text-purple-600'
-                : 'border-transparent text-gray-600 hover:text-gray-900'
-            }`}
-          >
-            Application Mapping
-          </button>
-          <button
-            onClick={() => setViewMode('analysis')}
-            className={`px-6 py-3 font-semibold border-b-2 transition ${
-              viewMode === 'analysis'
-                ? 'border-purple-600 text-purple-600'
-                : 'border-transparent text-gray-600 hover:text-gray-900'
-            }`}
-          >
-            Capability Analysis
-          </button>
+        <div className="mb-8 flex items-center justify-between border-b border-gray-200">
+          <div className="flex gap-4">
+            <button
+              onClick={() => setViewMode('mapping')}
+              className={`px-6 py-3 font-semibold border-b-2 transition ${
+                viewMode === 'mapping'
+                  ? 'border-purple-600 text-purple-600'
+                  : 'border-transparent text-gray-600 hover:text-gray-900'
+              }`}
+            >
+              Application Mapping
+            </button>
+            <button
+              onClick={() => setViewMode('analysis')}
+              className={`px-6 py-3 font-semibold border-b-2 transition ${
+                viewMode === 'analysis'
+                  ? 'border-purple-600 text-purple-600'
+                  : 'border-transparent text-gray-600 hover:text-gray-900'
+              }`}
+            >
+              Capability Analysis
+            </button>
+          </div>
+          <div className="flex gap-3 pb-2">
+            <button
+              onClick={handleGenerate}
+              disabled={generating || clearing}
+              className="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-white bg-green-600 rounded-lg hover:bg-green-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all shadow-sm"
+            >
+              {generating ? (
+                <><svg className="animate-spin h-4 w-4" viewBox="0 0 24 24" fill="none"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"/></svg> Generating...</>
+              ) : (
+                <><svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg> Generate</>
+              )}
+            </button>
+            <button
+              onClick={handleClear}
+              disabled={generating || clearing}
+              className="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-white bg-red-600 rounded-lg hover:bg-red-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all shadow-sm"
+            >
+              {clearing ? (
+                <><svg className="animate-spin h-4 w-4" viewBox="0 0 24 24" fill="none"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"/></svg> Clearing...</>
+              ) : (
+                <><svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" /></svg> Clear</>
+              )}
+            </button>
+          </div>
         </div>
 
         {viewMode === 'mapping' && (

@@ -303,6 +303,24 @@ def get_statistics():
         }), 500
 
 
+@correlation_bp.route('/traceability/clear', methods=['DELETE'])
+@cross_origin()
+def clear_traceability():
+    """Clear all correlation results and master matrix entries (resets Traceability page)"""
+    try:
+        matrix_deleted = MasterMatrixEntry.query.delete()
+        results_deleted = CorrelationResult.query.delete()
+        db.session.commit()
+        return jsonify({
+            'status': 'success',
+            'message': 'Traceability data cleared',
+            'deleted': {'correlation_results': results_deleted, 'master_matrix_entries': matrix_deleted}
+        }), 200
+    except Exception as e:
+        db.session.rollback()
+        return jsonify({'status': 'error', 'message': str(e)}), 500
+
+
 @correlation_bp.route('/traceability/matrix', methods=['GET'])
 @cross_origin()
 def get_traceability_matrix():

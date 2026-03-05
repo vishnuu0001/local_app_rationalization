@@ -282,6 +282,24 @@ def load_excel_data():
             'message': f'Failed to load Excel data: {str(e)}'
         }), 500
 
+@bp.route('/standardization-analysis/clear', methods=['DELETE'])
+def clear_standardization_data():
+    """Clear CorentData (resets Standardization page and Dashboard infrastructure stats)"""
+    try:
+        from app.models.corent_data import CorentData
+        rows = CorentData.query.delete()
+        db.session.execute(db.text('DELETE FROM server_application'))
+        db.session.commit()
+        return jsonify({
+            'status': 'success',
+            'message': 'Standardization data cleared',
+            'deleted': {'corent_data': rows}
+        }), 200
+    except Exception as e:
+        db.session.rollback()
+        return jsonify({'status': 'error', 'message': str(e)}), 500
+
+
 @bp.route('/standardization-analysis', methods=['GET'])
 def get_standardization_analysis():
     """Get comprehensive standardization and consolidation analysis"""

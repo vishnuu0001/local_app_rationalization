@@ -1,27 +1,44 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { TrendingDown, ArrowRight } from 'lucide-react';
 import api from '../../services/api';
 
 const StandardizationERP = () => {
   const [analysisData, setAnalysisData] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [generating, setGenerating] = useState(false);
+  const [clearing, setClearing] = useState(false);
 
-  useEffect(() => {
-    const fetchAnalysis = async () => {
-      try {
-        const response = await api.get('/api/standardization-analysis');
-        if (response.data && response.data.analysis) {
-          setAnalysisData(response.data.analysis);
-        }
-        setLoading(false);
-      } catch (err) {
-        console.error('Failed to load standardization analysis data:', err);
-        setLoading(false);
+  const fetchAnalysis = useCallback(async () => {
+    try {
+      setGenerating(true);
+      const response = await api.get('/api/standardization-analysis');
+      if (response.data && response.data.analysis) {
+        setAnalysisData(response.data.analysis);
       }
-    };
-
-    fetchAnalysis();
+    } catch (err) {
+      console.error('Failed to load standardization analysis data:', err);
+    } finally {
+      setGenerating(false);
+      setLoading(false);
+    }
   }, []);
+
+  useEffect(() => { fetchAnalysis(); }, [fetchAnalysis]);
+
+  const handleGenerate = () => fetchAnalysis();
+
+  const handleClear = async () => {
+    if (!window.confirm('Clear all standardization (CorentData) data? This will also reset Dashboard infrastructure stats.')) return;
+    try {
+      setClearing(true);
+      await api.delete('/api/standardization-analysis/clear');
+      setAnalysisData(null);
+    } catch (err) {
+      console.error('Clear failed:', err);
+    } finally {
+      setClearing(false);
+    }
+  };
 
   if (loading) {
     return <div className="min-h-screen flex items-center justify-center">Loading analysis...</div>;
@@ -36,11 +53,37 @@ const StandardizationERP = () => {
       {/* Header */}
       <div className="bg-white border-b border-gray-200 shadow-sm">
         <div className="max-w-7xl mx-auto px-6 py-8">
-          <div className="flex items-center gap-3">
-            <TrendingDown size={40} className="text-purple-600" />
-            <div>
-              <h1 className="text-4xl font-bold text-gray-900">Standardization & Consolidation Scenario</h1>
-              <p className="text-gray-600 mt-2">Before and After: Application rationalization and infrastructure consolidation</p>
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <TrendingDown size={40} className="text-purple-600" />
+              <div>
+                <h1 className="text-4xl font-bold text-gray-900">Standardization &amp; Consolidation Scenario</h1>
+                <p className="text-gray-600 mt-2">Before and After: Application rationalization and infrastructure consolidation</p>
+              </div>
+            </div>
+            <div className="flex gap-3">
+              <button
+                onClick={handleGenerate}
+                disabled={generating || clearing}
+                className="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-white bg-green-600 rounded-lg hover:bg-green-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all shadow-sm"
+              >
+                {generating ? (
+                  <><svg className="animate-spin h-4 w-4" viewBox="0 0 24 24" fill="none"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"/></svg> Generating...</>
+                ) : (
+                  <><svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg> Generate</>
+                )}
+              </button>
+              <button
+                onClick={handleClear}
+                disabled={generating || clearing}
+                className="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-white bg-red-600 rounded-lg hover:bg-red-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all shadow-sm"
+              >
+                {clearing ? (
+                  <><svg className="animate-spin h-4 w-4" viewBox="0 0 24 24" fill="none"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"/></svg> Clearing...</>
+                ) : (
+                  <><svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" /></svg> Clear</>
+                )}
+              </button>
             </div>
           </div>
         </div>

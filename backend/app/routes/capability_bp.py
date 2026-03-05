@@ -186,6 +186,26 @@ def debug_capability_details(capability_name):
         }), 500
 
 
+@capability_bp.route('/clear', methods=['DELETE'])
+def clear_capability_data():
+    """Clear IndustryData and IndustryTemplate records (resets Capability Mapping page)"""
+    try:
+        from app import db
+        from app.models.industry_data import IndustryData, IndustryTemplate
+        rows = IndustryData.query.delete()
+        templates = IndustryTemplate.query.delete()
+        db.session.commit()
+        return jsonify({
+            'status': 'success',
+            'message': 'Capability data cleared',
+            'deleted': {'industry_data': rows, 'industry_templates': templates}
+        }), 200
+    except Exception as e:
+        from app import db
+        db.session.rollback()
+        return jsonify({'status': 'error', 'message': str(e)}), 500
+
+
 @capability_bp.route('/export', methods=['GET'])
 def export_capability_mapping():
     """Export complete capability mapping"""
