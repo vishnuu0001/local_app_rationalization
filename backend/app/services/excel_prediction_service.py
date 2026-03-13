@@ -338,61 +338,59 @@ class ExcelPredictionService:
 
             if not candidates:
                 logger.info("[%s] All fields filled by heuristics — skipping LLM", source_label)
-                return updates
-
-            logger.info(
-                "[%s] %d/%d DB rows still have null fields after heuristics — sending to LLM",
-                source_label, len(candidates), len(rows),
-            )
-
-            all_records = [rec for _, rec in candidates]
-            try:
-                batch_results = OllamaService.predict_missing_fields_batch(
-                    all_records, source=llm_source, batch_size=20
+            else:
+                logger.info(
+                    "[%s] %d/%d DB rows still have null fields after heuristics — sending to LLM",
+                    source_label, len(candidates), len(rows),
                 )
-            except Exception as exc:
-                logger.error(
-                    "[%s] Batch prediction error: %s\n%s",
-                    source_label, exc, traceback.format_exc(),
-                )
-                return updates
 
-            model_used = OllamaService.get_selected_model()
+                all_records = [rec for _, rec in candidates]
+                try:
+                    batch_results = OllamaService.predict_missing_fields_batch(
+                        all_records, source=llm_source, batch_size=20
+                    )
 
-            for (row_obj, original_rec), (predictions, pred_cols, confidence_map) in zip(
-                candidates, batch_results
-            ):
-                if not predictions:
-                    continue
+                    model_used = OllamaService.get_selected_model()
 
-                any_updated = False
-                for field_name, predicted_val in predictions.items():
-                    if predicted_val is None:
-                        continue
-                    if not hasattr(row_obj, field_name):
-                        continue
-                    setattr(row_obj, field_name, str(predicted_val))
-                    any_updated = True
-                    row_fills.setdefault(id(row_obj), []).append(field_name)
-                    updates.append({
-                        "run_id":          run_id,
-                        "source":          source_label,
-                        "app_id":          getattr(row_obj, "app_id", None),
-                        "row_index":       row_obj.source_row_index,
-                        "column_name":     field_name,
-                        "original_value":  original_rec.get(field_name),
-                        "predicted_value": str(predicted_val),
-                        "confidence":      confidence_map.get(field_name, 0.75),
-                        "llm_model":       model_used,
-                        "predicted_at":    datetime.utcnow(),
-                    })
+                    for (row_obj, original_rec), (predictions, pred_cols, confidence_map) in zip(
+                        candidates, batch_results
+                    ):
+                        if not predictions:
+                            continue
 
-                if any_updated:
-                    row_obj.last_updated = 'Yes'
-                    row_obj.ai_predicted_columns = list(predictions.keys())
-                    row_obj.ai_confidence = confidence_map
+                        any_updated = False
+                        for field_name, predicted_val in predictions.items():
+                            if predicted_val is None:
+                                continue
+                            if not hasattr(row_obj, field_name):
+                                continue
+                            setattr(row_obj, field_name, str(predicted_val))
+                            any_updated = True
+                            row_fills.setdefault(id(row_obj), []).append(field_name)
+                            updates.append({
+                                "run_id":          run_id,
+                                "source":          source_label,
+                                "app_id":          getattr(row_obj, "app_id", None),
+                                "row_index":       row_obj.source_row_index,
+                                "column_name":     field_name,
+                                "original_value":  original_rec.get(field_name),
+                                "predicted_value": str(predicted_val),
+                                "confidence":      confidence_map.get(field_name, 0.75),
+                                "llm_model":       model_used,
+                                "predicted_at":    datetime.utcnow(),
+                            })
 
-            # ── Step 3c: persist updated_rows summary on every touched row ─
+                        if any_updated:
+                            row_obj.last_updated = 'Yes'
+                            row_obj.ai_confidence = confidence_map
+
+                except Exception as exc:
+                    logger.error(
+                        "[%s] Batch prediction error: %s\n%s",
+                        source_label, exc, traceback.format_exc(),
+                    )
+
+            # ── Step 3c: persist updated_rows + ai_predicted_columns on every touched row ─
             for row_obj in rows:
                 cols = row_fills.get(id(row_obj))
                 if cols:
@@ -400,6 +398,10 @@ class ExcelPredictionService:
                         "app_id":          getattr(row_obj, "app_id", None),
                         "updated_columns": cols,
                     }
+                    # Merge heuristic + LLM fills into ai_predicted_columns
+                    existing_ai = set(row_obj.ai_predicted_columns or [])
+                    existing_ai.update(cols)
+                    row_obj.ai_predicted_columns = list(existing_ai)
 
             db.session.flush()
 
