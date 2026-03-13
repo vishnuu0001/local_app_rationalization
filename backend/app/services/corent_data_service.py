@@ -145,6 +145,8 @@ class CorentDataService:
             dataframe.columns = [str(col).strip() for col in dataframe.columns]
 
             column_mapping = {
+                'APP ID':   'app_id',
+                'APP NAME': 'app_name',
                 'ArchitectureType': 'architecture_type',
                 'BusinessOwner': 'business_owner',
                 'PlatformHost': 'platform_host',
@@ -195,6 +197,10 @@ class CorentDataService:
             }
 
             records_processed = 0
+
+            # Clear existing rows before reload to prevent duplicates
+            db.session.query(CorentData).delete()
+            db.session.flush()
 
             for _, row in dataframe.iterrows():
                 corent_record = CorentData()
