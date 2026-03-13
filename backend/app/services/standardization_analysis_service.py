@@ -41,7 +41,7 @@ class StandardizationAnalysisService:
                 host = item.platform_host
                 if host not in platform_hosts:
                     platform_hosts[host] = {'apps': [], 'environments': [], 'stability': []}
-                platform_hosts[host]['apps'].append(item.app_id)
+                platform_hosts[host]['apps'].append(str(item.id))
                 env = item.environment or 'Unknown'
                 if env not in platform_hosts[host]['environments']:
                     platform_hosts[host]['environments'].append(env)
@@ -53,7 +53,7 @@ class StandardizationAnalysisService:
             env = item.environment or 'Unknown'
             if env not in environments:
                 environments[env] = []
-            environments[env].append(item.app_id)
+            environments[env].append(str(item.id))
         
         # Cloud suitability
         cloud_suitability = {}
@@ -61,7 +61,7 @@ class StandardizationAnalysisService:
             suit = item.cloud_suitability or 'Unknown'
             if suit not in cloud_suitability:
                 cloud_suitability[suit] = []
-            cloud_suitability[suit].append(item.app_id)
+            cloud_suitability[suit].append(str(item.id))
         
         return {
             'total_applications': len(corent_items),
@@ -138,8 +138,8 @@ class StandardizationAnalysisService:
                         'unstable_apps': len(unstable_apps),
                         'potential_consolidation': len(unstable_apps),
                         'reason': 'Consolidate unstable applications onto stable platform',
-                        'apps_to_consolidate': [a.app_id for a in unstable_apps],
-                        'target_platform': [a.app_id for a in stable_apps][:1]
+                        'apps_to_consolidate': [str(a.id) for a in unstable_apps],
+                        'target_platform': [str(a.id) for a in stable_apps][:1]
                     })
         
         return sorted(opportunities, key=lambda x: x['potential_consolidation'], reverse=True)[:5]
@@ -194,7 +194,7 @@ class StandardizationAnalysisService:
                 'apps_affected': len(cloud_ready_apps),
                 'estimated_savings': f'EUR {len(cloud_ready_apps) * 15000}/year in infrastructure',
                 'timeline': '6-12 months',
-                'apps_list': [a.app_id for a in cloud_ready_apps][:5]
+                'apps_list': [str(a.id) for a in cloud_ready_apps][:5]
             })
         
         # 2. Legacy Application Modernization
@@ -209,7 +209,7 @@ class StandardizationAnalysisService:
                 'apps_affected': len(legacy_apps),
                 'estimated_savings': f'EUR {len(legacy_apps) * 8000}/year in reduced maintenance',
                 'timeline': '18-24 months',
-                'apps_list': [a.app_id for a in legacy_apps][:5]
+                'apps_list': [str(a.id) for a in legacy_apps][:5]
             })
         
         # 3. Database Consolidation
@@ -255,7 +255,7 @@ class StandardizationAnalysisService:
                 'apps_affected': len(unstable_apps),
                 'estimated_savings': f'EUR {len(unstable_apps) * 5000}/year in reduced incident management',
                 'timeline': '9-12 months',
-                'apps_list': [a.app_id for a in unstable_apps][:5]
+                'apps_list': [str(a.id) for a in unstable_apps][:5]
             })
         
         # 6. Code Quality Improvements

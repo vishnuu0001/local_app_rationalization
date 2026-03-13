@@ -115,7 +115,7 @@ class CASTDataService:
                 if not cast_record:
                     cast_record = CASTData(
                         app_id=app_id,
-                        app_name=data_dict.get('app_name', '')
+                        app_name=data_dict.get('app_name') or app_id
                     )
                     db.session.add(cast_record)
                 
@@ -123,6 +123,10 @@ class CASTDataService:
                 for key, value in data_dict.items():
                     if key != 'id' and hasattr(cast_record, key) and value is not None:
                         setattr(cast_record, key, value)
+
+                # Ensure app_name is never null
+                if not cast_record.app_name:
+                    cast_record.app_name = app_id
                 
                 records_processed += 1
             
@@ -214,28 +218,36 @@ class CASTDataService:
 
             records_processed = 0
 
-            for _, row in dataframe.iterrows():
-                app_id_raw = row.get('APP ID')
-                if pd.isna(app_id_raw) or not str(app_id_raw).strip():
-                    continue
+            with db.session.no_autoflush:
+                for _, row in dataframe.iterrows():
+                    app_id_raw = row.get('APP ID')
+                    if pd.isna(app_id_raw) or not str(app_id_raw).strip():
+                        continue
 
-                app_id = str(app_id_raw).strip()
-                cast_record = CASTData.query.filter_by(app_id=app_id).first()
+                    app_id = str(app_id_raw).strip()
+                    cast_record = CASTData.query.filter_by(app_id=app_id).first()
 
-                if not cast_record:
-                    cast_record = CASTData(app_id=app_id, app_name='')
-                    db.session.add(cast_record)
+                    if not cast_record:
+                        cast_record = CASTData(app_id=app_id, app_name=app_id)
+                        db.session.add(cast_record)
 
-                for source_col, target_field in column_mapping.items():
-                    if source_col in dataframe.columns:
-                        value = row.get(source_col)
-                        if pd.isna(value):
-                            value = None
-                        if isinstance(value, str):
-                            value = value.strip() if value else None
-                        setattr(cast_record, target_field, value)
+                    for source_col, target_field in column_mapping.items():
+                        if source_col in dataframe.columns:
+                            value = row.get(source_col)
+                            if pd.isna(value):
+                                value = None
+                            if isinstance(value, str):
+                                value = value.strip() if value else None
+                            # Never overwrite app_name with None — keep existing or use app_id
+                            if target_field == 'app_name' and not value:
+                                continue
+                            setattr(cast_record, target_field, value)
 
-                records_processed += 1
+                    # Final guard: ensure app_name is never null
+                    if not cast_record.app_name:
+                        cast_record.app_name = app_id
+
+                    records_processed += 1
 
             db.session.commit()
             logger.info(f"[CASTData] Loaded {records_processed} records from file: {file_path}")

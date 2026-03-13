@@ -1,6 +1,7 @@
 """Service for handling Industry Templates data extraction and storage"""
 
 import logging
+import re
 import pandas as pd
 from datetime import datetime
 from app import db
@@ -23,6 +24,50 @@ class IndustryDataService:
         'Install type': 'install_type',
         'Capabilities': 'capabilities',
     }
+
+    # ------------------------------------------------------------------ #
+    # Pattern-based name / id inference (no LLM required)                 #
+    # ------------------------------------------------------------------ #
+
+    @staticmethod
+    def _infer_app_name(app_id: str, row_index: int) -> str:
+        """
+        Derive a human-readable application name from its ID using pattern recognition.
+
+        Examples
+        --------
+        "HRMS_001"      -> "Hrms 001"
+        "APP-CRM-042"   -> "App Crm 042"
+        "SYS.PAYROLL.3" -> "Sys Payroll 3"
+        "           "   -> "Application-22"
+        """
+        if not app_id or not str(app_id).strip():
+            return f"Application-{row_index}"
+        cleaned = str(app_id).strip()
+        # Replace common separators with a space
+        readable = re.sub(r"[_\-\.]+", " ", cleaned)
+        # Insert a space before a run of digits that follows letters, e.g. "APP001" -> "APP 001"
+        readable = re.sub(r"([A-Za-z])(\d)", r"\1 \2", readable)
+        # Insert a space before an uppercase letter following a lowercase, e.g. "MyApp" -> "My App"
+        readable = re.sub(r"([a-z])([A-Z])", r"\1 \2", readable)
+        readable = readable.strip().title()
+        return readable if readable else f"Application-{row_index}"
+
+    @staticmethod
+    def _infer_app_id(row_index: int, row_data: dict) -> str:
+        """
+        Generate a synthetic APP ID for rows that have no app_id whatsoever.
+        Uses the row index plus any available distinguishing field.
+        """
+        hint = (
+            str(row_data.get("app_name") or "")
+            or str(row_data.get("platform_host") or "")
+            or str(row_data.get("business_owner") or "")
+        )
+        if hint:
+            slug = re.sub(r"[^A-Za-z0-9]", "", hint)[:8].upper()
+            return f"GEN-{slug}-{row_index:04d}"
+        return f"GEN-{row_index:04d}"
     
     @staticmethod
     def extract_from_excel(file_path, filename):
@@ -89,7 +134,8 @@ class IndustryDataService:
             template_id = template.id
             
             # Process and insert data rows
-            records_created = 0
+            records_created  = 0
+            records_predicted = 0   # rows where at least one field was inferred
             errors = []
             
             for idx, row in df.iterrows():
@@ -109,19 +155,46 @@ class IndustryDataService:
                             logger.warning(f"[IndustryData] Column '{excel_col}' not found in row {idx + 2}")
                             data[field_name] = None
                     
-                    logger.debug(f"[IndustryData] Row {idx + 2} data: {data}")
-                    
-                    # Validate required fields
-                    app_id = data.get('app_id')
+                    # ── Recover missing app_id / app_name via pattern inference ──
+                    app_id   = data.get('app_id')
                     app_name = data.get('app_name')
-                    
-                    if not app_id or (isinstance(app_id, str) and not app_id.strip()):
-                        logger.warning(f"[IndustryData] Row {idx + 2} skipped: Missing or empty APP ID. Value: '{app_id}'")
+
+                    # Normalise: treat blank strings and 'None' the same as None
+                    if not app_id or (isinstance(app_id, str) and (not app_id.strip() or app_id.strip().lower() == 'none')):
+                        app_id = None
+                    if not app_name or (isinstance(app_name, str) and (not app_name.strip() or app_name.strip().lower() == 'none')):
+                        app_name = None
+
+                    row_num = idx + 2   # 1-based header row + 0-based index
+
+                    # Truly empty row (no id AND no name AND no other content) → skip
+                    has_any_content = any(
+                        v is not None and str(v).strip() not in ('', 'None', 'nan')
+                        for k, v in data.items()
+                        if k not in ('app_id', 'app_name')
+                    )
+                    if app_id is None and app_name is None and not has_any_content:
+                        logger.debug(f"[IndustryData] Row {row_num} skipped: completely empty.")
                         continue
-                    
-                    if not app_name or (isinstance(app_name, str) and not app_name.strip()):
-                        logger.warning(f"[IndustryData] Row {idx + 2} skipped: Missing or empty APP Name. Value: '{app_name}'")
-                        continue
+
+                    # Predict missing app_id from row context
+                    predicted_fields = []
+                    if app_id is None:
+                        app_id = IndustryDataService._infer_app_id(row_num, data)
+                        data['app_id'] = app_id
+                        predicted_fields.append('app_id')
+                        logger.info(
+                            f"[IndustryData] Row {row_num}: app_id predicted from pattern → '{app_id}'"
+                        )
+
+                    # Predict missing app_name from app_id pattern
+                    if app_name is None:
+                        app_name = IndustryDataService._infer_app_name(app_id, row_num)
+                        data['app_name'] = app_name
+                        predicted_fields.append('app_name')
+                        logger.info(
+                            f"[IndustryData] Row {row_num}: app_name predicted from pattern → '{app_name}'"
+                        )
                     
                     # Check if record already exists (update or create)
                     industry_record = IndustryData.query.filter_by(app_id=app_id).first()
@@ -142,6 +215,8 @@ class IndustryDataService:
                         logger.info(f"[IndustryData] Created new record for APP ID: {app_id}")
                     
                     records_created += 1
+                    if predicted_fields:
+                        records_predicted += 1
                 
                 except Exception as e:
                     error_msg = f"Row {idx + 2}: {str(e)}"
@@ -156,7 +231,10 @@ class IndustryDataService:
             # Commit all changes
             db.session.commit()
             
-            logger.info(f"[IndustryData] Successfully processed {records_created} records from {filename}")
+            logger.info(
+                f"[IndustryData] Successfully processed {records_created} records "
+                f"({records_predicted} had fields predicted from patterns) from {filename}"
+            )
             if errors:
                 logger.warning(f"[IndustryData] Encountered {len(errors)} errors during processing: {errors}")
             

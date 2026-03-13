@@ -44,7 +44,7 @@ class CorrelationService:
             source = "Corent"
         
         # Build CorentData mapping for lookups when using IndustryData
-        corent_map = {item.app_id: item for item in CorentData.query.all()}
+        corent_map = {}  # app_id/app_name removed from CorentData
         
         data = {
             "source": source,
@@ -116,7 +116,11 @@ class CorrelationService:
         """
         cast_items = CASTData.query.all()
         app_inventories = ApplicationInventory.query.all()
-        
+        # Pre-index all IndustryData by app_id in ONE query — avoids N+1 (one query per CAST item)
+        industry_type_by_app_id: Dict[str, Any] = {
+            i.app_id: i.application_type for i in IndustryData.query.all()
+        }
+
         cast_data = {
             "source": "CAST",
             "report_type": "code_analysis",
@@ -132,15 +136,12 @@ class CorrelationService:
         # Load CAST Data (aggregated metrics)
         for item in cast_items:
             app_id = item.app_id
-            
-            # Get enriched data from IndustryData if available
-            industry_item = IndustryData.query.filter_by(app_id=app_id).first()
-            
-            # Determine realistic programming language
+
+            # Determine realistic programming language (industry type pre-indexed — no per-row query)
             prog_language = CorrelationService.determine_programming_language(
                 item.app_name,
                 app_id,
-                getattr(industry_item, 'application_type', None) if industry_item else None
+                industry_type_by_app_id.get(app_id),
             )
             
             cast_entry = {
@@ -345,13 +346,19 @@ class CorrelationService:
             infra_data["items_by_app_id"][app_id] = entry
             infra_data["server_app_mapping"].append(entry)
         
-        # Add all CorentData records (won't duplicate since app_ids should be different)
+        # Add all CorentData records — CorentData has no app_id/app_name; it is
+        # server-level data identified by server_name. Build a server_name index
+        # for Phase 1b matching (CAST.server_name ↔ CorentData.server_name).
+        corent_by_server_name: Dict[str, Any] = {}
         for item in corent_items:
-            app_id = item.app_id
-            if app_id not in infra_data["items_by_app_id"]:  # Avoid duplicates
+            server_name = item.server_name or ""
+            synthetic_key = f"corent_{server_name}" if server_name else f"corent_{item.id}"
+            app_name = server_name or f"CORENT-Server-{item.id}"
+            if synthetic_key not in infra_data["items_by_app_id"]:
                 entry = {
-                    "app_id": item.app_id,
-                    "app_name": item.app_name,
+                    "app_id": synthetic_key,
+                    "app_name": app_name,
+                    "server_name": server_name,
                     "architecture_type": item.architecture_type,
                     "business_owner": item.business_owner,
                     "platform_host": item.platform_host,
@@ -361,12 +368,16 @@ class CorrelationService:
                     "cloud_suitability": item.cloud_suitability,
                     "ha_dr_requirements": item.ha_dr_requirements,
                     "installed_tech": item.server_type,
-                    "server": item.platform_host or "Unknown",
-                    "source": "CorentData"
+                    "server": item.platform_host or server_name or "Unknown",
+                    "source": "CorentData",
+                    "corent_record_id": item.id,
                 }
-                infra_data["items_by_app_id"][app_id] = entry
+                infra_data["items_by_app_id"][synthetic_key] = entry
                 infra_data["server_app_mapping"].append(entry)
-        
+            if server_name:
+                corent_by_server_name[server_name.lower()] = \
+                    infra_data["items_by_app_id"][synthetic_key]
+
         # Update total_items to reflect actual deduplicated count
         infra_data["total_items"] = len(infra_data["items_by_app_id"])
         
@@ -383,23 +394,25 @@ class CorrelationService:
             "internal_dependencies": {}
         }
         
+        # Pre-index IndustryData by app_id — avoids one DB query per CAST item (N+1)
+        industry_type_by_app_id: Dict[str, Any] = {
+            i.app_id: i.application_type for i in industry_items
+        }
+
         for item in cast_items:
             app_id = item.app_id
-            
-            # Get application_type from IndustryData for language determination
-            industry_item = IndustryData.query.filter_by(app_id=app_id).first()
-            app_type = industry_item.application_type if industry_item else None
-            
-            # Determine intelligent programming language instead of "Unknown"
+
+            # Determine intelligent programming language (uses pre-indexed dict — zero extra queries)
             determined_language = CorrelationService.determine_programming_language(
-                item.app_name, 
-                item.app_id, 
-                app_type
+                item.app_name,
+                item.app_id,
+                industry_type_by_app_id.get(app_id),
             )
             
             cast_entry = {
                 "app_id": item.app_id,
                 "app_name": item.app_name,
+                "server_name": item.server_name or "",  # Used for CAST↔CORENT matching
                 "application_architecture": item.application_architecture,
                 "source_code_availability": item.source_code_availability,
                 "programming_language": determined_language,
@@ -429,10 +442,9 @@ class CorrelationService:
                 }
         
         # Now correlate infrastructure + CAST data
-        direct_matches = []  # APP ID exact matches
-        fuzzy_matches = []   # Name-based matches
-        matched_infra_app_ids = set()
-        matched_cast_app_ids = set()
+        direct_matches: List[Dict[str, Any]] = []  # Phase 1: APP ID exact matches
+        matched_infra_app_ids: set = set()
+        matched_cast_app_ids: set = set()
         
         # PHASE 1: Direct matching using APP ID
         for app_id, infra_item in infra_data["items_by_app_id"].items():
@@ -453,7 +465,7 @@ class CorrelationService:
                 matched_infra_app_ids.add(app_id)
                 matched_cast_app_ids.add(app_id)
         
-        # PHASE 2: Fuzzy matching on app_name for remaining items
+        # Collect all items not matched by direct app_id
         unmatched_infra = {
             app_id: item for app_id, item in infra_data["items_by_app_id"].items()
             if app_id not in matched_infra_app_ids
@@ -463,65 +475,158 @@ class CorrelationService:
             if app_id not in matched_cast_app_ids
         }
 
-        # Capture truly unmatched (no direct ID match) BEFORE fuzzy matching removes them
+        # Capture truly unmatched (no direct app_id match) for statistics
         truly_unmatched_corent = dict(unmatched_infra)
         truly_unmatched_cast = dict(unmatched_cast)
 
-        # Fuzzy match remaining items
+        # ── PHASE 1b: server_name exact match (CAST.server_name ↔ CorentData.server_name)
+        # ─────────────────────────────────────────────────────────────────────────────────
+        server_name_matches: List[Dict[str, Any]] = []
+        avail_corent_by_sname = {
+            k: v for k, v in corent_by_server_name.items()
+            if v["app_id"] not in matched_infra_app_ids
+        }
+        for cast_app_id, cast_item in list(unmatched_cast.items()):
+            cast_sname = (cast_item.get("server_name") or "").strip().lower()
+            if not cast_sname:
+                continue
+            corent_entry = avail_corent_by_sname.get(cast_sname)
+            if corent_entry:
+                match_entry = {
+                    "infra_item": corent_entry,
+                    "cast_item": cast_item,
+                    "confidence": 0.9,
+                    "matching_criteria": [f"Server name match: {cast_item['server_name']}"],
+                    "confidence_level": "high",
+                    "app_id": cast_app_id,
+                    "match_type": "server_name",
+                }
+                server_name_matches.append(match_entry)
+                matched_infra_app_ids.add(corent_entry["app_id"])
+                matched_cast_app_ids.add(cast_app_id)
+                del unmatched_infra[corent_entry["app_id"]]
+                del unmatched_cast[cast_app_id]
+                del avail_corent_by_sname[cast_sname]
+
+        # ── PHASE 1c: App name exact match (case-insensitive, trimmed)
+        # ─────────────────────────────────────────────────────────────────────────────────
+        exact_name_matches: List[Dict[str, Any]] = []
+        cast_by_exact_name: Dict[str, Any] = {
+            (cast_item.get("app_name") or "").strip().lower(): cast_item
+            for cast_app_id, cast_item in unmatched_cast.items()
+            if (cast_item.get("app_name") or "").strip()
+        }
+        for infra_app_id, infra_item in list(unmatched_infra.items()):
+            infra_name = (infra_item.get("app_name") or "").strip().lower()
+            if not infra_name:
+                continue
+            cast_item = cast_by_exact_name.get(infra_name)
+            if cast_item:
+                match_entry = {
+                    "infra_item": infra_item,
+                    "cast_item": cast_item,
+                    "confidence": 0.95,
+                    "matching_criteria": [f"App name exact match: {infra_item['app_name']}"],
+                    "confidence_level": "high",
+                    "app_id": infra_app_id,
+                    "match_type": "app_name_exact",
+                }
+                exact_name_matches.append(match_entry)
+                matched_infra_app_ids.add(infra_app_id)
+                matched_cast_app_ids.add(cast_item["app_id"])
+                del unmatched_infra[infra_app_id]
+                del unmatched_cast[cast_item["app_id"]]
+                del cast_by_exact_name[infra_name]
+
+        # ── PHASE 2: Fuzzy app_name match for still-unmatched items
+        # ─────────────────────────────────────────────────────────────────────────────────
+        # Pre-normalise all candidate CAST names once to avoid redundant lower()/strip() calls.
+        cast_names_normalised: Dict[str, str] = {
+            cast_app_id: (cast_item.get("app_name") or "").strip().lower()
+            for cast_app_id, cast_item in unmatched_cast.items()
+        }
+
+        fuzzy_matches: List[Dict[str, Any]] = []
         for infra_app_id, infra_item in list(unmatched_infra.items()):
             best_match = None
             best_confidence = 0.0
             best_cast_app_id = None
-            
-            for cast_app_id, cast_item in unmatched_cast.items():
-                name_sim = CorrelationService.string_similarity(
-                    infra_item.get("app_name", ""),
-                    cast_item.get("app_name", "")
-                )
-                
+            infra_name = (infra_item.get("app_name") or "").strip().lower()
+            if not infra_name:
+                continue
+            infra_len = len(infra_name)
+
+            for cast_app_id, cast_name in cast_names_normalised.items():
+                if not cast_name:
+                    continue
+                # Quick length-ratio pre-filter: skip pairs whose lengths differ by >2×
+                # — avoids slow SequenceMatcher on obviously mismatched strings.
+                cast_len = len(cast_name)
+                ratio = infra_len / cast_len if cast_len else 0
+                if ratio < 0.4 or ratio > 2.5:
+                    continue
+
+                name_sim = SequenceMatcher(None, infra_name, cast_name).ratio()
                 if name_sim >= CorrelationService.MIN_CONFIDENCE and name_sim > best_confidence:
-                    best_match = cast_item
+                    best_match = unmatched_cast[cast_app_id]
                     best_confidence = name_sim
                     best_cast_app_id = cast_app_id
-            
+                    if best_confidence >= CorrelationService.HIGH_CONFIDENCE:
+                        break  # good enough — stop searching
+
             if best_match:
                 match_entry = {
                     "infra_item": infra_item,
                     "cast_item": best_match,
                     "confidence": round(best_confidence, 3),
-                    "matching_criteria": [f"App name match ({best_confidence:.2f})"],
+                    "matching_criteria": [f"App name fuzzy match ({best_confidence:.2f})"],
                     "confidence_level": "medium" if best_confidence >= 0.8 else "low",
                     "app_id": infra_app_id,
-                    "match_type": "fuzzy"
+                    "match_type": "fuzzy",
                 }
-                
                 fuzzy_matches.append(match_entry)
                 del unmatched_infra[infra_app_id]
                 del unmatched_cast[best_cast_app_id]
-        
-        correlation_layer = direct_matches + fuzzy_matches
-        
+                del cast_names_normalised[best_cast_app_id]
+
+        correlation_layer = direct_matches + server_name_matches + exact_name_matches + fuzzy_matches
+        all_matched = len(correlation_layer)
+
+        # Use the application-level count as the primary denominator.
+        # IndustryData rows = actual applications; CorentData rows = server-level infra.
+        # We prefer IndustryData count so the total reflects distinct apps, not servers.
+        app_total = len(industry_items) if industry_items else len(corent_items)
+        cast_total = cast_data["total_items"]
+        match_denom = max(app_total, cast_total, 1)
+
         return {
             "corent_dashboard": infra_data,
             "cast_dashboard": cast_data,
             "correlation_layer": correlation_layer,
             "direct_matches": direct_matches,
+            "server_name_matches": server_name_matches,
+            "exact_name_matches": exact_name_matches,
             "fuzzy_matches": fuzzy_matches,
             "unmatched_corent": list(truly_unmatched_corent.values()),
             "unmatched_cast": list(truly_unmatched_cast.values()),
             "statistics": {
-                "corent_total": len(infra_data["items_by_app_id"]),
-                "cast_total": cast_data["total_items"],
+                # Application-level counts (shown in Overview cards)
+                "industry_total": len(industry_items),
+                "corent_server_total": len(corent_items),
+                "corent_total": app_total,          # = IndustryData apps (primary app count)
+                "cast_total": cast_total,
+                # Match breakdown by phase
                 "direct_matched": len(direct_matches),
+                "server_name_matched": len(server_name_matches),
+                "exact_name_matched": len(exact_name_matches),
                 "fuzzy_matched": len(fuzzy_matches),
-                "total_matched": len(direct_matches),  # Only direct ID matches count as "matched"
-                "correlated_total": len(correlation_layer),  # Direct + fuzzy (full master matrix count)
+                # Totals
+                "total_matched": all_matched,       # all phases combined
+                "correlated_total": all_matched,
                 "unmatched_corent_count": len(truly_unmatched_corent),
                 "unmatched_cast_count": len(truly_unmatched_cast),
-                "match_percentage": round(
-                    (len(direct_matches) / max(len(infra_data["items_by_app_id"]), 1)) * 100, 2
-                )
-            }
+                "match_percentage": round((all_matched / match_denom) * 100, 2),
+            },
         }
 
     
@@ -644,21 +749,22 @@ class CorrelationService:
         """
         master_matrix = cls.generate_master_matrix(correlation_data)
         
+        stats = correlation_data.get("statistics", {})
         # Create main correlation result record
         result = CorrelationResult(
             correlation_data=json.dumps(correlation_data, default=str),
             master_matrix=json.dumps(master_matrix, default=str),
-            matched_count=correlation_data.get("statistics", {}).get("direct_matched", 0),
-            total_count=correlation_data.get("statistics", {}).get("corent_total", 0),
-            match_percentage=correlation_data.get("statistics", {}).get("match_percentage", 0.0)
+            matched_count=stats.get("total_matched", stats.get("correlated_total", 0)),
+            total_count=stats.get("corent_total", 0),
+            match_percentage=stats.get("match_percentage", 0.0)
         )
         
         db.session.add(result)
-        db.session.flush()  # Get the ID before adding child records
-        
-        # Store individual master matrix entries
-        for entry_data in master_matrix:
-            entry = MasterMatrixEntry(
+        db.session.flush()  # Populate result.id before bulk-inserting child rows
+
+        # Bulk-insert all MasterMatrixEntry rows in one round-trip instead of N individual INSERTs
+        db.session.bulk_save_objects([
+            MasterMatrixEntry(
                 correlation_result_id=result.id,
                 app_name=entry_data.get("app_name", ""),
                 infra=entry_data.get("infrastructure", ""),
@@ -667,10 +773,10 @@ class CorrelationService:
                 app_component=entry_data.get("app_component", ""),
                 repo=entry_data.get("repository", ""),
                 confidence=entry_data.get("confidence", 0.0),
-                entry_data=json.dumps(entry_data, default=str)
+                entry_data=json.dumps(entry_data, default=str),
             )
-            db.session.add(entry)
-        
+            for entry_data in master_matrix
+        ])
         db.session.commit()
         
         return result
@@ -707,7 +813,7 @@ class CorrelationService:
         
         # Fall back to CorentData
         try:
-            corent_item = CorentData.query.filter_by(app_id=app_id).first()
+            corent_item = None  # app_id removed from CorentData, lookup not possible
             if corent_item:
                 enriched['application_type'] = getattr(corent_item, 'application_type', None) or enriched.get('application_type')
                 enriched['capabilities'] = getattr(corent_item, 'capabilities', None) or enriched.get('capabilities')

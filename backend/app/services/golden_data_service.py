@@ -106,8 +106,8 @@ def _build_row_values(corent_row, cast_row):
 
     row = [None] * 64
 
-    row[0]  = c.app_id
-    row[1]  = c.app_name
+    row[0]  = str(c.id)
+    row[1]  = None
     row[2]  = c.server_type
     row[3]  = c.operating_system
     row[4]  = c.cpu_core
@@ -209,7 +209,7 @@ def generate_golden_data():
       • Cell is empty     → Yellow background (#FFD700)
     """
     # ── 1. Fetch data ─────────────────────────────────────────────────────────
-    corent_rows = CorentData.query.order_by(CorentData.app_id).all()
+    corent_rows = CorentData.query.order_by(CorentData.id).all()
     if not corent_rows:
         return {
             "row_count": 0,
@@ -249,9 +249,9 @@ def generate_golden_data():
     preview_rows = []
 
     for idx, corent_row in enumerate(corent_rows):
-        cast_row = cast_index.get(corent_row.app_id)
+        cast_row = None  # app_id removed from CorentData, CAST join not possible
         if cast_row is None:
-            missing_cast.append(corent_row.app_id)
+            missing_cast.append(str(corent_row.id))
 
         values = _build_row_values(corent_row, cast_row)
         excel_row_num = _DATA_START_ROW + idx
@@ -387,15 +387,15 @@ def get_preview_data():
         }
 
     # Fallback: live query
-    corent_rows = CorentData.query.order_by(CorentData.app_id).all()
+    corent_rows = CorentData.query.order_by(CorentData.id).all()
     cast_index  = {r.app_id: r for r in CASTData.query.all()}
     preview_rows = []
     missing_cast = []
 
     for corent_row in corent_rows[:_MAX_PREVIEW_ROWS]:
-        cast_row = cast_index.get(corent_row.app_id)
+        cast_row = None  # app_id removed from CorentData, CAST join not possible
         if not cast_row:
-            missing_cast.append(corent_row.app_id)
+            missing_cast.append(str(corent_row.id))
         preview_rows.append(_build_row_values(corent_row, cast_row))
 
     return {

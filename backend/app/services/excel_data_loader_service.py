@@ -48,8 +48,6 @@ class ExcelDataLoaderService:
             
             # Column mapping from Excel to database model
             column_mapping = {
-                'APP ID': 'app_id',
-                'APP Name': 'app_name',
                 'ArchitectureType': 'architecture_type',
                 'BusinessOwner': 'business_owner',
                 'PlatformHost': 'platform_host',
@@ -119,8 +117,7 @@ class ExcelDataLoaderService:
                         corent_record[db_field] = value
                 
                 # Create and add record
-                if corent_record.get('app_id'):
-                    corent_record['app_id'] = str(corent_record['app_id']).strip()
+                if corent_record:
                     corent_obj = CorentData(**corent_record)
                     db.session.add(corent_obj)
                     count += 1
@@ -158,6 +155,9 @@ class ExcelDataLoaderService:
                 'Repo Name': 'repo_name',
                 'REPO': 'repo_name',
                 'Repo': 'repo_name',
+                'SERVER NAME': 'server_name',
+                'Server Name': 'server_name',
+                'SERVER_NAME': 'server_name',
                 'Application Architecture': 'application_architecture',
                 'Source Code Availability': 'source_code_availability',
                 'Programming Language': 'programming_language',
@@ -170,7 +170,6 @@ class ExcelDataLoaderService:
                 'Application-Code Complexity / Volume': 'application_code_complexity_volume',
                 'Distributed Architecture Design or not': 'distributed_architecture_design',
                 'Application Type': 'application_type',
-                'Capabilities': 'capabilities'
             }
             
             # Load records

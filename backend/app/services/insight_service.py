@@ -633,11 +633,11 @@ class InsightService:
         
         return {
             'applications': len(set(
-                list(i.app_id for i in corent_items) +
+                list(str(i.id) for i in corent_items) +
                 list(i.app_id for i in cast_items)
             )),
             'capabilities': 5,  # Placeholder
-            'duplicates': len(corent_items) - len(set(i.app_id for i in corent_items)),
+            'duplicates': 0,  # app_id removed from CorentData
             'maintenance_cost': InsightService._estimate_maintenance_cost(corent_items, app_inv_items),
             'scenarios': 3,  # Placeholder
             'correlation_complete': CorrelationResult.query.first() is not None,

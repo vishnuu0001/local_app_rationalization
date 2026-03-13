@@ -1,4 +1,4 @@
-﻿import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback } from 'react';
 import { TrendingDown, ArrowRight } from 'lucide-react';
 import api from '../../services/api';
 

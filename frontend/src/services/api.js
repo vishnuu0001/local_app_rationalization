@@ -104,6 +104,12 @@ export const startCorrelation = () =>
 export const getCorrelationData = () =>
   apiClient.get('/correlation/latest');
 
+export const getLlmAnalysis = () =>
+  apiClient.get('/correlation/llm-analysis');
+
+export const rerunLlmAnalysis = () =>
+  apiClient.post('/correlation/llm-analysis/rerun', null, { timeout: 210_000 }); // 210s > 200s server limit
+
 export const getCorrelationDashboards = () =>
   apiClient.get('/correlation/dashboards');
 
@@ -115,6 +121,60 @@ export const getCorrelationMasterMatrix = (confidenceLevel = null, limit = 1000)
 
 export const getCorrelationStatistics = () =>
   apiClient.get('/correlation/statistics');
+
+// Consolidated DB + Ollama endpoints
+export const getConsolidatedApps = () =>
+  apiClient.get('/correlation/consolidated');
+
+export const getConsolidatedStats = () =>
+  apiClient.get('/correlation/consolidated/stats');
+
+export const getOllamaStatus = () =>
+  apiClient.get('/correlation/ollama/status');
+
+// Workspace pipeline endpoints — file copy, LLM fill, column traceability
+export const getWorkspaceRuns = (limit = 20) =>
+  apiClient.get('/correlation/workspace/runs', { params: { limit } });
+
+export const getWorkspaceColumnUpdates = (runId = null, source = null, limit = 1000) => {
+  const params = { limit };
+  if (runId) params.run_id = runId;
+  if (source) params.source = source;
+  return apiClient.get('/correlation/workspace/column-updates', { params });
+};
+
+// Workspace row data (includes updated_rows per-row AI summary)
+export const getWorkspaceCastRows = (runId = null, limit = 500) => {
+  const params = { limit };
+  if (runId) params.run_id = runId;
+  return apiClient.get('/correlation/workspace/cast', { params });
+};
+
+export const getWorkspaceCorentRows = (runId = null, limit = 500) => {
+  const params = { limit };
+  if (runId) params.run_id = runId;
+  return apiClient.get('/correlation/workspace/corent', { params });
+};
+
+export const getWorkspaceBizRows = (runId = null, limit = 500) => {
+  const params = { limit };
+  if (runId) params.run_id = runId;
+  return apiClient.get('/correlation/workspace/business', { params });
+};
+
+// Drill-down: apps by cloud-suitability group (L2) and single-app detail (L3)
+export const getAppsByCloudGroup = () =>
+  apiClient.get('/correlation/apps/cloud-groups');
+
+export const getAppDetail = (appId) =>
+  apiClient.get(`/correlation/apps/${encodeURIComponent(appId)}/detail`);
+
+export const getWorkspaceCorrelations = (runId = null, matchType = null, limit = 500) => {
+  const params = { limit };
+  if (runId) params.run_id = runId;
+  if (matchType) params.match_type = matchType;
+  return apiClient.get('/correlation/workspace/correlations', { params });
+};
 
 // Analysis endpoints
 export const correlateInfraAndCode = (infrastructureId, repositoryId) =>

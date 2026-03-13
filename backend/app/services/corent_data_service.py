@@ -41,21 +41,20 @@ class CorentDataService:
                 for server in servers:
                     try:
                         # Create or update CorentData record
-                        app_id = getattr(server, 'server_name', 'UNKNOWN').upper().strip() if hasattr(server, 'server_name') else 'UNKNOWN'
-                        
-                        if not app_id or app_id == 'UNKNOWN':
+                        server_name_val = getattr(server, 'server_name', '') or ''
+
+                        if not server_name_val:
                             logger.warning("[CorentData] Skipping server without name")
                             continue
-                        
-                        corent_record = CorentData.query.filter_by(app_id=app_id).first()
-                        
+
+                        corent_record = CorentData.query.filter_by(server_name=server_name_val).first()
+
                         if not corent_record:
-                            corent_record = CorentData(app_id=app_id)
+                            corent_record = CorentData()
                             db.session.add(corent_record)
                             records_created += 1
                         
                         # Safely populate fields from server data
-                        corent_record.app_name = getattr(server, 'server_name', '')
                         corent_record.server_name = getattr(server, 'server_name', '') or ''
                         corent_record.server_ip = getattr(server, 'ip_address', '') or ''
                         corent_record.server_type = getattr(server, 'server_type', '')
@@ -98,16 +97,9 @@ class CorentDataService:
             records_processed = 0
             
             for data_dict in corent_data_list:
-                if not data_dict.get('app_id'):
-                    logger.warning("[CorentData] Skipping record without app_id")
-                    continue
-                
-                app_id = str(data_dict['app_id']).strip()
-                corent_record = CorentData.query.filter_by(app_id=app_id).first()
-                
-                if not corent_record:
-                    corent_record = CorentData(app_id=app_id)
-                    db.session.add(corent_record)
+                # Create new record (app_id removed, no upsert key available)
+                corent_record = CorentData()
+                db.session.add(corent_record)
                 
                 # Update all available fields
                 for key, value in data_dict.items():
@@ -127,12 +119,8 @@ class CorentDataService:
     
     @staticmethod
     def get_by_app_id(app_id):
-        """Retrieve CorentData by app_id"""
-        try:
-            return CorentData.query.filter_by(app_id=app_id).first()
-        except Exception as e:
-            logger.error(f"[CorentData] Error retrieving app_id {app_id}: {str(e)}")
-            return None
+        """app_id removed from CorentData — method retained for compatibility, always returns None"""
+        return None
     
     @staticmethod
     def get_all():
@@ -157,8 +145,6 @@ class CorentDataService:
             dataframe.columns = [str(col).strip() for col in dataframe.columns]
 
             column_mapping = {
-                'APP ID': 'app_id',
-                'APP Name': 'app_name',
                 'ArchitectureType': 'architecture_type',
                 'BusinessOwner': 'business_owner',
                 'PlatformHost': 'platform_host',
@@ -211,16 +197,8 @@ class CorentDataService:
             records_processed = 0
 
             for _, row in dataframe.iterrows():
-                app_id_raw = row.get('APP ID')
-                if pd.isna(app_id_raw) or not str(app_id_raw).strip():
-                    continue
-
-                app_id = str(app_id_raw).strip()
-                corent_record = CorentData.query.filter_by(app_id=app_id).first()
-
-                if not corent_record:
-                    corent_record = CorentData(app_id=app_id)
-                    db.session.add(corent_record)
+                corent_record = CorentData()
+                db.session.add(corent_record)
 
                 for source_col, target_field in column_mapping.items():
                     if source_col in dataframe.columns:
@@ -230,9 +208,6 @@ class CorentDataService:
                         if isinstance(value, str):
                             value = value.strip() if value else None
                         setattr(corent_record, target_field, value)
-
-                if not corent_record.app_name:
-                    corent_record.app_name = app_id
 
                 records_processed += 1
 

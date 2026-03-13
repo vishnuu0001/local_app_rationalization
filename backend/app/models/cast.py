@@ -90,7 +90,6 @@ class ApplicationClassification(db.Model):
     business_owner = db.Column(db.String(255))
     application_type = db.Column(db.String(100))  # Commercial, Custom, Open Source, etc.
     install_type = db.Column(db.String(100))  # Cloud, On Premise, Hybrid, etc.
-    capabilities = db.Column(db.Text)  # Comma-separated or JSON array of capabilities
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
     updated_at = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
     
@@ -105,7 +104,6 @@ class ApplicationClassification(db.Model):
             'business_owner': self.business_owner,
             'application_type': self.application_type,
             'install_type': self.install_type,
-            'capabilities': self.capabilities,
         }
 
 
@@ -162,7 +160,6 @@ class HighRiskApplication(db.Model):
     cloud = db.Column(db.String(100))  # Cloud readiness
     app_type = db.Column(db.String(100))
     install_type = db.Column(db.String(100))
-    capabilities = db.Column(db.Text)  # Comma-separated list of capabilities
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
     updated_at = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
     
@@ -177,7 +174,6 @@ class HighRiskApplication(db.Model):
             'cloud': self.cloud,
             'app_type': self.app_type,
             'install_type': self.install_type,
-            'capabilities': self.capabilities,
         }
 
 
@@ -189,7 +185,8 @@ class CASTData(db.Model):
     
     id = db.Column(db.Integer, primary_key=True)
     app_id = db.Column(db.String(255), nullable=False, unique=True)
-    app_name = db.Column(db.String(500), nullable=False)
+    app_name = db.Column(db.String(500), nullable=True)  # nullable: fallback to app_id when missing
+    server_name = db.Column(db.String(500))
     repo_name = db.Column(db.String(500))
     application_architecture = db.Column(db.String(255))
     source_code_availability = db.Column(db.String(255))
@@ -210,6 +207,7 @@ class CASTData(db.Model):
             'id': self.id,
             'app_id': self.app_id,
             'app_name': self.app_name,
+            'server_name': self.server_name,
             'repo_name': self.repo_name,
             'application_architecture': self.application_architecture,
             'source_code_availability': self.source_code_availability,

@@ -68,12 +68,9 @@ def get_capability_details(capability_name):
         for app in industry_apps:
             # Check if capability name appears in the capabilities field
             if capability_name.lower() in str(app.capabilities).lower():
-                # Get CorentData install_type
+                # app_id removed from CorentData, install_type lookup not available
                 try:
-                    corent_record = db.session.query(CorentData.install_type).filter(
-                        CorentData.app_id == app.app_id
-                    ).first()
-                    install_type = corent_record.install_type if corent_record else 'N/A'
+                    install_type = 'N/A'
                 except:
                     install_type = 'N/A'
                 

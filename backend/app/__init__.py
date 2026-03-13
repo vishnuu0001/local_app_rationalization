@@ -181,12 +181,28 @@ def create_app(config_name=None):
             from app.models import (
                 infrastructure, code, application, pdf_report,
                 correlation, analysis, capability, cast, corent_data,
-                golden_data
+                industry_data, consolidated_app, golden_data,
+                predicted_analysis, correlation_workspace,
             )
             
             db.create_all()
             app.logger.info(f"Database initialized successfully")
             app.logger.info(f"Database URI: {app.config['SQLALCHEMY_DATABASE_URI']}")
+
+            # ── Incremental column migrations ─────────────────────────────
+            # SQLAlchemy's create_all() won't add new columns to existing
+            # tables.  Perform safe ALTER TABLE … ADD COLUMN here so that
+            # the DB schema stays in sync with the models on every restart.
+            _incremental_migrations = [
+                "ALTER TABLE workspace_runs ADD COLUMN source_files_hash VARCHAR(64)",
+            ]
+            with db.engine.connect() as _mc:
+                for _sql in _incremental_migrations:
+                    try:
+                        _mc.execute(text(_sql))
+                        _mc.commit()
+                    except Exception:
+                        pass  # column already exists — safe to ignore
         except Exception as e:
             issue = f"Database initialization failed: {str(e)}"
             startup_issues.append(issue)

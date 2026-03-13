@@ -34,37 +34,18 @@ class BusinessCapabilityService:
         total_count = 0
 
         if corent_count > 0:
-            query = db.session.query(CorentData).order_by(CorentData.app_name)
+            query = db.session.query(CorentData).order_by(CorentData.id)
             total_count = query.count()
             paginated_apps = query.paginate(page=page, per_page=per_page, error_out=False)
 
-            # Build a lookup of IndustryData by app_id for application_type and capabilities
-            industry_map = {}
-            industry_rows = db.session.query(
-                IndustryData.app_id,
-                IndustryData.application_type,
-                IndustryData.capabilities
-            ).all()
-            for row in industry_rows:
-                industry_map[row.app_id] = row
-
             for corent_app in paginated_apps.items:
-                industry = industry_map.get(corent_app.app_id)
-
-                # Fall back to ApplicationClassification if IndustryData not available
-                if not industry:
-                    classification = db.session.query(ApplicationClassification).filter(
-                        ApplicationClassification.app_id == corent_app.app_id
-                    ).first()
-                    app_type = classification.application_type if classification else 'N/A'
-                    capability = classification.capabilities if classification else 'Unclassified'
-                else:
-                    app_type = industry.application_type or 'N/A'
-                    capability = industry.capabilities or 'Unclassified'
+                # app_id and app_name removed from CorentData — capability lookup not available
+                app_type = 'N/A'
+                capability = 'Unclassified'
 
                 applications.append({
-                    'app_id': corent_app.app_id,
-                    'app_name': corent_app.app_name,
+                    'app_id': str(corent_app.id),
+                    'app_name': 'N/A',
                     'business_owner': corent_app.business_owner or 'Unknown',
                     'architecture_type': corent_app.architecture_type or 'N/A',
                     'platform_host': corent_app.platform_host or 'N/A',
@@ -220,10 +201,7 @@ class BusinessCapabilityService:
             # Substring match against normalized capabilities
             if search_term in caps_lower or capability_name.lower() in caps_str.lower():
                 try:
-                    corent_record = db.session.query(CorentData.install_type).filter(
-                        CorentData.app_id == app.app_id
-                    ).first()
-                    install_type = corent_record.install_type if corent_record else 'N/A'
+                    install_type = 'N/A'  # app_id removed from CorentData, join not possible
                 except:
                     install_type = 'N/A'
                 
@@ -289,35 +267,28 @@ class BusinessCapabilityService:
         """
         from app import db
         
-        # Get complete mapping — join CorentData with IndustryData for app_type & capabilities
+# Get complete mapping from CorentData (app_id/app_name removed, no join possible)
         query = db.session.query(
-            CorentData.app_id,
-            CorentData.app_name,
+            CorentData.id,
             CorentData.business_owner,
             CorentData.architecture_type,
             CorentData.platform_host,
-            IndustryData.application_type,
             CorentData.install_type,
-            IndustryData.capabilities
-        ).outerjoin(
-            IndustryData,
-            CorentData.app_id == IndustryData.app_id
         ).order_by(
-            IndustryData.capabilities,
-            CorentData.app_name
+            CorentData.id
         ).all()
-        
+
         data = []
         for app in query:
             data.append({
-                'APP_ID': app.app_id,
-                'APP_NAME': app.app_name,
+                'APP_ID': str(app.id),
+                'APP_NAME': 'N/A',
                 'BUSINESS_OWNER': app.business_owner or 'Unknown',
                 'ARCHITECTURE_TYPE': app.architecture_type or 'N/A',
                 'PLATFORM_HOST': app.platform_host or 'N/A',
-                'APPLICATION_TYPE': app.application_type or 'N/A',
+                'APPLICATION_TYPE': 'N/A',
                 'INSTALL_TYPE': app.install_type or 'N/A',
-                'BUSINESS_CAPABILITY': app.capabilities or 'Unclassified'
+                'BUSINESS_CAPABILITY': 'Unclassified'
             })
         
         return {

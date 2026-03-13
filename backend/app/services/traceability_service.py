@@ -35,7 +35,7 @@ class TraceabilityService:
         cast_data = {item.app_id: item for item in db.session.query(CASTData).all()}
         
         # Get CorentData for additional infrastructure info
-        corent_data = {item.app_id: item for item in db.session.query(CorentData).all()}
+        corent_data = {}  # app_id/app_name removed from CorentData
         
         # Build capability groups to determine redundancy
         capability_groups = {}

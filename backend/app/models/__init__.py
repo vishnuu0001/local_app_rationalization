@@ -8,6 +8,7 @@ from .correlation import CorrelationResult, MasterMatrixEntry
 from .cast import CASTAnalysis, ApplicationInventory, ApplicationClassification, InternalArchitecture
 from .industry_data import IndustryTemplate, IndustryData
 from .corent_data import CorentData
+from .consolidated_app import ConsolidatedApp
 
 __all__ = [
     'Infrastructure',
@@ -35,4 +36,5 @@ __all__ = [
     'IndustryTemplate',
     'IndustryData',
     'CorentData',
+    'ConsolidatedApp',
 ]

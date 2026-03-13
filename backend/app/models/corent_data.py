@@ -5,8 +5,8 @@ class CorentData(db.Model):
     __tablename__ = 'corent_data'
     
     id = db.Column(db.Integer, primary_key=True)
-    app_id = db.Column(db.String(255), nullable=False, unique=True)
-    app_name = db.Column(db.String(500), nullable=False)
+    app_id = db.Column(db.String(255), index=True)
+    app_name = db.Column(db.String(500))
     architecture_type = db.Column(db.String(255))
     business_owner = db.Column(db.String(255))
     platform_host = db.Column(db.String(255))
