@@ -244,7 +244,7 @@ def update_record(app_id):
 
     body = request.get_json(silent=True) or {}
     for field in _FIELDS:
-        if field in body and field != 'app_id':   # app_id is the key – don't overwrite
+        if field in body:
             setattr(record, field, body[field])
 
     db.session.commit()

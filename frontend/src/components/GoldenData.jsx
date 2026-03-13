@@ -13,8 +13,8 @@ import {
    Column definitions  (xlsCol = 0-based index in the 64-column APR layout)
 --------------------------------------------------------------------------- */
 const FIELDS = [
-  { key: 'app_id',   label: 'App ID',   source: 'corent', type: 'text', readOnly: true,  xlsCol: 0  },
-  { key: 'app_name', label: 'App Name', source: 'corent', type: 'text', readOnly: true,  xlsCol: 1  },
+  { key: 'app_id',   label: 'App ID',   source: 'corent', type: 'text', xlsCol: 0  },
+  { key: 'app_name', label: 'App Name', source: 'corent', type: 'text', xlsCol: 1  },
   { key: 'server_type',                          label: 'Server Type',                           source: 'corent', type: 'text', xlsCol: 2  },
   { key: 'operating_system',                     label: 'Operating System',                      source: 'corent', type: 'text', xlsCol: 3  },
   { key: 'cpu_core',                             label: 'CPU Core',                              source: 'corent', type: 'text', xlsCol: 4  },
@@ -127,7 +127,7 @@ function EditModal({ record, onClose, onSaved }) {
         }
       });
       await updateGoldenDataRecord(record.app_id, payload);
-      toast.success(`Updated ${record.app_id}`);
+      toast.success(`Updated ${form.app_id || record.app_id}`);
       onSaved();
     } catch (err) {
       toast.error('Save failed: ' + (err?.response?.data?.message || err.message));
