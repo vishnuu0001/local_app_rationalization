@@ -48,6 +48,8 @@ class ExcelDataLoaderService:
             
             # Column mapping from Excel to database model
             column_mapping = {
+                'APP ID': 'app_id',
+                'APP NAME': 'app_name',
                 'ArchitectureType': 'architecture_type',
                 'BusinessOwner': 'business_owner',
                 'PlatformHost': 'platform_host',

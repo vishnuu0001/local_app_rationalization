@@ -208,11 +208,25 @@ def _get_workspace_ai_fills() -> Tuple[Dict[str, Set[str]], Dict[str, Set[str]]]
         if latest is None:
             return corent_fills, cast_fills
         for row in WorkspaceCorentRow.query.filter_by(run_id=latest.id).all():
-            if row.app_id and row.updated_rows:
-                corent_fills[row.app_id] = set(row.updated_rows.get("updated_columns", []))
+            if not row.app_id:
+                continue
+            cols: Set[str] = set()
+            if row.updated_rows:
+                cols.update(row.updated_rows.get("updated_columns", []))
+            if row.ai_predicted_columns:
+                cols.update(row.ai_predicted_columns)
+            if cols:
+                corent_fills[row.app_id] = cols
         for row in WorkspaceCastRow.query.filter_by(run_id=latest.id).all():
-            if row.app_id and row.updated_rows:
-                cast_fills[row.app_id] = set(row.updated_rows.get("updated_columns", []))
+            if not row.app_id:
+                continue
+            cols = set()
+            if row.updated_rows:
+                cols.update(row.updated_rows.get("updated_columns", []))
+            if row.ai_predicted_columns:
+                cols.update(row.ai_predicted_columns)
+            if cols:
+                cast_fills[row.app_id] = cols
     except Exception:
         pass
     return corent_fills, cast_fills
@@ -229,10 +243,17 @@ def _build_row(
     golden_rec,
     corent_ai: Set[str],
     cast_ai: Set[str],
+    corent_ws=None,
+    cast_ws=None,
 ) -> Tuple[List[Any], List[Optional[str]]]:
     """
     Build two parallel 64-element lists: values and colors.
     colors: "yellow" = AI-predicted, "amber" = empty survey col, None = normal.
+
+    AI-fill detection (yellow):
+      1. Column name is in corent_ai / cast_ai (tracked via updated_rows / ai_predicted_columns)
+      2. Value literally is "AI Populated Value" marker string
+      3. Source DB value is null but workspace row has a non-null value (inferred AI fill)
     """
     values: List[Any] = [None] * 64
     colors: List[Optional[str]] = [None] * 64
@@ -245,6 +266,13 @@ def _build_row(
             val = _env_install(corent)
             if "environment" in corent_ai or "install_type" in corent_ai:
                 ai_filled = True
+            # Workspace comparison: if source env/install was null but corent_ws has value
+            if not ai_filled and corent_ws is not None:
+                src_val = _env_install(corent)
+                ws_val  = _env_install(corent_ws)
+                if (src_val is None) and (ws_val is not None):
+                    val = ws_val
+                    ai_filled = True
 
         elif src == "corent":
             raw = getattr(corent, c_attr, None)
@@ -254,11 +282,18 @@ def _build_row(
                 ai_filled = True
             if _is_ai_marker(val):
                 ai_filled = True
+            # Workspace comparison: use ws value if source was null
+            if not ai_filled and corent_ws is not None and val is None:
+                ws_raw = getattr(corent_ws, ws_col, None) or getattr(corent_ws, c_attr, None)
+                ws_val = _coalesce(ws_raw)
+                if ws_val is not None:
+                    val = ws_val
+                    ai_filled = True
 
         elif src == "cast":
             raw_cast = getattr(cast, k_attr, None) if cast else None
             val = _coalesce(raw_cast)
-            # Industry fallback for architecture
+            # Industry fallback for architecture (not AI-predicted)
             if val is None and k_attr == "application_architecture" and industry:
                 val = _coalesce(industry.architecture_type)
             ws_col = _CAST_WS_ALIAS.get(k_attr, k_attr) if k_attr else None
@@ -266,6 +301,13 @@ def _build_row(
                 ai_filled = True
             if _is_ai_marker(val):
                 ai_filled = True
+            # Workspace comparison: use ws value if source was null
+            if not ai_filled and cast_ws is not None and val is None and ws_col:
+                ws_raw = getattr(cast_ws, ws_col, None) or (getattr(cast_ws, k_attr, None) if k_attr else None)
+                ws_val = _coalesce(ws_raw)
+                if ws_val is not None:
+                    val = ws_val
+                    ai_filled = True
 
         elif src == "corent+cast":
             cv = _coalesce(getattr(corent, c_attr, None))
@@ -279,6 +321,16 @@ def _build_row(
                 ai_filled = True
             if _is_ai_marker(val):
                 ai_filled = True
+            # Workspace comparison: use ws value if source was null
+            if not ai_filled and val is None:
+                ws_val = None
+                if corent_ws is not None:
+                    ws_val = _coalesce(getattr(corent_ws, ws_c, None) or getattr(corent_ws, c_attr, None))
+                if ws_val is None and cast_ws is not None and ws_k:
+                    ws_val = _coalesce(getattr(cast_ws, ws_k, None) or (getattr(cast_ws, k_attr, None) if k_attr else None))
+                if ws_val is not None:
+                    val = ws_val
+                    ai_filled = True
 
         elif src == "survey":
             db_field = _SURVEY_DB.get(idx)
@@ -391,10 +443,25 @@ def generate_golden_data() -> Dict[str, Any]:
             "error": "No CORENT data in the database. Upload a CORENT Excel file first.",
         }
 
+    # Clear stale golden data records before full regeneration
+    GoldenData.query.delete()
+    db.session.flush()
+
     cast_index     = {r.app_id: r for r in CASTData.query.all()     if r.app_id}
     industry_index = {r.app_id: r for r in IndustryData.query.all() if r.app_id}
-    golden_index   = {r.app_id: r for r in GoldenData.query.all()   if r.app_id}
     corent_ai_fills, cast_ai_fills = _get_workspace_ai_fills()
+
+    # Load workspace rows for AI-fill comparison
+    try:
+        from app.models.correlation_workspace import WorkspaceCorentRow, WorkspaceCastRow, WorkspaceRun
+        latest_run = WorkspaceRun.query.order_by(WorkspaceRun.id.desc()).first()
+        if latest_run:
+            corent_ws_index = {r.app_id: r for r in WorkspaceCorentRow.query.filter_by(run_id=latest_run.id).all() if r.app_id}
+            cast_ws_index   = {r.app_id: r for r in WorkspaceCastRow.query.filter_by(run_id=latest_run.id).all()   if r.app_id}
+        else:
+            corent_ws_index, cast_ws_index = {}, {}
+    except Exception:
+        corent_ws_index, cast_ws_index = {}, {}
 
     # ── 2. Copy template ──────────────────────────────────────────────────────
     if not _TEMPLATE_PATH.exists():
@@ -420,15 +487,17 @@ def generate_golden_data() -> Dict[str, Any]:
         app_id       = corent_row.app_id or str(corent_row.id)
         cast_row     = cast_index.get(app_id)
         industry_row = industry_index.get(app_id)
-        golden_rec   = golden_index.get(app_id)
 
         if cast_row is None:
             missing_cast.append(app_id)
 
-        c_ai = corent_ai_fills.get(app_id, set())
-        k_ai = cast_ai_fills.get(app_id, set())
+        c_ai     = corent_ai_fills.get(app_id, set())
+        k_ai     = cast_ai_fills.get(app_id, set())
+        c_ws_row = corent_ws_index.get(app_id)
+        k_ws_row = cast_ws_index.get(app_id)
 
-        values, colors = _build_row(corent_row, cast_row, industry_row, golden_rec, c_ai, k_ai)
+        values, colors = _build_row(corent_row, cast_row, industry_row, None, c_ai, k_ai,
+                                    corent_ws=c_ws_row, cast_ws=k_ws_row)
 
         excel_row = _DATA_START_ROW + row_idx
         for col_i, (val, color) in enumerate(zip(values, colors), start=1):
@@ -446,7 +515,7 @@ def generate_golden_data() -> Dict[str, Any]:
             preview_rows.append(values)
             preview_colors.append(colors)
 
-        _upsert_golden_record(app_id, golden_rec, values, colors)
+        _upsert_golden_record(app_id, None, values, colors)
 
     db.session.commit()
     wb.save(str(_OUTPUT_PATH))
@@ -468,10 +537,8 @@ def _upsert_golden_record(
     values: List[Any],
     colors: List[Optional[str]],
 ) -> None:
-    record = existing or GoldenData.query.filter_by(app_id=app_id).first()
-    if record is None:
-        record = GoldenData(app_id=app_id)
-        db.session.add(record)
+    record = GoldenData(app_id=app_id)
+    db.session.add(record)
 
     def v(i):
         x = values[i]
@@ -584,6 +651,14 @@ def get_preview_data() -> Dict[str, Any]:
     cast_index   = {r.app_id: r for r in CASTData.query.all()     if r.app_id}
     industry_idx = {r.app_id: r for r in IndustryData.query.all() if r.app_id}
     missing_cast, preview_rows, preview_colors = [], [], []
+    # Load workspace rows for AI fill comparison
+    try:
+        from app.models.correlation_workspace import WorkspaceCorentRow, WorkspaceCastRow, WorkspaceRun
+        lrun = WorkspaceRun.query.order_by(WorkspaceRun.id.desc()).first()
+        c_ws_idx = {r.app_id: r for r in WorkspaceCorentRow.query.filter_by(run_id=lrun.id).all() if r.app_id} if lrun else {}
+        k_ws_idx = {r.app_id: r for r in WorkspaceCastRow.query.filter_by(run_id=lrun.id).all()   if r.app_id} if lrun else {}
+    except Exception:
+        c_ws_idx, k_ws_idx = {}, {}
 
     for cr in corent_rows[:_MAX_PREVIEW]:
         app_id = cr.app_id or str(cr.id)
@@ -591,7 +666,9 @@ def get_preview_data() -> Dict[str, Any]:
         ind_r  = industry_idx.get(app_id)
         if not cast_r:
             missing_cast.append(app_id)
-        vals, cols = _build_row(cr, cast_r, ind_r, None, set(), set())
+        vals, cols = _build_row(cr, cast_r, ind_r, None, set(), set(),
+                                corent_ws=c_ws_idx.get(app_id),
+                                cast_ws=k_ws_idx.get(app_id))
         preview_rows.append(vals)
         preview_colors.append(cols)
 
