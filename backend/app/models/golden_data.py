@@ -64,6 +64,32 @@ class GoldenData(db.Model):
     rpo_requirements                    = db.Column(db.String(255))
     deployment_geography                = db.Column(db.String(255))
 
+    # CORENT+CAST combined fields
+    cloud_suitability                           = db.Column(db.String(255))
+    volume_external_dependencies                = db.Column(db.String(255))
+    distributed_architecture_design             = db.Column(db.String(255))
+
+    # Survey fields (user-entered, or preserved from a previous run)
+    level_of_data_residency_compliance          = db.Column(db.String(255))
+    data_classification                         = db.Column(db.String(255))
+    app_regulatory_contractual_requirements     = db.Column(db.String(255))
+    impact_due_to_data_loss                     = db.Column(db.String(255))
+    financial_impact_due_to_unavailability      = db.Column(db.String(255))
+    business_criticality                        = db.Column(db.String(255))
+    customer_facing                             = db.Column(db.String(255))
+    application_status_lifecycle_state          = db.Column(db.String(255))
+    availability_requirements                   = db.Column(db.String(255))
+    support_level                               = db.Column(db.String(255))
+    business_function_readiness                 = db.Column(db.String(255))
+    level_of_internal_governance                = db.Column(db.String(255))
+    no_of_internal_users                        = db.Column(db.String(255))
+    no_of_external_users                        = db.Column(db.String(255))
+    estimated_app_growth                        = db.Column(db.String(255))
+    impact_to_users                             = db.Column(db.String(255))
+
+    # Traceability: list of 0-based Excel column indices that were AI-predicted
+    ai_filled_cols                              = db.Column(db.JSON, nullable=True)
+
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
     updated_at = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
 
@@ -116,6 +142,29 @@ class GoldenData(db.Model):
             'rto_requirements':                      self.rto_requirements,
             'rpo_requirements':                      self.rpo_requirements,
             'deployment_geography':                  self.deployment_geography,
+            # CORENT+CAST combined
+            'cloud_suitability':                     self.cloud_suitability,
+            'volume_external_dependencies':          self.volume_external_dependencies,
+            'distributed_architecture_design':       self.distributed_architecture_design,
+            # Survey fields
+            'level_of_data_residency_compliance':    self.level_of_data_residency_compliance,
+            'data_classification':                   self.data_classification,
+            'app_regulatory_contractual_requirements': self.app_regulatory_contractual_requirements,
+            'impact_due_to_data_loss':               self.impact_due_to_data_loss,
+            'financial_impact_due_to_unavailability': self.financial_impact_due_to_unavailability,
+            'business_criticality':                  self.business_criticality,
+            'customer_facing':                       self.customer_facing,
+            'application_status_lifecycle_state':    self.application_status_lifecycle_state,
+            'availability_requirements':             self.availability_requirements,
+            'support_level':                         self.support_level,
+            'business_function_readiness':           self.business_function_readiness,
+            'level_of_internal_governance':          self.level_of_internal_governance,
+            'no_of_internal_users':                  self.no_of_internal_users,
+            'no_of_external_users':                  self.no_of_external_users,
+            'estimated_app_growth':                  self.estimated_app_growth,
+            'impact_to_users':                       self.impact_to_users,
+            # Traceability
+            'ai_filled_cols':                        self.ai_filled_cols,
             'created_at':  self.created_at.isoformat() if self.created_at else None,
             'updated_at':  self.updated_at.isoformat() if self.updated_at else None,
         }

@@ -59,38 +59,241 @@ Column mapping (row 5 = header row, row 6+ = data):
   Col 60-64 (SURVEY/other)                  blank
 """
 
-import os
+import shutil
 from pathlib import Path
+from typing import Any, Dict, List, Optional, Set, Tuple
 
 import openpyxl
-from openpyxl.styles import PatternFill, Alignment, Font
+from openpyxl.styles import PatternFill, Alignment
 
 from app import db
 from app.models.corent_data import CorentData
 from app.models.cast import CASTData
+from app.models.industry_data import IndustryData
 from app.models.golden_data import GoldenData
 
-# Paths
+# ── Paths ─────────────────────────────────────────────────────────────────────
 _TEMPLATE_PATH  = Path(__file__).resolve().parent.parent.parent / "data" / "APRAttributes.xlsx"
 _OUTPUT_DIR     = Path(__file__).resolve().parent.parent.parent / "UpdatedData"
 _OUTPUT_PATH    = _OUTPUT_DIR / "APRAttributes.xlsx"
 _SHEET_NAME     = "Inputs from Sources"
-_DATA_START_ROW = 6    # Row 5 = header, row 6+ = data
-_MAX_PREVIEW_ROWS = 200
+_DATA_START_ROW = 6
+_MAX_PREVIEW    = 500
+
+# ── Colour fills ──────────────────────────────────────────────────────────────
+_YELLOW_FILL = PatternFill(start_color="FFFF00", end_color="FFFF00", fill_type="solid")  # AI-predicted
+_AMBER_FILL  = PatternFill(start_color="FFC000", end_color="FFC000", fill_type="solid")  # empty survey
+_NO_FILL     = PatternFill(fill_type=None)
+_CENTER      = Alignment(wrap_text=False, vertical="center")
+
+# ── Column map: (0-based idx, source, corent_attr, cast_attr, header) ────────
+# source: "corent" | "cast" | "corent+cast" | "survey" | "corent_env"
+_COL_MAP: List[Tuple[int, str, Optional[str], Optional[str], str]] = [
+    (0,  "corent",      "app_id",                                   None,                               "APP ID"),
+    (1,  "corent",      "app_name",                                 None,                               "List of Applications"),
+    (2,  "corent",      "server_type",                              None,                               "Server Type"),
+    (3,  "corent",      "operating_system",                         None,                               "Operating System"),
+    (4,  "corent",      "cpu_core",                                 None,                               "CPU Core"),
+    (5,  "corent",      "memory",                                   None,                               "Memory"),
+    (6,  "corent",      "internal_storage",                         None,                               "Internal Storage"),
+    (7,  "corent",      "external_storage",                         None,                               "External Storage"),
+    (8,  "corent",      "storage_type",                             None,                               "Storage Type"),
+    (9,  "corent",      "db_storage",                               None,                               "DB Storage"),
+    (10, "corent",      "db_engine",                                None,                               "DB Engine"),
+    (11, "corent_env",  None,                                       None,                               "Environment (INSTALL TYPE)"),
+    (12, "corent",      "virtualization_attributes",                None,                               "Virtualization Attributes"),
+    (13, "corent",      "compute_server_hardware_architecture",     None,                               "Compute / Server Hardware Architecture"),
+    (14, "corent",      "application_stability",                    None,                               "Application Stability"),
+    (15, "corent",      "virtualization_state",                     None,                               "Virtualization State"),
+    (16, "corent",      "storage_decomposition",                    None,                               "Storage Decomposition"),
+    (17, "corent",      "flash_storage_used",                       None,                               "FLASH Storage Used"),
+    (18, "corent",      "cpu_requirement",                          None,                               "CPU Requirement"),
+    (19, "corent",      "memory_ram_requirement",                   None,                               "Memory (RAM) Requirement"),
+    (20, "corent",      "mainframe_dependency",                     None,                               "Mainframe Dependency"),
+    (21, "corent",      "desktop_dependency",                       None,                               "Desktop Dependency"),
+    (22, "corent",      "app_os_platform_cloud_suitability",        None,                               "App OS / Platform Cloud Suitability"),
+    (23, "corent",      "database_cloud_readiness",                 None,                               "Database Cloud Readiness"),
+    (24, "corent",      "integration_middleware_cloud_readiness",   None,                               "Integration Middleware Cloud Readiness"),
+    (25, "cast",        None,                                       "application_architecture",          "Application Architecture"),
+    (26, "corent",      "application_hardware_dependency",          None,                               "Application Hardware Dependency"),
+    (27, "corent",      "app_cots_vs_non_cots",                     None,                               "App COTS vs. Non-COTS Only"),
+    (28, "cast",        None,                                       "source_code_availability",          "Source Code Availability"),
+    (29, "cast",        None,                                       "programming_language",              "Programming Language"),
+    (30, "cast",        None,                                       "component_coupling",                "Component Coupling"),
+    (31, "corent+cast", "cloud_suitability",                        "cloud_suitability",                "Cloud Suitability"),
+    (32, "corent+cast", "volume_external_dependencies",             "volume_external_dependencies",     "Volume of External Dependencies"),
+    (33, "cast",        None,                                       "app_service_api_readiness",         "App Service / API Readiness"),
+    (34, "corent",      "app_load_predictability_elasticity",       None,                               "App Load Predictability / Elasticity"),
+    (35, "cast",        None,                                       "degree_of_code_protocols",          "Degree of Code Protocols"),
+    (36, "cast",        None,                                       "code_design",                      "Code Design"),
+    (37, "cast",        None,                                       "application_code_complexity_volume","Application-Code Complexity / Volume"),
+    (38, "corent",      "financially_optimizable_hardware_usage",   None,                               "Financially Optimizable Hardware Usage"),
+    (39, "corent+cast", "distributed_architecture_design",          "distributed_architecture_design",  "Distributed Architecture Design or not"),
+    (40, "corent",      "latency_requirements",                     None,                               "Latency Requirements"),
+    (41, "corent",      "ubiquitous_access_requirements",           None,                               "Ubiquitous Access Requirements"),
+    (42, "survey",      None,  None,  "Level of Data Residency Compliance"),
+    (43, "survey",      None,  None,  "Data Classification"),
+    (44, "survey",      None,  None,  "App Regulatory & Contractual Requirements"),
+    (45, "survey",      None,  None,  "Impact Due to Data Loss"),
+    (46, "survey",      None,  None,  "Financial Impact Due to Unavailability"),
+    (47, "survey",      None,  None,  "Business Criticality"),
+    (48, "survey",      None,  None,  "Customer Facing"),
+    (49, "survey",      None,  None,  "Application Status & Lifecycle State"),
+    (50, "survey",      None,  None,  "Availability Requirements"),
+    (51, "survey",      None,  None,  "Support Level"),
+    (52, "corent",      "no_production_environments",               None,                               "No. of Production Environments"),
+    (53, "corent",      "no_non_production_environments",           None,                               "No. of Non-Production Environments"),
+    (54, "corent",      "ha_dr_requirements",                       None,                               "HA/DR Requirements"),
+    (55, "survey",      None,  None,  "Business Function Readiness"),
+    (56, "corent",      "rto_requirements",                         None,                               "RTO Requirements"),
+    (57, "corent",      "rpo_requirements",                         None,                               "RPO Requirements"),
+    (58, "corent",      "deployment_geography",                     None,                               "Deployment Geography"),
+    (59, "survey",      None,  None,  "Level of Internal Governance"),
+    (60, "survey",      None,  None,  "No. of Internal Users"),
+    (61, "survey",      None,  None,  "No. of External Users"),
+    (62, "survey",      None,  None,  "Estimated App Growth"),
+    (63, "survey",      None,  None,  "Impact to Users"),
+]
+
+# Maps Excel column index → GoldenData survey field name
+_SURVEY_DB: Dict[int, str] = {
+    42: "level_of_data_residency_compliance",
+    43: "data_classification",
+    44: "app_regulatory_contractual_requirements",
+    45: "impact_due_to_data_loss",
+    46: "financial_impact_due_to_unavailability",
+    47: "business_criticality",
+    48: "customer_facing",
+    49: "application_status_lifecycle_state",
+    50: "availability_requirements",
+    51: "support_level",
+    55: "business_function_readiness",
+    59: "level_of_internal_governance",
+    60: "no_of_internal_users",
+    61: "no_of_external_users",
+    62: "estimated_app_growth",
+    63: "impact_to_users",
+}
+
+# Attribute name differences: CorentData attr → WorkspaceCorentRow attr
+_CORENT_WS_ALIAS: Dict[str, str] = {
+    "financially_optimizable_hardware_usage": "financially_optimizable_hardware",
+}
+# Attribute name differences: CASTData attr → WorkspaceCastRow attr
+_CAST_WS_ALIAS: Dict[str, str] = {
+    "application_code_complexity_volume": "app_code_complexity_volume",
+}
 
 
 def _coalesce(*values):
-    """Return first non-None, non-empty value."""
+    """Return first non-None, non-empty value (as str, preserving ints)."""
     for v in values:
-        if v is not None and str(v).strip():
+        if v is not None and str(v).strip() not in ("", "None", "null"):
             return v
     return None
 
 
-def _env_install(corent_row):
-    """Combine environment + install_type into one cell value."""
-    parts = [p for p in (corent_row.environment, corent_row.install_type) if p]
+def _env_install(row) -> Optional[str]:
+    parts = [p for p in (getattr(row, "environment", None), getattr(row, "install_type", None)) if p]
     return " / ".join(parts) if parts else None
+
+
+def _get_workspace_ai_fills() -> Tuple[Dict[str, Set[str]], Dict[str, Set[str]]]:
+    """Query latest workspace run and return AI-filled column sets per app_id."""
+    corent_fills: Dict[str, Set[str]] = {}
+    cast_fills:   Dict[str, Set[str]] = {}
+    try:
+        from app.models.correlation_workspace import WorkspaceCorentRow, WorkspaceCastRow, WorkspaceRun
+        latest = WorkspaceRun.query.order_by(WorkspaceRun.id.desc()).first()
+        if latest is None:
+            return corent_fills, cast_fills
+        for row in WorkspaceCorentRow.query.filter_by(run_id=latest.id).all():
+            if row.app_id and row.updated_rows:
+                corent_fills[row.app_id] = set(row.updated_rows.get("updated_columns", []))
+        for row in WorkspaceCastRow.query.filter_by(run_id=latest.id).all():
+            if row.app_id and row.updated_rows:
+                cast_fills[row.app_id] = set(row.updated_rows.get("updated_columns", []))
+    except Exception:
+        pass
+    return corent_fills, cast_fills
+
+
+def _is_ai_marker(val) -> bool:
+    return val is not None and str(val).lower().replace("-", " ") == "ai populated value"
+
+
+def _build_row(
+    corent,
+    cast,
+    industry,
+    golden_rec,
+    corent_ai: Set[str],
+    cast_ai: Set[str],
+) -> Tuple[List[Any], List[Optional[str]]]:
+    """
+    Build two parallel 64-element lists: values and colors.
+    colors: "yellow" = AI-predicted, "amber" = empty survey col, None = normal.
+    """
+    values: List[Any] = [None] * 64
+    colors: List[Optional[str]] = [None] * 64
+
+    for idx, src, c_attr, k_attr, _header in _COL_MAP:
+        val = None
+        ai_filled = False
+
+        if src == "corent_env":
+            val = _env_install(corent)
+            if "environment" in corent_ai or "install_type" in corent_ai:
+                ai_filled = True
+
+        elif src == "corent":
+            raw = getattr(corent, c_attr, None)
+            val = _coalesce(raw)
+            ws_col = _CORENT_WS_ALIAS.get(c_attr, c_attr)
+            if c_attr in corent_ai or ws_col in corent_ai:
+                ai_filled = True
+            if _is_ai_marker(val):
+                ai_filled = True
+
+        elif src == "cast":
+            raw_cast = getattr(cast, k_attr, None) if cast else None
+            val = _coalesce(raw_cast)
+            # Industry fallback for architecture
+            if val is None and k_attr == "application_architecture" and industry:
+                val = _coalesce(industry.architecture_type)
+            ws_col = _CAST_WS_ALIAS.get(k_attr, k_attr) if k_attr else None
+            if ws_col and (k_attr in cast_ai or ws_col in cast_ai):
+                ai_filled = True
+            if _is_ai_marker(val):
+                ai_filled = True
+
+        elif src == "corent+cast":
+            cv = _coalesce(getattr(corent, c_attr, None))
+            kv = _coalesce(getattr(cast, k_attr, None) if cast else None)
+            val = _coalesce(cv, kv)
+            ws_c = _CORENT_WS_ALIAS.get(c_attr, c_attr)
+            ws_k = _CAST_WS_ALIAS.get(k_attr, k_attr) if k_attr else None
+            if c_attr in corent_ai or ws_c in corent_ai:
+                ai_filled = True
+            if ws_k and (k_attr in cast_ai or ws_k in cast_ai):
+                ai_filled = True
+            if _is_ai_marker(val):
+                ai_filled = True
+
+        elif src == "survey":
+            db_field = _SURVEY_DB.get(idx)
+            if db_field and golden_rec:
+                val = getattr(golden_rec, db_field, None)
+
+        values[idx] = val
+        is_empty = (val is None or str(val).strip() == "")
+
+        if ai_filled:
+            colors[idx] = "yellow"
+        elif is_empty and src == "survey":
+            colors[idx] = "amber"
+
+    return values, colors
 
 
 def _build_row_values(corent_row, cast_row):
@@ -161,267 +364,257 @@ def _build_row_values(corent_row, cast_row):
     return row
 
 
-def _get_column_headers():
-    """Return the 64-column header list (row 5 labels)."""
-    return [
-        "APP ID", "List of Applications", "Server Type", "Operating System",
-        "CPU Core", "Memory", "Internal Storage", "External Storage",
-        "Storage Type", "DB Storage", "DB Engine", "Environment (INSTALL TYPE)",
-        "Virtualization Attributes", "Compute / Server Hardware Architecture",
-        "Application Stability", "Virtualization State", "Storage Decomposition",
-        "FLASH Storage Used", "CPU Requirement", "Memory (RAM) Requirement",
-        "Mainframe Dependency", "Desktop Dependency",
-        "App OS / Platform Cloud Suitability", "Database Cloud Readiness",
-        "Integration Middleware Cloud Readiness", "Application Architecture",
-        "Application Hardware Dependency", "App COTS vs. Non-COTS Only",
-        "Source Code Availability", "Programming Language", "Component Coupling",
-        "Cloud Suitability", "Volume of External Dependencies",
-        "App Service / API Readiness", "App Load Predictability / Elasticity",
-        "Degree of Code Protocols", "Code Design",
-        "Application-Code Complexity / Volume",
-        "Financially Optimizable Hardware Usage",
-        "Distributed Architecture Design or not",
-        "Latency Requirements", "Ubiquitous Access Requirements",
-        "Level of Data Residency Compliance", "Data Classification",
-        "App Regulatory & Contractual Requirements",
-        "Impact Due to Data Loss", "Financial Impact Due to Unavailability",
-        "Business Criticality", "Customer Facing",
-        "Application Status & Lifecycle State", "Availability Requirements",
-        "Support Level", "No. of Production Environments",
-        "No. of Non-Production Environments", "HA/DR Requirements",
-        "Business Function Readiness", "RTO Requirements", "RPO Requirements",
-        "Deployment Geography", "Level of Internal Governance",
-        "No. of Internal Users", "No. of External Users",
-        "Estimated App Growth", "Impact to Users",
-    ]
+def _get_column_headers() -> List[str]:
+    return [c[4] for c in _COL_MAP]
 
 
-def generate_golden_data():
+def generate_golden_data() -> Dict[str, Any]:
     """
-    1. shutil.copy2(template → UpdatedData/APRAttributes.xlsx)
-    2. Load the copy in write mode
-    3. Clear rows 6+ of 'Inputs from Sources', write DB rows
-    4. Upsert each row into the GoldenData DB table
-    5. Save ONCE to disk  (download endpoint serves from that file)
-
-    Cell colouring rules:
-      • Cell has a value  → Blue background (#1F4E79) + White font
-      • Cell is empty     → Yellow background (#FFD700)
+    1. Fetch CorentData, CASTData, IndustryData from DB.
+    2. Track AI-filled columns from latest workspace run.
+    3. Populate APRAttributes.xlsx (UpdatedData/) with correct colour coding:
+         Yellow = AI-predicted cell
+         Amber  = empty SURVEY-source cell
+         No fill = real DB value
+    4. Upsert each row into GoldenData DB table.
+    5. Return JSON preview with cell_colors list.
     """
     # ── 1. Fetch data ─────────────────────────────────────────────────────────
-    corent_rows = CorentData.query.order_by(CorentData.id).all()
+    corent_rows = CorentData.query.order_by(CorentData.app_id).all()
     if not corent_rows:
         return {
             "row_count": 0,
             "preview_headers": _get_column_headers(),
             "preview_rows": [],
+            "cell_colors": [],
             "missing_cast": [],
-            "error": "No CORENT data found in the database.",
+            "error": "No CORENT data in the database. Upload a CORENT Excel file first.",
         }
 
-    cast_index = {r.app_id: r for r in CASTData.query.all()}
+    cast_index     = {r.app_id: r for r in CASTData.query.all()     if r.app_id}
+    industry_index = {r.app_id: r for r in IndustryData.query.all() if r.app_id}
+    golden_index   = {r.app_id: r for r in GoldenData.query.all()   if r.app_id}
+    corent_ai_fills, cast_ai_fills = _get_workspace_ai_fills()
 
-    # ── 2. Copy template → UpdatedData/ ───────────────────────────────────────
+    # ── 2. Copy template ──────────────────────────────────────────────────────
     if not _TEMPLATE_PATH.exists():
-        raise FileNotFoundError(f"Template not found: {_TEMPLATE_PATH}")
+        raise FileNotFoundError(f"APRAttributes template not found: {_TEMPLATE_PATH}")
     _OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    import shutil as _shutil
-    _shutil.copy2(str(_TEMPLATE_PATH), str(_OUTPUT_PATH))
+    shutil.copy2(str(_TEMPLATE_PATH), str(_OUTPUT_PATH))
 
-    # ── 3. Load the copy (all sheets) ─────────────────────────────────────────
+    # ── 3. Open workbook ──────────────────────────────────────────────────────
     wb = openpyxl.load_workbook(str(_OUTPUT_PATH))
     ws = wb[_SHEET_NAME]
 
-    # ── 4. Clear existing data rows 6+ (keep header rows 1-5) ─────────────────
     if ws.max_row >= _DATA_START_ROW:
         for r in range(_DATA_START_ROW, ws.max_row + 1):
             for c in range(1, 65):
                 ws.cell(row=r, column=c).value = None
 
-    # Styles
-    blue_fill   = PatternFill(start_color="1F4E79", end_color="1F4E79", fill_type="solid")
-    yellow_fill = PatternFill(start_color="FFD700", end_color="FFD700", fill_type="solid")
-    white_font  = Font(color="FFFFFF", bold=False)
-    center_align = Alignment(wrap_text=False, vertical="center")
+    # ── 4. Write rows ──────────────────────────────────────────────────────────
+    missing_cast:   List[str]       = []
+    preview_rows:   List[List]      = []
+    preview_colors: List[List]      = []
 
-    # ── 5. Write DB rows & upsert into GoldenData ─────────────────────────────
-    missing_cast = []
-    preview_rows = []
+    for row_idx, corent_row in enumerate(corent_rows):
+        app_id       = corent_row.app_id or str(corent_row.id)
+        cast_row     = cast_index.get(app_id)
+        industry_row = industry_index.get(app_id)
+        golden_rec   = golden_index.get(app_id)
 
-    for idx, corent_row in enumerate(corent_rows):
-        cast_row = None  # app_id removed from CorentData, CAST join not possible
         if cast_row is None:
-            missing_cast.append(str(corent_row.id))
+            missing_cast.append(app_id)
 
-        values = _build_row_values(corent_row, cast_row)
-        excel_row_num = _DATA_START_ROW + idx
+        c_ai = corent_ai_fills.get(app_id, set())
+        k_ai = cast_ai_fills.get(app_id, set())
 
-        for col_idx, value in enumerate(values, start=1):
-            cell = ws.cell(row=excel_row_num, column=col_idx, value=value)
-            is_empty = value is None or str(value).strip() == ''
-            if is_empty:
-                cell.fill = yellow_fill
+        values, colors = _build_row(corent_row, cast_row, industry_row, golden_rec, c_ai, k_ai)
+
+        excel_row = _DATA_START_ROW + row_idx
+        for col_i, (val, color) in enumerate(zip(values, colors), start=1):
+            cell = ws.cell(row=excel_row, column=col_i)
+            cell.value = val if (val is not None and str(val).strip() != "") else None
+            if color == "yellow":
+                cell.fill = _YELLOW_FILL
+            elif color == "amber":
+                cell.fill = _AMBER_FILL
             else:
-                cell.fill  = blue_fill
-                cell.font  = white_font
-            cell.alignment = center_align
+                cell.fill = _NO_FILL
+            cell.alignment = _CENTER
 
-        if idx < _MAX_PREVIEW_ROWS:
+        if row_idx < _MAX_PREVIEW:
             preview_rows.append(values)
+            preview_colors.append(colors)
 
-        # ── Upsert into GoldenData DB ────────────────────────────────────────
-        _upsert_golden_record(corent_row, cast_row, values)
+        _upsert_golden_record(app_id, golden_rec, values, colors)
 
     db.session.commit()
-
-    # ── 6. Save ONCE to disk ───────────────────────────────────────────────────
     wb.save(str(_OUTPUT_PATH))
 
     return {
-        "row_count": len(corent_rows),
+        "row_count":       len(corent_rows),
         "preview_headers": _get_column_headers(),
-        "preview_rows": preview_rows,
-        "missing_cast": missing_cast,
-        "output_path": str(_OUTPUT_PATH),
-        "error": None,
+        "preview_rows":    preview_rows,
+        "cell_colors":     preview_colors,
+        "missing_cast":    missing_cast,
+        "output_path":     str(_OUTPUT_PATH),
+        "error":           None,
     }
 
 
-def _upsert_golden_record(corent_row, cast_row, values):
-    """Insert or update a single GoldenData row from the 64-value list."""
-    app_id = values[0]
-    if not app_id:
-        return
-
-    record = GoldenData.query.filter_by(app_id=app_id).first()
+def _upsert_golden_record(
+    app_id: str,
+    existing: Optional[GoldenData],
+    values: List[Any],
+    colors: List[Optional[str]],
+) -> None:
+    record = existing or GoldenData.query.filter_by(app_id=app_id).first()
     if record is None:
         record = GoldenData(app_id=app_id)
         db.session.add(record)
 
-    def v(idx):
-        val = values[idx]
-        return str(val) if val is not None else None
+    def v(i):
+        x = values[i]
+        return str(x) if x is not None else None
 
-    def vi(idx):
-        val = values[idx]
+    def vi(i):
+        x = values[i]
         try:
-            return int(val) if val is not None else None
+            return int(x) if x is not None else None
         except (ValueError, TypeError):
             return None
 
-    record.app_name                              = v(1)
-    record.server_type                           = v(2)
-    record.operating_system                      = v(3)
-    record.cpu_core                              = v(4)
-    record.memory                                = v(5)
-    record.internal_storage                      = v(6)
-    record.external_storage                      = v(7)
-    record.storage_type                          = v(8)
-    record.db_storage                            = v(9)
-    record.db_engine                             = v(10)
-    record.environment_install_type              = v(11)
-    record.virtualization_attributes             = v(12)
-    record.compute_server_hardware_architecture  = v(13)
-    record.application_stability                 = v(14)
-    record.virtualization_state                  = v(15)
-    record.storage_decomposition                 = v(16)
-    record.flash_storage_used                    = v(17)
-    record.cpu_requirement                       = v(18)
-    record.memory_ram_requirement                = v(19)
-    record.mainframe_dependency                  = v(20)
-    record.desktop_dependency                    = v(21)
-    record.app_os_platform_cloud_suitability     = v(22)
-    record.database_cloud_readiness              = v(23)
+    record.app_name                               = v(1)
+    record.server_type                            = v(2)
+    record.operating_system                       = v(3)
+    record.cpu_core                               = v(4)
+    record.memory                                 = v(5)
+    record.internal_storage                       = v(6)
+    record.external_storage                       = v(7)
+    record.storage_type                           = v(8)
+    record.db_storage                             = v(9)
+    record.db_engine                              = v(10)
+    record.environment_install_type               = v(11)
+    record.virtualization_attributes              = v(12)
+    record.compute_server_hardware_architecture   = v(13)
+    record.application_stability                  = v(14)
+    record.virtualization_state                   = v(15)
+    record.storage_decomposition                  = v(16)
+    record.flash_storage_used                     = v(17)
+    record.cpu_requirement                        = v(18)
+    record.memory_ram_requirement                 = v(19)
+    record.mainframe_dependency                   = v(20)
+    record.desktop_dependency                     = v(21)
+    record.app_os_platform_cloud_suitability      = v(22)
+    record.database_cloud_readiness               = v(23)
     record.integration_middleware_cloud_readiness = v(24)
-    record.application_architecture              = v(25)
-    record.application_hardware_dependency       = v(26)
-    record.app_cots_vs_non_cots                  = v(27)
-    record.source_code_availability              = v(28)
-    record.programming_language                  = v(29)
-    record.component_coupling                    = v(30)
-    # col 31 = cloud_suitability (merged - no dedicated model field; skip)
-    # col 32 = volume_external_dependencies (merged - skip)
-    record.app_service_api_readiness             = v(33)
-    record.app_load_predictability_elasticity    = v(34)
-    record.degree_of_code_protocols              = v(35)
-    record.code_design                           = v(36)
-    record.application_code_complexity_volume    = v(37)
+    record.application_architecture               = v(25)
+    record.application_hardware_dependency        = v(26)
+    record.app_cots_vs_non_cots                   = v(27)
+    record.source_code_availability               = v(28)
+    record.programming_language                   = v(29)
+    record.component_coupling                     = v(30)
+    record.cloud_suitability                      = v(31)
+    record.volume_external_dependencies           = v(32)
+    record.app_service_api_readiness              = v(33)
+    record.app_load_predictability_elasticity     = v(34)
+    record.degree_of_code_protocols               = v(35)
+    record.code_design                            = v(36)
+    record.application_code_complexity_volume     = v(37)
     record.financially_optimizable_hardware_usage = v(38)
-    record.latency_requirements                  = v(40)
-    record.ubiquitous_access_requirements        = v(41)
-    record.no_of_production_environments         = vi(52)
-    record.no_of_non_production_environments     = vi(53)
-    record.ha_dr_requirements                    = v(54)
-    record.rto_requirements                      = v(56)
-    record.rpo_requirements                      = v(57)
-    record.deployment_geography                  = v(58)
+    record.distributed_architecture_design        = v(39)
+    record.latency_requirements                   = v(40)
+    record.ubiquitous_access_requirements         = v(41)
+    # Survey cols (42-63): preserve existing values, overwrite only if user supplied
+    for ci, db_field in _SURVEY_DB.items():
+        existing_val = getattr(record, db_field, None)
+        new_val = v(ci)
+        if new_val is not None:
+            setattr(record, db_field, new_val)
+        elif existing_val is not None:
+            pass  # preserve existing user-entered value
+    record.no_of_production_environments          = vi(52)
+    record.no_of_non_production_environments      = vi(53)
+    record.ha_dr_requirements                     = v(54)
+    record.rto_requirements                       = v(56)
+    record.rpo_requirements                       = v(57)
+    record.deployment_geography                   = v(58)
+    record.ai_filled_cols = [i for i, c in enumerate(colors) if c == "yellow"] or None
 
 
-def get_preview_data():
-    """
-    Return preview data from the GoldenData DB table (no workbook generation).
-    Falls back to live CORENT+CAST query if the DB table is empty.
-    """
+def get_preview_data() -> Dict[str, Any]:
+    """Return preview from GoldenData DB table (no Excel rebuild)."""
     records = GoldenData.query.order_by(GoldenData.app_id).all()
+    headers = _get_column_headers()
 
     if records:
-        # Build preview rows from DB records
-        headers = _get_column_headers()
-        preview_rows = []
-        missing_cast = []
-        cast_index = {r.app_id: r for r in CASTData.query.all()}
+        preview_rows   = []
+        preview_colors = []
+        missing_cast   = []
+        cast_index = {r.app_id: r for r in CASTData.query.all() if r.app_id}
 
-        for rec in records[:_MAX_PREVIEW_ROWS]:
-            has_cast = rec.app_id in cast_index
-            if not has_cast:
+        for rec in records[:_MAX_PREVIEW]:
+            if rec.app_id and rec.app_id not in cast_index:
                 missing_cast.append(rec.app_id)
             row = _db_record_to_row(rec)
             preview_rows.append(row)
+            colors = [None] * 64
+            ai_set = set(rec.ai_filled_cols or [])
+            for ci in ai_set:
+                if 0 <= ci < 64:
+                    colors[ci] = "yellow"
+            for idx, src, *_ in _COL_MAP:
+                if src == "survey" and colors[idx] is None:
+                    val = row[idx]
+                    if val is None or str(val).strip() == "":
+                        colors[idx] = "amber"
+            preview_colors.append(colors)
 
         return {
-            "row_count": len(records),
+            "row_count":       len(records),
             "preview_headers": headers,
-            "preview_rows": preview_rows,
-            "missing_cast": missing_cast,
-            "source": "db",
+            "preview_rows":    preview_rows,
+            "cell_colors":     preview_colors,
+            "missing_cast":    missing_cast,
+            "source":          "db",
         }
 
     # Fallback: live query
-    corent_rows = CorentData.query.order_by(CorentData.id).all()
-    cast_index  = {r.app_id: r for r in CASTData.query.all()}
-    preview_rows = []
-    missing_cast = []
+    corent_rows  = CorentData.query.order_by(CorentData.app_id).all()
+    cast_index   = {r.app_id: r for r in CASTData.query.all()     if r.app_id}
+    industry_idx = {r.app_id: r for r in IndustryData.query.all() if r.app_id}
+    missing_cast, preview_rows, preview_colors = [], [], []
 
-    for corent_row in corent_rows[:_MAX_PREVIEW_ROWS]:
-        cast_row = None  # app_id removed from CorentData, CAST join not possible
-        if not cast_row:
-            missing_cast.append(str(corent_row.id))
-        preview_rows.append(_build_row_values(corent_row, cast_row))
+    for cr in corent_rows[:_MAX_PREVIEW]:
+        app_id = cr.app_id or str(cr.id)
+        cast_r = cast_index.get(app_id)
+        ind_r  = industry_idx.get(app_id)
+        if not cast_r:
+            missing_cast.append(app_id)
+        vals, cols = _build_row(cr, cast_r, ind_r, None, set(), set())
+        preview_rows.append(vals)
+        preview_colors.append(cols)
 
     return {
-        "row_count": len(corent_rows),
-        "preview_headers": _get_column_headers(),
-        "preview_rows": preview_rows,
-        "missing_cast": missing_cast,
-        "source": "live",
+        "row_count":       len(corent_rows),
+        "preview_headers": headers,
+        "preview_rows":    preview_rows,
+        "cell_colors":     preview_colors,
+        "missing_cast":    missing_cast,
+        "source":          "live",
     }
 
 
-def regenerate_excel_from_db():
-    """
-    Rebuild APRAttributes.xlsx purely from the GoldenData DB table.
-    Called after user edits so the Excel reflects the updated values.
-    """
+def regenerate_excel_from_db() -> Dict[str, Any]:
+    """Rebuild APRAttributes.xlsx from GoldenData DB table (post-edit rebuild)."""
     records = GoldenData.query.order_by(GoldenData.app_id).all()
     if not records:
-        return {"error": "No GoldenData records found. Run Generate first."}
+        return {"error": "No GoldenData records. Run Generate first.", "row_count": 0}
 
     if not _TEMPLATE_PATH.exists():
         raise FileNotFoundError(f"Template not found: {_TEMPLATE_PATH}")
     _OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-
-    import shutil as _shutil
-    _shutil.copy2(str(_TEMPLATE_PATH), str(_OUTPUT_PATH))
+    shutil.copy2(str(_TEMPLATE_PATH), str(_OUTPUT_PATH))
 
     wb = openpyxl.load_workbook(str(_OUTPUT_PATH))
     ws = wb[_SHEET_NAME]
@@ -431,30 +624,32 @@ def regenerate_excel_from_db():
             for c in range(1, 65):
                 ws.cell(row=r, column=c).value = None
 
-    blue_fill    = PatternFill(start_color="1F4E79", end_color="1F4E79", fill_type="solid")
-    yellow_fill  = PatternFill(start_color="FFD700", end_color="FFD700", fill_type="solid")
-    white_font   = Font(color="FFFFFF", bold=False)
-    center_align = Alignment(wrap_text=False, vertical="center")
-
     for idx, rec in enumerate(records):
-        values = _db_record_to_row(rec)
-        excel_row_num = _DATA_START_ROW + idx
-        for col_idx, value in enumerate(values, start=1):
-            cell = ws.cell(row=excel_row_num, column=col_idx, value=value)
-            is_empty = value is None or str(value).strip() == ''
-            if is_empty:
-                cell.fill = yellow_fill
+        values  = _db_record_to_row(rec)
+        ai_set  = set(rec.ai_filled_cols or [])
+        excel_r = _DATA_START_ROW + idx
+
+        for col_i, val in enumerate(values, start=1):
+            cell = ws.cell(row=excel_r, column=col_i)
+            cell.value = val if (val is not None and str(val).strip() != "") else None
+            ci  = col_i - 1
+            src = _COL_MAP[ci][1] if ci < len(_COL_MAP) else "unknown"
+            is_empty = (val is None or str(val).strip() == "")
+
+            if ci in ai_set:
+                cell.fill = _YELLOW_FILL
+            elif is_empty and src == "survey":
+                cell.fill = _AMBER_FILL
             else:
-                cell.fill = blue_fill
-                cell.font = white_font
-            cell.alignment = center_align
+                cell.fill = _NO_FILL
+            cell.alignment = _CENTER
 
     wb.save(str(_OUTPUT_PATH))
     return {"row_count": len(records), "output_path": str(_OUTPUT_PATH), "error": None}
 
 
-def _db_record_to_row(rec):
-    """Map a GoldenData DB record back to the 64-column preview list."""
+def _db_record_to_row(rec: GoldenData) -> List[Any]:
+    """Map a GoldenData DB record to the 64-column preview list."""
     row = [None] * 64
     row[0]  = rec.app_id
     row[1]  = rec.app_name
@@ -487,14 +682,19 @@ def _db_record_to_row(rec):
     row[28] = rec.source_code_availability
     row[29] = rec.programming_language
     row[30] = rec.component_coupling
+    row[31] = getattr(rec, "cloud_suitability",             None)
+    row[32] = getattr(rec, "volume_external_dependencies",  None)
     row[33] = rec.app_service_api_readiness
     row[34] = rec.app_load_predictability_elasticity
     row[35] = rec.degree_of_code_protocols
     row[36] = rec.code_design
     row[37] = rec.application_code_complexity_volume
     row[38] = rec.financially_optimizable_hardware_usage
+    row[39] = getattr(rec, "distributed_architecture_design", None)
     row[40] = rec.latency_requirements
     row[41] = rec.ubiquitous_access_requirements
+    for ci, db_field in _SURVEY_DB.items():
+        row[ci] = getattr(rec, db_field, None)
     row[52] = rec.no_of_production_environments
     row[53] = rec.no_of_non_production_environments
     row[54] = rec.ha_dr_requirements
@@ -502,3 +702,4 @@ def _db_record_to_row(rec):
     row[57] = rec.rpo_requirements
     row[58] = rec.deployment_geography
     return row
+

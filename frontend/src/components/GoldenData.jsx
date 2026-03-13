@@ -10,67 +10,98 @@ import {
 } from '../services/api';
 
 /* ---------------------------------------------------------------------------
-   Column definitions
+   Column definitions  (xlsCol = 0-based index in the 64-column APR layout)
 --------------------------------------------------------------------------- */
 const FIELDS = [
-  { key: 'app_id',   label: 'App ID',   source: 'corent', type: 'text', readOnly: true },
-  { key: 'app_name', label: 'App Name', source: 'corent', type: 'text', readOnly: true },
-  { key: 'server_type',                          label: 'Server Type',                           source: 'corent', type: 'text' },
-  { key: 'operating_system',                     label: 'Operating System',                      source: 'corent', type: 'text' },
-  { key: 'cpu_core',                             label: 'CPU Core',                              source: 'corent', type: 'text' },
-  { key: 'memory',                               label: 'Memory',                                source: 'corent', type: 'text' },
-  { key: 'internal_storage',                     label: 'Internal Storage',                      source: 'corent', type: 'text' },
-  { key: 'external_storage',                     label: 'External Storage',                      source: 'corent', type: 'text' },
-  { key: 'storage_type',                         label: 'Storage Type',                          source: 'corent', type: 'text' },
-  { key: 'db_storage',                           label: 'DB Storage',                            source: 'corent', type: 'text' },
-  { key: 'db_engine',                            label: 'DB Engine',                             source: 'corent', type: 'text' },
-  { key: 'environment_install_type',             label: 'Environment (Install Type)',            source: 'corent', type: 'text' },
-  { key: 'virtualization_attributes',            label: 'Virtualization Attributes',             source: 'corent', type: 'text' },
-  { key: 'compute_server_hardware_architecture', label: 'Compute Server HW Architecture',       source: 'corent', type: 'text' },
-  { key: 'application_stability',                label: 'Application Stability',                 source: 'corent', type: 'text' },
-  { key: 'virtualization_state',                 label: 'Virtualization State',                  source: 'corent', type: 'text' },
-  { key: 'storage_decomposition',                label: 'Storage Decomposition',                 source: 'corent', type: 'text' },
-  { key: 'flash_storage_used',                   label: 'Flash Storage Used',                    source: 'corent', type: 'text' },
-  { key: 'cpu_requirement',                      label: 'CPU Requirement',                       source: 'corent', type: 'text' },
-  { key: 'memory_ram_requirement',               label: 'Memory/RAM Requirement',                source: 'corent', type: 'text' },
-  { key: 'mainframe_dependency',                 label: 'Mainframe Dependency',                  source: 'corent', type: 'text' },
-  { key: 'desktop_dependency',                   label: 'Desktop Dependency',                    source: 'corent', type: 'text' },
-  { key: 'app_os_platform_cloud_suitability',    label: 'App OS Platform Cloud Suitability',     source: 'corent', type: 'text' },
-  { key: 'database_cloud_readiness',             label: 'Database Cloud Readiness',              source: 'corent', type: 'text' },
-  { key: 'integration_middleware_cloud_readiness', label: 'Integration/Middleware Cloud Readiness', source: 'corent', type: 'text' },
-  { key: 'application_architecture',             label: 'Application Architecture',              source: 'corent', type: 'text' },
-  { key: 'application_hardware_dependency',      label: 'Application Hardware Dependency',       source: 'cast',   type: 'text' },
-  { key: 'app_cots_vs_non_cots',                 label: 'App COTS vs Non-COTS',                  source: 'corent', type: 'text' },
-  { key: 'source_code_availability',             label: 'Source Code Availability',              source: 'corent', type: 'text' },
-  { key: 'programming_language',                 label: 'Programming Language',                  source: 'cast',   type: 'text' },
-  { key: 'component_coupling',                   label: 'Component Coupling',                    source: 'cast',   type: 'text' },
-  { key: 'app_service_api_readiness',            label: 'App Service/API Readiness',             source: 'joint',  type: 'text' },
-  { key: 'app_load_predictability_elasticity',   label: 'App Load Predictability/Elasticity',    source: 'joint',  type: 'text' },
-  { key: 'degree_of_code_protocols',             label: 'Degree of Code Protocols',              source: 'cast',   type: 'text' },
-  { key: 'code_design',                          label: 'Code Design',                           source: 'cast',   type: 'text' },
-  { key: 'application_code_complexity_volume',   label: 'Application Code Complexity/Volume',    source: 'cast',   type: 'text' },
-  { key: 'financially_optimizable_hardware_usage', label: 'Financially Optimizable HW Usage',   source: 'joint',  type: 'text' },
-  { key: 'latency_requirements',                 label: 'Latency Requirements',                  source: 'corent', type: 'text' },
-  { key: 'ubiquitous_access_requirements',       label: 'Ubiquitous Access Requirements',        source: 'corent', type: 'text' },
-  { key: 'no_of_production_environments',        label: '# Production Environments',             source: 'corent', type: 'int'  },
-  { key: 'no_of_non_production_environments',    label: '# Non-Production Environments',         source: 'corent', type: 'int'  },
-  { key: 'ha_dr_requirements',                   label: 'HA/DR Requirements',                    source: 'corent', type: 'text' },
-  { key: 'rto_requirements',                     label: 'RTO Requirements',                      source: 'corent', type: 'text' },
-  { key: 'rpo_requirements',                     label: 'RPO Requirements',                      source: 'corent', type: 'text' },
-  { key: 'deployment_geography',                 label: 'Deployment Geography',                  source: 'corent', type: 'text' },
+  { key: 'app_id',   label: 'App ID',   source: 'corent', type: 'text', readOnly: true,  xlsCol: 0  },
+  { key: 'app_name', label: 'App Name', source: 'corent', type: 'text', readOnly: true,  xlsCol: 1  },
+  { key: 'server_type',                          label: 'Server Type',                           source: 'corent', type: 'text', xlsCol: 2  },
+  { key: 'operating_system',                     label: 'Operating System',                      source: 'corent', type: 'text', xlsCol: 3  },
+  { key: 'cpu_core',                             label: 'CPU Core',                              source: 'corent', type: 'text', xlsCol: 4  },
+  { key: 'memory',                               label: 'Memory',                                source: 'corent', type: 'text', xlsCol: 5  },
+  { key: 'internal_storage',                     label: 'Internal Storage',                      source: 'corent', type: 'text', xlsCol: 6  },
+  { key: 'external_storage',                     label: 'External Storage',                      source: 'corent', type: 'text', xlsCol: 7  },
+  { key: 'storage_type',                         label: 'Storage Type',                          source: 'corent', type: 'text', xlsCol: 8  },
+  { key: 'db_storage',                           label: 'DB Storage',                            source: 'corent', type: 'text', xlsCol: 9  },
+  { key: 'db_engine',                            label: 'DB Engine',                             source: 'corent', type: 'text', xlsCol: 10 },
+  { key: 'environment_install_type',             label: 'Environment (Install Type)',            source: 'corent', type: 'text', xlsCol: 11 },
+  { key: 'virtualization_attributes',            label: 'Virtualization Attributes',             source: 'corent', type: 'text', xlsCol: 12 },
+  { key: 'compute_server_hardware_architecture', label: 'Compute Server HW Architecture',       source: 'corent', type: 'text', xlsCol: 13 },
+  { key: 'application_stability',                label: 'Application Stability',                 source: 'corent', type: 'text', xlsCol: 14 },
+  { key: 'virtualization_state',                 label: 'Virtualization State',                  source: 'corent', type: 'text', xlsCol: 15 },
+  { key: 'storage_decomposition',                label: 'Storage Decomposition',                 source: 'corent', type: 'text', xlsCol: 16 },
+  { key: 'flash_storage_used',                   label: 'Flash Storage Used',                    source: 'corent', type: 'text', xlsCol: 17 },
+  { key: 'cpu_requirement',                      label: 'CPU Requirement',                       source: 'corent', type: 'text', xlsCol: 18 },
+  { key: 'memory_ram_requirement',               label: 'Memory/RAM Requirement',                source: 'corent', type: 'text', xlsCol: 19 },
+  { key: 'mainframe_dependency',                 label: 'Mainframe Dependency',                  source: 'corent', type: 'text', xlsCol: 20 },
+  { key: 'desktop_dependency',                   label: 'Desktop Dependency',                    source: 'corent', type: 'text', xlsCol: 21 },
+  { key: 'app_os_platform_cloud_suitability',    label: 'App OS Platform Cloud Suitability',     source: 'corent', type: 'text', xlsCol: 22 },
+  { key: 'database_cloud_readiness',             label: 'Database Cloud Readiness',              source: 'corent', type: 'text', xlsCol: 23 },
+  { key: 'integration_middleware_cloud_readiness', label: 'Integration/Middleware Cloud Readiness', source: 'corent', type: 'text', xlsCol: 24 },
+  { key: 'application_architecture',             label: 'Application Architecture',              source: 'cast',   type: 'text', xlsCol: 25 },
+  { key: 'application_hardware_dependency',      label: 'Application Hardware Dependency',       source: 'corent', type: 'text', xlsCol: 26 },
+  { key: 'app_cots_vs_non_cots',                 label: 'App COTS vs Non-COTS',                  source: 'corent', type: 'text', xlsCol: 27 },
+  { key: 'source_code_availability',             label: 'Source Code Availability',              source: 'cast',   type: 'text', xlsCol: 28 },
+  { key: 'programming_language',                 label: 'Programming Language',                  source: 'cast',   type: 'text', xlsCol: 29 },
+  { key: 'component_coupling',                   label: 'Component Coupling',                    source: 'cast',   type: 'text', xlsCol: 30 },
+  { key: 'cloud_suitability',                    label: 'Cloud Suitability',                     source: 'joint',  type: 'text', xlsCol: 31 },
+  { key: 'volume_external_dependencies',         label: 'Volume of External Dependencies',       source: 'joint',  type: 'text', xlsCol: 32 },
+  { key: 'app_service_api_readiness',            label: 'App Service/API Readiness',             source: 'cast',   type: 'text', xlsCol: 33 },
+  { key: 'app_load_predictability_elasticity',   label: 'App Load Predictability/Elasticity',    source: 'corent', type: 'text', xlsCol: 34 },
+  { key: 'degree_of_code_protocols',             label: 'Degree of Code Protocols',              source: 'cast',   type: 'text', xlsCol: 35 },
+  { key: 'code_design',                          label: 'Code Design',                           source: 'cast',   type: 'text', xlsCol: 36 },
+  { key: 'application_code_complexity_volume',   label: 'Application Code Complexity/Volume',    source: 'cast',   type: 'text', xlsCol: 37 },
+  { key: 'financially_optimizable_hardware_usage', label: 'Financially Optimizable HW Usage',   source: 'corent', type: 'text', xlsCol: 38 },
+  { key: 'distributed_architecture_design',      label: 'Distributed Architecture Design',       source: 'joint',  type: 'text', xlsCol: 39 },
+  { key: 'latency_requirements',                 label: 'Latency Requirements',                  source: 'corent', type: 'text', xlsCol: 40 },
+  { key: 'ubiquitous_access_requirements',       label: 'Ubiquitous Access Requirements',        source: 'corent', type: 'text', xlsCol: 41 },
+  // SURVEY fields (xlsCol 42-51, 55, 59-63)
+  { key: 'level_of_data_residency_compliance',   label: 'Level of Data Residency Compliance',    source: 'survey', type: 'text', xlsCol: 42 },
+  { key: 'data_classification',                  label: 'Data Classification',                   source: 'survey', type: 'text', xlsCol: 43 },
+  { key: 'app_regulatory_contractual_requirements', label: 'App Regulatory & Contractual Req.',  source: 'survey', type: 'text', xlsCol: 44 },
+  { key: 'impact_due_to_data_loss',              label: 'Impact Due to Data Loss',               source: 'survey', type: 'text', xlsCol: 45 },
+  { key: 'financial_impact_due_to_unavailability', label: 'Financial Impact Due to Unavailability', source: 'survey', type: 'text', xlsCol: 46 },
+  { key: 'business_criticality',                 label: 'Business Criticality',                  source: 'survey', type: 'text', xlsCol: 47 },
+  { key: 'customer_facing',                      label: 'Customer Facing',                       source: 'survey', type: 'text', xlsCol: 48 },
+  { key: 'application_status_lifecycle_state',   label: 'Application Status & Lifecycle State',  source: 'survey', type: 'text', xlsCol: 49 },
+  { key: 'availability_requirements',            label: 'Availability Requirements',             source: 'survey', type: 'text', xlsCol: 50 },
+  { key: 'support_level',                        label: 'Support Level',                         source: 'survey', type: 'text', xlsCol: 51 },
+  // Back to CORENT (xlsCol 52-54, 56-58)
+  { key: 'no_of_production_environments',        label: '# Production Environments',             source: 'corent', type: 'int',  xlsCol: 52 },
+  { key: 'no_of_non_production_environments',    label: '# Non-Production Environments',         source: 'corent', type: 'int',  xlsCol: 53 },
+  { key: 'ha_dr_requirements',                   label: 'HA/DR Requirements',                    source: 'corent', type: 'text', xlsCol: 54 },
+  { key: 'business_function_readiness',          label: 'Business Function Readiness',           source: 'survey', type: 'text', xlsCol: 55 },
+  { key: 'rto_requirements',                     label: 'RTO Requirements',                      source: 'corent', type: 'text', xlsCol: 56 },
+  { key: 'rpo_requirements',                     label: 'RPO Requirements',                      source: 'corent', type: 'text', xlsCol: 57 },
+  { key: 'deployment_geography',                 label: 'Deployment Geography',                  source: 'corent', type: 'text', xlsCol: 58 },
+  // SURVEY (xlsCol 59-63)
+  { key: 'level_of_internal_governance',         label: 'Level of Internal Governance',          source: 'survey', type: 'text', xlsCol: 59 },
+  { key: 'no_of_internal_users',                 label: 'No. of Internal Users',                 source: 'survey', type: 'text', xlsCol: 60 },
+  { key: 'no_of_external_users',                 label: 'No. of External Users',                 source: 'survey', type: 'text', xlsCol: 61 },
+  { key: 'estimated_app_growth',                 label: 'Estimated App Growth',                  source: 'survey', type: 'text', xlsCol: 62 },
+  { key: 'impact_to_users',                      label: 'Impact to Users',                       source: 'survey', type: 'text', xlsCol: 63 },
 ];
 
 const SOURCE_BADGE = {
   corent: { label: 'CORENT',      cls: 'bg-blue-100 text-blue-700'     },
   cast:   { label: 'CAST',        cls: 'bg-green-100 text-green-700'   },
   joint:  { label: 'CORENT+CAST', cls: 'bg-purple-100 text-purple-700' },
-  survey: { label: 'SURVEY',      cls: 'bg-gray-100 text-gray-500'     },
+  survey: { label: 'SURVEY',      cls: 'bg-orange-100 text-orange-700' },
 };
 
-function cellCls(value) {
-  return (value === null || value === undefined || value === '')
-    ? 'bg-yellow-100 text-yellow-900'
-    : 'bg-blue-800 text-white';
+/** Determine cell CSS class from DB record + field definition */
+function cellCls(rec, fieldDef) {
+  const val = rec[fieldDef.key];
+  const isEmpty = val === null || val === undefined || val === '';
+  // Check AI-fill from ai_filled_cols (list of Excel column indices)
+  const ai_filled_cols = rec.ai_filled_cols || [];
+  if (Array.isArray(ai_filled_cols) && ai_filled_cols.includes(fieldDef.xlsCol)) {
+    return 'bg-yellow-200 text-yellow-900 font-medium';  // Yellow = AI populated
+  }
+  if (isEmpty && fieldDef.source === 'survey') {
+    return 'bg-amber-100 text-amber-800';  // Amber = empty survey cell
+  }
+  return isEmpty ? 'bg-gray-50 text-gray-400' : 'bg-white text-gray-800';
 }
 
 /* ---------------------------------------------------------------------------
@@ -375,13 +406,14 @@ export default function GoldenData() {
 
           {/* Legend */}
           <div className="flex items-center gap-3 text-xs flex-wrap">
-            <span className="text-gray-500">Source:</span>
+            <span className="text-gray-500 font-medium">Source:</span>
             {Object.values(SOURCE_BADGE).map(({ label, cls }) => (
               <span key={label} className={`px-2 py-0.5 rounded font-medium ${cls}`}>{label}</span>
             ))}
-            <span className="ml-3 text-gray-400">Cell:</span>
-            <span className="px-2 py-0.5 rounded font-medium bg-blue-800 text-white">Has value</span>
-            <span className="px-2 py-0.5 rounded font-medium bg-yellow-100 text-yellow-900 border border-yellow-300">Empty</span>
+            <span className="ml-3 text-gray-500 font-medium">Cell:</span>
+            <span className="px-2 py-0.5 rounded font-medium bg-yellow-200 text-yellow-900 border border-yellow-400">🤖 AI Populated</span>
+            <span className="px-2 py-0.5 rounded font-medium bg-amber-100 text-amber-800 border border-amber-300">⚠️ Empty Survey</span>
+            <span className="px-2 py-0.5 rounded font-medium bg-white text-gray-800 border border-gray-300">✅ DB Value</span>
             <span className="ml-2 text-gray-400 italic text-[11px]">✏️ click to edit row</span>
           </div>
 
@@ -412,7 +444,7 @@ export default function GoldenData() {
                       const empty = val === null || val === undefined || val === '';
                       return (
                         <td key={f.key}
-                          className={`px-3 py-1.5 border-r border-gray-100 max-w-[200px] truncate ${cellCls(val)}`}
+                          className={`px-3 py-1.5 border-r border-gray-100 max-w-[200px] truncate ${cellCls(rec, f)}`}
                           title={String(val ?? '')}>
                           {empty ? '—' : String(val)}
                         </td>

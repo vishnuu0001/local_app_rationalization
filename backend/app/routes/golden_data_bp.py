@@ -140,7 +140,7 @@ def clear():
         return jsonify({"success": False, "message": str(exc)}), 500
 
 
-# ── Writable fields (excludes id / timestamps) ─────────────────────────────
+# ── Writable fields (excludes id / timestamps / ai_filled_cols) ────────────
 _FIELDS = [
     'app_id', 'app_name', 'server_type', 'operating_system', 'cpu_core',
     'memory', 'internal_storage', 'external_storage', 'storage_type',
@@ -153,13 +153,26 @@ _FIELDS = [
     'integration_middleware_cloud_readiness', 'application_architecture',
     'application_hardware_dependency', 'app_cots_vs_non_cots',
     'source_code_availability', 'programming_language', 'component_coupling',
+    'cloud_suitability', 'volume_external_dependencies',
     'app_service_api_readiness', 'app_load_predictability_elasticity',
     'degree_of_code_protocols', 'code_design',
     'application_code_complexity_volume',
-    'financially_optimizable_hardware_usage', 'latency_requirements',
-    'ubiquitous_access_requirements', 'no_of_production_environments',
-    'no_of_non_production_environments', 'ha_dr_requirements',
-    'rto_requirements', 'rpo_requirements', 'deployment_geography',
+    'financially_optimizable_hardware_usage',
+    'distributed_architecture_design',
+    'latency_requirements', 'ubiquitous_access_requirements',
+    # Survey fields
+    'level_of_data_residency_compliance', 'data_classification',
+    'app_regulatory_contractual_requirements', 'impact_due_to_data_loss',
+    'financial_impact_due_to_unavailability', 'business_criticality',
+    'customer_facing', 'application_status_lifecycle_state',
+    'availability_requirements', 'support_level',
+    'business_function_readiness', 'level_of_internal_governance',
+    'no_of_internal_users', 'no_of_external_users',
+    'estimated_app_growth', 'impact_to_users',
+    # Infra / SLA
+    'no_of_production_environments', 'no_of_non_production_environments',
+    'ha_dr_requirements', 'rto_requirements', 'rpo_requirements',
+    'deployment_geography',
 ]
 
 
