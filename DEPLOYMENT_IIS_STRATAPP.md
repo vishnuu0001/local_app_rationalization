@@ -847,14 +847,21 @@ Your tunnel already serves `stratapp.org`, `www.stratapp.org`, and `api.stratapp
 
 **Verify all four hostnames are present and correct:**
 
-| Public hostname | Service Type | URL |
-|-----------------|--------------|-----|
-| `stratapp.org` | HTTP | `localhost:80` |
-| `www.stratapp.org` | HTTP | `localhost:80` |
-| `api.stratapp.org` | HTTP | `localhost:80` |
-| `code.stratapp.org` | HTTP | `localhost:80` |
+| Public hostname | Service Type | URL | No TLS Verify |
+|-----------------|--------------|-----|---------------|
+| `stratapp.org` | HTTP | `localhost:80` | — |
+| `www.stratapp.org` | HTTP | `localhost:80` | — |
+| `api.stratapp.org` | **HTTPS** | `localhost:443` | **On** |
+| `code.stratapp.org` | **HTTPS** | `localhost:443` | **On** |
 
-If any hostname points to the wrong URL, click its **Edit** button, correct the URL, and click **Save hostname**.
+`stratapp.org` and `www.stratapp.org` map to IIS sites with HTTP port 80 bindings → use HTTP.
+`api.stratapp.org` and `code.stratapp.org` map to IIS sites with **HTTPS-only port 443 bindings** → must use HTTPS, otherwise `cloudflared` sends plain HTTP to a TLS port and Cloudflare reports a 502.
+
+If any hostname has the wrong type, click its **Edit** button:
+- Change **Service Type** to `HTTPS`
+- **URL:** `localhost:443`
+- Expand **Additional application settings** → check **No TLS Verify** (required because the localhost certificate is self-signed or a Cloudflare Origin Certificate, not a public CA cert)
+- Click **Save hostname**
 
 ---
 

@@ -170,6 +170,10 @@ def create_app(config_name=None):
             response.headers['Vary'] = 'Origin'
         return response
 
+    @app.route('/favicon.ico', methods=['GET'])
+    def _favicon():
+        return make_response('', 204)
+
     @app.before_request
     def _authenticate_api_requests():
         if request.method == 'OPTIONS':

@@ -1,12 +1,30 @@
 # fix_iis_wfastcgi.ps1 - Run once to register wfastcgi with IIS and restart it
 
 $BackendRoot = $PSScriptRoot
-$wfastcgiExe = Join-Path $BackendRoot "backend\.venv\Scripts\wfastcgi-enable.exe"
+if ([string]::IsNullOrWhiteSpace($BackendRoot)) {
+    $BackendRoot = (Get-Location).Path
+}
+
+# Allow launching from either AppRationalization root or backend folder.
+if ((Split-Path -Leaf $BackendRoot).ToLowerInvariant() -eq "backend") {
+    $BackendRoot = Split-Path -Parent $BackendRoot
+}
+
+$backendPath = Join-Path $BackendRoot "backend"
+if (-not (Test-Path $backendPath)) {
+    Write-Error "Could not find backend folder under: $BackendRoot"
+    Write-Host "Run this script from AppRationalization root or backend folder." -ForegroundColor Yellow
+    exit 1
+}
+
+$wfastcgiExe = Join-Path $backendPath ".venv\Scripts\wfastcgi-enable.exe"
+$wfastcgiPy = Join-Path $backendPath ".venv\Lib\site-packages\wfastcgi.py"
+$appCmdExe = Join-Path $env:WINDIR "System32\inetsrv\appcmd.exe"
 
 # Compute absolute paths for web.config placeholders
-$pythonExe    = Join-Path $BackendRoot "backend\.venv\Scripts\python.exe"
-$wfastcgiApp  = Join-Path $BackendRoot "backend\wfastcgi_runner.py"
-$webConfigPath = Join-Path $BackendRoot "backend\web.config"
+$pythonExe    = Join-Path $backendPath ".venv\Scripts\python.exe"
+$wfastcgiApp  = Join-Path $backendPath "wfastcgi_runner.py"
+$webConfigPath = Join-Path $backendPath "web.config"
 
 # Check admin
 if (-not ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) {
@@ -18,12 +36,37 @@ if (-not ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdenti
 Write-Host "Running as Administrator." -ForegroundColor Green
 
 # Step 1: Register wfastcgi
-if (Test-Path $wfastcgiExe) {
-    Write-Host "`nRegistering wfastcgi with IIS..." -ForegroundColor Cyan
-    & $wfastcgiExe
-} else {
-    Write-Error "wfastcgi-enable.exe not found at: $wfastcgiExe"
-    Write-Host "Run: pip install wfastcgi   inside the venv first." -ForegroundColor Yellow
+if (-not (Test-Path $pythonExe)) {
+    Write-Error "python.exe not found at: $pythonExe"
+    pause
+    exit 1
+}
+
+Write-Host "`nRegistering wfastcgi with IIS..." -ForegroundColor Cyan
+
+if (-not (Test-Path $wfastcgiPy)) {
+    Write-Host "wfastcgi.py not found. Repairing wfastcgi package..." -ForegroundColor Yellow
+    & $pythonExe -m pip install --upgrade --force-reinstall wfastcgi
+}
+
+if (-not (Test-Path $wfastcgiPy)) {
+    Write-Error "wfastcgi.py still missing at: $wfastcgiPy"
+    pause
+    exit 1
+}
+
+if (-not (Test-Path $appCmdExe)) {
+    Write-Error "appcmd.exe not found at: $appCmdExe"
+    pause
+    exit 1
+}
+
+# Register the standard python.exe|...\wfastcgi.py pair expected by IIS + wfastcgi.
+& $appCmdExe set config /section:system.webServer/fastCGI "/-[fullPath='$pythonExe',arguments='$wfastcgiPy']" 2>$null | Out-Null
+& $appCmdExe set config /section:system.webServer/fastCGI "/+[fullPath='$pythonExe',arguments='$wfastcgiPy',signalBeforeTerminateSeconds='30']" | Out-Null
+
+if ($LASTEXITCODE -ne 0) {
+    Write-Error "wfastcgi registration failed. Exit code: $LASTEXITCODE"
     pause
     exit 1
 }
@@ -32,18 +75,51 @@ if (Test-Path $wfastcgiExe) {
 Write-Host "`nPatch web.config with resolved paths..." -ForegroundColor Cyan
 if (Test-Path $webConfigPath) {
     $content = Get-Content $webConfigPath -Raw
-    $content = $content -replace '__BACKEND_PYTHON__', $pythonExe.Replace('\', '\\')
-    $content = $content -replace '__BACKEND_WFASTCGI__', $wfastcgiApp.Replace('\', '\\')
+    $content = $content.Replace('__BACKEND_PYTHON__', $pythonExe)
+    $content = $content.Replace('__BACKEND_WFASTCGI__', $wfastcgiApp)
+
+    # Keep scriptProcessor in exact FastCGI match form: C:\...\python.exe|C:\...\wfastcgi.py
+    $scriptProcessorValue = "scriptProcessor=`"$pythonExe|$wfastcgiPy`""
+    $content = [regex]::Replace($content, 'scriptProcessor="[^"]+"', $scriptProcessorValue, 1)
+
     Set-Content $webConfigPath $content -Encoding UTF8
-    Write-OK "web.config updated: python=$pythonExe"
+    Write-Host "web.config updated: python=$pythonExe" -ForegroundColor Green
 } else {
     Write-Host "    WARN: web.config not found at $webConfigPath" -ForegroundColor Yellow
 }
 
 # Step 3: Grant IIS app pool read/execute access to backend folder
-$backendPath = Join-Path $BackendRoot "backend"
-Write-Host "`nGranting IIS AppPool\DefaultAppPool access to backend..." -ForegroundColor Cyan
+Write-Host "`nGranting IIS app pool identities access to backend..." -ForegroundColor Cyan
+icacls $backendPath /grant "IIS AppPool\AppRationalizationPool:(OI)(CI)RX" /T | Out-Null
 icacls $backendPath /grant "IIS AppPool\DefaultAppPool:(OI)(CI)RX" /T | Out-Null
+
+# If this venv is chained to a user/profile Python install, grant RX there too.
+$pyvenvCfgPath = Join-Path $backendPath ".venv\pyvenv.cfg"
+if (Test-Path $pyvenvCfgPath) {
+    $pyvenvCfg = Get-Content $pyvenvCfgPath
+
+    $homeLine = $pyvenvCfg | Where-Object { $_ -match '^home\s*=\s*' } | Select-Object -First 1
+    if ($homeLine) {
+        $pythonHome = ($homeLine -split '=', 2)[1].Trim()
+        if (Test-Path $pythonHome) {
+            Write-Host "Granting RX on Python home: $pythonHome" -ForegroundColor Cyan
+            icacls $pythonHome /grant "IIS AppPool\AppRationalizationPool:(OI)(CI)RX" /T | Out-Null
+        }
+    }
+
+    $exeLine = $pyvenvCfg | Where-Object { $_ -match '^executable\s*=\s*' } | Select-Object -First 1
+    if ($exeLine) {
+        $baseExe = ($exeLine -split '=', 2)[1].Trim()
+        if (Test-Path $baseExe) {
+            $baseVenvRoot = Split-Path (Split-Path $baseExe -Parent) -Parent
+            if (Test-Path $baseVenvRoot) {
+                Write-Host "Granting RX on base venv root: $baseVenvRoot" -ForegroundColor Cyan
+                icacls $baseVenvRoot /grant "IIS AppPool\AppRationalizationPool:(OI)(CI)RX" /T | Out-Null
+            }
+        }
+    }
+}
+
 Write-Host "Permissions applied." -ForegroundColor Green
 
 # Step 4: Restart IIS
