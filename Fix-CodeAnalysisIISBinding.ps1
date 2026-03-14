@@ -55,14 +55,20 @@ Write-Step "Stopping IIS site '$SiteName'..."
 & $AppCmd stop site "/site.name:$SiteName" 2>&1 | Out-Null
 Start-Sleep -Seconds 1
 
-# Step 3: Remove old HTTPS:8001 binding
-Write-Step "Removing old https binding on port $OldPort..."
-$removeResult = & $AppCmd set site $SiteName "-bindings.[protocol='https',bindingInformation='*:${OldPort}:code.stratapp.org']" 2>&1
-if ($LASTEXITCODE -eq 0) {
-    Write-OK "Old binding removed."
-} else {
-    Write-Warn "Could not remove old binding (may already be gone): $removeResult"
+# Step 3: Remove ALL existing bindings on this site (handles any port/protocol leftover)
+Write-Step "Removing all existing bindings from '$SiteName'..."
+$siteXml = & $AppCmd list site $SiteName /xml 2>&1
+# Remove https:8001, https:8082, http:8082 - any combination that may exist
+foreach ($proto in @('https','http')) {
+    foreach ($port in @(8001, 8082)) {
+        foreach ($ip in @('*', '127.0.0.1', '0.0.0.0')) {
+            $bindInfo = "${ip}:${port}:"
+            & $AppCmd set site $SiteName "-bindings.[protocol='$proto',bindingInformation='$bindInfo']" 2>&1 | Out-Null
+            & $AppCmd set site $SiteName "-bindings.[protocol='$proto',bindingInformation='${ip}:${port}:code.stratapp.org']" 2>&1 | Out-Null
+        }
+    }
 }
+Write-OK "Old bindings cleared."
 
 # Step 4: Add new HTTP:127.0.0.1:8082 binding
 Write-Step "Adding new http/127.0.0.1:${NewPort}: binding..."

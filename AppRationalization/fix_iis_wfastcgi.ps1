@@ -62,7 +62,10 @@ if (-not (Test-Path $appCmdExe)) {
 }
 
 # Register the standard python.exe|...\wfastcgi.py pair expected by IIS + wfastcgi.
+# Step 1a: Remove any existing entry so we start clean.
 & $appCmdExe set config /section:system.webServer/fastCGI "/-[fullPath='$pythonExe',arguments='$wfastcgiPy']" 2>$null | Out-Null
+
+# Step 1b: Add the entry with only the attributes IIS schema guarantees to accept.
 & $appCmdExe set config /section:system.webServer/fastCGI "/+[fullPath='$pythonExe',arguments='$wfastcgiPy',signalBeforeTerminateSeconds='30']" | Out-Null
 
 if ($LASTEXITCODE -ne 0) {
@@ -70,6 +73,25 @@ if ($LASTEXITCODE -ne 0) {
     pause
     exit 1
 }
+
+# Step 1c: Set timeout attributes one at a time so a bad value fails gracefully.
+Write-Host "`nSetting FastCGI timeouts..." -ForegroundColor Cyan
+
+# idleTimeout: seconds before IIS kills an idle process. 0 = never kill (fixes 502 after 5-min idle).
+$r = & $appCmdExe set config /section:system.webServer/fastCGI "/[fullPath='$pythonExe',arguments='$wfastcgiPy'].idleTimeout:0" 2>&1
+if ($LASTEXITCODE -eq 0) { Write-Host "    idleTimeout=0 (disabled)" -ForegroundColor Green } else { Write-Host "    idleTimeout: $r" -ForegroundColor Yellow }
+
+# activityTimeout: max seconds a running request can be inactive.
+$r = & $appCmdExe set config /section:system.webServer/fastCGI "/[fullPath='$pythonExe',arguments='$wfastcgiPy'].activityTimeout:3600" 2>&1
+if ($LASTEXITCODE -eq 0) { Write-Host "    activityTimeout=3600" -ForegroundColor Green } else { Write-Host "    activityTimeout: $r" -ForegroundColor Yellow }
+
+# requestTimeout: max total seconds per request.
+$r = & $appCmdExe set config /section:system.webServer/fastCGI "/[fullPath='$pythonExe',arguments='$wfastcgiPy'].requestTimeout:90" 2>&1
+if ($LASTEXITCODE -eq 0) { Write-Host "    requestTimeout=90" -ForegroundColor Green } else { Write-Host "    requestTimeout: $r" -ForegroundColor Yellow }
+
+# maxInstances: allow up to 4 concurrent wfastcgi workers.
+$r = & $appCmdExe set config /section:system.webServer/fastCGI "/[fullPath='$pythonExe',arguments='$wfastcgiPy'].maxInstances:4" 2>&1
+if ($LASTEXITCODE -eq 0) { Write-Host "    maxInstances=4" -ForegroundColor Green } else { Write-Host "    maxInstances: $r" -ForegroundColor Yellow }
 
 # Step 2: Write correct paths into web.config (replaces __BACKEND_PYTHON__ / __BACKEND_WFASTCGI__ tokens)
 Write-Host "`nPatch web.config with resolved paths..." -ForegroundColor Cyan
