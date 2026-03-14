@@ -74,14 +74,10 @@ ingress:
   - hostname: api.stratapp.org
     service: http://127.0.0.1:8080
 
-  # Route /api/* directly to FastAPI (port 8000) - bypasses IIS, no ARR needed
+  # FastAPI serves BOTH the React SPA and /api/* on port 8001
+  # No IIS, no ARR, no path routing needed
   - hostname: code.stratapp.org
-    path: ^/api
-    service: http://127.0.0.1:8000
-
-  # SPA static files served by IIS on port 8082
-  - hostname: code.stratapp.org
-    service: http://127.0.0.1:8082
+    service: http://127.0.0.1:8001
 
   - hostname: stratapp.org
     service: http://localhost:80

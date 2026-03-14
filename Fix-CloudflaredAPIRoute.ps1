@@ -35,16 +35,10 @@ ingress:
     originRequest:
       noTLSVerify: true
 
-  # Route /api/* directly to FastAPI (port 8001) - no IIS/ARR needed
+  # FastAPI serves BOTH the React SPA and /api/* on port 8001
+  # No IIS, no ARR, no path routing needed
   - hostname: code.stratapp.org
-    path: ^/api
     service: http://127.0.0.1:8001
-
-  # SPA static files served by IIS
-  - hostname: code.stratapp.org
-    service: https://localhost:443
-    originRequest:
-      noTLSVerify: true
 
   - hostname: stratapp.org
     service: http://localhost:80
@@ -84,4 +78,4 @@ try {
 }
 
 Write-Host ""
-Write-Host "Done. /api/* on code.stratapp.org now routes directly to FastAPI on port 8001."
+Write-Host "Done. code.stratapp.org now routes entirely to FastAPI on port 8001 (SPA + API)."
