@@ -122,9 +122,42 @@ if (Test-Path $pyvenvCfgPath) {
 
 Write-Host "Permissions applied." -ForegroundColor Green
 
-# Step 4: Restart IIS
+# Step 4: Free port 8001 so CodeAnalysisUI site can bind on restart
+Write-Host "`nChecking port 8001 for conflicting processes..." -ForegroundColor Cyan
+$port8001 = Get-NetTCPConnection -LocalPort 8001 -State Listen -ErrorAction SilentlyContinue
+if ($port8001) {
+    foreach ($conn in $port8001) {
+        $pid8001 = $conn.OwningProcess
+        $proc = Get-Process -Id $pid8001 -ErrorAction SilentlyContinue
+        if ($proc) {
+            Write-Host "    Killing $($proc.ProcessName) (PID $pid8001) holding port 8001..." -ForegroundColor Yellow
+            Stop-Process -Id $pid8001 -Force -ErrorAction SilentlyContinue
+            Start-Sleep -Seconds 1
+        }
+    }
+    Write-Host "    Port 8001 freed." -ForegroundColor Green
+} else {
+    Write-Host "    Port 8001 is free." -ForegroundColor Green
+}
+
+# Step 5: Restart IIS
 Write-Host "`nRestarting IIS..." -ForegroundColor Cyan
 iisreset
 
+# Step 6: Explicitly start CodeAnalysisUI if still stopped after iisreset
+Write-Host "`nEnsuring CodeAnalysisUI site is started..." -ForegroundColor Cyan
+$siteState = & $appCmdExe list site /name:"CodeAnalysisUI" 2>$null
+if ($siteState -match 'state:Stopped') {
+    & $appCmdExe start site /site.name:"CodeAnalysisUI" 2>&1 | Out-Null
+    if ($LASTEXITCODE -eq 0) {
+        Write-Host "    CodeAnalysisUI started." -ForegroundColor Green
+    } else {
+        Write-Host "    Could not start CodeAnalysisUI - check bindings/port." -ForegroundColor Red
+    }
+} else {
+    Write-Host "    CodeAnalysisUI is running." -ForegroundColor Green
+}
+
 Write-Host "`nDone. Test https://api.stratapp.org/api/health in your browser." -ForegroundColor Green
+Write-Host "      https://code.stratapp.org to verify CodeAnalysisUI." -ForegroundColor Green
 pause

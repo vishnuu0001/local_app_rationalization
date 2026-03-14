@@ -75,7 +75,7 @@ ingress:
     service: http://127.0.0.1:8080
 
   - hostname: code.stratapp.org
-    service: http://127.0.0.1:8080
+    service: http://127.0.0.1:8082
 
   - hostname: stratapp.org
     service: http://localhost:80
