@@ -36,7 +36,10 @@ ingress:
       noTLSVerify: true
 
   # FastAPI serves BOTH the React SPA and /api/* on port 8001
-  # No IIS, no ARR, no path routing needed
+  # NOTE: Cloudflare tunnel uses REMOTE managed config from the dashboard.
+  # The local config.yml ingress section is overridden by Cloudflare.
+  # The Cloudflare dashboard routes code.stratapp.org -> http://127.0.0.1:8082
+  # So FastAPI must run on port 8082 (IIS CodeAnalysisUI binding on 8082 must be removed).
   - hostname: code.stratapp.org
     service: http://127.0.0.1:8001
 

@@ -5,7 +5,7 @@ from urllib.parse import urlencode, quote
 import requests
 from flask import Blueprint, jsonify, redirect, request, g
 
-from app.models.auth import APP_RATIONALIZATION, CODE_ANALYSIS, SUPPORTED_APPS, User
+from app.models.auth import APP_RATIONALIZATION, CODE_ANALYSIS, INFRA_SCAN, SUPPORTED_APPS, User
 from app.services.auth_service import AUTH_APP_NAME_MAP, AuthService
 
 
@@ -99,6 +99,11 @@ def get_apps():
                     "key": CODE_ANALYSIS,
                     "name": "Code Analysis",
                     "slug": "code-analysis",
+                },
+                {
+                    "key": INFRA_SCAN,
+                    "name": "Infra Scan",
+                    "slug": "infra-scan",
                 },
             ]
         }

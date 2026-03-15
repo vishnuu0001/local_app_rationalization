@@ -139,17 +139,22 @@ $appRBackendDir = Join-Path $repoRoot 'AppRationalization\backend'
 $appRFrontendDir = Join-Path $repoRoot 'AppRationalization\frontend'
 $codeBackendDir = Join-Path $repoRoot 'CodeAnalysis'
 $codeFrontendDir = Join-Path $repoRoot 'CodeAnalysis\frontend'
+$infraBackendDir = Join-Path $repoRoot 'InfraRationalization'
+$infraFrontendDir = Join-Path $repoRoot 'InfraRationalization\frontend'
 
 Ensure-Directory -Path $appRBackendDir -Label 'AppRationalization backend'
 Ensure-Directory -Path $appRFrontendDir -Label 'AppRationalization frontend'
 Ensure-Directory -Path $codeBackendDir -Label 'CodeAnalysis backend'
 Ensure-Directory -Path $codeFrontendDir -Label 'CodeAnalysis frontend'
+Ensure-Directory -Path $infraBackendDir -Label 'InfraRationalization backend'
+Ensure-Directory -Path $infraFrontendDir -Label 'InfraRationalization frontend'
 
 Assert-Command -Name 'python'
 Assert-Command -Name 'npm'
 
-$appREnv = Join-Path $appRBackendDir '.env'
-$codeEnv = Join-Path $codeBackendDir '.env'
+$appREnv  = Join-Path $appRBackendDir '.env'
+$codeEnv  = Join-Path $codeBackendDir '.env'
+$infraEnv = Join-Path $infraBackendDir '.env'
 
 if (-not (Test-Path -LiteralPath $appREnv)) {
     Write-Warning "Missing .env file: $appREnv"
@@ -157,30 +162,42 @@ if (-not (Test-Path -LiteralPath $appREnv)) {
 if (-not (Test-Path -LiteralPath $codeEnv)) {
     Write-Warning "Missing .env file: $codeEnv"
 }
+if (-not (Test-Path -LiteralPath $infraEnv)) {
+    Write-Warning "Missing .env file: $infraEnv"
+}
 
-$appRPython = Ensure-PythonEnv -ProjectDir $appRBackendDir -ForceInstall:$InstallDeps -IsDryRun:$DryRun
-$codePython = Ensure-PythonEnv -ProjectDir $codeBackendDir -ForceInstall:$InstallDeps -IsDryRun:$DryRun
+$appRPython  = Ensure-PythonEnv -ProjectDir $appRBackendDir -ForceInstall:$InstallDeps -IsDryRun:$DryRun
+$codePython  = Ensure-PythonEnv -ProjectDir $codeBackendDir -ForceInstall:$InstallDeps -IsDryRun:$DryRun
+$infraPython = Ensure-PythonEnv -ProjectDir $infraBackendDir -ForceInstall:$InstallDeps -IsDryRun:$DryRun
 
 Ensure-NodeModules -ProjectDir $appRFrontendDir -ForceInstall:$InstallDeps -IsDryRun:$DryRun
 Ensure-NodeModules -ProjectDir $codeFrontendDir -ForceInstall:$InstallDeps -IsDryRun:$DryRun
+Ensure-NodeModules -ProjectDir $infraFrontendDir -ForceInstall:$InstallDeps -IsDryRun:$DryRun
 
-$appRBackendCommand = "& '$appRPython' run.py"
-$appRFrontendCommand = 'npm start'
-$codeBackendCommand = "& '$codePython' api/server.py"
-$codeFrontendCommand = 'npm run dev'
+$appRBackendCommand  = "& '$appRPython' run.py"
+$appRFrontendCommand  = 'npm start'
+$codeBackendCommand  = "& '$codePython' -m uvicorn api.server:app --host 0.0.0.0 --port 8082"
+$codeFrontendCommand  = 'npm run dev'
+$infraBackendCommand  = "& '$infraPython' -m uvicorn api.server:app --host 0.0.0.0 --port 8083"
+$infraFrontendCommand = 'npm run dev'
 
 Start-ServiceWindow -Title 'AppRationalization Backend' -Directory $appRBackendDir -Command $appRBackendCommand -IsDryRun:$DryRun
 Start-Sleep -Milliseconds 400
 Start-ServiceWindow -Title 'AppRationalization Frontend' -Directory $appRFrontendDir -Command $appRFrontendCommand -IsDryRun:$DryRun
 Start-Sleep -Milliseconds 400
-Start-ServiceWindow -Title 'CodeAnalysis Backend' -Directory $codeBackendDir -Command $codeBackendCommand -IsDryRun:$DryRun
+Start-ServiceWindow -Title 'CodeAnalysis Backend (port 8082)' -Directory $codeBackendDir -Command $codeBackendCommand -IsDryRun:$DryRun
 Start-Sleep -Milliseconds 400
 Start-ServiceWindow -Title 'CodeAnalysis Frontend' -Directory $codeFrontendDir -Command $codeFrontendCommand -IsDryRun:$DryRun
+Start-Sleep -Milliseconds 400
+Start-ServiceWindow -Title 'InfraRationalization Backend (port 8083)' -Directory $infraBackendDir -Command $infraBackendCommand -IsDryRun:$DryRun
+Start-Sleep -Milliseconds 400
+Start-ServiceWindow -Title 'InfraRationalization Frontend' -Directory $infraFrontendDir -Command $infraFrontendCommand -IsDryRun:$DryRun
 
 Write-Host ''
 Write-Host 'Launch complete.' -ForegroundColor Green
 Write-Host 'AppRationalization Portal: http://localhost:3000/login'
-Write-Host 'CodeAnalysis UI:          http://localhost:5173'
+Write-Host 'CodeAnalysis UI:          http://localhost:5173  (production: https://code.stratapp.org)'
+Write-Host 'InfraRationalization UI:  http://localhost:5174  (production: https://infra.stratapp.org)'
 Write-Host ''
 Write-Host 'Usage:' -ForegroundColor Cyan
 Write-Host '  .\Start-AllServices.ps1'

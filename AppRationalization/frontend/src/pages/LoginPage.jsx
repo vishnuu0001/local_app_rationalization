@@ -88,40 +88,40 @@ const LoginPage = () => {
                 <Factory size={22} className="text-white" />
               </div>
               <div>
-                <p className="portal-section-label">Tech Mahindra</p>
-                <h1 className="text-3xl sm:text-4xl font-semibold leading-tight text-white">Secure entry to rationalization and code intelligence</h1>
+                <p className="portal-section-label">Vishnuu R & D</p>
+                <h1 className="text-3xl sm:text-4xl font-semibold leading-tight text-white">Secure entry to infrastructure, code, and portfolio intelligence</h1>
               </div>
             </div>
 
             <p className="mt-6 max-w-2xl text-sm sm:text-base leading-8 text-slate-300">
-              Sign in once to launch both modernization workspaces with the same session, permission model,
-              and decision context. The portal is designed for manufacturing transformation programs that need
-              both estate-level rationalization and code-level intelligence.
+              Sign in once to launch all three modernization workspaces with the same session, permission model,
+              and decision context. Start with Infra Scan to assess cloud feasibility, move into Code Analysis
+              for repository intelligence, then finalize portfolio decisions in App Rationalization.
             </p>
 
             <div className="mt-8 grid sm:grid-cols-3 gap-4">
               <div className="portal-stat-card">
                 <Lock size={18} className="text-cyan-300" />
                 <p className="mt-3 text-base font-semibold text-white">Signed access</p>
-                <p className="mt-2 text-xs leading-6 text-slate-400">Managed login, logout, and controlled session handoff between modules.</p>
+                <p className="mt-2 text-xs leading-6 text-slate-400">Managed login, logout, and controlled session handoff across all three modules.</p>
               </div>
               <div className="portal-stat-card">
                 <Users size={18} className="text-indigo-300" />
                 <p className="mt-3 text-base font-semibold text-white">Controlled launch</p>
-                <p className="mt-2 text-xs leading-6 text-slate-400">Only the applications assigned to a user are visible and accessible.</p>
+                <p className="mt-2 text-xs leading-6 text-slate-400">Only the applications assigned to a user are visible and accessible from the launcher.</p>
               </div>
               <div className="portal-stat-card">
                 <Sparkles size={18} className="text-sky-300" />
-                <p className="mt-3 text-base font-semibold text-white">Shared insight flow</p>
-                <p className="mt-2 text-xs leading-6 text-slate-400">Move from business rationalization into code analysis without breaking context.</p>
+                <p className="mt-3 text-base font-semibold text-white">Three-step flow</p>
+                <p className="mt-2 text-xs leading-6 text-slate-400">Infra Scan → Code Analysis → App Rationalization: each module feeds the next decision.</p>
               </div>
             </div>
           </div>
 
           <div className="portal-illustration-frame mt-8 p-3">
             <img
-              src="/manufacturing-modernization.svg"
-              alt="Manufacturing modernization portal illustration"
+              src="/infra-scan-cloud.svg"
+              alt="Infrastructure cloud feasibility assessment flow"
               className="w-full rounded-[20px] object-cover"
             />
           </div>

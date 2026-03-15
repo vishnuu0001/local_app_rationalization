@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    @apply bg-surface text-gray-100 font-sans antialiased;
+    background-image:
+      radial-gradient(ellipse 80% 50% at 50% -20%, rgba(16, 185, 129, 0.10), transparent),
+      radial-gradient(ellipse 60% 40% at 80% 80%, rgba(59, 130, 246, 0.07), transparent);
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-surface-card border border-surface-border rounded-2xl;
+  }
+  .btn-primary {
+    @apply bg-gradient-brand text-white font-medium transition-opacity hover:opacity-90 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  .btn-ghost {
+    @apply text-slate-400 hover:text-white hover:bg-surface-hover transition-colors rounded-xl;
+  }
+}

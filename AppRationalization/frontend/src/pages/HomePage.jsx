@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
   ArrowRight,
@@ -6,10 +6,12 @@ import {
   Bot,
   Factory,
   GitBranch,
+  Globe,
   LayoutPanelTop,
   LogOut,
   Network,
   Rocket,
+  Server,
   ShieldCheck,
   Sparkles,
 } from 'lucide-react';
@@ -36,12 +38,16 @@ const businessThemes = [
 
 const executionFlow = [
   {
-    title: 'Collect enterprise signals',
-    description: 'Bring together inventory, CAST findings, industry templates, and correlation views into a single workspace.',
+    title: 'Scan infrastructure feasibility',
+    description: 'Upload MaaS™ feasibility reports into Infra Scan to assess cloud readiness, migration strategies, capacity planning, and right-sizing cost models.',
   },
   {
     title: 'Add code-level evidence',
     description: 'Use Code Analysis to quantify health, debt, architecture, OSS risk, and cloud fitment before roadmap decisions.',
+  },
+  {
+    title: 'Collect enterprise signals',
+    description: 'Bring together inventory, CAST findings, industry templates, and correlation views into a single workspace.',
   },
   {
     title: 'Drive modernization choices',
@@ -171,8 +177,8 @@ const HomePage = () => {
 
                 <div className="portal-illustration-frame min-h-[260px] p-4 flex items-center justify-center">
                   <img
-                    src="/manufacturing-modernization.svg"
-                    alt="Manufacturing application rationalization illustration"
+                    src="/infra-scan-cloud.svg"
+                    alt="Infrastructure cloud readiness assessment flow"
                     className="w-full h-full object-cover rounded-[20px] portal-float"
                   />
                 </div>
@@ -181,19 +187,24 @@ const HomePage = () => {
 
             <article className="portal-panel rounded-[28px] p-7 lg:p-8 flex flex-col gap-6">
               <div>
-                <p className="portal-section-label">Code intelligence</p>
-                <h3 className="mt-3 text-2xl font-semibold text-white">How Code Analysis sharpens rationalization</h3>
+                <div className="flex items-center gap-2 mb-3">
+                  <div className="h-8 w-8 rounded-xl bg-emerald-500/15 border border-emerald-400/15 flex items-center justify-center shrink-0">
+                    <Globe size={15} className="text-emerald-300" />
+                  </div>
+                  <p className="portal-section-label">Infra intelligence · Step 1</p>
+                </div>
+                <h3 className="mt-1 text-2xl font-semibold text-white">How Infra Scan grounds cloud planning</h3>
                 <p className="mt-4 text-sm leading-7 text-slate-300">
-                  Code Analysis adds the engineering lens: architecture shape, technical debt, cloud readiness,
-                  dependency risk, sustainability signals, and modernization effort. That context helps teams separate
-                  what should be optimized from what should be retired, and what requires deeper redesign before migration.
+                  Infra Scan ingests MaaS™ cloud feasibility reports to surface cloud readiness scores,
+                  migration strategies (Lift &amp; Shift, Smart Shift, PaaS), equivalence vs. best-match sizing,
+                  workload consolidation opportunities, and end-of-support advisories — all in a visual dashboard.
                 </p>
               </div>
 
               <div className="portal-illustration-frame p-3">
                 <img
-                  src="/code-analysis-graph.svg"
-                  alt="Code analysis intelligence illustration"
+                  src="/infra-scan-cloud.svg"
+                  alt="Infra Scan cloud readiness illustration"
                   className="w-full rounded-[20px] object-cover"
                 />
               </div>
@@ -201,17 +212,50 @@ const HomePage = () => {
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="portal-stat-card">
                   <div className="flex items-center gap-3">
-                    <BarChart3 size={18} className="text-cyan-300" />
-                    <p className="text-base font-semibold text-white">Portfolio scoring</p>
+                    <Server size={16} className="text-emerald-300" />
+                    <p className="text-base font-semibold text-white">Capacity planning</p>
                   </div>
-                  <p className="mt-3 text-sm leading-7 text-slate-400">Compare health, debt, cloud fitment, and business impact across repositories.</p>
+                  <p className="mt-3 text-sm leading-7 text-slate-400">Compare equivalence and best-match sizing across cloud targets to find the most cost-effective configuration.</p>
                 </div>
                 <div className="portal-stat-card">
                   <div className="flex items-center gap-3">
-                    <ShieldCheck size={18} className="text-indigo-300" />
-                    <p className="text-base font-semibold text-white">Risk visibility</p>
+                    <Rocket size={16} className="text-emerald-300" />
+                    <p className="text-base font-semibold text-white">Migration readiness</p>
                   </div>
-                  <p className="mt-3 text-sm leading-7 text-slate-400">Surface vulnerable dependencies, stale stacks, and architecture hotspots early.</p>
+                  <p className="mt-3 text-sm leading-7 text-slate-400">Classify servers by migration strategy and identify OS/workload end-of-support risks before committing to a migration path.</p>
+                </div>
+              </div>
+
+              <div className="border-t border-slate-800/60 pt-5">
+                <p className="portal-section-label">Code intelligence · Step 2</p>
+                <h3 className="mt-2 text-xl font-semibold text-white">How Code Analysis sharpens rationalization</h3>
+                <p className="mt-3 text-sm leading-7 text-slate-300">
+                  Code Analysis adds the engineering lens: architecture shape, technical debt, cloud readiness,
+                  dependency risk, sustainability signals, and modernization effort. That context helps teams separate
+                  what should be optimized from what should be retired, and what requires deeper redesign before migration.
+                </p>
+                <div className="mt-4 portal-illustration-frame p-3">
+                  <img
+                    src="/code-analysis-graph.svg"
+                    alt="Code analysis intelligence illustration"
+                    className="w-full rounded-[20px] object-cover"
+                  />
+                </div>
+                <div className="mt-4 grid sm:grid-cols-2 gap-3">
+                  <div className="portal-stat-card">
+                    <div className="flex items-center gap-3">
+                      <BarChart3 size={18} className="text-cyan-300" />
+                      <p className="text-sm font-semibold text-white">Portfolio scoring</p>
+                    </div>
+                    <p className="mt-2 text-xs leading-6 text-slate-400">Compare health, debt, cloud fitment, and business impact across repositories.</p>
+                  </div>
+                  <div className="portal-stat-card">
+                    <div className="flex items-center gap-3">
+                      <ShieldCheck size={18} className="text-indigo-300" />
+                      <p className="text-sm font-semibold text-white">Risk visibility</p>
+                    </div>
+                    <p className="mt-2 text-xs leading-6 text-slate-400">Surface vulnerable dependencies, stale stacks, and architecture hotspots early.</p>
+                  </div>
                 </div>
               </div>
             </article>
@@ -223,7 +267,7 @@ const HomePage = () => {
               <h3 className="mt-3 text-2xl font-semibold text-white">One secure launch point for business and engineering teams</h3>
               <p className="mt-4 text-sm leading-7 text-slate-300">
                 Use the portal as the common control surface for portfolio managers, enterprise architects, and modernization leads.
-                Launch the module you need, carry your access policy with you, and move across rationalization and code analysis without breaking session context.
+                Follow the three-step flow: scan infrastructure feasibility, establish code-level evidence, then finalize portfolio decisions — carry your access policy across all three without breaking session context.
               </p>
               <div className="mt-6 space-y-3">
                 <div className="portal-note p-4">
@@ -240,17 +284,16 @@ const HomePage = () => {
             <article className="portal-panel rounded-[28px] p-7 lg:p-8 flex flex-col gap-6">
               <div>
                 <p className="portal-section-label">Launch modules</p>
-                <h2 className="mt-3 text-2xl font-semibold text-white">Open the right workspace from a dedicated launch page</h2>
+                <h2 className="mt-3 text-2xl font-semibold text-white">Three specialized workspaces from one controlled launch page</h2>
                 <p className="mt-4 text-sm leading-7 text-slate-300">
-                  The module launcher now lives on its own page so users can choose the right workspace without crowding the homepage narrative.
-                  Use it to enter App Rationalization or Code Analysis from a single controlled surface.
+                  The module launcher gives users a single entry point to follow the assessment flow — Infra Scan for cloud feasibility, Code Analysis for repository intelligence, and App Rationalization for portfolio decisions — without leaving the portal session.
                 </p>
               </div>
 
               <div className="portal-illustration-frame min-h-[250px] p-4 flex items-center justify-center">
                 <img
-                  src="/code-analysis-graph.svg"
-                  alt="Launch modules page preview"
+                  src="/manufacturing-modernization.svg"
+                  alt="Three-module launch page overview"
                   className="w-full h-full object-cover rounded-[20px]"
                 />
               </div>
@@ -258,9 +301,10 @@ const HomePage = () => {
               <div className="portal-note p-5">
                 <p className="text-sm font-semibold text-white">Dedicated launcher benefits</p>
                 <div className="mt-3 space-y-2 text-xs leading-6 text-slate-400">
-                  <p>1. Clear separation between portfolio context and application entry.</p>
-                  <p>2. Faster access for users who just need to start a module.</p>
-                  <p>3. Consistent routing for both applications from the same page.</p>
+                  <p>1. Infra Scan first: establish cloud feasibility and migration strategy before code or portfolio analysis.</p>
+                  <p>2. Code Analysis next: add engineering evidence — health, debt, architecture, and migration readiness.</p>
+                  <p>3. App Rationalization last: merge Infra Scan and Code Analysis findings into portfolio decisions.</p>
+                  <p>4. All three modules share one portal session, launched from a single controlled entry point.</p>
                 </div>
               </div>
 

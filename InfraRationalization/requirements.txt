@@ -1,0 +1,28 @@
+fastapi
+uvicorn[standard]
+python-dotenv
+pydantic
+python-multipart
+
+# ── Scanner dependencies (install as needed per provider) ──
+# On-premises / network discovery
+paramiko         # SSH enrichment
+pywinrm            # WinRM / Windows remote management
+python-nmap       # nmap wrapper (requires nmap binary installed)
+
+# AWS
+boto3
+
+# Azure
+azure-identity
+azure-mgmt-compute
+azure-mgmt-network
+azure-mgmt-sql
+azure-mgmt-rdbms
+azure-mgmt-redis
+azure-mgmt-resource
+
+# GCP
+google-cloud-compute
+google-auth
+google-api-python-client

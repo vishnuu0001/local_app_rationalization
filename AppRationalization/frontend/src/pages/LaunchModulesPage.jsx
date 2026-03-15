@@ -13,14 +13,20 @@ import { useAuth } from '../context/AuthContext';
 
 const APP_RATIONALIZATION = 'APP_RATIONALIZATION';
 const CODE_ANALYSIS = 'CODE_ANALYSIS';
+const INFRA_SCAN = 'INFRA_SCAN';
 
 const codeAnalysisUrl =
   process.env.REACT_APP_CODE_ANALYSIS_URL ||
   'http://localhost:5173';
 
+const infraScanUrl =
+  process.env.REACT_APP_INFRA_SCAN_URL ||
+  'http://localhost:5174';
+
 const launchGuidance = [
-  'Launch App Rationalization to work with inventory, correlation, templates, capability mapping, and traceability.',
-  'Launch Code Analysis to inspect repository health, debt, architecture, and migration readiness.',
+  'Launch Infra Scan first to assess cloud feasibility, migration strategies, capacity planning, and right-sizing before committing to a portfolio plan.',
+  'Launch Code Analysis next to inspect repository health, debt, architecture, and migration readiness.',
+  'Launch App Rationalization to bring infrastructure and code findings together with inventory, correlation, templates, and traceability.',
   'Module access remains controlled by the permissions assigned to the signed-in user.',
 ];
 
@@ -30,6 +36,7 @@ const LaunchModulesPage = () => {
 
   const canUseAppRationalization = hasAccess(APP_RATIONALIZATION);
   const canUseCodeAnalysis = hasAccess(CODE_ANALYSIS);
+  const canUseInfraScan = hasAccess(INFRA_SCAN);
 
   const openCodeAnalysis = () => {
     if (!token) {
@@ -38,6 +45,15 @@ const LaunchModulesPage = () => {
 
     const hash = `#authToken=${encodeURIComponent(token)}`;
     window.location.assign(`${codeAnalysisUrl}${hash}`);
+  };
+
+  const openInfraScan = () => {
+    if (!token) {
+      return;
+    }
+
+    const hash = `#authToken=${encodeURIComponent(token)}`;
+    window.location.assign(`${infraScanUrl}${hash}`);
   };
 
   const onLogout = async () => {
@@ -113,42 +129,42 @@ const LaunchModulesPage = () => {
 
               <div className="portal-illustration-frame mt-6 p-3">
                 <img
-                  src="/manufacturing-modernization.svg"
-                  alt="Launch page manufacturing illustration"
+                  src="/infra-scan-cloud.svg"
+                  alt="Infra Scan cloud readiness illustration"
                   className="w-full rounded-[18px] object-cover"
                 />
               </div>
             </article>
 
             <section>
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
                 <article className="portal-panel rounded-[28px] p-6 flex flex-col">
                   <div className="portal-illustration-frame h-44 p-3">
                     <img
-                      src="/manufacturing-modernization.svg"
-                      alt="App Rationalization workspace preview"
+                      src="/infra-scan-cloud.svg"
+                      alt="Infra Scan cloud readiness preview"
                       className="h-full w-full rounded-[18px] object-cover"
                     />
                   </div>
                   <div className="mt-5 flex items-center justify-between gap-3">
                     <div>
                       <p className="portal-section-label">Module 01</p>
-                      <h3 className="mt-2 text-xl font-semibold text-white">App Rationalization</h3>
+                      <h3 className="mt-2 text-xl font-semibold text-white">Infra Scan</h3>
                     </div>
-                    <span className="portal-chip">Manufacturing estate</span>
+                    <span className="portal-chip">Cloud feasibility</span>
                   </div>
                   <p className="mt-4 text-sm leading-7 text-slate-300 flex-1">
-                    Upload infrastructure and application datasets, align templates, build correlation views,
-                    and generate capability and traceability decisions for portfolio action.
+                    Upload MaaS™ infrastructure feasibility reports to visualize cloud readiness,
+                    migration strategies, capacity planning, pricing, and end-of-support advisories.
                   </p>
                   <button
                     type="button"
-                    disabled={!canUseAppRationalization}
-                    onClick={() => navigate('/app-rationalization')}
+                    disabled={!canUseInfraScan}
+                    onClick={openInfraScan}
                     className="portal-btn-primary mt-6 px-4 py-3 rounded-xl text-sm font-semibold inline-flex items-center justify-center gap-2"
                   >
-                    {canUseAppRationalization ? 'Open App Rationalization' : 'Access Not Granted'}
-                    {canUseAppRationalization && <ArrowRight size={16} />}
+                    {canUseInfraScan ? 'Open Infra Scan' : 'Access Not Granted'}
+                    {canUseInfraScan && <ArrowRight size={16} />}
                   </button>
                 </article>
 
@@ -181,6 +197,36 @@ const LaunchModulesPage = () => {
                     {canUseCodeAnalysis && <ArrowRight size={16} />}
                   </button>
                 </article>
+
+                <article className="portal-panel rounded-[28px] p-6 flex flex-col">
+                  <div className="portal-illustration-frame h-44 p-3">
+                    <img
+                      src="/manufacturing-modernization.svg"
+                      alt="App Rationalization workspace preview"
+                      className="h-full w-full rounded-[18px] object-cover"
+                    />
+                  </div>
+                  <div className="mt-5 flex items-center justify-between gap-3">
+                    <div>
+                      <p className="portal-section-label">Module 03</p>
+                      <h3 className="mt-2 text-xl font-semibold text-white">App Rationalization</h3>
+                    </div>
+                    <span className="portal-chip">Manufacturing estate</span>
+                  </div>
+                  <p className="mt-4 text-sm leading-7 text-slate-300 flex-1">
+                    Upload infrastructure and application datasets, align templates, build correlation views,
+                    and generate capability and traceability decisions for portfolio action.
+                  </p>
+                  <button
+                    type="button"
+                    disabled={!canUseAppRationalization}
+                    onClick={() => navigate('/app-rationalization')}
+                    className="portal-btn-primary mt-6 px-4 py-3 rounded-xl text-sm font-semibold inline-flex items-center justify-center gap-2"
+                  >
+                    {canUseAppRationalization ? 'Open App Rationalization' : 'Access Not Granted'}
+                    {canUseAppRationalization && <ArrowRight size={16} />}
+                  </button>
+                </article>
               </div>
 
               <div className="portal-note mt-6 p-5 flex items-start gap-3">
@@ -190,7 +236,7 @@ const LaunchModulesPage = () => {
                 <div>
                   <p className="text-sm font-semibold text-white">Launch behavior</p>
                   <p className="mt-2 text-xs leading-6 text-slate-400">
-                    Both modules open in the same browser window and reuse the current portal session. Code Analysis continues to receive the signed session token during navigation.
+                    All three modules open in the same browser window and reuse the current portal session. Code Analysis and Infra Scan receive the signed session token during navigation.
                   </p>
                 </div>
               </div>
