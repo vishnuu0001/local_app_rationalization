@@ -1,0 +1,202 @@
+{
+  "report_name": "Scan 3/15/2026, 10:00:37 PM",
+  "generated_at": "2026-03-15T16:30:48.763793",
+  "provider": "onprem",
+  "scan_id": "2601bf26-311a-470f-825b-409b29eef925",
+  "sections": {
+    "summary": {
+      "total_servers": 1,
+      "provider": "onprem",
+      "scan_target": "192.168.1.0/24",
+      "cloud_providers": [
+        "onprem"
+      ],
+      "regions": [
+        "OnPrem"
+      ]
+    },
+    "cloud_assessment": {
+      "total_servers": 1,
+      "os_distribution": {
+        "Linux": 1
+      },
+      "utilization_distribution": {
+        "unknown": 1
+      },
+      "server_type_distribution": {
+        "Virtual": 1
+      },
+      "boot_type_distribution": {
+        "BIOS": 1
+      },
+      "ip_type_distribution": {
+        "private": 1
+      },
+      "total_storage_tb": 0.0,
+      "total_ram_gb": 0.0,
+      "total_cpu_cores": 0
+    },
+    "cloud_readiness": {
+      "cloud_ready": 1,
+      "not_ready": 0,
+      "lift_and_shift": 0,
+      "smart_shift": 0,
+      "paas_shift": 1,
+      "total": 1,
+      "details": [
+        {
+          "server_name": "192.168.1.32",
+          "ip": "192.168.1.32",
+          "os": "Linux",
+          "migration_strategy": "paas",
+          "cloud_ready": true
+        }
+      ]
+    },
+    "capacity_planning": {
+      "equivalence_match": {
+        "total_servers": 1,
+        "virtual_servers": 1,
+        "physical_servers": 0,
+        "total_cpu_cores": 0,
+        "total_ram_gb": 0.0,
+        "total_disk_tb": 0.0
+      },
+      "best_match": {
+        "total_servers": 1,
+        "total_cpu_cores": 1,
+        "total_ram_gb": 0.0,
+        "total_disk_tb": 0.0,
+        "estimated_saving_pct": 30
+      }
+    },
+    "vm_flavors": {
+      "flavors": [
+        {
+          "flavor": "Small (2vCPU / 8GB)",
+          "count": 1,
+          "servers": [
+            "192.168.1.32"
+          ]
+        }
+      ]
+    },
+    "workload_consolidation": [],
+    "paas_recommendations": [],
+    "eos_advisory_os": [],
+    "eos_advisory_workload": [],
+    "storage_recommendation": {
+      "total_storage_tb": 0.0,
+      "hdd_storage_tb": 0.0,
+      "ssd_storage_tb": 0.0,
+      "recommendations": [
+        {
+          "type": "Object Storage",
+          "target": "AWS S3 / Azure Blob / GCS",
+          "applicable_tb": 0.0,
+          "notes": "Cold/archival data \u2014 significant cost reduction"
+        },
+        {
+          "type": "Block Storage",
+          "target": "AWS EBS gp3 / Azure Premium SSD",
+          "applicable_tb": 0.0,
+          "notes": "Hot workloads requiring low-latency IOPS"
+        },
+        {
+          "type": "File Storage",
+          "target": "AWS EFS / Azure Files / Filestore",
+          "applicable_tb": 0.0,
+          "notes": "Shared file systems and home directories"
+        }
+      ]
+    },
+    "kubernetes_recommendation": {
+      "containerization_candidates": 2,
+      "candidates": [
+        {
+          "server": "192.168.1.32",
+          "workload": "HTTP",
+          "workload_type": "web",
+          "recommended_pods": 2,
+          "cpu_request": "0.5",
+          "memory_request": "1024Mi"
+        },
+        {
+          "server": "192.168.1.32",
+          "workload": "HTTPS",
+          "workload_type": "web",
+          "recommended_pods": 2,
+          "cpu_request": "0.5",
+          "memory_request": "1024Mi"
+        }
+      ],
+      "recommended_cluster": {
+        "node_count": 1,
+        "node_type": "4vCPU / 16GB",
+        "total_cpu_request": 1.0,
+        "total_memory_request_mi": 2048
+      }
+    },
+    "sustainability": {
+      "current_power_w": 150,
+      "cloud_equivalent_power_w": 60,
+      "annual_power_saving_kwh": 788.0,
+      "annual_co2_saving_kg": 315.0,
+      "annual_co2_saving_tonnes": 0.32,
+      "notes": "Estimates based on industry average PUE ratios and server power profiles."
+    }
+  },
+  "servers": [
+    {
+      "server_id": "192-168-1-32",
+      "server_name": "192.168.1.32",
+      "ip_address": "192.168.1.32",
+      "hostname": "",
+      "cloud_provider": "onprem",
+      "region": "OnPrem",
+      "resource_group": "",
+      "cpu_cores": 0,
+      "ram_gb": 0.0,
+      "architecture": "64 bit",
+      "server_type": "Virtual",
+      "boot_type": "BIOS",
+      "instance_type": "",
+      "os_name": "Linux",
+      "os_family": "linux",
+      "os_version": "",
+      "total_storage_gb": 0.0,
+      "disks": [],
+      "interfaces": [
+        {
+          "interface_name": "eth0",
+          "ip_address": "192.168.1.32",
+          "ip_type": "private",
+          "mac_address": "",
+          "subnet": "",
+          "bandwidth_mbps": 0
+        }
+      ],
+      "cpu_util_pct": -1.0,
+      "ram_util_pct": -1.0,
+      "utilization_band": "unknown",
+      "workloads": [
+        {
+          "name": "HTTP",
+          "version": "",
+          "component_type": "web",
+          "port": 80,
+          "status": "running"
+        },
+        {
+          "name": "HTTPS",
+          "version": "",
+          "component_type": "web",
+          "port": 443,
+          "status": "running"
+        }
+      ],
+      "migration_strategy": "",
+      "cloud_ready": true
+    }
+  ]
+}
